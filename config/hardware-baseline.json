@@ -1,0 +1,40 @@
+{
+  "project": "BeanLens",
+  "baseline": "V4.4",
+  "date": "2026-10-12",
+  "status": "proposed_not_hardware_verified",
+  "source": "docs/hardware/v4.4/beanlens-v4-handbook.html",
+  "boards": {
+    "vision": {"model": "ALIENTEK K230D BOX", "runtime_plan": "CanMV/MicroPython", "installed_firmware": null, "candidate_local_release": "ATK CanMV v1.3, nncase v2.9.0", "camera": "2 x GC2093, M12 90-degree low-distortion lens", "display_role": "front_main_statistics_evidence"},
+    "controller": {"model": "Waveshare ESP32-C6-LCD-1.47", "touch": false, "framework_plan": "ESP-IDF", "sdk_version": null, "installed_firmware": null, "display_role": "side_auxiliary_status"}
+  },
+  "power": {
+    "input_recommended_v": 24,
+    "input_recommended_a": 4,
+    "logic_v": 5,
+    "servo_v": 6,
+    "io_v": 3.3,
+    "logic_buck_output_budget_a": 4,
+    "servo_buck_continuous_target_a": 3,
+    "servo_buck_short_peak_budget_a": 5,
+    "new_3v3_peripheral_budget_ma": 35,
+    "all_budgets_need_measurement": true,
+    "full_galvanic_isolation": false,
+    "board_to_board_5v_wire_connected": false
+  },
+  "uart": {"status": "proposal_check_pinout_before_wiring", "vision_peripheral": "UART1 / PH2.0 port 1", "vision_tx_gpio": 40, "vision_rx_gpio": 41, "controller_tx_gpio": 16, "controller_rx_gpio": 17, "baud_plan": 115200, "format_plan": "8N1", "logic_v": 3.3, "common_ground": true, "framing_plan": "bounded UTF-8 JSON Lines", "protocol_status": "draft_not_implemented"},
+  "controller_pins": {
+    "servo_pwm": {"gpio": 2, "hz": 50, "signal_3v3_acceptance_verified": false, "actuator": "MG996R position servo"},
+    "weight_sda": {"gpio": 18, "bus": "I2C", "pullup_v": 3.3},
+    "weight_scl": {"gpio": 19, "initial_hz": 100000},
+    "gate_closed_limit": {"gpio": 0, "active_level": 0, "wiring": "NO to GND with input pullup"},
+    "gate_open_limit": {"gpio": 1, "active_level": 0, "wiring": "NO to GND with input pullup"},
+    "start_pause_button": {"gpio": 3, "active_level": 0, "wiring": "NO to GND with input pullup"},
+    "stop_button": {"gpio": 23, "stop_level": 1, "wiring": "NC to GND with input pullup; open wire requests stop", "hardware_estop": false},
+    "beam_hint": {"gpio": 20, "interface": "verified 24V NPN optocoupler input to 3.3V open-collector output", "active_level": null, "purpose": "passage_hint_not_bean_counter"}
+  },
+  "weight": {"adc_plan": "NAU7802", "adc_address_plan": "0x2A", "adc_dvdd_v": 3.3, "adc_vdda_initial_plan_v": 3.0, "initial_samples_per_second": 10, "load_cell_model": null, "gross_capacity_target_g": 1000, "net_sample_max_g": 500, "display_step_g": 0.1, "static_error_target_g": 0.1, "target_verified": false, "alternative_user_offer": {"brand": "Autoda", "capacity_g": 3000, "model": null, "bare_price_cny": 55, "with_bracket_price_cny": 105, "interface": null, "selected": false}},
+  "lighting": {"voltage_v": 24, "preferred_comparison_choice": "6000K / Ra98 if verified and stable", "actual_model": null, "segment_count": 4, "initial_segment_mm": 100, "total_length_m_budget": 0.4, "watts_per_m_budget_max": 20, "total_watts_budget": 8, "cut_interval_mm": null, "parallel": true, "low_frequency_pwm": false, "actual_short_exposure_verified": false},
+  "mechanics_reference": {"frame_mm": [220, 240, 440], "lanes": 5, "lane_clear_width_mm": 14, "lane_clear_depth_mm": 12, "imaging_fov_mm": [120, 67.5], "camera_distance_mm_initial": 75, "gate_travel_mm_initial": 15},
+  "calibration": {"camera": null, "servo_endpoints": null, "weight": null, "model_release": null}
+}

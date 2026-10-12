@@ -1,0 +1,267 @@
+{
+  "version": "4.4",
+  "date": "2026-10-12",
+  "handbook": "docs/hardware/v4.4/beanlens-v4-handbook.html",
+  "scope": "BOX+C6 design/purchasing documentation only",
+  "boards": [
+    "ALIENTEK K230D BOX",
+    "existing Waveshare ESP32-C6-LCD-1.47 non-Touch"
+  ],
+  "core_accessory_planning_subtotal": 790.9,
+  "box_price": 257,
+  "confirmed_user_quotes": 386.9,
+  "other_unquoted": [
+    "B02",
+    "A04",
+    "B04",
+    "B05",
+    "A05",
+    "A07"
+  ],
+  "price_status": "3_user_quotes_others_planning_or_pending",
+  "sources": [
+    {
+      "n": 1,
+      "title": "正点原子：BOX资源与接口",
+      "url": "https://wiki.alientek.com/docs/Boards/Kendryte/DNK230D/start-guide/k230d-box-introduction/",
+      "note": "CSI1/2、2.4英寸屏、128MB、供电与扩展接口。"
+    },
+    {
+      "n": 2,
+      "title": "正点原子：摄像头实验",
+      "url": "https://wiki.alientek.com/docs/Boards/Kendryte/DNK230D/example-base/camera/",
+      "note": "J1/CSI2、另一口CSI1、GC2093；双路支持不等于同步曝光。"
+    },
+    {
+      "n": 3,
+      "title": "正点原子：UART实验",
+      "url": "https://wiki.alientek.com/docs/Boards/Kendryte/DNK230D/example-base/uart/",
+      "note": "UART1 TX=IO40、RX=IO41；交叉接线。"
+    },
+    {
+      "n": 4,
+      "title": "Waveshare：C6-LCD-1.47",
+      "url": "https://www.waveshare.com/wiki/ESP32-C6-LCD-1.47",
+      "note": "非Touch版：ST7789、172×320及占用引脚。"
+    },
+    {
+      "n": 5,
+      "title": "Waveshare：C6原理图",
+      "url": "https://files.waveshare.com/wiki/ESP32-C6-LCD-1.47/ESP32-C6-LCD-1.47_schemetics.pdf",
+      "note": "TXD/RXD、GPIO焊盘、供电、LCD与TF复用。"
+    },
+    {
+      "n": 6,
+      "title": "Espressif：ESP32-C6 LEDC",
+      "url": "https://docs.espressif.com/projects/esp-idf/en/stable/esp32c6/api-reference/peripherals/ledc.html",
+      "note": "硬件PWM；舵机与背光使用不同计时器配置。"
+    },
+    {
+      "n": 7,
+      "title": "Adafruit：3mm对射红外2167",
+      "url": "https://www.adafruit.com/product/2167",
+      "note": "开集电极、3.3–5V、响应小于2ms的参考规格。国产件需单测。"
+    },
+    {
+      "n": 8,
+      "title": "SparkFun：NAU7802",
+      "url": "https://www.sparkfun.com/sparkfun-qwiic-scale-nau7802.html",
+      "note": "I²C称重；国产兼容模块需核对电压与驱动。"
+    },
+    {
+      "n": 9,
+      "title": "TowerPro：MG996R",
+      "url": "https://towerpro.com.tw/product/mg996r/",
+      "note": "原厂电压4.8–6.6V；用户低价兼容件的电流、尺寸与信号门槛需实测。"
+    },
+    {
+      "n": 10,
+      "title": "嘉楠：YOLO26示例",
+      "url": "https://www.kendryte.com/k230_canmv/en/main/example/ai/yolo_battle.html",
+      "note": "分类与检测；BOX配套固件需另验。"
+    },
+    {
+      "n": 11,
+      "title": "Ultralytics：分类任务",
+      "url": "https://docs.ultralytics.com/tasks/classify/",
+      "note": "完整豆体预处理；防止默认裁切丢失边缘细节。"
+    },
+    {
+      "n": 12,
+      "title": "Ultralytics：免NMS导出",
+      "url": "https://docs.ultralytics.com/guides/end2end-detection/",
+      "note": "检测版输出头与解析器须匹配。"
+    },
+    {
+      "n": 13,
+      "title": "嘉楠：Sensor接口源码",
+      "url": "https://github.com/kendryte/canmv_k230/blob/a47c991d5725e958ca92f21fbaaa2a101cdf6bc1/port/builtin_py/media/sensor.py",
+      "note": "上游曝光与未实现API的区别，不代表BOX已具备。"
+    },
+    {
+      "n": 14,
+      "title": "Basler：快门类型",
+      "url": "https://docs.baslerweb.com/electronic-shutter-types",
+      "note": "曝光、逐行时序、帧率不能混同。"
+    },
+    {
+      "n": 15,
+      "title": "正点原子：配套资料",
+      "url": "https://wiki.alientek.com/docs/Boards/Kendryte/DNK230D/start-guide/download/",
+      "note": "原理图、BOX匹配固件与资源下载入口。"
+    },
+    {
+      "n": 16,
+      "title": "正点原子旗舰店：套件选项",
+      "url": "https://ic-item.jd.com/10147078684580.html",
+      "note": "标配列含普通GC2093；具体订单包装须确认，价格未公开。"
+    },
+    {
+      "n": 17,
+      "title": "本轮研究报告",
+      "url": "/Users/chengzhe/Documents/BeanLens_Design_Research_20261011/BeanLens_Research_20261011.html",
+      "note": "GLM复核、物理重算、YOLO对比、行业与比赛证据。"
+    },
+    {
+      "n": 18,
+      "title": "SCA：CVA",
+      "url": "https://sca.coffee/value-assessment",
+      "note": "物理初筛与杯测分开，不签发完整SCA等级。"
+    },
+    {
+      "n": 19,
+      "title": "Royal Coffee：筛号",
+      "url": "https://cdn.royalcoffee.com/wp-content/uploads/2017/08/21132231/Green-Coffee-Analytics-Screen-Size-Google-Docs.pdf",
+      "note": "筛号是孔径，不是豆子三维尺寸上限。"
+    },
+    {
+      "n": 20,
+      "title": "ASD-STE100说明",
+      "url": "https://www.asd-ste100.org/about.html",
+      "note": "采用简短明确的技术语言；不宣称中文STE认证。"
+    },
+    {
+      "n": 21,
+      "title": "Banner：激光与LED光电选型",
+      "url": "https://www.bannerengineering.com/us/en/products/sensors/photoelectric-sensors.html",
+      "note": "小光点适合小目标；型号响应和光束几何仍需确认。"
+    },
+    {
+      "n": 22,
+      "title": "EBU：CRI与摄像照明",
+      "url": "https://tech.ebu.ch/docs/factsheets/ebu_tech_fs_led_lighting.pdf",
+      "note": "CRI偏重人眼；相机响应不同，高Ra不保证成像颜色。"
+    },
+    {
+      "n": 23,
+      "title": "Bridgelux：产品参数",
+      "url": "https://www.bridgelux.com/product-search?op=Reset",
+      "note": "有Thrive 98产品；不能据此认证卖家灯带或其驱动。"
+    },
+    {
+      "n": 24,
+      "title": "用户提供的山大斯商品图",
+      "url": "sensor-reference-v4.4.html",
+      "note": "图示M12×1、52.5长、DC6–36V、5ms/100Hz；不是原厂独立验证。"
+    },
+    {
+      "n": 25,
+      "title": "MORNSUN：B_S-1WR3原厂资料",
+      "url": "https://www.mornsun-power.com/public/uploads/pdf/B_S-1WR3.pdf",
+      "note": "B2403S-1WR3是24V转3.3V、1W、非稳压隔离模块；不能再串AMS1117-3.3。"
+    },
+    {
+      "n": 26,
+      "title": "Waveshare：C6供电原理图",
+      "url": "https://files.waveshare.com/wiki/ESP32-C6-LCD-1.47/ESP32-C6-LCD-1.47_schemetics.pdf",
+      "note": "板上ME6217C33M5G把5V转3.3V；外设预算仍需实测余量。"
+    },
+    {
+      "n": 27,
+      "title": "XLSEMI：XL4015",
+      "url": "https://www.xlsemi.com/datasheet/XL4015-EN.pdf",
+      "note": "芯片8–36V输入、5A应用；不能据此承诺廉价模块持续5A。"
+    },
+    {
+      "n": 28,
+      "title": "Nuvoton：NAU7802",
+      "url": "https://www.nuvoton.com/resource-files/NAU7802%20Data%20Sheet%20V1.7.pdf",
+      "note": "DVDD、VDDA、桥激励与参考需匹配；24位不等于整机0.1g准确度。"
+    },
+    {
+      "n": 29,
+      "title": "Zemic：L6J1数据表",
+      "url": "https://www.zemiceurope.com/media/Documentation/L6J1_Datasheet.pdf",
+      "note": "有1kg型号和200×200平台规格；C2标题不能证明整机±0.1g。"
+    },
+    {
+      "n": 30,
+      "title": "Phidgets：称重传感器选型与误差",
+      "url": "https://www.phidgets.com/docs/Load_Cell_Guide",
+      "note": "分辨率、重复性、非线性、滞后与漂移需分别核对。"
+    },
+    {
+      "n": 31,
+      "title": "MEAN WELL：GST90A",
+      "url": "https://www.meanwell.com/Upload/PDF/GST90A/GST90A-SPEC.PDF",
+      "note": "GST90A24为24V/3.75A、90W，可作有完整规格的电源参考；价格待询。"
+    },
+    {
+      "n": 32,
+      "title": "Bridgelux：Thrive系列与光谱评价",
+      "url": "https://www.bridgelux.com/thrive",
+      "note": "原厂同时讨论CRI、TM-30和SPD，产品系列包含多种色温；不证明任意卖家灯带用料。"
+    },
+    {
+      "n": 33,
+      "title": "EBU：Tech3355摄像照明评价",
+      "url": "https://tech.ebu.ch/publications/tech3355",
+      "note": "相机颜色评价不能只看针对人眼的Ra；TLCI也不等于GC2093专属测评。"
+    },
+    {
+      "n": 34,
+      "title": "欧路达：技术支持与说明书入口",
+      "url": "https://www.autoda.com.cn/jishuzhich/",
+      "note": "可核查品牌和资料入口，但不能凭品牌与3kg确定用户55元款的接口、精度或随附支架。"
+    },
+    {
+      "n": 35,
+      "title": "爱得意：ADY-C120-0824-98xx灯带",
+      "url": "https://www.nvled.com/?p=6723",
+      "note": "厂家列24V、12W/m、8mm宽、50mm切点及5000K型号；页面RA98与灯珠RA97+描述需询证，不标作普瑞芯片。"
+    },
+    {
+      "n": 36,
+      "title": "欧路达：TDA-04D4数字变送器",
+      "url": "https://www.autoda.com.cn/zhongliangbiansongqi/305.html",
+      "note": "官方说明模拟弱信号经变送器转换为RS485；不代表55元裸传感器已经内置变送器。"
+    }
+  ],
+  "hardware_verified": false,
+  "firmware_written": false,
+  "model_trained": false,
+  "drawings": [
+    "beanlens-box-dimensions-v4.4.svg",
+    "beanlens-box-feeder-assembly-v4.4.svg",
+    "beanlens-box-information-flow-v4.4.svg",
+    "beanlens-box-mount-access-v4.4.svg",
+    "beanlens-box-optics-v4.4.svg",
+    "beanlens-box-power-v4.4.svg",
+    "beanlens-box-pp-template-v4.4.svg",
+    "beanlens-box-screen-mount-v4.4.svg",
+    "beanlens-box-sensor-interface-v4.4.svg",
+    "beanlens-box-sequence-v4.4.svg",
+    "beanlens-box-weighing-v4.4.svg",
+    "beanlens-box-workflow-v4.4.svg"
+  ],
+  "assembled_envelope_mm": [
+    280,
+    270,
+    460
+  ],
+  "frame_mm": [
+    220,
+    240,
+    440
+  ]
+}

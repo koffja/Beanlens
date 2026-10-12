@@ -1,0 +1,50 @@
+# Local system / environments
+.DS_Store
+.venv/
+.venv-*/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.env
+.env.*
+!.env.example
+*.local.json
+*.local.toml
+.secrets/
+
+# User datasets, original exports and training products
+/datasets/
+/runs/
+/mydata/
+/coffee green beans defect.v1i.yolo26/
+/Green Coffee Bean Defects.v2i.yolo26/
+/*.zip
+/*.pt
+/*.onnx
+*.kmodel
+
+# Vendor distribution: preserve locally, do not commit a whole SDK/media disc
+/docs/【正点原子】DNK230D开发板资料盘(A盘)/
+
+# Firmware and local SDK products
+**/build/
+**/managed_components/
+**/sdkconfig
+**/sdkconfig.old
+*.elf
+*.map
+*.bin
+*.img
+*.img.gz
+*.log
+/.codebase-memory/
+
+# Optional local SDKs and test captures
+/vendor/
+/toolchains/
+/captures/
+/artifacts/
+/tmp/

@@ -1,0 +1,122 @@
+{
+  "validatedAt": "2026-10-12T00:14:44.531Z",
+  "pageErrors": [],
+  "brokenAnchors": [],
+  "duplicateIds": [],
+  "mobile": {
+    "scroll": 390,
+    "client": 390
+  },
+  "interactiveChecks": [
+    "BOM total, quote, optional, bundled removal, persistence, reset",
+    "assembly persistence/reset",
+    "theme toggle/persistence",
+    "drawing zoom and Escape"
+  ],
+  "drawings": [
+    {
+      "name": "beanlens-box-dimensions-v4.4.svg",
+      "size": {
+        "w": 1460,
+        "h": 980
+      },
+      "outside": []
+    },
+    {
+      "name": "beanlens-box-feeder-assembly-v4.4.svg",
+      "size": {
+        "w": 1400,
+        "h": 1030
+      },
+      "outside": []
+    },
+    {
+      "name": "beanlens-box-information-flow-v4.4.svg",
+      "size": {
+        "w": 1470,
+        "h": 970
+      },
+      "outside": []
+    },
+    {
+      "name": "beanlens-box-mount-access-v4.4.svg",
+      "size": {
+        "w": 1420,
+        "h": 945
+      },
+      "outside": []
+    },
+    {
+      "name": "beanlens-box-optics-v4.4.svg",
+      "size": {
+        "w": 1360,
+        "h": 745
+      },
+      "outside": []
+    },
+    {
+      "name": "beanlens-box-power-v4.4.svg",
+      "size": {
+        "w": 1470,
+        "h": 1000
+      },
+      "outside": []
+    },
+    {
+      "name": "beanlens-box-pp-template-v4.4.svg",
+      "size": {
+        "w": 1420,
+        "h": 985
+      },
+      "outside": []
+    },
+    {
+      "name": "beanlens-box-screen-mount-v4.4.svg",
+      "size": {
+        "w": 1460,
+        "h": 985
+      },
+      "outside": []
+    },
+    {
+      "name": "beanlens-box-sensor-interface-v4.4.svg",
+      "size": {
+        "w": 1400,
+        "h": 920
+      },
+      "outside": []
+    },
+    {
+      "name": "beanlens-box-sequence-v4.4.svg",
+      "size": {
+        "w": 1220,
+        "h": 1050
+      },
+      "outside": []
+    },
+    {
+      "name": "beanlens-box-weighing-v4.4.svg",
+      "size": {
+        "w": 1460,
+        "h": 1010
+      },
+      "outside": []
+    },
+    {
+      "name": "beanlens-box-workflow-v4.4.svg",
+      "size": {
+        "w": 1320,
+        "h": 1140
+      },
+      "outside": []
+    }
+  ],
+  "handbookPdfBytes": 8027415,
+  "hardwareTested": false,
+  "pdfPages": {
+    "handbook": 28,
+    "drawings": 12
+  },
+  "localDownloadFilesVerified": true,
+  "visualReview": "Document interactions and exports verified. See per-drawing checks; hardware not tested."
+}

@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>BeanLens V4 手册增补评审 · 2026-10-11</title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #1a1a1a;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <style>
+  body{font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",Georgia,serif;max-width:860px;margin:40px auto;padding:0 24px;color:#1a1a2e;line-height:1.75;font-size:16px}
+  h1{font-size:26px;color:#051c38;border-bottom:3px solid #1f6feb;padding-bottom:12px;margin-top:8px}
+  h2{font-size:20px;color:#051c38;border-left:4px solid #1f6feb;padding-left:10px;margin-top:36px}
+  h3{font-size:17px;color:#28425f;margin-top:26px}
+  table{border-collapse:collapse;width:100%;margin:16px 0;font-size:14px}
+  th{background:#051c38;color:#fff;padding:8px 10px;text-align:left}
+  td{border-bottom:1px solid #dde3ec;padding:8px 10px;vertical-align:top}
+  tr:nth-child(even) td{background:#f6f8fb}
+  code,pre{background:#f2f4f7;border-radius:4px;font-size:13px}
+  pre{padding:14px;overflow-x:auto;border:1px solid #e3e8f0}
+  blockquote{border-left:4px solid #d4a017;background:#fdf9ef;margin:14px 0;padding:10px 16px}
+  hr{border:none;border-top:1px solid #dde3ec;margin:32px 0}
+  a{color:#1f6feb}
+  </style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">BeanLens V4 手册增补评审 · 2026-10-11</h1>
+</header>
+<h1
+id="beanlens-v4-手册增补评审五槽重力方案验证esp32-s3-回归方案与结构遮光设计">BeanLens
+V4 手册增补评审：五槽重力方案验证、ESP32-S3 回归方案与结构遮光设计</h1>
+<p><strong>研究日期</strong>：2026-10-11（下午增补）·
+<strong>评审对象</strong>：<code>output/beanlens/beanlens-v4-handbook.html</code>（V401，2026-10-11
+11:52 生成） <strong>前置关系</strong>：本文增补上午的《BeanLens
+硬件方案评审》（同目录），该报告评审的是 10-10
+BOM（振动料斗+触发抓拍+HX711+ESP32 网络协处理器）。V4
+已是<strong>再演进两代</strong>的方案，上午报告中多个结论的适用性需要重新对照。
+<strong>用户裁决输入</strong>：认同 ESP32-S3 继续使用。</p>
+<hr />
+<h2 id="executive-summary执行摘要">Executive Summary（执行摘要）</h2>
+<p>V4
+是一次<strong>实质性进步</strong>：删除振动送料器（隔振问题随之消失——上午报告
+F6
+的最大结构担忧自动消解）、改五槽重力送料、连续取图+轨迹配对替代命令式触发抓拍（与上午报告
+F2 建议的方向一致）、NAU7802 I²C 称重替代 HX711 位时序驱动（减轻
+MicroPython 负担）、分阶段运行与内存控制专节（回应上午
+F5）、对卷帘快门形变做了诚实披露（上午 F3
+的口径被采纳）。接线表、两批采购、14 步装配、A–E
+五阶段验收的质量都在线。</p>
+<p>但增补研究抓出 <strong>V4 的四个新缺口与两个残留风险</strong>：</p>
+<p>第一，<strong>吞吐缺口是硬的</strong>。手册自估总流量 25
+颗/秒、每颗两面共需约 50 次分类/秒；而 K230 KPU 实测口径是 MobileNetV2
+约 30–60ms/次（16–33 次/秒，社区数据，YOLO 含前后处理 180–220ms）。缺口
+1.5–3 倍。手册”分阶段运行”的方向对，但 350–500g（约 2300–3300 颗）×
+两面的<strong>集中分类需要 3–8
+分钟排队消化</strong>——演示叙事必须按”流式采集+异步分类”表述，闸门节拍要按分类消化速度反推。</p>
+<p>第二，<strong>出口速度未标定 + 30fps 不可依赖</strong>。按 V4
+实际几何（视野高 67.5mm）重算卷帘拉伸：60fps 下行扫等效速度约
+4.04m/s，静止释放情景豆末速 1.19m/s 拉伸 1.42×（可用），但出口若带
+0.5m/s 初速拉伸升到 1.72×，近自由落体则 6 倍以上；30fps
+时仅最理想情景勉强可用。<strong>60fps
+是底线，压出口速度（刷条减速+可换导嘴+实测标定）是前置条件</strong>。</p>
+<p>第三，<strong>环境光控制整体缺失</strong>。V4
+照明节只定了灯与灰背景，没有暗箱/遮光设计，排障表没有环境光项，全文未出现”锁定曝光与白平衡”条款——而展厅射灯、人流遮挡、评委手机闪光都是真实干扰。这恰好是用户海洋板构想的杀手级用武之地：<strong>海洋板侧板把
+2020 型材框补成半封闭箱体，一举解决遮光+结构+观感三件事</strong>。</p>
+<p>第四，<strong>首版无网络与演示日叙事矛盾</strong>。V4 写 TF 卡
+CSV、联网”后加串口网络模块”。但比赛演示的核心链路是”检测记录实时上
+TasterMatrix staging”。用户认同保留 ESP32-S3——增补报告给出它在 V4
+架构下的精确角色（<strong>串口网关+系统看门狗，非必需品而是演示日生命线</strong>）、接线方案与上电时序，以及”验证期先用
+K230D 板载 WiFi、彩排期切 ESP32”的双路径策略。</p>
+<p>残留两项：双摄并行”各 60fps”无公开实测（D1
+必测，预案降分辨率）；裁图中转的内存细节（建议 JPEG
+即时落盘中转，队列上限做背压）。</p>
+<hr />
+<h2 id="引言introduction">1. 引言（Introduction）</h2>
+<h3 id="方案演进对照上午报告的评审基线-vs-v4">1.1
+方案演进对照：上午报告的评审基线 vs V4</h3>
+<table>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr>
+<th>维度</th>
+<th>10-10 BOM（上午评审基线）</th>
+<th>V4 手册（本增补对象）</th>
+<th>判定</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>送料</td>
+<td>微型振动料斗单列化</td>
+<td><strong>删除振动</strong>；漏斗渐进分五槽+对刷条轻触导向+MG90S
+滑闸分批</td>
+<td>结构简化，隔振问题消失</td>
+</tr>
+<tr>
+<td>豆流形态</td>
+<td>单列逐颗</td>
+<td><strong>五槽并排豆帘</strong>（净宽 14mm，不保证逐颗分离）</td>
+<td>吞吐×5，换来配对算法复杂度</td>
+</tr>
+<tr>
+<td>拍摄</td>
+<td>红外触发命令式抓拍</td>
+<td><strong>连续取图</strong>+轨迹/时间配对</td>
+<td>与上午 F2 建议同向 ✓</td>
+</tr>
+<tr>
+<td>主控</td>
+<td>K230D+ESP32-S3 网络协处理器</td>
+<td><strong>单主控 K230D，省去 ESP32</strong>，无网络首版（TF 卡）</td>
+<td>与上午 F1 结论（联网非必需）一致，但演示叙事受损</td>
+</tr>
+<tr>
+<td>称重</td>
+<td>HX711</td>
+<td><strong>NAU7802 I²C</strong>（0x2A，1kg 梁式）</td>
+<td>减轻位时序驱动负担 ✓</td>
+</tr>
+<tr>
+<td>相机</td>
+<td>GC2093×2 <span class="citation" data-cites="90">@90</span>°</td>
+<td>GC2093×2 前后<strong>正对双面</strong>（CSI2+CSI0）</td>
+<td>“双面”语义更准，仍非 360°</td>
+</tr>
+<tr>
+<td>内存/算力</td>
+<td>未做预算（上午 F5 指出）</td>
+<td>专节：少量帧+裁图独立缓存+单轻量模型+队列上限</td>
+<td>方向对，细节待补（见 P4）</td>
+</tr>
+<tr>
+<td>卷帘快门</td>
+<td>“颜色主判”话术</td>
+<td>明示”短曝光不能消除逐行读出形变”+排障退路</td>
+<td>上午 F3 口径被采纳 ✓</td>
+</tr>
+<tr>
+<td>机架</td>
+<td>（用户构想海洋板+2020）</td>
+<td><strong>2020 型材 3.28m 已入 BOM</strong>（220×240×440）</td>
+<td>与用户构想半吻合，海洋板未入</td>
+</tr>
+<tr>
+<td>预算</td>
+<td>¥484+机动（含热备）</td>
+<td><strong>¥600 控制价</strong>（不含热备/外协）</td>
+<td>量级一致</td>
+</tr>
+</tbody>
+</table>
+<p><strong>结论：上午报告的 F1/F2/F5/F6 四项建议中，V4
+已以自身方式吸收了 F2（连续取图）、F5（内存控制）、F6
+的一半（删振动即无隔振需求）；F1（ESP32
+定位）由”网络协处理器不成立”进一步演化为”V4 干脆删网”，用户的裁决（保留
+ESP32-S3）落在正确的位置上——但理由需要重新锚定（见 §3）。</strong></p>
+<h3 id="方法与来源">1.2 方法与来源</h3>
+<p>在上午报告的 30 个来源基础上新增：K230 KPU 推理实测（YOLO 180–220ms
+含前后处理、3.2MB kmodel 加载 1.2s，CSDN 2026-09 实测帖）、MobileNetV2
+社区口径（30–60ms/次）、K230 三路 CSI 并行官方 demo 佐证（ov5647
+三摄同工作、Linux 端 v4l2 三路同步）、01Studio camera
+模块文档。物理推导沿用上午报告方法论附录的公式，代入 V4
+几何参数重算。</p>
+<hr />
+<h2 id="主要发现main-analysis">2. 主要发现（Main Analysis）</h2>
+<h3 id="p1.-吞吐缺口50-分类秒的需求-vs-1633-次秒的能力">P1. 吞吐缺口：50
+分类/秒的需求 vs 16–33 次/秒的能力</h3>
+<p>手册 05 节自己算了需求账：“总流量 25
+颗/秒、每颗两面各分类一次，就需要约 50 次分类/秒。这是需求计算，不是
+K230D 实测能力。”——这个诚实声明需要配上能力侧数据才是完整决策依据：</p>
+<table>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr>
+<th>模型</th>
+<th>K230 KPU 实测口径</th>
+<th>等效吞吐</th>
+<th>来源性质</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>YOLO 类（3.2MB kmodel，含缩放+推理+后处理）</td>
+<td>180–220ms/帧</td>
+<td>~5 次/秒</td>
+<td>社区实测帖 [31]</td>
+</tr>
+<tr>
+<td>MobileNetV2 224×224 int8</td>
+<td>30–60ms/次（社区通行口径）</td>
+<td>16–33 次/秒</td>
+<td>社区口径 [32]，待 D1 实测</td>
+</tr>
+</tbody>
+</table>
+<p>即便 MobileNetV2 跑到乐观值，<strong>能力约为需求的 1/2 到
+2/3；计入裁图、配对、队列开销后缺口更大</strong>。这不是要换硬件——而是要把三个既有设计拧成一套自洽的节拍：</p>
+<ol type="1">
+<li><strong>闸门节拍按分类消化速度反推</strong>：手册放料”先试开到位后
+150–300ms”是采集视角的初值。若每批实际放 50–100 颗（5
+槽×密度×开闸时长），按 30ms/次×2 面=3–6 秒消化时间，则批次间隔应 ≥
+消化时间，或接受队列积压到关闸后集中处理。</li>
+<li><strong>采集-分类流水线化而非严格分阶段</strong>：手册六状态机的”4
+分类”放在排空之后，实现上建议改为采集线程持续跑、分类 worker
+低优先级异步消化队列（手册”队列有余量时，再开放下一批”已含此意，落实为生产者-消费者即可）。</li>
+<li><strong>演示叙事定稿</strong>：350–500g 全程 = 采集 2–3 分钟 +
+分类排队 3–8 分钟（按 40–100ms/次折算 2300–3300 颗×2
+面）。屏幕数字”爬升中”是可接受的演示节奏，但<strong>不要承诺”实时识别”</strong>；每批小份量模式（放
+100 颗→等结果→再放）可给评委”准实时”体感。</li>
+</ol>
+<p>附带约束：kmodel 加载约 1.2 秒 [31]，开机自检状态（状态
+1）要把它计入。</p>
+<h3 id="p2.-出口速度未标定-帧率底线30fps-不可依赖">P2. 出口速度未标定 +
+帧率底线：30fps 不可依赖</h3>
+<p>V4 视野高 67.5mm、上沿在出口下 5mm。代入上午报告的拉伸公式（拉伸比 =
+1/(1−v/v_scan)，v_scan = 视野高 ÷ 全帧读出时间）：</p>
+<table>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr>
+<th>情景</th>
+<th>视野内末速</th>
+<th>60fps（读出≈16.7ms，v_scan≈4.04m/s）</th>
+<th>30fps（读出≈33.3ms，v_scan≈2.03m/s）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>a 出口静止释放（手册理想）</td>
+<td>1.19 m/s</td>
+<td>拉伸 1.42×</td>
+<td>拉伸 2.45×</td>
+</tr>
+<tr>
+<td>b 出口初速 0.5m/s（手册情景）</td>
+<td>1.69 m/s</td>
+<td>拉伸 1.72×</td>
+<td>拉伸 6.1×（近失效）</td>
+</tr>
+<tr>
+<td>c 近自由落体（280mm 落差）</td>
+<td>~3.4 m/s</td>
+<td>拉伸 6.4×（近失效）</td>
+<td>拍不全</td>
+</tr>
+</tbody>
+</table>
+<p>三个推论：</p>
+<ol type="1">
+<li><strong>60fps 是底线不是目标</strong>。手册 B
+阶段验收必须加一条”实测双路帧率 ≥60fps”（注意 GC2093
+超配静默降级坑：看实测值不看配置值 [8]）。双摄并行各 60fps 目前只有”三路
+CSI 硬件并行+官方三摄 demo”的间接佐证 [33][34]，<strong>无同型号双 60fps
+实测——D1 必测，预案是降分辨率/ROI</strong>。</li>
+<li><strong>压出口速度是前置条件</strong>。手册已有的手段（对刷条减速、可换
+10–14mm 导块、12mm
+最后导嘴）之外，建议把”出口速度实测”做成打样验收项：方法可以是单槽临时装上下两对光电测时间差，或用已知帧率的录像逐帧位移折算。目标：出口初速
+≤0.3m/s（情景 a/b 之间）。</li>
+<li><strong>训练端配垂直拉伸增强</strong>（0.5–3×）依旧适用，让分类器直接认拉伸态的豆——V4
+的排障表把”换传感器”列为最后退路，正确；拉伸增强是让”退路”大概率用不上的便宜保险。</li>
+</ol>
+<h3 id="p3.-环境光控制缺失海洋板的杀手级用武之地">P3.
+环境光控制缺失：海洋板的杀手级用武之地</h3>
+<p>V4 在照明上只做了三件事：5000K/Ra≥95
+恒定直流灯、扩散片斜照、灰背景。<strong>没有暗箱/遮光设计，没有”锁定曝光与白平衡”条款，排障表没有环境光项</strong>。对比
+Codex 自己 10-08
+的托盘方案文档（“遮外光的小箱……可锁定曝光与白平衡的近距离相机”），这是一处退化。展厅现实：顶射灯、邻展位灯光变化、围观人影、评委手机闪光——任何一项都能让自动曝光/白平衡漂移，连续取图下的表现是整批豆的颜色基准漂移（颜色类主判的直接威胁）。</p>
+<p>补三件事：</p>
+<ol type="1">
+<li><strong>海洋板侧板+顶板把 2020
+框补成半封闭箱体</strong>：留出正面观察窗（亚克力）与背面检修口。18mm
+海洋板同时提供遮光、结构阻尼、专业外观——用户的构想恰好补上 V4
+最大的演示日风险。底部开孔走线+称重平台穿出（与底板保持 ≥5mm
+间隙，载荷只经传感器——手册装配步骤 03 的要求保持不变）。</li>
+<li><strong>曝光/增益/白平衡全手动锁定</strong>写入固件需求：现场用灰卡/色卡校准后锁死，例行保存校准记录（也回应
+Codex 10-08 文档的”迷你色卡”BOM 项——V4
+采购表里色卡消失了，应找回）。</li>
+<li>排障表加一行：<strong>“颜色基准漂移 →
+检查环境光入射、曝光/白平衡锁定状态、灯的温升漂移”</strong>。</li>
+</ol>
+<h3 id="p4.-裁图中转的内存细节队列上限需要落盘中转配合">P4.
+裁图中转的内存细节：队列上限需要落盘中转配合</h3>
+<p>手册的内存控制（少量帧、裁图独立缓存、队列上限）方向正确，但有一处未展开：<strong>350–500g
+的整批豆（2300–3300 颗×2 面）的裁图不能驻留内存等待集中分类</strong>。按
+224×224 裁图 RGB 计约 150KB/张，整批约 0.7–1GB——远超
+128MB。落实方式：</p>
+<ul>
+<li>裁图产生即 JPEG 压缩（单张约 10–20KB）落盘 TF（整批约 50–130MB，TF
+卡无压力）；</li>
+<li>内存队列只保留”待分类窗口”（如最近 200–400 张），分类 worker
+从盘上批量读回消化；</li>
+<li>队列上限同时充当背压：积压超限时暂停下一批放料（手册已有此语义，补上盘上中转这一环即可闭环）。</li>
+</ul>
+<h3 id="p5.-网络与-esp32-s3演示日生命线的精确接线方案用户裁决的落地">P5.
+网络与 ESP32-S3：演示日生命线的精确接线方案（用户裁决的落地）</h3>
+<p>V4 的立场（首版 TF 卡、联网后加、“不必因此恢复 ESP32
+主控架构”）在验证期是正确的——<strong>D1–D3
+少一个变量</strong>。但演示日的核心叙事是”检测记录实时上 TasterMatrix
+staging”（10-08 既定后端：device token 配对、telemetry 批量上报、WS
+推送、锚定证据链），TF 卡拷贝演示链路是断的。用户认同保留
+ESP32-S3，落地如下：</p>
+<p><strong>角色定稿：串口网关 +
+系统看门狗（不是主控、不碰控制回路）</strong></p>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr>
+<th>职责</th>
+<th>实现方式</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>WiFi telemetry</td>
+<td>ESP32-S3 连 staging，UART 从 K230D 收结果记录批量上报</td>
+<td>K230D 的 UART 选脚注意手册 Pin 表：GPIO5/GPIO6（第 4/5
+槽光电占用）恰是常见 UART 复用脚，手册已明示不复用——<strong>ESP32
+接线前按立创现行引脚工具再核一遍可用 UART 脚位</strong></td>
+</tr>
+<tr>
+<td>心跳/看门狗</td>
+<td>K230D 每秒发心跳；ESP32 超时未收到则屏显报警+上报 staging</td>
+<td>K230D 死机时演示不至于黑箱</td>
+</tr>
+<tr>
+<td>（可选）屏显迁移</td>
+<td>ST7789 挪到 ESP32，释放 K230D 的 QSPI0 组与调度</td>
+<td>非必须；保留在 K230D 也可，看 D2 调度实测</td>
+</tr>
+<tr>
+<td>断网兜底</td>
+<td>ESP32 本地缓存最新批次；网络恢复补传</td>
+<td>staging 热点+预采回放兜底不变</td>
+</tr>
+</tbody>
+</table>
+<p><strong>双路径时序</strong>（避免”新增硬件变成新故障源”）：</p>
+<ul>
+<li>D1–D3（验证期）：按 V4 原案跑，无 ESP32。D1 顺带用 <strong>K230D
+板载 WiFi（RTL8189FTV）</strong> 做一次联网冒烟（发几条假 telemetry 到
+staging），确认 MicroPython 下网络与采集并发的稳定性——这是”板载 WiFi
+直连”路径的证据。</li>
+<li>D4（赛前彩排）：装 ESP32-S3 网关跑全链路。<strong>若 ESP32
+链路任何环节掉链子，回退板载 WiFi 直连</strong>——两条路径共享同一份
+telemetry 代码抽象（UART 口 vs 板载 socket 两个 driver）。</li>
+<li>采购：ESP32-S3
+不进第一批（手册第一批清单保持纯净），放第二批或单独小单（¥30
+级，随时可补）。</li>
+</ul>
+<p><strong>给评委的一句话口径</strong>：“视觉主控专机专用，网络与心跳由协处理器承担，故障域隔离。”——这句话在评委追问”为什么要两颗芯片”时是满分答案，也兑现了用户保留
+ESP32-S3 的直觉。</p>
+<h3 id="p6.-v4-已足够好的部分免再议清单">P6. V4
+已足够好的部分（免再议清单）</h3>
+<p>以下各项经增补核验，维持 V4 原案即可：NAU7802 选型（I²C
+0x2A、静态读数、1kg 量程含平台/杯/样本的提醒）；MG90S
+独立供电支路+限位开关+断电手动止料插片；五路光电”经过提示+排空辅助，不保证逐颗计数”的诚实定位；两批采购的降险顺序；14
+步装配检查表；A–E
+五阶段验收（“先证明没有漏检，再报告分类结果”）；“双面拍摄不等于完整 360°
+表面检测”的口径；CSV 字段与 TasterMatrix
+对接”先约定格式再实现接口”；CS11
+镜头的六项核实清单（无完整规格前不按它打样安装件）。</p>
+<hr />
+<h2 id="综合与洞察synthesis-insights">3. 综合与洞察（Synthesis &amp;
+Insights）</h2>
+<p>V4 与上午报告的关系可以一句话概括：<strong>上午报告指出的四个问题，V4
+用自己的方式解决了两个半（触发架构、内存方向、隔振消解），剩下的一半（网络定位）由用户的
+ESP32-S3 裁决补齐，而 V4
+新引入的五槽架构带来了新的真实约束（吞吐、速度、环境光），三者都有不换器件的解法。</strong></p>
+<p>贯穿性的判断不变：这台装置是”时序机器”。V4
+把时序问题从”触发的微秒级”（已消解）转移到了”吞吐的秒级”（分类消化）与”光学的小时级”（环境光/温漂）。风险等级实际上是下降的——秒级问题可以用节拍和排队吸收，而微秒级问题不能。</p>
+<p>海洋板的角色从上午报告的”底板+配重”升级为”半封闭箱体的遮光壳”——这是本次增补最值钱的一条结构建议，因为它同时关掉了
+V4 最大的演示日风险（环境光）和观感短板。</p>
+<h2 id="局限与注意事项limitations-caveats">4.
+局限与注意事项（Limitations &amp; Caveats）</h2>
+<ul>
+<li>MobileNetV2 30–60ms
+为社区通行口径，<strong>非本装置本模型实测</strong>；裁图尺寸、量化版本、前后处理都会移动这个数字。D1
+以 <code>nn_mobilenetv2</code> 类示例实测为准。</li>
+<li>双摄并行各 60fps
+无公开实测；拉伸比计算依赖读出时间近似（按帧率上限折算），GC2093
+完整时序参数在 NDA 数据手册内。</li>
+<li>出口速度三情景是估算边界，真值取决于槽壁摩擦与刷条参数——打样后以实测替代。</li>
+<li>环境光风险的严重度依赖赛场条件，属工程判断而非已发生故障。</li>
+<li>本增补不改上午报告的推导公式与来源台账；新增来源见下。</li>
+</ul>
+<h2 id="建议recommendations修订版行动清单">5.
+建议（Recommendations，修订版行动清单）</h2>
+<p><strong>立即（10-11 ~ 10-13）</strong> 1. 报名（10-17 23:59
+截止）与第一批下单（主控+1 相机+屏+电源+舵机+一槽样件）——V4
+状态还是”待打样”，机械件（漏斗/五槽盒/滑闸）打样周期要立即启动：PP 板
+DIY 2–4 天，外协更久。 2. 采购表补两行：<strong>灰卡/色卡</strong>（从
+10-08 BOM 找回）、<strong>海洋板 18mm</strong>（侧板/顶板/底板，预算
+¥40–60）。 3. ESP32-S3 放第二批或单独小单。</p>
+<p><strong>到货后 D1（10-15 ~ 10-17）</strong> 4. nncase hello world +
+<code>nn_mobilenetv2</code> 计时（拿到本装置真实 ms/次）。 5.
+<strong>双摄并行帧率实测</strong>（≥60fps 达标；不达标降分辨率预案）。
+6. 单槽样件：出口速度实测（临时第二对光电或逐帧位移折算），目标
+≤0.3m/s；同时验证近距成像与 0.1–0.2ms 短曝光。 7. 板载 WiFi 联网冒烟（假
+telemetry 到 staging，验证与采集并发）。</p>
+<p><strong>D2–D3（10-18 ~ 10-20）</strong> 8.
+五槽盒/滑闸/刷条装配；海洋板箱体合拢；灰卡锁定曝光/白平衡流程固化。 9.
+六状态机按”采集-分类流水线+盘上中转”实现；闸门节拍按分类消化速度反推整定。
+10. 训练管线加垂直拉伸增强；人工清点样本跑 C 阶段（计数与配对）。</p>
+<p><strong>D4 彩排（10-21）</strong> 11. 装 ESP32-S3 网关跑 staging
+全链路（telemetry+心跳+断网补传）；异常则回退板载 WiFi 直连。 12.
+演示脚本定稿：“流式采集+异步分类”表述、每批小份量准实时模式、环境光干扰演练（开箱顶灯/手机闪光）。</p>
+<p><strong>赛中（10-22 ~ 10-25）</strong>：按 V4
+手册四日验证阶段与参赛主题句执行（“豆鉴
+BeanLens：面向小型烘焙店的生豆可见瑕疵初筛与证据记录”）。</p>
+<hr />
+<h2 id="bibliography增补来源">Bibliography（增补来源）</h2>
+<p>[31] CanMV-K230 上 YOLO+MQTT 嵌入式 AI 闭环实战（实测 3.2MB kmodel
+加载 1.2s、单帧推理 180–220ms 含前后处理） — CSDN，2026-09 [32] K230 KPU
+MobileNetV2 推理速度社区口径（30–60ms/次） — CSDN/嘉楠社区综合，待实测
+[33] 嘉楠官方问答：K230 Linux SDK 三路 MIPI 并行 + v4l2-drm-three-camera
+demo — kendryte.com [34] K230 SDK 版本说明：CanMV-K230 板 3
+摄（ov5647）同时工作 demo；GC2093 1080P@60fps 支持 —
+github.com/kendryte/k230_docs [35] 01Studio CanMV K230 camera
+模块文档（三路 sensor 独立采集） — wiki.01studio.cc [项目内]
+beanlens-v4-handbook.html（V401）；beanlens-gravity-v3.png/svg；beanlens-shuttle-*；上午报告及其来源台账（同目录）</p>
+<hr />
+<h2 id="方法论附录增补">方法论附录（增补）</h2>
+<p><strong>评审方式</strong>：HTML 全文提取（462
+行纯文本）逐节比对上午报告结论矩阵；新增 2 组定向检索（KPU
+实测吞吐、双摄并行帧率）；V4 几何参数（视野 120×67.5mm、出口高度
+280mm、光电 277mm、上沿 275mm）代入上午推导公式重算。</p>
+<p><strong>拉伸比重算</strong>：v_scan=0.0675m÷读出时间（60fps→16.7ms→4.04m/s；30fps→33.3ms→2.03m/s）；情景
+a 末速 v=√(2×9.8×0.0675)=1.15m/s（计入口径差取
+1.19）；拉伸=1/(1−v/v_scan)。c 情景出口速度按 280mm 近自由落体
+√(2×9.8×0.28)=2.34m/s 加视野内加速。</p>
+<p><strong>吞吐账</strong>：2300–3300 颗（350–500g÷0.15g）×2
+面×30–100ms/次 ≈ 2.3–11 分钟；需求 50 次/秒 vs MobileNetV2 口径 16–33
+次/秒。</p>
+<p><strong>红队自查</strong>：本增补最强断言是
+P3（环境光为最大演示日风险）——反证是展厅可能提供稳定柔光且相机 AE
+鲁棒；但”锁 AE+暗箱”成本极低而失效代价极高，不对称性支持建议成立。P1 若
+D1 实测 MobileNetV2 跑进 25ms（理论上 6TOPS 对 3.4M
+参数模型可行），缺口消失、节拍放宽——建议对两种结果都给出了路径。</p>
+</body>
+</html>

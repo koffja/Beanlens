@@ -1,0 +1,384 @@
+{
+  "date": "2026-10-12",
+  "timezone": "Asia/Shanghai",
+  "project": "~/Projects/Beanlens",
+  "migration_scope": "design artifacts and firmware preparation documentation only",
+  "copied_files": [
+    {
+      "path": "docs/hardware/v4.4/BeanLens-BOX-V4.4-README.txt",
+      "source": "~/Projects/Taster-Matrix/output/beanlens/BeanLens-BOX-V4.4-delivery.zip!BeanLens-BOX-V4.4-README.txt",
+      "source_sha256": "72317c44eac88fb55662fd1dbbc1af23e79e20987d94c1c2f362d047f1043551",
+      "destination_sha256": "72317c44eac88fb55662fd1dbbc1af23e79e20987d94c1c2f362d047f1043551",
+      "bytes": 3593,
+      "changes": []
+    },
+    {
+      "path": "docs/hardware/v4.4/beanlens-box-bom-v4.4.csv",
+      "source": "~/Projects/Taster-Matrix/output/beanlens/BeanLens-BOX-V4.4-delivery.zip!beanlens-box-bom-v4.4.csv",
+      "source_sha256": "8c2eb8a5103482dc143da1030ab0ba90a54bb629b696a23d60f4053222cdf32f",
+      "destination_sha256": "8c2eb8a5103482dc143da1030ab0ba90a54bb629b696a23d60f4053222cdf32f",
+      "bytes": 6187,
+      "changes": []
+    },
+    {
+      "path": "docs/hardware/v4.4/beanlens-box-bom-v4.4.json",
+      "source": "~/Projects/Taster-Matrix/output/beanlens/BeanLens-BOX-V4.4-delivery.zip!beanlens-box-bom-v4.4.json",
+      "source_sha256": "443611abbcb91a5299cc842bbb310c1281a379b9b803db2bf57268db1b9d72d8",
+      "destination_sha256": "443611abbcb91a5299cc842bbb310c1281a379b9b803db2bf57268db1b9d72d8",
+      "bytes": 10772,
+      "changes": []
+    },
+    {
+      "path": "docs/hardware/v4.4/beanlens-box-design-v4.4.json",
+      "source": "~/Projects/Taster-Matrix/output/beanlens/BeanLens-BOX-V4.4-delivery.zip!beanlens-box-design-v4.4.json",
+      "source_sha256": "303e54005487c08b8c6ccca10834150a0e2f2a7b7a6c4f97cffd6796faafd209",
+      "destination_sha256": "f293f3f7e99c8667be34640415bb97e75e1affb61ef9855d2a9cfa3f41dcc05c",
+      "bytes": 9776,
+      "changes": [
+        "Relocated handbook metadata path."
+      ]
+    },
+    {
+      "path": "docs/hardware/v4.4/beanlens-box-dimensions-v4.4.png",
+      "source": "~/Projects/Taster-Matrix/output/beanlens/BeanLens-BOX-V4.4-delivery.zip!beanlens-box-dimensions-v4.4.png",
+      "source_sha256": "32ffd32437aa28e24737b0feca4f5dbee1633e7dacf4dc352466c68a73837c1f",
+      "destination_sha256": "32ffd32437aa28e24737b0feca4f5dbee1633e7dacf4dc352466c68a73837c1f",
+      "bytes": 118399,
+      "changes": []
+    },
+    {
+      "path": "docs/hardware/v4.4/beanlens-box-dimensions-v4.4.svg",
+      "source": "~/Projects/Taster-Matrix/output/beanlens/BeanLens-BOX-V4.4-delivery.zip!beanlens-box-dimensions-v4.4.svg",
+      "source_sha256": "c6e67157f30ac4383e01aad9ca739b13eadccbc3436a6928b8dc7ebb07483cb1",
+      "destination_sha256": "c6e67157f30ac4383e01aad9ca739b13eadccbc3436a6928b8dc7ebb07483cb1",
+      "bytes": 7636,
+      "changes": []
+    },
+    {
+      "path": "docs/hardware/v4.4/beanlens-box-drawings-v4.4.pdf",
+      "source": "~/Projects/Taster-Matrix/output/beanlens/BeanLens-BOX-V4.4-delivery.zip!beanlens-box-drawings-v4.4.pdf",
+      "source_sha256": "3428efd685c7defb85a7642363b244668c49ec50d24d39fe11b6b4eb652a19cb",
+      "destination_sha256": "3428efd685c7defb85a7642363b244668c49ec50d24d39fe11b6b4eb652a19cb",
+      "bytes": 1960016,
+      "changes": []
+    },
+    {
+      "path": "docs/hardware/v4.4/beanlens-box-feeder-assembly-v4.4.png",
+      "source": "~/Projects/Taster-Matrix/output/beanlens/BeanLens-BOX-V4.4-delivery.zip!beanlens-box-feeder-assembly-v4.4.png",
+      "source_sha256": "feb4cf45c367f03c1b2157c95b8a73307061c1fd41f38cfd2bd78b491800ad8b",
+      "destination_sha256": "feb4cf45c367f03c1b2157c95b8a73307061c1fd41f38cfd2bd78b491800ad8b",
+      "bytes": 184513,
+      "changes": []
+    },
+    {
+      "path": "docs/hardware/v4.4/beanlens-box-feeder-assembly-v4.4.svg",
+      "source": "~/Projects/Taster-Matrix/output/beanlens/BeanLens-BOX-V4.4-delivery.zip!beanlens-box-feeder-assembly-v4.4.svg",
+      "source_sha256": "a29cbdd8462eff1eee1b1621490e5932da9eefc3aea7b1930efd9fd7d94e9e51",
+      "destination_sha256": "a29cbdd8462eff1eee1b1621490e5932da9eefc3aea7b1930efd9fd7d94e9e51",
+      "bytes": 8646,
+      "changes": []
+    },
+    {
+      "path": "docs/hardware/v4.4/beanlens-box-handbook-v4.4.pdf",
+      "source": "~/Projects/Taster-Matrix/output/beanlens/BeanLens-BOX-V4.4-delivery.zip!beanlens-box-handbook-v4.4.pdf",
+      "source_sha256": "c32333516777e7694925adc2417eeb23fcfd696aea21932e263d7e51e08c4791",
+      "destination_sha256": "c32333516777e7694925adc2417eeb23fcfd696aea21932e263d7e51e08c4791",
+      "bytes": 8027415,
+      "changes": []
+    },
+    {
+      "path": "docs/hardware/v4.4/beanlens-box-information-flow-v4.4.png",
+      "source": "~/Projects/Taster-Matrix/output/beanlens/BeanLens-BOX-V4.4-delivery.zip!beanlens-box-information-flow-v4.4.png",
+      "source_sha256": "ef246b3a72118e4dd417671ee068848c165d4d1c007a9322a1ad8387889dc97a",
+      "destination_sha256": "ef246b3a72118e4dd417671ee068848c165d4d1c007a9322a1ad8387889dc97a",
+      "bytes": 206577,
+      "changes": []
+    },
+    {
+      "path": "docs/hardware/v4.4/beanlens-box-information-flow-v4.4.svg",
+      "source": "~/Projects/Taster-Matrix/output/beanlens/BeanLens-BOX-V4.4-delivery.zip!beanlens-box-information-flow-v4.4.svg",
+      "source_sha256": "f40f63f9744105abdd4ceb85d20a27f8ce486c6de82c19bd54b50eb39721c0ed",
+      "destination_sha256": "f40f63f9744105abdd4ceb85d20a27f8ce486c6de82c19bd54b50eb39721c0ed",
+      "bytes": 7187,
+      "changes": []
+    },
+    {
+      "path": "docs/hardware/v4.4/beanlens-box-mount-access-v4.4.png",
+      "source": "~/Projects/Taster-Matrix/output/beanlens/BeanLens-BOX-V4.4-delivery.zip!beanlens-box-mount-access-v4.4.png",
+      "source_sha256": "46018cbe3f4f61637fc9cbaf044e4aaadf26376f581e338747ea4fed209d64e8",
+      "destination_sha256": "46018cbe3f4f61637fc9cbaf044e4aaadf26376f581e338747ea4fed209d64e8",
+      "bytes": 158718,
+      "changes": []
+    },
+    {
+      "path": "docs/hardware/v4.4/beanlens-box-mount-access-v4.4.svg",
+      "source": "~/Projects/Taster-Matrix/output/beanlens/BeanLens-BOX-V4.4-delivery.zip!beanlens-box-mount-access-v4.4.svg",
+      "source_sha256": "84c7c6f11d2be5d5601670b437156559421e043a058c1d43ade7238adf204cd5",
+      "destination_sha256": "84c7c6f11d2be5d5601670b437156559421e043a058c1d43ade7238adf204cd5",
+      "bytes": 5062,
+      "changes": []
+    },
+    {
+      "path": "docs/hardware/v4.4/beanlens-box-optics-v4.4.png",
+      "source": "~/Projects/Taster-Matrix/output/beanlens/BeanLens-BOX-V4.4-delivery.zip!beanlens-box-optics-v4.4.png",
+      "source_sha256": "c6ba8176341dc9033b9197d841b229cd8d3c8d5b3386d9255544cb2d2436618f",
+      "destination_sha256": "c6ba8176341dc9033b9197d841b229cd8d3c8d5b3386d9255544cb2d2436618f",
+      "bytes": 133006,
+      "changes": []
+    },
+    {
+      "path": "docs/hardware/v4.4/beanlens-box-optics-v4.4.svg",
+      "source": "~/Projects/Taster-Matrix/output/beanlens/BeanLens-BOX-V4.4-delivery.zip!beanlens-box-optics-v4.4.svg",
+      "source_sha256": "e670214ffa493a24443a4600534c666f8bb4aea06959f8d20dfb6cfd2ea3f5cd",
+      "destination_sha256": "e670214ffa493a24443a4600534c666f8bb4aea06959f8d20dfb6cfd2ea3f5cd",
+      "bytes": 5545,
+      "changes": []
+    },
+    {
+      "path": "docs/hardware/v4.4/beanlens-box-power-v4.4.png",
+      "source": "~/Projects/Taster-Matrix/output/beanlens/BeanLens-BOX-V4.4-delivery.zip!beanlens-box-power-v4.4.png",
+      "source_sha256": "d405e5f7bf002aedbc929ae09ecb20df3998b65094a2495b131de359ef4e4621",
+      "destination_sha256": "d405e5f7bf002aedbc929ae09ecb20df3998b65094a2495b131de359ef4e4621",
+      "bytes": 233287,
+      "changes": []
+    },
+    {
+      "path": "docs/hardware/v4.4/beanlens-box-power-v4.4.svg",
+      "source": "~/Projects/Taster-Matrix/output/beanlens/BeanLens-BOX-V4.4-delivery.zip!beanlens-box-power-v4.4.svg",
+      "source_sha256": "669bddb8d0ca62f18cc5ae834cc85b81879a65ec8dad878a0008612b88c7cf04",
+      "destination_sha256": "669bddb8d0ca62f18cc5ae834cc85b81879a65ec8dad878a0008612b88c7cf04",
+      "bytes": 6241,
+      "changes": []
+    },
+    {
+      "path": "docs/hardware/v4.4/beanlens-box-pp-template-v4.4.png",
+      "source": "~/Projects/Taster-Matrix/output/beanlens/BeanLens-BOX-V4.4-delivery.zip!beanlens-box-pp-template-v4.4.png",
+      "source_sha256": "c3d3e203392f73b5e2fe50cebf2508d1bf3db1d211f595528fa209d84454544e",
+      "destination_sha256": "c3d3e203392f73b5e2fe50cebf2508d1bf3db1d211f595528fa209d84454544e",
+      "bytes": 129622,
+      "changes": []
+    },
+    {
+      "path": "docs/hardware/v4.4/beanlens-box-pp-template-v4.4.svg",
+      "source": "~/Projects/Taster-Matrix/output/beanlens/BeanLens-BOX-V4.4-delivery.zip!beanlens-box-pp-template-v4.4.svg",
+      "source_sha256": "658346b27965ee2ff94d6c65f5c12a37e798e7791346e982d5aaa1500940d316",
+      "destination_sha256": "658346b27965ee2ff94d6c65f5c12a37e798e7791346e982d5aaa1500940d316",
+      "bytes": 5360,
+      "changes": []
+    },
+    {
+      "path": "docs/hardware/v4.4/beanlens-box-product-v4.4-prompt.txt",
+      "source": "~/Projects/Taster-Matrix/output/beanlens/BeanLens-BOX-V4.4-delivery.zip!beanlens-box-product-v4.4-prompt.txt",
+      "source_sha256": "2fa91dbcea09a5345a9fb6c124f1351122631120778a152c0ed6c64576c94fa9",
+      "destination_sha256": "2fa91dbcea09a5345a9fb6c124f1351122631120778a152c0ed6c64576c94fa9",
+      "bytes": 1863,
+      "changes": []
+    },
+    {
+      "path": "docs/hardware/v4.4/beanlens-box-product-v4.4.png",
+      "source": "~/Projects/Taster-Matrix/output/beanlens/BeanLens-BOX-V4.4-delivery.zip!beanlens-box-product-v4.4.png",
+      "source_sha256": "dc4c7777899fc496f0df925b9b128777b926848775b7b8d80ed30bbb2206aeb6",
+      "destination_sha256": "dc4c7777899fc496f0df925b9b128777b926848775b7b8d80ed30bbb2206aeb6",
+      "bytes": 1920668,
+      "changes": []
+    },
+    {
+      "path": "docs/hardware/v4.4/beanlens-box-screen-mount-v4.4.png",
+      "source": "~/Projects/Taster-Matrix/output/beanlens/BeanLens-BOX-V4.4-delivery.zip!beanlens-box-screen-mount-v4.4.png",
+      "source_sha256": "447b93b16bfb915a543c4d324a4fc0b3f9831a2175be5f9253675923fffd90e6",
+      "destination_sha256": "447b93b16bfb915a543c4d324a4fc0b3f9831a2175be5f9253675923fffd90e6",
+      "bytes": 146998,
+      "changes": []
+    },
+    {
+      "path": "docs/hardware/v4.4/beanlens-box-screen-mount-v4.4.svg",
+      "source": "~/Projects/Taster-Matrix/output/beanlens/BeanLens-BOX-V4.4-delivery.zip!beanlens-box-screen-mount-v4.4.svg",
+      "source_sha256": "a18b649f670f37c7106ef0e659dfaac13d1931f68fc6c3b56748683293bebb2e",
+      "destination_sha256": "a18b649f670f37c7106ef0e659dfaac13d1931f68fc6c3b56748683293bebb2e",
+      "bytes": 4768,
+      "changes": []
+    },
+    {
+      "path": "docs/hardware/v4.4/beanlens-box-sensor-interface-v4.4.png",
+      "source": "~/Projects/Taster-Matrix/output/beanlens/BeanLens-BOX-V4.4-delivery.zip!beanlens-box-sensor-interface-v4.4.png",
+      "source_sha256": "b2a5b4058113cbdffa0480d6a1ec59e3f1ef657e7404efb6d485409c367fe5dd",
+      "destination_sha256": "b2a5b4058113cbdffa0480d6a1ec59e3f1ef657e7404efb6d485409c367fe5dd",
+      "bytes": 172653,
+      "changes": []
+    },
+    {
+      "path": "docs/hardware/v4.4/beanlens-box-sensor-interface-v4.4.svg",
+      "source": "~/Projects/Taster-Matrix/output/beanlens/BeanLens-BOX-V4.4-delivery.zip!beanlens-box-sensor-interface-v4.4.svg",
+      "source_sha256": "595202ae5f59804c538682aea5918d223b39cda9ce004e68c1d558fd7a03ba6b",
+      "destination_sha256": "595202ae5f59804c538682aea5918d223b39cda9ce004e68c1d558fd7a03ba6b",
+      "bytes": 5008,
+      "changes": []
+    },
+    {
+      "path": "docs/hardware/v4.4/beanlens-box-sequence-v4.4.png",
+      "source": "~/Projects/Taster-Matrix/output/beanlens/BeanLens-BOX-V4.4-delivery.zip!beanlens-box-sequence-v4.4.png",
+      "source_sha256": "9d043ea6eef3648572e88e891543995571e66cdb2517df7b3b08f6fb25e26e8a",
+      "destination_sha256": "9d043ea6eef3648572e88e891543995571e66cdb2517df7b3b08f6fb25e26e8a",
+      "bytes": 118239,
+      "changes": []
+    },
+    {
+      "path": "docs/hardware/v4.4/beanlens-box-sequence-v4.4.svg",
+      "source": "~/Projects/Taster-Matrix/output/beanlens/BeanLens-BOX-V4.4-delivery.zip!beanlens-box-sequence-v4.4.svg",
+      "source_sha256": "5c8b6ca123ebcb4a5cb2a45c5bb741462d194f57f3344f13dfe778864d9e6fe5",
+      "destination_sha256": "5c8b6ca123ebcb4a5cb2a45c5bb741462d194f57f3344f13dfe778864d9e6fe5",
+      "bytes": 4236,
+      "changes": []
+    },
+    {
+      "path": "docs/hardware/v4.4/beanlens-box-validation-v4.4.json",
+      "source": "~/Projects/Taster-Matrix/output/beanlens/BeanLens-BOX-V4.4-delivery.zip!beanlens-box-validation-v4.4.json",
+      "source_sha256": "6524a309fdecd7770d17e27c331560aed572c9dbee41d8a84807d65502fc7862",
+      "destination_sha256": "6524a309fdecd7770d17e27c331560aed572c9dbee41d8a84807d65502fc7862",
+      "bytes": 2391,
+      "changes": []
+    },
+    {
+      "path": "docs/hardware/v4.4/beanlens-box-weighing-v4.4.png",
+      "source": "~/Projects/Taster-Matrix/output/beanlens/BeanLens-BOX-V4.4-delivery.zip!beanlens-box-weighing-v4.4.png",
+      "source_sha256": "8965adab23dd52d18e9813f0ededd8bdb613a960253ade79afb742075b9fce94",
+      "destination_sha256": "8965adab23dd52d18e9813f0ededd8bdb613a960253ade79afb742075b9fce94",
+      "bytes": 197526,
+      "changes": []
+    },
+    {
+      "path": "docs/hardware/v4.4/beanlens-box-weighing-v4.4.svg",
+      "source": "~/Projects/Taster-Matrix/output/beanlens/BeanLens-BOX-V4.4-delivery.zip!beanlens-box-weighing-v4.4.svg",
+      "source_sha256": "3f95fdbfefe53eacd9d80b246bc910cc7c25f7b6786976ed7b017b7ee51f12c2",
+      "destination_sha256": "3f95fdbfefe53eacd9d80b246bc910cc7c25f7b6786976ed7b017b7ee51f12c2",
+      "bytes": 5263,
+      "changes": []
+    },
+    {
+      "path": "docs/hardware/v4.4/beanlens-box-workflow-v4.4.png",
+      "source": "~/Projects/Taster-Matrix/output/beanlens/BeanLens-BOX-V4.4-delivery.zip!beanlens-box-workflow-v4.4.png",
+      "source_sha256": "bfe717b740d28096b000f28b229c3fbc84819f97d23b08bbe09efabb4223d985",
+      "destination_sha256": "bfe717b740d28096b000f28b229c3fbc84819f97d23b08bbe09efabb4223d985",
+      "bytes": 174800,
+      "changes": []
+    },
+    {
+      "path": "docs/hardware/v4.4/beanlens-box-workflow-v4.4.svg",
+      "source": "~/Projects/Taster-Matrix/output/beanlens/BeanLens-BOX-V4.4-delivery.zip!beanlens-box-workflow-v4.4.svg",
+      "source_sha256": "0e3a0f9f6b6e659948c04f312a7ff7969b56599d5dfdd3148ca32675d0c67a0b",
+      "destination_sha256": "0e3a0f9f6b6e659948c04f312a7ff7969b56599d5dfdd3148ca32675d0c67a0b",
+      "bytes": 5561,
+      "changes": []
+    },
+    {
+      "path": "docs/hardware/v4.4/beanlens-v4-handbook.html",
+      "source": "~/Projects/Taster-Matrix/output/beanlens/BeanLens-BOX-V4.4-delivery.zip!beanlens-v4-handbook.html",
+      "source_sha256": "e285c373ab4c6080a503993605a715cf28c8e040e39170a2d1fa91307c6ca448",
+      "destination_sha256": "3ff7723014211ebae863908832d2e85516e56c33a7a2dbfa4c7cdd9ff2ab9d46",
+      "bytes": 2753296,
+      "changes": [
+        "Relocated local research link; document design unchanged."
+      ]
+    },
+    {
+      "path": "docs/hardware/v4.4/sensor-reference-v4.4.html",
+      "source": "~/Projects/Taster-Matrix/output/beanlens/BeanLens-BOX-V4.4-delivery.zip!sensor-reference-v4.4.html",
+      "source_sha256": "16bdddda0823999b4de2049da2833040234604b0c5a7bc084f2114ebf06d0355",
+      "destination_sha256": "16bdddda0823999b4de2049da2833040234604b0c5a7bc084f2114ebf06d0355",
+      "bytes": 4532988,
+      "changes": []
+    },
+    {
+      "path": "docs/hardware/v4.4/BeanLens-BOX-V4.4-delivery.zip",
+      "source": "~/Projects/Taster-Matrix/output/beanlens/BeanLens-BOX-V4.4-delivery.zip",
+      "source_sha256": "a639d03397a3c8261510ba9023d95767bd9450daf89186985587e5426de0e980",
+      "destination_sha256": "a639d03397a3c8261510ba9023d95767bd9450daf89186985587e5426de0e980",
+      "bytes": 15474415,
+      "changes": []
+    },
+    {
+      "path": "docs/research/beanlens-camera-model-sampling-20261009.md",
+      "source": "~/Projects/Taster-Matrix/docs/research/beanlens-camera-model-sampling-20261009.md",
+      "source_sha256": "46f338bfd242b6a36cb6966458367a873c8cd9dae381e6b0b4ced3d9b4b9c166",
+      "destination_sha256": "46f338bfd242b6a36cb6966458367a873c8cd9dae381e6b0b4ced3d9b4b9c166",
+      "bytes": 11635,
+      "changes": []
+    },
+    {
+      "path": "docs/research/beanlens-local-training-primary-sources-20261009.md",
+      "source": "~/Projects/Taster-Matrix/docs/research/beanlens-local-training-primary-sources-20261009.md",
+      "source_sha256": "425b19f03e2a4844b39042ef814a7fc723307894ae805ba1fa2184a40f5b8c46",
+      "destination_sha256": "425b19f03e2a4844b39042ef814a7fc723307894ae805ba1fa2184a40f5b8c46",
+      "bytes": 11378,
+      "changes": []
+    },
+    {
+      "path": "docs/research/coffee-industry-hardware-primary-sources-20261008.md",
+      "source": "~/Projects/Taster-Matrix/docs/research/coffee-industry-hardware-primary-sources-20261008.md",
+      "source_sha256": "d54086a34c0af1c67f50d126fcac28fac1e748a5bd8bf051de7b9d7ca58eac24",
+      "destination_sha256": "d54086a34c0af1c67f50d126fcac28fac1e748a5bd8bf051de7b9d7ca58eac24",
+      "bytes": 12866,
+      "changes": []
+    },
+    {
+      "path": "docs/research/wtcc-2026-beanlens-green-defect-scanner.md",
+      "source": "~/Projects/Taster-Matrix/docs/research/wtcc-2026-beanlens-green-defect-scanner.md",
+      "source_sha256": "e049dbb4db97d91889a052b1b5da94ad97dd9f29f45cf9dfe3eaf604202ea584",
+      "destination_sha256": "e049dbb4db97d91889a052b1b5da94ad97dd9f29f45cf9dfe3eaf604202ea584",
+      "bytes": 16551,
+      "changes": []
+    },
+    {
+      "path": "docs/research/wtcc-2026-tastermatrix-ai-hardware-strategy.md",
+      "source": "~/Projects/Taster-Matrix/docs/research/wtcc-2026-tastermatrix-ai-hardware-strategy.md",
+      "source_sha256": "991733fe8fe369f250ae180aa095c60d9ac8ca338673a10c36dc15df0deddb11",
+      "destination_sha256": "991733fe8fe369f250ae180aa095c60d9ac8ca338673a10c36dc15df0deddb11",
+      "bytes": 19643,
+      "changes": []
+    },
+    {
+      "path": "docs/research/BeanLens_Research_20261011.html",
+      "source": "~/Documents/BeanLens_Design_Research_20261011/BeanLens_Research_20261011.html",
+      "source_sha256": "0d71cf8de2649e29adf38ce75158932bd47f80708d0374b66a057ee626b13cbe",
+      "destination_sha256": "0d71cf8de2649e29adf38ce75158932bd47f80708d0374b66a057ee626b13cbe",
+      "bytes": 67091,
+      "changes": []
+    },
+    {
+      "path": "docs/research/BeanLens_V4_Handbook_Review_20261011.html",
+      "source": "~/Documents/BeanLens_Hardware_Review_20261011/BeanLens_V4_Handbook_Review_20261011.html",
+      "source_sha256": "abdc59ab645630bb029e1d7881db533a3f80df0940465d445c54dc4c5915a78b",
+      "destination_sha256": "abdc59ab645630bb029e1d7881db533a3f80df0940465d445c54dc4c5915a78b",
+      "bytes": 28928,
+      "changes": []
+    }
+  ],
+  "checks": {
+    "copied_sha256_verified": true,
+    "original_bundle_zip_integrity": true,
+    "migrated_handbook_local_links_missing": [],
+    "hardware_baseline_json_valid": true,
+    "new_document_links_missing": [],
+    "planned_gpio_unique": true,
+    "planned_gpio_excludes_documented_board_functions": true
+  },
+  "preserved_existing_scopes": [
+    "datasets/",
+    "runs/",
+    "scripts/",
+    ".venv/",
+    "root model and archive files",
+    "docs/vendor distribution"
+  ],
+  "firmware_implemented": false,
+  "hardware_tested": false,
+  "git_initialized": false,
+  "knowledge_graph": {
+    "project": "Beanlens",
+    "mode": "full",
+    "index_created": true,
+    "skipped_files_reported": 0,
+    "partial_parse_files_reported": 0,
+    "note": "Current rules/docs and existing training scripts; datasets, runs, binaries, virtual environment and vendor distribution intentionally excluded."
+  }
+}

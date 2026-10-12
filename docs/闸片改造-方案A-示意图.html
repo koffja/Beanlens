@@ -1,0 +1,644 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>滑闸改造 · 方案A（GLM 建议）示意图</title>
+<script>
+(function () {
+  var saved = localStorage.getItem('theme');
+  var dark = saved ? saved === 'dark' : matchMedia('(prefers-color-scheme: dark)').matches;
+  document.documentElement.classList.toggle('dark', dark);
+})();
+</script>
+<style>
+  :root {
+    --bg:#FAF9F5; --surface:#FFFFFF; --surface2:#F0EEE6;
+    --ink:#141413; --body:#3D3D3A; --muted:#87867F;
+    --line:#D1CFC5; --line-soft:#E6E3DA;
+    --clay:#D97757; --clay-soft:rgba(217,119,87,.12);
+    --olive:#788C5D; --olive-soft:rgba(120,140,93,.16);
+    --steel:#5B7E96; --steel-soft:rgba(91,126,150,.13);
+    --gold:#C9A45C;  --gold-soft:rgba(201,164,92,.18);
+    --sans: system-ui, -apple-system, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+    --mono: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+  }
+  html.dark {
+    --bg:#141413; --surface:#1F1F1D; --surface2:#2A2A28;
+    --ink:#FAF9F5; --body:#D1CFC5; --muted:#8E8D86;
+    --line:#3D3D3A; --line-soft:#2A2A28;
+    --clay:#E48A6E; --clay-soft:rgba(228,138,110,.16);
+    --olive:#9DB07C; --olive-soft:rgba(157,176,124,.18);
+    --steel:#7FA3BC; --steel-soft:rgba(127,163,188,.16);
+    --gold:#D4B36F;  --gold-soft:rgba(212,179,111,.20);
+  }
+  * { box-sizing:border-box; margin:0; padding:0; }
+  html, body { height:100%; }
+  body {
+    background:var(--bg); color:var(--body); font-family:var(--sans);
+    -webkit-font-smoothing:antialiased; display:flex; flex-direction:column; overflow:hidden;
+  }
+  .bar { display:flex; align-items:center; gap:14px; flex-wrap:wrap;
+    padding:11px 20px; border-bottom:1px solid var(--line-soft); flex:none; }
+  .bar h1 { font-size:18px; font-weight:650; color:var(--ink); }
+  .bar .sub { font-family:var(--mono); font-size:10.5px; color:var(--muted); letter-spacing:.06em; }
+  .spacer { flex:1; }
+  .hint { font-family:var(--mono); font-size:10.5px; color:var(--muted); }
+  #themeToggle, #zoomFit {
+    font-family:var(--mono); font-size:10.5px; letter-spacing:.08em;
+    padding:5px 10px; border:1px solid var(--line); border-radius:6px;
+    background:transparent; color:var(--muted); cursor:pointer;
+  }
+  #themeToggle { text-transform:uppercase; }
+  #themeToggle:hover, #zoomFit:hover { color:var(--ink); border-color:var(--muted); }
+
+  .stage { flex:1; position:relative; min-height:0; cursor:grab; }
+  .stage.dragging { cursor:grabbing; }
+  .stage svg { position:absolute; inset:0; width:100%; height:100%; display:block; }
+
+  .card { position:absolute; background:var(--surface); border:1px solid var(--line);
+    border-radius:12px; padding:14px 16px; box-shadow:0 8px 28px rgba(0,0,0,.14); }
+  .card[hidden] { display:none; }
+  #detail { right:16px; bottom:16px; width:370px; }
+  #detail h3 { font-size:16px; font-weight:650; color:var(--ink); margin-bottom:2px; padding-right:26px; }
+  #detail .meta { font-family:var(--mono); font-size:10.5px; color:var(--muted); margin-bottom:9px; }
+  #detail p { font-size:12.8px; line-height:1.62; }
+  #detail p b { color:var(--ink); }
+  #detail .x { position:absolute; top:10px; right:10px; width:24px; height:24px; border-radius:6px;
+    border:1px solid var(--line); background:transparent; color:var(--muted); cursor:pointer;
+    font-size:13px; line-height:1; display:flex; align-items:center; justify-content:center; }
+  #detail .x:hover { color:var(--ink); border-color:var(--muted); }
+  .src { position:absolute; left:16px; bottom:12px; font-family:var(--mono);
+    font-size:10px; color:var(--muted); opacity:.75; }
+
+  .panel  { fill:var(--surface); stroke:var(--line); stroke-width:1.5; }
+  .ptitle { font-size:17px; font-weight:650; fill:var(--ink); }
+  .psub   { font-size:11.5px; fill:var(--muted); }
+  .lbl    { font-size:11.5px; fill:var(--body); }
+  .mono   { font-family:var(--mono); font-size:10.5px; fill:var(--muted); }
+  .mono-i { font-family:var(--mono); font-size:10.5px; fill:var(--ink); }
+  .tiny   { font-size:10.5px; fill:var(--muted); }
+  .lead-c { stroke:var(--clay); stroke-width:1; fill:none; }
+  .lead-o { stroke:var(--olive); stroke-width:1; fill:none; }
+  .gate   { fill:var(--surface2); stroke:var(--line); stroke-width:1.6; }
+  .wall   { fill:url(#hatch); stroke:var(--line); stroke-width:1.6; }
+  .shaft  { fill:var(--steel-soft); stroke:var(--steel); stroke-width:1.8; }
+  .slider { fill:var(--olive-soft); stroke:var(--olive); stroke-width:2; }
+  .spine  { fill:var(--steel-soft); stroke:var(--steel); stroke-width:1.8; }
+  .servo  { fill:var(--steel-soft); stroke:var(--steel); stroke-width:2; }
+  .limit  { fill:var(--gold-soft); stroke:var(--gold); stroke-width:1.8; }
+  .refline{ fill:none; stroke:var(--muted); stroke-width:1.3; stroke-dasharray:6 5; }
+  .cone   { fill:var(--clay-soft); stroke:var(--clay); stroke-width:1.4; stroke-dasharray:7 5; }
+  .rod    { stroke:var(--ink); stroke-width:3.2; stroke-linecap:round; fill:none; }
+  .ball   { fill:var(--ink); stroke:var(--bg); stroke-width:2; }
+
+  .badge { cursor:pointer; }
+  .badge circle { stroke:var(--surface); stroke-width:2.5; }
+  .badge text { font-family:var(--mono); font-size:12px; font-weight:700;
+    fill:var(--bg); text-anchor:middle; dominant-baseline:central; }
+  .badge.c circle { fill:var(--clay); }
+  .badge.o circle { fill:var(--olive); }
+  .badge:hover circle { stroke:var(--ink); }
+
+  .rowa { fill:var(--clay); } .rowb { fill:var(--olive); }
+  .th   { font-size:11.5px; font-weight:650; fill:var(--ink); }
+  .td   { font-size:11.5px; fill:var(--body); }
+  .tdm  { font-family:var(--mono); font-size:11px; fill:var(--body); }
+  .zebra{ fill:var(--surface2); opacity:.55; }
+</style>
+</head>
+<body>
+
+<div class="bar">
+  <div>
+    <h1>滑闸改造 · 方案 A</h1>
+    <div class="sub">MG996R 不换 · 只改驱动结构与限位位置</div>
+  </div>
+  <div class="spacer"></div>
+  <div class="hint">滚轮缩放 · 拖拽平移 · 点圆点看解释</div>
+  <button id="zoomFit">1:1</button>
+  <button id="themeToggle">Theme</button>
+</div>
+
+<div class="stage" id="stage">
+<svg id="dgm" viewBox="0 0 1840 1620" preserveAspectRatio="xMidYMid meet" role="img" aria-label="滑闸改造方案A：现状 v4.4 与方案A 的俯视、侧视对照及零件清单">
+  <defs>
+    <pattern id="hatch" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <rect width="7" height="7" fill="var(--surface2)"/>
+      <line x1="0" y1="0" x2="0" y2="7" stroke="var(--line)" stroke-width="1.4"/>
+    </pattern>
+    <marker id="ah-ink"   viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="var(--ink)"/></marker>
+    <marker id="ah-clay"  viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="var(--clay)"/></marker>
+    <marker id="ah-olive" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="var(--olive)"/></marker>
+    <marker id="ah-mut"   viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="var(--muted)"/></marker>
+    <marker id="ah-open"  viewBox="0 0 10 10" refX="4" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="none"/></marker>
+  </defs>
+
+<g id="svg-content">
+
+<!-- ═══════════════ ① 俯视 · 现状 v4.4 ═══════════════ -->
+<rect class="panel" x="40" y="40" width="870" height="632" rx="14"/>
+<text class="ptitle" x="66" y="76">① 现状 v4.4 · 单端推拉 · 无中间导向</text>
+<text class="psub"   x="66" y="98">俯视。虚线＝没受力时的形状，实线＝推一下之后的实际形状（形变已夸张放大）。</text>
+
+<g transform="translate(120,196)">
+  <rect class="wall" x="-26" y="-46" width="492" height="30" rx="3"/>
+  <text class="mono" x="-26" y="-58">五槽盒 后壁（竖直面，俯视成一条带）</text>
+
+  <rect class="refline" x="0" y="20" width="440" height="180" rx="3"/>
+
+  <!-- 导槽：只夹住两条边 -->
+  <g fill="none" stroke="var(--line)" stroke-width="1.5">
+    <rect x="-22" y="6"  width="56" height="11" rx="3"/>
+    <rect x="-22" y="30" width="56" height="11" rx="3"/>
+    <rect x="406" y="-6" width="56" height="11" rx="3"/>
+    <rect x="406" y="18" width="56" height="11" rx="3"/>
+  </g>
+
+  <!-- 弯拱的闸片 -->
+  <path d="M 0,20 C 110,80 300,92 440,4 L 440,11 C 300,99 110,87 0,27 Z"
+        fill="var(--clay-soft)" stroke="var(--clay)" stroke-width="2"/>
+  <path d="M 110,50 Q 220,140 330,46" fill="none" stroke="var(--clay)"
+        stroke-width="1.4" stroke-dasharray="4 4" marker-end="url(#ah-clay)"/>
+  <text class="tiny" x="220" y="120" text-anchor="middle" fill="var(--clay)">先弯拱</text>
+
+  <!-- 远端盲点 -->
+  <rect x="-6" y="20" width="64" height="180" rx="6" fill="var(--clay-soft)"
+        stroke="var(--clay)" stroke-width="1.4" stroke-dasharray="6 4"/>
+  <text class="lbl" x="26" y="104" text-anchor="middle" fill="var(--clay)">远端</text>
+  <text class="lbl" x="26" y="120" text-anchor="middle" fill="var(--clay)">看不见</text>
+
+  <!-- MG996R + 球头连杆（单端） -->
+  <rect class="servo" x="490" y="-120" width="130" height="100" rx="10"/>
+  <text class="mono-i" x="504" y="-92">MG996R</text>
+  <text class="mono"  x="504" y="-76">固定在后支架</text>
+  <circle cx="555" cy="-70" r="5" fill="var(--steel)"/>
+  <line x1="555" y1="-70" x2="500" y2="-10" stroke="var(--ink)" stroke-width="4.5" stroke-linecap="round"/>
+  <path class="rod" d="M 500,-10 L 442,8"/>
+  <circle class="ball" cx="440" cy="8" r="7"/>
+
+  <!-- 两个限位都在驱动端 -->
+  <g class="limit">
+    <rect x="316" y="264" width="52" height="40" rx="5"/>
+    <rect x="330" y="244" width="24" height="20" rx="3"/>
+    <rect x="316" y="206" width="52" height="40" rx="5"/>
+    <rect x="330" y="186" width="24" height="20" rx="3"/>
+  </g>
+  <text class="mono-i" x="308" y="288" text-anchor="end">S1 开到位</text>
+  <text class="mono-i" x="308" y="230" text-anchor="end">S2 关到位</text>
+  <path d="M 378,204 L 452,204 L 452,306 L 378,306" fill="none" stroke="var(--clay)" stroke-width="1.3"/>
+  <text class="lbl" x="460" y="248" fill="var(--clay)">两个限位都在驱动端</text>
+  <text class="tiny" x="460" y="264">系统看不见远端开没开</text>
+
+  <!-- 行程 -->
+  <path d="M 700,210 L 700,268" stroke="var(--muted)" stroke-width="1.4" fill="none"
+        marker-start="url(#ah-open)" marker-end="url(#ah-open)"/>
+  <text class="mono" x="708" y="243">行程 15</text>
+
+  <!-- 右栏标注 -->
+  <text class="lbl" x="452" y="52">球头连杆 · 单端</text>
+  <text class="lbl" x="452" y="86">0.8~1.0mm POM 悬跨 110mm</text>
+  <text class="tiny" x="452" y="102">中间没有任何支撑</text>
+  <text class="lbl" x="452" y="156">导槽只夹住两条边</text>
+  <text class="tiny" x="452" y="172">中间那一段是自由的</text>
+  <path class="lead-c" d="M 448,150 L 438,46"/>
+  <text class="lbl" x="452" y="330" fill="var(--clay)">近舵机的槽先开</text>
+  <text class="tiny" x="452" y="346">远端几乎没动</text>
+
+  <!-- 瞬时开度 -->
+  <line x1="0" y1="300" x2="440" y2="300" stroke="var(--line)" stroke-width="1"/>
+  <text class="mono" x="0" y="316">行程 70% 时的瞬时开度 →</text>
+  <g class="rowa">
+    <rect x="14"  y="358" width="60" height="2"/>
+    <rect x="102" y="342" width="60" height="18"/>
+    <rect x="190" y="330" width="60" height="30"/>
+    <rect x="278" y="320" width="60" height="40"/>
+    <rect x="366" y="318" width="60" height="42"/>
+  </g>
+  <line x1="0" y1="360" x2="440" y2="360" stroke="var(--line)" stroke-width="1.3"/>
+  <text class="mono" x="44"  y="378" text-anchor="middle">槽1</text>
+  <text class="mono" x="132" y="378" text-anchor="middle">槽2</text>
+  <text class="mono" x="220" y="378" text-anchor="middle">槽3</text>
+  <text class="mono" x="308" y="378" text-anchor="middle">槽4</text>
+  <text class="mono" x="396" y="378" text-anchor="middle">槽5</text>
+</g>
+
+<g class="badge c" data-k="a1" transform="translate(420,210)"><circle r="14"/><text>1</text></g>
+<path class="lead-c" d="M 424,226 L 434,252"/>
+<g class="badge c" data-k="a2" transform="translate(594,226)"><circle r="14"/><text>2</text></g>
+<g class="badge c" data-k="a3" transform="translate(510,464)"><circle r="14"/><text>3</text></g>
+<g class="badge c" data-k="a4" transform="translate(104,230)"><circle r="14"/><text>4</text></g>
+
+<g transform="translate(66,640)">
+  <circle cx="6" cy="-4" r="4" fill="var(--clay)"/>
+  <text class="lbl" x="20" y="0">根子不在舵机：1mm 薄片悬跨 110mm，单端一推就先弯拱再偏航，远端被摩擦拖住。</text>
+</g>
+
+<!-- ═══════════════ ② 俯视 · 方案 A ═══════════════ -->
+<rect class="panel" x="930" y="40" width="870" height="632" rx="14"/>
+<text class="ptitle" x="956" y="76">② 方案 A · 骨架 + 双光轴滑块 + 中心连杆 + 远端限位</text>
+<text class="psub"   x="956" y="98">同一比例、同一视角，方便和左边逐点对照。元件不换，改的是「怎么驱动、怎么约束、在哪测」。</text>
+
+<g transform="translate(1010,196)">
+  <rect class="wall" x="-26" y="-46" width="492" height="30" rx="3"/>
+  <text class="mono" x="-26" y="-58">五槽盒 后壁</text>
+
+  <!-- 光轴 ×2（悬臂锁在后壁） -->
+  <g class="shaft">
+    <rect x="36"  y="-30" width="33" height="16" rx="4"/>
+    <rect x="46"  y="-16" width="13" height="186" rx="6.5"/>
+    <rect x="371" y="-30" width="33" height="16" rx="4"/>
+    <rect x="381" y="-16" width="13" height="186" rx="6.5"/>
+  </g>
+  <circle cx="52.5"  cy="-22" r="3.4" fill="var(--steel)"/>
+  <circle cx="387.5" cy="-22" r="3.4" fill="var(--steel)"/>
+
+  <!-- 闸片 -->
+  <rect class="gate" x="0" y="20" width="440" height="180" rx="3"/>
+  <g fill="var(--surface)" stroke="var(--line)" stroke-width="1" opacity=".7">
+    <rect x="14"  y="20" width="60" height="180"/>
+    <rect x="102" y="20" width="60" height="180"/>
+    <rect x="190" y="20" width="60" height="180"/>
+    <rect x="278" y="20" width="60" height="180"/>
+    <rect x="366" y="20" width="60" height="180"/>
+  </g>
+
+  <!-- 骨架 -->
+  <rect class="spine" x="0" y="13" width="440" height="15" rx="3"/>
+
+  <!-- 滑块 ×2 -->
+  <g class="slider">
+    <rect x="24"  y="48" width="57" height="88" rx="8"/>
+    <rect x="359" y="48" width="57" height="88" rx="8"/>
+  </g>
+  <g fill="var(--bg)" opacity=".9">
+    <circle cx="52.5"  cy="52"  r="7"/><circle cx="52.5"  cy="132" r="7"/>
+    <circle cx="387.5" cy="52"  r="7"/><circle cx="387.5" cy="132" r="7"/>
+  </g>
+
+  <!-- MG996R + 连杆改接后缘中心 -->
+  <rect class="servo" x="490" y="-120" width="130" height="100" rx="10"/>
+  <text class="mono-i" x="504" y="-94">MG996R</text>
+  <text class="mono"  x="504" y="-78">位置基本不动</text>
+  <text class="mono"  x="504" y="-64">仍在视锥外</text>
+  <circle cx="555" cy="-70" r="5" fill="var(--steel)"/>
+  <line x1="555" y1="-70" x2="500" y2="-10" stroke="var(--ink)" stroke-width="4.5" stroke-linecap="round"/>
+  <path class="rod" d="M 500,-10 L 222,20"/>
+  <circle class="ball" cx="220" cy="21" r="7"/>
+  <text class="tiny" x="238" y="46" fill="var(--olive)">接后缘中心</text>
+  <path class="lead-o" d="M 222,72 L 221,34"/>
+
+  <!-- 限位：开到位留驱动端，关到位移到远端 -->
+  <g class="limit">
+    <rect x="316" y="264" width="52" height="40" rx="5"/>
+    <rect x="330" y="244" width="24" height="20" rx="3"/>
+    <rect x="72"  y="206" width="52" height="40" rx="5"/>
+    <rect x="86"  y="186" width="24" height="20" rx="3"/>
+  </g>
+  <rect x="316" y="206" width="52" height="40" rx="5" fill="none"
+        stroke="var(--muted)" stroke-width="1.3" stroke-dasharray="5 4"/>
+  <text class="mono-i" x="308" y="288" text-anchor="end">S1 开到位</text>
+  <text class="mono-i" x="134" y="230" fill="var(--olive)">S2 关到位（移到远端）</text>
+  <text class="tiny"   x="376" y="230">↑ 原来在这个位置</text>
+
+  <!-- 行程 -->
+  <path d="M 700,210 L 700,268" stroke="var(--muted)" stroke-width="1.4" fill="none"
+        marker-start="url(#ah-open)" marker-end="url(#ah-open)"/>
+  <text class="mono" x="708" y="243">行程 15</text>
+
+  <!-- 右栏标注 -->
+  <text class="lbl"  x="452" y="30"  fill="var(--olive)">2mm 铝 / 玻纤板骨架</text>
+  <text class="tiny" x="452" y="46">沿 110mm 长边贴在后缘</text>
+  <text class="lbl"  x="452" y="110" fill="var(--olive)">3D 打印滑块 ×2</text>
+  <text class="tiny" x="452" y="126">孔 Ø3.05，间隙 0.05~0.1</text>
+  <text class="lbl"  x="452" y="190" fill="var(--olive)">Ø3 光轴 ×2</text>
+  <text class="tiny" x="452" y="206">根部螺母锁在后壁上</text>
+  <text class="lbl"  x="452" y="330" fill="var(--olive)">五槽同步开闭</text>
+  <text class="tiny" x="452" y="346">物理上不可能再斜</text>
+  <path class="lead-o" d="M 300,22 L 446,26"/>
+  <path class="lead-o" d="M 418,92 L 446,106"/>
+  <path class="lead-o" d="M 396,150 L 446,186"/>
+
+  <!-- 瞬时开度 -->
+  <line x1="0" y1="300" x2="440" y2="300" stroke="var(--line)" stroke-width="1"/>
+  <text class="mono" x="0" y="316">行程 70% 时的瞬时开度 →</text>
+  <g class="rowb">
+    <rect x="14"  y="318" width="60" height="42"/>
+    <rect x="102" y="318" width="60" height="42"/>
+    <rect x="190" y="318" width="60" height="42"/>
+    <rect x="278" y="318" width="60" height="42"/>
+    <rect x="366" y="318" width="60" height="42"/>
+  </g>
+  <line x1="0" y1="360" x2="440" y2="360" stroke="var(--line)" stroke-width="1.3"/>
+  <text class="mono" x="44"  y="378" text-anchor="middle">槽1</text>
+  <text class="mono" x="132" y="378" text-anchor="middle">槽2</text>
+  <text class="mono" x="220" y="378" text-anchor="middle">槽3</text>
+  <text class="mono" x="308" y="378" text-anchor="middle">槽4</text>
+  <text class="mono" x="396" y="378" text-anchor="middle">槽5</text>
+</g>
+
+<g class="badge o" data-k="b1" transform="translate(1130,216)"><circle r="14"/><text>1</text></g>
+<g class="badge o" data-k="b2" transform="translate(1062,288)"><circle r="14"/><text>2</text></g>
+<g class="badge o" data-k="b3" transform="translate(1232,282)"><circle r="14"/><text>3</text></g>
+<g class="badge o" data-k="b4" transform="translate(1108,422)"><circle r="14"/><text>4</text></g>
+
+<g transform="translate(956,640)">
+  <circle cx="6" cy="-4" r="4" fill="var(--olive)"/>
+  <text class="lbl" x="20" y="0">四项都不换主元件：骨架治「弯」、双光轴治「斜」、中心连杆治「扭」、远端限位治「看不见」。</text>
+</g>
+
+<!-- ═══════════════ ③ 侧视 · 怎么装 ═══════════════ -->
+<rect class="panel" x="40" y="702" width="870" height="428" rx="14"/>
+<text class="ptitle" x="66" y="738">③ 侧视 · 光轴和滑块具体怎么装</text>
+<text class="psub"   x="66" y="760">左＝后，右＝前。位置关系示意，孔位须按舵盘与行程实测。</text>
+
+<g transform="translate(80,826)">
+  <path class="cone" d="M 590,250 L 330,30 L 660,30 Z" opacity=".7"/>
+  <text class="mono" x="600" y="46" fill="var(--clay)">相机视锥</text>
+
+  <rect class="wall" x="90" y="34" width="24" height="176" rx="3"/>
+  <text class="mono" x="84"  y="26"  text-anchor="end">五槽盒后壁</text>
+  <text class="mono" x="84"  y="224" text-anchor="end">z ↓</text>
+
+  <rect class="shaft" x="110" y="127" width="26" height="29" rx="5"/>
+  <rect class="shaft" x="114" y="136" width="330" height="11" rx="5.5"/>
+  <circle cx="102" cy="126" r="3.4" fill="var(--steel)"/>
+
+  <rect class="slider" x="246" y="120" width="104" height="44" rx="8"/>
+  <line x1="246" y1="142" x2="350" y2="142" stroke="var(--olive)" stroke-width="2"/>
+
+  <rect class="spine" x="226" y="164" width="176" height="11" rx="3"/>
+  <rect class="gate"  x="226" y="175" width="176" height="6"  rx="2"/>
+
+  <g fill="none" stroke="var(--line)" stroke-width="1.5">
+    <rect x="402" y="159" width="17" height="7" rx="2"/>
+    <rect x="402" y="178" width="17" height="7" rx="2"/>
+  </g>
+
+  <rect class="servo" x="136" y="40" width="104" height="70" rx="9"/>
+  <text class="mono-i" x="150" y="66">MG996R</text>
+  <text class="mono"  x="150" y="82">固定在后支架</text>
+  <circle cx="198" cy="98" r="5" fill="var(--steel)"/>
+  <line x1="198" y1="98" x2="224" y2="128" stroke="var(--ink)" stroke-width="4.5" stroke-linecap="round"/>
+  <path class="rod" d="M 224,128 L 232,161"/>
+  <circle class="ball" cx="232" cy="163" r="6"/>
+
+  <text class="mono" x="424" y="96" fill="var(--olive)">3D 打印滑块 · 骑在光轴上</text>
+  <path class="lead-o" d="M 418,100 L 352,108"/>
+  <text class="lbl"  x="452" y="146" fill="var(--olive)">Ø3 光轴 · 根部螺母锁死</text>
+  <text class="lbl"  x="220" y="174" text-anchor="end">骨架 2mm</text>
+  <text class="tiny" x="220" y="190" text-anchor="end">闸片 110×45×0.8~1.0 POM</text>
+  <text class="tiny" x="426" y="214">原导槽保留（防转 + 承剪）</text>
+
+  <path d="M 256,238 L 316,238" stroke="var(--muted)" stroke-width="1.4" fill="none"
+        marker-start="url(#ah-open)" marker-end="url(#ah-open)"/>
+  <text class="mono" x="286" y="256" text-anchor="middle">行程 15</text>
+</g>
+
+<g transform="translate(66,1108)">
+  <text class="lbl" x="0" y="0">要点：光轴只受轴向力，滑块把「弯拱力矩」变成了「纯平移」—— 这是整套改动的力学核心。</text>
+</g>
+
+<!-- ═══════════════ ④ 自由度对照 ═══════════════ -->
+<rect class="panel" x="930" y="702" width="870" height="428" rx="14"/>
+<text class="ptitle" x="956" y="738">④ 为什么「改驱动结构」比「换舵机」便宜</text>
+<text class="psub"   x="956" y="760">问题不在扭矩够不够，而在闸片在平面内有 3 个自由度没人管。</text>
+
+<g transform="translate(980,840)">
+  <rect x="0" y="0" width="380" height="176" rx="10" fill="var(--clay-soft)"
+        stroke="var(--clay)" stroke-width="1.4" stroke-dasharray="6 4"/>
+  <text class="mono" x="16" y="26" fill="var(--clay)">现状 · 平面内 3 个自由度</text>
+  <rect x="120" y="70" width="150" height="46" rx="4" fill="var(--surface)" stroke="var(--clay)" stroke-width="2"/>
+  <text class="mono-i" x="195" y="98" text-anchor="middle">闸片</text>
+  <path d="M 100,93 L 54,93" stroke="var(--clay)" stroke-width="1.8" marker-start="url(#ah-open)" marker-end="url(#ah-open)"/>
+  <text class="mono" x="20" y="119" fill="var(--clay)">↔ X</text>
+  <path d="M 195,58 L 195,38" stroke="var(--clay)" stroke-width="1.8" marker-start="url(#ah-open)" marker-end="url(#ah-open)"/>
+  <text class="mono" x="207" y="42" fill="var(--clay)">↕ Y</text>
+  <ellipse cx="195" cy="136" rx="72" ry="15" fill="none" stroke="var(--clay)"
+           stroke-width="1.6" stroke-dasharray="5 4" marker-end="url(#ah-clay)"/>
+  <text class="mono" x="278" y="142" fill="var(--clay)">⟳ 偏航</text>
+  <text class="tiny" x="16" y="170">三向都不受限 → 力来了，它就往最省力的方向变形</text>
+</g>
+
+<g transform="translate(1394,840)">
+  <rect x="0" y="0" width="380" height="176" rx="10" fill="var(--olive-soft)"
+        stroke="var(--olive)" stroke-width="1.4"/>
+  <text class="mono" x="16" y="26" fill="var(--olive)">方案A · 只剩 1 个自由度</text>
+  <rect x="120" y="70" width="150" height="46" rx="4" fill="var(--surface)" stroke="var(--olive)" stroke-width="2"/>
+  <rect class="shaft"  x="152" y="54"  width="86" height="9" rx="4.5"/>
+  <rect class="shaft"  x="152" y="126" width="86" height="9" rx="4.5"/>
+  <rect class="slider" x="140" y="58"  width="32" height="72" rx="6"/>
+  <rect class="slider" x="218" y="58"  width="32" height="72" rx="6"/>
+  <text class="mono-i" x="195" y="98" text-anchor="middle">闸片</text>
+  <path d="M 195,46 L 195,30" stroke="var(--olive)" stroke-width="2" marker-end="url(#ah-olive)"/>
+  <text class="mono" x="207" y="34" fill="var(--olive)">↕ Y（唯一）</text>
+  <text class="mono" x="22"  y="100" fill="var(--muted)">↔ X ✕</text>
+  <text class="mono" x="290" y="100" fill="var(--muted)">⟳ ✕</text>
+  <text class="tiny" x="16" y="164">两滑块 + 两根平行轴 → 想斜都斜不了，这是几何决定的，不是靠调参</text>
+</g>
+
+<g transform="translate(956,1046)">
+  <rect x="0" y="0" width="818" height="64" rx="10" fill="var(--surface2)" opacity=".6"/>
+  <text class="mono" x="16" y="24">因果链</text>
+  <text class="lbl"   x="88"  y="24">悬跨 110mm 无中间支撑</text>
+  <text class="lbl-i" x="252" y="24">→</text>
+  <text class="lbl"   x="272" y="24">弯拱</text>
+  <text class="lbl-i" x="326" y="24">→</text>
+  <text class="lbl"   x="346" y="24">力臂 220mm 的单端推力</text>
+  <text class="lbl-i" x="516" y="24">→</text>
+  <text class="lbl"   x="536" y="24">偏航</text>
+  <text class="lbl-i" x="592" y="24">→</text>
+  <text class="lbl"   x="612" y="24">近端先开</text>
+  <text class="tiny"  x="16"  y="48">对应关系：骨架打断第 1 环 · 双光轴打断第 2 环 · 中心连杆打断第 3 环 · 远端限位负责发现「其实没全开」。</text>
+</g>
+
+<!-- ═══════════════ ⑤ 零件清单 / 装配顺序 / 注意事项 ═══════════════ -->
+<rect class="panel" x="40" y="1160" width="1760" height="420" rx="14"/>
+<text class="ptitle" x="66"  y="1196">⑤ 零件清单 · 装配顺序 · 注意事项</text>
+<text class="psub"   x="66"  y="1216">预算按常见零售价估；打印件按普通 PLA/PETG、0.2mm 层高算。</text>
+
+<g transform="translate(66,1248)">
+  <text class="mono" x="0" y="0" fill="var(--ink)">零件清单</text>
+  <rect x="0" y="14" width="560" height="30" rx="4" fill="var(--surface2)"/>
+  <text class="th" x="12"  y="34">件名</text>
+  <text class="th" x="92"  y="34">规格</text>
+  <text class="th" x="446" y="34">数量</text>
+  <text class="th" x="504" y="34">估价</text>
+  <rect class="zebra" x="0" y="44" width="560" height="30"/>
+  <text class="td"  x="12"  y="64">骨架</text>
+  <text class="td"  x="92"  y="64">2mm 铝板 / 玻纤板，切 110×20</text>
+  <text class="tdm" x="450" y="64" text-anchor="end">1</text>
+  <text class="tdm" x="546" y="64" text-anchor="end">¥3~6</text>
+  <text class="td"  x="12"  y="94">光轴</text>
+  <text class="td"  x="92"  y="94">Ø3×150 硬光轴（或 M3 丝杆 + 轴承座）</text>
+  <text class="tdm" x="450" y="94" text-anchor="end">2</text>
+  <text class="tdm" x="546" y="94" text-anchor="end">¥4~8</text>
+  <rect class="zebra" x="0" y="104" width="560" height="30"/>
+  <text class="td"  x="12"  y="124">滑块</text>
+  <text class="td"  x="92"  y="124">3D 打印，孔 Ø3.05，孔距 336±0.2</text>
+  <text class="tdm" x="450" y="124" text-anchor="end">2</text>
+  <text class="tdm" x="546" y="124" text-anchor="end">¥4~7</text>
+  <text class="td"  x="12"  y="154">轴座</text>
+  <text class="td"  x="92"  y="154">M3 螺母 + 垫片，锁在后壁上</text>
+  <text class="tdm" x="450" y="154" text-anchor="end">2</text>
+  <text class="tdm" x="546" y="154" text-anchor="end">¥0~4</text>
+  <rect class="zebra" x="0" y="164" width="560" height="30"/>
+  <text class="td"  x="12"  y="184">限位开关</text>
+  <text class="td"  x="92"  y="184">微动开关（关到位用，装远端）</text>
+  <text class="tdm" x="450" y="184" text-anchor="end">+1</text>
+  <text class="tdm" x="546" y="184" text-anchor="end">¥2~5</text>
+  <text class="td"  x="12"  y="214">球头连杆</text>
+  <text class="td"  x="92"  y="214">M3 球头连杆（现有太短才换）</text>
+  <text class="tdm" x="450" y="214" text-anchor="end">0~1</text>
+  <text class="tdm" x="546" y="214" text-anchor="end">¥0~5</text>
+  <rect x="0" y="224" width="560" height="32" rx="4" fill="var(--olive-soft)"/>
+  <text class="th"  x="12"  y="245">合计</text>
+  <text class="tdm" x="546" y="245" text-anchor="end" fill="var(--olive)">¥13~35</text>
+</g>
+
+<g transform="translate(680,1248)">
+  <text class="mono" x="0" y="0" fill="var(--ink)">装配顺序（先手推，最后上舵机）</text>
+  <g fill="var(--olive-soft)" stroke="var(--olive)" stroke-width="1.5">
+    <circle cx="9" cy="28"  r="9"/><circle cx="9" cy="68"  r="9"/><circle cx="9" cy="108" r="9"/>
+    <circle cx="9" cy="148" r="9"/><circle cx="9" cy="188" r="9"/><circle cx="9" cy="228" r="9"/>
+  </g>
+  <text class="mono-i" x="9" y="32"  text-anchor="middle">1</text>
+  <text class="mono-i" x="9" y="72"  text-anchor="middle">2</text>
+  <text class="mono-i" x="9" y="112" text-anchor="middle">3</text>
+  <text class="mono-i" x="9" y="152" text-anchor="middle">4</text>
+  <text class="mono-i" x="9" y="192" text-anchor="middle">5</text>
+  <text class="mono-i" x="9" y="232" text-anchor="middle">6</text>
+  <text class="td" x="28" y="24">后壁上装两根光轴，直尺校平行、同高</text>
+  <text class="td" x="28" y="42">孔距 336±0.2 —— 这一步偷懒，后面全歪</text>
+  <text class="td" x="28" y="64">打印滑块，镗孔 Ø3.05，装轴上推到底</text>
+  <text class="td" x="28" y="82">全行程推一遍，不能有卡点</text>
+  <text class="td" x="28" y="104">骨架贴闸片后缘，滑块固定在骨架上</text>
+  <text class="td" x="28" y="122">别让 1mm POM 独自扛弯矩</text>
+  <text class="td" x="28" y="144">整片装回，连杆接后缘中心</text>
+  <text class="td" x="28" y="162">先手推：全程平进平出，再拧紧球头</text>
+  <text class="td" x="28" y="184">远端装关到位限位，手推到关位再夹紧</text>
+  <text class="td" x="28" y="202">这是唯一能发现「其实没关严」的传感器</text>
+  <text class="td" x="28" y="224">装舵机，标定 开到位 / 关到位 两个角度</text>
+  <text class="td" x="28" y="242">记一张「舵角 ↔ 行程」对照表，程序里查表</text>
+</g>
+
+<g transform="translate(1290,1248)">
+  <text class="mono" x="0" y="0" fill="var(--ink)">注意事项</text>
+  <g fill="var(--muted)">
+    <circle cx="4" cy="24"  r="3"/><circle cx="4" cy="52"  r="3"/><circle cx="4" cy="80"  r="3"/>
+    <circle cx="4" cy="108" r="3"/><circle cx="4" cy="136" r="3"/><circle cx="4" cy="164" r="3"/>
+  </g>
+  <text class="td" x="16" y="28">滑块与轴留 0.05~0.1mm 间隙：太紧卡死，太松晃动</text>
+  <text class="td" x="16" y="56">原导槽别拆，降级为「防转 + 承剪」，不再指望它定位</text>
+  <text class="td" x="16" y="84">骨架两端各留 2~3mm 让位，薄片受力容易裂</text>
+  <text class="td" x="16" y="112">光轴根部必须螺母 + 垫片锁紧，不能只靠过孔</text>
+  <text class="td" x="16" y="140">舵机与连杆全程在视锥外（视锥顶 z275 / 相机轴 z241.25）</text>
+  <text class="td" x="16" y="168">别同时上「换舵机」：一次只动一个变量，否则分不清是谁修好的</text>
+
+  <rect x="0" y="196" width="464" height="132" rx="9" fill="var(--gold-soft)" stroke="var(--gold)" stroke-width="1.4"/>
+  <text class="mono" x="16" y="220" fill="var(--gold)">待补 · GLM 原文里被截断的部分</text>
+  <text class="td" x="16" y="246">你贴的内容在「升级判据」处断掉了。那几条——什么条件下这</text>
+  <text class="td" x="16" y="266">套结构值得做、做到什么程度算过关、什么情况下才该换执</text>
+  <text class="td" x="16" y="286">行器——建议让 GLM 补全再动手，它决定要不要现在做。</text>
+  <text class="td" x="16" y="312" fill="var(--gold)">本页其余部分只复述了方案 A 的四条改动本身。</text>
+</g>
+
+</g>
+</svg>
+
+  <div class="src">坐标系沿用 03 图：左＝后，右＝前；比例 4px/mm，形变已夸张</div>
+
+  <div class="card" id="detail" hidden>
+    <button class="x" id="dClose" aria-label="关闭">✕</button>
+    <h3 id="d-title"></h3>
+    <div class="meta" id="d-meta"></div>
+    <p id="d-body"></p>
+  </div>
+</div>
+
+<script>
+const DETAIL = {
+  a1: { t:"薄片弯拱", m:"现状 · 闸片本体", b:"0.8~1.0mm 的 POM 片悬跨 110mm、中间没有支撑，<b>本质上就是一根梁</b>。抗弯刚度跟截面高度的三次方成正比，所以贴一条 2mm 骨架（截面高度从 ~1mm 抬到 ~3mm），刚度能上一个量级 —— 这是四条改动里最便宜、最直接的一条。" },
+  a2: { t:"单端推拉产生偏航", m:"现状 · MG996R 驱动端", b:"推力作用在闸片的一端，力臂接近半个跨度 220mm，必然产生绕竖直轴的偏航力矩。左图那条弧线就是它：闸片在平面上<b>又弯又扭</b>，近端先让开槽口，远端被摩擦拖住还关着。" },
+  a3: { t:"两个限位都在驱动端", m:"现状 · 状态不可见", b:"开到位、关到位两个微动开关都装在舵机那一侧。它们只能告诉你<b>驱动端到了没到</b>，闸片远端到底开没开、齐没齐，系统完全看不见 —— 这比不同步更隐蔽，因为它不报错，只是悄悄把豆子分错。" },
+  a4: { t:"近端先开，远端没开", m:"现状 · 行程 70% 时的开度", b:"下方那五根柱子就是行程走到 70% 时五个槽的瞬时开度。越靠近舵机开得越大，远端几乎为零。<b>分选机最怕这个</b>：通道开度不均，落豆节奏就乱，相机拍到的豆流也不均匀。" },
+  b1: { t:"2mm 骨架", m:"方案A · 治「弯」", b:"沿 110mm 长边贴一条 2mm 铝板或玻纤板，502 / 环氧 / 热熔胶都行。作用是把薄片从「梁」变成近似工字形截面，抗弯刚度上一个量级。<b>成本 ¥3~6，是整套里性价比最高的一条。</b>" },
+  b2: { t:"Ø3 光轴 + 打印滑块", m:"方案A · 治「斜」", b:"闸片左右两端各一个 3D 打印滑块，套在两根平行 Ø3 光轴上，光轴根部用螺母锁在后壁。两个滑块 + 两根平行轴，几何上<b>只允许沿 Y 平动</b> —— 闸片物理上不可能扭斜，这才叫「平进平出」被真正强制执行。孔留 0.05~0.1mm 间隙。" },
+  b3: { t:"连杆改接后缘中心", m:"方案A · 治「扭」", b:"球头连杆从「闸片一端」改接到「后缘中心」，也就是 110mm 跨度的中截面。推力从一开始就过中线，<b>不产生偏航力矩</b>。舵机位置基本不用动，仍然在视锥外 —— 这条几乎零成本，主要是重新开两个孔。" },
+  b4: { t:"关到位限位移到远端", m:"方案A · 治「看不见」", b:"开到位限位留在驱动端，关到位限位挪到闸片远端（或者两端各留一个安装位）。这样「远端真的关严了」才有传感器说了算。<b>GLM 说得对：这一条的价值不低于同步性本身</b> —— 不同步你会看到不同步，看不到的话，你连问题在哪儿都不知道。" }
+};
+
+const stage = document.getElementById('stage');
+const svg = document.getElementById('dgm');
+const content = document.getElementById('svg-content');
+const card = document.getElementById('detail');
+const lvl = document.getElementById('zoomFit');
+
+let k = 1, tx = 0, ty = 0;
+function apply() {
+  content.setAttribute('transform', `translate(${tx} ${ty}) scale(${k})`);
+  lvl.textContent = Math.round(k * 100) + '%';
+}
+function reset() { k = 1; tx = 0; ty = 0; apply(); }
+apply();
+
+function toUser(cx, cy) {
+  return new DOMPoint(cx, cy).matrixTransform(content.getScreenCTM().inverse());
+}
+
+stage.addEventListener('wheel', function (e) {
+  e.preventDefault();
+  const p = toUser(e.clientX, e.clientY);
+  const nk = Math.min(6, Math.max(1, k * Math.exp(-e.deltaY * 0.0016)));
+  if (nk === k) return;
+  tx = p.x - (p.x - tx) * (nk / k);
+  ty = p.y - (p.y - ty) * (nk / k);
+  k = nk;
+  apply();
+}, { passive: false });
+
+let dragging = false, moved = 0, sx = 0, sy = 0, ox = 0, oy = 0;
+stage.addEventListener('mousedown', function (e) {
+  if (e.target.closest('.badge')) return;
+  dragging = true; moved = 0;
+  sx = e.clientX; sy = e.clientY; ox = tx; oy = ty;
+  stage.classList.add('dragging');
+});
+window.addEventListener('mousemove', function (e) {
+  if (!dragging) return;
+  const dx = e.clientX - sx, dy = e.clientY - sy;
+  moved = Math.max(moved, Math.hypot(dx, dy));
+  tx = ox + dx; ty = oy + dy;
+  apply();
+});
+window.addEventListener('mouseup', function () {
+  if (!dragging) return;
+  dragging = false;
+  stage.classList.remove('dragging');
+  if (moved > 5) {
+    stage.addEventListener('click', function swallow(e) {
+      e.stopPropagation();
+      stage.removeEventListener('click', swallow, true);
+    }, true);
+  }
+});
+stage.addEventListener('click', function (e) {
+  const b = e.target.closest('.badge');
+  if (!b) return;
+  const d = DETAIL[b.dataset.k];
+  if (!d) return;
+  document.getElementById('d-title').textContent = d.t;
+  document.getElementById('d-meta').textContent = d.m;
+  document.getElementById('d-body').innerHTML = d.b;
+  card.hidden = false;
+});
+document.getElementById('dClose').addEventListener('click', function () { card.hidden = true; });
+lvl.addEventListener('click', reset);
+document.getElementById('themeToggle').addEventListener('click', function () {
+  const dark = !document.documentElement.classList.contains('dark');
+  document.documentElement.classList.toggle('dark', dark);
+  localStorage.setItem('theme', dark ? 'dark' : 'light');
+});
+</script>
+</body>
+</html>

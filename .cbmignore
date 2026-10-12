@@ -1,0 +1,22 @@
+.venv/
+.venv-*/
+datasets/
+runs/
+coffee green beans defect.v1i.yolo26/
+Green Coffee Bean Defects.v2i.yolo26/
+docs/【正点原子】DNK230D开发板资料盘(A盘)/
+docs/hardware/
+vendor/
+toolchains/
+captures/
+artifacts/
+tmp/
+**/build/
+**/managed_components/
+**/__pycache__/
+*.zip
+*.pt
+*.onnx
+*.kmodel
+*.bin
+*.img.gz
