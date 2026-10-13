@@ -1,0 +1,49 @@
+{
+  "date": "2026-10-13",
+  "scope": "dimension_geometry_document_browser_and_PDF_only",
+  "frame_members": 18,
+  "frame_net_length_mm": 4400,
+  "frame_member_solid_overlaps": 0,
+  "wood_cut_pieces": 10,
+  "wood_sheet_mm": [
+    600,
+    600,
+    6
+  ],
+  "wood_planned_min_gap_mm": 3,
+  "wood_pieces_fit_sheet": true,
+  "all_60_part_BOM_references_exist": true,
+  "current_BOM_items": 84,
+  "browser": {
+    "assemble_explode_buttons": true,
+    "slider": true,
+    "group_filter_18_frame_members": true,
+    "hide_four_outer_panels": true,
+    "select_part_BOM_detail": true,
+    "console_errors": 0,
+    "static_SVG_text_outside_viewbox": 0,
+    "desktop_no_page_horizontal_overflow": true,
+    "mobile_390px_no_page_horizontal_overflow": true,
+    "mobile_drawing_horizontal_scroll": true
+  },
+  "pdf_pages": 7,
+  "pdf_page_format": "A3 landscape",
+  "pdf_vector_content": true,
+  "pdf_all_pages_rendered_and_visually_reviewed": true,
+  "hardware_verified": false,
+  "unresolved": [
+    "HJ-AZ4 actual shape and height",
+    "camera PCB, focus and connector envelope",
+    "MG996R plane, brackets, full linkage clearance",
+    "gate base cutouts and fastener holes",
+    "light channel actual SKU and cutting interval",
+    "physical load, jam and electrical tests"
+  ],
+  "sha256": {
+    "docs/hardware/assembly-v4.5/beanlens-assembly-v4.5.html": "34aaba1b2a38e61cb6bd13e45bc76282a48318609b82af0c6e3ef55faf062b95",
+    "docs/hardware/assembly-v4.5/assembly-layout-v4.5.json": "5e9ba7ba943e30280a91328d066be151903f5c34c23f8fa6bd06672e48801138",
+    "docs/hardware/assembly-v4.5/cut-list-v4.5.csv": "ee4955e04769ab715baedca8eed8e4173d0fff4b12be8bba4fde50a5a0f07664",
+    "docs/hardware/procurement-v4.5/beanlens-bom-v4.5.json": "432b4c7af3a58a4958e807bb4b2f68e4d64bcd7a4a490ffdeefc90f866d7d72d",
+    "output/pdf/beanlens-assembly-v4.5-20261013.pdf": "cc4d373773ad2697ba8fec6bb83648ebfd6db1e7b0825480a228b9f9ed04f360"
+  }
+}

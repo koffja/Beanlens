@@ -1,0 +1,42 @@
+{
+  "date": "2026-10-12",
+  "scope": "document_data_and_browser_only",
+  "procurement_rows": 83,
+  "legacy_rows_mapped": 35,
+  "calculations_recomputed": true,
+  "known_default_quotes_cny": 386.9,
+  "candidate_quote_separate_cny": 103,
+  "unknown_prices_not_zero": true,
+  "browser_checks": {
+    "procurement_search_G08": true,
+    "selection_filter": true,
+    "reset_filter": true,
+    "download_links_exist": true,
+    "mobile_390px_no_page_overflow": true,
+    "handbook_theme": true,
+    "handbook_assembly_toggle_and_restore": true,
+    "handbook_drawing_zoom": true,
+    "animation_open_close_endpoints": true,
+    "animation_fault_stops_and_clear_does_not_resume": true,
+    "animation_rod_length_max_error_mm": 4.263256414560601e-13,
+    "animation_five_gaps_equal": true,
+    "animation_carriage_render": true,
+    "page_console_errors_after_favicon_fix": 0
+  },
+  "hardware_verified": false,
+  "not_verified": [
+    "B3F-20C1 exact output and supply",
+    "HJ-AZ4-3kg interface, included parts and accuracy",
+    "actual supplied dimensions and machining holes",
+    "servo current, PWM acceptance, loading and jam behavior",
+    "whole-machine power and weighing performance"
+  ],
+  "sha256": {
+    "docs/hardware/procurement-v4.5/beanlens-bom-v4.5.json": "71f6b1f559c0b2cf5ff3dfd0a8aaa78dd55fa92b8dbffc7659a33cf186cf5db8",
+    "docs/hardware/procurement-v4.5/beanlens-bom-v4.5.csv": "0507181430046522b7095927328cb3ff01be2916bf0f2a84ccc82f5271808bcc",
+    "docs/hardware/procurement-v4.5/beanlens-procurement-v4.5.html": "29d37652e4fe845d74e58e0b061629bc180c890c7a6b98bbcfd311ed0973635e",
+    "docs/hardware/v4.4/beanlens-v4-handbook.html": "fc7ad0b1be258fe3b8e2bc7e8cdb9fbc014cabb51a4a2162180e0fb366084240",
+    "docs/hardware/illustrations/beanlens-gate-motion-20261012.html": "f1d9ba94ebc1907d5ea5da1d10a361b562b2774eabea66973fbb5a59e24d15d6",
+    "config/hardware-baseline.json": "85c26ebfb64ca3a3c07c557b212ed53b4a407589885b7f93a03483cb326a9790"
+  }
+}

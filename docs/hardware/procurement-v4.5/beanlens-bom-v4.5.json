@@ -1,0 +1,2367 @@
+{
+  "revision": "procurement-v4.5",
+  "date": "2026-10-12",
+  "status": "proposal_not_procured_or_hardware_verified",
+  "currency": "CNY",
+  "legacy_source": "../v4.4/beanlens-box-bom-v4.4.json",
+  "known_default_user_quote_subtotal_cny": 386.9,
+  "known_weight_alternative_quote_cny": 103,
+  "total_cost_cny": null,
+  "price_policy": "null=待询价，不能按0计总价；旧规划790.90不含新滑架完整费用，不是新总价；备选与套件包含不重复计入",
+  "user_inputs": {
+    "sensor_model": "B3F-20C1",
+    "camera_description": "GC2093-M12-90度无畸变",
+    "load_cell_candidate": "Autoda HJ-AZ4-3kg",
+    "load_cell_candidate_price_cny": 103,
+    "load_cell_candidate_included_parts": null
+  },
+  "items": [
+    {
+      "id": "A01",
+      "old_ids": [
+        "A01"
+      ],
+      "category": "板卡与相机",
+      "name": "视觉主套件",
+      "model": "正点原子 DNK230D / K230D BOX",
+      "spec": "BOX＋2.4英寸屏＋32GB TF；以257元订单包装为准",
+      "qty": 1,
+      "unit": "件",
+      "selection": "主方案",
+      "readiness": "按订单核对",
+      "price_cny": 257,
+      "price_basis": "用户报价：整套257元",
+      "check": "只买BOX套件；附送普通相机不抵扣另选双摄。",
+      "sources": [
+        "https://wiki.alientek.com/docs/Boards/Kendryte/DNK230D/start-guide/k230d-box-introduction/"
+      ]
+    },
+    {
+      "id": "E01",
+      "old_ids": [
+        "E01"
+      ],
+      "category": "板卡与相机",
+      "name": "控制板（已有）",
+      "model": "Waveshare ESP32-C6-LCD-1.47 非Touch",
+      "spec": "已有1.47英寸LCD板，不能换成Touch/S3同名近似板",
+      "qty": 1,
+      "unit": "件",
+      "selection": "已有",
+      "readiness": "复用，不重复购买",
+      "price_cny": 0,
+      "price_basis": "用户已有",
+      "check": "",
+      "sources": [
+        "https://www.waveshare.com/wiki/ESP32-C6-LCD-1.47"
+      ]
+    },
+    {
+      "id": "E02",
+      "old_ids": [
+        "E02"
+      ],
+      "category": "板卡与相机",
+      "name": "BOX屏幕与TF",
+      "model": "随A01套件",
+      "spec": "2.4英寸屏＋32GB TF，包含在A01中",
+      "qty": 1,
+      "unit": "件",
+      "selection": "套件包含",
+      "readiness": "确认套件包装",
+      "price_cny": 0,
+      "price_basis": "计入A01，不代表已经收货",
+      "check": "",
+      "sources": [
+        "https://wiki.alientek.com/docs/Boards/Kendryte/DNK230D/start-guide/k230d-box-introduction/"
+      ]
+    },
+    {
+      "id": "B01",
+      "old_ids": [
+        "B01"
+      ],
+      "category": "板卡与相机",
+      "name": "两只视觉相机",
+      "model": "GC2093-M12-90度无畸变（用户型号）",
+      "spec": "同批两只，M12镜头；90°定义、IR-cut、近焦及CSI线序未核",
+      "qty": 1,
+      "unit": "两套合包",
+      "selection": "主方案",
+      "readiness": "兼容确认后下单",
+      "price_cny": 114.32,
+      "price_basis": "用户报价：两套合计",
+      "check": "两套合计114.32元；传感器+镜头描述不是完整PCB料号。先让卖家确认BOX双路同时工作及约75mm近焦。",
+      "sources": [
+        "https://wiki.alientek.com/docs/Boards/Kendryte/DNK230D/start-guide/k230d-box-introduction/"
+      ]
+    },
+    {
+      "id": "B02",
+      "old_ids": [
+        "B02"
+      ],
+      "category": "板卡与相机",
+      "name": "双摄排线",
+      "model": "BOX专用CSI/MIPI排线（原厂配套）",
+      "spec": "150–200mm仅询价起点；针数、间距、同/异面、线序按BOX与模组图",
+      "qty": 2,
+      "unit": "件",
+      "selection": "主方案",
+      "readiness": "暂缓：线序/长度待核",
+      "price_cny": null,
+      "price_basis": "待询价；不沿用旧打包额度",
+      "check": "先纸样量实际路径；若B01含匹配线，取消本项，绝不凭通用15/22pin购买。",
+      "sources": [
+        "https://wiki.alientek.com/docs/Boards/Kendryte/DNK230D/start-guide/k230d-box-introduction/"
+      ]
+    },
+    {
+      "id": "A03",
+      "old_ids": [
+        "A03"
+      ],
+      "category": "滑闸标准件",
+      "name": "位置舵机",
+      "model": "MG996R 角度/位置版",
+      "spec": "独立6.0V；原厂外形约40.7×19.7×42.9mm仅参照；兼容件实量",
+      "qty": 1,
+      "unit": "件",
+      "selection": "主方案",
+      "readiness": "花键/电流待试装",
+      "price_cny": 15.58,
+      "price_basis": "用户报价",
+      "check": "不要连续旋转版。25T舵臂必须和用户实物试装；禁止套原厂性能给廉价兼容件。",
+      "sources": [
+        "https://towerpro.com.tw/product/mg996r/"
+      ]
+    },
+    {
+      "id": "PH01",
+      "old_ids": [
+        "A04"
+      ],
+      "category": "光电与信号",
+      "name": "首样红外对射",
+      "model": "Adafruit 2167，3mm IR break-beam",
+      "spec": "3.3–5.5V；约250mm距离；响应<2ms；开集电极；每头约20×10×8mm；线230mm",
+      "qty": 1,
+      "unit": "收发对",
+      "selection": "主方案",
+      "readiness": "标准规格待报价",
+      "price_cny": null,
+      "price_basis": "待询价；不沿用旧打包额度",
+      "check": "建议5V支路供电；信号单独上拉3.3V。用于豆流提示，不是逐豆计数；需测光束覆盖与IR干扰。",
+      "sources": [
+        "https://www.adafruit.com/product/2167",
+        "https://learn.adafruit.com/ir-breakbeam-sensors/arduino"
+      ]
+    },
+    {
+      "id": "PH02",
+      "old_ids": [
+        "A15"
+      ],
+      "category": "光电与信号",
+      "name": "对射信号上拉",
+      "model": "金属膜电阻10kΩ，1%，0.25W",
+      "spec": "一只使用、一只备用；信号节点拉到C6 3.3V",
+      "qty": 2,
+      "unit": "件",
+      "selection": "主方案",
+      "readiness": "标准规格待报价",
+      "price_cny": null,
+      "price_basis": "待询价；不沿用旧打包额度",
+      "check": "不能按5V Arduino图把上拉接到红线5V。开集电极没有主动输出5V。",
+      "sources": [
+        "https://www.adafruit.com/product/2167"
+      ]
+    },
+    {
+      "id": "PH03",
+      "old_ids": [
+        "A15"
+      ],
+      "category": "光电与信号",
+      "name": "GPIO串联电阻",
+      "model": "金属膜电阻1kΩ，1%，0.25W",
+      "spec": "信号至GPIO20串联；与PH02同一3.3V输入节点",
+      "qty": 2,
+      "unit": "件",
+      "selection": "主方案",
+      "readiness": "标准规格待报价",
+      "price_cny": null,
+      "price_basis": "待询价；不沿用旧打包额度",
+      "check": "一只用一只备用；不是24V工业输出的降压替代。",
+      "sources": []
+    },
+    {
+      "id": "PH04",
+      "old_ids": [
+        "B14"
+      ],
+      "category": "光电与信号",
+      "name": "红外可调安装耳",
+      "model": "6061角铝30×20×2，切长30mm",
+      "spec": "两头各一只；安装孔按2167实物；带可调长孔/遮光罩",
+      "qty": 2,
+      "unit": "件",
+      "selection": "主方案",
+      "readiness": "纸样后加工",
+      "price_cny": null,
+      "price_basis": "待询价；不沿用旧打包额度",
+      "check": "放在出口下、主视野上方，主体避开相机视野；不能被五槽隔板挡住。",
+      "sources": []
+    },
+    {
+      "id": "I01",
+      "old_ids": [
+        "A04"
+      ],
+      "category": "工业光电备选",
+      "name": "原工业对射器",
+      "model": "山大斯 B3F-20C1（用户提供，未核原厂资料）",
+      "spec": "旧商品图6–36V/M12×1/约52.5mm仅待复核；收发一组的组成待核",
+      "qty": 1,
+      "unit": "组",
+      "selection": "备选",
+      "readiness": "暂缓：确切接线资料缺失",
+      "price_cny": null,
+      "price_basis": "待询价；不沿用旧打包额度",
+      "check": "不擅改成E3F或推断NPN/PNP/激光/红外。若已购可保留，接口确认后再选转换方案。",
+      "sources": []
+    },
+    {
+      "id": "I02",
+      "old_ids": [
+        "A15"
+      ],
+      "category": "工业光电备选",
+      "name": "24V NPN转换光耦",
+      "model": "LITEON LTV-817，DIP-4；分档按供货图",
+      "spec": "输入LED与24V限流电阻串联；输出集电极上拉3.3V、发射极接C6地",
+      "qty": 1,
+      "unit": "件",
+      "selection": "备选",
+      "readiness": "暂缓：先确认NPN低端输出",
+      "price_cny": null,
+      "price_basis": "待询价；不沿用旧打包额度",
+      "check": "此为代焊小板用料，不是现成合格模块。PNP不能照接；漏电、动作逻辑、总延迟须台架测。",
+      "sources": [
+        "https://optoelectronics.liteon.com/upload/download/ds-70-96-0016/ltv-8x7%20series%20201610%20.pdf"
+      ]
+    },
+    {
+      "id": "I03",
+      "old_ids": [
+        "A15"
+      ],
+      "category": "工业光电备选",
+      "name": "光耦输入限流",
+      "model": "4.7kΩ 1% 0.5W电阻",
+      "spec": "24V下约4.8mA，电阻约0.11W；按真实传感器残压/漏电复核",
+      "qty": 1,
+      "unit": "件",
+      "selection": "备选",
+      "readiness": "随I02接口复核",
+      "price_cny": null,
+      "price_basis": "待询价；不沿用旧打包额度",
+      "check": "仅24V已确认NPN低端输入设计；不能拿GPIO上拉电阻代替。",
+      "sources": []
+    },
+    {
+      "id": "I04",
+      "old_ids": [
+        "A15"
+      ],
+      "category": "工业光电备选",
+      "name": "光耦LED反向保护",
+      "model": "1N4148，DO-35",
+      "spec": "与光耦输入LED反并联",
+      "qty": 1,
+      "unit": "件",
+      "selection": "备选",
+      "readiness": "随I02代焊",
+      "price_cny": null,
+      "price_basis": "待询价；不沿用旧打包额度",
+      "check": "极性和光耦引脚按所购器件数据表；输出上拉见I06、代焊绝缘安装见I07。",
+      "sources": []
+    },
+    {
+      "id": "I05",
+      "old_ids": [
+        "B14"
+      ],
+      "category": "工业光电备选",
+      "name": "工业光电固定件",
+      "model": "M12×1螺母＋可调L形支架",
+      "spec": "收发各1支架、每头2螺母；不与PH04重复",
+      "qty": 2,
+      "unit": "套",
+      "selection": "备选",
+      "readiness": "暂缓：安装尺寸待核",
+      "price_cny": null,
+      "price_basis": "待询价；不沿用旧打包额度",
+      "check": "B3F-20C1标签、机身与出线尺寸核对后采购。",
+      "sources": []
+    },
+    {
+      "id": "B03",
+      "old_ids": [
+        "B03"
+      ],
+      "category": "称重",
+      "name": "称重ADC模块",
+      "model": "SparkFun Qwiic Scale NAU7802，SEN-15242",
+      "spec": "3.3V模块；I²C地址0x2A；芯片24bit；拟定VDDA约3.0V/10SPS",
+      "qty": 1,
+      "unit": "件",
+      "selection": "主方案",
+      "readiness": "暂缓：需与称重桥配套",
+      "price_cny": null,
+      "price_basis": "待询价；不沿用旧打包额度",
+      "check": "不是把裸NAU7802芯片直接接线。若HJ-AZ4为数字输出，本项不买；若桥要求5V激励，需另审ADC参考/激励，不直接外接5V到此模块。",
+      "sources": [
+        "https://www.sparkfun.com/sparkfun-qwiic-scale-nau7802.html"
+      ]
+    },
+    {
+      "id": "W01",
+      "old_ids": [
+        "B04",
+        "O05"
+      ],
+      "category": "称重",
+      "name": "用户提供称重候选",
+      "model": "Autoda HJ-AZ4-3kg",
+      "spec": "额定3kg；103元；输出、敏感元件料号、支架/平台包含范围均待核",
+      "qty": 1,
+      "unit": "件",
+      "selection": "备选",
+      "readiness": "暂缓：接口/图纸待核",
+      "price_cny": 103,
+      "price_basis": "用户最新报价103元；替代旧55/105元记录",
+      "check": "当前用户候选，不把3kg改称1kg。HJ-AZ4可能是组件/安装规格，需敏感元件铭牌；未查到可确认此SKU的原厂数据表，不能承诺±0.1g。",
+      "sources": [
+        "https://www.autoda.com.cn/jishuzhich/"
+      ]
+    },
+    {
+      "id": "W02",
+      "old_ids": [
+        "B04"
+      ],
+      "category": "称重",
+      "name": "旧1kg外形参照（不默认购买）",
+      "model": "Zemic L6J1-C2-1kg",
+      "spec": "0.9±0.1mV/V；推荐5–10V；综合误差≤±0.028%FS",
+      "qty": 1,
+      "unit": "件",
+      "selection": "备选",
+      "readiness": "暂缓：激励与精度不匹配",
+      "price_cny": null,
+      "price_basis": "待询价；不沿用旧打包额度",
+      "check": "原3V/2mV/V示例不能套此型号；0.028%×1kg=0.28g，不能据此保证±0.1g。1kg毛载荷也不能收1kg豆+平台。",
+      "sources": [
+        "https://www.zemiceurope.com/media/Documentation/L6J1_Datasheet.pdf"
+      ]
+    },
+    {
+      "id": "W03",
+      "old_ids": [
+        "B05"
+      ],
+      "category": "称重",
+      "name": "参考砝码100g",
+      "model": "OIML R111 F1不锈钢，100g",
+      "spec": "有修正值/可核查证书；参考质量扩展不确定度≤0.03g",
+      "qty": 1,
+      "unit": "件",
+      "selection": "主方案",
+      "readiness": "标准规格待报价",
+      "price_cny": null,
+      "price_basis": "待询价；不沿用旧打包额度",
+      "check": "等级标签不是校准证据；与500g分别询价。",
+      "sources": [
+        "https://www.oiml.org/en/files/pdf_r/r111-1-e04.pdf"
+      ]
+    },
+    {
+      "id": "W04",
+      "old_ids": [
+        "B05"
+      ],
+      "category": "称重",
+      "name": "参考砝码500g",
+      "model": "OIML R111 F1不锈钢，500g",
+      "spec": "与W03同要求；带盒/镊子或手套",
+      "qty": 1,
+      "unit": "件",
+      "selection": "主方案",
+      "readiness": "标准规格待报价",
+      "price_cny": null,
+      "price_basis": "待询价；不沿用旧打包额度",
+      "check": "检查点0/100/350/500g；350g由W03、W08、W09的校准质量组合，不用待测秤证明参考质量。",
+      "sources": [
+        "https://www.oiml.org/en/files/pdf_r/r111-1-e04.pdf"
+      ]
+    },
+    {
+      "id": "W05",
+      "old_ids": [
+        "B06"
+      ],
+      "category": "称重",
+      "name": "轻称台板",
+      "model": "6061-T6，170×180×2mm毛坯",
+      "spec": "约165.24g；载荷端连接孔按所选组件图",
+      "qty": 1,
+      "unit": "件",
+      "selection": "主方案",
+      "readiness": "暂缓：称重组件定后加工",
+      "price_cny": null,
+      "price_basis": "待询价；不沿用旧打包额度",
+      "check": "盒+活动支承总目标≤250g；本板留下约84.8g给盒与活动连接件。若HJ套件含合适平台，本项取消。",
+      "sources": []
+    },
+    {
+      "id": "W06",
+      "old_ids": [
+        "B06"
+      ],
+      "category": "称重",
+      "name": "称台刚性底板",
+      "model": "6061，180×190×4mm毛坯",
+      "spec": "固定到2020底梁；固定端孔距按称重件图",
+      "qty": 1,
+      "unit": "件",
+      "selection": "主方案",
+      "readiness": "暂缓：称重组件定后加工",
+      "price_cny": null,
+      "price_basis": "待询价；不沿用旧打包额度",
+      "check": "固定底板不计入秤的活动毛载荷；若套件包含合适底板，不重复购买。",
+      "sources": []
+    },
+    {
+      "id": "W07",
+      "old_ids": [
+        "B06",
+        "O06"
+      ],
+      "category": "称重",
+      "name": "安装垫块/过载限位",
+      "model": "M4×20调节螺钉4只＋M4螺母8只；硬质垫块按图",
+      "spec": "限位正常不接触活动称台；间隙依传感器额定位移",
+      "qty": 1,
+      "unit": "组",
+      "selection": "主方案",
+      "readiness": "暂缓：所购组件图待核",
+      "price_cny": null,
+      "price_basis": "待询价；不沿用旧打包额度",
+      "check": "若103元套件已经含此结构则取消；旧另加50元差价作废，不推算103元包装内容。",
+      "sources": []
+    },
+    {
+      "id": "A05",
+      "old_ids": [
+        "A05"
+      ],
+      "category": "照明",
+      "name": "同批固定色温灯带",
+      "model": "用户普瑞Ra98灯带：完整SKU待提供",
+      "spec": "24V，6000K/Ra≥98询价目标；4×100mm有效段，总0.4m；≤20W/m预算",
+      "qty": 1,
+      "unit": "件",
+      "selection": "主方案",
+      "readiness": "暂缓：功率/宽度/切点待核",
+      "price_cny": null,
+      "price_basis": "待询价；不沿用旧打包额度",
+      "check": "普瑞/Ra98不是完整型号；要每米功率、实际PCB宽、切点及短曝光实拍。不可擅换5000K并沿用原色温记录。",
+      "sources": []
+    },
+    {
+      "id": "L02",
+      "old_ids": [
+        "A06"
+      ],
+      "category": "照明",
+      "name": "灯铝散热槽",
+      "model": "6063 U型铝槽，4×100mm起点",
+      "spec": "内宽≥实测灯带宽；候选外宽14×高8mm，带扩散片",
+      "qty": 4,
+      "unit": "件",
+      "selection": "主方案",
+      "readiness": "灯带尺寸定后切割",
+      "price_cny": null,
+      "price_basis": "待询价；不沿用旧打包额度",
+      "check": "100mm必须是灯带切点整数倍；如果需125mm段，先重算总长功率。扩散/遮光不能接触豆路。",
+      "sources": []
+    },
+    {
+      "id": "L03",
+      "old_ids": [
+        "A06"
+      ],
+      "category": "照明",
+      "name": "遮光边与灯固定",
+      "model": "0.5–1mm哑黑PP片＋M3夹持件",
+      "spec": "遮光条约100×15mm，4条纸样起点",
+      "qty": 1,
+      "unit": "组",
+      "selection": "主方案",
+      "readiness": "按光路纸样加工",
+      "price_cny": null,
+      "price_basis": "待询价；不沿用旧打包额度",
+      "check": "防止LED直射镜头；不靠木板给灯散热，胶/夹具不进入豆路。",
+      "sources": []
+    },
+    {
+      "id": "A07",
+      "old_ids": [
+        "A07"
+      ],
+      "category": "电源与配电",
+      "name": "外置主适配器",
+      "model": "MEAN WELL GST120A24-P1M",
+      "spec": "24V/5A/120W；P1M 5.5外径×2.5内径×11mm，中心正",
+      "qty": 1,
+      "unit": "件",
+      "selection": "主方案",
+      "readiness": "接头/渠道核对后采购",
+      "price_cny": null,
+      "price_basis": "待询价；不沿用旧打包额度",
+      "check": "满足原≥24V4A预算的具体候选，不是已购；必须配原厂图确认极性、插座DC额定。",
+      "sources": [
+        "https://www.meanwell.com/Upload/PDF/GST120A/GST120A-SPEC.PDF"
+      ]
+    },
+    {
+      "id": "P02",
+      "old_ids": [
+        "A07"
+      ],
+      "category": "电源与配电",
+      "name": "适配器交流线",
+      "model": "中国三插→IEC C13成品电源线",
+      "spec": "3×0.75mm²或以上，1.5m起点，额定≥250V/10A",
+      "qty": 1,
+      "unit": "件",
+      "selection": "主方案",
+      "readiness": "标准规格待报价",
+      "price_cny": null,
+      "price_basis": "待询价；不沿用旧打包额度",
+      "check": "只接外置适配器，机箱内不布交流；若适配器已含则取消。",
+      "sources": []
+    },
+    {
+      "id": "P03",
+      "old_ids": [
+        "A09"
+      ],
+      "category": "电源与配电",
+      "name": "24V输入插座/转接线",
+      "model": "5.5×2.5mm母座，DC≥30V/5A",
+      "spec": "与P1M匹配；带0.75mm²短线，中心正",
+      "qty": 1,
+      "unit": "件",
+      "selection": "主方案",
+      "readiness": "与A07接头配套",
+      "price_cny": null,
+      "price_basis": "待询价；不沿用旧打包额度",
+      "check": "不能用5.5×2.1mm母座或仅标交流额定的小插座替代。",
+      "sources": []
+    },
+    {
+      "id": "A08",
+      "old_ids": [
+        "A08"
+      ],
+      "category": "电源与配电",
+      "name": "固定5V降压",
+      "model": "Pololu D36V50F5，#4091",
+      "spec": "24V输入→5V；25.4×25.4×9.5mm；标称等级5.5A，实际按热曲线",
+      "qty": 1,
+      "unit": "件",
+      "selection": "主方案",
+      "readiness": "标准规格待报价",
+      "price_cny": null,
+      "price_basis": "待询价；不沿用旧打包额度",
+      "check": "首样目标带载4A；5V输出公差4%仍需测板端压降/瞬态。不能照旧18元XL4015额度核价。",
+      "sources": [
+        "https://www.pololu.com/product/4091"
+      ]
+    },
+    {
+      "id": "A17",
+      "old_ids": [
+        "A17"
+      ],
+      "category": "电源与配电",
+      "name": "固定6V舵机降压",
+      "model": "Pololu D36V50F6，#4092",
+      "spec": "24V输入→6V；25.4×25.4×9.5mm；输出公差4%",
+      "qty": 1,
+      "unit": "件",
+      "selection": "主方案",
+      "readiness": "标准规格待报价",
+      "price_cny": null,
+      "price_basis": "待询价；不沿用旧打包额度",
+      "check": "持续3A/短时5A是验收预算；与5V模块不能插错，高电流直焊粗线不经面包板。",
+      "sources": [
+        "https://www.pololu.com/product/4092"
+      ]
+    },
+    {
+      "id": "P04",
+      "old_ids": [
+        "A09"
+      ],
+      "category": "电源与配电",
+      "name": "主低压开关",
+      "model": "NKK S1A，SPST ON-OFF",
+      "spec": "原厂DC30V/20A等级；面板安装尺寸依原厂图",
+      "qty": 1,
+      "unit": "件",
+      "selection": "主方案",
+      "readiness": "标准规格待报价",
+      "price_cny": null,
+      "price_basis": "待询价；不沿用旧打包额度",
+      "check": "只断24V低压正极；面板6mm需安装衬板/确认螺纹夹紧范围，不盲买开孔尺寸。",
+      "sources": [
+        "https://www.nkkswitches.com/pdf/Toggles.pdf"
+      ]
+    },
+    {
+      "id": "P05",
+      "old_ids": [
+        "A09"
+      ],
+      "category": "电源与配电",
+      "name": "分线端子",
+      "model": "WAGO 221-415 五路弹簧端子",
+      "spec": "0.75mm²铜线适配；24V+/返回、5V+/返回、6V+/返回各一组",
+      "qty": 6,
+      "unit": "件",
+      "selection": "主方案",
+      "readiness": "标准规格待报价",
+      "price_cny": null,
+      "price_basis": "待询价；不沿用旧打包额度",
+      "check": "6组分别标电压与返回，不短接5V和6V；大电流回路星形，端子固定座另配。",
+      "sources": [
+        "https://www.wago.com/global/installation-terminal-blocks-and-connectors/compact-splicing-connector/p/221-415"
+      ]
+    },
+    {
+      "id": "P06",
+      "old_ids": [
+        "A09"
+      ],
+      "category": "电源与配电",
+      "name": "DC保险与座",
+      "model": "MINI车用插片保险，32VDC；匹配保险座",
+      "spec": "主4A、灯1A、5V降压输入2A、6V降压输入3A各1；同规格各1备用",
+      "qty": 1,
+      "unit": "4座+8保险",
+      "selection": "主方案",
+      "readiness": "标准规格待报价",
+      "price_cny": null,
+      "price_basis": "待询价；不沿用旧打包额度",
+      "check": "DC额定≥32V，座/引线≥5A；按浪涌线径验后调整，不称夹豆保护，不沿用旧2.5A到不兼容规格。",
+      "sources": []
+    },
+    {
+      "id": "P07",
+      "old_ids": [
+        "A09"
+      ],
+      "category": "电源与配电",
+      "name": "电源铜线",
+      "model": "多股铜0.75mm²，红/黑",
+      "spec": "红3m＋黑3m起点；24V主回路和6V舵机回路",
+      "qty": 1,
+      "unit": "6m",
+      "selection": "主方案",
+      "readiness": "标准规格待报价",
+      "price_cny": null,
+      "price_basis": "待询价；不沿用旧打包额度",
+      "check": "按实际裁切、留压接余量；不以杜邦信号线承载舵机电流。",
+      "sources": []
+    },
+    {
+      "id": "P08",
+      "old_ids": [
+        "A09"
+      ],
+      "category": "电源与配电",
+      "name": "压接/绝缘固定小件",
+      "model": "0.75mm²管形端头＋热缩管＋扎带/固定座",
+      "spec": "端头20只、φ3/φ6热缩各1m、扎带20只起点",
+      "qty": 1,
+      "unit": "组",
+      "selection": "主方案",
+      "readiness": "标准规格待报价",
+      "price_cny": null,
+      "price_basis": "待询价；不沿用旧打包额度",
+      "check": "端头口径按铜线与端子匹配；与电源采购不可漏列。",
+      "sources": []
+    },
+    {
+      "id": "C01",
+      "old_ids": [
+        "A10"
+      ],
+      "category": "电源与配电",
+      "name": "6V近端电容",
+      "model": "铝电解1000µF/16V，105℃低ESR",
+      "spec": "径向，优先直径≤10mm、高≤20mm；实际按供货图",
+      "qty": 1,
+      "unit": "件",
+      "selection": "主方案",
+      "readiness": "标准规格待报价",
+      "price_cny": null,
+      "price_basis": "待询价；不沿用旧打包额度",
+      "check": "并在6V/GND，极性正确；电容和降压启动稳定性需配套测试。",
+      "sources": []
+    },
+    {
+      "id": "C02",
+      "old_ids": [
+        "A10"
+      ],
+      "category": "电源与配电",
+      "name": "5V近端电容",
+      "model": "铝电解470µF/10V，105℃低ESR",
+      "spec": "实际封装/脚距按供货图；并在5V/GND",
+      "qty": 1,
+      "unit": "件",
+      "selection": "主方案",
+      "readiness": "标准规格待报价",
+      "price_cny": null,
+      "price_basis": "待询价；不沿用旧打包额度",
+      "check": "电容不补足电源容量，不接24V侧。",
+      "sources": []
+    },
+    {
+      "id": "C03",
+      "old_ids": [
+        "A10"
+      ],
+      "category": "电源与配电",
+      "name": "去耦电容",
+      "model": "100nF，X7R，≥50V，直插或带板焊接",
+      "spec": "10只小包；6V/5V近端、红外、可选缓冲按布局分配",
+      "qty": 10,
+      "unit": "件",
+      "selection": "主方案",
+      "readiness": "标准规格待报价",
+      "price_cny": null,
+      "price_basis": "待询价；不沿用旧打包额度",
+      "check": "数量是整机公用库存，其他模块不要再重复按包计价。",
+      "sources": []
+    },
+    {
+      "id": "P09",
+      "old_ids": [
+        "A11"
+      ],
+      "category": "电源与配电",
+      "name": "USB供电转接",
+      "model": "双USB-A母口被动5V配电板",
+      "spec": "输入5V，铜线与端子总承载≥4A；每口至少所接板要求",
+      "qty": 1,
+      "unit": "件",
+      "selection": "主方案",
+      "readiness": "暂缓：具体板/走线载流需核",
+      "price_cny": null,
+      "price_basis": "待询价；不沿用旧打包额度",
+      "check": "不是24V车充/快充触发板。不能仅凭双口就宣称4A；也可用经确认的两条独立板卡电源线替代。",
+      "sources": []
+    },
+    {
+      "id": "P10",
+      "old_ids": [
+        "A11"
+      ],
+      "category": "电源与配电",
+      "name": "两板USB电源线",
+      "model": "USB-A→USB-C成品短线",
+      "spec": "约0.3m、每线≥3A标称，实测压降；BOX与C6各1根",
+      "qty": 2,
+      "unit": "件",
+      "selection": "主方案",
+      "readiness": "标准规格待报价",
+      "price_cny": null,
+      "price_basis": "待询价；不沿用旧打包额度",
+      "check": "电脑调试时避免双电源反灌，保留原厂规定的供电口。",
+      "sources": []
+    },
+    {
+      "id": "F01",
+      "old_ids": [
+        "B07"
+      ],
+      "category": "机架与外壳",
+      "name": "2020型材切割",
+      "model": "6063银色2020，槽型按同一供应商",
+      "spec": "400×4、220×4、200×6、180×4mm；合计4.40m",
+      "qty": 1,
+      "unit": "18段",
+      "selection": "主方案",
+      "readiness": "纸样核对后切割",
+      "price_cny": null,
+      "price_basis": "待询价；不沿用旧打包额度",
+      "check": "切割净长不含锯缝；若买整料按实际锯缝/排版留余量，不能直接把4.40m原棒当可用净长。",
+      "sources": []
+    },
+    {
+      "id": "F02",
+      "old_ids": [
+        "B07"
+      ],
+      "category": "机架与外壳",
+      "name": "型材连接件",
+      "model": "2020专用角码＋M5 T螺母＋M5×8螺钉",
+      "spec": "28角码使用＋4备用＝32；M5 T螺母64、M5×8螺钉64（含备）",
+      "qty": 1,
+      "unit": "组",
+      "selection": "主方案",
+      "readiness": "标准规格待报价",
+      "price_cny": null,
+      "price_basis": "待询价；不沿用旧打包额度",
+      "check": "按18段骨架：上下框16、中框8、相机梁4共28角码；面板固定另见F08。槽口与供货2020一致，M5×8是否顶槽须实测。",
+      "sources": []
+    },
+    {
+      "id": "F03",
+      "old_ids": [
+        "B08",
+        "B10"
+      ],
+      "category": "机架与外壳",
+      "name": "木质支架与外壳板料",
+      "model": "6mm海洋板，600×600mm毛板",
+      "spec": "600×600×6一张；外壳220×240×2片、240×240×2片；料斗154×110×2、142×110×2；托耳40×30×2，均厚6mm",
+      "qty": 1,
+      "unit": "件",
+      "selection": "主方案",
+      "readiness": "暂缓：最终开孔未冻结",
+      "price_cny": null,
+      "price_basis": "待询价；不沿用旧打包额度",
+      "check": "见assembly-v4.5第03图：3mm板边/切缝排版可容纳一张；真实板厚/锯缝先核，屏/按钮/接口孔按实物。托耳由旧约25宽修为40宽。",
+      "sources": []
+    },
+    {
+      "id": "F04",
+      "old_ids": [
+        "B08"
+      ],
+      "category": "机架与外壳",
+      "name": "料斗PP内衬",
+      "model": "食品接触资料可核的PP，0.5mm，A3 297×420mm",
+      "spec": "前后两片上140下110斜高122.98；左右两片上140下30斜高111.02；外加折边",
+      "qty": 2,
+      "unit": "张",
+      "selection": "主方案",
+      "readiness": "纸样后裁切",
+      "price_cny": null,
+      "price_basis": "待询价；不沿用旧打包额度",
+      "check": "第二张供试折/损耗；上翻10–15、角缝外搭约10mm。不是四片同形。",
+      "sources": []
+    },
+    {
+      "id": "F05",
+      "old_ids": [
+        "B08"
+      ],
+      "category": "机架与外壳",
+      "name": "槽盒板料",
+      "model": "食品接触资料可核PP，3mm，200×150mm毛坯",
+      "spec": "4隔板净高50、上深30至下深12；壳边/前后壁按槽盒纸样",
+      "qty": 2,
+      "unit": "张",
+      "selection": "主方案",
+      "readiness": "暂缓：新槽盒开缝定后加工",
+      "price_cny": null,
+      "price_basis": "待询价；不沿用旧打包额度",
+      "check": "五槽净宽14×5＋4隔板3＝82mm；110外宽剩28mm须分配侧壁/支承，不能只沿用旧6mm边条就宣称总宽闭合。",
+      "sources": []
+    },
+    {
+      "id": "F06",
+      "old_ids": [
+        "B10"
+      ],
+      "category": "机架与外壳",
+      "name": "屏与板卡托架",
+      "model": "6061板，200×200×2mm毛坯＋尼龙柱/外侧夹持件",
+      "spec": "同一毛坯裁电控160×130×2、BOX夹持板80×60×2、C6夹持板60×35×2各1；均先不钻孔",
+      "qty": 1,
+      "unit": "两套",
+      "selection": "主方案",
+      "readiness": "暂缓：实物孔位待核",
+      "price_cny": null,
+      "price_basis": "待询价；不沿用旧打包额度",
+      "check": "三个尺寸是托板毛坯，不是PCB孔距；后托板经绝缘柱装后检修木板，断电检修。BOX服务深度约35；C6避天线。按实物摆模块后冻结孔。",
+      "sources": []
+    },
+    {
+      "id": "F07",
+      "old_ids": [
+        "B10"
+      ],
+      "category": "机架与外壳",
+      "name": "遮光隔舱/快拆件",
+      "model": "哑黑PP1mm 300×300mm＋M3手拧螺钉/嵌件",
+      "spec": "PP1mm 300×300一张：遮光底板180×200开130×50；余料做BOX背光罩，M3手拧4只及螺母4只",
+      "qty": 1,
+      "unit": "组",
+      "selection": "主方案",
+      "readiness": "纸样后加工",
+      "price_cny": null,
+      "price_basis": "待询价；不沿用旧打包额度",
+      "check": "底板顶Z195，孔与豆流对齐；背光罩分片拼装，不能放整块不透明背景板在前后相机之间。按纸样修边。",
+      "sources": []
+    },
+    {
+      "id": "B11",
+      "old_ids": [
+        "B11"
+      ],
+      "category": "机架与外壳",
+      "name": "可拆轻刷（可选实验）",
+      "model": "PBT软毛丝径0.10–0.15mm＋可拆夹座",
+      "spec": "每槽两侧轻触、侵入1–2mm起点，刷条总长按5槽纸样",
+      "qty": 1,
+      "unit": "件",
+      "selection": "备选",
+      "readiness": "无刷基线完成后再购",
+      "price_cny": null,
+      "price_basis": "待询价；不沿用旧打包额度",
+      "check": "默认首样不装刷；不脱毛、不偏留碎豆且无新增破损才保留。",
+      "sources": []
+    },
+    {
+      "id": "B12",
+      "old_ids": [
+        "B12"
+      ],
+      "category": "称重",
+      "name": "收豆盒",
+      "model": "食品接触PP，外尺寸≤160×170×130mm",
+      "spec": "实际容量≥500g样本；轻量化，当前活动总重预算≤250g",
+      "qty": 1,
+      "unit": "件",
+      "selection": "主方案",
+      "readiness": "实测容积/质量后下单",
+      "price_cny": null,
+      "price_basis": "待询价；不沿用旧打包额度",
+      "check": "1kg整批收集必须另核容积和称台毛载荷；不把外形尺寸直接等于豆子容量。",
+      "sources": []
+    },
+    {
+      "id": "A14",
+      "old_ids": [
+        "A14"
+      ],
+      "category": "板卡与相机",
+      "name": "颜色/背景参考块",
+      "model": "哑光中性灰，约30×30×1mm可换片",
+      "spec": "放在豆路两侧；配批次记录、光照重复性",
+      "qty": 1,
+      "unit": "件",
+      "selection": "主方案",
+      "readiness": "标准规格待报价",
+      "price_cny": null,
+      "price_basis": "待询价；不沿用旧打包额度",
+      "check": "只是重复性参照，不代替专业色卡校准；不放整块板挡落豆。",
+      "sources": []
+    },
+    {
+      "id": "B13",
+      "old_ids": [
+        "B13"
+      ],
+      "category": "板卡与相机",
+      "name": "相机独立支架",
+      "model": "6061角铝30×30×2，切长40mm；载板2mm",
+      "spec": "两套；每套30×30×2长40角铝＋40×40×2载板毛坯；配M5 T螺母2/螺钉2，尼龙柱按PCB孔",
+      "qty": 2,
+      "unit": "套",
+      "selection": "主方案",
+      "readiness": "暂缓：相机PCB孔位待核",
+      "price_cny": null,
+      "price_basis": "待询价；不沿用旧打包额度",
+      "check": "载板毛坯40×40mm仅起点；相机固定在独立型材梁，不由排线承重。",
+      "sources": []
+    },
+    {
+      "id": "A16",
+      "old_ids": [
+        "A16"
+      ],
+      "category": "控制与接线",
+      "name": "开始与停止按钮",
+      "model": "φ16mm无灯金属，自复位，1NO1NC",
+      "spec": "两只；开始接NO、停止接NC；需低电平微负载触点",
+      "qty": 2,
+      "unit": "件",
+      "selection": "主方案",
+      "readiness": "触点/夹紧范围核对后采购",
+      "price_cny": null,
+      "price_basis": "待询价；不沿用旧打包额度",
+      "check": "需适配6mm面板或加薄衬板；未核具体厂家SKU，不买带灯锁定按钮。此为软件停止输入。",
+      "sources": []
+    },
+    {
+      "id": "S01",
+      "old_ids": [
+        "A13"
+      ],
+      "category": "控制与接线",
+      "name": "开/关滑架限位",
+      "model": "OMRON SS-01GL 微负载金合金触点",
+      "spec": "每端1只；19.8×约6.4mm壳体、孔距9.5mm参照；端子COM/NO",
+      "qty": 2,
+      "unit": "件",
+      "selection": "主方案",
+      "readiness": "安装/微负载验证后采购",
+      "price_cny": null,
+      "price_basis": "待询价；不沿用旧打包额度",
+      "check": "不能用SS-5银触点的5A额定代替微负载要求。3.3V下动作可靠性须实测；装在滑架而非舵盘上。",
+      "sources": [
+        "https://omronfs.omron.com/en_US/ecb/products/pdf/en-ss.pdf"
+      ]
+    },
+    {
+      "id": "S02",
+      "old_ids": [
+        "A13"
+      ],
+      "category": "控制与接线",
+      "name": "限位/按键外上拉",
+      "model": "2.2kΩ金属膜，1%，0.25W",
+      "spec": "GPIO0/1/3/23各1只，另2只备用；上拉3.3V",
+      "qty": 6,
+      "unit": "件",
+      "selection": "主方案",
+      "readiness": "标准规格待报价",
+      "price_cny": null,
+      "price_basis": "待询价；不沿用旧打包额度",
+      "check": "闭合电流约1.5mA；不自动宣称满足所有开关微负载规格，按所购触点资料与实测核验。",
+      "sources": []
+    },
+    {
+      "id": "S03",
+      "old_ids": [
+        "A13"
+      ],
+      "category": "控制与接线",
+      "name": "BOX UART转接线",
+      "model": "匹配BOX PH2.0接口1的插壳/端子线",
+      "spec": "按原厂针数/顺序配；只连接TX、RX、GND，5V端独立绝缘",
+      "qty": 1,
+      "unit": "件",
+      "selection": "主方案",
+      "readiness": "暂缓：原厂接口方向待核",
+      "price_cny": null,
+      "price_basis": "待询价；不沿用旧打包额度",
+      "check": "PH2.0只表示间距系列；不能凭4针同外形认定线序。目标约200mm，实际走线定长。",
+      "sources": [
+        "https://wiki.alientek.com/docs/Boards/Kendryte/DNK230D/start-guide/k230d-box-introduction/"
+      ]
+    },
+    {
+      "id": "S04",
+      "old_ids": [
+        "A13"
+      ],
+      "category": "控制与接线",
+      "name": "控制信号线与端接",
+      "model": "多股铜0.14mm²（约AWG26）信号线",
+      "spec": "约2m总用量＋匹配2.54排针/插壳/热缩；短UART和开关信号",
+      "qty": 1,
+      "unit": "组",
+      "selection": "主方案",
+      "readiness": "标准规格待报价",
+      "price_cny": null,
+      "price_basis": "待询价；不沿用旧打包额度",
+      "check": "只用于信号；称重桥线按厂商屏蔽双绞要求，舵机大电流另走0.75mm²。",
+      "sources": []
+    },
+    {
+      "id": "O01",
+      "old_ids": [
+        "O01"
+      ],
+      "category": "控制与接线",
+      "name": "可选PWM单向缓冲",
+      "model": "TI SN74AHCT1G125DBVR＋SOT23-5转接板",
+      "spec": "5V VCC；/OE接GND，输入GPIO2，输出仅给舵机；旁路100nF取C03",
+      "qty": 1,
+      "unit": "件",
+      "selection": "备选",
+      "readiness": "3.3V PWM不可靠才装",
+      "price_cny": null,
+      "price_basis": "待询价；不沿用旧打包额度",
+      "check": "输入加10k下拉、输出串100Ω各1；绝不6V供电，绝不把5V输出回接C6。请代焊不手悬裸芯片。",
+      "sources": [
+        "https://www.ti.com/product/SN74AHCT1G125"
+      ]
+    },
+    {
+      "id": "O04",
+      "old_ids": [
+        "O04"
+      ],
+      "category": "控制与接线",
+      "name": "可选独立3.3V模块",
+      "model": "Pololu D24V5F3，#2842，候选",
+      "spec": "24V→3.3V，典型500mA等级；按噪声/热需求核",
+      "qty": 1,
+      "unit": "件",
+      "selection": "备选",
+      "readiness": "余量/称重噪声不足再设计",
+      "price_cny": null,
+      "price_basis": "待询价；不沿用旧打包额度",
+      "check": "不能与C6板载3.3V直接并联；须重审I²C供电先后和上拉，不默认购买。",
+      "sources": [
+        "https://www.pololu.com/product/2842"
+      ]
+    },
+    {
+      "id": "G01",
+      "old_ids": [
+        "B09"
+      ],
+      "category": "滑闸标准件",
+      "name": "25T金属舵臂",
+      "model": "goBILDA 1900-0025-0104",
+      "spec": "H25T；厚4mm、φ4孔；8/16/24/32mm孔半径，使用16mm",
+      "qty": 1,
+      "unit": "件",
+      "selection": "主方案",
+      "readiness": "花键试装后下单",
+      "price_cny": null,
+      "price_basis": "待询价；不沿用旧打包额度",
+      "check": "32mm是商品长度级别，不能当本设计力臂。仅匹配实物25T；中心螺钉用舵机匹配件。",
+      "sources": [
+        "https://www.gobilda.com/1900-series-single-servo-arm-25-tooth-spline-32mm-length/"
+      ]
+    },
+    {
+      "id": "G02",
+      "old_ids": [
+        "B09"
+      ],
+      "category": "滑闸标准件",
+      "name": "双球头杆端",
+      "model": "goBILDA 2913-0004-0241",
+      "spec": "M4×0.7内螺纹、球孔φ4；h约24.4mm、总长31.3mm、螺纹深13mm按图",
+      "qty": 2,
+      "unit": "件",
+      "selection": "主方案",
+      "readiness": "标准规格待报价",
+      "price_cny": null,
+      "price_basis": "待询价；不沿用旧打包额度",
+      "check": "两只=原厂1个2-pack，不重复买2包；网页标题24.1与图24.4不同，收到后量h。",
+      "sources": [
+        "https://www.gobilda.com/2913-series-steel-ball-linkage-female-m4-x-0-7mm-24-1mm-length-2-pack/"
+      ]
+    },
+    {
+      "id": "G03",
+      "old_ids": [
+        "B09"
+      ],
+      "category": "滑闸标准件",
+      "name": "连杆中间牙条",
+      "model": "goBILDA 2808-0004-0030 / 等效不锈钢",
+      "spec": "M4×0.7、30mm长；与2球头组成约60mm球心距",
+      "qty": 1,
+      "unit": "件",
+      "selection": "主方案",
+      "readiness": "标准规格待报价",
+      "price_cny": null,
+      "price_basis": "待询价；不沿用旧打包额度",
+      "check": "一根使用，原厂2-pack另一根备用；不是60mm牙条。两端右牙，调长需拆一头。",
+      "sources": [
+        "https://www.gobilda.com/2808-series-stainless-steel-threaded-rod-m4-x-0-7mm-30mm-length-2-pack/"
+      ]
+    },
+    {
+      "id": "G04",
+      "old_ids": [
+        "B09"
+      ],
+      "category": "滑闸标准件",
+      "name": "杆端并紧螺母",
+      "model": "ISO 4032 / GB6170 M4×0.7",
+      "spec": "两只用、两只备用，普通六角并紧螺母",
+      "qty": 4,
+      "unit": "件",
+      "selection": "主方案",
+      "readiness": "标准规格待报价",
+      "price_cny": null,
+      "price_basis": "待询价；不沿用旧打包额度",
+      "check": "裸露牙条11.2mm须装下两只螺母；不可把厚尼龙锁紧螺母当同尺寸。",
+      "sources": []
+    },
+    {
+      "id": "G05",
+      "old_ids": [
+        "B09"
+      ],
+      "category": "滑闸标准件",
+      "name": "球头轴与防松件",
+      "model": "φ4光杆/肩轴段＋M4螺纹；M4防松螺母",
+      "spec": "两组；轴向堆叠=舵臂/耳板+球内圈+隔套+螺母；长度按实物",
+      "qty": 2,
+      "unit": "组",
+      "selection": "主方案",
+      "readiness": "暂缓：球内圈/堆叠待量",
+      "price_cny": null,
+      "price_basis": "待询价；不沿用旧打包额度",
+      "check": "夹持球内圈，不压外壳；不能直接指定M4×16而未知内圈宽度。带小径隔套，球头全角度不干涉。",
+      "sources": []
+    },
+    {
+      "id": "G06",
+      "old_ids": [
+        "B09"
+      ],
+      "category": "滑闸标准件",
+      "name": "左右直线导向",
+      "model": "MGN9导轨100mm＋MGN9H长滑块",
+      "spec": "两轨各1块；HIWIN参考块高10、宽20、长39.9mm；孔距15×16mm参考",
+      "qty": 2,
+      "unit": "轨块套",
+      "selection": "主方案",
+      "readiness": "供货图/纸样核对后采购",
+      "price_cny": null,
+      "price_basis": "待询价；不沿用旧打包额度",
+      "check": "兼容件不继承原厂额定值；每套明确含轨和H块，不再重复列买2只滑块。两轨平行不强行夹紧。",
+      "sources": [
+        "https://www.hiwin.com/wp-content/uploads/Linear_Guideway-E-1.pdf"
+      ]
+    },
+    {
+      "id": "G07",
+      "old_ids": [
+        "B09"
+      ],
+      "category": "滑闸加工件",
+      "name": "全宽铝闸片",
+      "model": "GATE-PLATE-01 / 6061-T6",
+      "spec": "110×45×2mm毛坯；直线钝前缘、去毛刺、平整",
+      "qty": 1,
+      "unit": "件",
+      "selection": "主方案",
+      "readiness": "先纸样，后加工",
+      "price_cny": null,
+      "price_basis": "待询价；不沿用旧打包额度",
+      "check": "封口边/螺孔由新槽盒定；不是0.8mm薄POM。载荷模型尚不覆盖局部接触/安装翘曲。",
+      "sources": []
+    },
+    {
+      "id": "G08",
+      "old_ids": [
+        "B09"
+      ],
+      "category": "滑闸加工件",
+      "name": "滑架转接板（本次补漏）",
+      "model": "GATE-CARRIAGE-01 / 6061-T6",
+      "spec": "120×30×3mm毛坯；桥接左右MGN9H；轨中心距94mm布局提案（原约90起点）",
+      "qty": 1,
+      "unit": "件",
+      "selection": "主方案",
+      "readiness": "暂缓：收到导轨后开孔",
+      "price_cny": null,
+      "price_basis": "待询价；不沿用旧打包额度",
+      "check": "覆盖前后16mm孔距；10mm角铝脚宽不足以代替此板。参考四孔位置每块±7.5、±8mm；最终按供货图。",
+      "sources": []
+    },
+    {
+      "id": "G09",
+      "old_ids": [
+        "B09"
+      ],
+      "category": "滑闸加工件",
+      "name": "横梁加强/连接角铝",
+      "model": "6061/6063，10×10×2mm，长110mm",
+      "spec": "装在转接板/闸片后部、豆路外，至少两处间隔连接",
+      "qty": 1,
+      "unit": "件",
+      "selection": "主方案",
+      "readiness": "纸样后加工",
+      "price_cny": null,
+      "price_basis": "待询价；不沿用旧打包额度",
+      "check": "保留为加强与闸片连接件，不直接把两滑块只锁在10mm角铝脚上。",
+      "sources": []
+    },
+    {
+      "id": "G10",
+      "old_ids": [
+        "B09"
+      ],
+      "category": "滑闸加工件",
+      "name": "中心连接耳",
+      "model": "GATE-EAR-01 / 6061，30×20×3mm毛坯",
+      "spec": "中心孔φ4.2mm起点；高度/折弯连接按舵臂平面设计",
+      "qty": 1,
+      "unit": "件",
+      "selection": "主方案",
+      "readiness": "暂缓：共面高度待纸样",
+      "price_cny": null,
+      "price_basis": "待询价；不沿用旧打包额度",
+      "check": "宽度中心居中；不沿用z315−z292=23mm直接钻孔。耳板/隔套必须避开连杆摆角。",
+      "sources": []
+    },
+    {
+      "id": "G11",
+      "old_ids": [
+        "B09"
+      ],
+      "category": "滑闸加工件",
+      "name": "共同导轨底座",
+      "model": "GATE-BASE-01 / 6061，140×140×4mm毛坯",
+      "spec": "两轨在同一平面；近槽盒侧裁切/开缺口，不能遮挡落豆通口",
+      "qty": 1,
+      "unit": "件",
+      "selection": "主方案",
+      "readiness": "暂缓：布置/视锥待纸样",
+      "price_cny": null,
+      "price_basis": "待询价；不沿用旧打包额度",
+      "check": "assembly第04图给前豆路/后舵机避空方向；140×140是毛坯，最终缺口/螺孔须纸样。实际轨块总高、100轨端余量和视锥未验。",
+      "sources": []
+    },
+    {
+      "id": "G12",
+      "old_ids": [
+        "B09"
+      ],
+      "category": "滑闸加工件",
+      "name": "槽内低摩擦支承框",
+      "model": "食品接触可核POM，110×30×3mm毛坯",
+      "spec": "开5通口，各净宽14、前后深12mm；侧边/隔板下实体对应支承",
+      "qty": 1,
+      "unit": "件",
+      "selection": "主方案",
+      "readiness": "暂缓：槽盒纸样后开口",
+      "price_cny": null,
+      "price_basis": "待询价；不沿用旧打包额度",
+      "check": "窗口按实际槽列定位；不要把整块110×30板塞在出口下。2mm闸片所需垂直/横向余隙分开验。",
+      "sources": []
+    },
+    {
+      "id": "G13",
+      "old_ids": [
+        "B08",
+        "B09"
+      ],
+      "category": "滑闸加工件",
+      "name": "封闭槽盒与退片袋板料",
+      "model": "食品接触PP3mm＋可拆POM缝口条",
+      "spec": "槽盒外宽110、高50；槽内净14×12；闸门下约12mm围挡；退片袋按全行程包络",
+      "qty": 1,
+      "unit": "组",
+      "selection": "主方案",
+      "readiness": "暂缓：必须纸样定型",
+      "price_cny": null,
+      "price_basis": "待询价；不沿用旧打包额度",
+      "check": "用F05库存PP，不重复买PP整张；本行报价为缝口条/加工。前壁接收槽深1.5mm起点，壁缝按实厚+0.2–0.4mm总隙起试，可拆清理。",
+      "sources": []
+    },
+    {
+      "id": "G14",
+      "old_ids": [
+        "B09"
+      ],
+      "category": "滑闸加工件",
+      "name": "舵机固定支架",
+      "model": "MG996R专用金属支架＋6061 3mm转接毛坯",
+      "spec": "毛坯约60×60×3mm；轴竖直，连杆与滑架连接点共面起点",
+      "qty": 1,
+      "unit": "件",
+      "selection": "主方案",
+      "readiness": "暂缓：机身/高度待试装",
+      "price_cny": null,
+      "price_basis": "待询价；不沿用旧打包额度",
+      "check": "支架与底座同一刚性机架；壳体/扫掠避后摄视锥，不将旧轴高当冻结孔位。",
+      "sources": []
+    },
+    {
+      "id": "G15",
+      "old_ids": [
+        "B09",
+        "A13"
+      ],
+      "category": "滑闸标准件",
+      "name": "滑块连接螺钉",
+      "model": "M3×6内六角＋必要薄垫片",
+      "spec": "8只使用、2只备用；配3mm转接板",
+      "qty": 10,
+      "unit": "件",
+      "selection": "主方案",
+      "readiness": "实际螺纹深度核对",
+      "price_cny": null,
+      "price_basis": "待询价；不沿用旧打包额度",
+      "check": "先量块的有效螺纹深与板/垫片堆叠，既不顶底也不啮合不足；不按所有MGN9H兼容块同深度购买。",
+      "sources": []
+    },
+    {
+      "id": "G16",
+      "old_ids": [
+        "B09"
+      ],
+      "category": "滑闸标准件",
+      "name": "导轨底座连接螺钉",
+      "model": "M3×8内六角＋M3螺母/底座螺纹",
+      "spec": "每轨按实际孔数，预留12只",
+      "qty": 12,
+      "unit": "件",
+      "selection": "主方案",
+      "readiness": "导轨孔/底座堆叠核对",
+      "price_cny": null,
+      "price_basis": "待询价；不沿用旧打包额度",
+      "check": "基座仅4mm厚，通孔+螺母或螺纹方案需先定；不得让下露螺杆顶框架。",
+      "sources": []
+    },
+    {
+      "id": "G17",
+      "old_ids": [
+        "B09"
+      ],
+      "category": "滑闸标准件",
+      "name": "闸片/横梁连接件",
+      "model": "M3×10沉头＋M3螺母/压条",
+      "spec": "6只使用、2只备用；每连接层实量",
+      "qty": 8,
+      "unit": "件",
+      "selection": "主方案",
+      "readiness": "纸样与板厚核对",
+      "price_cny": null,
+      "price_basis": "待询价；不沿用旧打包额度",
+      "check": "2mm闸片不靠单孔受拉；豆路表面保持平顺，不留凸出螺帽。可把孔放后方完全避豆路。",
+      "sources": []
+    },
+    {
+      "id": "G18",
+      "old_ids": [
+        "B09",
+        "A13"
+      ],
+      "category": "滑闸加工件",
+      "name": "限位安装耳与保护挡块",
+      "model": "6061/POM毛坯，约20×15×3mm各件",
+      "spec": "两限位耳、两保护挡块；M2安装件按SS-01GL图",
+      "qty": 1,
+      "unit": "组",
+      "selection": "主方案",
+      "readiness": "端点标定后定位",
+      "price_cny": null,
+      "price_basis": "待询价；不沿用旧打包额度",
+      "check": "正常端点先触限位，机械挡块留在正常行程外；不能让舵机正常关闸时顶死。",
+      "sources": []
+    },
+    {
+      "id": "G19",
+      "old_ids": [
+        "B08",
+        "B09"
+      ],
+      "category": "滑闸加工件",
+      "name": "手动止料片",
+      "model": "食品接触PP/POM，110×40×1mm毛坯",
+      "spec": "独立可插入止料位置；片外保留手持区",
+      "qty": 1,
+      "unit": "件",
+      "selection": "主方案",
+      "readiness": "槽盒纸样后制作",
+      "price_cny": null,
+      "price_basis": "待询价；不沿用旧打包额度",
+      "check": "不作为自动急停或失电自闭。与运行中闸片不能干涉，取盒前先停料排空。",
+      "sources": []
+    },
+    {
+      "id": "G20",
+      "old_ids": [
+        "B09"
+      ],
+      "category": "滑闸加工件",
+      "name": "润滑区与豆路隔板",
+      "model": "PP1mm毛坯140×110mm＋M3可拆固定",
+      "spec": "隔开轨块润滑、连杆与豆路；留检修清洁通道",
+      "qty": 1,
+      "unit": "件",
+      "selection": "主方案",
+      "readiness": "纸样后裁切",
+      "price_cny": null,
+      "price_basis": "待询价；不沿用旧打包额度",
+      "check": "薄片仅隔尘，不承担1kg豆重；不能在落豆口横跨挡豆。",
+      "sources": []
+    },
+    {
+      "id": "I06",
+      "old_ids": [
+        "A15"
+      ],
+      "category": "工业光电备选",
+      "name": "光耦输出上拉",
+      "model": "4.7kΩ 1% 1/4W电阻",
+      "spec": "集电极至C6 3.3V；与24V输入限流I03不同",
+      "qty": 1,
+      "unit": "件",
+      "selection": "备选",
+      "readiness": "随I02接口复核",
+      "price_cny": null,
+      "price_basis": "待询价；不沿用旧打包额度",
+      "check": "仅确认NPN后使用，输出不接24V或5V。",
+      "sources": []
+    },
+    {
+      "id": "I07",
+      "old_ids": [
+        "A15"
+      ],
+      "category": "工业光电备选",
+      "name": "光耦代焊与绝缘安装",
+      "model": "FR-4小板约30×20mm＋接线端子＋绝缘盒",
+      "spec": "输入/输出分区标识，禁止裸焊悬空",
+      "qty": 1,
+      "unit": "组",
+      "selection": "备选",
+      "readiness": "随I02代焊",
+      "price_cny": null,
+      "price_basis": "待询价；不沿用旧打包额度",
+      "check": "报价含代焊和两侧端子；电路通断/极性/输出电压先台架核验。",
+      "sources": []
+    },
+    {
+      "id": "W08",
+      "old_ids": [
+        "B05"
+      ],
+      "category": "称重",
+      "name": "350g检查用组合砝码之一",
+      "model": "OIML R111 F1不锈钢，200g",
+      "spec": "有修正值与可核查证书；和100g、50g组合参考",
+      "qty": 1,
+      "unit": "件",
+      "selection": "主方案",
+      "readiness": "标准规格待报价",
+      "price_cny": null,
+      "price_basis": "待询价；不沿用旧打包额度",
+      "check": "三件实际修正质量相加，组合参考扩展不确定度≤0.03g；须考虑相关性，不能只复制单件证书数值。",
+      "sources": [
+        "https://www.oiml.org/en/files/pdf_r/r111-1-e04.pdf"
+      ]
+    },
+    {
+      "id": "W09",
+      "old_ids": [
+        "B05"
+      ],
+      "category": "称重",
+      "name": "350g检查用组合砝码之二",
+      "model": "OIML R111 F1不锈钢，50g",
+      "spec": "与W03 100g、W08 200g组成约350g独立检查点",
+      "qty": 1,
+      "unit": "件",
+      "selection": "主方案",
+      "readiness": "标准规格待报价",
+      "price_cny": null,
+      "price_basis": "待询价；不沿用旧打包额度",
+      "check": "不依赖待测秤确定砝码质量；校准点与独立检查点分开使用。",
+      "sources": [
+        "https://www.oiml.org/en/files/pdf_r/r111-1-e04.pdf"
+      ]
+    },
+    {
+      "id": "F08",
+      "old_ids": [
+        "A09",
+        "B08",
+        "B10"
+      ],
+      "category": "外壳固定",
+      "name": "木面板与料斗固定件（装配补漏）",
+      "model": "M5×12＋2020 T螺母/垫片；15×15×约1.5mm小角片；M3×12",
+      "spec": "M5×12/T螺母/垫片各20（面板16点、托耳2点、2备）；小角片10；M3×12螺钉/螺母/垫片各28含备",
+      "qty": 1,
+      "unit": "组",
+      "selection": "主方案",
+      "readiness": "纸样后核板厚/孔深",
+      "price_cny": null,
+      "price_basis": "新增材料待询价",
+      "check": "M5×8不够直接穿6mm面板后可靠啮合；M5×12仍按垫片/槽深试装防顶底。M3内侧头平齐、不留突出端进入豆路。耳板/木壁固定先试装。",
+      "sources": []
+    }
+  ],
+  "legacy_audit": [
+    {
+      "id": "A01",
+      "name": "正点原子K230D BOX＋32GB TF卡",
+      "action": "补材料/型号、数量与下单条件；打包规划金额不作新报价",
+      "new_ids": [
+        "A01"
+      ]
+    },
+    {
+      "id": "E01",
+      "name": "ESP32-C6-LCD-1.47非Touch版",
+      "action": "补材料/型号、数量与下单条件；打包规划金额不作新报价",
+      "new_ids": [
+        "E01"
+      ]
+    },
+    {
+      "id": "E02",
+      "name": "BOX自带2.4英寸屏＋32GB TF",
+      "action": "套件内包含，不把尚未收到的套件标成已有",
+      "new_ids": [
+        "E02"
+      ]
+    },
+    {
+      "id": "B01",
+      "name": "GC2093＋M12 90°无畸变镜头，两套",
+      "action": "补用户GC2093-M12-90度描述，PCB/线序/近焦仍需核",
+      "new_ids": [
+        "B01"
+      ]
+    },
+    {
+      "id": "B02",
+      "name": "BOX兼容MIPI排线，按实际路径",
+      "action": "补材料/型号、数量与下单条件；打包规划金额不作新报价",
+      "new_ids": [
+        "B02"
+      ]
+    },
+    {
+      "id": "A03",
+      "name": "MG996R位置舵机＋舵盘",
+      "action": "补材料/型号、数量与下单条件；打包规划金额不作新报价",
+      "new_ids": [
+        "A03"
+      ]
+    },
+    {
+      "id": "A04",
+      "name": "山大斯M12对射收发一组",
+      "action": "首样改低压2167建议，原B3F-20C1保留待核备选",
+      "new_ids": [
+        "PH01",
+        "I01"
+      ]
+    },
+    {
+      "id": "B03",
+      "name": "NAU7802 I²C模块，3.3V兼容",
+      "action": "补材料/型号、数量与下单条件；打包规划金额不作新报价",
+      "new_ids": [
+        "B03"
+      ]
+    },
+    {
+      "id": "B04",
+      "name": "1kg四线全桥、单点偏载补偿传感器",
+      "action": "原1kg采购描述未闭合；用户3kg候选另列，L6J1不直接适配",
+      "new_ids": [
+        "W01",
+        "W02"
+      ]
+    },
+    {
+      "id": "B05",
+      "name": "100g/500g等可核查质量砝码",
+      "action": "补材料/型号、数量与下单条件；打包规划金额不作新报价",
+      "new_ids": [
+        "W03",
+        "W04",
+        "W08",
+        "W09"
+      ]
+    },
+    {
+      "id": "B06",
+      "name": "轻平台＋刚性底座/支柱＋过载限位",
+      "action": "补材料/型号、数量与下单条件；打包规划金额不作新报价",
+      "new_ids": [
+        "W05",
+        "W06",
+        "W07"
+      ]
+    },
+    {
+      "id": "A05",
+      "name": "24V普瑞Ra98同批固定色温灯带",
+      "action": "补材料/型号、数量与下单条件；打包规划金额不作新报价",
+      "new_ids": [
+        "A05"
+      ]
+    },
+    {
+      "id": "A06",
+      "name": "4条铝散热槽＋扩散片＋遮光边",
+      "action": "补材料/型号、数量与下单条件；打包规划金额不作新报价",
+      "new_ids": [
+        "L02",
+        "L03"
+      ]
+    },
+    {
+      "id": "A07",
+      "name": "24V/4A成品稳压适配器",
+      "action": "补材料/型号、数量与下单条件；打包规划金额不作新报价",
+      "new_ids": [
+        "A07",
+        "P02"
+      ]
+    },
+    {
+      "id": "A08",
+      "name": "XL4015类24V→5.0V带散热模块",
+      "action": "补具体固定5V模块参考；旧18元不当新报价",
+      "new_ids": [
+        "A08"
+      ]
+    },
+    {
+      "id": "A17",
+      "name": "第二只24V→6.0V带散热模块",
+      "action": "补具体固定6V模块参考；旧18元不当新报价",
+      "new_ids": [
+        "A17"
+      ]
+    },
+    {
+      "id": "A09",
+      "name": "24V DC开关、端子、保险座/保险、线材",
+      "action": "补材料/型号、数量与下单条件；打包规划金额不作新报价",
+      "new_ids": [
+        "P03",
+        "P04",
+        "P05",
+        "P06",
+        "P07",
+        "P08",
+        "F08"
+      ]
+    },
+    {
+      "id": "A10",
+      "name": "1000µF16V＋470µF10V＋100nF",
+      "action": "补材料/型号、数量与下单条件；打包规划金额不作新报价",
+      "new_ids": [
+        "C01",
+        "C02",
+        "C03"
+      ]
+    },
+    {
+      "id": "A11",
+      "name": "双USB-A供电转接＋两根短A-to-C线",
+      "action": "补材料/型号、数量与下单条件；打包规划金额不作新报价",
+      "new_ids": [
+        "P09",
+        "P10"
+      ]
+    },
+    {
+      "id": "B07",
+      "name": "2020银色型材4.40m＋角码/T螺母",
+      "action": "核对净切割长度4.40m，连接件拆开",
+      "new_ids": [
+        "F01",
+        "F02"
+      ]
+    },
+    {
+      "id": "B08",
+      "name": "6mm海洋板支架＋0.5mm PP内衬/隔板",
+      "action": "板料/槽盒展开拆分，宽度分配与开缝须纸样",
+      "new_ids": [
+        "F03",
+        "F04",
+        "F05",
+        "G13",
+        "G19",
+        "F08"
+      ]
+    },
+    {
+      "id": "B09",
+      "name": "POM片＋导块/M3球头连杆＋MG996R金属支架",
+      "action": "原25元打包行作废，拆分G01–G20；增加滑架转接板/封闭槽盒",
+      "new_ids": [
+        "G01",
+        "G02",
+        "G03",
+        "G04",
+        "G05",
+        "G06",
+        "G07",
+        "G08",
+        "G09",
+        "G10",
+        "G11",
+        "G12",
+        "G13",
+        "G14",
+        "G15",
+        "G16",
+        "G17",
+        "G18",
+        "G19",
+        "G20"
+      ]
+    },
+    {
+      "id": "B10",
+      "name": "6mm海洋板＋BOX内托架＋遮光隔舱/快拆",
+      "action": "补材料/型号、数量与下单条件；打包规划金额不作新报价",
+      "new_ids": [
+        "F03",
+        "F06",
+        "F07",
+        "F08"
+      ]
+    },
+    {
+      "id": "B11",
+      "name": "PBT软刷＋夹座",
+      "action": "补材料/型号、数量与下单条件；打包规划金额不作新报价",
+      "new_ids": [
+        "B11"
+      ]
+    },
+    {
+      "id": "A13",
+      "name": "两限位＋PH2.0线/接头＋上拉",
+      "action": "补材料/型号、数量与下单条件；打包规划金额不作新报价",
+      "new_ids": [
+        "S01",
+        "S02",
+        "S03",
+        "S04",
+        "G15",
+        "G18"
+      ]
+    },
+    {
+      "id": "B12",
+      "name": "食品接触PP盒，外≤160×170×130",
+      "action": "补材料/型号、数量与下单条件；打包规划金额不作新报价",
+      "new_ids": [
+        "B12"
+      ]
+    },
+    {
+      "id": "A14",
+      "name": "哑光中性灰参考块",
+      "action": "补材料/型号、数量与下单条件；打包规划金额不作新报价",
+      "new_ids": [
+        "A14"
+      ]
+    },
+    {
+      "id": "B13",
+      "name": "两套L架＋载板/尼龙柱＋固定夹",
+      "action": "补材料/型号、数量与下单条件；打包规划金额不作新报价",
+      "new_ids": [
+        "B13"
+      ]
+    },
+    {
+      "id": "A15",
+      "name": "24V NPN输入→3.3V开集电极光耦模块",
+      "action": "低压方案不用工业光耦；拆上拉/串阻，工业备选另列",
+      "new_ids": [
+        "PH02",
+        "PH03",
+        "I02",
+        "I03",
+        "I04",
+        "I06",
+        "I07"
+      ]
+    },
+    {
+      "id": "B14",
+      "name": "M12可调L支架＋双螺母/遮光帽",
+      "action": "补材料/型号、数量与下单条件；打包规划金额不作新报价",
+      "new_ids": [
+        "PH04",
+        "I05"
+      ]
+    },
+    {
+      "id": "A16",
+      "name": "16mm无灯金属自复位1NO1NC",
+      "action": "补材料/型号、数量与下单条件；打包规划金额不作新报价",
+      "new_ids": [
+        "A16"
+      ]
+    },
+    {
+      "id": "O01",
+      "name": "5V供电AHCT单向PWM缓冲",
+      "action": "补材料/型号、数量与下单条件；打包规划金额不作新报价",
+      "new_ids": [
+        "O01"
+      ]
+    },
+    {
+      "id": "O05",
+      "name": "欧路达Autoda 3kg裸传感器（型号待核）",
+      "action": "更新用户型号HJ-AZ4-3kg与103元，不沿用55元",
+      "new_ids": [
+        "W01"
+      ]
+    },
+    {
+      "id": "O06",
+      "name": "欧路达配套铝支架增价",
+      "action": "旧50元差价作废；103元是否含支架待核，避免重复买底座",
+      "new_ids": [
+        "W07"
+      ]
+    },
+    {
+      "id": "O04",
+      "name": "专用3.3V降压/低噪声后级",
+      "action": "补材料/型号、数量与下单条件；打包规划金额不作新报价",
+      "new_ids": [
+        "O04"
+      ]
+    }
+  ],
+  "legacy_snapshot": [
+    {
+      "id": "A01",
+      "category": "主套件",
+      "name": "正点原子K230D BOX＋32GB TF卡",
+      "qty": 1,
+      "price": 257,
+      "stage": "用户报价",
+      "check": "用户确认257元，含TF；普通附送相机不计入所选双摄方案。",
+      "owned": false,
+      "optional": false
+    },
+    {
+      "id": "E01",
+      "category": "已有",
+      "name": "ESP32-C6-LCD-1.47非Touch版",
+      "qty": 1,
+      "price": 0,
+      "stage": "已有",
+      "check": "侧面状态屏，复用现有板。",
+      "owned": true,
+      "optional": false
+    },
+    {
+      "id": "E02",
+      "category": "套件附带",
+      "name": "BOX自带2.4英寸屏＋32GB TF",
+      "qty": 1,
+      "price": 0,
+      "stage": "计入A01",
+      "check": "没有另买屏幕/TF；拆分列只是防止漏项和重复购买。",
+      "owned": true,
+      "optional": false
+    },
+    {
+      "id": "B01",
+      "category": "双摄已选",
+      "name": "GC2093＋M12 90°无畸变镜头，两套",
+      "qty": 1,
+      "price": 114.32,
+      "stage": "用户报价",
+      "check": "两套合计114.32元；确认BOX两路兼容、IR-cut、近焦、90°定义。",
+      "owned": false,
+      "optional": false
+    },
+    {
+      "id": "B02",
+      "category": "排线",
+      "name": "BOX兼容MIPI排线，按实际路径",
+      "qty": 2,
+      "price": null,
+      "stage": "待询价",
+      "check": "主板改为前贴后重新量长度；若相机价已包含合适排线，取消本行避免重复。",
+      "owned": false,
+      "optional": false
+    },
+    {
+      "id": "A03",
+      "category": "驱动已选",
+      "name": "MG996R位置舵机＋舵盘",
+      "qty": 1,
+      "price": 15.58,
+      "stage": "用户报价",
+      "check": "6.0V独立供电；确认角度版，不要连续旋转改装版；原厂参数不代表廉价件。",
+      "owned": false,
+      "optional": false
+    },
+    {
+      "id": "A04",
+      "category": "经过提示",
+      "name": "山大斯M12对射收发一组",
+      "qty": 1,
+      "price": null,
+      "stage": "待型号/报价",
+      "check": "6–36V图示；本版24V，确认NPN遮光导通、完整型号和激光等级。",
+      "owned": false,
+      "optional": false
+    },
+    {
+      "id": "B03",
+      "category": "称重ADC",
+      "name": "NAU7802 I²C模块，3.3V兼容",
+      "qty": 1,
+      "price": 20,
+      "stage": "规划额度",
+      "check": "3.3V DVDD、约3.0V内部VDDA起试；确认模块原理图/激励/参考，上拉只到3.3V。",
+      "owned": false,
+      "optional": false
+    },
+    {
+      "id": "B04",
+      "category": "精密称重",
+      "name": "1kg四线全桥、单点偏载补偿传感器",
+      "qty": 1,
+      "price": null,
+      "stage": "待参数/报价",
+      "check": "允许170×180平台；按净0–500g、±0.1g目标询价；不能只凭C2/C3和显示位数。",
+      "owned": false,
+      "optional": false
+    },
+    {
+      "id": "B05",
+      "category": "校准",
+      "name": "100g/500g等可核查质量砝码",
+      "qty": 1,
+      "price": null,
+      "stage": "待资料/报价",
+      "check": "支持0.1g判定，参考质量不确定度建议≤0.03g；无资料低价砝码不作证明。",
+      "owned": false,
+      "optional": false
+    },
+    {
+      "id": "B06",
+      "category": "称台",
+      "name": "轻平台＋刚性底座/支柱＋过载限位",
+      "qty": 1,
+      "price": 18,
+      "stage": "规划额度",
+      "check": "平台170×180，正常不触限位；盒和承重件目标≤250g。",
+      "owned": false,
+      "optional": false
+    },
+    {
+      "id": "A05",
+      "category": "照明已选",
+      "name": "24V普瑞Ra98同批固定色温灯带",
+      "qty": 1,
+      "price": null,
+      "stage": "待功率/报价",
+      "check": "初试4×100mm、总0.4m；≤20W/m预算，按切点改长度，本次两选一倾向6000K/Ra98，前提是参数可信和实拍通过。",
+      "owned": false,
+      "optional": false
+    },
+    {
+      "id": "A06",
+      "category": "扩散散热",
+      "name": "4条铝散热槽＋扩散片＋遮光边",
+      "qty": 1,
+      "price": 12,
+      "stage": "规划额度",
+      "check": "每条向豆帘斜照；不让LED直射镜头，木板不承担灯散热。",
+      "owned": false,
+      "optional": false
+    },
+    {
+      "id": "A07",
+      "category": "主电源",
+      "name": "24V/4A成品稳压适配器",
+      "qty": 1,
+      "price": null,
+      "stage": "待型号/报价",
+      "check": "推荐96W；24V3A需满足负载边界。GST90A24 90W可作原厂参考，非已核价。",
+      "owned": false,
+      "optional": false
+    },
+    {
+      "id": "A08",
+      "category": "逻辑降压",
+      "name": "XL4015类24V→5.0V带散热模块",
+      "qty": 1,
+      "price": 18,
+      "stage": "规划额度",
+      "check": "板卡支路目标4A；带载温升实测，不凭标称5A；空载先调5.0V。",
+      "owned": false,
+      "optional": false
+    },
+    {
+      "id": "A17",
+      "category": "舵机降压",
+      "name": "第二只24V→6.0V带散热模块",
+      "qty": 1,
+      "price": 18,
+      "stage": "规划额度",
+      "check": "持续3A/短时5A设计目标；验实际模块，不足改更大；与5V分开。",
+      "owned": false,
+      "optional": false
+    },
+    {
+      "id": "A09",
+      "category": "配电保护",
+      "name": "24V DC开关、端子、保险座/保险、线材",
+      "qty": 1,
+      "price": 25,
+      "stage": "规划额度",
+      "check": "DC额定≥24V4A；星形回路；主/舵机0.75mm²起试，保险按浪涌线径协调。",
+      "owned": false,
+      "optional": false
+    },
+    {
+      "id": "A10",
+      "category": "滤波",
+      "name": "1000µF16V＋470µF10V＋100nF",
+      "qty": 1,
+      "price": 5,
+      "stage": "规划额度",
+      "check": "分别在6V/5V端；符合模块输出电容/启动要求，注意极性。",
+      "owned": false,
+      "optional": false
+    },
+    {
+      "id": "A11",
+      "category": "USB供电",
+      "name": "双USB-A供电转接＋两根短A-to-C线",
+      "qty": 1,
+      "price": 12,
+      "stage": "规划额度",
+      "check": "5V支路到两个板电源口；按电流和板端压降核对，不与电脑反灌。",
+      "owned": false,
+      "optional": false
+    },
+    {
+      "id": "B07",
+      "category": "框架",
+      "name": "2020银色型材4.40m＋角码/T螺母",
+      "qty": 1,
+      "price": 85,
+      "stage": "规划额度",
+      "check": "400×4、220×4、200×6、180×4；相机和料斗支架分别固定。",
+      "owned": false,
+      "optional": false
+    },
+    {
+      "id": "B08",
+      "category": "豆路",
+      "name": "6mm海洋板支架＋0.5mm PP内衬/隔板",
+      "qty": 1,
+      "price": 35,
+      "stage": "规划额度",
+      "check": "四片梯形薄PP；3mm隔板/6mm边条另预切；接缝在外。",
+      "owned": false,
+      "optional": false
+    },
+    {
+      "id": "B09",
+      "category": "滑闸",
+      "name": "POM片＋导块/M3球头连杆＋MG996R金属支架",
+      "qty": 1,
+      "price": 25,
+      "stage": "规划额度",
+      "check": "0.8–1mm、110×45、行程15；后上方轴z315、闸z292，球头过渡23；实物检查视锥。",
+      "owned": false,
+      "optional": false
+    },
+    {
+      "id": "B10",
+      "category": "外壳与屏固定",
+      "name": "6mm海洋板＋BOX内托架＋遮光隔舱/快拆",
+      "qty": 1,
+      "price": 45,
+      "stage": "规划额度",
+      "check": "BOX前面板贴装、主板朝内；C6右侧；服务腔至少约35深，插头另留量。",
+      "owned": false,
+      "optional": false
+    },
+    {
+      "id": "B11",
+      "category": "可拆刷",
+      "name": "PBT软刷＋夹座",
+      "qty": 1,
+      "price": 6,
+      "stage": "规划额度",
+      "check": "先无刷对照；不脱毛、不偏留碎片才用。",
+      "owned": false,
+      "optional": false
+    },
+    {
+      "id": "A13",
+      "category": "控制接线",
+      "name": "两限位＋PH2.0线/接头＋上拉",
+      "qty": 1,
+      "price": 10,
+      "stage": "规划额度",
+      "check": "开/关限位，UART只接TX/RX/GND，PH2.0的5V不连。",
+      "owned": false,
+      "optional": false
+    },
+    {
+      "id": "B12",
+      "category": "收豆",
+      "name": "食品接触PP盒，外≤160×170×130",
+      "qty": 1,
+      "price": 12,
+      "stage": "规划额度",
+      "check": "容下实际500g，重量尽量轻；只压称台，不装承重滑轨。",
+      "owned": false,
+      "optional": false
+    },
+    {
+      "id": "A14",
+      "category": "颜色参考",
+      "name": "哑光中性灰参考块",
+      "qty": 1,
+      "price": 8,
+      "stage": "规划额度",
+      "check": "检查重复性，不代替专业色度校准。",
+      "owned": false,
+      "optional": false
+    },
+    {
+      "id": "B13",
+      "category": "相机固定",
+      "name": "两套L架＋载板/尼龙柱＋固定夹",
+      "qty": 1,
+      "price": 20,
+      "stage": "规划额度",
+      "check": "PCB孔距按实物；独立型材梁，不靠排线支撑。",
+      "owned": false,
+      "optional": false
+    },
+    {
+      "id": "A15",
+      "category": "工业信号",
+      "name": "24V NPN输入→3.3V开集电极光耦模块",
+      "qty": 1,
+      "price": 10,
+      "stage": "规划额度",
+      "check": "确认24V电阻/输入类型、泄漏/延迟；不能固定5V推挽。共地时不是完整隔离。",
+      "owned": false,
+      "optional": false
+    },
+    {
+      "id": "B14",
+      "category": "光电安装",
+      "name": "M12可调L支架＋双螺母/遮光帽",
+      "qty": 1,
+      "price": 8,
+      "stage": "规划额度",
+      "check": "按实物M12×1，留52.5机身和出线空间。",
+      "owned": false,
+      "optional": false
+    },
+    {
+      "id": "A16",
+      "category": "按键",
+      "name": "16mm无灯金属自复位1NO1NC",
+      "qty": 2,
+      "price": 6,
+      "stage": "规划额度",
+      "check": "开始NO、停止NC；面板6mm夹紧范围确认。",
+      "owned": false,
+      "optional": false
+    },
+    {
+      "id": "O01",
+      "category": "可选",
+      "name": "5V供电AHCT单向PWM缓冲",
+      "qty": 1,
+      "price": 6,
+      "stage": "必要时",
+      "check": "仅当MG996R不能接受3.3V信号；不可用6V供电。",
+      "owned": false,
+      "optional": true
+    },
+    {
+      "id": "O05",
+      "category": "候选，不与B04同时买",
+      "name": "欧路达Autoda 3kg裸传感器（型号待核）",
+      "qty": 1,
+      "price": 55,
+      "stage": "用户提供候选价",
+      "check": "不保证数字输出或±0.1g；先核型号/线序/激励/数据表，模拟桥仍需ADC。",
+      "owned": false,
+      "optional": true
+    },
+    {
+      "id": "O06",
+      "category": "候选配套",
+      "name": "欧路达配套铝支架增价",
+      "qty": 1,
+      "price": 50,
+      "stage": "用户提供差价",
+      "check": "55→105元差价；只在选O05且含匹配刚性底座/承载组件时考虑，不与B06重复采购。",
+      "owned": false,
+      "optional": true
+    },
+    {
+      "id": "O04",
+      "category": "可选",
+      "name": "专用3.3V降压/低噪声后级",
+      "qty": 1,
+      "price": null,
+      "stage": "余量不足才加",
+      "check": "C6新增外设>35mA或称重噪声未达标再评估；不能和板载3.3V输出并联。",
+      "owned": false,
+      "optional": true
+    }
+  ],
+  "calculations": {
+    "r_mm": 16,
+    "L_mm": 60,
+    "stroke_mm": 15,
+    "angle_limit_deg": 27.953186883381132,
+    "ball_h_mm_reference": 24.4,
+    "thread_rod_mm": 30,
+    "engagement_each_mm": 9.4,
+    "exposed_thread_mm": 11.2,
+    "plate_mass_g": 26.73,
+    "plate_deflection_uniform_mm": 0.08095926339285715,
+    "plate_deflection_central_beam_load_mm": 0.12953482142857142,
+    "plate_stress_central_beam_load_MPa": 8.9925,
+    "guide_min_geom_length_mm": 74.9,
+    "carriage_blank_mm": [
+      120,
+      30,
+      3
+    ],
+    "power_budget_continuous_w": 53.705882352941174,
+    "power_budget_peak_w": 67.82352941176471,
+    "frame_net_length_m": 4.4,
+    "calculations_are_not_hardware_validation": true,
+    "plate_elastic_modulus_GPa": 70
+  },
+  "assembly_revision": {
+    "date": "2026-10-13",
+    "document": "docs/hardware/assembly-v4.5/beanlens-assembly-v4.5.html",
+    "status": "layout_proposal_not_machining_release",
+    "frame_unchanged": true,
+    "frame_brackets_used": 28,
+    "frame_brackets_purchase": 32,
+    "hopper_support_ears_mm": [
+      40,
+      30,
+      6
+    ],
+    "midframe_top_z_mm": 324,
+    "gate_rail_spacing_mm_proposal": 94
+  }
+}
