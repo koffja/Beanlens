@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1500 1060" width="1400" height="960" role="img" aria-label="MVP：SEN0503 用5V供电，信号另上拉3.3V">
+<style>text{font-family:"PingFang SC","Microsoft YaHei",sans-serif;fill:#253c36;font-size:21px}.wire{fill:none;stroke-width:3;stroke-linecap:round;stroke-linejoin:round}.bold{font-weight:700}</style><rect width="1500" height="1060" fill="#fafbf7"/>
+<text x="48" y="55" class="" style="font-size:16px;fill:#477d67">BEANLENS / V4.12 / 12</text>
+<text x="48" y="108" class="" style="font-size:36px">MVP：SEN0503 用5V供电，信号另上拉3.3V</text>
+<text x="48" y="148" class="" style="font-size:19px;fill:#667c71">红外型号：DFRobot SEN0503 / 50cm。YU2405替换主适配器；5V逻辑降压与6V UBEC保持分路。</text>
+<rect x="48" y="198" width="330" height="142" rx="8" fill="#eaf3ea" stroke="#c6d6ca" stroke-width="2"/>
+<text x="64" y="229" class="bold" style="font-size:23px">发射头 TX</text>
+<text x="64" y="259" class="" style="font-size:18px">红线 → 5.0V</text>
+<text x="64" y="286" class="" style="font-size:18px">黑线 → GND</text>
+<text x="64" y="313" class="" style="font-size:18px">不接6V / 24V</text>
+<rect x="48" y="424" width="330" height="176" rx="8" fill="#eaf3ea" stroke="#c6d6ca" stroke-width="2"/>
+<text x="64" y="455" class="bold" style="font-size:23px">接收头 RX</text>
+<text x="64" y="485" class="" style="font-size:18px">红线 → 5.0V</text>
+<text x="64" y="512" class="" style="font-size:18px">黑线 → GND</text>
+<text x="64" y="539" class="" style="font-size:18px">白线 → 信号节点 A</text>
+<text x="64" y="566" class="" style="font-size:18px">原厂：NPN常开输出</text>
+<polyline class="wire" points="378,528 630,528" stroke="#23789d"/>
+<circle cx="630" cy="528" r="6" fill="#23789d"/>
+<text x="616" y="565" class="" style="font-size:23px">A</text>
+<rect x="582" y="288" width="96" height="45" rx="4" fill="#f3eaf9" stroke="#8556a8" stroke-width="2"/>
+<text x="598" y="318" class="" style="font-size:20px;fill:#8556a8">3.3V</text>
+<polyline class="wire" points="630,333 630,380" stroke="#8556a8"/>
+<rect x="602" y="380" width="56" height="85" rx="3" fill="#fff" stroke="#8556a8" stroke-width="2"/>
+<text x="613" y="430" class="" style="font-size:19px">10k</text>
+<polyline class="wire" points="630,465 630,528" stroke="#8556a8"/>
+<polyline class="wire" points="630,528 805,528" stroke="#23789d"/>
+<rect x="805" y="505" width="83" height="45" rx="4" fill="#fff" stroke="#23789d" stroke-width="2"/>
+<text x="825" y="536" class="" style="font-size:20px">1k</text>
+<polyline class="wire" points="888,528 1010,528" stroke="#23789d"/>
+<rect x="1010" y="464" width="438" height="127" rx="8" fill="#fff" stroke="#c6d6ca" stroke-width="2"/>
+<text x="1026" y="495" class="bold" style="font-size:23px">C6 GPIO20（拟定）</text>
+<text x="1026" y="525" class="" style="font-size:18px">确认两状态电压后才接入</text>
+<text x="1026" y="552" class="" style="font-size:18px">串联1k不负责把5V降到3.3V</text>
+<text x="705" y="576" class="" style="font-size:17px;fill:#23789d">先不接GPIO，在 A 对 GND 测量</text>
+<rect x="744" y="198" width="704" height="198" rx="8" fill="#eaf3ea" stroke="#c6d6ca" stroke-width="2"/>
+<text x="760" y="229" class="bold" style="font-size:23px">型号和供电已核对</text>
+<text x="760" y="259" class="" style="font-size:18px">SEN0503：DC3–5V；50cm是5V供电下的标称距离。</text>
+<text x="760" y="286" class="" style="font-size:18px">3.3V供电标称20cm，本机首样用5.0V逻辑支路。</text>
+<text x="760" y="313" class="" style="font-size:18px">外形20×10×9、线长250；安装孔与光轴按实物核对。</text>
+<text x="760" y="340" class="" style="font-size:18px">5V供电不代表信号可以5V进入C6。</text>
+<text x="760" y="367" class="" style="font-size:18px">上拉是3.3V，不接红色5V线；两头黑线与C6共地。</text>
+<rect x="48" y="658" width="684" height="300" rx="8" fill="#fff" stroke="#c6d6ca" stroke-width="2"/>
+<text x="64" y="689" class="bold" style="font-size:23px">接板前只做这几步</text>
+<text x="64" y="719" class="" style="font-size:18px">① GPIO保持断开，传感器接5V/GND及10k上拉。</text>
+<text x="64" y="746" class="" style="font-size:18px">② 测无遮挡/遮挡时 A 对GND电压，记录哪种是高/低。</text>
+<text x="64" y="773" class="" style="font-size:18px">③ 高低状态须落在3.3V输入域；若超过3.3V，先断开。</text>
+<text x="64" y="800" class="" style="font-size:18px">④ 若不稳定，查对准、供电与输出接口，不用1k硬顶。</text>
+<text x="64" y="827" class="" style="font-size:18px">⑤ 合格后再串1k接GPIO20，重复遮挡并检查相机IR亮点。</text>
+<text x="64" y="854" class="" style="font-size:18px">NPN常开不等于已核对内部电路或遮挡极性。</text>
+<text x="64" y="881" class="" style="font-size:18px">仍只作豆流经过提示；不能把一次遮挡当一颗豆。</text>
+<text x="64" y="908" class="" style="font-size:18px">读数阈值与有效电平按实测记录后再配置固件。</text>
+<rect x="760" y="658" width="688" height="300" rx="8" fill="#fff3dc" stroke="#c6d6ca" stroke-width="2"/>
+<text x="776" y="689" class="bold" style="font-size:23px">YU2405：按用户指定的MVP型号采购</text>
+<text x="776" y="719" class="" style="font-size:18px">额定按24V / 5A / 120W纳入，原功率预算不变。</text>
+<text x="776" y="746" class="" style="font-size:18px">尚无对应实物厂牌/原厂数据，不能沿用航嘉认证或尺寸。</text>
+<text x="776" y="773" class="" style="font-size:18px">DC母座先按实际外径/内径/极性配，5.5×2.5仅候选。</text>
+<text x="776" y="800" class="" style="font-size:18px">交流线入口与是否随附按订单核对，不在机内接裸交流。</text>
+<text x="776" y="827" class="" style="font-size:18px">到货先量24V与正负，再检查5V和UBEC的6V档。</text>
+<text x="776" y="854" class="" style="font-size:18px">分级带载检查压降/温升，不能把型号额定当实测。</text>
+<text x="776" y="881" class="" style="font-size:18px">DFRobot国内页参考价15元/收发对，非成交报价。</text>
+<text x="776" y="908" class="" style="font-size:18px">5V TPS模块仍待整板SKU；舵机仍用UBEC5A/6V。</text>
+<polyline class="wire" points="48,1000 1452,1000" stroke="#d3ded4"/>
+<text x="48" y="1030" class="" style="font-size:16px">2026-10-17 · 方案尺寸，非实物验收 · 先试焊 / 手推 / 无刷与带刷单槽对照，再五槽联调</text>
+<text x="1390" y="1030" class="" style="font-size:16px">12 / 12</text>
+</svg>

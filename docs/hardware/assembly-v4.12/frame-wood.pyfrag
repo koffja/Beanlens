@@ -1,0 +1,31 @@
+# 02: Frame assembly, actual cut lengths and datum views.
+frame=[p for p in parts if p['group']=='骨架']
+body=iso(frame,(30,150,470,600),.65,True)+text(55,779,'T01–T18：共18段 / 净长4480',18,bold=True)
+body+=table(520,155,840,['编号','切长','数量','装到哪里'],[
+ ('T01–T04','460','4','连续立柱Z0→460；不拼接'),('T05/06/09/10','180','4','上下框前后梁；夹在立柱之间'),('T07/08/11/12','200','4','上下框侧梁；夹在前后立柱之间'),('T13–T14','200','2','料斗中框左右托梁，顶面Z324；外露腰线'),('T15–T16','180','2','料斗前后外露横梁，改与柱面齐'),('T17–T18','180','2','前后相机梁，夹在同侧两立柱间')],[140,85,70,545],35,16)
+# Orthographic front and side.
+for ox,deep,title in [(555,220,'正视：外宽220'),(980,240,'右视：外深240')]:
+    scale=.70;oy=830
+    body+=text(ox,450,title,18,bold=True)
+    body+=rect(ox,oy-460*scale,deep*scale,460*scale,'none',C['muted'])
+    for z in [0,440]:body+=rect(ox+20*scale,oy-(z+20)*scale,(deep-40)*scale,20*scale,C['frame'])
+    for xx in [0,deep-20]:body+=rect(ox+xx*scale,oy-460*scale,20*scale,460*scale,C['frame'])
+    body+=line(ox,oy-324*scale,ox+deep*scale,oy-324*scale,C['pp'],True)
+    body+=line(ox,oy-241.25*scale,ox+deep*scale,oy-241.25*scale,C['blue'],True)
+    body+=dim(ox,oy+27,ox+deep*scale,oy+27,str(deep))
+    body+=dim(ox-27,oy,ox-27,oy-460*scale,'460',0)
+body+=lines(760,510,['高度基准：','Z460 骨架顶','Z440 料斗顶/顶框底','Z298.3 主斗底','Z324 中框顶','Z292 闸片顶','Z280 五槽出口','Z241.25 光轴','Z195 遮光板顶','Z45 称台面目标','Z0 骨架底'],15,26)
+body+=text(35,884,'连接：上下框16个角码＋料斗中框8个＋相机梁4个＝28个使用；BOM F02购32个（含4备）。先量对角线，再逐级锁紧。',16)
+svgs.append(sheet('02  铝型材骨架尺寸与逐根定位','黑色欧标2020；连续立柱460；180＋20＋20＝220宽，200＋20＋20＝240深。型材与角码槽型按现有实物匹配。',body,2))
+# 03: Split inset skins, full lower side/rear coverage, and conservative stock packing.
+woodcuts=FRAME['enclosure_reference']['wood_cuts']
+body=text(40,163,'F03：600×600×6一张 / 仅9块外壳；取消木斗和木托耳',20,bold=True)
+woodcuts=FRAME['enclosure_reference']['wood_cuts'];ox,oy,sc=40,210,.88
+body+=rect(ox,oy,600*sc,600*sc,'#f6eddf',C['line'])
+for id,ww,hh,x,y in woodcuts:
+ body+=rect(ox+x*sc,oy+y*sc,ww*sc,hh*sc,C['wood'])+text(ox+x*sc+5,oy+y*sc+17,id,12)+text(ox+x*sc+5,oy+y*sc+33,f'{ww}×{hh}',11)
+body+=dim(ox,oy+600*sc+25,ox+600*sc,oy+600*sc+25,'600')
+body+=table(630,155,730,['编号','净宽×高 / 厚6','位置'],[('P01/P02','176×112，各1','前/后上Z326–438'),('P03/P04','196×112，各1','左/右上Z326–438'),('P05/P06','196×280，各1','左/右下Z22–302'),('P07/P09','176×58，各1','后/前中Z244–302'),('P08','176×197，1','后下Z22–219')],[140,260,330],38,16)
+body+=lines(630,470,['木板只做外壳/检修，三面下延；四角仍露黑2020。','料斗木壳H01–H04、木托耳H05/H06取消。','顶部PP法兰由Q01–Q04金属托片支承，不靠面板承重。','F11木板背托32点＋前遮光条2点，购40套。','面板内凹约1、边缝约2；先做角样核隔距。','P01主屏整机孔65.3×48.6；右P04过件孔40×24。','屏幕压框、后托框、线腔见第08/09页。','孔位用实物确认，尤其C6有效区与M2孔基准。'],17,34)
+body+=text(40,875,'已有800板继续使用即可；不再额外买料斗木板。所有净尺寸均需另计锯缝。',16)
+svgs.append(sheet('03  九块内嵌木外壳与裁切排版','取消PP外侧木斗，释放双屏接线空间；PP斗的载荷改由顶框金属托片承担。',body,3))

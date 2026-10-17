@@ -1,0 +1,146 @@
+{
+  "date": "2026-10-16",
+  "revision": "V4.7-inset-PP",
+  "scope": "Document geometry, bill mapping, browser behavior, print scale and visual PDF review only",
+  "geometry": {
+    "shared_frame_members": 18,
+    "finished_profile_mm": 4480,
+    "outer_panels": 9,
+    "wood_cuts": 15,
+    "wood_stock_options_packing_gap_mm": 3,
+    "parts": 72,
+    "cut_csv_rows": 33,
+    "bom_items": 89,
+    "frame_solid_overlaps": 0,
+    "panel_vs_frame_overlaps": 0,
+    "LED_vs_gate_base_and_layer_overlaps": 0,
+    "rear_plate_to_box_gap_mm": 7,
+    "layer_stack_total_mm": 50,
+    "gate_nominal_gap_mm": 2.3,
+    "gate_nominal_extra_clearance_mm": 0.3,
+    "windows_global_xywh": [
+      [
+        69,
+        114,
+        14,
+        12
+      ],
+      [
+        86,
+        114,
+        14,
+        12
+      ],
+      [
+        103,
+        114,
+        14,
+        12
+      ],
+      [
+        120,
+        114,
+        14,
+        12
+      ],
+      [
+        137,
+        114,
+        14,
+        12
+      ]
+    ],
+    "all_part_bom_ids_resolve": true
+  },
+  "browser_check": "../assembly-v4.5/browser-check-20261016.json",
+  "pdfs": [
+    {
+      "file": "output/pdf/beanlens-assembly-v4.5-20261013.pdf",
+      "pages": 7,
+      "page_sizes_mm": [
+        [
+          420.2006666666666,
+          297.0106596111111
+        ],
+        [
+          420.2006666666666,
+          297.0106596111111
+        ],
+        [
+          420.2006666666666,
+          297.0106596111111
+        ],
+        [
+          420.2006666666666,
+          297.0106596111111
+        ],
+        [
+          420.2006666666666,
+          297.0106596111111
+        ],
+        [
+          420.2006666666666,
+          297.0106596111111
+        ],
+        [
+          420.2006666666666,
+          297.0106596111111
+        ]
+      ],
+      "vector_only": true,
+      "revision_text_all_pages": true,
+      "calibration_lines_mm": [],
+      "all_pages_rendered_and_visually_reviewed": true,
+      "sha256": "bab01fb5247ed12987bd9d26d28eff196b6f9d9d4c9641497e5116876508bea9"
+    },
+    {
+      "file": "output/pdf/beanlens-pp-templates-v4.7-20261016.pdf",
+      "pages": 6,
+      "page_sizes_mm": [
+        [
+          209.88865255555555,
+          297.0106596111111
+        ],
+        [
+          209.88865255555555,
+          297.0106596111111
+        ],
+        [
+          209.88865255555555,
+          297.0106596111111
+        ],
+        [
+          209.88865255555555,
+          297.0106596111111
+        ],
+        [
+          209.88865255555555,
+          297.0106596111111
+        ],
+        [
+          209.88865255555555,
+          297.0106596111111
+        ]
+      ],
+      "vector_only": true,
+      "revision_text_all_pages": true,
+      "calibration_lines_mm": [
+        99.99831670673662,
+        99.99831670673662,
+        99.99831670673662,
+        99.99831670673662,
+        99.99831670673662,
+        99.99831670673662
+      ],
+      "all_pages_rendered_and_visually_reviewed": true,
+      "sha256": "3ab9b43984115ba9fdc42f8ba2d024127391df704c277468ec16a2b8d9e91704"
+    }
+  ],
+  "not_verified": [
+    "physical bracket and spacer fit",
+    "PP welding strength and warpage",
+    "as-built food-path guards, jam behavior and servo forces",
+    "actual PCB/sensor holes and module thickness",
+    "1kg load/capacity, throughput, optical performance and weighing accuracy"
+  ]
+}

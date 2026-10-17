@@ -1,0 +1,482 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="icon" href="data:,"><title>BeanLens 采购修订 V4.8</title><style>
+:root{color-scheme:light dark;--bg:#f3f3ed;--card:#fffefa;--ink:#253b31;--muted:#68766d;--line:#dce2d9;--accent:#127b5d;--soft:#e8f2ea;--hold:#9b4926}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.65 system-ui,-apple-system,"PingFang SC",sans-serif}main{max-width:1500px;margin:auto;padding:36px 26px}h1{font-size:36px;line-height:1.2;margin:12px 0}h2{font-size:22px;margin:0 0 12px}h3{font-size:17px;margin:0 0 5px}p{margin:7px 0}a{color:var(--accent);text-underline-offset:3px}.eyebrow{font-size:12px;color:var(--accent);letter-spacing:2px;font-weight:700}.lead{max-width:1050px;color:var(--muted)}.links{display:flex;flex-wrap:wrap;gap:12px;margin:18px 0}.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:20px;margin:18px 0}.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.stat b{display:block;font-size:27px}.stat span,small{color:var(--muted);font-size:12px}small{display:block}.notices{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.notices p{font-size:14px}.controls{display:flex;gap:12px;flex-wrap:wrap;align-items:center;margin-bottom:15px}input,select,button{font:inherit;padding:10px;border:1px solid var(--line);border-radius:8px;background:var(--card);color:var(--ink)}input{flex:1;min-width:160px}button{cursor:pointer}button:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid var(--accent)}.scroll{overflow:auto;max-height:76vh;border:1px solid var(--line);border-radius:10px}table{width:100%;border-collapse:collapse;min-width:1100px;text-align:left}th{background:var(--soft);position:sticky;top:0;z-index:1;font-size:13px}th,td{padding:13px;vertical-align:top;border-bottom:1px solid var(--line)}td:first-child{width:90px}td:nth-child(2){width:185px}td:nth-child(3){min-width:290px;max-width:430px}td:nth-child(4){width:90px;white-space:nowrap}td:nth-child(5){min-width:250px;max-width:370px}td:nth-child(6){width:120px}td p{font-size:13px;color:var(--muted)}td a{font-size:12px}.badge{display:inline-block;font-size:12px;background:var(--soft);padding:3px 7px;border-radius:5px;color:var(--accent)}.badge.hold{color:var(--hold)}details{margin:20px 0}summary{cursor:pointer;font-weight:650}code{font-size:13px}.dim{font-size:13px;color:var(--muted)}.grid2{display:grid;grid-template-columns:1fr 1fr;gap:22px}.diagram{background:var(--soft);padding:16px;border-radius:10px;line-height:2}footer{font-size:12px;color:var(--muted);margin:22px 0}@media(prefers-color-scheme:dark){:root{--bg:#17221c;--card:#203027;--ink:#e5ede2;--muted:#a7baaa;--line:#405346;--accent:#78d2aa;--soft:#2b4032;--hold:#efb482}}@media(max-width:800px){main{padding:22px 15px}.stats{grid-template-columns:1fr 1fr}.notices,.grid2{grid-template-columns:1fr}h1{font-size:28px}.card{padding:15px}}@media print{.controls,.links{display:none}.scroll{max-height:none;overflow:visible}main{padding:0}th{position:static}table{min-width:0;font-size:10px}td,th{padding:5px}.card{break-inside:avoid}}
+</style></head><body><aside id="v410-notice" style="padding:16px;background:#fff0d2;color:#283c32;font:16px/1.6 system-ui"><b>当前送料/电源修订为V4.10。</b> <a href="../revision-v4.10/beanlens-hopper-gate-v4.10.html">打开连续前壁、固定与PBT刷盒图</a> · <a href="../procurement-v4.10/beanlens-procurement-v4.10.html">114项新版BOM</a>。6V舵机采用UBEC5A/6V；TPS5450只评估5V逻辑路。V4.9主斗外形、V4.8机架/木板/双屏保留，旧分离POM座和刷排表述已被替换。</aside><aside style="padding:16px;background:#fff0d2;color:#283c32;font:16px/1.6 system-ui"><b>V4.9 已替换本页电源/料斗/五窗叠片方案。</b> <a style="color:#17654b" href="../revision-v4.9/beanlens-power-and-feed-v4.9.html">打开四页新接线与连续PP料斗图</a> · <a style="color:#17654b" href="../procurement-v4.9/beanlens-procurement-v4.9.html">107项新版BOM</a>。本页V4.8机架、9片木板与双屏可继续参考，旧PP模板不能混用。</aside><main><header><div class="eyebrow">BEANLENS / PROCUREMENT REVISION · 2026-10-16</div><h1>把规格写清，再下单</h1><p class="lead">采购修订 V4.8：逐项复核旧表35项，拆出新闸门与接线小件。型号参照、用户报价、毛坯规格和未冻结孔位分别注明。它是样机询价/采购清单，不是已验收加工图。</p><nav class="links"><a href="beanlens-bom-v4.8.csv" download>下载完整 CSV</a><a href="beanlens-bom-v4.8.json" download>下载 JSON</a><a href="../PROCUREMENT-AUDIT-20261012.md">复核说明</a><a href="../BEAM-SENSOR-20261012.md">红外接线说明</a><a href="../illustrations/beanlens-gate-motion-20261012.html">闸门动画</a><a href="../v4.4/beanlens-v4-handbook.html">主手册</a></nav></header>
+<section class="card"><h2>V4.8：取消木斗，双屏独立装配，PP实料斜接</h2><p>外壳仍三面木板下延、2020外露；料斗木壳/木托耳取消。F03仅600方9片，F08历史行不采购。新增F13顶框承托、F14可拆接头、F15/F16双屏夹框、F17可选防尘盖。主斗内口不变，模板已计2mm法向板厚、斜接及焊筋限界；旧V4.7模板不可混用。</p><p><a href="../assembly-v4.8/beanlens-assembly-v4.8.html">V4.8组装/双屏/净空与遗漏核查</a> · <a href="../fabrication-v4.8/beanlens-fabrication-v4.8.html">PP实料模板与坡口</a></p></section><section class="card stats"><div class="stat"><b>¥386.90</b><span>主方案已知用户报价小计</span></div><div class="stat"><b>¥103.00</b><span>HJ-AZ4-3kg 候选报价，另列</span></div><div class="stat"><b>94项</b><span>全表含备选、已有与加工件</span></div><div class="stat"><b>总价未定</b><span>缺价未按0元计算；旧790.90不是新总价</span></div></section>
+<section class="notices"><article class="card"><h3>红外：低压接口更简单</h3><p>首样建议 Adafruit 2167 一组：5V供电，接收信号经10kΩ上拉至C6的3.3V，再接GPIO20。山大斯 B3F-20C1保留备选；未取得确切接线资料，不能按相似型号认定输出。</p></article><article class="card"><h3>闸门：补齐完整滑架</h3><p>16mm曲柄＋60mm双球头杆＋15mm行程；增加120×30×3滑架转接板，左右MGN9H、五窗叠层、支承框和限位；后部封闭防护待试配。10×10角铝作为加强/连接件，不能独自代替转接板。</p></article><article class="card"><h3>称重：型号有了，适配还需确认</h3><p>用户提供 HJ-AZ4-3kg、103元，列为待核候选。确认含哪些支架、实际敏感元件型号、输出与激励。原L6J1参考是0.9mV/V、推荐5–10V；不直接接现拟定3V激励。</p></article></section>
+<section class="card"><h2>完整采购明细</h2><p class="dim">“主方案”表示本次建议的采购路径，不表示已购或验收；“暂缓下单”须先补齐对应资料。“标准规格待报价”也应先核供应商规格。所有数量为首台起点，紧固件含少量备件。图表可横向滚动。</p><div class="controls"><input id="search" type="search" placeholder="搜索型号、材料、尺寸或旧编号" aria-label="搜索采购项"><select id="category" aria-label="按分组筛选"><option value="">全部分组</option><option>板卡与相机</option><option>滑闸标准件</option><option>光电与信号</option><option>工业光电备选</option><option>称重</option><option>照明</option><option>电源与配电</option><option>机架与外壳</option><option>控制与接线</option><option>滑闸加工件</option><option>外壳固定</option><option>料斗制作</option><option>外壳与料斗</option></select><select id="selection" aria-label="按方案筛选"><option value="">含备选和已有</option><option>主方案</option><option>备选</option><option>已有</option><option>套件包含</option></select><button id="reset">清除筛选</button><span id="visibleCount" class="dim"></span></div><div class="scroll"><table id="parts"><thead><tr><th>编号 / 旧项</th><th>物料 / 方案</th><th>型号、规格与来源</th><th>数量</th><th>下单状态与核对事项</th><th>单价依据</th></tr></thead><tbody><tr data-id="A01" data-category="板卡与相机" data-selection="主方案">
+<td><b>A01</b><small>旧：A01</small></td>
+<td><b>视觉主套件</b><small>板卡与相机 · 主方案</small></td>
+<td><b>正点原子 DNK230D / K230D BOX</b><p>BOX＋2.4英寸屏＋32GB TF；以257元订单包装为准</p><a href="https://wiki.alientek.com/docs/Boards/Kendryte/DNK230D/start-guide/k230d-box-introduction/" target="_blank" rel="noopener noreferrer">资料1</a></td><td>1 件</td>
+<td><span class="badge ">按订单核对</span><p>只买BOX套件；附送普通相机不抵扣另选双摄。</p></td>
+<td>¥257.00<small>用户报价：整套257元</small></td></tr><tr data-id="E01" data-category="板卡与相机" data-selection="已有">
+<td><b>E01</b><small>旧：E01</small></td>
+<td><b>控制板（已有）</b><small>板卡与相机 · 已有</small></td>
+<td><b>Waveshare ESP32-C6-LCD-1.47 非Touch</b><p>已有1.47英寸LCD板，不能换成Touch/S3同名近似板</p><a href="https://www.waveshare.com/wiki/ESP32-C6-LCD-1.47" target="_blank" rel="noopener noreferrer">资料1</a></td><td>1 件</td>
+<td><span class="badge ">复用，不重复购买</span><p></p></td>
+<td>¥0.00<small>用户已有</small></td></tr><tr data-id="E02" data-category="板卡与相机" data-selection="套件包含">
+<td><b>E02</b><small>旧：E02</small></td>
+<td><b>BOX屏幕与TF</b><small>板卡与相机 · 套件包含</small></td>
+<td><b>随A01套件</b><p>2.4英寸屏＋32GB TF，包含在A01中</p><a href="https://wiki.alientek.com/docs/Boards/Kendryte/DNK230D/start-guide/k230d-box-introduction/" target="_blank" rel="noopener noreferrer">资料1</a></td><td>1 件</td>
+<td><span class="badge ">确认套件包装</span><p></p></td>
+<td>¥0.00<small>计入A01，不代表已经收货</small></td></tr><tr data-id="B01" data-category="板卡与相机" data-selection="主方案">
+<td><b>B01</b><small>旧：B01</small></td>
+<td><b>两只视觉相机</b><small>板卡与相机 · 主方案</small></td>
+<td><b>GC2093-M12-90度无畸变（用户型号）</b><p>同批两只，M12镜头；90°定义、IR-cut、近焦及CSI线序未核</p><a href="https://wiki.alientek.com/docs/Boards/Kendryte/DNK230D/start-guide/k230d-box-introduction/" target="_blank" rel="noopener noreferrer">资料1</a></td><td>1 两套合包</td>
+<td><span class="badge ">兼容确认后下单</span><p>两套合计114.32元；传感器+镜头描述不是完整PCB料号。先让卖家确认BOX双路同时工作及约75mm近焦。</p></td>
+<td>¥114.32<small>用户报价：两套合计</small></td></tr><tr data-id="B02" data-category="板卡与相机" data-selection="主方案">
+<td><b>B02</b><small>旧：B02</small></td>
+<td><b>双摄排线</b><small>板卡与相机 · 主方案</small></td>
+<td><b>BOX专用CSI/MIPI排线（原厂配套）</b><p>150–200mm仅询价起点；针数、间距、同/异面、线序按BOX与模组图</p><a href="https://wiki.alientek.com/docs/Boards/Kendryte/DNK230D/start-guide/k230d-box-introduction/" target="_blank" rel="noopener noreferrer">资料1</a></td><td>2 件</td>
+<td><span class="badge hold">暂缓：线序/长度待核</span><p>先纸样量实际路径；若B01含匹配线，取消本项，绝不凭通用15/22pin购买。</p></td>
+<td>待询价<small>待询价；不沿用旧打包额度</small></td></tr><tr data-id="A03" data-category="滑闸标准件" data-selection="主方案">
+<td><b>A03</b><small>旧：A03</small></td>
+<td><b>位置舵机</b><small>滑闸标准件 · 主方案</small></td>
+<td><b>MG996R 角度/位置版</b><p>独立6.0V；原厂外形约40.7×19.7×42.9mm仅参照；兼容件实量</p><a href="https://towerpro.com.tw/product/mg996r/" target="_blank" rel="noopener noreferrer">资料1</a></td><td>1 件</td>
+<td><span class="badge ">花键/电流待试装</span><p>不要连续旋转版。25T舵臂必须和用户实物试装；禁止套原厂性能给廉价兼容件。</p></td>
+<td>¥15.58<small>用户报价</small></td></tr><tr data-id="PH01" data-category="光电与信号" data-selection="主方案">
+<td><b>PH01</b><small>旧：A04</small></td>
+<td><b>首样红外对射</b><small>光电与信号 · 主方案</small></td>
+<td><b>Adafruit 2167，3mm IR break-beam</b><p>3.3–5.5V；约250mm距离；响应&lt;2ms；开集电极；每头约20×10×8mm；线230mm</p><a href="https://www.adafruit.com/product/2167" target="_blank" rel="noopener noreferrer">资料1</a> · <a href="https://learn.adafruit.com/ir-breakbeam-sensors/arduino" target="_blank" rel="noopener noreferrer">资料2</a></td><td>1 收发对</td>
+<td><span class="badge ">标准规格待报价</span><p>建议5V支路供电；信号单独上拉3.3V。用于豆流提示，不是逐豆计数；需测光束覆盖与IR干扰。</p></td>
+<td>待询价<small>待询价；不沿用旧打包额度</small></td></tr><tr data-id="PH02" data-category="光电与信号" data-selection="主方案">
+<td><b>PH02</b><small>旧：A15</small></td>
+<td><b>对射信号上拉</b><small>光电与信号 · 主方案</small></td>
+<td><b>金属膜电阻10kΩ，1%，0.25W</b><p>一只使用、一只备用；信号节点拉到C6 3.3V</p><a href="https://www.adafruit.com/product/2167" target="_blank" rel="noopener noreferrer">资料1</a></td><td>2 件</td>
+<td><span class="badge ">标准规格待报价</span><p>不能按5V Arduino图把上拉接到红线5V。开集电极没有主动输出5V。</p></td>
+<td>待询价<small>待询价；不沿用旧打包额度</small></td></tr><tr data-id="PH03" data-category="光电与信号" data-selection="主方案">
+<td><b>PH03</b><small>旧：A15</small></td>
+<td><b>GPIO串联电阻</b><small>光电与信号 · 主方案</small></td>
+<td><b>金属膜电阻1kΩ，1%，0.25W</b><p>信号至GPIO20串联；与PH02同一3.3V输入节点</p>工程规格 / 用户输入</td><td>2 件</td>
+<td><span class="badge ">标准规格待报价</span><p>一只用一只备用；不是24V工业输出的降压替代。</p></td>
+<td>待询价<small>待询价；不沿用旧打包额度</small></td></tr><tr data-id="PH04" data-category="光电与信号" data-selection="主方案">
+<td><b>PH04</b><small>旧：B14</small></td>
+<td><b>红外可调安装耳</b><small>光电与信号 · 主方案</small></td>
+<td><b>6061角铝30×20×2，切长30mm</b><p>两头各一只；安装孔按2167实物；带可调长孔/遮光罩</p>工程规格 / 用户输入</td><td>2 件</td>
+<td><span class="badge ">纸样后加工</span><p>放在出口下、主视野上方，主体避开相机视野；不能被五槽隔板挡住。</p></td>
+<td>待询价<small>待询价；不沿用旧打包额度</small></td></tr><tr data-id="I01" data-category="工业光电备选" data-selection="备选">
+<td><b>I01</b><small>旧：A04</small></td>
+<td><b>原工业对射器</b><small>工业光电备选 · 备选</small></td>
+<td><b>山大斯 B3F-20C1（用户提供，未核原厂资料）</b><p>旧商品图6–36V/M12×1/约52.5mm仅待复核；收发一组的组成待核</p>工程规格 / 用户输入</td><td>1 组</td>
+<td><span class="badge hold">暂缓：确切接线资料缺失</span><p>不擅改成E3F或推断NPN/PNP/激光/红外。若已购可保留，接口确认后再选转换方案。</p></td>
+<td>待询价<small>待询价；不沿用旧打包额度</small></td></tr><tr data-id="I02" data-category="工业光电备选" data-selection="备选">
+<td><b>I02</b><small>旧：A15</small></td>
+<td><b>24V NPN转换光耦</b><small>工业光电备选 · 备选</small></td>
+<td><b>LITEON LTV-817，DIP-4；分档按供货图</b><p>输入LED与24V限流电阻串联；输出集电极上拉3.3V、发射极接C6地</p><a href="https://optoelectronics.liteon.com/upload/download/ds-70-96-0016/ltv-8x7%20series%20201610%20.pdf" target="_blank" rel="noopener noreferrer">资料1</a></td><td>1 件</td>
+<td><span class="badge hold">暂缓：先确认NPN低端输出</span><p>此为代焊小板用料，不是现成合格模块。PNP不能照接；漏电、动作逻辑、总延迟须台架测。</p></td>
+<td>待询价<small>待询价；不沿用旧打包额度</small></td></tr><tr data-id="I03" data-category="工业光电备选" data-selection="备选">
+<td><b>I03</b><small>旧：A15</small></td>
+<td><b>光耦输入限流</b><small>工业光电备选 · 备选</small></td>
+<td><b>4.7kΩ 1% 0.5W电阻</b><p>24V下约4.8mA，电阻约0.11W；按真实传感器残压/漏电复核</p>工程规格 / 用户输入</td><td>1 件</td>
+<td><span class="badge ">随I02接口复核</span><p>仅24V已确认NPN低端输入设计；不能拿GPIO上拉电阻代替。</p></td>
+<td>待询价<small>待询价；不沿用旧打包额度</small></td></tr><tr data-id="I04" data-category="工业光电备选" data-selection="备选">
+<td><b>I04</b><small>旧：A15</small></td>
+<td><b>光耦LED反向保护</b><small>工业光电备选 · 备选</small></td>
+<td><b>1N4148，DO-35</b><p>与光耦输入LED反并联</p>工程规格 / 用户输入</td><td>1 件</td>
+<td><span class="badge ">随I02代焊</span><p>极性和光耦引脚按所购器件数据表；输出上拉见I06、代焊绝缘安装见I07。</p></td>
+<td>待询价<small>待询价；不沿用旧打包额度</small></td></tr><tr data-id="I05" data-category="工业光电备选" data-selection="备选">
+<td><b>I05</b><small>旧：B14</small></td>
+<td><b>工业光电固定件</b><small>工业光电备选 · 备选</small></td>
+<td><b>M12×1螺母＋可调L形支架</b><p>收发各1支架、每头2螺母；不与PH04重复</p>工程规格 / 用户输入</td><td>2 套</td>
+<td><span class="badge hold">暂缓：安装尺寸待核</span><p>B3F-20C1标签、机身与出线尺寸核对后采购。</p></td>
+<td>待询价<small>待询价；不沿用旧打包额度</small></td></tr><tr data-id="B03" data-category="称重" data-selection="主方案">
+<td><b>B03</b><small>旧：B03</small></td>
+<td><b>称重ADC模块</b><small>称重 · 主方案</small></td>
+<td><b>SparkFun Qwiic Scale NAU7802，SEN-15242</b><p>3.3V模块；I²C地址0x2A；芯片24bit；拟定VDDA约3.0V/10SPS</p><a href="https://www.sparkfun.com/sparkfun-qwiic-scale-nau7802.html" target="_blank" rel="noopener noreferrer">资料1</a></td><td>1 件</td>
+<td><span class="badge hold">暂缓：需与称重桥配套</span><p>不是把裸NAU7802芯片直接接线。若HJ-AZ4为数字输出，本项不买；若桥要求5V激励，需另审ADC参考/激励，不直接外接5V到此模块。</p></td>
+<td>待询价<small>待询价；不沿用旧打包额度</small></td></tr><tr data-id="W01" data-category="称重" data-selection="备选">
+<td><b>W01</b><small>旧：B04, O05</small></td>
+<td><b>用户提供称重候选</b><small>称重 · 备选</small></td>
+<td><b>Autoda HJ-AZ4-3kg</b><p>额定3kg；103元；输出、敏感元件料号、支架/平台包含范围均待核</p><a href="https://www.autoda.com.cn/jishuzhich/" target="_blank" rel="noopener noreferrer">资料1</a></td><td>1 件</td>
+<td><span class="badge hold">暂缓：接口/图纸待核</span><p>当前用户候选，不把3kg改称1kg。HJ-AZ4可能是组件/安装规格，需敏感元件铭牌；未查到可确认此SKU的原厂数据表，不能承诺±0.1g。</p></td>
+<td>¥103.00<small>用户最新报价103元；替代旧55/105元记录</small></td></tr><tr data-id="W02" data-category="称重" data-selection="备选">
+<td><b>W02</b><small>旧：B04</small></td>
+<td><b>旧1kg外形参照（不默认购买）</b><small>称重 · 备选</small></td>
+<td><b>Zemic L6J1-C2-1kg</b><p>0.9±0.1mV/V；推荐5–10V；综合误差≤±0.028%FS</p><a href="https://www.zemiceurope.com/media/Documentation/L6J1_Datasheet.pdf" target="_blank" rel="noopener noreferrer">资料1</a></td><td>1 件</td>
+<td><span class="badge hold">暂缓：激励与精度不匹配</span><p>原3V/2mV/V示例不能套此型号；0.028%×1kg=0.28g，不能据此保证±0.1g。1kg毛载荷也不能收1kg豆+平台。</p></td>
+<td>待询价<small>待询价；不沿用旧打包额度</small></td></tr><tr data-id="W03" data-category="称重" data-selection="主方案">
+<td><b>W03</b><small>旧：B05</small></td>
+<td><b>参考砝码100g</b><small>称重 · 主方案</small></td>
+<td><b>OIML R111 F1不锈钢，100g</b><p>有修正值/可核查证书；参考质量扩展不确定度≤0.03g</p><a href="https://www.oiml.org/en/files/pdf_r/r111-1-e04.pdf" target="_blank" rel="noopener noreferrer">资料1</a></td><td>1 件</td>
+<td><span class="badge ">标准规格待报价</span><p>等级标签不是校准证据；与500g分别询价。</p></td>
+<td>待询价<small>待询价；不沿用旧打包额度</small></td></tr><tr data-id="W04" data-category="称重" data-selection="主方案">
+<td><b>W04</b><small>旧：B05</small></td>
+<td><b>参考砝码500g</b><small>称重 · 主方案</small></td>
+<td><b>OIML R111 F1不锈钢，500g</b><p>与W03同要求；带盒/镊子或手套</p><a href="https://www.oiml.org/en/files/pdf_r/r111-1-e04.pdf" target="_blank" rel="noopener noreferrer">资料1</a></td><td>1 件</td>
+<td><span class="badge ">标准规格待报价</span><p>检查点0/100/350/500g；350g由W03、W08、W09的校准质量组合，不用待测秤证明参考质量。</p></td>
+<td>待询价<small>待询价；不沿用旧打包额度</small></td></tr><tr data-id="W05" data-category="称重" data-selection="主方案">
+<td><b>W05</b><small>旧：B06</small></td>
+<td><b>轻称台板</b><small>称重 · 主方案</small></td>
+<td><b>6061-T6，170×180×2mm毛坯</b><p>约165.24g；载荷端连接孔按所选组件图</p>工程规格 / 用户输入</td><td>1 件</td>
+<td><span class="badge hold">暂缓：称重组件定后加工</span><p>盒+活动支承总目标≤250g；本板留下约84.8g给盒与活动连接件。若HJ套件含合适平台，本项取消。</p></td>
+<td>待询价<small>待询价；不沿用旧打包额度</small></td></tr><tr data-id="W06" data-category="称重" data-selection="主方案">
+<td><b>W06</b><small>旧：B06</small></td>
+<td><b>称台刚性底板</b><small>称重 · 主方案</small></td>
+<td><b>6061，180×190×4mm毛坯</b><p>固定到2020底梁；固定端孔距按称重件图</p>工程规格 / 用户输入</td><td>1 件</td>
+<td><span class="badge hold">暂缓：称重组件定后加工</span><p>固定底板不计入秤的活动毛载荷；若套件包含合适底板，不重复购买。 V4.6先核底角码净空：四角约25×25mm为纸样核对区，紧凑角码完全在梁宽内可不切角；超出梁内缘再按固定孔决定避让，不是冻结缺口。不得顶住活动称台/传感器自由端。</p></td>
+<td>待询价<small>待询价；不沿用旧打包额度</small></td></tr><tr data-id="W07" data-category="称重" data-selection="主方案">
+<td><b>W07</b><small>旧：B06, O06</small></td>
+<td><b>安装垫块/过载限位</b><small>称重 · 主方案</small></td>
+<td><b>M4×20调节螺钉4只＋M4螺母8只；硬质垫块按图</b><p>限位正常不接触活动称台；间隙依传感器额定位移</p>工程规格 / 用户输入</td><td>1 组</td>
+<td><span class="badge hold">暂缓：所购组件图待核</span><p>若103元套件已经含此结构则取消；旧另加50元差价作废，不推算103元包装内容。</p></td>
+<td>待询价<small>待询价；不沿用旧打包额度</small></td></tr><tr data-id="A05" data-category="照明" data-selection="主方案">
+<td><b>A05</b><small>旧：A05</small></td>
+<td><b>同批固定色温灯带</b><small>照明 · 主方案</small></td>
+<td><b>用户普瑞Ra98灯带：完整SKU待提供</b><p>24V，6000K/Ra≥98询价目标；4×100mm有效段，总0.4m；≤20W/m预算</p>工程规格 / 用户输入</td><td>1 件</td>
+<td><span class="badge hold">暂缓：功率/宽度/切点待核</span><p>普瑞/Ra98不是完整型号；要每米功率、实际PCB宽、切点及短曝光实拍。不可擅换5000K并沿用原色温记录。</p></td>
+<td>待询价<small>待询价；不沿用旧打包额度</small></td></tr><tr data-id="L02" data-category="照明" data-selection="主方案">
+<td><b>L02</b><small>旧：A06</small></td>
+<td><b>灯铝散热槽</b><small>照明 · 主方案</small></td>
+<td><b>6063 U型铝槽，4×100mm起点</b><p>内宽≥实测灯带宽；候选外宽14×高8mm，带扩散片</p>工程规格 / 用户输入</td><td>4 件</td>
+<td><span class="badge ">灯带尺寸定后切割</span><p>100mm必须是灯带切点整数倍；如果需125mm段，先重算总长功率。扩散/遮光不能接触豆路。 V4.7灯槽X24/182候选，避开140宽槽盒/导轨底座，光向中心调整后复测。</p></td>
+<td>待询价<small>待询价；不沿用旧打包额度</small></td></tr><tr data-id="L03" data-category="照明" data-selection="主方案">
+<td><b>L03</b><small>旧：A06</small></td>
+<td><b>遮光边与灯固定</b><small>照明 · 主方案</small></td>
+<td><b>0.5–1mm哑黑PP片＋M3夹持件</b><p>遮光条约100×15mm，4条纸样起点</p>工程规格 / 用户输入</td><td>1 组</td>
+<td><span class="badge ">按光路纸样加工</span><p>防止LED直射镜头；不靠木板给灯散热，胶/夹具不进入豆路。</p></td>
+<td>待询价<small>待询价；不沿用旧打包额度</small></td></tr><tr data-id="A07" data-category="电源与配电" data-selection="主方案">
+<td><b>A07</b><small>旧：A07</small></td>
+<td><b>外置主适配器</b><small>电源与配电 · 主方案</small></td>
+<td><b>MEAN WELL GST120A24-P1M</b><p>24V/5A/120W；P1M 5.5外径×2.5内径×11mm，中心正</p><a href="https://www.meanwell.com/Upload/PDF/GST120A/GST120A-SPEC.PDF" target="_blank" rel="noopener noreferrer">资料1</a></td><td>1 件</td>
+<td><span class="badge ">接头/渠道核对后采购</span><p>满足原≥24V4A预算的具体候选，不是已购；必须配原厂图确认极性、插座DC额定。</p></td>
+<td>待询价<small>待询价；不沿用旧打包额度</small></td></tr><tr data-id="P02" data-category="电源与配电" data-selection="主方案">
+<td><b>P02</b><small>旧：A07</small></td>
+<td><b>适配器交流线</b><small>电源与配电 · 主方案</small></td>
+<td><b>中国三插→IEC C13成品电源线</b><p>3×0.75mm²或以上，1.5m起点，额定≥250V/10A</p>工程规格 / 用户输入</td><td>1 件</td>
+<td><span class="badge ">标准规格待报价</span><p>只接外置适配器，机箱内不布交流；若适配器已含则取消。</p></td>
+<td>待询价<small>待询价；不沿用旧打包额度</small></td></tr><tr data-id="P03" data-category="电源与配电" data-selection="主方案">
+<td><b>P03</b><small>旧：A09</small></td>
+<td><b>24V输入插座/转接线</b><small>电源与配电 · 主方案</small></td>
+<td><b>5.5×2.5mm母座，DC≥30V/5A</b><p>与P1M匹配；带0.75mm²短线，中心正</p>工程规格 / 用户输入</td><td>1 件</td>
+<td><span class="badge ">与A07接头配套</span><p>不能用5.5×2.1mm母座或仅标交流额定的小插座替代。</p></td>
+<td>待询价<small>待询价；不沿用旧打包额度</small></td></tr><tr data-id="A08" data-category="电源与配电" data-selection="主方案">
+<td><b>A08</b><small>旧：A08</small></td>
+<td><b>固定5V降压</b><small>电源与配电 · 主方案</small></td>
+<td><b>Pololu D36V50F5，#4091</b><p>24V输入→5V；25.4×25.4×9.5mm；标称等级5.5A，实际按热曲线</p><a href="https://www.pololu.com/product/4091" target="_blank" rel="noopener noreferrer">资料1</a></td><td>1 件</td>
+<td><span class="badge ">标准规格待报价</span><p>首样目标带载4A；5V输出公差4%仍需测板端压降/瞬态。不能照旧18元XL4015额度核价。</p></td>
+<td>待询价<small>待询价；不沿用旧打包额度</small></td></tr><tr data-id="A17" data-category="电源与配电" data-selection="主方案">
+<td><b>A17</b><small>旧：A17</small></td>
+<td><b>固定6V舵机降压</b><small>电源与配电 · 主方案</small></td>
+<td><b>Pololu D36V50F6，#4092</b><p>24V输入→6V；25.4×25.4×9.5mm；输出公差4%</p><a href="https://www.pololu.com/product/4092" target="_blank" rel="noopener noreferrer">资料1</a></td><td>1 件</td>
+<td><span class="badge ">标准规格待报价</span><p>持续3A/短时5A是验收预算；与5V模块不能插错，高电流直焊粗线不经面包板。</p></td>
+<td>待询价<small>待询价；不沿用旧打包额度</small></td></tr><tr data-id="P04" data-category="电源与配电" data-selection="主方案">
+<td><b>P04</b><small>旧：A09</small></td>
+<td><b>主低压开关</b><small>电源与配电 · 主方案</small></td>
+<td><b>NKK S1A，SPST ON-OFF</b><p>原厂DC30V/20A等级；面板安装尺寸依原厂图</p><a href="https://www.nkkswitches.com/pdf/Toggles.pdf" target="_blank" rel="noopener noreferrer">资料1</a></td><td>1 件</td>
+<td><span class="badge ">标准规格待报价</span><p>只断24V低压正极；面板6mm需安装衬板/确认螺纹夹紧范围，不盲买开孔尺寸。</p></td>
+<td>待询价<small>待询价；不沿用旧打包额度</small></td></tr><tr data-id="P05" data-category="电源与配电" data-selection="主方案">
+<td><b>P05</b><small>旧：A09</small></td>
+<td><b>分线端子</b><small>电源与配电 · 主方案</small></td>
+<td><b>WAGO 221-415 五路弹簧端子</b><p>0.75mm²铜线适配；24V+/返回、5V+/返回、6V+/返回各一组</p><a href="https://www.wago.com/global/installation-terminal-blocks-and-connectors/compact-splicing-connector/p/221-415" target="_blank" rel="noopener noreferrer">资料1</a></td><td>6 件</td>
+<td><span class="badge ">标准规格待报价</span><p>6组分别标电压与返回，不短接5V和6V；大电流回路星形，端子固定座另配。</p></td>
+<td>待询价<small>待询价；不沿用旧打包额度</small></td></tr><tr data-id="P06" data-category="电源与配电" data-selection="主方案">
+<td><b>P06</b><small>旧：A09</small></td>
+<td><b>DC保险与座</b><small>电源与配电 · 主方案</small></td>
+<td><b>MINI车用插片保险，32VDC；匹配保险座</b><p>主4A、灯1A、5V降压输入2A、6V降压输入3A各1；同规格各1备用</p>工程规格 / 用户输入</td><td>1 4座+8保险</td>
+<td><span class="badge ">标准规格待报价</span><p>DC额定≥32V，座/引线≥5A；按浪涌线径验后调整，不称夹豆保护，不沿用旧2.5A到不兼容规格。</p></td>
+<td>待询价<small>待询价；不沿用旧打包额度</small></td></tr><tr data-id="P07" data-category="电源与配电" data-selection="主方案">
+<td><b>P07</b><small>旧：A09</small></td>
+<td><b>电源铜线</b><small>电源与配电 · 主方案</small></td>
+<td><b>多股铜0.75mm²，红/黑</b><p>红3m＋黑3m起点；24V主回路和6V舵机回路</p>工程规格 / 用户输入</td><td>1 6m</td>
+<td><span class="badge ">标准规格待报价</span><p>按实际裁切、留压接余量；不以杜邦信号线承载舵机电流。</p></td>
+<td>待询价<small>待询价；不沿用旧打包额度</small></td></tr><tr data-id="P08" data-category="电源与配电" data-selection="主方案">
+<td><b>P08</b><small>旧：A09</small></td>
+<td><b>压接/绝缘固定小件</b><small>电源与配电 · 主方案</small></td>
+<td><b>0.75mm²管形端头＋热缩管＋扎带/固定座</b><p>端头20只、φ3/φ6热缩各1m、扎带20只起点</p>工程规格 / 用户输入</td><td>1 组</td>
+<td><span class="badge ">标准规格待报价</span><p>端头口径按铜线与端子匹配；与电源采购不可漏列。</p></td>
+<td>待询价<small>待询价；不沿用旧打包额度</small></td></tr><tr data-id="C01" data-category="电源与配电" data-selection="主方案">
+<td><b>C01</b><small>旧：A10</small></td>
+<td><b>6V近端电容</b><small>电源与配电 · 主方案</small></td>
+<td><b>铝电解1000µF/16V，105℃低ESR</b><p>径向，优先直径≤10mm、高≤20mm；实际按供货图</p>工程规格 / 用户输入</td><td>1 件</td>
+<td><span class="badge ">标准规格待报价</span><p>并在6V/GND，极性正确；电容和降压启动稳定性需配套测试。</p></td>
+<td>待询价<small>待询价；不沿用旧打包额度</small></td></tr><tr data-id="C02" data-category="电源与配电" data-selection="主方案">
+<td><b>C02</b><small>旧：A10</small></td>
+<td><b>5V近端电容</b><small>电源与配电 · 主方案</small></td>
+<td><b>铝电解470µF/10V，105℃低ESR</b><p>实际封装/脚距按供货图；并在5V/GND</p>工程规格 / 用户输入</td><td>1 件</td>
+<td><span class="badge ">标准规格待报价</span><p>电容不补足电源容量，不接24V侧。</p></td>
+<td>待询价<small>待询价；不沿用旧打包额度</small></td></tr><tr data-id="C03" data-category="电源与配电" data-selection="主方案">
+<td><b>C03</b><small>旧：A10</small></td>
+<td><b>去耦电容</b><small>电源与配电 · 主方案</small></td>
+<td><b>100nF，X7R，≥50V，直插或带板焊接</b><p>10只小包；6V/5V近端、红外、可选缓冲按布局分配</p>工程规格 / 用户输入</td><td>10 件</td>
+<td><span class="badge ">标准规格待报价</span><p>数量是整机公用库存，其他模块不要再重复按包计价。</p></td>
+<td>待询价<small>待询价；不沿用旧打包额度</small></td></tr><tr data-id="P09" data-category="电源与配电" data-selection="主方案">
+<td><b>P09</b><small>旧：A11</small></td>
+<td><b>USB供电转接</b><small>电源与配电 · 主方案</small></td>
+<td><b>双USB-A母口被动5V配电板</b><p>输入5V，铜线与端子总承载≥4A；每口至少所接板要求</p>工程规格 / 用户输入</td><td>1 件</td>
+<td><span class="badge hold">暂缓：具体板/走线载流需核</span><p>不是24V车充/快充触发板。不能仅凭双口就宣称4A；也可用经确认的两条独立板卡电源线替代。</p></td>
+<td>待询价<small>待询价；不沿用旧打包额度</small></td></tr><tr data-id="P10" data-category="电源与配电" data-selection="主方案">
+<td><b>P10</b><small>旧：A11</small></td>
+<td><b>两板USB电源线</b><small>电源与配电 · 主方案</small></td>
+<td><b>USB-A→USB-C成品短线</b><p>约0.3m、每线≥3A标称，实测压降；BOX与C6各1根</p>工程规格 / 用户输入</td><td>2 件</td>
+<td><span class="badge ">标准规格待报价</span><p>电脑调试时避免双电源反灌，保留原厂规定的供电口。</p></td>
+<td>待询价<small>待询价；不沿用旧打包额度</small></td></tr><tr data-id="F01" data-category="机架与外壳" data-selection="主方案">
+<td><b>F01</b><small>旧：B07</small></td>
+<td><b>黑色欧标2020型材：连续立柱V4.6</b><small>机架与外壳 · 主方案</small></td>
+<td><b>黑色阳极氧化欧标2020，与已有型材同截面/槽型/壁厚</b><p>黑色欧标2020：最终460×4、200×6、180×8mm，18根净4.48m；已有黑色460×7/400×2，补购同规格黑色净长180×4</p>工程规格 / 用户输入</td><td>1 18段</td>
+<td><span class="badge ">量现有净长/槽型后配套下单</span><p>按frame-v4.6切料：460×4留整，460×3各切200+200，400×2各切180+180；每刀3mm时共锯屑30、余料230mm。只补180×4成品；或750原料切4×180二选一。旧440高切单废止，不混用。 用户已确认现有型材为黑色欧标2020；不要补银色或其他槽系。</p></td>
+<td>待询价<small>待询价；不沿用旧打包额度</small></td></tr><tr data-id="F02" data-category="机架与外壳" data-selection="主方案">
+<td><b>F02</b><small>旧：B07</small></td>
+<td><b>型材连接件</b><small>机架与外壳 · 主方案</small></td>
+<td><b>欧标2020配套两孔90°带筋角码（黑色优先）＋配套M5螺钉/T螺母</b><p>28角码使用＋4备用＝32套；每套螺钉2/T螺母2，各64只；螺钉M5，长度按配套图</p>工程规格 / 用户输入</td><td>1 组</td>
+<td><span class="badge ">先核槽口与角码实物图</span><p>上下框16、中框8、相机梁4；内侧装，不需要三通/四通方块。配用户已有黑色欧标2020；槽宽/定位凸起实量，优先原卖家配成套。不要按此前item槽5参照盲买；M5长度按角码厚度/槽深确定。F08穿板件另列。 V4.7中框前后180梁改在外侧柱面Y0/220，按钮移到Z273；角码数量仍28用32购。</p></td>
+<td>待询价<small>待询价；不沿用旧打包额度</small></td></tr><tr data-id="F03" data-category="机架与外壳" data-selection="主方案">
+<td><b>F03</b><small>旧：B08, B10</small></td>
+<td><b>三面内嵌木外壳（取消料斗木壳）</b><small>机架与外壳 · 主方案</small></td>
+<td><b>6mm海洋板600×600mm</b><p>仅9块P01–P09外壳；176×112×2、196×112×2、196×280×2、176×197×1、176×58×2；木斗及木托耳全部取消</p>工程规格 / 用户输入</td><td>1 件</td>
+<td><span class="badge hold">暂缓：最终开孔未冻结</span><p>V4.8仅外壳装饰/检修；一张600方按3mm间隔排9块。已有800板可裁，不重复采购。</p></td>
+<td>待询价<small>待询价；不沿用旧打包额度</small></td></tr><tr data-id="F04" data-category="机架与外壳" data-selection="主方案">
+<td><b>F04</b><small>旧：B08</small></td>
+<td><b>PP2斜接主斗＋PP3顶承托法兰</b><small>机架与外壳 · 主方案</small></td>
+<td><b>食品接触资料可核的PP-H，2mm A3两张；3mm法兰从F05板料裁</b><p>内上136方/下110×30/H110；外上140.028×140.440，外下114.028×34.440；外面裁片见V4.8。顶法兰176×196×3开136方</p><a href="https://www.simona.de/fileadmin/user_upload/Medien/Mediacenter/Verarbeitungshinweise/202310_SIM52001EN_WI_Schweissen_web.pdf" target="_blank" rel="noopener noreferrer">资料1</a></td><td>2 张</td>
+<td><span class="badge ">纸样后裁切</span><p>去掉木斗壳，由F13顶框托片承重。2mm法向板厚与43.540°侧边斜接已计算；焊筋法向≤3mm为净空设计上限，须实测。</p></td>
+<td>待询价<small>待询价；不沿用旧打包额度</small></td></tr><tr data-id="F05" data-category="机架与外壳" data-selection="主方案">
+<td><b>F05</b><small>旧：B08</small></td>
+<td><b>五窗叠片与小过渡斗板料</b><small>机架与外壳 · 主方案</small></td>
+<td><b>可焊PP-H3mm 400×400一张；PP2小斗用F04余料</b><p>顶法兰176×196×3；上五窗140×30×3×2，下五窗140×18×3×2；小过渡斗内110×30→82×12/H24.9；双法兰另由F14列料；余料裁C6绝缘后框56×38×3开26×10</p>工程规格 / 用户输入</td><td>1 张</td>
+<td><span class="badge hold">暂缓：新槽盒开缝定后加工</span><p>3mm板排版含顶法兰和4五窗板；下豆路POM不焊PP，退片防护另做纸样。 F14两片PP3法兰也从这张板裁，不另买同材板。</p></td>
+<td>待询价<small>待询价；不沿用旧打包额度</small></td></tr><tr data-id="F06" data-category="机架与外壳" data-selection="主方案">
+<td><b>F06</b><small>旧：B10</small></td>
+<td><b>屏与板卡托架</b><small>机架与外壳 · 主方案</small></td>
+<td><b>6061板，200×200×2mm毛坯＋尼龙柱/外侧夹持件</b><p>200×200×2铝板：后电控160×130、BOX承托框80×64各一，留3mm锯缝；C6后框改F05余料PP3，不用铝框</p>工程规格 / 用户输入</td><td>1 两套</td>
+<td><span class="badge hold">暂缓：实物孔位待核</span><p>必须开框/避口，不装实心板遮接口或天线。承托框用F15/F16固定；屏幕已随板卡，不另买两块LCD。后电控模块朝后厚度目标≤21，型号实物外形待核。</p></td>
+<td>待询价<small>待询价；不沿用旧打包额度</small></td></tr><tr data-id="F07" data-category="机架与外壳" data-selection="主方案">
+<td><b>F07</b><small>旧：B10</small></td>
+<td><b>遮光隔舱/快拆件</b><small>机架与外壳 · 主方案</small></td>
+<td><b>哑黑PP1mm 300×300mm＋M3手拧螺钉/嵌件</b><p>PP1mm 300×300一张：遮光底板180×200开130×50；余料做BOX背光罩，M3手拧4只及螺母4只；余料切前遮光条176×22×1，位置Z197→219，支点2另计F11</p>工程规格 / 用户输入</td><td>1 组</td>
+<td><span class="badge ">纸样后加工</span><p>遮光底板与条仍按原尺寸；BOX背罩必须避散热和全部接口，按D90服务腔做可拆罩，不封死。</p></td>
+<td>待询价<small>待询价；不沿用旧打包额度</small></td></tr><tr data-id="B11" data-category="机架与外壳" data-selection="备选">
+<td><b>B11</b><small>旧：B11</small></td>
+<td><b>可拆轻刷（可选实验）</b><small>机架与外壳 · 备选</small></td>
+<td><b>PBT软毛丝径0.10–0.15mm＋可拆夹座</b><p>每槽两侧轻触、侵入1–2mm起点，刷条总长按5槽纸样</p>工程规格 / 用户输入</td><td>1 件</td>
+<td><span class="badge ">无刷基线完成后再购</span><p>默认首样不装刷；不脱毛、不偏留碎豆且无新增破损才保留。</p></td>
+<td>待询价<small>待询价；不沿用旧打包额度</small></td></tr><tr data-id="B12" data-category="称重" data-selection="主方案">
+<td><b>B12</b><small>旧：B12</small></td>
+<td><b>收豆盒</b><small>称重 · 主方案</small></td>
+<td><b>食品接触PP，外尺寸≤160×170×130mm</b><p>实际容量≥500g样本；轻量化，当前活动总重预算≤250g</p>工程规格 / 用户输入</td><td>1 件</td>
+<td><span class="badge ">实测容积/质量后下单</span><p>1kg整批收集必须另核容积和称台毛载荷；不把外形尺寸直接等于豆子容量。 V4.7盒向前移5mm至Y30，后留约7mm固定托板间隙，仍只压称台。</p></td>
+<td>待询价<small>待询价；不沿用旧打包额度</small></td></tr><tr data-id="A14" data-category="板卡与相机" data-selection="主方案">
+<td><b>A14</b><small>旧：A14</small></td>
+<td><b>颜色/背景参考块</b><small>板卡与相机 · 主方案</small></td>
+<td><b>哑光中性灰，约30×30×1mm可换片</b><p>放在豆路两侧；配批次记录、光照重复性</p>工程规格 / 用户输入</td><td>1 件</td>
+<td><span class="badge ">标准规格待报价</span><p>只是重复性参照，不代替专业色卡校准；不放整块板挡落豆。</p></td>
+<td>待询价<small>待询价；不沿用旧打包额度</small></td></tr><tr data-id="B13" data-category="板卡与相机" data-selection="主方案">
+<td><b>B13</b><small>旧：B13</small></td>
+<td><b>相机独立支架</b><small>板卡与相机 · 主方案</small></td>
+<td><b>6061角铝30×30×2，切长40mm；载板2mm</b><p>两套；每套30×30×2长40角铝＋40×40×2载板毛坯；配M5 T螺母2/螺钉2，尼龙柱按PCB孔</p>工程规格 / 用户输入</td><td>2 套</td>
+<td><span class="badge hold">暂缓：相机PCB孔位待核</span><p>载板毛坯40×40mm仅起点；相机固定在独立型材梁，不由排线承重。</p></td>
+<td>待询价<small>待询价；不沿用旧打包额度</small></td></tr><tr data-id="A16" data-category="控制与接线" data-selection="主方案">
+<td><b>A16</b><small>旧：A16</small></td>
+<td><b>开始与停止按钮</b><small>控制与接线 · 主方案</small></td>
+<td><b>φ16mm无灯金属，自复位，1NO1NC</b><p>两只；开始接NO、停止接NC；需低电平微负载触点</p>工程规格 / 用户输入</td><td>2 件</td>
+<td><span class="badge ">触点/夹紧范围核对后采购</span><p>需适配6mm面板或加薄衬板；未核具体厂家SKU，不买带灯锁定按钮。此为软件停止输入。</p></td>
+<td>待询价<small>待询价；不沿用旧打包额度</small></td></tr><tr data-id="S01" data-category="控制与接线" data-selection="主方案">
+<td><b>S01</b><small>旧：A13</small></td>
+<td><b>开/关滑架限位</b><small>控制与接线 · 主方案</small></td>
+<td><b>OMRON SS-01GL 微负载金合金触点</b><p>每端1只；19.8×约6.4mm壳体、孔距9.5mm参照；端子COM/NO</p><a href="https://omronfs.omron.com/en_US/ecb/products/pdf/en-ss.pdf" target="_blank" rel="noopener noreferrer">资料1</a></td><td>2 件</td>
+<td><span class="badge ">安装/微负载验证后采购</span><p>不能用SS-5银触点的5A额定代替微负载要求。3.3V下动作可靠性须实测；装在滑架而非舵盘上。</p></td>
+<td>待询价<small>待询价；不沿用旧打包额度</small></td></tr><tr data-id="S02" data-category="控制与接线" data-selection="主方案">
+<td><b>S02</b><small>旧：A13</small></td>
+<td><b>限位/按键外上拉</b><small>控制与接线 · 主方案</small></td>
+<td><b>2.2kΩ金属膜，1%，0.25W</b><p>GPIO0/1/3/23各1只，另2只备用；上拉3.3V</p>工程规格 / 用户输入</td><td>6 件</td>
+<td><span class="badge ">标准规格待报价</span><p>闭合电流约1.5mA；不自动宣称满足所有开关微负载规格，按所购触点资料与实测核验。</p></td>
+<td>待询价<small>待询价；不沿用旧打包额度</small></td></tr><tr data-id="S03" data-category="控制与接线" data-selection="主方案">
+<td><b>S03</b><small>旧：A13</small></td>
+<td><b>BOX UART转接线</b><small>控制与接线 · 主方案</small></td>
+<td><b>匹配BOX PH2.0接口1的插壳/端子线</b><p>按原厂针数/顺序配；只连接TX、RX、GND，5V端独立绝缘</p><a href="https://wiki.alientek.com/docs/Boards/Kendryte/DNK230D/start-guide/k230d-box-introduction/" target="_blank" rel="noopener noreferrer">资料1</a></td><td>1 件</td>
+<td><span class="badge hold">暂缓：原厂接口方向待核</span><p>PH2.0只表示间距系列；不能凭4针同外形认定线序。目标约200mm，实际走线定长。</p></td>
+<td>待询价<small>待询价；不沿用旧打包额度</small></td></tr><tr data-id="S04" data-category="控制与接线" data-selection="主方案">
+<td><b>S04</b><small>旧：A13</small></td>
+<td><b>控制信号线与端接</b><small>控制与接线 · 主方案</small></td>
+<td><b>多股铜0.14mm²（约AWG26）信号线</b><p>约2m总用量＋匹配2.54排针/插壳/热缩；短UART和开关信号</p>工程规格 / 用户输入</td><td>1 组</td>
+<td><span class="badge ">标准规格待报价</span><p>只用于信号；称重桥线按厂商屏蔽双绞要求，舵机大电流另走0.75mm²。</p></td>
+<td>待询价<small>待询价；不沿用旧打包额度</small></td></tr><tr data-id="O01" data-category="控制与接线" data-selection="备选">
+<td><b>O01</b><small>旧：O01</small></td>
+<td><b>可选PWM单向缓冲</b><small>控制与接线 · 备选</small></td>
+<td><b>TI SN74AHCT1G125DBVR＋SOT23-5转接板</b><p>5V VCC；/OE接GND，输入GPIO2，输出仅给舵机；旁路100nF取C03</p><a href="https://www.ti.com/product/SN74AHCT1G125" target="_blank" rel="noopener noreferrer">资料1</a></td><td>1 件</td>
+<td><span class="badge ">3.3V PWM不可靠才装</span><p>输入加10k下拉、输出串100Ω各1；绝不6V供电，绝不把5V输出回接C6。请代焊不手悬裸芯片。</p></td>
+<td>待询价<small>待询价；不沿用旧打包额度</small></td></tr><tr data-id="O04" data-category="控制与接线" data-selection="备选">
+<td><b>O04</b><small>旧：O04</small></td>
+<td><b>可选独立3.3V模块</b><small>控制与接线 · 备选</small></td>
+<td><b>Pololu D24V5F3，#2842，候选</b><p>24V→3.3V，典型500mA等级；按噪声/热需求核</p><a href="https://www.pololu.com/product/2842" target="_blank" rel="noopener noreferrer">资料1</a></td><td>1 件</td>
+<td><span class="badge ">余量/称重噪声不足再设计</span><p>不能与C6板载3.3V直接并联；须重审I²C供电先后和上拉，不默认购买。</p></td>
+<td>待询价<small>待询价；不沿用旧打包额度</small></td></tr><tr data-id="G01" data-category="滑闸标准件" data-selection="主方案">
+<td><b>G01</b><small>旧：B09</small></td>
+<td><b>25T金属舵臂</b><small>滑闸标准件 · 主方案</small></td>
+<td><b>goBILDA 1900-0025-0104</b><p>H25T；厚4mm、φ4孔；8/16/24/32mm孔半径，使用16mm</p><a href="https://www.gobilda.com/1900-series-single-servo-arm-25-tooth-spline-32mm-length/" target="_blank" rel="noopener noreferrer">资料1</a></td><td>1 件</td>
+<td><span class="badge ">花键试装后下单</span><p>32mm是商品长度级别，不能当本设计力臂。仅匹配实物25T；中心螺钉用舵机匹配件。</p></td>
+<td>待询价<small>待询价；不沿用旧打包额度</small></td></tr><tr data-id="G02" data-category="滑闸标准件" data-selection="主方案">
+<td><b>G02</b><small>旧：B09</small></td>
+<td><b>双球头杆端</b><small>滑闸标准件 · 主方案</small></td>
+<td><b>goBILDA 2913-0004-0241</b><p>M4×0.7内螺纹、球孔φ4；h约24.4mm、总长31.3mm、螺纹深13mm按图</p><a href="https://www.gobilda.com/2913-series-steel-ball-linkage-female-m4-x-0-7mm-24-1mm-length-2-pack/" target="_blank" rel="noopener noreferrer">资料1</a></td><td>2 件</td>
+<td><span class="badge ">标准规格待报价</span><p>两只=原厂1个2-pack，不重复买2包；网页标题24.1与图24.4不同，收到后量h。</p></td>
+<td>待询价<small>待询价；不沿用旧打包额度</small></td></tr><tr data-id="G03" data-category="滑闸标准件" data-selection="主方案">
+<td><b>G03</b><small>旧：B09</small></td>
+<td><b>连杆中间牙条</b><small>滑闸标准件 · 主方案</small></td>
+<td><b>goBILDA 2808-0004-0030 / 等效不锈钢</b><p>M4×0.7、30mm长；与2球头组成约60mm球心距</p><a href="https://www.gobilda.com/2808-series-stainless-steel-threaded-rod-m4-x-0-7mm-30mm-length-2-pack/" target="_blank" rel="noopener noreferrer">资料1</a></td><td>1 件</td>
+<td><span class="badge ">标准规格待报价</span><p>一根使用，原厂2-pack另一根备用；不是60mm牙条。两端右牙，调长需拆一头。</p></td>
+<td>待询价<small>待询价；不沿用旧打包额度</small></td></tr><tr data-id="G04" data-category="滑闸标准件" data-selection="主方案">
+<td><b>G04</b><small>旧：B09</small></td>
+<td><b>杆端并紧螺母</b><small>滑闸标准件 · 主方案</small></td>
+<td><b>ISO 4032 / GB6170 M4×0.7</b><p>两只用、两只备用，普通六角并紧螺母</p>工程规格 / 用户输入</td><td>4 件</td>
+<td><span class="badge ">标准规格待报价</span><p>裸露牙条11.2mm须装下两只螺母；不可把厚尼龙锁紧螺母当同尺寸。</p></td>
+<td>待询价<small>待询价；不沿用旧打包额度</small></td></tr><tr data-id="G05" data-category="滑闸标准件" data-selection="主方案">
+<td><b>G05</b><small>旧：B09</small></td>
+<td><b>球头轴与防松件</b><small>滑闸标准件 · 主方案</small></td>
+<td><b>φ4光杆/肩轴段＋M4螺纹；M4防松螺母</b><p>两组；轴向堆叠=舵臂/耳板+球内圈+隔套+螺母；长度按实物</p>工程规格 / 用户输入</td><td>2 组</td>
+<td><span class="badge hold">暂缓：球内圈/堆叠待量</span><p>夹持球内圈，不压外壳；不能直接指定M4×16而未知内圈宽度。带小径隔套，球头全角度不干涉。</p></td>
+<td>待询价<small>待询价；不沿用旧打包额度</small></td></tr><tr data-id="G06" data-category="滑闸标准件" data-selection="主方案">
+<td><b>G06</b><small>旧：B09</small></td>
+<td><b>左右直线导向</b><small>滑闸标准件 · 主方案</small></td>
+<td><b>MGN9导轨100mm＋MGN9H长滑块</b><p>两轨各1块；HIWIN参考块高10、宽20、长39.9mm；孔距15×16mm参考</p><a href="https://www.hiwin.com/wp-content/uploads/Linear_Guideway-E-1.pdf" target="_blank" rel="noopener noreferrer">资料1</a></td><td>2 轨块套</td>
+<td><span class="badge ">供货图/纸样核对后采购</span><p>兼容件不继承原厂额定值；每套明确含轨和H块，不再重复列买2只滑块。两轨平行不强行夹紧。</p></td>
+<td>待询价<small>待询价；不沿用旧打包额度</small></td></tr><tr data-id="G07" data-category="滑闸加工件" data-selection="主方案">
+<td><b>G07</b><small>旧：B09</small></td>
+<td><b>全宽铝闸片</b><small>滑闸加工件 · 主方案</small></td>
+<td><b>GATE-PLATE-01 / 6061-T6</b><p>110×45×2mm毛坯；直线钝前缘、去毛刺、平整</p>工程规格 / 用户输入</td><td>1 件</td>
+<td><span class="badge ">先纸样，后加工</span><p>封口边/螺孔由新槽盒定；不是0.8mm薄POM。载荷模型尚不覆盖局部接触/安装翘曲。</p></td>
+<td>待询价<small>待询价；不沿用旧打包额度</small></td></tr><tr data-id="G08" data-category="滑闸加工件" data-selection="主方案">
+<td><b>G08</b><small>旧：B09</small></td>
+<td><b>滑架转接板（本次补漏）</b><small>滑闸加工件 · 主方案</small></td>
+<td><b>GATE-CARRIAGE-01 / 6061-T6</b><p>120×30×3mm毛坯；桥接左右MGN9H；轨中心距94mm布局提案（原约90起点）</p>工程规格 / 用户输入</td><td>1 件</td>
+<td><span class="badge hold">暂缓：收到导轨后开孔</span><p>覆盖前后16mm孔距；10mm角铝脚宽不足以代替此板。参考四孔位置每块±7.5、±8mm；最终按供货图。</p></td>
+<td>待询价<small>待询价；不沿用旧打包额度</small></td></tr><tr data-id="G09" data-category="滑闸加工件" data-selection="主方案">
+<td><b>G09</b><small>旧：B09</small></td>
+<td><b>横梁加强/连接角铝</b><small>滑闸加工件 · 主方案</small></td>
+<td><b>6061/6063，10×10×2mm，长110mm</b><p>装在转接板/闸片后部、豆路外，至少两处间隔连接</p>工程规格 / 用户输入</td><td>1 件</td>
+<td><span class="badge ">纸样后加工</span><p>保留为加强与闸片连接件，不直接把两滑块只锁在10mm角铝脚上。</p></td>
+<td>待询价<small>待询价；不沿用旧打包额度</small></td></tr><tr data-id="G10" data-category="滑闸加工件" data-selection="主方案">
+<td><b>G10</b><small>旧：B09</small></td>
+<td><b>中心连接耳</b><small>滑闸加工件 · 主方案</small></td>
+<td><b>GATE-EAR-01 / 6061，30×20×3mm毛坯</b><p>中心孔φ4.2mm起点；高度/折弯连接按舵臂平面设计</p>工程规格 / 用户输入</td><td>1 件</td>
+<td><span class="badge hold">暂缓：共面高度待纸样</span><p>宽度中心居中；不沿用z315−z292=23mm直接钻孔。耳板/隔套必须避开连杆摆角。</p></td>
+<td>待询价<small>待询价；不沿用旧打包额度</small></td></tr><tr data-id="G11" data-category="滑闸加工件" data-selection="主方案">
+<td><b>G11</b><small>旧：B09</small></td>
+<td><b>共同导轨底座</b><small>滑闸加工件 · 主方案</small></td>
+<td><b>GATE-BASE-01 / 6061，140×140×4mm毛坯</b><p>两轨在同一平面；近槽盒侧裁切/开缺口，不能遮挡落豆通口</p>工程规格 / 用户输入</td><td>1 件</td>
+<td><span class="badge hold">暂缓：布置/视锥待纸样</span><p>assembly第04图给前豆路/后舵机避空方向；140×140是毛坯，最终缺口/螺孔须纸样。实际轨块总高、100轨端余量和视锥未验。</p></td>
+<td>待询价<small>待询价；不沿用旧打包额度</small></td></tr><tr data-id="G12" data-category="滑闸加工件" data-selection="主方案">
+<td><b>G12</b><small>旧：B09</small></td>
+<td><b>槽内低摩擦支承框</b><small>滑闸加工件 · 主方案</small></td>
+<td><b>食品接触资料可核POM，140×30×4mm</b><p>五通口14×12；X29/46/63/80/97、Y9；支承顶Z290，底286</p>工程规格 / 用户输入</td><td>1 件</td>
+<td><span class="badge hold">暂缓：槽盒纸样后开口</span><p>代替原110×30×3。四毫米厚用于两层PP3下围挡280→286后接至290；不能与PP热焊。孔需与上下叠片对齐；隔距件在140宽两外翼，避开110宽闸片扫掠。</p></td>
+<td>待询价<small>待询价；不沿用旧打包额度</small></td></tr><tr data-id="G13" data-category="滑闸加工件" data-selection="主方案">
+<td><b>G13</b><small>旧：B08, B09</small></td>
+<td><b>封闭槽盒与退片袋板料</b><small>滑闸加工件 · 主方案</small></td>
+<td><b>PP五窗叠层＋可拆后防护/缝口条</b><p>模块Z280→330；140宽五窗夹层＋110×30→82×12过渡；闸片通道290→292.3为初试值</p>工程规格 / 用户输入</td><td>1 组</td>
+<td><span class="badge hold">暂缓：必须纸样定型</span><p>V4.8小斗高24.9，双法兰/0.8名义密封层占6.8；完整后罩接口未冻结，不能将G20顶面占位当已封闭。</p></td>
+<td>待询价<small>待询价；不沿用旧打包额度</small></td></tr><tr data-id="G14" data-category="滑闸加工件" data-selection="主方案">
+<td><b>G14</b><small>旧：B09</small></td>
+<td><b>舵机固定支架</b><small>滑闸加工件 · 主方案</small></td>
+<td><b>MG996R专用金属支架＋6061 3mm转接毛坯</b><p>毛坯约60×60×3mm；轴竖直，连杆与滑架连接点共面起点</p>工程规格 / 用户输入</td><td>1 件</td>
+<td><span class="badge hold">暂缓：机身/高度待试装</span><p>支架与底座同一刚性机架；壳体/扫掠避后摄视锥，不将旧轴高当冻结孔位。</p></td>
+<td>待询价<small>待询价；不沿用旧打包额度</small></td></tr><tr data-id="G15" data-category="滑闸标准件" data-selection="主方案">
+<td><b>G15</b><small>旧：B09, A13</small></td>
+<td><b>滑块连接螺钉</b><small>滑闸标准件 · 主方案</small></td>
+<td><b>M3×6内六角＋必要薄垫片</b><p>8只使用、2只备用；配3mm转接板</p>工程规格 / 用户输入</td><td>10 件</td>
+<td><span class="badge ">实际螺纹深度核对</span><p>先量块的有效螺纹深与板/垫片堆叠，既不顶底也不啮合不足；不按所有MGN9H兼容块同深度购买。</p></td>
+<td>待询价<small>待询价；不沿用旧打包额度</small></td></tr><tr data-id="G16" data-category="滑闸标准件" data-selection="主方案">
+<td><b>G16</b><small>旧：B09</small></td>
+<td><b>导轨底座连接螺钉</b><small>滑闸标准件 · 主方案</small></td>
+<td><b>M3×8内六角＋M3螺母/底座螺纹</b><p>每轨按实际孔数，预留12只</p>工程规格 / 用户输入</td><td>12 件</td>
+<td><span class="badge ">导轨孔/底座堆叠核对</span><p>基座仅4mm厚，通孔+螺母或螺纹方案需先定；不得让下露螺杆顶框架。</p></td>
+<td>待询价<small>待询价；不沿用旧打包额度</small></td></tr><tr data-id="G17" data-category="滑闸标准件" data-selection="主方案">
+<td><b>G17</b><small>旧：B09</small></td>
+<td><b>闸片/横梁连接件</b><small>滑闸标准件 · 主方案</small></td>
+<td><b>M3×10沉头＋M3螺母/压条</b><p>6只使用、2只备用；每连接层实量</p>工程规格 / 用户输入</td><td>8 件</td>
+<td><span class="badge ">纸样与板厚核对</span><p>2mm闸片不靠单孔受拉；豆路表面保持平顺，不留凸出螺帽。可把孔放后方完全避豆路。</p></td>
+<td>待询价<small>待询价；不沿用旧打包额度</small></td></tr><tr data-id="G18" data-category="滑闸加工件" data-selection="主方案">
+<td><b>G18</b><small>旧：B09, A13</small></td>
+<td><b>限位安装耳与保护挡块</b><small>滑闸加工件 · 主方案</small></td>
+<td><b>6061/POM毛坯，约20×15×3mm各件</b><p>两限位耳、两保护挡块；M2安装件按SS-01GL图</p>工程规格 / 用户输入</td><td>1 组</td>
+<td><span class="badge ">端点标定后定位</span><p>正常端点先触限位，机械挡块留在正常行程外；不能让舵机正常关闸时顶死。</p></td>
+<td>待询价<small>待询价；不沿用旧打包额度</small></td></tr><tr data-id="G19" data-category="滑闸加工件" data-selection="主方案">
+<td><b>G19</b><small>旧：B08, B09</small></td>
+<td><b>手动止料片</b><small>滑闸加工件 · 主方案</small></td>
+<td><b>食品接触PP/POM，110×40×1mm毛坯</b><p>独立可插入止料位置；片外保留手持区</p>工程规格 / 用户输入</td><td>1 件</td>
+<td><span class="badge ">槽盒纸样后制作</span><p>不作为自动急停或失电自闭。与运行中闸片不能干涉，取盒前先停料排空。</p></td>
+<td>待询价<small>待询价；不沿用旧打包额度</small></td></tr><tr data-id="G20" data-category="滑闸加工件" data-selection="主方案">
+<td><b>G20</b><small>旧：B09</small></td>
+<td><b>润滑区与豆路隔板</b><small>滑闸加工件 · 主方案</small></td>
+<td><b>PP1mm毛坯140×110mm＋M3可拆固定</b><p>隔开轨块润滑、连杆与豆路；留检修清洁通道</p>工程规格 / 用户输入</td><td>1 件</td>
+<td><span class="badge ">纸样后裁切</span><p>薄片仅隔尘，不承担1kg豆重；不能在落豆口横跨挡豆。</p></td>
+<td>待询价<small>待询价；不沿用旧打包额度</small></td></tr><tr data-id="I06" data-category="工业光电备选" data-selection="备选">
+<td><b>I06</b><small>旧：A15</small></td>
+<td><b>光耦输出上拉</b><small>工业光电备选 · 备选</small></td>
+<td><b>4.7kΩ 1% 1/4W电阻</b><p>集电极至C6 3.3V；与24V输入限流I03不同</p>工程规格 / 用户输入</td><td>1 件</td>
+<td><span class="badge ">随I02接口复核</span><p>仅确认NPN后使用，输出不接24V或5V。</p></td>
+<td>待询价<small>待询价；不沿用旧打包额度</small></td></tr><tr data-id="I07" data-category="工业光电备选" data-selection="备选">
+<td><b>I07</b><small>旧：A15</small></td>
+<td><b>光耦代焊与绝缘安装</b><small>工业光电备选 · 备选</small></td>
+<td><b>FR-4小板约30×20mm＋接线端子＋绝缘盒</b><p>输入/输出分区标识，禁止裸焊悬空</p>工程规格 / 用户输入</td><td>1 组</td>
+<td><span class="badge ">随I02代焊</span><p>报价含代焊和两侧端子；电路通断/极性/输出电压先台架核验。</p></td>
+<td>待询价<small>待询价；不沿用旧打包额度</small></td></tr><tr data-id="W08" data-category="称重" data-selection="主方案">
+<td><b>W08</b><small>旧：B05</small></td>
+<td><b>350g检查用组合砝码之一</b><small>称重 · 主方案</small></td>
+<td><b>OIML R111 F1不锈钢，200g</b><p>有修正值与可核查证书；和100g、50g组合参考</p><a href="https://www.oiml.org/en/files/pdf_r/r111-1-e04.pdf" target="_blank" rel="noopener noreferrer">资料1</a></td><td>1 件</td>
+<td><span class="badge ">标准规格待报价</span><p>三件实际修正质量相加，组合参考扩展不确定度≤0.03g；须考虑相关性，不能只复制单件证书数值。</p></td>
+<td>待询价<small>待询价；不沿用旧打包额度</small></td></tr><tr data-id="W09" data-category="称重" data-selection="主方案">
+<td><b>W09</b><small>旧：B05</small></td>
+<td><b>350g检查用组合砝码之二</b><small>称重 · 主方案</small></td>
+<td><b>OIML R111 F1不锈钢，50g</b><p>与W03 100g、W08 200g组成约350g独立检查点</p><a href="https://www.oiml.org/en/files/pdf_r/r111-1-e04.pdf" target="_blank" rel="noopener noreferrer">资料1</a></td><td>1 件</td>
+<td><span class="badge ">标准规格待报价</span><p>不依赖待测秤确定砝码质量；校准点与独立检查点分开使用。</p></td>
+<td>待询价<small>待询价；不沿用旧打包额度</small></td></tr><tr data-id="F08" data-category="外壳固定" data-selection="历史不采购">
+<td><b>F08</b><small>旧：A09, B08, B10</small></td>
+<td><b>历史木斗壳/托耳固定件（V4.8取消）</b><small>外壳固定 · 历史不采购</small></td>
+<td><b>M5×12/T螺母/垫片各4；小角片10；M3×12及螺母/垫片各28</b><p>托耳2点＋2备；木壳8小角片＋托耳2小角片；外面板固定独立移到F11</p>工程规格 / 用户输入</td><td>0 组</td>
+<td><span class="badge ">取消：不下单</span><p>保留编号供旧图追溯；木斗H01–H06取消，不与新F13重复购买。</p></td>
+<td>待询价<small>新增材料待询价</small></td></tr><tr data-id="F09" data-category="机架与外壳" data-selection="主方案">
+<td><b>F09</b><small>旧：新增</small></td>
+<td><b>上端防尘端盖</b><small>机架与外壳 · 主方案</small></td>
+<td><b>匹配已有黑色欧标2020端部的黑色塑料端盖</b><p>20×20型材用，4只；非承重连接件</p>工程规格 / 用户输入</td><td>4 只</td>
+<td><span class="badge ">核实2020端部后下单</span><p>按实物中心孔/槽型试配；端盖不承担框架连接。</p></td>
+<td>待询价<small>新增待询价</small></td></tr><tr data-id="F10" data-category="机架与外壳" data-selection="主方案">
+<td><b>F10</b><small>旧：新增</small></td>
+<td><b>底部防滑脚套</b><small>机架与外壳 · 主方案</small></td>
+<td><b>黑色欧标2020端部外套式橡胶脚套</b><p>内腔匹配20×20端部，厚底≥3mm，4只；实物尺寸/硬度待核</p>工程规格 / 用户输入</td><td>4 只</td>
+<td><span class="badge ">核实2020端部后下单</span><p>无螺纹的外套式方案，不用把M5硬拧入型材中心孔。要求四点稳定；非调平脚、非已验承载件。若换调平脚另核安装座/攻牙。</p></td>
+<td>待询价<small>新增待询价</small></td></tr><tr data-id="F11" data-category="外壳固定" data-selection="主方案">
+<td><b>F11</b><small>旧：新增</small></td>
+<td><b>内嵌木面板背托套件</b><small>外壳固定 · 主方案</small></td>
+<td><b>20×20×2内角片＋配套M5/T螺母；M3×25黑沉头＋M3螺母/垫片＋隔距</b><p>购40套：木板32点、前黑PP条2点、6备；每套1角片/1M5/1T螺母/1M3螺栓螺母垫片/10mm尼龙隔套＋1mm调垫</p>工程规格 / 用户输入</td><td>1 组</td>
+<td><span class="badge ">先纸样/角样，后按实物下单</span><p>角片内侧背托。示意11mm隔距使6mm板面内凹1；按实物角片量，不盲买固定11。先做角样，32点不是沿用旧16点外覆直接穿T槽。</p></td>
+<td>待询价<small>V4.7新增待询价</small></td></tr><tr data-id="F12" data-category="料斗制作" data-selection="主方案">
+<td><b>F12</b><small>旧：新增</small></td>
+<td><b>PP热焊耗材</b><small>料斗制作 · 主方案</small></td>
+<td><b>同牌号PP-H焊条Ø2/Ø3；焊枪匹配4–5mm细嘴；20×10×1.5角铝压片</b><p>同牌号相容PP-H焊条Ø2约5m、Ø3约2m练习；匹配热风枪4–5mm细嘴1（已有不买）</p>工程规格 / 用户输入</td><td>1 组</td>
+<td><span class="badge ">先纸样/角样，后按实物下单</span><p>原木壳口圈4角铝压片取消。试焊需根部熔合，主要在外侧焊，内面检查修焊并光顺。</p></td>
+<td>待询价<small>V4.7新增待询价</small></td></tr><tr data-id="G21" data-category="滑闸加工件" data-selection="主方案">
+<td><b>G21</b><small>旧：新增</small></td>
+<td><b>五窗叠层隔距与夹紧件</b><small>滑闸加工件 · 主方案</small></td>
+<td><b>外翼隔距块10×30×2两条＋0.3mm薄垫；M3×35候选</b><p>2mm隔块×2、0.3薄垫×2；3mm下支承×2；M3×35/螺母/垫片各4（2用2备）；均先纸样</p>工程规格 / 用户输入</td><td>1 组</td>
+<td><span class="badge ">先纸样/角样，后按实物下单</span><p>隔片X0→10/130→140，避开闸片X15→125。间隙按板实厚＋约0.3总隙起试；不靠螺钉夹紧程度调滑动。后罩另按G13/G20避加强角梁，固定孔未冻结。</p></td>
+<td>待询价<small>V4.7新增待询价</small></td></tr><tr data-id="F13" data-category="外壳与料斗" data-selection="主方案">
+<td><b>F13</b><small>旧：新增</small></td>
+<td><b>顶框料斗悬挂支承</b><small>外壳与料斗 · 主方案</small></td>
+<td><b>6061角铝25×25×2裁成宽20、竖外脚22/横外脚14；按实物根R修配</b><p>4只；M5及匹配T螺母各4＋备2；M3×12/螺母/大垫片各4＋备2；PP法兰径向槽3.5×7，托片圆孔3.5</p><a href="../fabrication-v4.8/README.md" target="_blank" rel="noopener noreferrer">资料1</a></td><td>1 套</td>
+<td><span class="badge ">首样尺寸，实配后定孔</span><p>竖脚锁顶框内侧Z440–460，脚面Z440；外侧PP焊筋不碰角片。1kg承载需实测，不以计算代替验收。 四支点PP底边2×2局部倒角避约R2，实际R更大须重定，不能把板拉弯。</p></td>
+<td>待询价<small>待询价</small></td></tr><tr data-id="F14" data-category="外壳与料斗" data-selection="主方案">
+<td><b>F14</b><small>旧：新增</small></td>
+<td><b>主斗/过渡斗可拆密封接头</b><small>外壳与料斗 · 主方案</small></td>
+<td><b>PP-H3双法兰；食品接触硅胶板1mm；M3连接</b><p>PP3 146×66×2片，孔110×30；硅胶同外/内尺寸×1；4×M3×16及螺母/垫片；每点0.5+0.3限压垫</p><a href="../fabrication-v4.8/README.md" target="_blank" rel="noopener noreferrer">资料1</a></td><td>1 套</td>
+<td><span class="badge ">首样尺寸，实配后定孔</span><p>4孔全局X43/177、Y93/147；1mm密封圈名义压至0.8，须试密封。小斗高24.9按此叠高；压缩不符先调整垫片/顶支承，不拉弯U2。 PP3两片从F05板料裁；扩大法兰以避开外焊筋与垫圈。</p></td>
+<td>待询价<small>待询价</small></td></tr><tr data-id="F15" data-category="外壳与料斗" data-selection="主方案">
+<td><b>F15</b><small>旧：新增</small></td>
+<td><b>BOX前主屏压框/夹持件</b><small>外壳与料斗 · 主方案</small></td>
+<td><b>黑PP2 160×100一片，共裁BOX80×64和C6外框56×38；软垫四角夹片</b><p>1外框＋4软垫夹片＋4绝缘柱＋候选M3紧固；后框由F06裁</p><a href="../fabrication-v4.8/README.md" target="_blank" rel="noopener noreferrer">资料1</a></td><td>1 套</td>
+<td><span class="badge ">首样尺寸，实配后定孔</span><p>木板过件孔65.3×48.6。BOX原壳无已确认通用安装孔，不钻壳，不压玻璃；插头/TF/键均保留可达性。 外压框视窗小于原壳以挡住壳边，木板大孔用于从背面装入；必须实际确认不压玻璃/键。</p></td>
+<td>待询价<small>待询价</small></td></tr><tr data-id="F16" data-category="外壳与料斗" data-selection="主方案">
+<td><b>F16</b><small>旧：新增</small></td>
+<td><b>C6侧屏压框与M2安装件</b><small>外壳与料斗 · 主方案</small></td>
+<td><b>黑PP2外框56×38；PP3绝缘后框56×38开26×10；非Touch</b><p>1外框＋1 PP后框（F05余料）；4×M2×8候选＋3mm尼龙隔柱/垫片，孔距13.08×32参考</p><a href="../fabrication-v4.8/README.md" target="_blank" rel="noopener noreferrer">资料1</a></td><td>1 套</td>
+<td><span class="badge ">首样尺寸，实配后定孔</span><p>木板过件孔40×24含USB/侧按钮突起余量；孔位基准与有效区按实物；原图2.5H，螺钉实际啮合不顶底；天线不盖铝。 3mm框＋3mm隔柱后螺纹进入≤2mm（扣垫片实算），不顶底；PP框无金属天线遮挡。 黑PP2外框来自F15同一小板，不重复买。</p></td>
+<td>待询价<small>待询价</small></td></tr><tr data-id="F17" data-category="外壳与料斗" data-selection="备选">
+<td><b>F17</b><small>旧：新增</small></td>
+<td><b>可选PP防尘盖</b><small>外壳与料斗 · 备选</small></td>
+<td><b>PP-H2，172×192，F04余料或独立板料</b><p>盖1片；可焊PP提手1；不穿豆路金属尖头</p><a href="../fabrication-v4.8/README.md" target="_blank" rel="noopener noreferrer">资料1</a></td><td>1 套</td>
+<td><span class="badge ">首样尺寸，实配后定孔</span><p>可选项，不计作承力底。PP2 A3两张先按排版，废料练习不足时补小板。</p></td>
+<td>待询价<small>待询价</small></td></tr></tbody></table></div></section>
+<section class="card grid2"><div><h2>GPIO20 推荐连接</h2><div class="diagram">2167 发射红线 → 5V，黑线 → GND<br>2167 接收红线 → 5V，黑线 → C6 GND<br>接收白线信号节点 → 1kΩ串联 → GPIO20<br>白线信号节点 → 10kΩ → C6 3.3V</div><p class="dim">仅适用核验过的开集电极2167。信号上拉到3.3V，不接5V红线。原厂示例遮挡为低电平，仍要空载测量确认。廉价仿品若有内部5V上拉，须重新核验，不能照搬。</p></div><div><h2>为什么不负责数豆？</h2><p>一条光束只检测被遮挡：可以提示豆流出现、持续遮挡异常，并辅助核对关闸后的残流。五槽多颗豆同时经过会合并成一次遮挡，偏离光束也可能漏报。</p><p>相机仍连续采集，图像跟踪负责计数与双面配对。光电不能单独宣布“已空料”“卡豆”或“可以停相机”。第一阶段没有它也可做成像和空载闸门验证。</p></div></section>
+<section class="card"><h2>计算与装配要点</h2><div class="grid2"><div><p><b>行程：</b>12mm槽深＋1.5mm覆盖＋1.5mm退让＝15mm；r16mm对应±27.953°相对角。L60mm时两端球头入口至球心按24.4mm，每端牙条旋入9.4mm；裸露11.2mm。</p><p><b>板片：</b>110×45×2mm的6061-T6毛坯约26.73g。全宽简支梁粗算，1kg均布挠度0.081mm，跨中集中梁载0.130mm；不代表局部接触/孔位/夹豆验收。</p><p><b>导轨：</b>39.9mm滑块＋15mm行程＋两端各10mm余量＝74.9mm最低几何长度，100mm有余量；仍须按实际孔位、挡块、后摄视锥检查。120×30×3mm转接板给四孔安装留出空间。</p></div><div><p><b>电源：</b>按灯8W、传感器1W、5V×4A与6V×3A、降压效率85%计算，持续预算53.71W；舵机短时5A时约67.82W。候选GST120A24-P1M为24V/5A/120W，尺寸、连接和温升仍需确认。</p><p><b>称重：</b>原1kg毛载荷不能接收1kg豆＋盒＋平台；若全量一次收集，须采用经核验的更大量程组件。HJ-AZ4-3kg有容量余量但不自动满足±0.1g，且接口仍待核。新表没有默默改变原0–500g误差验收范围。</p><p><b>孔位：</b>先买标准件和板料，再纸样试装，最后钻支架/槽盒孔。不能把动画或毛坯外形当最终开孔图。</p></div></div></section>
+<details class="card"><summary>旧BOM 35项如何处理（完整对照）</summary><div class="scroll"><table><thead><tr><th>旧编号</th><th>旧名称</th><th>本次处理</th><th>新编号</th></tr></thead><tbody><tr><td>A01</td><td>正点原子K230D BOX＋32GB TF卡</td><td>补材料/型号、数量与下单条件；打包规划金额不作新报价</td><td>A01</td></tr><tr><td>E01</td><td>ESP32-C6-LCD-1.47非Touch版</td><td>补材料/型号、数量与下单条件；打包规划金额不作新报价</td><td>E01</td></tr><tr><td>E02</td><td>BOX自带2.4英寸屏＋32GB TF</td><td>套件内包含，不把尚未收到的套件标成已有</td><td>E02</td></tr><tr><td>B01</td><td>GC2093＋M12 90°无畸变镜头，两套</td><td>补用户GC2093-M12-90度描述，PCB/线序/近焦仍需核</td><td>B01</td></tr><tr><td>B02</td><td>BOX兼容MIPI排线，按实际路径</td><td>补材料/型号、数量与下单条件；打包规划金额不作新报价</td><td>B02</td></tr><tr><td>A03</td><td>MG996R位置舵机＋舵盘</td><td>补材料/型号、数量与下单条件；打包规划金额不作新报价</td><td>A03</td></tr><tr><td>A04</td><td>山大斯M12对射收发一组</td><td>首样改低压2167建议，原B3F-20C1保留待核备选</td><td>PH01, I01</td></tr><tr><td>B03</td><td>NAU7802 I²C模块，3.3V兼容</td><td>补材料/型号、数量与下单条件；打包规划金额不作新报价</td><td>B03</td></tr><tr><td>B04</td><td>1kg四线全桥、单点偏载补偿传感器</td><td>原1kg采购描述未闭合；用户3kg候选另列，L6J1不直接适配</td><td>W01, W02</td></tr><tr><td>B05</td><td>100g/500g等可核查质量砝码</td><td>补材料/型号、数量与下单条件；打包规划金额不作新报价</td><td>W03, W04, W08, W09</td></tr><tr><td>B06</td><td>轻平台＋刚性底座/支柱＋过载限位</td><td>补材料/型号、数量与下单条件；打包规划金额不作新报价</td><td>W05, W06, W07</td></tr><tr><td>A05</td><td>24V普瑞Ra98同批固定色温灯带</td><td>补材料/型号、数量与下单条件；打包规划金额不作新报价</td><td>A05</td></tr><tr><td>A06</td><td>4条铝散热槽＋扩散片＋遮光边</td><td>补材料/型号、数量与下单条件；打包规划金额不作新报价</td><td>L02, L03</td></tr><tr><td>A07</td><td>24V/4A成品稳压适配器</td><td>补材料/型号、数量与下单条件；打包规划金额不作新报价</td><td>A07, P02</td></tr><tr><td>A08</td><td>XL4015类24V→5.0V带散热模块</td><td>补具体固定5V模块参考；旧18元不当新报价</td><td>A08</td></tr><tr><td>A17</td><td>第二只24V→6.0V带散热模块</td><td>补具体固定6V模块参考；旧18元不当新报价</td><td>A17</td></tr><tr><td>A09</td><td>24V DC开关、端子、保险座/保险、线材</td><td>补材料/型号、数量与下单条件；打包规划金额不作新报价</td><td>P03, P04, P05, P06, P07, P08, F08</td></tr><tr><td>A10</td><td>1000µF16V＋470µF10V＋100nF</td><td>补材料/型号、数量与下单条件；打包规划金额不作新报价</td><td>C01, C02, C03</td></tr><tr><td>A11</td><td>双USB-A供电转接＋两根短A-to-C线</td><td>补材料/型号、数量与下单条件；打包规划金额不作新报价</td><td>P09, P10</td></tr><tr><td>B07</td><td>2020银色型材4.40m＋角码/T螺母</td><td>核对净切割长度4.40m，连接件拆开</td><td>F01, F02</td></tr><tr><td>B08</td><td>6mm海洋板支架＋0.5mm PP内衬/隔板</td><td>板料/槽盒展开拆分，宽度分配与开缝须纸样</td><td>F03, F04, F05, G13, G19, F08</td></tr><tr><td>B09</td><td>POM片＋导块/M3球头连杆＋MG996R金属支架</td><td>原25元打包行作废，拆分G01–G20；增加滑架转接板/封闭槽盒</td><td>G01, G02, G03, G04, G05, G06, G07, G08, G09, G10, G11, G12, G13, G14, G15, G16, G17, G18, G19, G20</td></tr><tr><td>B10</td><td>6mm海洋板＋BOX内托架＋遮光隔舱/快拆</td><td>补材料/型号、数量与下单条件；打包规划金额不作新报价</td><td>F03, F06, F07, F08</td></tr><tr><td>B11</td><td>PBT软刷＋夹座</td><td>补材料/型号、数量与下单条件；打包规划金额不作新报价</td><td>B11</td></tr><tr><td>A13</td><td>两限位＋PH2.0线/接头＋上拉</td><td>补材料/型号、数量与下单条件；打包规划金额不作新报价</td><td>S01, S02, S03, S04, G15, G18</td></tr><tr><td>B12</td><td>食品接触PP盒，外≤160×170×130</td><td>补材料/型号、数量与下单条件；打包规划金额不作新报价</td><td>B12</td></tr><tr><td>A14</td><td>哑光中性灰参考块</td><td>补材料/型号、数量与下单条件；打包规划金额不作新报价</td><td>A14</td></tr><tr><td>B13</td><td>两套L架＋载板/尼龙柱＋固定夹</td><td>补材料/型号、数量与下单条件；打包规划金额不作新报价</td><td>B13</td></tr><tr><td>A15</td><td>24V NPN输入→3.3V开集电极光耦模块</td><td>低压方案不用工业光耦；拆上拉/串阻，工业备选另列</td><td>PH02, PH03, I02, I03, I04, I06, I07</td></tr><tr><td>B14</td><td>M12可调L支架＋双螺母/遮光帽</td><td>补材料/型号、数量与下单条件；打包规划金额不作新报价</td><td>PH04, I05</td></tr><tr><td>A16</td><td>16mm无灯金属自复位1NO1NC</td><td>补材料/型号、数量与下单条件；打包规划金额不作新报价</td><td>A16</td></tr><tr><td>O01</td><td>5V供电AHCT单向PWM缓冲</td><td>补材料/型号、数量与下单条件；打包规划金额不作新报价</td><td>O01</td></tr><tr><td>O05</td><td>欧路达Autoda 3kg裸传感器（型号待核）</td><td>更新用户型号HJ-AZ4-3kg与103元，不沿用55元</td><td>W01</td></tr><tr><td>O06</td><td>欧路达配套铝支架增价</td><td>旧50元差价作废；103元是否含支架待核，避免重复买底座</td><td>W07</td></tr><tr><td>O04</td><td>专用3.3V降压/低噪声后级</td><td>补材料/型号、数量与下单条件；打包规划金额不作新报价</td><td>O04</td></tr></tbody></table></div></details>
+<footer>价格均为人民币。国外原厂页面用于核规格，未按网页美元价折算，不含运费、工具和外协工时。旧V4.4 CSV/JSON/PDF/ZIP保留快照；本页为当前采购入口。尚未实物承重、带豆开合、电气联调或称重验收。</footer></main><script>
+(()=>{const rows=[...document.querySelectorAll('#parts tbody tr')],search=document.getElementById('search'),cat=document.getElementById('category'),sel=document.getElementById('selection');function filter(){const q=search.value.trim().toLowerCase();let count=0;rows.forEach(r=>{const show=(!q||r.textContent.toLowerCase().includes(q))&&(!cat.value||cat.value===r.dataset.category)&&(!sel.value||sel.value===r.dataset.selection);r.hidden=!show;if(show)count++;});document.getElementById('visibleCount').textContent=`显示 ${count} / ${rows.length} 项`;}[search,cat,sel].forEach(e=>e.addEventListener('input',filter));document.getElementById('reset').onclick=()=>{search.value=cat.value=sel.value='';filter();};filter();})();
+</script></body></html>

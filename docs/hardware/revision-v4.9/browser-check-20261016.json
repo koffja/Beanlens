@@ -1,0 +1,29 @@
+{
+  "date": "2026-10-16",
+  "sheets": 4,
+  "highlighted": 1,
+  "zoom": "150%",
+  "bounds": [
+    {
+      "page": 1,
+      "outside": []
+    },
+    {
+      "page": 2,
+      "outside": []
+    },
+    {
+      "page": 3,
+      "outside": []
+    },
+    {
+      "page": 4,
+      "outside": []
+    }
+  ],
+  "bomcount": 107,
+  "filtered": 2,
+  "resetcount": 107,
+  "errors": [],
+  "scope": "Offline browser rendering / interaction / PDF export only, not electrical or physical validation"
+}

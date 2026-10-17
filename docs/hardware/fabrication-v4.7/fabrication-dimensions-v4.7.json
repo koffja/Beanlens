@@ -1,0 +1,18 @@
+{
+  "date": "2026-10-16",
+  "revision": "V4.7",
+  "main_top_mm": 136,
+  "main_bottom_mm": [
+    110,
+    30
+  ],
+  "main_height_mm": 110,
+  "front_back_slant_mm": 122.10241602851272,
+  "left_right_slant_mm": 110.76551810017412,
+  "transition_slants_mm": [
+    30.078065097342947,
+    31.93258523827972
+  ],
+  "pp_plate_mm": 2,
+  "templates_are_inner_surface_control_not_finished_bevel_patterns": true
+}

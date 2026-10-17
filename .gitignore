@@ -28,6 +28,7 @@ __pycache__/
 
 # Vendor distribution: preserve locally, do not commit a whole SDK/media disc
 /docs/【正点原子】DNK230D开发板资料盘(A盘)/
+/docs/A1-6-2F/
 
 # Firmware and local SDK products
 **/build/
@@ -48,3 +49,4 @@ __pycache__/
 /captures/
 /artifacts/
 /tmp/
+/.playwright-mcp/

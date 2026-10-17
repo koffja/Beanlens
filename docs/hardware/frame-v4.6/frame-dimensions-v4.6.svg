@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 1080" role="img" aria-labelledby="title desc">
+<title id="title">BeanLens V4.7 连续立柱机架尺寸及角码位置</title><desc id="desc">220宽240深460高，18根型材；中框前后梁与柱面齐。尺寸均为毫米。</desc>
+<defs><marker id="arr" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M10 0L0 5L10 10" fill="none" stroke="#33594f"/></marker></defs>
+<style>text{font-family:system-ui,"PingFang SC",sans-serif;fill:#243e36;font-size:19px}.small{font-size:16px}.title{font-size:30px;font-weight:700}.rail{fill:#30353b;stroke:#111920;stroke-width:1.5}.slot{stroke:#89939b;stroke-width:2}.dim{stroke:#33594f;stroke-width:1.1;fill:none;marker-start:url(#arr);marker-end:url(#arr)}.ext{stroke:#a1b3ab;stroke-width:1}.angle{fill:#b2dccb;stroke:#117e60;stroke-width:1.5}.note{fill:#9a532a}.mono{font-variant-numeric:tabular-nums}</style>
+<rect width="1400" height="1080" fill="#fffefa"/>
+<text x="50" y="50" class="title" text-anchor="start">BeanLens V4.7｜黑色欧标2020，连续立柱</text>
+<text x="50" y="82" class="small" text-anchor="start">尺寸化布局提案 · 2026-10-16 · 单位mm · 不含脚套/端盖 · 不作为1:1钻孔模板</text>
+<text x="277.5" y="125" class="" text-anchor="middle">正视图</text>
+<text x="780" y="125" class="" text-anchor="middle">右视图</text>
+<rect x="140" y="145" width="25" height="575" class="rail"/>
+<line x1="152.5" y1="150" x2="152.5" y2="715" class="slot"/>
+<rect x="390" y="145" width="25" height="575" class="rail"/>
+<line x1="402.5" y1="150" x2="402.5" y2="715" class="slot"/>
+<rect x="165" y="695" width="225" height="25" class="rail"/>
+<line x1="171.25" y1="707.5" x2="383.75" y2="707.5" class="slot"/>
+<text x="277.5" y="712" class="small" text-anchor="middle">180</text>
+<path d="M165.0 694.0h24L165.0 670.0Z" class="angle"/>
+<path d="M390.0 694.0h-24L390.0 670.0Z" class="angle"/>
+<rect x="165" y="418.438" width="225" height="25" class="rail"/>
+<line x1="171.25" y1="430.938" x2="383.75" y2="430.938" class="slot"/>
+<text x="277.5" y="435.438" class="small" text-anchor="middle">180</text>
+<path d="M165.0 444.4375h24L165.0 468.4375Z" class="angle"/>
+<path d="M390.0 444.4375h-24L390.0 468.4375Z" class="angle"/>
+<rect x="165" y="315" width="225" height="25" class="rail"/>
+<line x1="171.25" y1="327.5" x2="383.75" y2="327.5" class="slot"/>
+<text x="277.5" y="332" class="small" text-anchor="middle">180</text>
+<path d="M165.0 341.0h24L165.0 365.0Z" class="angle"/>
+<path d="M390.0 341.0h-24L390.0 365.0Z" class="angle"/>
+<rect x="165" y="145" width="225" height="25" class="rail"/>
+<line x1="171.25" y1="157.5" x2="383.75" y2="157.5" class="slot"/>
+<text x="277.5" y="162" class="small" text-anchor="middle">180</text>
+<path d="M165.0 171.0h24L165.0 195.0Z" class="angle"/>
+<path d="M390.0 171.0h-24L390.0 195.0Z" class="angle"/>
+<line x1="140" y1="728" x2="140" y2="767" class="ext"/>
+<line x1="415" y1="728" x2="415" y2="767" class="ext"/>
+<line x1="140" y1="760" x2="415" y2="760" class="dim"/>
+<text x="277.5" y="784" class="small" text-anchor="middle">220</text>
+<rect x="630" y="145" width="25" height="575" class="rail"/>
+<line x1="642.5" y1="150" x2="642.5" y2="715" class="slot"/>
+<rect x="905" y="145" width="25" height="575" class="rail"/>
+<line x1="917.5" y1="150" x2="917.5" y2="715" class="slot"/>
+<rect x="655" y="695" width="250" height="25" class="rail"/>
+<line x1="661.25" y1="707.5" x2="898.75" y2="707.5" class="slot"/>
+<text x="780" y="712" class="small" text-anchor="middle">200</text>
+<path d="M655.0 694.0h24L655.0 670.0Z" class="angle"/>
+<path d="M905.0 694.0h-24L905.0 670.0Z" class="angle"/>
+<rect x="655" y="315" width="250" height="25" class="rail"/>
+<line x1="661.25" y1="327.5" x2="898.75" y2="327.5" class="slot"/>
+<text x="780" y="332" class="small" text-anchor="middle">200</text>
+<path d="M655.0 341.0h24L655.0 365.0Z" class="angle"/>
+<path d="M905.0 341.0h-24L905.0 365.0Z" class="angle"/>
+<rect x="655" y="145" width="250" height="25" class="rail"/>
+<line x1="661.25" y1="157.5" x2="898.75" y2="157.5" class="slot"/>
+<text x="780" y="162" class="small" text-anchor="middle">200</text>
+<path d="M655.0 171.0h24L655.0 195.0Z" class="angle"/>
+<path d="M905.0 171.0h-24L905.0 195.0Z" class="angle"/>
+<line x1="630" y1="728" x2="630" y2="767" class="ext"/>
+<line x1="930" y1="728" x2="930" y2="767" class="ext"/>
+<line x1="630" y1="760" x2="930" y2="760" class="dim"/>
+<text x="780" y="784" class="small" text-anchor="middle">240</text>
+<line x1="95" y1="145" x2="95" y2="720" class="dim"/>
+<text x="66" y="432.5" class="small" text-anchor="middle">460</text>
+<line x1="100" y1="145" x2="136" y2="145" class="ext"/>
+<line x1="100" y1="720" x2="136" y2="720" class="ext"/>
+<line x1="415" y1="170" x2="445" y2="170" class="ext"/>
+<text x="450" y="176" class="small" text-anchor="start">顶框下表面 Z440</text>
+<line x1="415" y1="315" x2="445" y2="315" class="ext"/>
+<text x="450" y="321" class="small" text-anchor="start">中框顶面 Z324</text>
+<line x1="415" y1="418.438" x2="445" y2="418.438" class="ext"/>
+<text x="450" y="424.438" class="small" text-anchor="start">相机梁顶 Z241.25</text>
+<line x1="415" y1="695" x2="445" y2="695" class="ext"/>
+<text x="450" y="701" class="small" text-anchor="start">底框顶面 Z20</text>
+<text x="140" y="819" class="small" text-anchor="start">立柱460×4；横梁都夹在立柱之间</text>
+<text x="630" y="819" class="small" text-anchor="start">中框横梁在外侧柱面；不是四通节点</text>
+<text x="1010" y="135" class="" text-anchor="start">净料清点（F01）</text>
+<text x="1010" y="172" class="small" text-anchor="start">460 × 4  立柱</text>
+<text x="1010" y="203" class="small" text-anchor="start">200 × 6  顶/底/中侧梁</text>
+<text x="1010" y="234" class="small" text-anchor="start">180 × 8  顶/底/中/相机梁</text>
+<text x="1010" y="265" class="small" text-anchor="start">共18根；净长4480mm</text>
+<text x="1010" y="325" class="" text-anchor="start">角码（F02）</text>
+<text x="1010" y="362" class="small" text-anchor="start">上下框：16套</text>
+<text x="1010" y="392" class="small" text-anchor="start">中框：8套；相机梁：4套</text>
+<text x="1010" y="422" class="small" text-anchor="start">用28套，购32套含备用</text>
+<text x="1010" y="452" class="small" text-anchor="start">每套2螺钉＋2匹配T螺母</text>
+<text x="1010" y="482" class="small" text-anchor="start">绿色三角仅标示安装区域</text>
+<text x="1010" y="512" class="small" text-anchor="start">两侧角码可能在投影中重叠</text>
+<text x="1010" y="585" class="note" text-anchor="start">称台底板四角需避角码</text>
+<text x="1010" y="616" class="small" text-anchor="start">约25×25核对区，不先切角</text>
+<text x="1010" y="646" class="small" text-anchor="start">不抬高称台去硬凑净空</text>
+<text x="1010" y="695" class="small" text-anchor="start">主斗110：330→440，圈顶442</text>
+<text x="1010" y="725" class="small" text-anchor="start">梁顶324＋托耳6＝330</text>
+<text x="1010" y="755" class="small" text-anchor="start">斗顶440＋顶框20＝460</text>
+<rect x="178.75" y="170" width="197.5" height="137.5" fill="none" stroke="#bd7541" stroke-width="1.5" stroke-dasharray="6 5"/>
+<rect x="681.25" y="170" width="197.5" height="137.5" fill="none" stroke="#bd7541" stroke-width="1.5" stroke-dasharray="6 5"/>
+<text x="50" y="875" class="title" text-anchor="start">现有料 → 只补购180mm成品4根</text>
+<text x="50" y="918" class="small" text-anchor="start">460×4 保留整根做立柱；另外460×3 每根切200＋200（锯缝6，余54）</text>
+<text x="50" y="953" class="small" text-anchor="start">400×2 每根切180＋180（锯缝6，余34）；新购180×4直接用</text>
+<text x="50" y="988" class="small" text-anchor="start">合计：已有4020＋补购720＝成品4480＋锯屑30＋余料230＝4740mm</text>
+<text x="50" y="1023" class="small" text-anchor="start">假设锯缝每刀3mm、原料端面可直接用；下料前量槽口、实际长度和端面。</text>
+</svg>

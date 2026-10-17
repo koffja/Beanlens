@@ -1,0 +1,272 @@
+[
+  {
+    "id": "P05",
+    "size_mm": [
+      196,
+      280,
+      6
+    ],
+    "primary_sheet": "800x600",
+    "primary_xy_mm": [
+      3,
+      3
+    ],
+    "alternative_sheet": "A",
+    "alternative_xy_mm": [
+      3,
+      3
+    ]
+  },
+  {
+    "id": "P03",
+    "size_mm": [
+      196,
+      112,
+      6
+    ],
+    "primary_sheet": "800x600",
+    "primary_xy_mm": [
+      3,
+      286
+    ],
+    "alternative_sheet": "A",
+    "alternative_xy_mm": [
+      3,
+      286
+    ]
+  },
+  {
+    "id": "H01",
+    "size_mm": [
+      158,
+      110,
+      6
+    ],
+    "primary_sheet": "800x600",
+    "primary_xy_mm": [
+      3,
+      401
+    ],
+    "alternative_sheet": "B",
+    "alternative_xy_mm": [
+      3,
+      3
+    ]
+  },
+  {
+    "id": "H05",
+    "size_mm": [
+      40,
+      30,
+      6
+    ],
+    "primary_sheet": "800x600",
+    "primary_xy_mm": [
+      3,
+      514
+    ],
+    "alternative_sheet": "B",
+    "alternative_xy_mm": [
+      152,
+      116
+    ]
+  },
+  {
+    "id": "H06",
+    "size_mm": [
+      40,
+      30,
+      6
+    ],
+    "primary_sheet": "800x600",
+    "primary_xy_mm": [
+      46,
+      514
+    ],
+    "alternative_sheet": "B",
+    "alternative_xy_mm": [
+      195,
+      116
+    ]
+  },
+  {
+    "id": "P06",
+    "size_mm": [
+      196,
+      280,
+      6
+    ],
+    "primary_sheet": "800x600",
+    "primary_xy_mm": [
+      202,
+      3
+    ],
+    "alternative_sheet": "A",
+    "alternative_xy_mm": [
+      202,
+      3
+    ]
+  },
+  {
+    "id": "P04",
+    "size_mm": [
+      196,
+      112,
+      6
+    ],
+    "primary_sheet": "800x600",
+    "primary_xy_mm": [
+      202,
+      286
+    ],
+    "alternative_sheet": "A",
+    "alternative_xy_mm": [
+      202,
+      286
+    ]
+  },
+  {
+    "id": "H02",
+    "size_mm": [
+      158,
+      110,
+      6
+    ],
+    "primary_sheet": "800x600",
+    "primary_xy_mm": [
+      202,
+      401
+    ],
+    "alternative_sheet": "B",
+    "alternative_xy_mm": [
+      164,
+      3
+    ]
+  },
+  {
+    "id": "P08",
+    "size_mm": [
+      176,
+      197,
+      6
+    ],
+    "primary_sheet": "800x600",
+    "primary_xy_mm": [
+      401,
+      3
+    ],
+    "alternative_sheet": "A",
+    "alternative_xy_mm": [
+      401,
+      3
+    ]
+  },
+  {
+    "id": "P02",
+    "size_mm": [
+      176,
+      112,
+      6
+    ],
+    "primary_sheet": "800x600",
+    "primary_xy_mm": [
+      401,
+      203
+    ],
+    "alternative_sheet": "A",
+    "alternative_xy_mm": [
+      401,
+      203
+    ]
+  },
+  {
+    "id": "P07",
+    "size_mm": [
+      176,
+      58,
+      6
+    ],
+    "primary_sheet": "800x600",
+    "primary_xy_mm": [
+      401,
+      318
+    ],
+    "alternative_sheet": "A",
+    "alternative_xy_mm": [
+      401,
+      318
+    ]
+  },
+  {
+    "id": "P01",
+    "size_mm": [
+      176,
+      112,
+      6
+    ],
+    "primary_sheet": "800x600",
+    "primary_xy_mm": [
+      401,
+      379
+    ],
+    "alternative_sheet": "A",
+    "alternative_xy_mm": [
+      401,
+      379
+    ]
+  },
+  {
+    "id": "P09",
+    "size_mm": [
+      176,
+      58,
+      6
+    ],
+    "primary_sheet": "800x600",
+    "primary_xy_mm": [
+      401,
+      494
+    ],
+    "alternative_sheet": "A",
+    "alternative_xy_mm": [
+      401,
+      494
+    ]
+  },
+  {
+    "id": "H03",
+    "size_mm": [
+      146,
+      110,
+      6
+    ],
+    "primary_sheet": "800x600",
+    "primary_xy_mm": [
+      580,
+      3
+    ],
+    "alternative_sheet": "B",
+    "alternative_xy_mm": [
+      325,
+      3
+    ]
+  },
+  {
+    "id": "H04",
+    "size_mm": [
+      146,
+      110,
+      6
+    ],
+    "primary_sheet": "800x600",
+    "primary_xy_mm": [
+      580,
+      116
+    ],
+    "alternative_sheet": "B",
+    "alternative_xy_mm": [
+      3,
+      116
+    ]
+  }
+]

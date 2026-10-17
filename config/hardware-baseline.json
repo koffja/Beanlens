@@ -1,7 +1,7 @@
 {
   "project": "BeanLens",
   "baseline": "V4.4",
-  "date": "2026-10-12",
+  "date": "2026-10-17",
   "status": "proposed_not_hardware_verified",
   "source": "docs/hardware/v4.4/beanlens-v4-handbook.html",
   "boards": {
@@ -35,9 +35,59 @@
     "all_budgets_need_measurement": true,
     "full_galvanic_isolation": false,
     "board_to_board_5v_wire_connected": false,
-    "input_adapter_candidate": "MEAN WELL GST120A24-P1M",
-    "logic_buck_candidate": "Pololu D36V50F5 #4091",
-    "servo_buck_candidate": "Pololu D36V50F6 #4092"
+    "input_adapter_candidate": "YU2405, user selected24V5A120W; maker/plug/polarity/AC lead verify against actual order",
+    "logic_buck_candidate": "TPS5450DDA-based 5V complete module; maker/SKU and 24V to5V/4A thermal verification pending",
+    "servo_buck_candidate": "HOBBYWING UBEC5A 30607000, 2-8S version, jumper6.0V; user confirmed UBEC5A/6V architecture",
+    "revision": "V4.11",
+    "source": "docs/hardware/revision-v4.11/design-v4.11.json",
+    "external_low_voltage_box_mm_proposal": [
+      200,
+      150,
+      80
+    ],
+    "rear_21mm_cavity_used_for_power_modules": false,
+    "terminal_blocks": "TB-1506 / DHATB1506N x2",
+    "terminal_map": {
+      "TB-A": {
+        "1": "24V+ input / lamp fuse",
+        "2": "24V+ logic input fuse",
+        "3": "24V+ servo input fuse",
+        "4": "adapter return / lamp return",
+        "5": "logic buck IN-",
+        "6": "servo buck IN-"
+      },
+      "TB-B": {
+        "1": "5V+",
+        "2": "5V return",
+        "3": "6V+",
+        "4": "6V return",
+        "5": "unused",
+        "6": "unused"
+      }
+    },
+    "terminal_map_source": "docs/hardware/revision-v4.9/02-terminal-map.svg",
+    "buck_budget_efficiency": 0.8,
+    "continuous_budget_w": 56.5,
+    "peak_budget_w": 71.5,
+    "fuses_input_side_a": {
+      "main": 4,
+      "lamp": 2,
+      "logic_buck": 2,
+      "servo_buck": 3
+    },
+    "outputs_positive_never_join": true,
+    "extra_output_ground_jumpers": false,
+    "previous_imported_bucks": "Pololu D36V50F5/F6 alternate; reuse if already owned",
+    "servo_regulator_factory_continuous_a": 5,
+    "servo_regulator_user_selection": "UBEC5A / 6V",
+    "servo_regulator_source": "https://oss.hobbywing.com/pdf/pdfcn/UBEC5Acn.pdf",
+    "logic_module_purchase_frozen": false,
+    "servo_factory_specs_checked": true,
+    "servo_load_wiring_verified": false,
+    "input_adapter_model": "YU2405",
+    "input_adapter_user_selected": true,
+    "input_adapter_factory_datasheet_verified": false,
+    "input_adapter_connector_verified": false
   },
   "uart": {
     "status": "proposal_check_pinout_before_wiring",
@@ -92,8 +142,8 @@
     },
     "beam_hint": {
       "gpio": 20,
-      "interface": "Adafruit 2167 candidate; 5V supply, open-collector signal with external 10kohm pullup to 3.3V; 1kohm series to GPIO",
-      "active_level": 0,
+      "interface": "5V supply; manufacturer NPN normally open. Proposed external10k pullup3.3V and1k series to GPIO20; internal pullup / blocked polarity must be measured before connecting GPIO",
+      "active_level": null,
       "purpose": "passage_hint_not_bean_counter",
       "hardware_verified": false,
       "industrial_alternative": {
@@ -101,7 +151,22 @@
         "output_type": null,
         "wiring_verified": false,
         "must_not_connect_directly": true
-      }
+      },
+      "model": "DFRobot SEN0503",
+      "active_level_status": "measure blocked and unblocked levels before firmware configuration; do not copy Adafruit2167 polarity",
+      "supply_v": 5,
+      "head_lwh_mm": [
+        20,
+        10,
+        9
+      ],
+      "manufacturer_range_at_5v_mm": 500,
+      "manufacturer_range_at_3v3_mm": 200,
+      "sources": [
+        "https://www.dfrobot.com.cn/goods-3274.html",
+        "https://www.dfrobot.com/product-2388.html"
+      ],
+      "wiring_document": "docs/hardware/BEAM-SENSOR-20261012.md"
     }
   },
   "weight": {
@@ -158,7 +223,7 @@
     "frame_mm": [
       220,
       240,
-      440
+      460
     ],
     "lanes": 5,
     "lane_clear_width_mm": 14,
@@ -226,41 +291,727 @@
         "hole_pattern": "per supplied MGN9H drawing; reference 15x16mm per block",
         "status": "blank_not_final_machining_drawing",
         "rail_spacing_note": "2026-10-13 assembly layout proposal replaces former 90mm starting point; not hardware verified"
+      },
+      "slot_support_candidate": {
+        "material": "PP-H (POM separate bolted alternative)",
+        "blank_mm": [
+          140,
+          24,
+          10
+        ],
+        "top_z_mm": 290,
+        "status": "V4.10-hand-push-and-weld-mockup-required"
       }
     },
     "assembly_layout": {
-      "date": "2026-10-13",
+      "date": "2026-10-16",
       "status": "dimensioned_layout_proposal_not_hardware_verified",
-      "document": "docs/hardware/assembly-v4.5/beanlens-assembly-v4.5.html",
-      "layout_data": "docs/hardware/assembly-v4.5/assembly-layout-v4.5.json",
+      "document": "docs/hardware/assembly-v4.8/beanlens-assembly-v4.8.html",
+      "layout_data": "docs/hardware/assembly-v4.8/assembly-layout-v4.8.json",
       "frame_cut_counts": {
-        "400": 4,
-        "220": 4,
+        "460": 4,
         "200": 6,
-        "180": 4
+        "180": 8
       },
       "midframe_top_z_mm_proposal": 324,
-      "hopper_support_ear_mm_proposal": [
-        40,
-        30,
-        6
-      ],
       "outer_panel_mm_proposal": {
-        "front_rear": [
-          220,
-          240,
-          6
+        "P01": [
+          176,
+          6,
+          112
         ],
-        "left_right": [
-          240,
-          240,
-          6
+        "P02": [
+          176,
+          6,
+          112
+        ],
+        "P03": [
+          6,
+          196,
+          112
+        ],
+        "P04": [
+          6,
+          196,
+          112
+        ],
+        "P05": [
+          6,
+          196,
+          280
+        ],
+        "P06": [
+          6,
+          196,
+          280
+        ],
+        "P07": [
+          176,
+          6,
+          58
+        ],
+        "P08": [
+          176,
+          6,
+          197
+        ],
+        "P09": [
+          176,
+          6,
+          58
         ]
       },
       "frame_brackets_use": 28,
       "frame_brackets_purchase": 32,
-      "all_holes_need_actual_parts": true
-    }
+      "all_holes_need_actual_parts": true,
+      "previous_full_assembly": "docs/hardware/assembly-v4.5/beanlens-assembly-v4.5.html",
+      "previous_frame_cut_list_superseded": true,
+      "assembly_revision": "V4.8-thickness-displays",
+      "legacy_path_updated_in_place": false,
+      "panel_count": 9,
+      "wood_cut_pieces": 9,
+      "scope": "V4.8 retained frame, nine wood panels and displays. V4.10 supersedes feed body / brush / power candidates."
+    },
+    "frame_revision": {
+      "revision": "V4.8",
+      "date": "2026-10-16",
+      "status": "proposal_not_hardware_verified",
+      "continuous_posts": true,
+      "connection": "matched_2020_internal_90_degree_bracket_sets_no_cube_connectors",
+      "existing_stock_mm": {
+        "460": 7,
+        "400": 2
+      },
+      "buy_finished_mm": {
+        "180": 4
+      },
+      "assumed_kerf_per_cut_mm": 3,
+      "net_profile_length_mm": 4480,
+      "lower_fixed_scale_plate_corner_check_zone_mm_proposal": [
+        25,
+        25
+      ],
+      "bracket_and_scale_plate_interference_requires_paper_mockup": true,
+      "profile_system": "European 2020",
+      "profile_finish": "black anodized",
+      "slot_width_mm": null,
+      "assembly_revision": "V4.8",
+      "hopper_height_chain_mm": {
+        "suspension_bracket_underside_z": 438,
+        "flange_bottom_z": 440,
+        "flange_top_z": 443,
+        "hopper_bottom_z": 298.3,
+        "hopper_height": 141.7,
+        "hopper_top_z": 440,
+        "midframe_top_z": 324,
+        "frame_top_z": 460,
+        "support": "top flange supported on four metal brackets; no wood shell/ears",
+        "source": "V4.9 continuous hopper"
+      },
+      "mid_crossbars_y_mm": [
+        0,
+        220
+      ],
+      "button_center_z_mm": 273
+    },
+    "enclosure_reference": {
+      "panels": [
+        {
+          "id": "P01",
+          "name": "前上屏幕板",
+          "pos": [
+            22,
+            1,
+            326
+          ],
+          "size": [
+            176,
+            6,
+            112
+          ]
+        },
+        {
+          "id": "P02",
+          "name": "后上检修板",
+          "pos": [
+            22,
+            233,
+            326
+          ],
+          "size": [
+            176,
+            6,
+            112
+          ]
+        },
+        {
+          "id": "P03",
+          "name": "左上侧板",
+          "pos": [
+            1,
+            22,
+            326
+          ],
+          "size": [
+            6,
+            196,
+            112
+          ]
+        },
+        {
+          "id": "P04",
+          "name": "右上侧板",
+          "pos": [
+            213,
+            22,
+            326
+          ],
+          "size": [
+            6,
+            196,
+            112
+          ]
+        },
+        {
+          "id": "P05",
+          "name": "左下侧板",
+          "pos": [
+            1,
+            22,
+            22
+          ],
+          "size": [
+            6,
+            196,
+            280
+          ]
+        },
+        {
+          "id": "P06",
+          "name": "右下侧板",
+          "pos": [
+            213,
+            22,
+            22
+          ],
+          "size": [
+            6,
+            196,
+            280
+          ]
+        },
+        {
+          "id": "P07",
+          "name": "后中检修板",
+          "pos": [
+            22,
+            233,
+            244
+          ],
+          "size": [
+            176,
+            6,
+            58
+          ]
+        },
+        {
+          "id": "P08",
+          "name": "后下检修板",
+          "pos": [
+            22,
+            233,
+            22
+          ],
+          "size": [
+            176,
+            6,
+            197
+          ]
+        },
+        {
+          "id": "P09",
+          "name": "前中按钮板",
+          "pos": [
+            22,
+            1,
+            244
+          ],
+          "size": [
+            176,
+            6,
+            58
+          ]
+        }
+      ],
+      "face_recess_mm": 1,
+      "gap_mm_nominal": 2,
+      "wood_cuts": [
+        [
+          "P05",
+          196,
+          280,
+          3,
+          3
+        ],
+        [
+          "P03",
+          196,
+          112,
+          3,
+          286
+        ],
+        [
+          "P06",
+          196,
+          280,
+          202,
+          3
+        ],
+        [
+          "P04",
+          196,
+          112,
+          202,
+          286
+        ],
+        [
+          "P08",
+          176,
+          197,
+          401,
+          3
+        ],
+        [
+          "P02",
+          176,
+          112,
+          401,
+          203
+        ],
+        [
+          "P07",
+          176,
+          58,
+          401,
+          318
+        ],
+        [
+          "P01",
+          176,
+          112,
+          401,
+          379
+        ],
+        [
+          "P09",
+          176,
+          58,
+          401,
+          494
+        ]
+      ],
+      "wood_sheet_mm": [
+        600,
+        600,
+        6
+      ],
+      "alternative_stock": "No hopper wood required; nine outer panels fit one 600x600x6 sheet.",
+      "panel_brackets_used": 32,
+      "front_light_strip_brackets_used": 2,
+      "panel_brackets_purchase": 40
+    },
+    "hopper_reference": {
+      "pos_mm": [
+        39.964016907854855,
+        49.81693349088424,
+        298.3
+      ],
+      "outer_mm": [
+        140.0719661842903,
+        140.36613301823152,
+        141.7
+      ],
+      "wall_mm": 2,
+      "pp_top_inner_mm": [
+        136,
+        136
+      ],
+      "pp_bottom_inner_mm": [
+        82,
+        12
+      ],
+      "pp_wall_mm": 2,
+      "top_rim_outer_mm": [
+        176,
+        196
+      ],
+      "top_rim_z_mm": [
+        440,
+        443
+      ],
+      "wood_shell": false,
+      "wall_definition": "2mm normal thickness; outer bounds exclude weld bead",
+      "description": "Retained V4.9 4-panel hopper plus4 short inlet dividers and front/rear removable brush cassettes; welded PP fixed body has continuous front and side walls",
+      "source": "docs/hardware/revision-v4.10/design-v4.10.json"
+    },
+    "lane_reference": {
+      "source": "docs/hardware/revision-v4.10/design-v4.10.json",
+      "upper_seat_z": [
+        292.3,
+        298.3
+      ],
+      "lower_PP_outlet_z": [
+        280,
+        290
+      ],
+      "front_wall_z": [
+        280,
+        298.3
+      ],
+      "gate_gap_z": [
+        290,
+        292.3
+      ],
+      "window_width_mm": 14,
+      "window_depth_mm": 12,
+      "partition_mm": 3,
+      "active_width_mm": 82,
+      "stroke_mm": 15,
+      "short_divider_z": [
+        298.3,
+        318.3
+      ],
+      "brush_tip_z": 308,
+      "brush_to_gap_top_mm": 15.7
+    },
+    "fabrication_guide": "docs/hardware/revision-v4.11/README.md",
+    "displays_reference": {
+      "BOX": {
+        "body_mm": [
+          64.3,
+          47.6,
+          15.4
+        ],
+        "body_pos_xyz": [
+          77.85,
+          1,
+          346.2
+        ],
+        "body_size_xyz": [
+          64.3,
+          15.4,
+          47.6
+        ],
+        "service_pos_xyz": [
+          70,
+          7,
+          338
+        ],
+        "service_size_xyz": [
+          80,
+          40,
+          64
+        ],
+        "panel_opening_wh": [
+          65.3,
+          48.6
+        ],
+        "panel_opening_origin_xz": [
+          77.35,
+          345.7
+        ],
+        "min_to_weld_envelope_mm": 15.443609567101603,
+        "source": "https://wiki.alientek.com/docs/Boards/Kendryte/DNK230D/start-guide/k230d-box-introduction/",
+        "source_scope": "case excluding protrusions, 2.4in 640x480; holes and complete connector routing not provided"
+      },
+      "C6": {
+        "pcb_wh_mm": [
+          20.32,
+          36.37
+        ],
+        "package_depth_mm": 7.6,
+        "lcd_module_mm": [
+          19.39,
+          36.28
+        ],
+        "active_mm": [
+          17.39,
+          32.35
+        ],
+        "mount_pitch_mm": [
+          13.08,
+          32.0
+        ],
+        "mount_thread": "M2, drawing 2.5H; verify depth before screws",
+        "body_pos_xyz": [
+          211.4,
+          70,
+          350
+        ],
+        "body_size_xyz": [
+          7.6,
+          36.37,
+          20.32
+        ],
+        "service_pos_xyz": [
+          188,
+          50,
+          338
+        ],
+        "service_size_xyz": [
+          25,
+          85,
+          47
+        ],
+        "panel_opening_wh": [
+          40,
+          24
+        ],
+        "panel_opening_origin_yz": [
+          68.185,
+          348.16
+        ],
+        "min_to_weld_envelope_mm": 14.443903993246522,
+        "source": "https://docs.waveshare.com/ESP32-C6-LCD-1.47",
+        "drawing": "https://docs.waveshare.com/assets/images/ESP32-C6-LCD-1.47-Dimensions-36ec12d1102e68ba047fc4530c24df3a.webp",
+        "source_scope": "non Touch original drawing, body excludes all plug/header extensions; datum positions still verify"
+      }
+    },
+    "pp_geometry_source": "docs/hardware/revision-v4.11/design-v4.11.json",
+    "revision": "V4.11-MVP-selection; V4.10 mechanics retained",
+    "current_revision_document": "docs/hardware/revision-v4.11/beanlens-hopper-gate-v4.11.html",
+    "previous_pp_fabrication_guide": "docs/hardware/fabrication-v4.8/beanlens-fabrication-v4.8.html",
+    "gate_slot_layout": {
+      "source": "docs/hardware/revision-v4.10/design-v4.10.json",
+      "status": "proposal_unverified_PP_welds_and_friction",
+      "upper_seat_z": [
+        292.3,
+        298.3
+      ],
+      "upper_seat_mm": [
+        140,
+        30,
+        6
+      ],
+      "upper_seat_material": "PP-H",
+      "lower_seat_z": [
+        280,
+        290
+      ],
+      "lower_seat_mm": [
+        140,
+        24,
+        10
+      ],
+      "lower_seat_material": "PP-H",
+      "gate_gap_z": [
+        290,
+        292.3
+      ],
+      "window_width_mm": 14,
+      "window_depth_mm": 12,
+      "partition_mm": 3,
+      "active_width_mm": 82,
+      "stroke_mm": 15,
+      "intermediate_flange_removed": true,
+      "G10_G20_IR_base_clearance_unresolved": true,
+      "lower_seat_xyz": [
+        40,
+        105,
+        280
+      ],
+      "front_wall_continuous": true,
+      "gate_entry": "rear_only",
+      "front_bridge_mm": [
+        140,
+        2,
+        18.3
+      ],
+      "front_bridge_xyz": [
+        40,
+        103,
+        280
+      ],
+      "side_cheek_mm": [
+        2,
+        32,
+        15.3
+      ],
+      "side_cheek_bottom_z": 283,
+      "closed_front_overlap_mm": 1.5
+    },
+    "brush_reference": {
+      "count": 10,
+      "per_lane": 2,
+      "placement": "Front and rear of five short inlet lanes ABOVE gate; not inside the 10mm lower outlet throat.",
+      "fibre": "PBT",
+      "diameter_mm": [
+        0.1,
+        0.15
+      ],
+      "backing_material": "PP",
+      "backing_blank_mm": [
+        12,
+        6,
+        3
+      ],
+      "active_tuft_width_mm": 10,
+      "free_length_mm": 14,
+      "angle_down_from_horizontal_deg": 30,
+      "root_z_mm": 315,
+      "tip_z_mm": 308.0,
+      "root_y_mm": [
+        99.13146650650974,
+        140.86853349349025
+      ],
+      "tip_y_mm": [
+        111.25582215949188,
+        128.74417784050812
+      ],
+      "intrusion_per_side_mm_initial": 1.5,
+      "gate_to_tip_clearance_mm": 15.699999999999989,
+      "x_centers_mm": [
+        76,
+        93,
+        110,
+        127,
+        144
+      ],
+      "port_face_size_mm": [
+        11,
+        4
+      ],
+      "port_center_z_mm": 310,
+      "carrier_pp_mm": [
+        110,
+        10,
+        3
+      ],
+      "carrier_qty": 2,
+      "clamp_pp_mm": [
+        110,
+        8,
+        2
+      ],
+      "clamp_qty": 2,
+      "carrier_screw_x_mm": [
+        59,
+        84.5,
+        101.5,
+        118.5,
+        135.5,
+        161
+      ],
+      "carrier_screw": "M2x12 candidate, 12 used + 4 spare; thickness / blind inserts verify",
+      "fore_aft_adjustment_mm": 2,
+      "divider_count": 4,
+      "divider_pp_thickness_mm": 3,
+      "divider_z_mm": [
+        298.3,
+        318.3
+      ],
+      "divider_yz_face_mm": {
+        "top": 29.50176429075512,
+        "bottom": 12,
+        "height": 20
+      },
+      "divider_x_mm": [
+        83,
+        100,
+        117,
+        134
+      ],
+      "retention": "Supplier tufted, sealed cut ends; removable clamp and PP outer guard. No exposed glue or hand-glued loose fibres.",
+      "uncertainty": "Initial fit geometry. Bristle spread, preload, bean passage, retention and cleanability need sample tests."
+    },
+    "mounting_reference": {
+      "top_flange_mm": [
+        176,
+        196,
+        3
+      ],
+      "flange_xyz": [
+        22,
+        22,
+        440
+      ],
+      "inner_hole_mm": [
+        136,
+        136
+      ],
+      "brackets": 4,
+      "bracket_raw": "6061 angle25x25x2, cut width20, vertical leg22 / horizontal leg14",
+      "bracket_xyz": [
+        [
+          20,
+          75,
+          438
+        ],
+        [
+          20,
+          145,
+          438
+        ],
+        [
+          186,
+          75,
+          438
+        ],
+        [
+          186,
+          145,
+          438
+        ]
+      ],
+      "pp_slot_centers_xy": [
+        [
+          28.5,
+          85
+        ],
+        [
+          28.5,
+          155
+        ],
+        [
+          191.5,
+          85
+        ],
+        [
+          191.5,
+          155
+        ]
+      ],
+      "slot_mm": [
+        3.5,
+        7
+      ],
+      "M5_sets": 4,
+      "M3x12_sets": 4,
+      "spares_each": 2,
+      "M3_washer_od_mm": 9,
+      "bracket_M5_vertical_slot_mm_proposal": [
+        5.5,
+        8
+      ],
+      "M5_washer_od_mm": 12,
+      "load_path": "Hopper -> PP welds -> PP3 rim -> four supports -> black2020. Lower fixed feed body also locates on G21/G11; align without pulling the weldment out of plane.",
+      "note": "PP3 creep, weld pull-out and single-screw bracket rotation not yet proof-loaded. No wood hopper load support."
+    },
+    "sensor_reference": {
+      "model": "SEN0503",
+      "head_lwh_mm": [
+        20,
+        10,
+        9
+      ],
+      "installed_axis_mapping_verified": false,
+      "beam_z_mm_proposal": 277,
+      "mounting_and_clearance_verified": false
+    },
+    "current_assembly_document": "docs/hardware/assembly-v4.12/beanlens-assembly-v4.12.html",
+    "current_assembly_layout": "docs/hardware/assembly-v4.12/assembly-layout-v4.12.json",
+    "operation_demo_document": "docs/hardware/assembly-v4.12/beanlens-operation-v4.12.html",
+    "operation_demo_status": "offline teaching simulation, no GPIO / firmware / optical / weight / network validation"
   },
   "calibration": {
     "camera": null,
@@ -268,6 +1019,6 @@
     "weight": null,
     "model_release": null
   },
-  "procurement_revision": "V4.5",
-  "procurement_source": "docs/hardware/procurement-v4.5/beanlens-bom-v4.5.json"
+  "procurement_revision": "V4.11",
+  "procurement_source": "docs/hardware/procurement-v4.11/beanlens-bom-v4.11.json"
 }

@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1500 1060" role="img" aria-label="四片 PP 焊成一个料斗，五槽只留两块座">
+<style>text{font-family:"PingFang SC","Microsoft YaHei",sans-serif;fill:#233b38;font-size:21px} .small{font-size:18px}.tiny{font-size:16px}.title{font-size:37px;font-weight:700}.bold{font-weight:700} .wire{fill:none;stroke-linejoin:round;stroke-linecap:round;stroke-width:4}</style>
+<rect width="1500" height="1060" fill="#fafbf7"/>
+<text x="48" y="56" class="" style="font-size:16px;fill:#47786b">BEANLENS  /  V4.9  /  03</text>
+<text x="48" y="110" class="" style="font-size:37px">四片 PP 焊成一个料斗，五槽只留两块座</text>
+<text x="48" y="148" class="" style="font-size:19px;fill:#657a73">上料斗与 PP 上座可以焊为一个可取出的模块；滑动机构仍可拆，避免清洁与卡豆维修被焊死。尺寸单位 mm。</text>
+<text x="48" y="205" class="" style="font-size:21px;fill:#718078">原 V4.8：8 片斗板 + 中间双法兰 + 多层五窗</text>
+<text x="48" y="240" class="" style="font-size:19px">作用是便于薄片加工和调整；不是五槽必须这样做。</text>
+<text x="48" y="280" class="" style="font-size:24px;fill:#18765d">V4.9 推荐：4 片连续斜板 + 单块 PP6 上座</text>
+<polygon points="174.91,320 525.09,320 457.59000000000003,674.25 242.41,674.25" fill="#e0eee6" stroke="#739a8b" stroke-width="2"/>
+<rect x="130.0" y="312.5" width="440.0" height="7.5" rx="0" fill="#bdd7c7" stroke="#c8d6ce" stroke-width="2"/>
+<polyline class="wire" data-rail="" points="180.0,320 247.5,674.25" stroke="#8da898"/>
+<polyline class="wire" data-rail="" points="520.0,320 452.5,674.25" stroke="#8da898"/>
+<text x="218" y="308" class="" style="font-size:20px">顶内口 136×136，Z440</text>
+<text x="189" y="494" class="" style="font-size:22px">PP-H 2mm 法向板厚</text>
+<text x="192" y="533" class="" style="font-size:21px">内高 141.7 / 连续四片</text>
+<polyline class="wire" data-rail="" points="545,320 580,320 580,674.25 475,674.25" stroke="#6d887b"/>
+<text x="600" y="510" class="" style="font-size:20px">141.7</text>
+<text x="177" y="710" class="" style="font-size:20px">底内口 82×12，Z298.3</text>
+<g id="upper-seat">
+<rect x="175" y="674.25" width="350" height="15" rx="0" fill="#65aa89" stroke="#c8d6ce" stroke-width="2"/>
+<polygon points="242.41,674.25 232.41,674.25 240.41,665.25" fill="#d88944" stroke="#739a8b" stroke-width="2"/>
+<polygon points="457.59000000000003,674.25 467.59000000000003,674.25 459.59000000000003,665.25" fill="#d88944" stroke="#739a8b" stroke-width="2"/>
+</g>
+<text x="60" y="757" class="" style="font-size:20px">PP6 上座：140×30×6，五孔 14×12</text>
+<g id="gate-layer">
+<rect x="212.5" y="788" width="275" height="5" rx="0" fill="#b6bdc0" stroke="#757e83" stroke-width="2"/>
+<text x="62" y="822" class="" style="font-size:20px">铝闸片 110×45×2；前后移动 15</text>
+</g>
+<g id="lower-seat">
+<rect x="175" y="861" width="350" height="25" rx="0" fill="#3f5865" stroke="#c8d6ce" stroke-width="2"/>
+<text x="62" y="920" class="" style="font-size:20px">POM10 下座：140×18×10，可拆</text>
+</g>
+<text x="65" y="963" class="" style="font-size:19px;fill:#7b45b5">以上为分解示意；实际闸缝 Z290–292.3 = 2.3</text>
+<rect x="742" y="196" width="706" height="172" rx="10" fill="#eaf3eb" stroke="#c8d6ce" stroke-width="2"/>
+<text x="759" y="228" class="bold" style="font-size:23px">五槽是五个孔，不是五个盒子</text>
+<text x="759" y="258" class="" style="font-size:18px">PP 上座 / POM 下座各直接加工同样五孔。</text>
+<text x="759" y="285" class="" style="font-size:18px">孔宽 14，前后孔深 12，隔肋 3，总活跃宽度 82。</text>
+<text x="759" y="312" class="" style="font-size:18px">上座焊接冷却后检查平整，再装闸片与下座。</text>
+<text x="759" y="339" class="" style="font-size:18px">内角暂按 R1.5；孔缘倒钝，先做单槽流豆试验。</text>
+<rect x="853" y="394" width="70" height="60" rx="2" fill="#fff" stroke="#377b61" stroke-width="2"/>
+<rect x="938" y="394" width="70" height="60" rx="2" fill="#fff" stroke="#377b61" stroke-width="2"/>
+<rect x="1023" y="394" width="70" height="60" rx="2" fill="#fff" stroke="#377b61" stroke-width="2"/>
+<rect x="1108" y="394" width="70" height="60" rx="2" fill="#fff" stroke="#377b61" stroke-width="2"/>
+<rect x="1193" y="394" width="70" height="60" rx="2" fill="#fff" stroke="#377b61" stroke-width="2"/>
+<text x="775" y="484" class="" style="font-size:19px">俯视：14 | 3 | 14 | 3 | 14 | 3 | 14 | 3 | 14</text>
+<rect x="742" y="522" width="706" height="172" rx="10" fill="#fff" stroke="#c8d6ce" stroke-width="2"/>
+<text x="759" y="554" class="bold" style="font-size:23px">焊接范围与可拆范围</text>
+<text x="759" y="584" class="" style="font-size:18px">外侧焊四条斜缝 + 斗底外侧围焊到 PP 上座。</text>
+<text x="759" y="611" class="" style="font-size:18px">内面应平顺；毛刺/焊瘤会挂豆，先试焊再处理。</text>
+<text x="759" y="638" class="" style="font-size:18px">取消中间双法兰、硅胶垫、4 个连接螺栓。</text>
+<text x="759" y="665" class="" style="font-size:18px">顶承托法兰仍保留；POM 与 PP 不互相热风焊接。</text>
+<rect x="742" y="716" width="706" height="122" rx="10" fill="#fff6e9" stroke="#c8d6ce" stroke-width="2"/>
+<text x="759" y="748" class="bold" style="font-size:23px">与双屏的名义净空重新计算</text>
+<text x="759" y="778" class="" style="font-size:18px">预留外焊筋横向 4 后：前屏约 15.4，侧屏约 14.4。</text>
+<text x="759" y="805" class="" style="font-size:18px">这是 V4.8 屏幕服务包络与新斗面的几何检查；</text>
+<text x="759" y="832" class="" style="font-size:18px">完整插头、线缆弯曲、焊接变形仍须实物试配。</text>
+<rect x="742" y="860" width="706" height="130" rx="10" fill="#fff" stroke="#c8d6ce" stroke-width="2"/>
+<text x="759" y="892" class="bold" style="font-size:23px">下座为何只有 18 深？</text>
+<text x="759" y="922" class="" style="font-size:18px">保持下座 Z280–290；30 深的整块下座可能撞后方导轨。</text>
+<text x="759" y="949" class="" style="font-size:18px">后部退片护罩、连杆耳高度、Z277 光束 / 脚座避让仍待试配。</text>
+<text x="759" y="976" class="" style="font-size:18px">名义容积约 1.22L；不能据此承诺能装 1kg 生豆。</text>
+<polyline class="wire" data-rail="" points="48,1000 1452,1000" stroke="#d2ddd6"/>
+<text x="48" y="1030" class="" style="font-size:16px">2026-10-16 · 样机方案 / 尚未带载、带豆或焊接验收 · 电气连接按端子文字核对，不按图中物理引脚位置猜接</text>
+<text x="1390" y="1030" class="" style="font-size:16px">3 / 4</text>
+</svg>

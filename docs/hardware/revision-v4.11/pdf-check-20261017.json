@@ -1,0 +1,33 @@
+{
+  "date": "2026-10-17",
+  "pdf": "output/pdf/beanlens-hopper-gate-v4.11-20261017.pdf",
+  "pages": 6,
+  "size_mm": [
+    [
+      420.2,
+      297.0
+    ],
+    [
+      420.2,
+      297.0
+    ],
+    [
+      420.2,
+      297.0
+    ],
+    [
+      420.2,
+      297.0
+    ],
+    [
+      420.2,
+      297.0
+    ],
+    [
+      420.2,
+      297.0
+    ]
+  ],
+  "visual_review": "Six pages rendered with Poppler; inspect final-review.png; source page text bounds and browser interactions also checked.",
+  "hardware_verified": false
+}

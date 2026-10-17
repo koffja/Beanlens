@@ -1,0 +1,86 @@
+solid MA1
+ facet normal -0 0.9008830749 0.4340618452
+  outer loop
+   vertex -55 -15 0
+   vertex 68 -68 110
+   vertex 55 -15 0
+  endloop
+ endfacet
+ facet normal -0 0.9008830749 0.4340618452
+  outer loop
+   vertex -55 -15 0
+   vertex -68 -68 110
+   vertex 68 -68 110
+  endloop
+ endfacet
+ facet normal 0 -0.9008830749 -0.4340618452
+  outer loop
+   vertex -57.01391851 -17.22004393 0
+   vertex 57.01391851 -17.22004393 0
+   vertex 70.01391851 -70.22004393 110
+  endloop
+ endfacet
+ facet normal 0 -0.9008830749 -0.4340618452
+  outer loop
+   vertex -57.01391851 -17.22004393 0
+   vertex 70.01391851 -70.22004393 110
+   vertex -70.01391851 -70.22004393 110
+  endloop
+ endfacet
+ facet normal 0 0 -1
+  outer loop
+   vertex -55 -15 0
+   vertex 55 -15 0
+   vertex 57.01391851 -17.22004393 0
+  endloop
+ endfacet
+ facet normal 0 -0 -1
+  outer loop
+   vertex -55 -15 0
+   vertex 57.01391851 -17.22004393 0
+   vertex -57.01391851 -17.22004393 0
+  endloop
+ endfacet
+ facet normal 0.720820473 0.6538941304 0.2298702069
+  outer loop
+   vertex 55 -15 0
+   vertex 68 -68 110
+   vertex 70.01391851 -70.22004393 110
+  endloop
+ endfacet
+ facet normal 0.720820473 0.6538941304 0.2298702069
+  outer loop
+   vertex 55 -15 0
+   vertex 70.01391851 -70.22004393 110
+   vertex 57.01391851 -17.22004393 0
+  endloop
+ endfacet
+ facet normal 0 0 1
+  outer loop
+   vertex 68 -68 110
+   vertex -68 -68 110
+   vertex -70.01391851 -70.22004393 110
+  endloop
+ endfacet
+ facet normal 0 0 1
+  outer loop
+   vertex 68 -68 110
+   vertex -70.01391851 -70.22004393 110
+   vertex 70.01391851 -70.22004393 110
+  endloop
+ endfacet
+ facet normal -0.720820473 0.6538941304 0.2298702069
+  outer loop
+   vertex -68 -68 110
+   vertex -55 -15 0
+   vertex -57.01391851 -17.22004393 0
+  endloop
+ endfacet
+ facet normal -0.720820473 0.6538941304 0.2298702069
+  outer loop
+   vertex -68 -68 110
+   vertex -57.01391851 -17.22004393 0
+   vertex -70.01391851 -70.22004393 110
+  endloop
+ endfacet
+endsolid MA1

@@ -1,6 +1,6 @@
 {
-  "revision": "procurement-v4.5",
-  "date": "2026-10-12",
+  "revision": "V4.7-inset-PP-weld",
+  "date": "2026-10-16",
   "status": "proposal_not_procured_or_hardware_verified",
   "currency": "CNY",
   "legacy_source": "../v4.4/beanlens-box-bom-v4.4.json",
@@ -439,7 +439,7 @@
       "readiness": "暂缓：称重组件定后加工",
       "price_cny": null,
       "price_basis": "待询价；不沿用旧打包额度",
-      "check": "固定底板不计入秤的活动毛载荷；若套件包含合适底板，不重复购买。",
+      "check": "固定底板不计入秤的活动毛载荷；若套件包含合适底板，不重复购买。 V4.6先核底角码净空：四角约25×25mm为纸样核对区，紧凑角码完全在梁宽内可不切角；超出梁内缘再按固定孔决定避让，不是冻结缺口。不得顶住活动称台/传感器自由端。",
       "sources": []
     },
     {
@@ -494,7 +494,7 @@
       "readiness": "灯带尺寸定后切割",
       "price_cny": null,
       "price_basis": "待询价；不沿用旧打包额度",
-      "check": "100mm必须是灯带切点整数倍；如果需125mm段，先重算总长功率。扩散/遮光不能接触豆路。",
+      "check": "100mm必须是灯带切点整数倍；如果需125mm段，先重算总长功率。扩散/遮光不能接触豆路。 V4.7灯槽X24/182候选，避开140宽槽盒/导轨底座，光向中心调整后复测。",
       "sources": []
     },
     {
@@ -801,16 +801,16 @@
         "B07"
       ],
       "category": "机架与外壳",
-      "name": "2020型材切割",
-      "model": "6063银色2020，槽型按同一供应商",
-      "spec": "400×4、220×4、200×6、180×4mm；合计4.40m",
+      "name": "黑色欧标2020型材：连续立柱V4.6",
+      "model": "黑色阳极氧化欧标2020，与已有型材同截面/槽型/壁厚",
+      "spec": "黑色欧标2020：最终460×4、200×6、180×8mm，18根净4.48m；已有黑色460×7/400×2，补购同规格黑色净长180×4",
       "qty": 1,
       "unit": "18段",
       "selection": "主方案",
-      "readiness": "纸样核对后切割",
+      "readiness": "量现有净长/槽型后配套下单",
       "price_cny": null,
       "price_basis": "待询价；不沿用旧打包额度",
-      "check": "切割净长不含锯缝；若买整料按实际锯缝/排版留余量，不能直接把4.40m原棒当可用净长。",
+      "check": "按frame-v4.6切料：460×4留整，460×3各切200+200，400×2各切180+180；每刀3mm时共锯屑30、余料230mm。只补180×4成品；或750原料切4×180二选一。旧440高切单废止，不混用。 用户已确认现有型材为黑色欧标2020；不要补银色或其他槽系。",
       "sources": []
     },
     {
@@ -820,15 +820,15 @@
       ],
       "category": "机架与外壳",
       "name": "型材连接件",
-      "model": "2020专用角码＋M5 T螺母＋M5×8螺钉",
-      "spec": "28角码使用＋4备用＝32；M5 T螺母64、M5×8螺钉64（含备）",
+      "model": "欧标2020配套两孔90°带筋角码（黑色优先）＋配套M5螺钉/T螺母",
+      "spec": "28角码使用＋4备用＝32套；每套螺钉2/T螺母2，各64只；螺钉M5，长度按配套图",
       "qty": 1,
       "unit": "组",
       "selection": "主方案",
-      "readiness": "标准规格待报价",
+      "readiness": "先核槽口与角码实物图",
       "price_cny": null,
       "price_basis": "待询价；不沿用旧打包额度",
-      "check": "按18段骨架：上下框16、中框8、相机梁4共28角码；面板固定另见F08。槽口与供货2020一致，M5×8是否顶槽须实测。",
+      "check": "上下框16、中框8、相机梁4；内侧装，不需要三通/四通方块。配用户已有黑色欧标2020；槽宽/定位凸起实量，优先原卖家配成套。不要按此前item槽5参照盲买；M5长度按角码厚度/槽深确定。F08穿板件另列。 V4.7中框前后180梁改在外侧柱面Y0/220，按钮移到Z273；角码数量仍28用32购。",
       "sources": []
     },
     {
@@ -839,15 +839,15 @@
       ],
       "category": "机架与外壳",
       "name": "木质支架与外壳板料",
-      "model": "6mm海洋板，600×600mm毛板",
-      "spec": "600×600×6一张；外壳220×240×2片、240×240×2片；料斗154×110×2、142×110×2；托耳40×30×2，均厚6mm",
+      "model": "6mm海洋板，800×600mm主排版；或2张600×600",
+      "spec": "9片内嵌外壳：176×112×2、196×112×2、196×280×2、176×197×1、176×58×2；木斗158×110×2、146×110×2；托耳40×30×2，均厚6",
       "qty": 1,
       "unit": "件",
       "selection": "主方案",
       "readiness": "暂缓：最终开孔未冻结",
       "price_cny": null,
       "price_basis": "待询价；不沿用旧打包额度",
-      "check": "见assembly-v4.5第03图：3mm板边/切缝排版可容纳一张；真实板厚/锯缝先核，屏/按钮/接口孔按实物。托耳由旧约25宽修为40宽。",
+      "check": "800×600一张有保守排版；若已买600方，追加一张600方走双板备选，不重复买800板。内嵌留边缝约2、板面内凹1；最终孔先角样。见制作V4.7/装配第03页。",
       "sources": []
     },
     {
@@ -856,17 +856,19 @@
         "B08"
       ],
       "category": "机架与外壳",
-      "name": "料斗PP内衬",
-      "model": "食品接触资料可核的PP，0.5mm，A3 297×420mm",
-      "spec": "前后两片上140下110斜高122.98；左右两片上140下30斜高111.02；外加折边",
+      "name": "热焊PP主斗与上口圈",
+      "model": "自然色可焊PP-H，2mm，A3 297×420；食品接触资料可核",
+      "spec": "2张含试片；净上136×136、净下110×30、高110；前后上136下110斜高122.102×2；左右上136下30斜高110.766×2；口圈158方开136方孔",
       "qty": 2,
       "unit": "张",
       "selection": "主方案",
       "readiness": "纸样后裁切",
       "price_cny": null,
       "price_basis": "待询价；不沿用旧打包额度",
-      "check": "第二张供试折/损耗；上翻10–15、角缝外搭约10mm。不是四片同形。",
-      "sources": []
+      "check": "替代原0.5mm薄内衬，不以宽嘴热风枪直接吹薄片。模板是内面控制线，2mm坡口/焊筋先试夹。四片热焊，口圈坐木壁顶Z440、圈顶442；木壳改158方内146，给焊缝留量。",
+      "sources": [
+        "https://www.simona.de/fileadmin/user_upload/Medien/Mediacenter/Verarbeitungshinweise/202310_SIM52001EN_WI_Schweissen_web.pdf"
+      ]
     },
     {
       "id": "F05",
@@ -874,16 +876,16 @@
         "B08"
       ],
       "category": "机架与外壳",
-      "name": "槽盒板料",
-      "model": "食品接触资料可核PP，3mm，200×150mm毛坯",
-      "spec": "4隔板净高50、上深30至下深12；壳边/前后壁按槽盒纸样",
-      "qty": 2,
+      "name": "五窗叠片与小过渡斗板料",
+      "model": "可焊PP-H3mm 300×300一张；PP2过渡片用F04余料",
+      "spec": "上五窗140×30×3两片；下五窗140×18×3两片；接环124×44×3开110×30；小过渡净110×30→82×12，高28.7，四片PP2",
+      "qty": 1,
       "unit": "张",
       "selection": "主方案",
       "readiness": "暂缓：新槽盒开缝定后加工",
       "price_cny": null,
       "price_basis": "待询价；不沿用旧打包额度",
-      "check": "五槽净宽14×5＋4隔板3＝82mm；110外宽剩28mm须分配侧壁/支承，不能只沿用旧6mm边条就宣称总宽闭合。",
+      "check": "5×14＋4×3＝82；不是4条50mm高整隔板横穿闸片。窗口X29/46/63/80/97，宽14深12；上片Y9、下片Y3。先单片/单槽试装，焊接固定斗，叠片用螺栓；见V4.7原尺寸模板。",
       "sources": []
     },
     {
@@ -901,7 +903,7 @@
       "readiness": "暂缓：实物孔位待核",
       "price_cny": null,
       "price_basis": "待询价；不沿用旧打包额度",
-      "check": "三个尺寸是托板毛坯，不是PCB孔距；后托板经绝缘柱装后检修木板，断电检修。BOX服务深度约35；C6避天线。按实物摆模块后冻结孔。",
+      "check": "三个尺寸是托板毛坯，不是PCB孔距；后托板经绝缘柱装后检修木板，断电检修。BOX服务深度约35；C6避天线。按实物摆模块后冻结孔。 V4.7后电控托板移下部Y207、Z50→180，模块朝后高度目标≤21；实际超出先重排，不压豆盒。",
       "sources": []
     },
     {
@@ -912,7 +914,7 @@
       "category": "机架与外壳",
       "name": "遮光隔舱/快拆件",
       "model": "哑黑PP1mm 300×300mm＋M3手拧螺钉/嵌件",
-      "spec": "PP1mm 300×300一张：遮光底板180×200开130×50；余料做BOX背光罩，M3手拧4只及螺母4只",
+      "spec": "PP1mm 300×300一张：遮光底板180×200开130×50；余料做BOX背光罩，M3手拧4只及螺母4只；余料切前遮光条176×22×1，位置Z197→219，支点2另计F11",
       "qty": 1,
       "unit": "组",
       "selection": "主方案",
@@ -955,7 +957,7 @@
       "readiness": "实测容积/质量后下单",
       "price_cny": null,
       "price_basis": "待询价；不沿用旧打包额度",
-      "check": "1kg整批收集必须另核容积和称台毛载荷；不把外形尺寸直接等于豆子容量。",
+      "check": "1kg整批收集必须另核容积和称台毛载荷；不把外形尺寸直接等于豆子容量。 V4.7盒向前移5mm至Y30，后留约7mm固定托板间隙，仍只压称台。",
       "sources": []
     },
     {
@@ -1341,15 +1343,15 @@
       ],
       "category": "滑闸加工件",
       "name": "槽内低摩擦支承框",
-      "model": "食品接触可核POM，110×30×3mm毛坯",
-      "spec": "开5通口，各净宽14、前后深12mm；侧边/隔板下实体对应支承",
+      "model": "食品接触资料可核POM，140×30×4mm",
+      "spec": "五通口14×12；X29/46/63/80/97、Y9；支承顶Z290，底286",
       "qty": 1,
       "unit": "件",
       "selection": "主方案",
       "readiness": "暂缓：槽盒纸样后开口",
       "price_cny": null,
       "price_basis": "待询价；不沿用旧打包额度",
-      "check": "窗口按实际槽列定位；不要把整块110×30板塞在出口下。2mm闸片所需垂直/横向余隙分开验。",
+      "check": "代替原110×30×3。四毫米厚用于两层PP3下围挡280→286后接至290；不能与PP热焊。孔需与上下叠片对齐；隔距件在140宽两外翼，避开110宽闸片扫掠。",
       "sources": []
     },
     {
@@ -1360,15 +1362,15 @@
       ],
       "category": "滑闸加工件",
       "name": "封闭槽盒与退片袋板料",
-      "model": "食品接触PP3mm＋可拆POM缝口条",
-      "spec": "槽盒外宽110、高50；槽内净14×12；闸门下约12mm围挡；退片袋按全行程包络",
+      "model": "PP五窗叠层＋可拆后防护/缝口条",
+      "spec": "模块Z280→330；140宽五窗夹层＋110×30→82×12过渡；闸片通道290→292.3为初试值",
       "qty": 1,
       "unit": "组",
       "selection": "主方案",
       "readiness": "暂缓：必须纸样定型",
       "price_cny": null,
       "price_basis": "待询价；不沿用旧打包额度",
-      "check": "用F05库存PP，不重复买PP整张；本行报价为缝口条/加工。前壁接收槽深1.5mm起点，壁缝按实厚+0.2–0.4mm总隙起试，可拆清理。",
+      "check": "板料用F05，不重复买整张；报价为后/侧罩及缝口加工。后部10mm加强角梁/滑块需完整扫掠纸样；不能用延长平板作完整后罩或承诺已封闭验收。缝宽按闸片实测＋约0.3总隙起试，清洁可拆。",
       "sources": []
     },
     {
@@ -1584,16 +1586,96 @@
         "B10"
       ],
       "category": "外壳固定",
-      "name": "木面板与料斗固定件（装配补漏）",
-      "model": "M5×12＋2020 T螺母/垫片；15×15×约1.5mm小角片；M3×12",
-      "spec": "M5×12/T螺母/垫片各20（面板16点、托耳2点、2备）；小角片10；M3×12螺钉/螺母/垫片各28含备",
+      "name": "料斗木壳与托耳固定件",
+      "model": "M5×12/T螺母/垫片各4；小角片10；M3×12及螺母/垫片各28",
+      "spec": "托耳2点＋2备；木壳8小角片＋托耳2小角片；外面板固定独立移到F11",
       "qty": 1,
       "unit": "组",
       "selection": "主方案",
       "readiness": "纸样后核板厚/孔深",
       "price_cny": null,
       "price_basis": "新增材料待询价",
-      "check": "M5×8不够直接穿6mm面板后可靠啮合；M5×12仍按垫片/槽深试装防顶底。M3内侧头平齐、不留突出端进入豆路。耳板/木壁固定先试装。",
+      "check": "M5×12穿6mm托耳按槽深试装；木壳内侧M3头齐平，不侵入PP/豆路。原外覆面板16点方案取消，不能重复按旧20套采购。",
+      "sources": []
+    },
+    {
+      "id": "F09",
+      "old_ids": [],
+      "category": "机架与外壳",
+      "name": "上端防尘端盖",
+      "model": "匹配已有黑色欧标2020端部的黑色塑料端盖",
+      "spec": "20×20型材用，4只；非承重连接件",
+      "qty": 4,
+      "unit": "只",
+      "selection": "主方案",
+      "readiness": "核实2020端部后下单",
+      "price_cny": null,
+      "price_basis": "新增待询价",
+      "check": "按实物中心孔/槽型试配；端盖不承担框架连接。",
+      "sources": []
+    },
+    {
+      "id": "F10",
+      "old_ids": [],
+      "category": "机架与外壳",
+      "name": "底部防滑脚套",
+      "model": "黑色欧标2020端部外套式橡胶脚套",
+      "spec": "内腔匹配20×20端部，厚底≥3mm，4只；实物尺寸/硬度待核",
+      "qty": 4,
+      "unit": "只",
+      "selection": "主方案",
+      "readiness": "核实2020端部后下单",
+      "price_cny": null,
+      "price_basis": "新增待询价",
+      "check": "无螺纹的外套式方案，不用把M5硬拧入型材中心孔。要求四点稳定；非调平脚、非已验承载件。若换调平脚另核安装座/攻牙。",
+      "sources": []
+    },
+    {
+      "id": "F11",
+      "name": "内嵌木面板背托套件",
+      "category": "外壳固定",
+      "model": "20×20×2内角片＋配套M5/T螺母；M3×25黑沉头＋M3螺母/垫片＋隔距",
+      "spec": "购40套：木板32点、前黑PP条2点、6备；每套1角片/1M5/1T螺母/1M3螺栓螺母垫片/10mm尼龙隔套＋1mm调垫",
+      "check": "角片内侧背托。示意11mm隔距使6mm板面内凹1；按实物角片量，不盲买固定11。先做角样，32点不是沿用旧16点外覆直接穿T槽。",
+      "old_ids": [],
+      "qty": 1,
+      "unit": "组",
+      "selection": "主方案",
+      "readiness": "先纸样/角样，后按实物下单",
+      "price_cny": null,
+      "price_basis": "V4.7新增待询价",
+      "sources": []
+    },
+    {
+      "id": "F12",
+      "name": "PP热焊耗材与上口压片",
+      "category": "料斗制作",
+      "model": "同牌号PP-H焊条Ø2/Ø3；焊枪匹配4–5mm细嘴；20×10×1.5角铝压片",
+      "spec": "Ø2约5m、Ø3约2m含练习；细嘴1（已有匹配则不买）；角铝切长15×4；M3×12/螺母/外垫片各4",
+      "check": "2mm板先用废料练焊；工业参数有设备/风量/直径条件，不能当任意枪330°C配方。四压片只压158口圈外缘，长腿在木壁外，不伸入136口；角片孔按实物。",
+      "old_ids": [],
+      "qty": 1,
+      "unit": "组",
+      "selection": "主方案",
+      "readiness": "先纸样/角样，后按实物下单",
+      "price_cny": null,
+      "price_basis": "V4.7新增待询价",
+      "sources": []
+    },
+    {
+      "id": "G21",
+      "name": "五窗叠层隔距与夹紧件",
+      "category": "滑闸加工件",
+      "model": "外翼隔距块10×30×2两条＋0.3mm薄垫；M3×35候选",
+      "spec": "2mm隔块×2、0.3薄垫×2；3mm下支承×2；M3×35/螺母/垫片各4（2用2备）；均先纸样",
+      "check": "隔片X0→10/130→140，避开闸片X15→125。间隙按板实厚＋约0.3总隙起试；不靠螺钉夹紧程度调滑动。后罩另按G13/G20避加强角梁，固定孔未冻结。",
+      "old_ids": [],
+      "qty": 1,
+      "unit": "组",
+      "selection": "主方案",
+      "readiness": "先纸样/角样，后按实物下单",
+      "price_cny": null,
+      "price_basis": "V4.7新增待询价",
       "sources": []
     }
   ],
@@ -2345,15 +2427,15 @@
     ],
     "power_budget_continuous_w": 53.705882352941174,
     "power_budget_peak_w": 67.82352941176471,
-    "frame_net_length_m": 4.4,
+    "frame_net_length_m": 4.48,
     "calculations_are_not_hardware_validation": true,
     "plate_elastic_modulus_GPa": 70
   },
   "assembly_revision": {
-    "date": "2026-10-13",
+    "date": "2026-10-16",
     "document": "docs/hardware/assembly-v4.5/beanlens-assembly-v4.5.html",
-    "status": "layout_proposal_not_machining_release",
-    "frame_unchanged": true,
+    "status": "V4.7-inset-PP-proposal",
+    "frame_unchanged": false,
     "frame_brackets_used": 28,
     "frame_brackets_purchase": 32,
     "hopper_support_ears_mm": [
@@ -2362,6 +2444,44 @@
       6
     ],
     "midframe_top_z_mm": 324,
-    "gate_rail_spacing_mm_proposal": 94
+    "gate_rail_spacing_mm_proposal": 94,
+    "previous_full_assembly": "docs/hardware/assembly-v4.5/beanlens-assembly-v4.5.html",
+    "previous_frame_cut_list_superseded": true,
+    "previous_full_assembly_note": "same URL updated in place to V4.6-black; old 20261013 validation is historical",
+    "enclosure_panels": 9,
+    "wood_cut_pieces": 15
+  },
+  "frame_revision": {
+    "revision": "V4.7-inset-PP",
+    "date": "2026-10-16",
+    "document": "docs/hardware/frame-v4.6/beanlens-frame-v4.6.html",
+    "layout_and_stock_data": "docs/hardware/frame-v4.6/frame-plan-v4.6.json",
+    "status": "proposal_not_hardware_verified",
+    "frame_mm": [
+      220,
+      240,
+      460
+    ],
+    "existing_stock_mm": {
+      "460": 7,
+      "400": 2
+    },
+    "buy_finished_mm": {
+      "180": 4
+    },
+    "kerf_per_cut_mm_assumed": 3,
+    "net_profile_length_mm": 4480,
+    "total_kerf_mm": 30,
+    "total_offcuts_mm": 230,
+    "profile_system": "European 2020",
+    "profile_finish": "black anodized",
+    "slot_width_mm": null,
+    "slot_note": "measure actual user-owned profile; no inferred groove width",
+    "enclosure": "recessed_panels_three_sides_to_base",
+    "mid_crossbars_y_mm": [
+      0,
+      220
+    ],
+    "button_center_z_mm": 273
   }
 }

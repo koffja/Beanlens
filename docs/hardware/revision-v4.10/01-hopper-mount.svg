@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1500 1060" role="img" aria-label="料斗靠“顶托环 + 四只金属托片”挂在黑色 2020 上">
+<style>text{font-family:"PingFang SC","Microsoft YaHei",sans-serif;fill:#253c36;font-size:21px}.wire{fill:none;stroke-width:3;stroke-linecap:round;stroke-linejoin:round}.bold{font-weight:700}</style><rect width="1500" height="1060" fill="#fafbf7"/>
+<text x="48" y="55" class="" style="font-size:16px;fill:#477d67">BEANLENS / V4.10 / 01</text>
+<text x="48" y="108" class="" style="font-size:36px">料斗靠“顶托环 + 四只金属托片”挂在黑色 2020 上</text>
+<text x="48" y="148" class="" style="font-size:19px;fill:#667c71">PP 与木板不是一回事：木板只做外壳；豆路组件的重量经顶部托环传给铝框。左图为俯视，单位 mm。</text>
+<rect x="70.0" y="225.0" width="550.0" height="600.0" rx="0" fill="#242b2e" stroke="#496e5a" stroke-width="2"/>
+<rect x="120.0" y="275.0" width="450.0" height="500.0" rx="0" fill="#fafbf7" stroke="#496e5a" stroke-width="2"/>
+<rect x="125.0" y="280.0" width="440.0" height="490.0" rx="0" fill="#c5dfcf" stroke="#496e5a" stroke-width="2"/>
+<rect x="175.0" y="355.0" width="340.0" height="340.0" rx="0" fill="#fafbf7" stroke="#496e5a" stroke-width="2"/>
+<rect x="120.0" y="412.5" width="35.0" height="50.0" rx="0" fill="#9aaeb5" stroke="#496e5a" stroke-width="2"/>
+<rect x="120.0" y="587.5" width="35.0" height="50.0" rx="0" fill="#9aaeb5" stroke="#496e5a" stroke-width="2"/>
+<rect x="535.0" y="412.5" width="35.0" height="50.0" rx="0" fill="#9aaeb5" stroke="#496e5a" stroke-width="2"/>
+<rect x="535.0" y="587.5" width="35.0" height="50.0" rx="0" fill="#9aaeb5" stroke="#496e5a" stroke-width="2"/>
+<ellipse cx="141.25" cy="437.5" rx="8.75" ry="4.375" fill="#fff" stroke="#916a29" stroke-width="2"/>
+<ellipse cx="141.25" cy="612.5" rx="8.75" ry="4.375" fill="#fff" stroke="#916a29" stroke-width="2"/>
+<ellipse cx="548.75" cy="437.5" rx="8.75" ry="4.375" fill="#fff" stroke="#916a29" stroke-width="2"/>
+<ellipse cx="548.75" cy="612.5" rx="8.75" ry="4.375" fill="#fff" stroke="#916a29" stroke-width="2"/>
+<text x="213" y="471" class="" style="font-size:24px">136 × 136 投料口</text>
+<text x="202" y="506" class="" style="font-size:22px">PP3 顶托环</text>
+<text x="76" y="203" class="" style="font-size:23px">外框 220 × 240</text>
+<text x="81" y="858" class="" style="font-size:20px">顶托环外形 176 × 196，内孔 136 方</text>
+<text x="81" y="891" class="" style="font-size:20px">4个长孔中心见数据；M3槽 3.5 × 7</text>
+<polyline class="wire" points="141.25,437.5 720,410" stroke="#93692f"/>
+<text x="744" y="417" class="" style="font-size:20px">支点侧剖面（放大示意）</text>
+<rect x="795" y="485" width="140" height="140" rx="0" fill="#252e31" stroke="#1c2528" stroke-width="2"/>
+<polygon points="935,541 921,541 921,527 900,527 900,583 921,583 921,569 935,569" fill="#fafbf7" stroke="#73857d" stroke-width="2"/>
+<rect x="903.5" y="541" width="14" height="28" rx="0" fill="#aa8a4f" stroke="#785d31" stroke-width="2"/>
+<rect x="935" y="485" width="14" height="154" rx="0" fill="#a7b9bf" stroke="#667c83" stroke-width="2"/>
+<rect x="935" y="625" width="98" height="14" rx="0" fill="#a7b9bf" stroke="#667c83" stroke-width="2"/>
+<rect x="949" y="604" width="126" height="21" rx="0" fill="#9dccad" stroke="#578465" stroke-width="2"/>
+<rect x="1075" y="625" width="14" height="82" rx="0" fill="#d8e8dd" stroke="#578465" stroke-width="2"/>
+<polygon points="1061,625 1075,625 1075,639" fill="#d18d49" stroke="#50896b" stroke-width="2"/>
+<polyline class="wire" points="994.5,583 994.5,660" stroke="#87631c"/>
+<polyline class="wire" points="907,555 963,555" stroke="#87631c"/>
+<text x="1160" y="465" class="" style="font-size:20px">M5 / T螺母 + 竖长孔</text>
+<polyline class="wire" points="1150,473 942,555" stroke="#487465"/>
+<text x="1160" y="525" class="" style="font-size:20px">M3×12 + φ9垫片</text>
+<polyline class="wire" points="1150,532 994.5,604" stroke="#487465"/>
+<text x="1160" y="580" class="" style="font-size:20px">PP3 托环底 Z440</text>
+<polyline class="wire" points="1150,586 1033,614.5" stroke="#487465"/>
+<text x="1160" y="638" class="" style="font-size:20px">PP2 壁与托环外侧焊</text>
+<polyline class="wire" points="1150,646 1075,639" stroke="#487465"/>
+<text x="1160" y="694" class="" style="font-size:20px">金属角片：宽20，厚2</text>
+<rect x="744" y="190" width="704" height="177" rx="8" fill="#eaf3ea" stroke="#c6d6ca" stroke-width="2"/>
+<text x="760" y="221" class="bold" style="font-size:23px">装配顺序</text>
+<text x="760" y="251" class="" style="font-size:18px">① M5/T螺母把4只金属托片锁在顶框内侧槽。</text>
+<text x="760" y="278" class="" style="font-size:18px">② 焊好的PP斗连顶托环从上方放下，坐在4托片上。</text>
+<text x="760" y="305" class="" style="font-size:18px">③ 4颗M3穿长孔固定；量平整、检查焊筋和屏幕间隙。</text>
+<text x="760" y="332" class="" style="font-size:18px">④ 最后接闸片/连杆；焊接和承重不靠木外壳。</text>
+<rect x="744" y="750" width="704" height="218" rx="8" fill="#fff" stroke="#c6d6ca" stroke-width="2"/>
+<text x="760" y="781" class="bold" style="font-size:23px">力是这样传的</text>
+<text x="760" y="811" class="" style="font-size:18px">上斗 → PP焊缝 → PP3托环</text>
+<text x="760" y="838" class="" style="font-size:18px">→ 4只金属托片 → M5/T螺母 → 黑2020框。</text>
+<text x="760" y="865" class="" style="font-size:18px">托片由25×25×2角铝裁制，竖脚22 / 横脚14。</text>
+<text x="760" y="892" class="" style="font-size:18px">M3槽补偿装配偏差，不能靠松螺丝消除晃动。</text>
+<text x="760" y="919" class="" style="font-size:18px">PP蠕变、焊缝拉脱和托片转动还要做静载试验。</text>
+<text x="760" y="946" class="" style="font-size:18px">下槽盒另由G21/G11定位，禁止上下硬拉找平。</text>
+<polyline class="wire" points="48,1000 1452,1000" stroke="#d3ded4"/>
+<text x="48" y="1030" class="" style="font-size:16px">2026-10-16 · 方案尺寸，非实物验收 · 先试焊 / 手推 / 无刷与带刷单槽对照，再五槽联调</text>
+<text x="1390" y="1030" class="" style="font-size:16px">1 / 5</text>
+</svg>

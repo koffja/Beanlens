@@ -1,0 +1,173 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1500 1060" role="img" aria-label="端子一格一格接：把“共地”接得清楚">
+<style>text{font-family:"PingFang SC","Microsoft YaHei",sans-serif;fill:#233b38;font-size:21px} .small{font-size:18px}.tiny{font-size:16px}.title{font-size:37px;font-weight:700}.bold{font-weight:700} .wire{fill:none;stroke-linejoin:round;stroke-linecap:round;stroke-width:4}</style>
+<rect width="1500" height="1060" fill="#fafbf7"/>
+<text x="48" y="56" class="" style="font-size:16px;fill:#47786b">BEANLENS  /  V4.9  /  02</text>
+<text x="48" y="110" class="" style="font-size:37px">端子一格一格接：把“共地”接得清楚</text>
+<text x="48" y="148" class="" style="font-size:19px;fill:#657a73">P05 选德力西 TB-1506 / DHATB1506N ×2。每格上下两螺钉互通，左右相邻格原本不通。</text>
+<text x="48" y="208" class="" style="font-size:23px">TB-A：24V 输入与三路分支</text>
+<rect x="48" y="230" width="92" height="147" rx="10" fill="#e8eeea" stroke="#c8d6ce" stroke-width="2"/>
+<text x="83" y="256" class="" style="font-size:20px">1</text>
+<circle cx="94" cy="283" r="12" fill="#fafafa" stroke="#84988b" stroke-width="2"/>
+<polyline class="wire" data-rail="" points="86,283 102,283" stroke="#84988b"/>
+<circle cx="94" cy="351" r="12" fill="#fafafa" stroke="#84988b" stroke-width="2"/>
+<polyline class="wire" data-rail="" points="86,351 102,351" stroke="#84988b"/>
+<polyline class="wire" data-rail="" points="94,298 94,335" stroke="#84988b"/>
+<text x="59" y="319" class="" style="font-size:18px">24V+</text>
+<rect x="156" y="230" width="92" height="147" rx="10" fill="#e8eeea" stroke="#c8d6ce" stroke-width="2"/>
+<text x="191" y="256" class="" style="font-size:20px">2</text>
+<circle cx="202" cy="283" r="12" fill="#fafafa" stroke="#84988b" stroke-width="2"/>
+<polyline class="wire" data-rail="" points="194,283 210,283" stroke="#84988b"/>
+<circle cx="202" cy="351" r="12" fill="#fafafa" stroke="#84988b" stroke-width="2"/>
+<polyline class="wire" data-rail="" points="194,351 210,351" stroke="#84988b"/>
+<polyline class="wire" data-rail="" points="202,298 202,335" stroke="#84988b"/>
+<text x="167" y="319" class="" style="font-size:18px">24V+</text>
+<rect x="264" y="230" width="92" height="147" rx="10" fill="#e8eeea" stroke="#c8d6ce" stroke-width="2"/>
+<text x="299" y="256" class="" style="font-size:20px">3</text>
+<circle cx="310" cy="283" r="12" fill="#fafafa" stroke="#84988b" stroke-width="2"/>
+<polyline class="wire" data-rail="" points="302,283 318,283" stroke="#84988b"/>
+<circle cx="310" cy="351" r="12" fill="#fafafa" stroke="#84988b" stroke-width="2"/>
+<polyline class="wire" data-rail="" points="302,351 318,351" stroke="#84988b"/>
+<polyline class="wire" data-rail="" points="310,298 310,335" stroke="#84988b"/>
+<text x="275" y="319" class="" style="font-size:18px">24V+</text>
+<rect x="372" y="230" width="92" height="147" rx="10" fill="#e8eeea" stroke="#c8d6ce" stroke-width="2"/>
+<text x="407" y="256" class="" style="font-size:20px">4</text>
+<circle cx="418" cy="283" r="12" fill="#fafafa" stroke="#84988b" stroke-width="2"/>
+<polyline class="wire" data-rail="" points="410,283 426,283" stroke="#84988b"/>
+<circle cx="418" cy="351" r="12" fill="#fafafa" stroke="#84988b" stroke-width="2"/>
+<polyline class="wire" data-rail="" points="410,351 426,351" stroke="#84988b"/>
+<polyline class="wire" data-rail="" points="418,298 418,335" stroke="#84988b"/>
+<text x="383" y="319" class="" style="font-size:18px">0V</text>
+<rect x="480" y="230" width="92" height="147" rx="10" fill="#e8eeea" stroke="#c8d6ce" stroke-width="2"/>
+<text x="515" y="256" class="" style="font-size:20px">5</text>
+<circle cx="526" cy="283" r="12" fill="#fafafa" stroke="#84988b" stroke-width="2"/>
+<polyline class="wire" data-rail="" points="518,283 534,283" stroke="#84988b"/>
+<circle cx="526" cy="351" r="12" fill="#fafafa" stroke="#84988b" stroke-width="2"/>
+<polyline class="wire" data-rail="" points="518,351 534,351" stroke="#84988b"/>
+<polyline class="wire" data-rail="" points="526,298 526,335" stroke="#84988b"/>
+<text x="491" y="319" class="" style="font-size:18px">0V</text>
+<rect x="588" y="230" width="92" height="147" rx="10" fill="#e8eeea" stroke="#c8d6ce" stroke-width="2"/>
+<text x="623" y="256" class="" style="font-size:20px">6</text>
+<circle cx="634" cy="283" r="12" fill="#fafafa" stroke="#84988b" stroke-width="2"/>
+<polyline class="wire" data-rail="" points="626,283 642,283" stroke="#84988b"/>
+<circle cx="634" cy="351" r="12" fill="#fafafa" stroke="#84988b" stroke-width="2"/>
+<polyline class="wire" data-rail="" points="626,351 642,351" stroke="#84988b"/>
+<polyline class="wire" data-rail="" points="634,298 634,335" stroke="#84988b"/>
+<text x="599" y="319" class="" style="font-size:18px">0V</text>
+<polyline class="wire" data-rail="" points="94,391 310,391" stroke="#c56b13"/>
+<polyline class="wire" data-rail="" points="418,391 634,391" stroke="#273843"/>
+<text x="790" y="208" class="" style="font-size:23px">TB-B：5V / 6V 输出，绝不加桥条</text>
+<rect x="790" y="230" width="92" height="147" rx="10" fill="#e8eeea" stroke="#c8d6ce" stroke-width="2"/>
+<text x="825" y="256" class="" style="font-size:20px">1</text>
+<circle cx="836" cy="283" r="12" fill="#fafafa" stroke="#84988b" stroke-width="2"/>
+<polyline class="wire" data-rail="" points="828,283 844,283" stroke="#84988b"/>
+<circle cx="836" cy="351" r="12" fill="#fafafa" stroke="#84988b" stroke-width="2"/>
+<polyline class="wire" data-rail="" points="828,351 844,351" stroke="#84988b"/>
+<polyline class="wire" data-rail="" points="836,298 836,335" stroke="#84988b"/>
+<text x="801" y="319" class="" style="font-size:18px">5V+</text>
+<rect x="898" y="230" width="92" height="147" rx="10" fill="#e8eeea" stroke="#c8d6ce" stroke-width="2"/>
+<text x="933" y="256" class="" style="font-size:20px">2</text>
+<circle cx="944" cy="283" r="12" fill="#fafafa" stroke="#84988b" stroke-width="2"/>
+<polyline class="wire" data-rail="" points="936,283 952,283" stroke="#84988b"/>
+<circle cx="944" cy="351" r="12" fill="#fafafa" stroke="#84988b" stroke-width="2"/>
+<polyline class="wire" data-rail="" points="936,351 952,351" stroke="#84988b"/>
+<polyline class="wire" data-rail="" points="944,298 944,335" stroke="#84988b"/>
+<text x="909" y="319" class="" style="font-size:18px">5V−</text>
+<rect x="1006" y="230" width="92" height="147" rx="10" fill="#e8eeea" stroke="#c8d6ce" stroke-width="2"/>
+<text x="1041" y="256" class="" style="font-size:20px">3</text>
+<circle cx="1052" cy="283" r="12" fill="#fafafa" stroke="#84988b" stroke-width="2"/>
+<polyline class="wire" data-rail="" points="1044,283 1060,283" stroke="#84988b"/>
+<circle cx="1052" cy="351" r="12" fill="#fafafa" stroke="#84988b" stroke-width="2"/>
+<polyline class="wire" data-rail="" points="1044,351 1060,351" stroke="#84988b"/>
+<polyline class="wire" data-rail="" points="1052,298 1052,335" stroke="#84988b"/>
+<text x="1017" y="319" class="" style="font-size:18px">6V+</text>
+<rect x="1114" y="230" width="92" height="147" rx="10" fill="#e8eeea" stroke="#c8d6ce" stroke-width="2"/>
+<text x="1149" y="256" class="" style="font-size:20px">4</text>
+<circle cx="1160" cy="283" r="12" fill="#fafafa" stroke="#84988b" stroke-width="2"/>
+<polyline class="wire" data-rail="" points="1152,283 1168,283" stroke="#84988b"/>
+<circle cx="1160" cy="351" r="12" fill="#fafafa" stroke="#84988b" stroke-width="2"/>
+<polyline class="wire" data-rail="" points="1152,351 1168,351" stroke="#84988b"/>
+<polyline class="wire" data-rail="" points="1160,298 1160,335" stroke="#84988b"/>
+<text x="1125" y="319" class="" style="font-size:18px">6V−</text>
+<rect x="1222" y="230" width="92" height="147" rx="10" fill="#e8eeea" stroke="#c8d6ce" stroke-width="2"/>
+<text x="1257" y="256" class="" style="font-size:20px">5</text>
+<circle cx="1268" cy="283" r="12" fill="#fafafa" stroke="#84988b" stroke-width="2"/>
+<polyline class="wire" data-rail="" points="1260,283 1276,283" stroke="#84988b"/>
+<circle cx="1268" cy="351" r="12" fill="#fafafa" stroke="#84988b" stroke-width="2"/>
+<polyline class="wire" data-rail="" points="1260,351 1276,351" stroke="#84988b"/>
+<polyline class="wire" data-rail="" points="1268,298 1268,335" stroke="#84988b"/>
+<text x="1233" y="319" class="" style="font-size:18px">空</text>
+<rect x="1330" y="230" width="92" height="147" rx="10" fill="#e8eeea" stroke="#c8d6ce" stroke-width="2"/>
+<text x="1365" y="256" class="" style="font-size:20px">6</text>
+<circle cx="1376" cy="283" r="12" fill="#fafafa" stroke="#84988b" stroke-width="2"/>
+<polyline class="wire" data-rail="" points="1368,283 1384,283" stroke="#84988b"/>
+<circle cx="1376" cy="351" r="12" fill="#fafafa" stroke="#84988b" stroke-width="2"/>
+<polyline class="wire" data-rail="" points="1368,351 1384,351" stroke="#84988b"/>
+<polyline class="wire" data-rail="" points="1376,298 1376,335" stroke="#84988b"/>
+<text x="1341" y="319" class="" style="font-size:18px">空</text>
+<text x="48" y="426" class="" style="font-size:20px;fill:#c56b13">仅 TB-A 加两段配套 3 位短接片：1–2–3 一组；4–5–6 另一组。</text>
+<text x="790" y="426" class="" style="font-size:20px;fill:#7b45b5">TB-B 的 1/2/3/4 分别独立；5、6 空置。</text>
+<rect x="48" y="468" width="1400" height="37" rx="0" fill="#eaf2ed" stroke="#e1e8e2" stroke-width="2"/>
+<text x="60" y="493" class="" style="font-size:17px">线号</text>
+<text x="204" y="493" class="" style="font-size:17px">起点</text>
+<text x="660" y="493" class="" style="font-size:17px">终点</text>
+<text x="1050" y="493" class="" style="font-size:17px">导线 / 说明</text>
+<rect x="48" y="505" width="1400" height="37" rx="0" fill="#fff" stroke="#e1e8e2" stroke-width="2"/>
+<text x="60" y="530" class="" style="font-size:17px">W01</text>
+<text x="204" y="530" class="" style="font-size:17px">适配器 + → 主 4A</text>
+<text x="660" y="530" class="" style="font-size:17px">TB-A 1 上</text>
+<text x="1050" y="530" class="" style="font-size:17px">0.75mm²；先测插头极性</text>
+<rect x="48" y="542" width="1400" height="37" rx="0" fill="#eaf2ed" stroke="#e1e8e2" stroke-width="2"/>
+<text x="60" y="567" class="" style="font-size:17px">W02</text>
+<text x="204" y="567" class="" style="font-size:17px">适配器 −</text>
+<text x="660" y="567" class="" style="font-size:17px">TB-A 4 上</text>
+<text x="1050" y="567" class="" style="font-size:17px">0.75mm² 黑线</text>
+<rect x="48" y="579" width="1400" height="37" rx="0" fill="#fff" stroke="#e1e8e2" stroke-width="2"/>
+<text x="60" y="604" class="" style="font-size:17px">W03/04</text>
+<text x="204" y="604" class="" style="font-size:17px">TB-A 1 下 → 灯 2A / 4 下</text>
+<text x="660" y="604" class="" style="font-size:17px">灯带 + / −</text>
+<text x="1050" y="604" class="" style="font-size:17px">各自接一根，不借铝框回流</text>
+<rect x="48" y="616" width="1400" height="37" rx="0" fill="#eaf2ed" stroke="#e1e8e2" stroke-width="2"/>
+<text x="60" y="641" class="" style="font-size:17px">W05/06</text>
+<text x="204" y="641" class="" style="font-size:17px">TB-A 2 下 → 输入 2A / 5 下</text>
+<text x="660" y="641" class="" style="font-size:17px">模块 A IN+ / IN−</text>
+<text x="1050" y="641" class="" style="font-size:17px">24V 输入对</text>
+<rect x="48" y="653" width="1400" height="37" rx="0" fill="#fff" stroke="#e1e8e2" stroke-width="2"/>
+<text x="60" y="678" class="" style="font-size:17px">W07/08</text>
+<text x="204" y="678" class="" style="font-size:17px">TB-A 3 下 → 输入 3A / 6 下</text>
+<text x="660" y="678" class="" style="font-size:17px">模块 B IN+ / IN−</text>
+<text x="1050" y="678" class="" style="font-size:17px">24V 输入对</text>
+<rect x="48" y="690" width="1400" height="37" rx="0" fill="#eaf2ed" stroke="#e1e8e2" stroke-width="2"/>
+<text x="60" y="715" class="" style="font-size:17px">W09/10</text>
+<text x="204" y="715" class="" style="font-size:17px">模块 A OUT+ / OUT−</text>
+<text x="660" y="715" class="" style="font-size:17px">TB-B 1 上 / 2 上</text>
+<text x="1050" y="715" class="" style="font-size:17px">5V 输出对</text>
+<rect x="48" y="727" width="1400" height="37" rx="0" fill="#fff" stroke="#e1e8e2" stroke-width="2"/>
+<text x="60" y="752" class="" style="font-size:17px">W11/12</text>
+<text x="204" y="752" class="" style="font-size:17px">TB-B 1 下 / 2 下</text>
+<text x="660" y="752" class="" style="font-size:17px">P09 配电板 + / −</text>
+<text x="1050" y="752" class="" style="font-size:17px">USB + 独立辅助焊盘/端子</text>
+<rect x="48" y="764" width="1400" height="37" rx="0" fill="#eaf2ed" stroke="#e1e8e2" stroke-width="2"/>
+<text x="60" y="789" class="" style="font-size:17px">W13/14</text>
+<text x="204" y="789" class="" style="font-size:17px">模块 B OUT+ / OUT−</text>
+<text x="660" y="789" class="" style="font-size:17px">TB-B 3 上 / 4 上</text>
+<text x="1050" y="789" class="" style="font-size:17px">6V 输出对</text>
+<rect x="48" y="801" width="1400" height="37" rx="0" fill="#fff" stroke="#e1e8e2" stroke-width="2"/>
+<text x="60" y="826" class="" style="font-size:17px">W15/16</text>
+<text x="204" y="826" class="" style="font-size:17px">TB-B 3 下 / 4 下</text>
+<text x="660" y="826" class="" style="font-size:17px">XT30 → 舵机 V+ / GND</text>
+<text x="1050" y="826" class="" style="font-size:17px">0.75mm²；电容并在舵机近端</text>
+<rect x="48" y="838" width="1400" height="37" rx="0" fill="#eaf2ed" stroke="#e1e8e2" stroke-width="2"/>
+<text x="60" y="863" class="" style="font-size:17px">W17</text>
+<text x="204" y="863" class="" style="font-size:17px">C6 GPIO2</text>
+<text x="660" y="863" class="" style="font-size:17px">舵机 SIGNAL</text>
+<text x="1050" y="863" class="" style="font-size:17px">只传信号，必要时加 O01 缓冲</text>
+<rect x="48" y="900" width="678" height="77" rx="10" fill="#fff6e9" stroke="#c8d6ce" stroke-width="2"/>
+<text x="65" y="932" class="bold" style="font-size:23px">压接与绝缘</text>
+<text x="65" y="962" class="" style="font-size:18px">TB 螺钉配 M3 叉形/环形压接端子；降压板端口用合适管形端头。</text>
+<rect x="750" y="900" width="698" height="77" rx="10" fill="#eee9f6" stroke="#c8d6ce" stroke-width="2"/>
+<text x="767" y="932" class="bold" style="font-size:23px">不要额外拉三根“地线桥”</text>
+<text x="767" y="962" class="" style="font-size:18px">TB-B 2/4 不再外接 TB-A 4；共地已通过非隔离降压内部实现。</text>
+<polyline class="wire" data-rail="" points="48,1000 1452,1000" stroke="#d2ddd6"/>
+<text x="48" y="1030" class="" style="font-size:16px">2026-10-16 · 样机方案 / 尚未带载、带豆或焊接验收 · 电气连接按端子文字核对，不按图中物理引脚位置猜接</text>
+<text x="1390" y="1030" class="" style="font-size:16px">2 / 4</text>
+</svg>

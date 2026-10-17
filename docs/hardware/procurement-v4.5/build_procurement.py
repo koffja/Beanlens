@@ -12,7 +12,7 @@ columns = [("id", "编号"), ("category", "分组"), ("name", "物料"), ("model
            ("readiness", "下单状态"), ("price_cny", "人民币单价"), ("price_basis", "价格依据"),
            ("check", "适配核对/用途"), ("old_ids", "对应旧BOM"), ("sources", "资料来源")]
 with (ROOT / "beanlens-bom-v4.5.csv").open("w", encoding="utf-8-sig", newline="") as f:
-    w = csv.writer(f)
+    w = csv.writer(f, lineterminator="\n")
     w.writerow([c[1] for c in columns])
     for row in rows:
         w.writerow([" | ".join(row[k]) if isinstance(row[k], list) else row[k] for k, _ in columns])
@@ -42,6 +42,8 @@ page = '''<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta na
 <footer>价格均为人民币。国外原厂页面用于核规格，未按网页美元价折算，不含运费、工具和外协工时。旧V4.4 CSV/JSON/PDF/ZIP保留快照；本页为当前采购入口。尚未实物承重、带豆开合、电气联调或称重验收。</footer></main><script>
 (()=>{const rows=[...document.querySelectorAll('#parts tbody tr')],search=document.getElementById('search'),cat=document.getElementById('category'),sel=document.getElementById('selection');function filter(){const q=search.value.trim().toLowerCase();let count=0;rows.forEach(r=>{const show=(!q||r.textContent.toLowerCase().includes(q))&&(!cat.value||cat.value===r.dataset.category)&&(!sel.value||sel.value===r.dataset.selection);r.hidden=!show;if(show)count++;});document.getElementById('visibleCount').textContent=`显示 ${count} / ${rows.length} 项`;}[search,cat,sel].forEach(e=>e.addEventListener('input',filter));document.getElementById('reset').onclick=()=>{search.value=cat.value=sel.value='';filter();};filter();})();
 </script></body></html>'''
+frame_notice = '<section class="card"><h2>2026-10-16：V4.7内嵌木板与可热焊PP料斗</h2><p>左/右/后三面木板下延，板块内嵌，四角与腰线露出黑色2020。F03改800×600一张，或两张600方二选一；新增F11背托。F04改PP-H2，净136方到110×30；F05为小过渡斗和上下五窗，G12改POM140×30×4，新增F12焊材和G21隔距。型材补料仍为同规格黑色180×4。</p><p><a href="../fabrication-v4.7/beanlens-fabrication-v4.7.html">详细裁切/热焊/五槽步骤与6页A4模板</a> · <a href="../assembly-v4.5/beanlens-assembly-v4.5.html">完整组装与7页A3尺寸图</a>。新孔位、焊缝和后罩仍需纸样/实物确认。</p></section>'
+page = page.replace('<section class="card stats">', frame_notice + '<section class="card stats">')
 page = page.replace("__ROWS__", "".join(body)).replace("__MAPPING__", "".join(mapping)).replace("__COUNT__", str(len(rows)))
 page = page.replace("__CATEGORIES__", "".join(f'<option>{esc(c)}</option>' for c in dict.fromkeys(r["category"] for r in rows)))
 (ROOT / "beanlens-procurement-v4.5.html").write_text(page, encoding="utf-8")

@@ -1,0 +1,406 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="icon" href="data:,"><title>BeanLens V4.9 电源接线与连续PP料斗</title><style>
+*{box-sizing:border-box}body{margin:0;background:#edf1eb;color:#233b38;font:16px/1.65 system-ui,-apple-system,"PingFang SC",sans-serif}header,main{max-width:1600px;margin:auto;padding:25px}h1{font-size:34px;margin:10px 0}h2{font-size:22px;margin:8px 0}p{max-width:1100px}a{color:#146b50}nav,.controls{display:flex;gap:14px;flex-wrap:wrap;align-items:center}.controls{position:sticky;top:0;z-index:10;background:#fafff7ed;padding:13px;border-bottom:1px solid #ccd7ca}button,select{font:inherit;padding:7px 12px;border:1px solid #9eafa4;border-radius:6px;background:white;color:#233b38}button{cursor:pointer}.sheet{background:#fafbf7;border:1px solid #cad5c8;margin:24px 0;padding:12px;border-radius:8px}.viewport{overflow:auto}svg{display:block;width:100%;min-width:1000px}svg .wire{transition:opacity .18s}.note{padding:16px;background:#fff3db;border-radius:8px}.checks{font-size:14px;color:#567267}body.focused .wire[data-rail]:not(.active){opacity:.12}button:focus-visible,a:focus-visible,select:focus-visible{outline:3px solid #1777ae}input{vertical-align:middle}@media print{@page{size:A3 landscape;margin:0}header,.controls,h2,footer{display:none}main{padding:0}.sheet{margin:0;padding:0;border:0;break-after:page;border-radius:0}.sheet:last-child{break-after:auto}.viewport{overflow:visible}svg{width:420mm;height:297mm;min-width:0}.wire{opacity:1!important}}@media(max-width:700px){header,main{padding:15px}h1{font-size:27px}}
+</style><aside id="v410-notice" style="padding:16px;background:#fff0d2;color:#283c32;font:16px/1.6 system-ui"><b>当前送料/电源修订为V4.10。</b> <a href="../revision-v4.10/beanlens-hopper-gate-v4.10.html">打开连续前壁、固定与PBT刷盒图</a> · <a href="../procurement-v4.10/beanlens-procurement-v4.10.html">114项新版BOM</a>。6V舵机采用UBEC5A/6V；TPS5450只评估5V逻辑路。V4.9主斗外形、V4.8机架/木板/双屏保留，旧分离POM座和刷排表述已被替换。</aside><header><aside data-current-assembly="v4.12" style="padding:16px;background:#e5f1e5;color:#233c34;font:16px/1.7 system-ui"><b>最新整机装配与运作演示：V4.12。</b> <a href="../assembly-v4.12/beanlens-assembly-v4.12.html">整机组装／爆炸及12页接线图</a> · <a href="../assembly-v4.12/beanlens-operation-v4.12.html">整个运作流程动画</a>。本页保留历史参考，旧小过渡斗、双法兰和叠片不用于当前装配。</aside><small>BEANLENS · 2026-10-16 · V4.9 样机修订</small><h1>看清每条电线，减少豆路接缝</h1><p>外置24V适配器 + 两块常见降压板。四片PP焊一个连续斗，五孔座与闸片保留拆洗。机架、三面木板与双屏沿用V4.8；这里替换旧版电源与料斗结构。</p><nav><a href="../procurement-v4.9/beanlens-procurement-v4.9.html">新版采购表</a><a href="README.md">详细说明与估价</a><a href="pp-panel-cuts-v4.9.csv">PP外面控制尺寸CSV</a><a href="../../../output/pdf/beanlens-power-and-feed-v4.9-20261016.pdf">四页A3 PDF</a><a href="../assembly-v4.8/beanlens-assembly-v4.8.html">保留的机架 / 双屏尺寸</a></nav><p class="note">XL4016是芯片型号，不代表整板持续电流。先调电压、带负载检查，再接板卡与舵机。此包尚未实机/带豆验证，旧八片PP模板不可用于连续斗。</p></header><div class="controls"><label>查看电路 <select id="rail"><option value="">全部</option><option value="24">24V正线</option><option value="5">5V正线</option><option value="6">6V正线</option><option value="ground">各路返回</option><option value="signal">舵机信号</option></select></label><label>放大 <input id="zoom" type="range" min="100" max="200" value="100" step="25"><output id="zout">100%</output></label><button id="reset">复原视图</button><a href="#page2">端子接哪格</a><a href="#page3">PP怎么简化</a></div><main><section class="sheet" id="page1"><h2>总接线</h2><div class="viewport"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1500 1060" role="img" aria-label="先分出三路电压，再分别接回负极">
+<style>text{font-family:"PingFang SC","Microsoft YaHei",sans-serif;fill:#233b38;font-size:21px} .small{font-size:18px}.tiny{font-size:16px}.title{font-size:37px;font-weight:700}.bold{font-weight:700} .wire{fill:none;stroke-linejoin:round;stroke-linecap:round;stroke-width:4}</style>
+<rect width="1500" height="1060" fill="#fafbf7"/>
+<text x="48" y="56" class="" style="font-size:16px;fill:#47786b">BEANLENS  /  V4.9  /  01</text>
+<text x="48" y="110" class="" style="font-size:37px">先分出三路电压，再分别接回负极</text>
+<text x="48" y="148" class="" style="font-size:19px;fill:#657a73">橙24V、红5V、紫6V、黑返回；蓝虚线为信号。跨桥不相连，圆点是接点；端子编号见第2页。</text>
+<rect x="48" y="190" width="280" height="125" rx="10" fill="#fff" stroke="#c8d6ce" stroke-width="2"/>
+<text x="65" y="222" class="bold" style="font-size:23px">A07 航嘉外置适配器</text>
+<text x="65" y="252" class="" style="font-size:18px">HKA12024050-7B</text>
+<text x="65" y="279" class="" style="font-size:18px">24V / 5A / 120W</text>
+<text x="48" y="345" class="" style="font-size:18px">成品带开关插排 → 成品交流线</text>
+<text x="48" y="373" class="" style="font-size:18px">220V 留在机外；总开关在插排</text>
+<text x="48" y="401" class="" style="font-size:18px">P03 插头尺寸与中心正负先实测</text>
+<polyline class="wire" data-rail="24" points="328,229 358,229" stroke="#c56b13"/>
+<rect x="358" y="208" width="104" height="42" rx="4" fill="#fff2df" stroke="#c56b13" stroke-width="2"/>
+<text x="369" y="236" class="" style="font-size:19px">主 4A</text>
+<polyline class="wire" data-rail="24" points="462,229 510,229 510,722" stroke="#c56b13"/>
+<polyline class="wire" data-rail="ground" points="328,275 477,275 477,768" stroke="#273843"/>
+<text x="346" y="301" class="" style="font-size:18px">0V</text>
+<text x="495" y="191" class="" style="font-size:17px;fill:#c56b13">TB-A 1–3</text>
+<text x="389" y="820" class="" style="font-size:17px">TB-A 4–6</text>
+<circle cx="510" cy="229" r="5" fill="#c56b13"/>
+<polyline class="wire" data-rail="24" points="510,229 550,229" stroke="#c56b13"/>
+<rect x="550" y="207" width="155" height="44" rx="4" fill="#fff2df" stroke="#c56b13" stroke-width="2"/>
+<text x="560" y="236" class="" style="font-size:18px">灯 2A</text>
+<polyline class="wire" data-rail="24" points="705,229 750,229" stroke="#c56b13"/>
+<circle cx="477" cy="275" r="5" fill="#273843"/>
+<path d="M477 275 H498 Q510 255 522 275 H750" fill="none" stroke="#fafbf7" stroke-width="11"/>
+<path d="M477 275 H498 Q510 255 522 275 H750" class="wire" data-rail="ground" stroke="#273843"/>
+<rect x="750" y="196" width="640" height="130" rx="10" fill="#fff6e9" stroke="#c8d6ce" stroke-width="2"/>
+<text x="767" y="228" class="bold" style="font-size:23px">24V 灯带</text>
+<text x="767" y="258" class="" style="font-size:18px">A05 共 0.4m，预算 ≤8W</text>
+<text x="767" y="285" class="" style="font-size:18px">正接 +，负接 −</text>
+<text x="717" y="217" class="" style="font-size:20px;fill:#c56b13">+</text>
+<text x="717" y="301" class="" style="font-size:20px">−</text>
+<circle cx="510" cy="470" r="5" fill="#c56b13"/>
+<polyline class="wire" data-rail="24" points="510,470 550,470" stroke="#c56b13"/>
+<rect x="550" y="448" width="155" height="44" rx="4" fill="#fff2df" stroke="#c56b13" stroke-width="2"/>
+<text x="560" y="477" class="" style="font-size:18px">5V 输入 2A</text>
+<polyline class="wire" data-rail="24" points="705,470 750,470" stroke="#c56b13"/>
+<circle cx="477" cy="516" r="5" fill="#273843"/>
+<path d="M477 516 H498 Q510 496 522 516 H750" fill="none" stroke="#fafbf7" stroke-width="11"/>
+<path d="M477 516 H498 Q510 496 522 516 H750" class="wire" data-rail="ground" stroke="#273843"/>
+<rect x="750" y="428" width="290" height="160" rx="10" fill="#f0f5ef" stroke="#c8d6ce" stroke-width="2"/>
+<text x="767" y="460" class="bold" style="font-size:23px">A08 XL4016 模块 A</text>
+<text x="767" y="490" class="" style="font-size:18px">先空载调到 5.00V</text>
+<text x="767" y="517" class="" style="font-size:18px">供两板与低压外设，共 ≤4A</text>
+<text x="717" y="460" class="" style="font-size:16px;fill:#c56b13">IN+</text>
+<text x="716" y="542" class="" style="font-size:16px">IN−</text>
+<text x="1048" y="458" class="" style="font-size:16px;fill:#c4323d">OUT+</text>
+<text x="1048" y="541" class="" style="font-size:16px">OUT−</text>
+<polyline class="wire" data-rail="5" points="1040,470 1110,470" stroke="#c4323d"/>
+<polyline class="wire" data-rail="ground" points="1040,516 1110,516" stroke="#273843"/>
+<text x="1110" y="407" class="" style="font-size:18px;fill:#c4323d">TB-B 1 / 2</text>
+<rect x="1110" y="428" width="340" height="166" rx="10" fill="#fff" stroke="#c8d6ce" stroke-width="2"/>
+<text x="1127" y="460" class="bold" style="font-size:23px">P09 5V 配电板</text>
+<text x="1127" y="490" class="" style="font-size:18px">双 USB-A → 成品 A→C 短线</text>
+<text x="1127" y="517" class="" style="font-size:18px">→ BOX Type-C1 电源口 + C6</text>
+<text x="1127" y="544" class="" style="font-size:18px">辅助 5V/GND → 2167 对射</text>
+<text x="1127" y="571" class="" style="font-size:18px">C6 3.3V/GND → NAU7802</text>
+<text x="1110" y="625" class="" style="font-size:17px;fill:#c4323d">C02 470µF/10V 并在 5V 与返回</text>
+<circle cx="510" cy="722" r="5" fill="#c56b13"/>
+<polyline class="wire" data-rail="24" points="510,722 550,722" stroke="#c56b13"/>
+<rect x="550" y="700" width="155" height="44" rx="4" fill="#fff2df" stroke="#c56b13" stroke-width="2"/>
+<text x="560" y="729" class="" style="font-size:18px">6V 输入 3A</text>
+<polyline class="wire" data-rail="24" points="705,722 750,722" stroke="#c56b13"/>
+<circle cx="477" cy="768" r="5" fill="#273843"/>
+<polyline class="wire" data-rail="ground" points="477,768 750,768" stroke="#273843"/>
+<rect x="750" y="680" width="290" height="160" rx="10" fill="#f0f5ef" stroke="#c8d6ce" stroke-width="2"/>
+<text x="767" y="712" class="bold" style="font-size:23px">A17 XL4016 模块 B</text>
+<text x="767" y="742" class="" style="font-size:18px">先空载调到 6.00V</text>
+<text x="767" y="769" class="" style="font-size:18px">目标 3A 连续 / 5A 短峰</text>
+<text x="717" y="712" class="" style="font-size:16px;fill:#c56b13">IN+</text>
+<text x="716" y="794" class="" style="font-size:16px">IN−</text>
+<text x="1048" y="710" class="" style="font-size:16px;fill:#7b45b5">OUT+</text>
+<text x="1048" y="793" class="" style="font-size:16px">OUT−</text>
+<polyline class="wire" data-rail="6" points="1040,722 1110,722" stroke="#7b45b5"/>
+<polyline class="wire" data-rail="ground" points="1040,768 1110,768" stroke="#273843"/>
+<text x="1110" y="670" class="" style="font-size:18px;fill:#7b45b5">TB-B 3 / 4</text>
+<rect x="1110" y="680" width="340" height="137" rx="10" fill="#fff" stroke="#c8d6ce" stroke-width="2"/>
+<text x="1127" y="712" class="bold" style="font-size:23px">P14 XT30 → MG996R</text>
+<text x="1127" y="742" class="" style="font-size:18px">正接舵机 V+，负接舵机 GND</text>
+<text x="1127" y="769" class="" style="font-size:18px">C01 1000µF/16V 就近并联</text>
+<text x="1110" y="850" class="" style="font-size:18px;fill:#7b45b5">不能从 C6 板脚给舵机供电</text>
+<rect x="48" y="461" width="370" height="142" rx="10" fill="#eaf2ee" stroke="#c8d6ce" stroke-width="2"/>
+<text x="65" y="493" class="bold" style="font-size:23px">共地不是混接正极</text>
+<text x="65" y="523" class="" style="font-size:18px">两块降压为非隔离型，已有共同参考。</text>
+<text x="65" y="550" class="" style="font-size:18px">负载负线分别回各自 OUT−。</text>
+<text x="65" y="577" class="" style="font-size:18px">5V+、6V+、24V+ 绝不互相相连。</text>
+<rect x="48" y="634" width="370" height="140" rx="10" fill="#fff" stroke="#c8d6ce" stroke-width="2"/>
+<text x="65" y="666" class="bold" style="font-size:23px">电源能力按整块模块验收</text>
+<text x="65" y="696" class="" style="font-size:18px">50V 输入电容 / 双散热片优先。</text>
+<text x="65" y="723" class="" style="font-size:18px">“XL4016 8A/12A”不是整板承诺。</text>
+<text x="65" y="750" class="" style="font-size:18px">电容不能代替降压模块的供电能力。</text>
+<rect x="799" y="614" width="270" height="46" rx="6" fill="#e9f2f7" stroke="#1777ae" stroke-width="2"/>
+<text x="812" y="644" class="" style="font-size:20px;fill:#1777ae">C6 GPIO2 · 信号输出</text>
+<polyline class="wire" data-rail="signal" points="1069,637 1090,637 1090,650 1466,650 1466,855 1270,855 1270,817" stroke="#1777ae" stroke-dasharray="9 7"/>
+<text x="870" y="891" class="" style="font-size:20px;fill:#1777ae">C6 GPIO2 → 舵机信号（拟定 50Hz / 3.3V 接受能力待测）</text>
+<text x="48" y="936" class="" style="font-size:21px">功率预算：持续 56.5W / 短峰 71.5W（两路降压按 80%）→ 24V / 5A 有预算余量；仍须实测温升与压降。</text>
+<text x="48" y="973" class="" style="font-size:18px">保险均装正线上、靠近分支起点；保险保护线路，不负责卡豆停止。停止、复位与限位仍按固件验收要求执行。</text>
+<polyline class="wire" data-rail="" points="48,1000 1452,1000" stroke="#d2ddd6"/>
+<text x="48" y="1030" class="" style="font-size:16px">2026-10-16 · 样机方案 / 尚未带载、带豆或焊接验收 · 电气连接按端子文字核对，不按图中物理引脚位置猜接</text>
+<text x="1390" y="1030" class="" style="font-size:16px">1 / 4</text>
+</svg></div></section><section class="sheet" id="page2"><h2>逐线端子表</h2><div class="viewport"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1500 1060" role="img" aria-label="端子一格一格接：把“共地”接得清楚">
+<style>text{font-family:"PingFang SC","Microsoft YaHei",sans-serif;fill:#233b38;font-size:21px} .small{font-size:18px}.tiny{font-size:16px}.title{font-size:37px;font-weight:700}.bold{font-weight:700} .wire{fill:none;stroke-linejoin:round;stroke-linecap:round;stroke-width:4}</style>
+<rect width="1500" height="1060" fill="#fafbf7"/>
+<text x="48" y="56" class="" style="font-size:16px;fill:#47786b">BEANLENS  /  V4.9  /  02</text>
+<text x="48" y="110" class="" style="font-size:37px">端子一格一格接：把“共地”接得清楚</text>
+<text x="48" y="148" class="" style="font-size:19px;fill:#657a73">P05 选德力西 TB-1506 / DHATB1506N ×2。每格上下两螺钉互通，左右相邻格原本不通。</text>
+<text x="48" y="208" class="" style="font-size:23px">TB-A：24V 输入与三路分支</text>
+<rect x="48" y="230" width="92" height="147" rx="10" fill="#e8eeea" stroke="#c8d6ce" stroke-width="2"/>
+<text x="83" y="256" class="" style="font-size:20px">1</text>
+<circle cx="94" cy="283" r="12" fill="#fafafa" stroke="#84988b" stroke-width="2"/>
+<polyline class="wire" data-rail="" points="86,283 102,283" stroke="#84988b"/>
+<circle cx="94" cy="351" r="12" fill="#fafafa" stroke="#84988b" stroke-width="2"/>
+<polyline class="wire" data-rail="" points="86,351 102,351" stroke="#84988b"/>
+<polyline class="wire" data-rail="" points="94,298 94,335" stroke="#84988b"/>
+<text x="59" y="319" class="" style="font-size:18px">24V+</text>
+<rect x="156" y="230" width="92" height="147" rx="10" fill="#e8eeea" stroke="#c8d6ce" stroke-width="2"/>
+<text x="191" y="256" class="" style="font-size:20px">2</text>
+<circle cx="202" cy="283" r="12" fill="#fafafa" stroke="#84988b" stroke-width="2"/>
+<polyline class="wire" data-rail="" points="194,283 210,283" stroke="#84988b"/>
+<circle cx="202" cy="351" r="12" fill="#fafafa" stroke="#84988b" stroke-width="2"/>
+<polyline class="wire" data-rail="" points="194,351 210,351" stroke="#84988b"/>
+<polyline class="wire" data-rail="" points="202,298 202,335" stroke="#84988b"/>
+<text x="167" y="319" class="" style="font-size:18px">24V+</text>
+<rect x="264" y="230" width="92" height="147" rx="10" fill="#e8eeea" stroke="#c8d6ce" stroke-width="2"/>
+<text x="299" y="256" class="" style="font-size:20px">3</text>
+<circle cx="310" cy="283" r="12" fill="#fafafa" stroke="#84988b" stroke-width="2"/>
+<polyline class="wire" data-rail="" points="302,283 318,283" stroke="#84988b"/>
+<circle cx="310" cy="351" r="12" fill="#fafafa" stroke="#84988b" stroke-width="2"/>
+<polyline class="wire" data-rail="" points="302,351 318,351" stroke="#84988b"/>
+<polyline class="wire" data-rail="" points="310,298 310,335" stroke="#84988b"/>
+<text x="275" y="319" class="" style="font-size:18px">24V+</text>
+<rect x="372" y="230" width="92" height="147" rx="10" fill="#e8eeea" stroke="#c8d6ce" stroke-width="2"/>
+<text x="407" y="256" class="" style="font-size:20px">4</text>
+<circle cx="418" cy="283" r="12" fill="#fafafa" stroke="#84988b" stroke-width="2"/>
+<polyline class="wire" data-rail="" points="410,283 426,283" stroke="#84988b"/>
+<circle cx="418" cy="351" r="12" fill="#fafafa" stroke="#84988b" stroke-width="2"/>
+<polyline class="wire" data-rail="" points="410,351 426,351" stroke="#84988b"/>
+<polyline class="wire" data-rail="" points="418,298 418,335" stroke="#84988b"/>
+<text x="383" y="319" class="" style="font-size:18px">0V</text>
+<rect x="480" y="230" width="92" height="147" rx="10" fill="#e8eeea" stroke="#c8d6ce" stroke-width="2"/>
+<text x="515" y="256" class="" style="font-size:20px">5</text>
+<circle cx="526" cy="283" r="12" fill="#fafafa" stroke="#84988b" stroke-width="2"/>
+<polyline class="wire" data-rail="" points="518,283 534,283" stroke="#84988b"/>
+<circle cx="526" cy="351" r="12" fill="#fafafa" stroke="#84988b" stroke-width="2"/>
+<polyline class="wire" data-rail="" points="518,351 534,351" stroke="#84988b"/>
+<polyline class="wire" data-rail="" points="526,298 526,335" stroke="#84988b"/>
+<text x="491" y="319" class="" style="font-size:18px">0V</text>
+<rect x="588" y="230" width="92" height="147" rx="10" fill="#e8eeea" stroke="#c8d6ce" stroke-width="2"/>
+<text x="623" y="256" class="" style="font-size:20px">6</text>
+<circle cx="634" cy="283" r="12" fill="#fafafa" stroke="#84988b" stroke-width="2"/>
+<polyline class="wire" data-rail="" points="626,283 642,283" stroke="#84988b"/>
+<circle cx="634" cy="351" r="12" fill="#fafafa" stroke="#84988b" stroke-width="2"/>
+<polyline class="wire" data-rail="" points="626,351 642,351" stroke="#84988b"/>
+<polyline class="wire" data-rail="" points="634,298 634,335" stroke="#84988b"/>
+<text x="599" y="319" class="" style="font-size:18px">0V</text>
+<polyline class="wire" data-rail="" points="94,391 310,391" stroke="#c56b13"/>
+<polyline class="wire" data-rail="" points="418,391 634,391" stroke="#273843"/>
+<text x="790" y="208" class="" style="font-size:23px">TB-B：5V / 6V 输出，绝不加桥条</text>
+<rect x="790" y="230" width="92" height="147" rx="10" fill="#e8eeea" stroke="#c8d6ce" stroke-width="2"/>
+<text x="825" y="256" class="" style="font-size:20px">1</text>
+<circle cx="836" cy="283" r="12" fill="#fafafa" stroke="#84988b" stroke-width="2"/>
+<polyline class="wire" data-rail="" points="828,283 844,283" stroke="#84988b"/>
+<circle cx="836" cy="351" r="12" fill="#fafafa" stroke="#84988b" stroke-width="2"/>
+<polyline class="wire" data-rail="" points="828,351 844,351" stroke="#84988b"/>
+<polyline class="wire" data-rail="" points="836,298 836,335" stroke="#84988b"/>
+<text x="801" y="319" class="" style="font-size:18px">5V+</text>
+<rect x="898" y="230" width="92" height="147" rx="10" fill="#e8eeea" stroke="#c8d6ce" stroke-width="2"/>
+<text x="933" y="256" class="" style="font-size:20px">2</text>
+<circle cx="944" cy="283" r="12" fill="#fafafa" stroke="#84988b" stroke-width="2"/>
+<polyline class="wire" data-rail="" points="936,283 952,283" stroke="#84988b"/>
+<circle cx="944" cy="351" r="12" fill="#fafafa" stroke="#84988b" stroke-width="2"/>
+<polyline class="wire" data-rail="" points="936,351 952,351" stroke="#84988b"/>
+<polyline class="wire" data-rail="" points="944,298 944,335" stroke="#84988b"/>
+<text x="909" y="319" class="" style="font-size:18px">5V−</text>
+<rect x="1006" y="230" width="92" height="147" rx="10" fill="#e8eeea" stroke="#c8d6ce" stroke-width="2"/>
+<text x="1041" y="256" class="" style="font-size:20px">3</text>
+<circle cx="1052" cy="283" r="12" fill="#fafafa" stroke="#84988b" stroke-width="2"/>
+<polyline class="wire" data-rail="" points="1044,283 1060,283" stroke="#84988b"/>
+<circle cx="1052" cy="351" r="12" fill="#fafafa" stroke="#84988b" stroke-width="2"/>
+<polyline class="wire" data-rail="" points="1044,351 1060,351" stroke="#84988b"/>
+<polyline class="wire" data-rail="" points="1052,298 1052,335" stroke="#84988b"/>
+<text x="1017" y="319" class="" style="font-size:18px">6V+</text>
+<rect x="1114" y="230" width="92" height="147" rx="10" fill="#e8eeea" stroke="#c8d6ce" stroke-width="2"/>
+<text x="1149" y="256" class="" style="font-size:20px">4</text>
+<circle cx="1160" cy="283" r="12" fill="#fafafa" stroke="#84988b" stroke-width="2"/>
+<polyline class="wire" data-rail="" points="1152,283 1168,283" stroke="#84988b"/>
+<circle cx="1160" cy="351" r="12" fill="#fafafa" stroke="#84988b" stroke-width="2"/>
+<polyline class="wire" data-rail="" points="1152,351 1168,351" stroke="#84988b"/>
+<polyline class="wire" data-rail="" points="1160,298 1160,335" stroke="#84988b"/>
+<text x="1125" y="319" class="" style="font-size:18px">6V−</text>
+<rect x="1222" y="230" width="92" height="147" rx="10" fill="#e8eeea" stroke="#c8d6ce" stroke-width="2"/>
+<text x="1257" y="256" class="" style="font-size:20px">5</text>
+<circle cx="1268" cy="283" r="12" fill="#fafafa" stroke="#84988b" stroke-width="2"/>
+<polyline class="wire" data-rail="" points="1260,283 1276,283" stroke="#84988b"/>
+<circle cx="1268" cy="351" r="12" fill="#fafafa" stroke="#84988b" stroke-width="2"/>
+<polyline class="wire" data-rail="" points="1260,351 1276,351" stroke="#84988b"/>
+<polyline class="wire" data-rail="" points="1268,298 1268,335" stroke="#84988b"/>
+<text x="1233" y="319" class="" style="font-size:18px">空</text>
+<rect x="1330" y="230" width="92" height="147" rx="10" fill="#e8eeea" stroke="#c8d6ce" stroke-width="2"/>
+<text x="1365" y="256" class="" style="font-size:20px">6</text>
+<circle cx="1376" cy="283" r="12" fill="#fafafa" stroke="#84988b" stroke-width="2"/>
+<polyline class="wire" data-rail="" points="1368,283 1384,283" stroke="#84988b"/>
+<circle cx="1376" cy="351" r="12" fill="#fafafa" stroke="#84988b" stroke-width="2"/>
+<polyline class="wire" data-rail="" points="1368,351 1384,351" stroke="#84988b"/>
+<polyline class="wire" data-rail="" points="1376,298 1376,335" stroke="#84988b"/>
+<text x="1341" y="319" class="" style="font-size:18px">空</text>
+<text x="48" y="426" class="" style="font-size:20px;fill:#c56b13">仅 TB-A 加两段配套 3 位短接片：1–2–3 一组；4–5–6 另一组。</text>
+<text x="790" y="426" class="" style="font-size:20px;fill:#7b45b5">TB-B 的 1/2/3/4 分别独立；5、6 空置。</text>
+<rect x="48" y="468" width="1400" height="37" rx="0" fill="#eaf2ed" stroke="#e1e8e2" stroke-width="2"/>
+<text x="60" y="493" class="" style="font-size:17px">线号</text>
+<text x="204" y="493" class="" style="font-size:17px">起点</text>
+<text x="660" y="493" class="" style="font-size:17px">终点</text>
+<text x="1050" y="493" class="" style="font-size:17px">导线 / 说明</text>
+<rect x="48" y="505" width="1400" height="37" rx="0" fill="#fff" stroke="#e1e8e2" stroke-width="2"/>
+<text x="60" y="530" class="" style="font-size:17px">W01</text>
+<text x="204" y="530" class="" style="font-size:17px">适配器 + → 主 4A</text>
+<text x="660" y="530" class="" style="font-size:17px">TB-A 1 上</text>
+<text x="1050" y="530" class="" style="font-size:17px">0.75mm²；先测插头极性</text>
+<rect x="48" y="542" width="1400" height="37" rx="0" fill="#eaf2ed" stroke="#e1e8e2" stroke-width="2"/>
+<text x="60" y="567" class="" style="font-size:17px">W02</text>
+<text x="204" y="567" class="" style="font-size:17px">适配器 −</text>
+<text x="660" y="567" class="" style="font-size:17px">TB-A 4 上</text>
+<text x="1050" y="567" class="" style="font-size:17px">0.75mm² 黑线</text>
+<rect x="48" y="579" width="1400" height="37" rx="0" fill="#fff" stroke="#e1e8e2" stroke-width="2"/>
+<text x="60" y="604" class="" style="font-size:17px">W03/04</text>
+<text x="204" y="604" class="" style="font-size:17px">TB-A 1 下 → 灯 2A / 4 下</text>
+<text x="660" y="604" class="" style="font-size:17px">灯带 + / −</text>
+<text x="1050" y="604" class="" style="font-size:17px">各自接一根，不借铝框回流</text>
+<rect x="48" y="616" width="1400" height="37" rx="0" fill="#eaf2ed" stroke="#e1e8e2" stroke-width="2"/>
+<text x="60" y="641" class="" style="font-size:17px">W05/06</text>
+<text x="204" y="641" class="" style="font-size:17px">TB-A 2 下 → 输入 2A / 5 下</text>
+<text x="660" y="641" class="" style="font-size:17px">模块 A IN+ / IN−</text>
+<text x="1050" y="641" class="" style="font-size:17px">24V 输入对</text>
+<rect x="48" y="653" width="1400" height="37" rx="0" fill="#fff" stroke="#e1e8e2" stroke-width="2"/>
+<text x="60" y="678" class="" style="font-size:17px">W07/08</text>
+<text x="204" y="678" class="" style="font-size:17px">TB-A 3 下 → 输入 3A / 6 下</text>
+<text x="660" y="678" class="" style="font-size:17px">模块 B IN+ / IN−</text>
+<text x="1050" y="678" class="" style="font-size:17px">24V 输入对</text>
+<rect x="48" y="690" width="1400" height="37" rx="0" fill="#eaf2ed" stroke="#e1e8e2" stroke-width="2"/>
+<text x="60" y="715" class="" style="font-size:17px">W09/10</text>
+<text x="204" y="715" class="" style="font-size:17px">模块 A OUT+ / OUT−</text>
+<text x="660" y="715" class="" style="font-size:17px">TB-B 1 上 / 2 上</text>
+<text x="1050" y="715" class="" style="font-size:17px">5V 输出对</text>
+<rect x="48" y="727" width="1400" height="37" rx="0" fill="#fff" stroke="#e1e8e2" stroke-width="2"/>
+<text x="60" y="752" class="" style="font-size:17px">W11/12</text>
+<text x="204" y="752" class="" style="font-size:17px">TB-B 1 下 / 2 下</text>
+<text x="660" y="752" class="" style="font-size:17px">P09 配电板 + / −</text>
+<text x="1050" y="752" class="" style="font-size:17px">USB + 独立辅助焊盘/端子</text>
+<rect x="48" y="764" width="1400" height="37" rx="0" fill="#eaf2ed" stroke="#e1e8e2" stroke-width="2"/>
+<text x="60" y="789" class="" style="font-size:17px">W13/14</text>
+<text x="204" y="789" class="" style="font-size:17px">模块 B OUT+ / OUT−</text>
+<text x="660" y="789" class="" style="font-size:17px">TB-B 3 上 / 4 上</text>
+<text x="1050" y="789" class="" style="font-size:17px">6V 输出对</text>
+<rect x="48" y="801" width="1400" height="37" rx="0" fill="#fff" stroke="#e1e8e2" stroke-width="2"/>
+<text x="60" y="826" class="" style="font-size:17px">W15/16</text>
+<text x="204" y="826" class="" style="font-size:17px">TB-B 3 下 / 4 下</text>
+<text x="660" y="826" class="" style="font-size:17px">XT30 → 舵机 V+ / GND</text>
+<text x="1050" y="826" class="" style="font-size:17px">0.75mm²；电容并在舵机近端</text>
+<rect x="48" y="838" width="1400" height="37" rx="0" fill="#eaf2ed" stroke="#e1e8e2" stroke-width="2"/>
+<text x="60" y="863" class="" style="font-size:17px">W17</text>
+<text x="204" y="863" class="" style="font-size:17px">C6 GPIO2</text>
+<text x="660" y="863" class="" style="font-size:17px">舵机 SIGNAL</text>
+<text x="1050" y="863" class="" style="font-size:17px">只传信号，必要时加 O01 缓冲</text>
+<rect x="48" y="900" width="678" height="77" rx="10" fill="#fff6e9" stroke="#c8d6ce" stroke-width="2"/>
+<text x="65" y="932" class="bold" style="font-size:23px">压接与绝缘</text>
+<text x="65" y="962" class="" style="font-size:18px">TB 螺钉配 M3 叉形/环形压接端子；降压板端口用合适管形端头。</text>
+<rect x="750" y="900" width="698" height="77" rx="10" fill="#eee9f6" stroke="#c8d6ce" stroke-width="2"/>
+<text x="767" y="932" class="bold" style="font-size:23px">不要额外拉三根“地线桥”</text>
+<text x="767" y="962" class="" style="font-size:18px">TB-B 2/4 不再外接 TB-A 4；共地已通过非隔离降压内部实现。</text>
+<polyline class="wire" data-rail="" points="48,1000 1452,1000" stroke="#d2ddd6"/>
+<text x="48" y="1030" class="" style="font-size:16px">2026-10-16 · 样机方案 / 尚未带载、带豆或焊接验收 · 电气连接按端子文字核对，不按图中物理引脚位置猜接</text>
+<text x="1390" y="1030" class="" style="font-size:16px">2 / 4</text>
+</svg></div></section><section class="sheet" id="page3"><h2>PP连续料斗 / 闸片分解</h2><div class="viewport"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1500 1060" role="img" aria-label="四片 PP 焊成一个料斗，五槽只留两块座">
+<style>text{font-family:"PingFang SC","Microsoft YaHei",sans-serif;fill:#233b38;font-size:21px} .small{font-size:18px}.tiny{font-size:16px}.title{font-size:37px;font-weight:700}.bold{font-weight:700} .wire{fill:none;stroke-linejoin:round;stroke-linecap:round;stroke-width:4}</style>
+<rect width="1500" height="1060" fill="#fafbf7"/>
+<text x="48" y="56" class="" style="font-size:16px;fill:#47786b">BEANLENS  /  V4.9  /  03</text>
+<text x="48" y="110" class="" style="font-size:37px">四片 PP 焊成一个料斗，五槽只留两块座</text>
+<text x="48" y="148" class="" style="font-size:19px;fill:#657a73">上料斗与 PP 上座可以焊为一个可取出的模块；滑动机构仍可拆，避免清洁与卡豆维修被焊死。尺寸单位 mm。</text>
+<text x="48" y="205" class="" style="font-size:21px;fill:#718078">原 V4.8：8 片斗板 + 中间双法兰 + 多层五窗</text>
+<text x="48" y="240" class="" style="font-size:19px">作用是便于薄片加工和调整；不是五槽必须这样做。</text>
+<text x="48" y="280" class="" style="font-size:24px;fill:#18765d">V4.9 推荐：4 片连续斜板 + 单块 PP6 上座</text>
+<polygon points="174.91,320 525.09,320 457.59000000000003,674.25 242.41,674.25" fill="#e0eee6" stroke="#739a8b" stroke-width="2"/>
+<rect x="130.0" y="312.5" width="440.0" height="7.5" rx="0" fill="#bdd7c7" stroke="#c8d6ce" stroke-width="2"/>
+<polyline class="wire" data-rail="" points="180.0,320 247.5,674.25" stroke="#8da898"/>
+<polyline class="wire" data-rail="" points="520.0,320 452.5,674.25" stroke="#8da898"/>
+<text x="218" y="308" class="" style="font-size:20px">顶内口 136×136，Z440</text>
+<text x="189" y="494" class="" style="font-size:22px">PP-H 2mm 法向板厚</text>
+<text x="192" y="533" class="" style="font-size:21px">内高 141.7 / 连续四片</text>
+<polyline class="wire" data-rail="" points="545,320 580,320 580,674.25 475,674.25" stroke="#6d887b"/>
+<text x="600" y="510" class="" style="font-size:20px">141.7</text>
+<text x="177" y="710" class="" style="font-size:20px">底内口 82×12，Z298.3</text>
+<g id="upper-seat">
+<rect x="175" y="674.25" width="350" height="15" rx="0" fill="#65aa89" stroke="#c8d6ce" stroke-width="2"/>
+<polygon points="242.41,674.25 232.41,674.25 240.41,665.25" fill="#d88944" stroke="#739a8b" stroke-width="2"/>
+<polygon points="457.59000000000003,674.25 467.59000000000003,674.25 459.59000000000003,665.25" fill="#d88944" stroke="#739a8b" stroke-width="2"/>
+</g>
+<text x="60" y="757" class="" style="font-size:20px">PP6 上座：140×30×6，五孔 14×12</text>
+<g id="gate-layer">
+<rect x="212.5" y="788" width="275" height="5" rx="0" fill="#b6bdc0" stroke="#757e83" stroke-width="2"/>
+<text x="62" y="822" class="" style="font-size:20px">铝闸片 110×45×2；前后移动 15</text>
+</g>
+<g id="lower-seat">
+<rect x="175" y="861" width="350" height="25" rx="0" fill="#3f5865" stroke="#c8d6ce" stroke-width="2"/>
+<text x="62" y="920" class="" style="font-size:20px">POM10 下座：140×18×10，可拆</text>
+</g>
+<text x="65" y="963" class="" style="font-size:19px;fill:#7b45b5">以上为分解示意；实际闸缝 Z290–292.3 = 2.3</text>
+<rect x="742" y="196" width="706" height="172" rx="10" fill="#eaf3eb" stroke="#c8d6ce" stroke-width="2"/>
+<text x="759" y="228" class="bold" style="font-size:23px">五槽是五个孔，不是五个盒子</text>
+<text x="759" y="258" class="" style="font-size:18px">PP 上座 / POM 下座各直接加工同样五孔。</text>
+<text x="759" y="285" class="" style="font-size:18px">孔宽 14，前后孔深 12，隔肋 3，总活跃宽度 82。</text>
+<text x="759" y="312" class="" style="font-size:18px">上座焊接冷却后检查平整，再装闸片与下座。</text>
+<text x="759" y="339" class="" style="font-size:18px">内角暂按 R1.5；孔缘倒钝，先做单槽流豆试验。</text>
+<rect x="853" y="394" width="70" height="60" rx="2" fill="#fff" stroke="#377b61" stroke-width="2"/>
+<rect x="938" y="394" width="70" height="60" rx="2" fill="#fff" stroke="#377b61" stroke-width="2"/>
+<rect x="1023" y="394" width="70" height="60" rx="2" fill="#fff" stroke="#377b61" stroke-width="2"/>
+<rect x="1108" y="394" width="70" height="60" rx="2" fill="#fff" stroke="#377b61" stroke-width="2"/>
+<rect x="1193" y="394" width="70" height="60" rx="2" fill="#fff" stroke="#377b61" stroke-width="2"/>
+<text x="775" y="484" class="" style="font-size:19px">俯视：14 | 3 | 14 | 3 | 14 | 3 | 14 | 3 | 14</text>
+<rect x="742" y="522" width="706" height="172" rx="10" fill="#fff" stroke="#c8d6ce" stroke-width="2"/>
+<text x="759" y="554" class="bold" style="font-size:23px">焊接范围与可拆范围</text>
+<text x="759" y="584" class="" style="font-size:18px">外侧焊四条斜缝 + 斗底外侧围焊到 PP 上座。</text>
+<text x="759" y="611" class="" style="font-size:18px">内面应平顺；毛刺/焊瘤会挂豆，先试焊再处理。</text>
+<text x="759" y="638" class="" style="font-size:18px">取消中间双法兰、硅胶垫、4 个连接螺栓。</text>
+<text x="759" y="665" class="" style="font-size:18px">顶承托法兰仍保留；POM 与 PP 不互相热风焊接。</text>
+<rect x="742" y="716" width="706" height="122" rx="10" fill="#fff6e9" stroke="#c8d6ce" stroke-width="2"/>
+<text x="759" y="748" class="bold" style="font-size:23px">与双屏的名义净空重新计算</text>
+<text x="759" y="778" class="" style="font-size:18px">预留外焊筋横向 4 后：前屏约 15.4，侧屏约 14.4。</text>
+<text x="759" y="805" class="" style="font-size:18px">这是 V4.8 屏幕服务包络与新斗面的几何检查；</text>
+<text x="759" y="832" class="" style="font-size:18px">完整插头、线缆弯曲、焊接变形仍须实物试配。</text>
+<rect x="742" y="860" width="706" height="130" rx="10" fill="#fff" stroke="#c8d6ce" stroke-width="2"/>
+<text x="759" y="892" class="bold" style="font-size:23px">下座为何只有 18 深？</text>
+<text x="759" y="922" class="" style="font-size:18px">保持下座 Z280–290；30 深的整块下座可能撞后方导轨。</text>
+<text x="759" y="949" class="" style="font-size:18px">后部退片护罩、连杆耳高度、Z277 光束 / 脚座避让仍待试配。</text>
+<text x="759" y="976" class="" style="font-size:18px">名义容积约 1.22L；不能据此承诺能装 1kg 生豆。</text>
+<polyline class="wire" data-rail="" points="48,1000 1452,1000" stroke="#d2ddd6"/>
+<text x="48" y="1030" class="" style="font-size:16px">2026-10-16 · 样机方案 / 尚未带载、带豆或焊接验收 · 电气连接按端子文字核对，不按图中物理引脚位置猜接</text>
+<text x="1390" y="1030" class="" style="font-size:16px">3 / 4</text>
+</svg></div></section><section class="sheet" id="page4"><h2>电源盒 / 上电顺序</h2><div class="viewport"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1500 1060" role="img" aria-label="电源盒放在机外，先调电压，再接设备">
+<style>text{font-family:"PingFang SC","Microsoft YaHei",sans-serif;fill:#233b38;font-size:21px} .small{font-size:18px}.tiny{font-size:16px}.title{font-size:37px;font-weight:700}.bold{font-weight:700} .wire{fill:none;stroke-linejoin:round;stroke-linecap:round;stroke-width:4}</style>
+<rect width="1500" height="1060" fill="#fafbf7"/>
+<text x="48" y="56" class="" style="font-size:16px;fill:#47786b">BEANLENS  /  V4.9  /  04</text>
+<text x="48" y="110" class="" style="font-size:37px">电源盒放在机外，先调电压，再接设备</text>
+<text x="48" y="148" class="" style="font-size:19px;fill:#657a73">低价 XL4016 双散热板不能假定塞得进原 21mm 后腔。推荐另配 ABS 盒，避免修改双屏与豆路空间。</text>
+<text x="48" y="205" class="" style="font-size:23px">P11 ABS 盒：外形 200×150×80，尺寸为采购起点</text>
+<rect x="70" y="249" width="544.0" height="384.0" rx="5" fill="#e9eeea" stroke="#71867b" stroke-width="2"/>
+<rect x="86.0" y="265.0" width="208.0" height="176.0" rx="6" fill="#fff" stroke="#c4323d" stroke-width="2"/>
+<text x="96.0" y="284" class="" style="font-size:20px;fill:#c4323d">模块 A → 5V</text>
+<text x="96.0" y="317" class="" style="font-size:18px">≤65×55×30</text>
+<text x="96.0" y="347" class="" style="font-size:16px">采购包络，非实测</text>
+<rect x="342.0" y="265.0" width="208.0" height="176.0" rx="6" fill="#fff" stroke="#7b45b5" stroke-width="2"/>
+<text x="352.0" y="284" class="" style="font-size:20px;fill:#7b45b5">模块 B → 6V</text>
+<text x="352.0" y="317" class="" style="font-size:18px">≤65×55×30</text>
+<text x="352.0" y="347" class="" style="font-size:16px">采购包络，非实测</text>
+<rect x="86.0" y="473.0" width="235.20000000000002" height="70.4" rx="10" fill="#cdd9d0" stroke="#c8d6ce" stroke-width="2"/>
+<text x="96.0" y="516.0" class="" style="font-size:19px">TB-A 24V</text>
+<rect x="342.0" y="473.0" width="235.20000000000002" height="70.4" rx="10" fill="#cdd9d0" stroke="#c8d6ce" stroke-width="2"/>
+<text x="352.0" y="516.0" class="" style="font-size:19px">TB-B 5V/6V</text>
+<text x="91" y="601.0" class="" style="font-size:18px">余区：4 路保险座 / 线槽，按到货件排布</text>
+<text x="70" y="683" class="" style="font-size:18px">示意安装板 170×120×2；留通风孔、线夹和约 6mm 绝缘支柱。</text>
+<text x="70" y="716" class="" style="font-size:18px">不能把板上散热片当绝缘件；裸焊点、端子与盒盖保持间距。</text>
+<rect x="742" y="190" width="706" height="156" rx="10" fill="#fff" stroke="#c8d6ce" stroke-width="2"/>
+<text x="759" y="222" class="bold" style="font-size:23px">采购先核这几条</text>
+<text x="759" y="252" class="" style="font-size:18px">XL4016E1 双散热、CC/CV 可调、输入电容 50V。</text>
+<text x="759" y="279" class="" style="font-size:18px">卖家确认 24→5V / 4A 与 24→6V / 3A 工况；峰值另验。</text>
+<text x="759" y="306" class="" style="font-size:18px">整板尺寸 / 端子电流 / CC 操作方法按所购板资料。</text>
+<text x="759" y="333" class="" style="font-size:18px">两块总损耗预算约 9.5W，通风不足时加 5V 4010 风扇。</text>
+<rect x="742" y="366" width="706" height="176" rx="10" fill="#eaf3eb" stroke="#c8d6ce" stroke-width="2"/>
+<text x="759" y="398" class="bold" style="font-size:23px">第一次上电的顺序</text>
+<text x="759" y="428" class="" style="font-size:18px">1 断开主板、舵机、灯带；检查正负与端子桥条。</text>
+<text x="759" y="455" class="" style="font-size:18px">2 仅给降压供 24V，用万用表调 5.00V / 6.00V。</text>
+<text x="759" y="482" class="" style="font-size:18px">3 用电子负载核电流与温升；不明 CC 操作不要接舵机。</text>
+<text x="759" y="509" class="" style="font-size:18px">4 断电接主板，量插头端 5V；再断电接空载舵机。</text>
+<text x="759" y="536" class="" style="font-size:18px">5 最后分阶段到单槽 / 五槽，记录压降、温升与超时。</text>
+<rect x="742" y="562" width="706" height="149" rx="10" fill="#fff" stroke="#c8d6ce" stroke-width="2"/>
+<text x="759" y="594" class="bold" style="font-size:23px">接口分开，减少误插</text>
+<text x="759" y="624" class="" style="font-size:18px">5V：双 USB-A → A→C 成品线；BOX 只用 Type-C1 供电。</text>
+<text x="759" y="651" class="" style="font-size:18px">6V：XT30 两芯，电源端使用不露导体的配对方向。</text>
+<text x="759" y="678" class="" style="font-size:18px">24V：单独两芯端子 → 灯带，显著标 24V。</text>
+<text x="759" y="705" class="" style="font-size:18px">USB 联电脑调试时先断该板外部 5V，避免两路 VBUS 并供。</text>
+<rect x="742" y="731" width="706" height="245" rx="10" fill="#eee9f6" stroke="#c8d6ce" stroke-width="2"/>
+<text x="759" y="763" class="bold" style="font-size:23px">可选 O01：舵机不认 3.3V PWM 时再加</text>
+<text x="759" y="793" class="" style="font-size:18px">TI SN74AHCT1G125DBVR + SOT23-5 转接板。</text>
+<text x="759" y="820" class="" style="font-size:18px">模块 VCC → 5V；GND 与 /OE → 逻辑地。</text>
+<text x="759" y="847" class="" style="font-size:18px">GPIO2 → IN（10k 下拉）；OUT → 100Ω → 舵机信号。</text>
+<text x="759" y="874" class="" style="font-size:18px">VCC/GND 旁放 100nF；按原厂脚位接，禁止把 VCC 接 6V。</text>
+<text x="759" y="901" class="" style="font-size:18px">停止/失联先撤销送料许可；卡豆超时后停止加力。</text>
+<text x="759" y="928" class="" style="font-size:18px">插排总开关不是硬件急停，断电也不保证闸门自行关闭。</text>
+<rect x="48" y="758" width="635" height="218" rx="10" fill="#fff" stroke="#c8d6ce" stroke-width="2"/>
+<text x="65" y="790" class="bold" style="font-size:23px">更容易搜索的关键词</text>
+<text x="65" y="820" class="" style="font-size:18px">航嘉 HKA12024050-7B 24V5A</text>
+<text x="65" y="847" class="" style="font-size:18px">XL4016 恒流恒压 双散热 50V电容</text>
+<text x="65" y="874" class="" style="font-size:18px">德力西 TB1506 端子排 + 配套3位短接片</text>
+<text x="65" y="901" class="" style="font-size:18px">ABS 接线盒 200 150 80 / XT30 插头</text>
+<text x="65" y="928" class="" style="font-size:18px">32V MINI 保险座 / M3 0.75平方叉形端子</text>
+<text x="65" y="955" class="" style="font-size:18px">电源包预算约 ¥200–370，非卖家现价，不含工具运费。</text>
+<polyline class="wire" data-rail="" points="48,1000 1452,1000" stroke="#d2ddd6"/>
+<text x="48" y="1030" class="" style="font-size:16px">2026-10-16 · 样机方案 / 尚未带载、带豆或焊接验收 · 电气连接按端子文字核对，不按图中物理引脚位置猜接</text>
+<text x="1390" y="1030" class="" style="font-size:16px">4 / 4</text>
+</svg></div></section></main><footer style="padding:25px">原厂资料：<a href="https://en.huntkey.com/erp-information/huntkey/hka12024050-6b-hka12024050-7b/">航嘉</a> · <a href="https://www.xlsemi.com/datasheet/XL4016-EN.pdf">XLSEMI</a> · <a href="https://www.delixi-electric.com/u/cms/delixi/201805/09095528ac23.pdf">德力西</a> · <a href="https://www.ti.com/product/SN74AHCT1G125">TI</a>。孔位、光束避让、退片全行程与带载温升仍待试配。</footer><script>
+const rail=document.getElementById('rail'),zoom=document.getElementById('zoom');function update(){document.body.classList.toggle('focused',!!rail.value);document.querySelectorAll('.wire[data-rail]').forEach(e=>e.classList.toggle('active',e.dataset.rail===rail.value));document.querySelectorAll('svg').forEach(e=>e.style.width=zoom.value+'%');document.getElementById('zout').textContent=zoom.value+'%'}rail.onchange=update;zoom.oninput=update;document.getElementById('reset').onclick=()=>{rail.value='';zoom.value='100';update()};update();
+</script></html>

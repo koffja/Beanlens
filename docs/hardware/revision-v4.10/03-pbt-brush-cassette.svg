@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1500 1060" role="img" aria-label="PBT刷在五槽入口，夹在可拆刷盒里，不塞进10mm下座">
+<style>text{font-family:"PingFang SC","Microsoft YaHei",sans-serif;fill:#253c36;font-size:21px}.wire{fill:none;stroke-width:3;stroke-linecap:round;stroke-linejoin:round}.bold{font-weight:700}</style><rect width="1500" height="1060" fill="#fafbf7"/>
+<text x="48" y="55" class="" style="font-size:16px;fill:#477d67">BEANLENS / V4.10 / 03</text>
+<text x="48" y="108" class="" style="font-size:36px">PBT刷在五槽入口，夹在可拆刷盒里，不塞进10mm下座</text>
+<text x="48" y="148" class="" style="font-size:19px;fill:#667c71">五槽分道片从上座顶 Z298.3 向上延伸到 Z318.3。前后各5段轻刷，刷根在斗外，刷毛经小槽伸入。</text>
+<text x="48" y="200" class="" style="font-size:22px">从正面看五槽 / 前排刷根位置（后排相同）</text>
+<rect x="195.20000000000002" y="240" width="18.6" height="180" rx="0" fill="#bddbc7" stroke="#669478" stroke-width="2"/>
+<rect x="300.6" y="240" width="18.6" height="180" rx="0" fill="#bddbc7" stroke="#669478" stroke-width="2"/>
+<rect x="406.0" y="240" width="18.6" height="180" rx="0" fill="#bddbc7" stroke="#669478" stroke-width="2"/>
+<rect x="511.40000000000003" y="240" width="18.6" height="180" rx="0" fill="#bddbc7" stroke="#669478" stroke-width="2"/>
+<rect x="114.6" y="275" width="74.4" height="36" rx="2" fill="#d2b28a" stroke="#956f3b" stroke-width="2"/>
+<polyline class="wire" points="120.80000000000001,311 120.80000000000001,361" stroke="#b08d51"/>
+<polyline class="wire" points="131.13333333333338,311 131.13333333333338,361" stroke="#b08d51"/>
+<polyline class="wire" points="141.46666666666664,311 141.46666666666664,361" stroke="#b08d51"/>
+<polyline class="wire" points="151.8,311 151.8,361" stroke="#b08d51"/>
+<polyline class="wire" points="162.13333333333338,311 162.13333333333338,361" stroke="#b08d51"/>
+<polyline class="wire" points="172.46666666666664,311 172.46666666666664,361" stroke="#b08d51"/>
+<polyline class="wire" points="182.8,311 182.8,361" stroke="#b08d51"/>
+<text x="127.0" y="231" class="" style="font-size:21px">1</text>
+<rect x="220.0" y="275" width="74.4" height="36" rx="2" fill="#d2b28a" stroke="#956f3b" stroke-width="2"/>
+<polyline class="wire" points="226.20000000000002,311 226.20000000000002,361" stroke="#b08d51"/>
+<polyline class="wire" points="236.53333333333336,311 236.53333333333336,361" stroke="#b08d51"/>
+<polyline class="wire" points="246.86666666666665,311 246.86666666666665,361" stroke="#b08d51"/>
+<polyline class="wire" points="257.20000000000005,311 257.20000000000005,361" stroke="#b08d51"/>
+<polyline class="wire" points="267.53333333333336,311 267.53333333333336,361" stroke="#b08d51"/>
+<polyline class="wire" points="277.8666666666667,311 277.8666666666667,361" stroke="#b08d51"/>
+<polyline class="wire" points="288.20000000000005,311 288.20000000000005,361" stroke="#b08d51"/>
+<text x="232.4" y="231" class="" style="font-size:21px">2</text>
+<rect x="325.40000000000003" y="275" width="74.4" height="36" rx="2" fill="#d2b28a" stroke="#956f3b" stroke-width="2"/>
+<polyline class="wire" points="331.6,311 331.6,361" stroke="#b08d51"/>
+<polyline class="wire" points="341.9333333333334,311 341.9333333333334,361" stroke="#b08d51"/>
+<polyline class="wire" points="352.26666666666665,311 352.26666666666665,361" stroke="#b08d51"/>
+<polyline class="wire" points="362.6,311 362.6,361" stroke="#b08d51"/>
+<polyline class="wire" points="372.9333333333334,311 372.9333333333334,361" stroke="#b08d51"/>
+<polyline class="wire" points="383.26666666666665,311 383.26666666666665,361" stroke="#b08d51"/>
+<polyline class="wire" points="393.6,311 393.6,361" stroke="#b08d51"/>
+<text x="337.8" y="231" class="" style="font-size:21px">3</text>
+<rect x="430.8" y="275" width="74.4" height="36" rx="2" fill="#d2b28a" stroke="#956f3b" stroke-width="2"/>
+<polyline class="wire" points="437.0,311 437.0,361" stroke="#b08d51"/>
+<polyline class="wire" points="447.33333333333337,311 447.33333333333337,361" stroke="#b08d51"/>
+<polyline class="wire" points="457.66666666666663,311 457.66666666666663,361" stroke="#b08d51"/>
+<polyline class="wire" points="468.0,311 468.0,361" stroke="#b08d51"/>
+<polyline class="wire" points="478.3333333333333,311 478.3333333333333,361" stroke="#b08d51"/>
+<polyline class="wire" points="488.66666666666674,311 488.66666666666674,361" stroke="#b08d51"/>
+<polyline class="wire" points="499.0,311 499.0,361" stroke="#b08d51"/>
+<text x="443.2" y="231" class="" style="font-size:21px">4</text>
+<rect x="536.2" y="275" width="74.4" height="36" rx="2" fill="#d2b28a" stroke="#956f3b" stroke-width="2"/>
+<polyline class="wire" points="542.4000000000001,311 542.4000000000001,361" stroke="#b08d51"/>
+<polyline class="wire" points="552.7333333333333,311 552.7333333333333,361" stroke="#b08d51"/>
+<polyline class="wire" points="563.0666666666667,311 563.0666666666667,361" stroke="#b08d51"/>
+<polyline class="wire" points="573.4000000000001,311 573.4000000000001,361" stroke="#b08d51"/>
+<polyline class="wire" points="583.7333333333332,311 583.7333333333332,361" stroke="#b08d51"/>
+<polyline class="wire" points="594.0666666666667,311 594.0666666666667,361" stroke="#b08d51"/>
+<polyline class="wire" points="604.4,311 604.4,361" stroke="#b08d51"/>
+<text x="548.6" y="231" class="" style="font-size:21px">5</text>
+<polyline class="wire" points="83.6,430 641.6,430" stroke="#7d8c84"/>
+<text x="65" y="465" class="" style="font-size:19px">孔口14×12；隔肋3；不是在3mm肋里塞两副刷背。</text>
+<text x="65" y="503" class="" style="font-size:19px">每段基条12×6×3，毛簇有效宽10；共10段。</text>
+<text x="65" y="541" class="" style="font-size:19px">两条110×10×3载条，110×8×2压条夹紧。</text>
+<text x="65" y="579" class="" style="font-size:19px">刷段由厂家植毛并封端；不能用散毛加热熔胶粘。</text>
+<rect x="48" y="630" width="636" height="336" rx="8" fill="#eaf3ea" stroke="#c6d6ca" stroke-width="2"/>
+<text x="64" y="661" class="bold" style="font-size:23px">安装与调整</text>
+<text x="64" y="691" class="" style="font-size:18px">① 先买样段，确认PP基条 / PBT毛径 / 植毛牢度。</text>
+<text x="64" y="718" class="" style="font-size:18px">② 斗片上每面开5个11×4圆角毛槽，先去毛刺。</text>
+<text x="64" y="745" class="" style="font-size:18px">③ 焊斗与4片分道片，冷却后再装刷盒。</text>
+<text x="64" y="772" class="" style="font-size:18px">④ 载条前后调±2mm，毛尖每侧侵入先取1.5。</text>
+<text x="64" y="799" class="" style="font-size:18px">⑤ 外加可拆PP防豆背罩，把刷根与槽口围住。</text>
+<text x="64" y="826" class="" style="font-size:18px">⑥ 先无刷试豆，再带刷；碎豆能过、无脱毛。</text>
+<text x="64" y="853" class="" style="font-size:18px">⑦ 刷阻大先减侵入，不靠加大舵机力压豆。</text>
+<text x="64" y="880" class="" style="font-size:18px">毛槽与夹盒按样件定孔，图中不是最终植毛加工图。</text>
+<text x="64" y="907" class="" style="font-size:18px">刷条不保证单豆分离，也不替代图像计数。</text>
+<polygon points="850.0529287226536,430 920.059985885674,590 898.2293207945163,590 828.2222636314959,430" fill="#d4e9db" stroke="#50896b" stroke-width="2"/>
+<polyline class="wire" points="796.3146650650974,480 917.5582215949189,550.0" stroke="#af8147"/>
+<rect x="766.3146650650974" y="455" width="30" height="50" rx="1" fill="#d0ad79" stroke="#987043" stroke-width="2"/>
+<polyline class="wire" points="796.3146650650974,515 917.5582215949189,585.0" stroke="#987043" stroke-dasharray="8 6"/>
+<text x="1051" y="472" class="" style="font-size:20px">前壁PP2</text>
+<text x="1051" y="512" class="" style="font-size:20px">毛长14，向下30°</text>
+<text x="1051" y="552" class="" style="font-size:20px">尖端 Z308</text>
+<text x="1051" y="589" class="" style="font-size:20px">侵入1.5（初试）</text>
+<text x="756" y="633" class="" style="font-size:18px">前根Y≈99.13 / 后根Y≈140.87，根Z315</text>
+<text x="756" y="666" class="" style="font-size:18px">前后对称不是硬挤住豆：毛尖间距与豆样实测调整。</text>
+<rect x="744" y="190" width="704" height="171" rx="8" fill="#fff" stroke="#c6d6ca" stroke-width="2"/>
+<text x="760" y="221" class="bold" style="font-size:23px">这里能放得下的原因</text>
+<text x="760" y="251" class="" style="font-size:18px">用斗底20mm高的分道区装刷，保留原料斗容积。</text>
+<text x="760" y="278" class="" style="font-size:18px">4片PP3分道片：高20，上深29.50 / 下深12。</text>
+<text x="760" y="305" class="" style="font-size:18px">刷毛尖端 Z308，离闸缝顶 Z292.3 约15.7。</text>
+<text x="760" y="332" class="" style="font-size:18px">下面10mm短出豆孔保持通畅，光电/相机位置不下移。</text>
+<rect x="744" y="716" width="704" height="250" rx="8" fill="#fff3dc" stroke="#c6d6ca" stroke-width="2"/>
+<text x="760" y="747" class="bold" style="font-size:23px">夹持细节与仍须实配的部分</text>
+<text x="760" y="777" class="" style="font-size:18px">载条X55–165，刷毛簇中心X76/93/110/127/144。</text>
+<text x="760" y="804" class="" style="font-size:18px">压条开5个11×3出毛窗，不可把毛根夹死。</text>
+<text x="760" y="831" class="" style="font-size:18px">每排6颗M2候选：X59/84.5/101.5/118.5/135.5/161。</text>
+<text x="760" y="858" class="" style="font-size:18px">M2×12为堆叠起点，螺母与尖头全部位于豆路外。</text>
+<text x="760" y="885" class="" style="font-size:18px">4只外置PP小托架用长孔给前后调节，不让毛束夹硬。</text>
+<text x="760" y="912" class="" style="font-size:18px">外侧罩按斜斗面配形；后排刷盒与后罩/连杆联合试配。</text>
+<text x="760" y="939" class="" style="font-size:18px">不采购缺少植毛/封端资料的“相似小刷条”。</text>
+<polyline class="wire" points="48,1000 1452,1000" stroke="#d3ded4"/>
+<text x="48" y="1030" class="" style="font-size:16px">2026-10-16 · 方案尺寸，非实物验收 · 先试焊 / 手推 / 无刷与带刷单槽对照，再五槽联调</text>
+<text x="1390" y="1030" class="" style="font-size:16px">3 / 5</text>
+</svg>

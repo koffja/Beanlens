@@ -1,0 +1,39 @@
+{
+  "date": "2026-10-17",
+  "sheets": 6,
+  "gateTransform": "translate(105 0)",
+  "gateLabel": "100% · 前缘Y127.5",
+  "played": true,
+  "zoom": "150%",
+  "bounds": [
+    {
+      "page": 1,
+      "outside": []
+    },
+    {
+      "page": 2,
+      "outside": []
+    },
+    {
+      "page": 3,
+      "outside": []
+    },
+    {
+      "page": 4,
+      "outside": []
+    },
+    {
+      "page": 5,
+      "outside": []
+    },
+    {
+      "page": 6,
+      "outside": []
+    }
+  ],
+  "bomcount": 114,
+  "filtered": 1,
+  "resetcount": 114,
+  "errors": [],
+  "scope": "Offline browser rendering / interaction / PDF export only, not electrical or physical validation"
+}

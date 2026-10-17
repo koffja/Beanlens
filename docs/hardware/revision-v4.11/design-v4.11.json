@@ -1,0 +1,475 @@
+{
+  "revision": "V4.11",
+  "date": "2026-10-17",
+  "status": "proposal_not_bench_or_physical_validated",
+  "confirmed_user_requirement": "Continuous front wall; gate enters from rear and closes inside front landing.",
+  "hopper": {
+    "top_inner_wh_mm": [
+      136,
+      136
+    ],
+    "bottom_inner_wh_mm": [
+      82,
+      12
+    ],
+    "height_mm": 141.7,
+    "top_z_mm": 440,
+    "bottom_z_mm": 298.3,
+    "normal_wall_thickness_mm": 2,
+    "top_outer_wh_mm": [
+      140.0719661842903,
+      140.36613301823152
+    ],
+    "bottom_outer_wh_mm": [
+      86.07196618429029,
+      16.366133018231523
+    ],
+    "front_back_outer_face_trapezoid_mm": [
+      140.0719661842903,
+      86.07196618429029,
+      154.6702621708517
+    ],
+    "left_right_outer_face_trapezoid_mm": [
+      140.36613301823152,
+      16.366133018231523,
+      144.24940207848348
+    ],
+    "side_miter_from_square_deg": 42.84852865085831,
+    "upper_seat_xyz_mm": [
+      40,
+      105,
+      292.3
+    ],
+    "upper_seat_size_mm": [
+      140,
+      30,
+      6
+    ],
+    "lower_seat_xyz_mm": [
+      40,
+      105,
+      280
+    ],
+    "lower_seat_size_mm": [
+      140,
+      24,
+      10
+    ],
+    "upper_seat_material": "PP-H",
+    "lower_seat_material": "PP-H",
+    "gate_gap_z_mm": [
+      290,
+      292.3
+    ],
+    "gate_thickness_mm": 2,
+    "stroke_mm": 15,
+    "windows_x_mm": [
+      69,
+      86,
+      103,
+      120,
+      137
+    ],
+    "windows_y_mm": 114,
+    "window_wh_mm": [
+      14,
+      12
+    ],
+    "partition_mm": 3,
+    "nominal_volume_l": 1.2220208,
+    "weld_horizontal_keepout_mm": 4,
+    "screen_clearance_mm": {
+      "front": 15.443609567101603,
+      "right": 14.443903993246522
+    },
+    "status": "normal_thickness_geometry_proposal; weld shrinkage / end bevel / holes / flow require mockup"
+  },
+  "body": {
+    "upper_pp_mm": [
+      140,
+      30,
+      6
+    ],
+    "upper_xyz": [
+      40,
+      105,
+      292.3
+    ],
+    "lower_pp_mm": [
+      140,
+      24,
+      10
+    ],
+    "lower_xyz": [
+      40,
+      105,
+      280
+    ],
+    "front_bridge_pp_mm": [
+      140,
+      2,
+      18.3
+    ],
+    "front_bridge_xyz": [
+      40,
+      103,
+      280
+    ],
+    "side_cheek_pp_mm": [
+      2,
+      32,
+      15.3
+    ],
+    "side_cheek_xyz": [
+      [
+        38,
+        103,
+        283
+      ],
+      [
+        180,
+        103,
+        283
+      ]
+    ],
+    "spacers_pp_mm": [
+      10,
+      24,
+      2.3
+    ],
+    "spacer_xyz": [
+      [
+        40,
+        105,
+        290
+      ],
+      [
+        170,
+        105,
+        290
+      ]
+    ],
+    "gate_xyz_closed": [
+      55,
+      112.5,
+      290
+    ],
+    "gate_mm": [
+      110,
+      45,
+      2
+    ],
+    "gap_z": [
+      290,
+      292.3
+    ],
+    "stroke_mm": 15,
+    "window_x": [
+      69,
+      86,
+      103,
+      120,
+      137
+    ],
+    "window_y": [
+      114,
+      126
+    ],
+    "closed_front_overlap_mm": 1.5,
+    "open_front_clearance_mm": 1.5,
+    "front_wall_continuous": true,
+    "entry": "rear_only",
+    "front_pocket": "Front edge enters landing under upper seat; limit stops motion, no impact against wall.",
+    "welding": "PP fixed body welds into a U enclosure, gate withdraws from rear. POM is an alternative bolted architecture, not a weld-in substitute."
+  },
+  "brush": {
+    "count": 10,
+    "per_lane": 2,
+    "placement": "Front and rear of five short inlet lanes ABOVE gate; not inside the 10mm lower outlet throat.",
+    "fibre": "PBT",
+    "diameter_mm": [
+      0.1,
+      0.15
+    ],
+    "backing_material": "PP",
+    "backing_blank_mm": [
+      12,
+      6,
+      3
+    ],
+    "active_tuft_width_mm": 10,
+    "free_length_mm": 14,
+    "angle_down_from_horizontal_deg": 30,
+    "root_z_mm": 315,
+    "tip_z_mm": 308.0,
+    "root_y_mm": [
+      99.13146650650974,
+      140.86853349349025
+    ],
+    "tip_y_mm": [
+      111.25582215949188,
+      128.74417784050812
+    ],
+    "intrusion_per_side_mm_initial": 1.5,
+    "gate_to_tip_clearance_mm": 15.699999999999989,
+    "x_centers_mm": [
+      76,
+      93,
+      110,
+      127,
+      144
+    ],
+    "port_face_size_mm": [
+      11,
+      4
+    ],
+    "port_center_z_mm": 310,
+    "carrier_pp_mm": [
+      110,
+      10,
+      3
+    ],
+    "carrier_qty": 2,
+    "clamp_pp_mm": [
+      110,
+      8,
+      2
+    ],
+    "clamp_qty": 2,
+    "carrier_screw_x_mm": [
+      59,
+      84.5,
+      101.5,
+      118.5,
+      135.5,
+      161
+    ],
+    "carrier_screw": "M2x12 candidate, 12 used + 4 spare; thickness / blind inserts verify",
+    "fore_aft_adjustment_mm": 2,
+    "divider_count": 4,
+    "divider_pp_thickness_mm": 3,
+    "divider_z_mm": [
+      298.3,
+      318.3
+    ],
+    "divider_yz_face_mm": {
+      "top": 29.50176429075512,
+      "bottom": 12,
+      "height": 20
+    },
+    "divider_x_mm": [
+      83,
+      100,
+      117,
+      134
+    ],
+    "retention": "Supplier tufted, sealed cut ends; removable clamp and PP outer guard. No exposed glue or hand-glued loose fibres.",
+    "uncertainty": "Initial fit geometry. Bristle spread, preload, bean passage, retention and cleanability need sample tests."
+  },
+  "power": {
+    "input_v": 24,
+    "input_a": 5,
+    "input_w": 120,
+    "logic_v": 5,
+    "logic_budget_a": 4,
+    "servo_v": 6,
+    "servo_continuous_a": 3,
+    "servo_peak_a": 5,
+    "buck_budget_efficiency": 0.8,
+    "continuous_w": 56.5,
+    "short_peak_w": 71.5,
+    "short_peak_input_a": 2.9791666666666665,
+    "fuses_input_side_a": {
+      "main": 4,
+      "lamp": 2,
+      "logic_buck": 2,
+      "servo_buck": 3
+    },
+    "fuse_note": "Preliminary DC wire protection, not servo jam protection; test inrush and actual holder rating.",
+    "adapter": "YU2405, user selected24V5A120W; exact maker, plug, polarity and supplied AC lead not verified",
+    "buck": "5V logic TPS5450 board candidate; 6V servo HOBBYWING UBEC5A 30607000 / 2-8S, selected6V",
+    "terminal": "Delixi TB-1506 / DHATB1506N x2; two matching 3-pole bridges only on TB-A",
+    "TB_A": {
+      "1": "24V+ input / lamp fuse",
+      "2": "24V+ logic input fuse",
+      "3": "24V+ servo input fuse",
+      "4": "adapter return / lamp return",
+      "5": "logic buck IN-",
+      "6": "servo buck IN-"
+    },
+    "TB_A_bridges": [
+      [
+        1,
+        2,
+        3
+      ],
+      [
+        4,
+        5,
+        6
+      ]
+    ],
+    "TB_B": {
+      "1": "5V+",
+      "2": "5V return",
+      "3": "6V+",
+      "4": "6V return",
+      "5": "unused",
+      "6": "unused"
+    },
+    "TB_B_bridges": [],
+    "common_reference": "Nonisolated bucks; each load returns to its own output. No extra output-ground jumpers.",
+    "gpio_pwm": 2,
+    "pwm_hz": 50,
+    "io_v": 3.3,
+    "servo_accepts_3v3": "not_verified",
+    "external_box_nominal_mm": [
+      200,
+      150,
+      80
+    ],
+    "box_layout_status": "Procurement envelope, not complete mechanical interference approval",
+    "budget_cny_estimate": null,
+    "quoted_total_cny": null,
+    "revision": "V4.11",
+    "adapter_user_selected": true,
+    "adapter_factory_datasheet_verified": false,
+    "candidate_preference": "5V logic: TPS5450 board candidate. 6V servo: user selected UBEC 5A / 6V; proposed exact model HOBBYWING 30607000 2-8S.",
+    "logic_buck": "TPS5450DDA-based 5V complete board candidate; needs exact maker/SKU and 24V to 5V 4A thermal evidence",
+    "servo_buck": "HOBBYWING UBEC 5A, 30607000, 2-8S version, 6.0V jumper selected; factory 5A rating, system wiring / transient testing pending",
+    "previous_xl4016": "Low cost alternative retained; no unsupported claim that all TPS5450 boards outperform all XL4016 boards",
+    "generic_board_sku": null,
+    "servo_module_candidate_sku": "HOBBYWING 30607000",
+    "servo_module_factory_continuous_a": 5,
+    "servo_voltage_setting": "6.0V jumper; disconnect power before setting, meter before servo connection",
+    "continuous_board_rating_verified": false,
+    "protection_note": "TI chip OVP turns high-side FET off during overshoot; not a separate disconnect against a shorted pass switch.",
+    "safety": "Nonisolated. Reverse polarity / output fault containment depend on full board and external protection. Fuses not servo jam protection.",
+    "logic_module_purchase_envelope_mm_proposal": [
+      65,
+      55,
+      30
+    ],
+    "servo_module_factory_mm": [
+      50,
+      17,
+      10
+    ]
+  },
+  "sources": {
+    "TI": "https://www.ti.com/lit/ds/symlink/tps5450.pdf",
+    "XL": "https://www.xlsemi.com/datasheet/XL4016-EN.pdf",
+    "UBEC": "https://oss.hobbywing.com/pdf/pdfcn/UBEC5Acn.pdf",
+    "SEN0503": "https://www.dfrobot.com.cn/goods-3274.html",
+    "POM": "https://www.ensingerplastics.com/-/media/Ensinger/Files/Document%20Teaser%20Files/Brochures/Shapes/Stock%20Shapes-catalog-en-2024"
+  },
+  "mounting": {
+    "top_flange_mm": [
+      176,
+      196,
+      3
+    ],
+    "flange_xyz": [
+      22,
+      22,
+      440
+    ],
+    "inner_hole_mm": [
+      136,
+      136
+    ],
+    "brackets": 4,
+    "bracket_raw": "6061 angle25x25x2, cut width20, vertical leg22 / horizontal leg14",
+    "bracket_xyz": [
+      [
+        20,
+        75,
+        438
+      ],
+      [
+        20,
+        145,
+        438
+      ],
+      [
+        186,
+        75,
+        438
+      ],
+      [
+        186,
+        145,
+        438
+      ]
+    ],
+    "pp_slot_centers_xy": [
+      [
+        28.5,
+        85
+      ],
+      [
+        28.5,
+        155
+      ],
+      [
+        191.5,
+        85
+      ],
+      [
+        191.5,
+        155
+      ]
+    ],
+    "slot_mm": [
+      3.5,
+      7
+    ],
+    "M5_sets": 4,
+    "M3x12_sets": 4,
+    "spares_each": 2,
+    "M3_washer_od_mm": 9,
+    "bracket_M5_vertical_slot_mm_proposal": [
+      5.5,
+      8
+    ],
+    "M5_washer_od_mm": 12,
+    "load_path": "Hopper -> PP welds -> PP3 rim -> four supports -> black2020. Lower fixed feed body also locates on G21/G11; align without pulling the weldment out of plane.",
+    "note": "PP3 creep, weld pull-out and single-screw bracket rotation not yet proof-loaded. No wood hopper load support."
+  },
+  "retained": "V4.8 frame, nine wood panels, screens; V4.9 main four hopper panels and electrical topology retained.",
+  "unresolved": [
+    "G10 ball head ear and full rear moving envelope / hood G20 need physical sweep mockup",
+    "IR beam Z277 / base feet clearance remains unverified; brushes stay above gate and do not move beam",
+    "PP weld distortion and sliding friction, short brush segments / outer guards / carrier exact holes need samples",
+    "Power full board SKU / temperature / ripple / startup / peak response not validated"
+  ],
+  "mvp_revision_scope": "Replace beam sensor with DFRobot SEN0503 and adapter with YU2405; retain V4.10 mechanics and 5V TPS candidate / 6V UBEC selection.",
+  "beam_hint": {
+    "model": "DFRobot SEN0503",
+    "supply_v": 5,
+    "working_voltage_range_v": [
+      3,
+      5
+    ],
+    "manufacturer_range_at_5v_mm": 500,
+    "manufacturer_range_at_3v3_mm": 200,
+    "manufacturer_response_ms": 2,
+    "manufacturer_current_ma": 25,
+    "head_lwh_mm": [
+      20,
+      10,
+      9
+    ],
+    "cable_mm": 250,
+    "output": "NPN normally open; internal pullup and beam-block polarity not verified",
+    "gpio": 20,
+    "signal_pullup_v": 3.3,
+    "pullup_ohm": 10000,
+    "series_ohm": 1000,
+    "active_level": null,
+    "hardware_verified": false,
+    "source": "https://www.dfrobot.com/product-2388.html",
+    "installed_head_axis_mapping_verified": false,
+    "purpose": "passage_hint_not_bean_counter"
+  }
+}

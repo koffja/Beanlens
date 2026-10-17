@@ -1,0 +1,911 @@
+{
+  "revision": "V4.8-thickness-displays",
+  "date": "2026-10-16",
+  "status": "proposal_not_hardware_verified",
+  "hopper_reference": {
+    "pos_mm": [
+      39.98608148908774,
+      49.77995607220886,
+      330
+    ],
+    "outer_mm": [
+      140.02783702182452,
+      140.44008785558228,
+      110
+    ],
+    "wall_mm": 2,
+    "pp_top_inner_mm": [
+      136,
+      136
+    ],
+    "pp_bottom_inner_mm": [
+      110,
+      30
+    ],
+    "pp_wall_mm": 2,
+    "top_rim_outer_mm": [
+      176,
+      196
+    ],
+    "top_rim_z_mm": [
+      440,
+      443
+    ],
+    "wood_shell": false,
+    "wall_definition": "2mm normal thickness; outer bounds exclude weld bead"
+  },
+  "enclosure_reference": {
+    "panels": [
+      {
+        "id": "P01",
+        "name": "前上屏幕板",
+        "pos": [
+          22,
+          1,
+          326
+        ],
+        "size": [
+          176,
+          6,
+          112
+        ]
+      },
+      {
+        "id": "P02",
+        "name": "后上检修板",
+        "pos": [
+          22,
+          233,
+          326
+        ],
+        "size": [
+          176,
+          6,
+          112
+        ]
+      },
+      {
+        "id": "P03",
+        "name": "左上侧板",
+        "pos": [
+          1,
+          22,
+          326
+        ],
+        "size": [
+          6,
+          196,
+          112
+        ]
+      },
+      {
+        "id": "P04",
+        "name": "右上侧板",
+        "pos": [
+          213,
+          22,
+          326
+        ],
+        "size": [
+          6,
+          196,
+          112
+        ]
+      },
+      {
+        "id": "P05",
+        "name": "左下侧板",
+        "pos": [
+          1,
+          22,
+          22
+        ],
+        "size": [
+          6,
+          196,
+          280
+        ]
+      },
+      {
+        "id": "P06",
+        "name": "右下侧板",
+        "pos": [
+          213,
+          22,
+          22
+        ],
+        "size": [
+          6,
+          196,
+          280
+        ]
+      },
+      {
+        "id": "P07",
+        "name": "后中检修板",
+        "pos": [
+          22,
+          233,
+          244
+        ],
+        "size": [
+          176,
+          6,
+          58
+        ]
+      },
+      {
+        "id": "P08",
+        "name": "后下检修板",
+        "pos": [
+          22,
+          233,
+          22
+        ],
+        "size": [
+          176,
+          6,
+          197
+        ]
+      },
+      {
+        "id": "P09",
+        "name": "前中按钮板",
+        "pos": [
+          22,
+          1,
+          244
+        ],
+        "size": [
+          176,
+          6,
+          58
+        ]
+      }
+    ],
+    "face_recess_mm": 1,
+    "gap_mm_nominal": 2,
+    "wood_cuts": [
+      [
+        "P05",
+        196,
+        280,
+        3,
+        3
+      ],
+      [
+        "P03",
+        196,
+        112,
+        3,
+        286
+      ],
+      [
+        "P06",
+        196,
+        280,
+        202,
+        3
+      ],
+      [
+        "P04",
+        196,
+        112,
+        202,
+        286
+      ],
+      [
+        "P08",
+        176,
+        197,
+        401,
+        3
+      ],
+      [
+        "P02",
+        176,
+        112,
+        401,
+        203
+      ],
+      [
+        "P07",
+        176,
+        58,
+        401,
+        318
+      ],
+      [
+        "P01",
+        176,
+        112,
+        401,
+        379
+      ],
+      [
+        "P09",
+        176,
+        58,
+        401,
+        494
+      ]
+    ],
+    "wood_sheet_mm": [
+      600,
+      600,
+      6
+    ],
+    "alternative_stock": "No hopper wood required; nine outer panels fit one 600x600x6 sheet.",
+    "panel_brackets_used": 32,
+    "front_light_strip_brackets_used": 2,
+    "panel_brackets_purchase": 40
+  },
+  "lane_reference": {
+    "top_z": 330,
+    "collar_bottom_z": 323.2,
+    "transition_bottom_z": 298.3,
+    "upper_comb_z": [
+      292.3,
+      295.3,
+      298.3
+    ],
+    "gate_gap_z": [
+      290,
+      292.3
+    ],
+    "pom_support_z": [
+      286,
+      290
+    ],
+    "lower_comb_z": [
+      280,
+      283,
+      286
+    ],
+    "comb_width_mm": 140,
+    "window_width_mm": 14,
+    "window_depth_mm": 12,
+    "partition_mm": 3,
+    "active_width_mm": 82,
+    "stroke_mm": 15,
+    "transition_top_z": 323.2,
+    "transition_height_mm": 24.9,
+    "coupling_upper_flange_z": [
+      327,
+      330
+    ],
+    "coupling_gasket_z": [
+      326.2,
+      327
+    ],
+    "coupling_lower_flange_z": [
+      323.2,
+      326.2
+    ]
+  },
+  "hopper_height_chain_mm": {
+    "suspension_bracket_underside_z": 438,
+    "flange_bottom_z": 440,
+    "flange_top_z": 443,
+    "hopper_bottom_z": 330,
+    "hopper_height": 110,
+    "hopper_top_z": 440,
+    "midframe_top_z": 324,
+    "frame_top_z": 460,
+    "support": "top flange supported on four metal brackets; no wood shell/ears"
+  },
+  "profile": {
+    "system": "European 2020",
+    "finish": "black anodized",
+    "slot_width_mm": null,
+    "slot_note": "User confirms black EU2020; measure actual groove before buying nuts."
+  },
+  "frame_mm": [
+    220,
+    240,
+    460
+  ],
+  "parts": [
+    {
+      "id": "R01",
+      "bom": "F01",
+      "name": "连续立柱",
+      "length_mm": 460,
+      "pos_mm": [
+        0,
+        0,
+        0
+      ],
+      "size_mm": [
+        20,
+        20,
+        460
+      ]
+    },
+    {
+      "id": "R02",
+      "bom": "F01",
+      "name": "连续立柱",
+      "length_mm": 460,
+      "pos_mm": [
+        200,
+        0,
+        0
+      ],
+      "size_mm": [
+        20,
+        20,
+        460
+      ]
+    },
+    {
+      "id": "R03",
+      "bom": "F01",
+      "name": "连续立柱",
+      "length_mm": 460,
+      "pos_mm": [
+        0,
+        220,
+        0
+      ],
+      "size_mm": [
+        20,
+        20,
+        460
+      ]
+    },
+    {
+      "id": "R04",
+      "bom": "F01",
+      "name": "连续立柱",
+      "length_mm": 460,
+      "pos_mm": [
+        200,
+        220,
+        0
+      ],
+      "size_mm": [
+        20,
+        20,
+        460
+      ]
+    },
+    {
+      "id": "R05",
+      "bom": "F01",
+      "name": "底框宽向梁",
+      "length_mm": 180,
+      "pos_mm": [
+        20,
+        0,
+        0
+      ],
+      "size_mm": [
+        180,
+        20,
+        20
+      ]
+    },
+    {
+      "id": "R06",
+      "bom": "F01",
+      "name": "底框宽向梁",
+      "length_mm": 180,
+      "pos_mm": [
+        20,
+        220,
+        0
+      ],
+      "size_mm": [
+        180,
+        20,
+        20
+      ]
+    },
+    {
+      "id": "R07",
+      "bom": "F01",
+      "name": "底框深向梁",
+      "length_mm": 200,
+      "pos_mm": [
+        0,
+        20,
+        0
+      ],
+      "size_mm": [
+        20,
+        200,
+        20
+      ]
+    },
+    {
+      "id": "R08",
+      "bom": "F01",
+      "name": "底框深向梁",
+      "length_mm": 200,
+      "pos_mm": [
+        200,
+        20,
+        0
+      ],
+      "size_mm": [
+        20,
+        200,
+        20
+      ]
+    },
+    {
+      "id": "R09",
+      "bom": "F01",
+      "name": "顶框宽向梁",
+      "length_mm": 180,
+      "pos_mm": [
+        20,
+        0,
+        440
+      ],
+      "size_mm": [
+        180,
+        20,
+        20
+      ]
+    },
+    {
+      "id": "R10",
+      "bom": "F01",
+      "name": "顶框宽向梁",
+      "length_mm": 180,
+      "pos_mm": [
+        20,
+        220,
+        440
+      ],
+      "size_mm": [
+        180,
+        20,
+        20
+      ]
+    },
+    {
+      "id": "R11",
+      "bom": "F01",
+      "name": "顶框深向梁",
+      "length_mm": 200,
+      "pos_mm": [
+        0,
+        20,
+        440
+      ],
+      "size_mm": [
+        20,
+        200,
+        20
+      ]
+    },
+    {
+      "id": "R12",
+      "bom": "F01",
+      "name": "顶框深向梁",
+      "length_mm": 200,
+      "pos_mm": [
+        200,
+        20,
+        440
+      ],
+      "size_mm": [
+        20,
+        200,
+        20
+      ]
+    },
+    {
+      "id": "R13",
+      "bom": "F01",
+      "name": "料斗中框侧梁",
+      "length_mm": 200,
+      "pos_mm": [
+        0,
+        20,
+        304
+      ],
+      "size_mm": [
+        20,
+        200,
+        20
+      ]
+    },
+    {
+      "id": "R14",
+      "bom": "F01",
+      "name": "料斗中框侧梁",
+      "length_mm": 200,
+      "pos_mm": [
+        200,
+        20,
+        304
+      ],
+      "size_mm": [
+        20,
+        200,
+        20
+      ]
+    },
+    {
+      "id": "R15",
+      "bom": "F01",
+      "name": "料斗中框外露横梁",
+      "length_mm": 180,
+      "pos_mm": [
+        20,
+        0,
+        304
+      ],
+      "size_mm": [
+        180,
+        20,
+        20
+      ]
+    },
+    {
+      "id": "R16",
+      "bom": "F01",
+      "name": "料斗中框外露横梁",
+      "length_mm": 180,
+      "pos_mm": [
+        20,
+        220,
+        304
+      ],
+      "size_mm": [
+        180,
+        20,
+        20
+      ]
+    },
+    {
+      "id": "R17",
+      "bom": "F01",
+      "name": "独立相机梁",
+      "length_mm": 180,
+      "pos_mm": [
+        20,
+        0,
+        221.25
+      ],
+      "size_mm": [
+        180,
+        20,
+        20
+      ]
+    },
+    {
+      "id": "R18",
+      "bom": "F01",
+      "name": "独立相机梁",
+      "length_mm": 180,
+      "pos_mm": [
+        20,
+        220,
+        221.25
+      ],
+      "size_mm": [
+        180,
+        20,
+        20
+      ]
+    }
+  ],
+  "stocks": [
+    {
+      "id": "S01",
+      "source": "已有",
+      "raw_mm": 460,
+      "outputs_mm": [
+        460
+      ],
+      "kerf_mm": 0,
+      "offcut_mm": 0
+    },
+    {
+      "id": "S02",
+      "source": "已有",
+      "raw_mm": 460,
+      "outputs_mm": [
+        460
+      ],
+      "kerf_mm": 0,
+      "offcut_mm": 0
+    },
+    {
+      "id": "S03",
+      "source": "已有",
+      "raw_mm": 460,
+      "outputs_mm": [
+        460
+      ],
+      "kerf_mm": 0,
+      "offcut_mm": 0
+    },
+    {
+      "id": "S04",
+      "source": "已有",
+      "raw_mm": 460,
+      "outputs_mm": [
+        460
+      ],
+      "kerf_mm": 0,
+      "offcut_mm": 0
+    },
+    {
+      "id": "S05",
+      "source": "已有",
+      "raw_mm": 460,
+      "outputs_mm": [
+        200,
+        200
+      ],
+      "kerf_mm": 6,
+      "offcut_mm": 54
+    },
+    {
+      "id": "S06",
+      "source": "已有",
+      "raw_mm": 460,
+      "outputs_mm": [
+        200,
+        200
+      ],
+      "kerf_mm": 6,
+      "offcut_mm": 54
+    },
+    {
+      "id": "S07",
+      "source": "已有",
+      "raw_mm": 460,
+      "outputs_mm": [
+        200,
+        200
+      ],
+      "kerf_mm": 6,
+      "offcut_mm": 54
+    },
+    {
+      "id": "S08",
+      "source": "已有",
+      "raw_mm": 400,
+      "outputs_mm": [
+        180,
+        180
+      ],
+      "kerf_mm": 6,
+      "offcut_mm": 34
+    },
+    {
+      "id": "S09",
+      "source": "已有",
+      "raw_mm": 400,
+      "outputs_mm": [
+        180,
+        180
+      ],
+      "kerf_mm": 6,
+      "offcut_mm": 34
+    },
+    {
+      "id": "S10",
+      "source": "新购成品",
+      "raw_mm": 180,
+      "outputs_mm": [
+        180
+      ],
+      "kerf_mm": 0,
+      "offcut_mm": 0
+    },
+    {
+      "id": "S11",
+      "source": "新购成品",
+      "raw_mm": 180,
+      "outputs_mm": [
+        180
+      ],
+      "kerf_mm": 0,
+      "offcut_mm": 0
+    },
+    {
+      "id": "S12",
+      "source": "新购成品",
+      "raw_mm": 180,
+      "outputs_mm": [
+        180
+      ],
+      "kerf_mm": 0,
+      "offcut_mm": 0
+    },
+    {
+      "id": "S13",
+      "source": "新购成品",
+      "raw_mm": 180,
+      "outputs_mm": [
+        180
+      ],
+      "kerf_mm": 0,
+      "offcut_mm": 0
+    }
+  ],
+  "kerf_per_cut_mm_assumed": 3,
+  "finished_length_mm": 4480,
+  "purchase_finished_profile_mm": {
+    "180": 4
+  },
+  "brackets_used": 28,
+  "brackets_purchase": 32,
+  "bracket_screws_and_tnuts_each_purchase": 64,
+  "caution": "Stock lengths must be usable, square-ended and the same 2020 groove system; no end trim included. Parts only validate extrusion geometry, not joint or component clearance.",
+  "pp_geometry": {
+    "main": {
+      "name": "主斗",
+      "top": [
+        136,
+        136
+      ],
+      "bottom": [
+        110,
+        30
+      ],
+      "height": 110,
+      "z_bottom": 330,
+      "thickness_mm": 2.0,
+      "kx": 0.11818181818181818,
+      "ky": 0.4818181818181818,
+      "offset_x_mm": 2.013918510912257,
+      "offset_y_mm": 2.2200439277911403,
+      "outer_top": [
+        140.02783702182452,
+        140.44008785558228
+      ],
+      "outer_bottom": [
+        114.02783702182451,
+        34.44008785558228
+      ],
+      "front_slant": 122.10241602851272,
+      "side_slant": 110.76551810017412,
+      "end_bevel_front_deg": 25.72561264336567,
+      "end_bevel_side_deg": 6.7400560979469475,
+      "corner_internal_deg": 92.92012232014604,
+      "corner_bevel_from_square_deg": 43.53993883992698
+    },
+    "transition": {
+      "name": "过渡斗",
+      "top": [
+        110,
+        30
+      ],
+      "bottom": [
+        82,
+        12
+      ],
+      "height": 24.9,
+      "z_bottom": 298.3,
+      "thickness_mm": 2.0,
+      "kx": 0.5622489959839357,
+      "ky": 0.3614457831325301,
+      "offset_x_mm": 2.294448895473546,
+      "offset_y_mm": 2.1266340109612543,
+      "outer_top": [
+        114.58889779094709,
+        34.25326802192251
+      ],
+      "outer_bottom": [
+        86.58889779094709,
+        16.25326802192251
+      ],
+      "front_slant": 26.476593436467613,
+      "side_slant": 28.565888748645648,
+      "end_bevel_front_deg": 19.8721758192439,
+      "end_bevel_side_deg": 29.346827574290398,
+      "corner_internal_deg": 99.58987561495552,
+      "corner_bevel_from_square_deg": 40.20506219252224
+    },
+    "joint": "symmetric miter; normal thickness 2; horizontal top/bottom trim; no arbitrary final +1mm",
+    "weld_bead_normal_max_mm": 3,
+    "weld_clearance_horizontal_mm": 4,
+    "fit_gap_mm_target": [
+      0,
+      0.2
+    ],
+    "gasket_free_mm": 1,
+    "gasket_assembled_mm_nominal": 0.8
+  },
+  "displays": {
+    "BOX": {
+      "body_mm": [
+        64.3,
+        47.6,
+        15.4
+      ],
+      "body_pos_xyz": [
+        77.85,
+        1,
+        346.2
+      ],
+      "body_size_xyz": [
+        64.3,
+        15.4,
+        47.6
+      ],
+      "service_pos_xyz": [
+        70,
+        7,
+        338
+      ],
+      "service_size_xyz": [
+        80,
+        40,
+        64
+      ],
+      "panel_opening_wh": [
+        65.3,
+        48.6
+      ],
+      "panel_opening_origin_xz": [
+        77.35,
+        345.7
+      ],
+      "min_to_weld_envelope_mm": 17.089046981299774,
+      "source": "https://wiki.alientek.com/docs/Boards/Kendryte/DNK230D/start-guide/k230d-box-introduction/",
+      "source_scope": "case excluding protrusions, 2.4in 640x480; holes and complete connector routing not provided"
+    },
+    "C6": {
+      "pcb_wh_mm": [
+        20.32,
+        36.37
+      ],
+      "package_depth_mm": 7.6,
+      "lcd_module_mm": [
+        19.39,
+        36.28
+      ],
+      "active_mm": [
+        17.39,
+        32.35
+      ],
+      "mount_pitch_mm": [
+        13.08,
+        32.0
+      ],
+      "mount_thread": "M2, drawing 2.5H; verify depth before screws",
+      "body_pos_xyz": [
+        211.4,
+        70,
+        350
+      ],
+      "body_size_xyz": [
+        7.6,
+        36.37,
+        20.32
+      ],
+      "service_pos_xyz": [
+        188,
+        50,
+        338
+      ],
+      "service_size_xyz": [
+        25,
+        85,
+        47
+      ],
+      "panel_opening_wh": [
+        40,
+        24
+      ],
+      "panel_opening_origin_yz": [
+        68.185,
+        348.16
+      ],
+      "min_to_weld_envelope_mm": 10.486081489087752,
+      "source": "https://docs.waveshare.com/ESP32-C6-LCD-1.47",
+      "drawing": "https://docs.waveshare.com/assets/images/ESP32-C6-LCD-1.47-Dimensions-36ec12d1102e68ba047fc4530c24df3a.webp",
+      "source_scope": "non Touch original drawing, body excludes all plug/header extensions; datum positions still verify"
+    }
+  }
+}

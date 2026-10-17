@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1500 1060" role="img" aria-label="电源盒放在机外，先调电压，再接设备">
+<style>text{font-family:"PingFang SC","Microsoft YaHei",sans-serif;fill:#233b38;font-size:21px} .small{font-size:18px}.tiny{font-size:16px}.title{font-size:37px;font-weight:700}.bold{font-weight:700} .wire{fill:none;stroke-linejoin:round;stroke-linecap:round;stroke-width:4}</style>
+<rect width="1500" height="1060" fill="#fafbf7"/>
+<text x="48" y="56" class="" style="font-size:16px;fill:#47786b">BEANLENS  /  V4.9  /  04</text>
+<text x="48" y="110" class="" style="font-size:37px">电源盒放在机外，先调电压，再接设备</text>
+<text x="48" y="148" class="" style="font-size:19px;fill:#657a73">低价 XL4016 双散热板不能假定塞得进原 21mm 后腔。推荐另配 ABS 盒，避免修改双屏与豆路空间。</text>
+<text x="48" y="205" class="" style="font-size:23px">P11 ABS 盒：外形 200×150×80，尺寸为采购起点</text>
+<rect x="70" y="249" width="544.0" height="384.0" rx="5" fill="#e9eeea" stroke="#71867b" stroke-width="2"/>
+<rect x="86.0" y="265.0" width="208.0" height="176.0" rx="6" fill="#fff" stroke="#c4323d" stroke-width="2"/>
+<text x="96.0" y="284" class="" style="font-size:20px;fill:#c4323d">模块 A → 5V</text>
+<text x="96.0" y="317" class="" style="font-size:18px">≤65×55×30</text>
+<text x="96.0" y="347" class="" style="font-size:16px">采购包络，非实测</text>
+<rect x="342.0" y="265.0" width="208.0" height="176.0" rx="6" fill="#fff" stroke="#7b45b5" stroke-width="2"/>
+<text x="352.0" y="284" class="" style="font-size:20px;fill:#7b45b5">模块 B → 6V</text>
+<text x="352.0" y="317" class="" style="font-size:18px">≤65×55×30</text>
+<text x="352.0" y="347" class="" style="font-size:16px">采购包络，非实测</text>
+<rect x="86.0" y="473.0" width="235.20000000000002" height="70.4" rx="10" fill="#cdd9d0" stroke="#c8d6ce" stroke-width="2"/>
+<text x="96.0" y="516.0" class="" style="font-size:19px">TB-A 24V</text>
+<rect x="342.0" y="473.0" width="235.20000000000002" height="70.4" rx="10" fill="#cdd9d0" stroke="#c8d6ce" stroke-width="2"/>
+<text x="352.0" y="516.0" class="" style="font-size:19px">TB-B 5V/6V</text>
+<text x="91" y="601.0" class="" style="font-size:18px">余区：4 路保险座 / 线槽，按到货件排布</text>
+<text x="70" y="683" class="" style="font-size:18px">示意安装板 170×120×2；留通风孔、线夹和约 6mm 绝缘支柱。</text>
+<text x="70" y="716" class="" style="font-size:18px">不能把板上散热片当绝缘件；裸焊点、端子与盒盖保持间距。</text>
+<rect x="742" y="190" width="706" height="156" rx="10" fill="#fff" stroke="#c8d6ce" stroke-width="2"/>
+<text x="759" y="222" class="bold" style="font-size:23px">采购先核这几条</text>
+<text x="759" y="252" class="" style="font-size:18px">XL4016E1 双散热、CC/CV 可调、输入电容 50V。</text>
+<text x="759" y="279" class="" style="font-size:18px">卖家确认 24→5V / 4A 与 24→6V / 3A 工况；峰值另验。</text>
+<text x="759" y="306" class="" style="font-size:18px">整板尺寸 / 端子电流 / CC 操作方法按所购板资料。</text>
+<text x="759" y="333" class="" style="font-size:18px">两块总损耗预算约 9.5W，通风不足时加 5V 4010 风扇。</text>
+<rect x="742" y="366" width="706" height="176" rx="10" fill="#eaf3eb" stroke="#c8d6ce" stroke-width="2"/>
+<text x="759" y="398" class="bold" style="font-size:23px">第一次上电的顺序</text>
+<text x="759" y="428" class="" style="font-size:18px">1 断开主板、舵机、灯带；检查正负与端子桥条。</text>
+<text x="759" y="455" class="" style="font-size:18px">2 仅给降压供 24V，用万用表调 5.00V / 6.00V。</text>
+<text x="759" y="482" class="" style="font-size:18px">3 用电子负载核电流与温升；不明 CC 操作不要接舵机。</text>
+<text x="759" y="509" class="" style="font-size:18px">4 断电接主板，量插头端 5V；再断电接空载舵机。</text>
+<text x="759" y="536" class="" style="font-size:18px">5 最后分阶段到单槽 / 五槽，记录压降、温升与超时。</text>
+<rect x="742" y="562" width="706" height="149" rx="10" fill="#fff" stroke="#c8d6ce" stroke-width="2"/>
+<text x="759" y="594" class="bold" style="font-size:23px">接口分开，减少误插</text>
+<text x="759" y="624" class="" style="font-size:18px">5V：双 USB-A → A→C 成品线；BOX 只用 Type-C1 供电。</text>
+<text x="759" y="651" class="" style="font-size:18px">6V：XT30 两芯，电源端使用不露导体的配对方向。</text>
+<text x="759" y="678" class="" style="font-size:18px">24V：单独两芯端子 → 灯带，显著标 24V。</text>
+<text x="759" y="705" class="" style="font-size:18px">USB 联电脑调试时先断该板外部 5V，避免两路 VBUS 并供。</text>
+<rect x="742" y="731" width="706" height="245" rx="10" fill="#eee9f6" stroke="#c8d6ce" stroke-width="2"/>
+<text x="759" y="763" class="bold" style="font-size:23px">可选 O01：舵机不认 3.3V PWM 时再加</text>
+<text x="759" y="793" class="" style="font-size:18px">TI SN74AHCT1G125DBVR + SOT23-5 转接板。</text>
+<text x="759" y="820" class="" style="font-size:18px">模块 VCC → 5V；GND 与 /OE → 逻辑地。</text>
+<text x="759" y="847" class="" style="font-size:18px">GPIO2 → IN（10k 下拉）；OUT → 100Ω → 舵机信号。</text>
+<text x="759" y="874" class="" style="font-size:18px">VCC/GND 旁放 100nF；按原厂脚位接，禁止把 VCC 接 6V。</text>
+<text x="759" y="901" class="" style="font-size:18px">停止/失联先撤销送料许可；卡豆超时后停止加力。</text>
+<text x="759" y="928" class="" style="font-size:18px">插排总开关不是硬件急停，断电也不保证闸门自行关闭。</text>
+<rect x="48" y="758" width="635" height="218" rx="10" fill="#fff" stroke="#c8d6ce" stroke-width="2"/>
+<text x="65" y="790" class="bold" style="font-size:23px">更容易搜索的关键词</text>
+<text x="65" y="820" class="" style="font-size:18px">航嘉 HKA12024050-7B 24V5A</text>
+<text x="65" y="847" class="" style="font-size:18px">XL4016 恒流恒压 双散热 50V电容</text>
+<text x="65" y="874" class="" style="font-size:18px">德力西 TB1506 端子排 + 配套3位短接片</text>
+<text x="65" y="901" class="" style="font-size:18px">ABS 接线盒 200 150 80 / XT30 插头</text>
+<text x="65" y="928" class="" style="font-size:18px">32V MINI 保险座 / M3 0.75平方叉形端子</text>
+<text x="65" y="955" class="" style="font-size:18px">电源包预算约 ¥200–370，非卖家现价，不含工具运费。</text>
+<polyline class="wire" data-rail="" points="48,1000 1452,1000" stroke="#d2ddd6"/>
+<text x="48" y="1030" class="" style="font-size:16px">2026-10-16 · 样机方案 / 尚未带载、带豆或焊接验收 · 电气连接按端子文字核对，不按图中物理引脚位置猜接</text>
+<text x="1390" y="1030" class="" style="font-size:16px">4 / 4</text>
+</svg>

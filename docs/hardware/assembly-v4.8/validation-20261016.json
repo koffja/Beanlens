@@ -1,0 +1,132 @@
+{
+  "revision": "V4.8",
+  "date": "2026-10-16",
+  "scope": "scoped document geometry, closed PP meshes, display keepouts, BOM mapping, browser and PDF validation; not hardware",
+  "parts": 88,
+  "BOM_rows_including_historical_and_optional": 94,
+  "wood_cuts": 9,
+  "profile_members": 18,
+  "finished_profile_mm": 4480,
+  "cut_csv_rows": 27,
+  "closed_pp_solids": 8,
+  "normal_thickness_checked_mm": 2,
+  "weld_clearance_horizontal_mm": 4,
+  "screen_clearance_mm": {
+    "front": 17.089046981299774,
+    "right": 10.486081489087752
+  },
+  "top_bracket_to_weld_keepout_min_mm": 1.9860814890877379,
+  "coupling_washer_avoids_weld_keepout": true,
+  "shared_layer_height_mm": 50,
+  "pdfs": [
+    {
+      "file": "output/pdf/beanlens-assembly-v4.8-20261016.pdf",
+      "pages": 10,
+      "page_sizes_mm": [
+        [
+          420.2006666666666,
+          297.0106596111111
+        ],
+        [
+          420.2006666666666,
+          297.0106596111111
+        ],
+        [
+          420.2006666666666,
+          297.0106596111111
+        ],
+        [
+          420.2006666666666,
+          297.0106596111111
+        ],
+        [
+          420.2006666666666,
+          297.0106596111111
+        ],
+        [
+          420.2006666666666,
+          297.0106596111111
+        ],
+        [
+          420.2006666666666,
+          297.0106596111111
+        ],
+        [
+          420.2006666666666,
+          297.0106596111111
+        ],
+        [
+          420.2006666666666,
+          297.0106596111111
+        ],
+        [
+          420.2006666666666,
+          297.0106596111111
+        ]
+      ],
+      "calibration_lines_mm": [],
+      "sha256": "3984955d44f37061c326e2dfaf2d81eab8447ab3f2d0a88f81bd6b43b9653947",
+      "vector_only": true,
+      "visually_reviewed_all_pages": true
+    },
+    {
+      "file": "output/pdf/beanlens-pp-templates-v4.8-20261016.pdf",
+      "pages": 8,
+      "page_sizes_mm": [
+        [
+          209.88865255555555,
+          297.0106596111111
+        ],
+        [
+          209.88865255555555,
+          297.0106596111111
+        ],
+        [
+          209.88865255555555,
+          297.0106596111111
+        ],
+        [
+          209.88865255555555,
+          297.0106596111111
+        ],
+        [
+          209.88865255555555,
+          297.0106596111111
+        ],
+        [
+          209.88865255555555,
+          297.0106596111111
+        ],
+        [
+          209.88865255555555,
+          297.0106596111111
+        ],
+        [
+          209.88865255555555,
+          297.0106596111111
+        ]
+      ],
+      "calibration_lines_mm": [
+        99.99831670673662,
+        99.99831670673662,
+        99.99831670673662,
+        99.99831670673662,
+        99.99831670673662,
+        99.99831670673662,
+        99.99831670673662,
+        99.99831670673662
+      ],
+      "sha256": "c600c453b3bbac6bd7b697239844922a8227bea0075e4200a6817dfb3f1d2941",
+      "vector_only": true,
+      "visually_reviewed_all_pages": true
+    }
+  ],
+  "browser": "browser-check-20261016.json",
+  "not_verified": [
+    "actual welding fusion/shrinkage/food-contact documentation",
+    "top flange creep and 1kg load/capacity",
+    "actual screen protrusions, plugs, wire bend and antenna clearance",
+    "G20 fully enclosed guard interface and actuator sweep/jam response",
+    "load cell geometry, optical close focus, thermal and weighing accuracy"
+  ]
+}

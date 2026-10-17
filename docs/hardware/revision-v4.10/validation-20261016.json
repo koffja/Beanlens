@@ -1,0 +1,129 @@
+{
+  "date": "2026-10-16",
+  "checks": [
+    {
+      "check": "114 unique BOM rows",
+      "passed": true
+    },
+    {
+      "check": "5V candidate unknown SKU is not silently frozen",
+      "passed": true
+    },
+    {
+      "check": "6V follows user UBEC choice, not TPS5450",
+      "passed": true
+    },
+    {
+      "check": "Factory5A and machine3A target kept distinct",
+      "passed": true
+    },
+    {
+      "check": "Unknown new prices remain null",
+      "passed": true
+    },
+    {
+      "check": "No unjustified power package quote",
+      "passed": true
+    },
+    {
+      "check": "Main hopper geometry retained",
+      "passed": true
+    },
+    {
+      "check": "Continuous front bridge covers gap",
+      "passed": true
+    },
+    {
+      "check": "Fixed PP weldable body and POM separate alternative",
+      "passed": true
+    },
+    {
+      "check": "Gate front closes under landing1.5",
+      "passed": true
+    },
+    {
+      "check": "Open front clears hole1.5",
+      "passed": true
+    },
+    {
+      "check": "Nominal 2mm gate and0.3 total play",
+      "passed": true
+    },
+    {
+      "check": "Side cheek clears optical head nominal top282",
+      "passed": true
+    },
+    {
+      "check": "Side cheek still covers gate gap",
+      "passed": true
+    },
+    {
+      "check": "Lower seat rear Y129 misses railY132",
+      "passed": true
+    },
+    {
+      "check": "10 brush segments retained as requested",
+      "passed": true
+    },
+    {
+      "check": "Brush tips clear moving plane",
+      "passed": true
+    },
+    {
+      "check": "Brush ports fit inside each lane",
+      "passed": true
+    },
+    {
+      "check": "Bristle crosses wall within nominal 4mm sloped port",
+      "passed": true
+    },
+    {
+      "check": "Brush tip intrusion1.5 at actual tip height",
+      "passed": true
+    },
+    {
+      "check": "Four divider profiles reach upper PP seat",
+      "passed": true
+    },
+    {
+      "check": "Top flange shares support elevation440",
+      "passed": true
+    },
+    {
+      "check": "Existing stock profile order remains180x4",
+      "passed": true
+    },
+    {
+      "check": "PWM assignment unmodified",
+      "passed": true
+    },
+    {
+      "check": "Continuous and peak budget unchanged and conservative",
+      "passed": true
+    },
+    {
+      "check": "33 local artifact links exist",
+      "passed": true
+    },
+    {
+      "check": "Five SVG pages parse",
+      "passed": true
+    }
+  ],
+  "count": 27,
+  "missing_links": [],
+  "not_verified": [
+    "G10 ball head ear and full rear moving envelope / hood G20 need physical sweep mockup",
+    "IR beam Z277 / base feet clearance remains unverified; brushes stay above gate and do not move beam",
+    "PP weld distortion and sliding friction, short brush segments / outer guards / carrier exact holes need samples",
+    "Power full board SKU / temperature / ripple / startup / peak response not validated"
+  ],
+  "scope": "Nominal dimension, selection and document checks only; no physical / electrical / brush or food-contact validation.",
+  "pdf_review": {
+    "pages": 5,
+    "paper": "A3 landscape",
+    "all_pages_visually_reviewed": true,
+    "text_out_of_page": 0,
+    "note": "Artifact checks only; not physical validation"
+  }
+}

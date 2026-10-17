@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1500 1060" role="img" aria-label="TPS5450值得优先考虑，但先选整板，再谈性能和安全">
+<style>text{font-family:"PingFang SC","Microsoft YaHei",sans-serif;fill:#253c36;font-size:21px}.wire{fill:none;stroke-width:3;stroke-linecap:round;stroke-linejoin:round}.bold{font-weight:700}</style><rect width="1500" height="1060" fill="#fafbf7"/>
+<text x="48" y="55" class="" style="font-size:16px;fill:#477d67">BEANLENS / V4.11 / 04</text>
+<text x="48" y="108" class="" style="font-size:36px">TPS5450值得优先考虑，但先选整板，再谈性能和安全</text>
+<text x="48" y="148" class="" style="font-size:19px;fill:#667c71">此比较只针对5V逻辑路（预算4A）；6V舵机按用户确认采用UBEC 5A / 6V，输入仍接24V支路。</text>
+<rect x="48" y="194" width="1400" height="53" rx="0" fill="#e6f0e6" stroke="#d5e0d3" stroke-width="2"/>
+<text x="62" y="228" class="" style="font-size:21px">比较项</text>
+<text x="375" y="228" class="" style="font-size:21px">TPS5450</text>
+<text x="925" y="228" class="" style="font-size:21px">XL4016</text>
+<rect x="48" y="247" width="1400" height="53" rx="0" fill="#f0f5ed" stroke="#d5e0d3" stroke-width="2"/>
+<text x="62" y="281" class="" style="font-size:18px">原厂输入范围</text>
+<text x="375" y="281" class="" style="font-size:18px">推荐5.5–36V，绝对上限40V</text>
+<text x="925" y="281" class="" style="font-size:18px">推荐8–36V，绝对上限40V</text>
+<rect x="48" y="300" width="1400" height="53" rx="0" fill="#fff" stroke="#d5e0d3" stroke-width="2"/>
+<text x="62" y="334" class="" style="font-size:18px">开关频率</text>
+<text x="375" y="334" class="" style="font-size:18px">500kHz</text>
+<text x="925" y="334" class="" style="font-size:18px">180kHz</text>
+<rect x="48" y="353" width="1400" height="53" rx="0" fill="#f0f5ed" stroke="#d5e0d3" stroke-width="2"/>
+<text x="62" y="387" class="" style="font-size:18px">芯片电流标称</text>
+<text x="375" y="387" class="" style="font-size:18px">5A连续 / 6A峰值（有条件）</text>
+<text x="925" y="387" class="" style="font-size:18px">现行Rev1.6列12A（不是整板保证）</text>
+<rect x="48" y="406" width="1400" height="53" rx="0" fill="#fff" stroke="#d5e0d3" stroke-width="2"/>
+<text x="62" y="440" class="" style="font-size:18px">原厂资料明确的保护</text>
+<text x="375" y="440" class="" style="font-size:18px">软启、欠压、过流、过压、过温</text>
+<text x="925" y="440" class="" style="font-size:18px">过流、短路、过温等</text>
+<rect x="48" y="459" width="1400" height="53" rx="0" fill="#f0f5ed" stroke="#d5e0d3" stroke-width="2"/>
+<text x="62" y="493" class="" style="font-size:18px">不能从型号推定的事</text>
+<text x="375" y="493" class="" style="font-size:18px">整板4A温升 / 5A峰值 / 纹波</text>
+<text x="925" y="493" class="" style="font-size:18px">整板4A温升 / 5A峰值 / 纹波</text>
+<rect x="48" y="512" width="1400" height="53" rx="0" fill="#fff" stroke="#d5e0d3" stroke-width="2"/>
+<text x="62" y="546" class="" style="font-size:18px">电源是否隔离</text>
+<text x="375" y="546" class="" style="font-size:18px">否，仍需正确共地与分开回流</text>
+<text x="925" y="546" class="" style="font-size:18px">否，仍需正确共地与分开回流</text>
+<rect x="48" y="602" width="686" height="180" rx="8" fill="#eaf3ea" stroke="#c6d6ca" stroke-width="2"/>
+<text x="64" y="633" class="bold" style="font-size:23px">推荐结论</text>
+<text x="64" y="663" class="" style="font-size:18px">5V侧：优先审核TPS5450整板，调压与保护资料更清楚。</text>
+<text x="64" y="690" class="" style="font-size:18px">6V舵机：好盈UBEC 5A，30607000 / 2–8S版。</text>
+<text x="64" y="717" class="" style="font-size:18px">UBEC跳帽设6V再实测；不选7.4V，不接到GPIO。</text>
+<text x="64" y="744" class="" style="font-size:18px">UBEC给电源，舵机信号仍接C6；两路负载分开回流。</text>
+<rect x="760" y="602" width="688" height="180" rx="8" fill="#fff3dc" stroke="#c6d6ca" stroke-width="2"/>
+<text x="776" y="633" class="bold" style="font-size:23px">为什么不能直接说“更安全”？</text>
+<text x="776" y="663" class="" style="font-size:18px">芯片OVP是关断开关，不能隔离已短路的功率开关。</text>
+<text x="776" y="690" class="" style="font-size:18px">反接保护、保险、线径、输出接口取决于整块板。</text>
+<text x="776" y="717" class="" style="font-size:18px">PowerPAD焊接、铜皮、外置二极管与电感影响发热。</text>
+<text x="776" y="744" class="" style="font-size:18px">两者都不能因为换芯片而省掉带载、温升和瞬态检查。</text>
+<rect x="48" y="803" width="686" height="172" rx="8" fill="#fff" stroke="#c6d6ca" stroke-width="2"/>
+<text x="64" y="834" class="bold" style="font-size:23px">性能比较要在同一工况下做</text>
+<text x="64" y="864" class="" style="font-size:18px">24V输入：TPS板测5V/4A；UBEC测6V负载与短峰。</text>
+<text x="64" y="891" class="" style="font-size:18px">记录板端电压、输出纹波、启动过冲和温升。</text>
+<text x="64" y="918" class="" style="font-size:18px">TPS5450典型参数粗算24→5V/4A芯片损耗约1.57W。</text>
+<text x="64" y="945" class="" style="font-size:18px">这还没有包含外置二极管、电感等损耗。</text>
+<rect x="760" y="803" width="688" height="172" rx="8" fill="#fff" stroke="#c6d6ca" stroke-width="2"/>
+<text x="776" y="834" class="bold" style="font-size:23px">采购状态和成本</text>
+<text x="776" y="864" class="" style="font-size:18px">原XL4016保留低成本备选，不按“8A/12A”宣传验收。</text>
+<text x="776" y="891" class="" style="font-size:18px">TPS5450DDA是芯片封装号，不是淘宝整板型号。</text>
+<text x="776" y="918" class="" style="font-size:18px">5V板核24→5V；UBEC核2–8S版和6V档。</text>
+<text x="776" y="945" class="" style="font-size:18px">当前整板未选定，旧电源包200–370估价不直接沿用。</text>
+<polyline class="wire" points="48,1000 1452,1000" stroke="#d3ded4"/>
+<text x="48" y="1030" class="" style="font-size:16px">2026-10-17 · 方案尺寸，非实物验收 · 先试焊 / 手推 / 无刷与带刷单槽对照，再五槽联调</text>
+<text x="1390" y="1030" class="" style="font-size:16px">4 / 6</text>
+</svg>

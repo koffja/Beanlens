@@ -1,0 +1,381 @@
+{
+  "date": "2026-10-17",
+  "revision": "V4.12",
+  "errors": [],
+  "sheets": [
+    {
+      "file": "01-overall.svg",
+      "outside": []
+    },
+    {
+      "file": "02-frame.svg",
+      "outside": []
+    },
+    {
+      "file": "03-plywood.svg",
+      "outside": []
+    },
+    {
+      "file": "04-feed-gate.svg",
+      "outside": []
+    },
+    {
+      "file": "05-optics-weight.svg",
+      "outside": []
+    },
+    {
+      "file": "06-assembly-order.svg",
+      "outside": []
+    },
+    {
+      "file": "07-connections.svg",
+      "outside": []
+    },
+    {
+      "file": "08-displays.svg",
+      "outside": []
+    },
+    {
+      "file": "09-clearance.svg",
+      "outside": []
+    },
+    {
+      "file": "10-interface-audit.svg",
+      "outside": []
+    },
+    {
+      "file": "11-power-wiring.svg",
+      "outside": []
+    },
+    {
+      "file": "12-sensor-wiring.svg",
+      "outside": []
+    }
+  ],
+  "comparison": {
+    "maxDelta": 1.1368683772161603e-13,
+    "sameScale": true
+  },
+  "viewer": {
+    "hideSame": true,
+    "groupSame": true,
+    "frames": 18,
+    "exploded": true,
+    "reset": true,
+    "screens": 12,
+    "selected": "BOM E01",
+    "objects": 109
+  },
+  "operation": {
+    "states": [
+      {
+        "t": 0,
+        "phase": 0,
+        "open": 0,
+        "fault": null,
+        "faultElapsed": 0,
+        "scenario": null,
+        "uniqueCount": 0,
+        "rod": {
+          "theta": 27.95318688338034,
+          "rodLength": 59.99999999999999,
+          "stroke": 2.1053118096595559e-13
+        },
+        "playing": false,
+        "complete": false,
+        "title": "上电，闸门不自动打开",
+        "screen": "批次演示中\n唯一ID  0\n疑似    0\n拒判    0\n终值待确认"
+      },
+      {
+        "t": 4,
+        "phase": 1,
+        "open": 0,
+        "fault": null,
+        "faultElapsed": 0,
+        "scenario": null,
+        "uniqueCount": 0,
+        "rod": {
+          "theta": 27.95318688338034,
+          "rodLength": 59.99999999999999,
+          "stroke": 2.1053118096595559e-13
+        },
+        "playing": false,
+        "complete": false,
+        "title": "人工放盒，空盒去皮",
+        "screen": "批次演示中\n唯一ID  0\n疑似    0\n拒判    0\n终值待确认"
+      },
+      {
+        "t": 8,
+        "phase": 2,
+        "open": 0,
+        "fault": null,
+        "faultElapsed": 0,
+        "scenario": null,
+        "uniqueCount": 0,
+        "rod": {
+          "theta": 27.95318688338034,
+          "rodLength": 59.99999999999999,
+          "stroke": 2.1053118096595559e-13
+        },
+        "playing": false,
+        "complete": false,
+        "title": "连续采集，检查送料许可条件",
+        "screen": "批次演示中\n唯一ID  0\n疑似    0\n拒判    0\n终值待确认"
+      },
+      {
+        "t": 11,
+        "phase": 3,
+        "open": 0,
+        "fault": null,
+        "faultElapsed": 0,
+        "scenario": null,
+        "uniqueCount": 0,
+        "rod": {
+          "theta": 27.95318688338034,
+          "rodLength": 59.99999999999999,
+          "stroke": 2.1053118096595559e-13
+        },
+        "playing": false,
+        "complete": false,
+        "title": "舵机拉杆，五槽同时打开",
+        "screen": "批次演示中\n唯一ID  0\n疑似    0\n拒判    0\n终值待确认"
+      },
+      {
+        "t": 14,
+        "phase": 4,
+        "open": 1,
+        "fault": null,
+        "faultElapsed": 0,
+        "scenario": null,
+        "uniqueCount": 1,
+        "rod": {
+          "theta": -27.95318688338034,
+          "rodLength": 59.99999999999999,
+          "stroke": 14.999999999999831
+        },
+        "playing": false,
+        "complete": false,
+        "title": "送料、经过提示与双面分析并行",
+        "screen": "批次演示中\n唯一ID  1\n疑似    0\n拒判    0\n终值待确认"
+      },
+      {
+        "t": 23,
+        "phase": 4,
+        "open": 1,
+        "fault": null,
+        "faultElapsed": 0,
+        "scenario": null,
+        "uniqueCount": 15,
+        "rod": {
+          "theta": -27.95318688338034,
+          "rodLength": 59.99999999999999,
+          "stroke": 14.999999999999831
+        },
+        "playing": false,
+        "complete": false,
+        "title": "送料、经过提示与双面分析并行",
+        "screen": "批次演示中\n唯一ID  15\n疑似    1\n拒判    1\n终值待确认"
+      },
+      {
+        "t": 28,
+        "phase": 5,
+        "open": 1,
+        "fault": null,
+        "faultElapsed": 0,
+        "scenario": null,
+        "uniqueCount": 23,
+        "rod": {
+          "theta": -27.95318688338034,
+          "rodLength": 59.99999999999999,
+          "stroke": 14.999999999999831
+        },
+        "playing": false,
+        "complete": false,
+        "title": "撤销送料许可，闸片缓慢关入前承接位",
+        "screen": "批次演示中\n唯一ID  23\n疑似    2\n拒判    2\n终值待确认"
+      },
+      {
+        "t": 30,
+        "phase": 5,
+        "open": 0.5,
+        "fault": null,
+        "faultElapsed": 0,
+        "scenario": null,
+        "uniqueCount": 24,
+        "rod": {
+          "theta": 1.7274502716637925,
+          "rodLength": 60.00000000000001,
+          "stroke": 7.500000000000052
+        },
+        "playing": false,
+        "complete": false,
+        "title": "撤销送料许可，闸片缓慢关入前承接位",
+        "screen": "批次演示中\n唯一ID  24\n疑似    2\n拒判    2\n终值待确认"
+      },
+      {
+        "t": 32,
+        "phase": 6,
+        "open": 0,
+        "fault": null,
+        "faultElapsed": 0,
+        "scenario": null,
+        "uniqueCount": 24,
+        "rod": {
+          "theta": 27.95318688338034,
+          "rodLength": 59.99999999999999,
+          "stroke": 2.1053118096595559e-13
+        },
+        "playing": false,
+        "complete": false,
+        "title": "关闸后继续接住尾流",
+        "screen": "批次演示中\n唯一ID  24\n疑似    2\n拒判    2\n终值待确认"
+      },
+      {
+        "t": 37,
+        "phase": 7,
+        "open": 0,
+        "fault": null,
+        "faultElapsed": 0,
+        "scenario": null,
+        "uniqueCount": 24,
+        "rod": {
+          "theta": 27.95318688338034,
+          "rodLength": 59.99999999999999,
+          "stroke": 2.1053118096595559e-13
+        },
+        "playing": false,
+        "complete": false,
+        "title": "停料后等待静态称重稳定",
+        "screen": "批次演示中\n唯一ID  24\n疑似    2\n拒判    2\n终值待确认"
+      },
+      {
+        "t": 42,
+        "phase": 8,
+        "open": 0,
+        "fault": null,
+        "faultElapsed": 0,
+        "scenario": null,
+        "uniqueCount": 24,
+        "rod": {
+          "theta": 27.95318688338034,
+          "rodLength": 59.99999999999999,
+          "stroke": 2.1053118096595559e-13
+        },
+        "playing": false,
+        "complete": false,
+        "title": "保存证据，合并双方完成状态",
+        "screen": "批次演示中\n唯一ID  24\n疑似    2\n拒判    2\n终值待确认"
+      },
+      {
+        "t": 46,
+        "phase": 9,
+        "open": 0,
+        "fault": null,
+        "faultElapsed": 0,
+        "scenario": null,
+        "uniqueCount": 24,
+        "rod": {
+          "theta": 27.95318688338034,
+          "rodLength": 59.99999999999999,
+          "stroke": 2.1053118096595559e-13
+        },
+        "playing": false,
+        "complete": true,
+        "title": "批次完成，所有豆仍在同一盒",
+        "screen": "批次完成\n唯一ID  24\n疑似    2\n拒判    2\n净质量  4.8g（示例）"
+      },
+      {
+        "t": 48,
+        "phase": 9,
+        "open": 0,
+        "fault": null,
+        "faultElapsed": 0,
+        "scenario": null,
+        "uniqueCount": 24,
+        "rod": {
+          "theta": 27.95318688338034,
+          "rodLength": 59.99999999999999,
+          "stroke": 2.1053118096595559e-13
+        },
+        "playing": false,
+        "complete": true,
+        "title": "批次完成，所有豆仍在同一盒",
+        "screen": "批次完成\n唯一ID  24\n疑似    2\n拒判    2\n净质量  4.8g（示例）"
+      }
+    ],
+    "next": 28,
+    "prev": 14,
+    "shell": "visible",
+    "stop": {
+      "t": 27.028000000095425,
+      "phase": 4,
+      "open": 0,
+      "fault": "stop",
+      "faultElapsed": 4.028000000095362,
+      "scenario": {
+        "at": 23
+      },
+      "uniqueCount": 17,
+      "rod": {
+        "theta": 27.95318688338034,
+        "rodLength": 59.99999999999999,
+        "stroke": 2.1053118096595559e-13
+      },
+      "playing": false,
+      "complete": false,
+      "screen": "FAULT\n闸门 关限位确认（示例）\n3.3g · 暂态\n禁止自动恢复",
+      "message": "STOP优先：旧GRANT失效；本例已标记未完成。"
+    },
+    "jam": {
+      "t": 27.026800000095395,
+      "phase": 4,
+      "open": 0.22,
+      "fault": "jam",
+      "faultElapsed": 4.026800000095369,
+      "scenario": {
+        "at": 23
+      },
+      "uniqueCount": 17,
+      "rod": {
+        "theta": 16.367747250923816,
+        "rodLength": 59.99999999999999,
+        "stroke": 3.299999999999788
+      },
+      "playing": false,
+      "complete": false,
+      "screen": "FAULT\n闸门 未确认关闭\n3.3g · 暂态\n禁止自动恢复",
+      "message": "动作超时：没有CLOSED；停止持续加力。"
+    },
+    "lost": {
+      "t": 27.029400000047705,
+      "phase": 4,
+      "open": 0,
+      "fault": "lost",
+      "faultElapsed": 4.029400000047682,
+      "scenario": {
+        "at": 23
+      },
+      "uniqueCount": 17,
+      "rod": {
+        "theta": 27.95318688338034,
+        "rodLength": 59.99999999999999,
+        "stroke": 2.1053118096595559e-13
+      },
+      "playing": false,
+      "complete": false,
+      "screen": "FAULT\n闸门 关限位确认（示例）\n3.3g · 暂态\n禁止自动恢复",
+      "message": "STOP优先：旧GRANT失效；本例已标记未完成。"
+    },
+    "playAdvances": true,
+    "mobile": {
+      "width": 390,
+      "scroll": 390,
+      "noOverflow": true
+    }
+  },
+  "assemblyMobile": {
+    "width": 390,
+    "scroll": 390,
+    "noOverflow": true
+  }
+}

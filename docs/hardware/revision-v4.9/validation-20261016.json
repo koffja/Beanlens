@@ -1,0 +1,100 @@
+{
+  "date": "2026-10-16",
+  "checks": [
+    {
+      "check": "Unique BOM IDs",
+      "passed": true
+    },
+    {
+      "check": "Unknown purchase prices remain unknown",
+      "passed": true
+    },
+    {
+      "check": "Removed middle coupling not ordered",
+      "passed": true
+    },
+    {
+      "check": "Two terminal blocks; two TB-A-only bridge segments",
+      "passed": true
+    },
+    {
+      "check": "Bucks and sensors are not assigned to 24V GPIO",
+      "passed": true
+    },
+    {
+      "check": "Controller PWM stays GPIO2",
+      "passed": true
+    },
+    {
+      "check": "Power continuous sum",
+      "passed": true
+    },
+    {
+      "check": "Power short peak sum",
+      "passed": true
+    },
+    {
+      "check": "Input fuse map matches baseline",
+      "passed": true
+    },
+    {
+      "check": "Window total active width",
+      "passed": true
+    },
+    {
+      "check": "Window X and Y within lower seat",
+      "passed": true
+    },
+    {
+      "check": "Lower seat misses rail Y132+",
+      "passed": true
+    },
+    {
+      "check": "Gate nominal clearance",
+      "passed": true
+    },
+    {
+      "check": "Upper seat and continuous hopper meet",
+      "passed": true
+    },
+    {
+      "check": "Hopper normal thickness creates larger outer dimensions",
+      "passed": true
+    },
+    {
+      "check": "Screen clearance kept positive",
+      "passed": true
+    },
+    {
+      "check": "Hopper volume independent numerical integration",
+      "passed": true
+    },
+    {
+      "check": "Baseline uses new bottom and two solid seats",
+      "passed": true
+    },
+    {
+      "check": "Local artifact links (22) resolve",
+      "passed": true
+    },
+    {
+      "check": "Four SVGs parse",
+      "passed": true
+    }
+  ],
+  "count": 20,
+  "missing_links": [],
+  "not_validated": [
+    "electrical load / thermal / connector samples",
+    "weld shrinkage / flatness",
+    "linkage ear / rear guard / optical beam collision",
+    "real bean capacity / bridging / weighing"
+  ],
+  "pdf_review": {
+    "pages": 4,
+    "paper": "A3 landscape",
+    "all_pages_visually_reviewed": true,
+    "browser_text_out_of_page_count": 0,
+    "note": "20 consistency checks and visual review do not prove hardware performance"
+  }
+}

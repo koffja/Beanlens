@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1500 1060" role="img" aria-label="前壁连续：关闸藏入前承接槽，开闸只向后退">
+<style>text{font-family:"PingFang SC","Microsoft YaHei",sans-serif;fill:#253c36;font-size:21px}.wire{fill:none;stroke-width:3;stroke-linecap:round;stroke-linejoin:round}.bold{font-weight:700}</style><rect width="1500" height="1060" fill="#fafbf7"/>
+<text x="48" y="55" class="" style="font-size:16px;fill:#477d67">BEANLENS / V4.10 / 02</text>
+<text x="48" y="108" class="" style="font-size:36px">前壁连续：关闸藏入前承接槽，开闸只向后退</text>
+<text x="48" y="148" class="" style="font-size:19px;fill:#667c71">侧剖面：左为机器前方，右为后方。绿色是固定PP件；灰色为铝闸片。可在网页拖动“开度”。</text>
+<polygon points="106.74382498235708,356.9999999999999 168,556.9999999999999 152.71853443618966,556.9999999999999 91.46235941854675,356.9999999999999" fill="#d4e9db" stroke="#50896b" stroke-width="2"/>
+<polygon points="313.2561750176428,356.9999999999999 328.53764058145345,356.9999999999999 267.28146556381046,556.9999999999999 252,556.9999999999999" fill="#d4e9db" stroke="#50896b" stroke-width="2"/>
+<rect x="105" y="556.9999999999999" width="63" height="60" rx="0" fill="#b4d9c0" stroke="#548668" stroke-width="2"/>
+<rect x="252" y="556.9999999999999" width="63" height="60" rx="0" fill="#b4d9c0" stroke="#548668" stroke-width="2"/>
+<rect x="105" y="640" width="63" height="100" rx="0" fill="#b4d9c0" stroke="#548668" stroke-width="2"/>
+<rect x="252" y="640" width="21" height="100" rx="0" fill="#b4d9c0" stroke="#548668" stroke-width="2"/>
+<rect x="91" y="556.9999999999999" width="14" height="183.0" rx="0" fill="#5eaf7e" stroke="#548668" stroke-width="2"/>
+<g id="moving-gate">
+<rect x="157.5" y="620" width="315" height="20" rx="0" fill="#b8c0c5" stroke="#548668" stroke-width="2"/>
+</g>
+<polyline class="wire" points="157.5,640 157.5,670 168,670" stroke="#8b49b1"/>
+<text x="65" y="844" class="" style="font-size:20px;fill:#7844a3">闭合前缘 Y112.5：藏入前承接槽 1.5</text>
+<text x="65" y="878" class="" style="font-size:20px">打开前缘 Y127.5：退过孔尾 Y126 再多 1.5</text>
+<text x="65" y="912" class="" style="font-size:18px">侧面封板 / 两端隔距条未画在中心剖面内</text>
+<text x="67" y="945" class="" style="font-size:19px">绿色前封壁贯穿 Z280–298.3；槽口只朝后开</text>
+<text x="65" y="240" class="" style="font-size:22px">连续PP前封壁</text>
+<polyline class="wire" points="163,248 98,680" stroke="#487465"/>
+<text x="284" y="224" class="" style="font-size:20px">在上斗内向上延伸20mm的分道片与刷排</text>
+<text x="284" y="254" class="" style="font-size:18px">刷毛最低 Z308，远离闸片上表面 Z292</text>
+<polyline class="wire" points="308,460 427,460 455,390" stroke="#ab7643" stroke-dasharray="8 6"/>
+<text x="462" y="321" class="" style="font-size:18px">后部连杆 / 防护罩另试配</text>
+<text x="317" y="498" class="" style="font-size:21px">PP6 上座</text>
+<polyline class="wire" points="306,505 280,590" stroke="#487465"/>
+<text x="317" y="711" class="" style="font-size:21px">PP10 下座</text>
+<polyline class="wire" points="306,718 259,690" stroke="#487465"/>
+<text x="420" y="578" class="" style="font-size:22px;fill:#62727b">← 关 / 开 →</text>
+<rect x="744" y="190" width="704" height="171" rx="8" fill="#eaf3ea" stroke="#c6d6ca" stroke-width="2"/>
+<text x="760" y="221" class="bold" style="font-size:23px">这次修正了什么</text>
+<text x="760" y="251" class="" style="font-size:18px">PP上座 + PP下座 + 前封壁 + 两侧封板，焊成固定槽体。</text>
+<text x="760" y="278" class="" style="font-size:18px">前面和两侧没有整条贯通的闸缝，豆子不能被向外推。</text>
+<text x="760" y="305" class="" style="font-size:18px">闸片只从后方进出；到位用限位停车，不撞前壁。</text>
+<text x="760" y="332" class="" style="font-size:18px">10mm下座只是出豆孔段厚度，不负责装刷条。</text>
+<rect x="744" y="380" width="704" height="171" rx="8" fill="#fff" stroke="#c6d6ca" stroke-width="2"/>
+<text x="760" y="411" class="bold" style="font-size:23px">固定件 / 移动件的尺寸</text>
+<text x="760" y="441" class="" style="font-size:18px">上座140×30×6；下座140×24×10，前脸同在Y105。</text>
+<text x="760" y="468" class="" style="font-size:18px">下座后端仍到Y129，避开Y132起的后导轨。</text>
+<text x="760" y="495" class="" style="font-size:18px">前封片140×18.3×2，两侧封片32×15.3×2。</text>
+<text x="760" y="522" class="" style="font-size:18px">闸缝2.3，闸片2，行程15；间隙先按实厚试配。</text>
+<rect x="744" y="570" width="704" height="171" rx="8" fill="#fff" stroke="#c6d6ca" stroke-width="2"/>
+<text x="760" y="601" class="bold" style="font-size:23px">为什么下座改 PP？</text>
+<text x="760" y="631" class="" style="font-size:18px">POM滑动、耐磨与尺寸稳定性更好，原选材有理由。</text>
+<text x="760" y="658" class="" style="font-size:18px">现在优先要可热焊的连续固定壁，所以用PP-H槽体。</text>
+<text x="760" y="685" class="" style="font-size:18px">PP手推阻力、焊后平整与磨损必须试验，不能当成POM。</text>
+<text x="760" y="712" class="" style="font-size:18px">POM保留为可拆螺接版本备选，不能直接焊到PP里。</text>
+<rect x="744" y="760" width="704" height="210" rx="8" fill="#fff3dc" stroke="#c6d6ca" stroke-width="2"/>
+<text x="760" y="791" class="bold" style="font-size:23px">别把 PP 焊死在移动件上</text>
+<text x="760" y="821" class="" style="font-size:18px">固定槽体焊接时，用量规控制闸缝，闸片/刷毛不在场。</text>
+<text x="760" y="848" class="" style="font-size:18px">冷却后再装铝闸片，手推全程；不靠螺丝挤压调间隙。</text>
+<text x="760" y="875" class="" style="font-size:18px">可从后方退出闸片清槽；盲承接位需检查积屑。</text>
+<text x="760" y="902" class="" style="font-size:18px">后退片罩、球头共面和光束/底脚仍需全行程试配。</text>
+<text x="760" y="929" class="" style="font-size:18px">这张剖面表达连续豆路，不代表整机碰撞审查完成。</text>
+<polyline class="wire" points="48,1000 1452,1000" stroke="#d3ded4"/>
+<text x="48" y="1030" class="" style="font-size:16px">2026-10-16 · 方案尺寸，非实物验收 · 先试焊 / 手推 / 无刷与带刷单槽对照，再五槽联调</text>
+<text x="1390" y="1030" class="" style="font-size:16px">2 / 5</text>
+</svg>

@@ -1,0 +1,29 @@
+{
+  "revision": "V4.6-black",
+  "date": "2026-10-15",
+  "scope": "shared-frame geometry, stock accounting and display checks",
+  "reference_validation": "../assembly-v4.5/validation-20261015.json",
+  "hardware_verified": false,
+  "same_scale_comparison": {
+    "comparedFrameMembers": 18,
+    "horizontalTranslationPx": 750,
+    "maxDeltaErrorPx": 1.1368683772161603e-13,
+    "sameScaleAndView": true
+  },
+  "stock_input_mm": 4740,
+  "finished_profile_length_mm": 4480,
+  "kerf_mm": 30,
+  "offcuts_mm": 230,
+  "buy_black_EU2020_finished_mm": {
+    "180": 4
+  },
+  "hopper_height_chain_mm": {
+    "midframe_top_z": 324,
+    "support_ear_thickness": 6,
+    "hopper_bottom_z": 330,
+    "hopper_height": 110,
+    "hopper_top_z": 440,
+    "top_frame_bottom_z": 440,
+    "frame_top_z": 460
+  }
+}

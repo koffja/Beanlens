@@ -1,0 +1,99 @@
+{
+  "date": "2026-10-17",
+  "revision": "V4.12",
+  "checks": [
+    {
+      "check": "109 distinct drawing objects",
+      "passed": true
+    },
+    {
+      "check": "114 distinct BOM rows retained",
+      "passed": true
+    },
+    {
+      "check": "18 frame members and 9 wood panels",
+      "passed": true
+    },
+    {
+      "check": "Frame lengths460x4/200x6/180x8",
+      "passed": true
+    },
+    {
+      "check": "Existing stock yields all lengths with 180x4 order",
+      "passed": true
+    },
+    {
+      "check": "Obsolete transition/flanges/stacked sheets absent",
+      "passed": true
+    },
+    {
+      "check": "Continuous PP hopper geometry",
+      "passed": true
+    },
+    {
+      "check": "Current seats agree with geometry source",
+      "passed": true
+    },
+    {
+      "check": "Continuous front wall and rear-entry geometry retained",
+      "passed": true
+    },
+    {
+      "check": "Four PP divider fins, ten PBT segments",
+      "passed": true
+    },
+    {
+      "check": "Both built-in screens and complete frame objects",
+      "passed": true
+    },
+    {
+      "check": "Recomputed screen clearances",
+      "passed": true
+    },
+    {
+      "check": "Sensor is SEN0503 and heads20x10x9",
+      "passed": true
+    },
+    {
+      "check": "Adapter YU2405 shown only as unknown external envelope",
+      "passed": true
+    },
+    {
+      "check": "External low voltage box, TPS5V and UBEC6V retained",
+      "passed": true
+    },
+    {
+      "check": "Baseline current assembly and animation synced",
+      "passed": true
+    },
+    {
+      "check": "GPIO20 polarity still unverified",
+      "passed": true
+    },
+    {
+      "check": "66 local artifact links exist",
+      "passed": true
+    },
+    {
+      "check": "12 parseable vector sheets",
+      "passed": true
+    },
+    {
+      "check": "12 A3 landscape PDF pages",
+      "passed": true
+    },
+    {
+      "check": "PDF includes both chosen models and current integrated version",
+      "passed": true
+    }
+  ],
+  "count": 21,
+  "missing_links": [],
+  "not_verified": [
+    "Physical assembly / interferences",
+    "PP weld/load/creep and PBT retention",
+    "Voltage/thermal/ripple/sensor levels",
+    "Firmware / cameras / classification / weight / uploads"
+  ],
+  "scope": "Document consistency and simulated browser interaction only."
+}

@@ -1,0 +1,73 @@
+{
+  "revision": "V4.6-black",
+  "date": "2026-10-15",
+  "consoleErrors": [],
+  "sheets": [
+    {
+      "file": "01-overall.svg",
+      "outside": [],
+      "overlaps": []
+    },
+    {
+      "file": "02-frame.svg",
+      "outside": [],
+      "overlaps": []
+    },
+    {
+      "file": "03-plywood.svg",
+      "outside": [],
+      "overlaps": []
+    },
+    {
+      "file": "04-gate.svg",
+      "outside": [],
+      "overlaps": []
+    },
+    {
+      "file": "05-optics-weight.svg",
+      "outside": [],
+      "overlaps": []
+    },
+    {
+      "file": "06-assembly-order.svg",
+      "outside": [],
+      "overlaps": []
+    },
+    {
+      "file": "07-connections.svg",
+      "outside": [],
+      "overlaps": []
+    }
+  ],
+  "comparison": {
+    "comparedFrameMembers": 18,
+    "horizontalTranslationPx": 750,
+    "maxDeltaErrorPx": 1.1368683772161603e-13,
+    "sameScaleAndView": true
+  },
+  "interaction": {
+    "initialAssembly": true,
+    "hidePanelsKeepsScale": true,
+    "groupKeepsScale": true,
+    "frameCount": 18,
+    "withoutPanels": 56,
+    "bomDetail": "BOM F01",
+    "partDetail": "绘制包络 20 × 20 × 460 mm；坐标 0 / 0 / 0",
+    "explosionMoves": true,
+    "reset": true
+  },
+  "mobile": {
+    "viewport": 390,
+    "bodyWidth": 390,
+    "noPageOverflow": true,
+    "drawingsScroll": true
+  },
+  "framePage": {
+    "toggles": [
+      true,
+      true,
+      true
+    ],
+    "missingLocalLinks": []
+  }
+}

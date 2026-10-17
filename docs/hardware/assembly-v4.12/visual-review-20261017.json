@@ -1,0 +1,9 @@
+{
+  "date": "2026-10-17",
+  "revision": "V4.12",
+  "pdf": "output/pdf/beanlens-assembly-v4.12-20261017.pdf",
+  "pdf_sha256": "779fd3a9a1562a578ca6b1a2b8fe5a5e3760d82297304cf2d4de1f311ac0503e",
+  "pages": 12,
+  "visual_review": "All 12 PDF pages rendered with Poppler and inspected in two six-page contact sheets; desktop and mobile operation views inspected. No clipped source text detected.",
+  "scope": "Document rendering and teaching simulation only; no physical or electrical verification."
+}

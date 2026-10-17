@@ -1,0 +1,16 @@
+# V4.7内嵌木板外观生成记录
+
+2026-10-16，内置image_gen。结构参考：[同坐标对照](black-frame-comparison-v4.6.svg)。本次显示三面木板下延、型材外露、板间腰线及PP2料斗。图为外观参考，屏幕内容和五金细节不构成新增功能/采购要求。
+
+输出：[V4.7外观](beanlens-frame-v4.7-inset-concept.png)。准确尺寸以共享数据、主装配图和PP制作指南为准。
+
+```text
+Industrial product visualization, precise sketch-to-render. The attached engineering comparison is the geometry reference. Render the SAME two machines with identical camera, scale, silhouette and vertical levels. LEFT assembled machine with inset marine plywood; RIGHT exactly the same bare BLACK anodized European2020 T-slot extrusion frame. Frame220mm wide240mm deep460mm tall; four continuous460mm posts. All four corner posts and horizontal frame bars are clearly exposed black metal, NO external plywood wrapping around posts or plywood-to-plywood exterior corner. Wood faces sit about1mm recessed into the framework with a narrow2mm reveal. Standard small INTERNAL L brackets only, no fantasy cube joints.
+
+The left/right/rear wooden enclosure extends ALL THE WAY DOWN to near the bottom rail. On the right visible side there are two rectangular wood panels: upper panel196wide112high betweenZ326..438; lower panel196wide280high fromZ22..302, separated by an exposed20mm black waist beam atZ304..324. Panel edges never cross through this beam. Front: upper176wide112high wooden screen panel, then exposed black waist beam, then a short176wide58high button panel fromZ244..302, then exposed camera support beamZ221..241 and a narrow matte-black light shield below it, then OPEN front collection bay belowZ195. Rear likewise clad downwards in segmented inset wood, not open at bottom. Do not close the front collection opening. The outer corner must be black aluminum, not a recessed concave plywood joint.
+Top/bottom rails Z440..460 and0..20. Mid waist ring Z304..324. Two camera width barsZ221.25..241.25, front and back only, no invented side camera bars. Four continuous posts and14 horizontal rails,18 total.
+
+Top wood hopper shell158square,110high fromZ330 to440, centered inside frame. White PP funnel is2mm welded PP with net136square mouth and110x30 lower outlet. White flat rim158square atZ440..442. Top hopper sits just below/within top ring, never a taller separate tower. Mark the same158x158x110 hopper volume in RIGHT skeleton by a subtle amber dashed transparent outline from330to440. This is a reference box, not extra rails. Both machines equal height, with the same exact opening size and hopper support level.
+
+Front small black2.4inch screen case64wide centeredZ370, two silver16mm circular buttons centeredZ273 on short wood panel. Right small status display in upper wood panel. Pale birch plywood subtlegrain, matte black metal Tslots, silver socket screws and realistic joints. Bottom bay shows translucent food-safe PP collection bin160x170x125 atop a thin internal metal weighing platform atZ45; wood side/back panels behind it reach bottom. No bathroom scale. Four tiny identical rubber feet on both units. Studio white warm-neutral background, restrained photoreal engineering product sheet, isometric-like view from front-right and above as reference, minimal text only 'BeanLens V4.7'. Reference image text/footer need not be reproduced. Do not change relative shape or independently resize the two units.
+```
