@@ -50,3 +50,6 @@ __pycache__/
 /artifacts/
 /tmp/
 /.playwright-mcp/
+
+# Model conversion products (weights copy, ONNX, kmodel, manifest)
+/output/kmodel/

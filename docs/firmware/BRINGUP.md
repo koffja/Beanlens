@@ -40,7 +40,9 @@ MVP选用DFRobot SEN0503（50cm）：5V供电，接收白OUT拟10kΩ上拉3.3V�
 - 6000K/Ra98 为两选一的工程优先方案，实际灯型号、剪切间距和功率仍待确认。
 - 接双摄记录实际同时帧率、时间戳、裁图与内存；不把“两路接口”当作硬同步。
 - 从已有训练 run 选择权重，记录标签映射与预处理；导出 ONNX、转换 kmodel 后，用同一组完整豆体图分别比较主机与 KPU 输出。
-- INT8 校准须包含实际装置的正常与异常样本；公开图集上的结果不能直接当成设备表现。
+  - 主机侧：`modal run scripts/modal_train.py::convert --run <run>` 生成 `output/kmodel/<run>/`（kmodel、labels、manifest、`board_test/`），流程与结果见 `docs/ml/TRAINING-BASELINE.md`。
+  - 板端：把 `best.kmodel`、`labels.txt`、`manifest.json`、`board_test/` 拷到 TF 卡 `/sdcard/beanlens/model/`，在 CanMV IDE 运行 `firmware/k230d/bringup/kmodel_static_check.py`。通过标准：`board_vs_sim_top1` 接近 1.0；同时记录推理耗时中位数和 `os.uname()`。
+- 量化校准须包含实际装置的正常与异常样本；公开图集上的结果不能直接当成设备表现。当前默认 int16 PTQ（uint8 损失过大，见训练基线）。
 
 完成证据：静态和落豆图片、双摄吞吐/内存、转换日志与模型校验值、主机/KPU差异。若转换失败先处理兼容性，不直接换框架或升级全部环境。
 
