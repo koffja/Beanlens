@@ -14,6 +14,7 @@ __pycache__/
 *.local.json
 *.local.toml
 .secrets/
+.vscode/
 
 # User datasets, original exports and training products
 /datasets/
@@ -50,3 +51,6 @@ __pycache__/
 /artifacts/
 /tmp/
 /.playwright-mcp/
+
+# Model conversion products (weights copy, ONNX, kmodel, manifest)
+/output/kmodel/
