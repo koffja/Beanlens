@@ -8,6 +8,7 @@
   - 每帧一个 .rgb565 文件（cap010 及之前）；
   - 每相机一个 camN.rgb565stream 连续文件 + index.csv（cam,frame,t_ms,offset[,length]），拆成 camN_帧号_时间ms.png；
   - 每相机一个 camN.jpgstream 连续 JPEG 文件 + index.csv（含 length），直接拆成 .jpg（无需转换）。
+未正常结束（无 done.txt）的目录也能转换：截断的帧和写了一半的索引行会跳过。
 尺寸默认从同目录 meta.txt 读取；PNG 默认写到 <输入目录>_png/，不改动原始文件。
 板端字节序：ATK v1.3 的 RGB565 为小端（le，默认），2026-10-17 用 cap011 对照确认；be 会成花屏。
 """
@@ -99,8 +100,13 @@ def main():
         frame_bytes = width * height * 2
         streams, ok, rows = {}, 0, index.read_text().splitlines()[1:]
         for line in rows:
-            cols = [int(x) for x in line.split(",")]
-            cam, frame, t_ms, offset = cols[:4]
+            try:
+                cols = [int(x) for x in line.split(",")]
+                cam, frame, t_ms, offset = cols[:4]
+            except ValueError:
+                # 板端卡死时最后一行可能只写了一半
+                print("skip malformed index line: %r" % line)
+                continue
             length = cols[4] if len(cols) > 4 else frame_bytes
             if cam not in streams:
                 ext = "jpgstream" if jpg else "rgb565stream"
