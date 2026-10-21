@@ -41,7 +41,12 @@ MVP选用DFRobot SEN0503（50cm）：5V供电，接收白OUT拟10kΩ上拉3.3V�
 - 接双摄记录实际同时帧率、时间戳、裁图与内存；不把“两路接口”当作硬同步。
 - 从已有训练 run 选择权重，记录标签映射与预处理；导出 ONNX、转换 kmodel 后，用同一组完整豆体图分别比较主机与 KPU 输出。
   - 主机侧：`modal run scripts/modal_train.py::convert --run <run>` 生成 `output/kmodel/<run>/`（kmodel、labels、manifest、`board_test/`），流程与结果见 `docs/ml/TRAINING-BASELINE.md`。
-  - 板端：把 `best.kmodel`、`labels.txt`、`manifest.json`、`board_test/` 拷到 TF 卡 `/sdcard/beanlens/model/`，在 CanMV IDE 运行 `firmware/k230d/bringup/kmodel_static_check.py`。通过标准：`board_vs_sim_top1` 接近 1.0；同时记录推理耗时中位数和 `os.uname()`。
+  - 板端：把 `best.kmodel`、`labels.txt`、`manifest.json`、`board_test/` 拷到板端 `/sdcard/beanlens/model/`（按原理图与厂商说明，`/sdcard` 应为板载 SD NAND 上 CanMV 盘的 sdcard 目录，不是 TF 卡；待实机确认），在 CanMV IDE 运行 `firmware/k230d/bringup/kmodel_static_check.py`。通过标准：`board_vs_sim_top1` 接近 1.0；同时记录推理耗时中位数和 `os.uname()`。
+  - 2026-10-21 上板结果（CanMV `v1.3-8dd764f`，`k230d_canmv_atk_dnk230d`；kmodel `54db37ce…`，int16/int16）：`board_vs_sim_top1=1.0`、`board_vs_onnx_top1=1.0`、`max_abs_diff_vs_sim=0.0051`（20 个样本），说明板端运行时与 nncase 2.9.0 配套、输入排列正确。但单次推理中位数 16308139 µs（约 16.3 s），远超可用范围；怀疑 int16 量化导致算子未在 KPU 上执行，待用 uint8 等变体实测确认。结果文件 `/sdcard/beanlens/model/board_check_3686580.json`。
+  - 同日对照：同一权重的 u8w16 变体（激活 uint8、权重 int16，kmodel `4899e348…`，3.4MB）`board_vs_sim_top1=1.0`、`max_abs_diff_vs_sim=0.0000`、`board_vs_onnx_top1=0.9`，单次推理中位数 7683 µs（约 7.7 ms），比 int16/int16 快约 2100 倍。确认慢速来自 int16 激活，而非算子回退或 nncase-kpu/target 配置。结果文件 `/sdcard/beanlens/model-u8w16/board_check_6204533.json`。u8w8 变体未上板。
+  - 实时链路（`kmodel_live_classify.py`，u8w16，`gc2093_csi2` 1280×960，中心裁 480）：约 40–44 fps，Ai2d 裁剪缩放＋KPU＋后处理中位数 12.3–12.8 ms（14860 帧与 2472 帧两次）。镜头为 M12 手动对焦，初次画面明显失焦；取景框清晰度（G 通道平均梯度，仅同场景相对比较）约 0.9–2.3。分类在 floater/full_sour/parchment 间跳变，失焦和公开数据集域差下不代表准确率。结果 `/sdcard/beanlens/model-u8w16/live_run_6740180.json`、`live_run_6897776.json`。
+  - 文件传输：`/sdcard` 为板载 SD NAND。经 USB 串口 raw REPL 批量写文件（mpremote 与 `firmware/k230d/tools/push_files.py`）多次使板卡失去响应，原因未查明；6.2MB kmodel 改用 CanMV IDE 上传成功并核对 SHA-256。
+  - 静态对照通过后，再运行 `firmware/k230d/bringup/kmodel_live_classify.py`：单摄连续采集、中心正方形裁剪（`CROP_SIDE`）后分类，LCD 显示 top-3、帧率与耗时，低于 `MIN_CONF` 显示“未判定”；停止时写 `live_run_<ticks>.json`（耗时统计，不存图）。只证明端上实时链路可运行，不代表端侧准确率。尚未上板实测。
 - 量化校准须包含实际装置的正常与异常样本；公开图集上的结果不能直接当成设备表现。当前默认 int16 PTQ（uint8 损失过大，见训练基线）。
 
 完成证据：静态和落豆图片、双摄吞吐/内存、转换日志与模型校验值、主机/KPU差异。若转换失败先处理兼容性，不直接换框架或升级全部环境。

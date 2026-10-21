@@ -4,8 +4,11 @@
 #      与主机 ONNX / nncase 模拟器的参考输出比对，打印 top1 一致率、输出差值和推理耗时，
 #      结果写到 MODEL_DIR/board_check_<ticks>.json。只新建结果文件，不覆盖已有文件。
 #
-# 准备（电脑上）：把 output/kmodel/<run>/ 里的这些文件拷到 TF 卡 MODEL_DIR：
+# 准备（电脑上）：把 output/kmodel/<run>/ 里的这些文件拷到板端 MODEL_DIR
+#   （/sdcard 应为板载 SD NAND 上 CanMV 盘的 sdcard 目录，不是 TF 卡；待实机确认）：
 #   best.kmodel、labels.txt、manifest.json、board_test/（*.bin + reference.json）
+# 同一 run 的量化变体（--tag）样本 .bin 相同、只有 reference.json 不同：变体目录只放
+#   best.kmodel、labels.txt、reference.json，并把 SAMPLE_DIR 指向已有的 board_test 目录。
 #
 # 接口来源：libs.AIBase / nncase_runtime.from_numpy 用法取自正点原子 CanMV v1.3
 #   AI Hub 例程（keyword_spotting.py、dynamic_gesture.py）。尚未在本机实测。
@@ -22,7 +25,9 @@ import nncase_runtime as nn
 import ulab.numpy as np
 from libs.AIBase import AIBase
 
-MODEL_DIR = "/sdcard/beanlens/model"
+MODEL_DIR = "/sdcard/beanlens/model-u8w16"
+SAMPLE_DIR = "/sdcard/beanlens/model/board_test"       # *.bin 所在目录；变体可改为 "/sdcard/beanlens/model/board_test"
+REFERENCE = None                             # None：先找 MODEL_DIR/reference.json，再找 MODEL_DIR/board_test/reference.json
 KMODEL = "best.kmodel"
 INPUT_SIZE = 224
 BIN_BYTES = 3 * INPUT_SIZE * INPUT_SIZE
@@ -41,10 +46,22 @@ def argmax(vec):
     return idx
 
 
+def find_reference():
+    for p in (MODEL_DIR + "/reference.json", MODEL_DIR + "/board_test/reference.json"):
+        try:
+            os.stat(p)
+            return p
+        except OSError:
+            pass
+    raise OSError("reference.json not found under " + MODEL_DIR)
+
+
 def main():
     labels = read_lines(MODEL_DIR + "/labels.txt")
-    with open(MODEL_DIR + "/board_test/reference.json", "r") as f:
+    ref_path = REFERENCE or find_reference()
+    with open(ref_path, "r") as f:
         ref = ujson.load(f)
+    print("model_dir:", MODEL_DIR, "reference:", ref_path, "samples_dir:", SAMPLE_DIR)
     samples = ref["samples"]
     print("kmodel:", KMODEL, "classes:", len(labels), "samples:", len(samples))
 
@@ -56,7 +73,7 @@ def main():
     times = []
     try:
         for s in samples:
-            with open(MODEL_DIR + "/board_test/" + s["file"], "rb") as f:
+            with open(SAMPLE_DIR + "/" + s["file"], "rb") as f:
                 data = f.read()
             if len(data) != BIN_BYTES:
                 raise ValueError("%s: %d bytes, expected %d" % (s["file"], len(data), BIN_BYTES))
@@ -91,6 +108,8 @@ def main():
     times.sort()
     result = {
         "kmodel": KMODEL,
+        "model_dir": MODEL_DIR,
+        "reference": ref_path,
         "uname": str(os.uname()),
         "samples": n,
         "board_vs_sim_top1": sim_match / n if n else None,

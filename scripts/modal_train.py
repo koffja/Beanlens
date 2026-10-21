@@ -8,6 +8,7 @@ Usage (from repo root):
     modal run scripts/modal_train.py::main --no-convert             # train only
     modal run scripts/modal_train.py::convert --run <run-name> [--calib-dir <local dir>]
     ... [--quant-type uint8 --w-quant-type int16]           # default int16/int16
+    ... --tag u8w16      # variant: kmodel/<run>-u8w16, same weights, new dir
 
 Stages:
   train    GPU, ultralytics image; the dataset folder is baked into the image.
@@ -171,9 +172,9 @@ def train(model: str, name: str, epochs: int, imgsz: int, batch: int, seed: int)
 
 
 @app.function(image=image, volumes={"/runs": runs_vol}, timeout=1800)
-def export_onnx(name: str, imgsz: int) -> None:
+def export_onnx(name: str, imgsz: int, out_name: str = "") -> None:
     weights = Path("/runs/classify") / name / "weights" / "best.pt"
-    out = Path("/runs/kmodel") / name
+    out = Path("/runs/kmodel") / (out_name or name)
     if not weights.is_file():
         raise SystemExit(f"no weights on volume: {weights}")
     manifest = out / "manifest.json"
@@ -220,10 +221,12 @@ def compile_kmodel(name: str, calib_tar: bytes | None, calib_label: str, quant: 
     return _tar_dirs({name: work})
 
 
-def _convert(name: str, imgsz: int, calib_dir: str, quant_type: str, w_quant_type: str) -> None:
+def _convert(name: str, imgsz: int, calib_dir: str, quant_type: str, w_quant_type: str,
+             tag: str = "") -> None:
     dest = ROOT / "output" / "kmodel"
-    if (dest / name).exists():
-        raise SystemExit(f"refusing to overwrite {dest / name}")
+    out_name = f"{name}-{tag}" if tag else name
+    if (dest / out_name).exists():
+        raise SystemExit(f"refusing to overwrite {dest / out_name}")
     if calib_dir:
         src = Path(calib_dir).resolve()
         if not src.is_dir():
@@ -234,14 +237,14 @@ def _convert(name: str, imgsz: int, calib_dir: str, quant_type: str, w_quant_typ
         calib_label = f"placeholder: public {DATASET}/train crops, not BOX lighting/camera"
 
     print(f"exporting ONNX for {name} ...")
-    export_onnx.remote(name, imgsz)
+    export_onnx.remote(name, imgsz, out_name)
     print("compiling kmodel (nncase) ...")
     quant = ["--quant-type", quant_type, "--w-quant-type", w_quant_type]
-    _untar(compile_kmodel.remote(name, calib_tar, calib_label, quant), dest)
-    manifest = json.loads((dest / name / "manifest.json").read_text())
+    _untar(compile_kmodel.remote(out_name, calib_tar, calib_label, quant), dest)
+    manifest = json.loads((dest / out_name / "manifest.json").read_text())
     print(json.dumps({k: manifest.get(k) for k in
                       ("kmodel", "kmodel_sha256", "nncase", "ptq", "host_check")}, indent=2))
-    print(f"saved to {dest / name}")
+    print(f"saved to {dest / out_name}")
 
 
 @app.local_entrypoint()
@@ -265,6 +268,11 @@ def main(model: str = "yolo26n-cls.pt", epochs: int = 100, imgsz: int = 224,
 
 @app.local_entrypoint()
 def convert(run: str, imgsz: int = 224, calib_dir: str = "",
-            quant_type: str = "int16", w_quant_type: str = "int16"):
-    """Convert an existing run on the volume (classify/<run>) to kmodel."""
-    _convert(run, imgsz, calib_dir, quant_type, w_quant_type)
+            quant_type: str = "int16", w_quant_type: str = "int16", tag: str = ""):
+    """Convert an existing run on the volume (classify/<run>) to kmodel.
+
+    --tag writes a variant to kmodel/<run>-<tag> (e.g. other quant types)
+    without touching the run's existing kmodel."""
+    if tag and not tag.replace("-", "").isalnum():
+        raise SystemExit("--tag: letters, digits and '-' only")
+    _convert(run, imgsz, calib_dir, quant_type, w_quant_type, tag)

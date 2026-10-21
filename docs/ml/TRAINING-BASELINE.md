@@ -43,7 +43,7 @@
 
 ## 2026-10-18 kmodel 转换流水线（主机转换 + 模拟器对照，未上板）
 
-- 一条命令：`modal run scripts/modal_train.py::main`，依次完成训练（L4）→ 导出 ONNX（训练镜像，opset 13）→ nncase 编译（独立镜像：Linux x86_64、Python 3.10、.NET 7、nncase/nncase-kpu 2.9.0）。对已有 run 只做转换：`modal run scripts/modal_train.py::convert --run <run>`。产物在 `output/kmodel/<run>/`（已被 gitignore）和 Volume `beanlens-runs` 的 `kmodel/<run>`。
+- 一条命令：`modal run scripts/modal_train.py::main`，依次完成训练（L4）→ 导出 ONNX（训练镜像，opset 13）→ nncase 编译（独立镜像：Linux x86_64、Python 3.10、.NET 7、nncase/nncase-kpu 2.9.0）。对已有 run 只做转换：`modal run scripts/modal_train.py::convert --run <run>`。加 `--tag <名>` 可用同一权重生成量化变体，输出到 `<run>-<名>`，不覆盖原 kmodel。产物在 `output/kmodel/<run>/`（已被 gitignore）和 Volume `beanlens-runs` 的 `kmodel/<run>`。
 - kmodel 输入：uint8 RGB NCHW 1×3×224×224；x/255 在模型内完成。短边缩放到 224 加中心裁切不在模型内，板端必须按同样方式处理。输出是 16 类 softmax，标签顺序见 `labels.txt`。
 - 主机对照：在 val 上取 50 张，比较 ONNX 与 nncase 模拟器的结果。`board_test/` 里存了其中 20 张预处理后的 .bin 和参考输出，供板端 `firmware/k230d/bringup/kmodel_static_check.py` 使用。
 - 校准数据目前是占位：用公开数据集的 train 裁图，manifest 中 `ptq.calib_source` 标明了这一点。实机裁图就绪后，用 `--calib-dir <本地目录>` 重新转换。
@@ -58,7 +58,7 @@
 2. Modal 的 gVisor 沙箱里，`unlink("dir/")` 返回 ENOTDIR 而不是 EISDIR，导致 k230 模拟器的 `remove_all` 失败、进程 abort。只给 compile 子进程加了 `LD_PRELOAD` 的 `remove()` 补丁；在真 Linux 上不需要。
 3. 模拟器可执行文件 `nncase.simulator.k230.sc` 装在 site-packages 根目录，不在 PATH 里，已在镜像中软链到 `/usr/local/bin`。
 
-量化选项对比（YOLO26n，修复输入排列后，val 20 张，uint8 输入加模型内预处理）：全 uint8 时一致率 0.70（KLD 0.70，UseSquant 0.80）；激活 uint8 / 权重 int16 为 0.90（3.4MB）；激活 int16 / 权重 uint8 为 0.70；全 int16 为 0.95，余弦 0.9997（6.2MB）。因此默认用 int16，可用 `--quant-type/--w-quant-type` 切换。int16 在 KPU 上的耗时和内存尚未实测。
+量化选项对比（YOLO26n，修复输入排列后，val 20 张，uint8 输入加模型内预处理）：全 uint8 时一致率 0.70（KLD 0.70，UseSquant 0.80）；激活 uint8 / 权重 int16 为 0.90（3.4MB）；激活 int16 / 权重 uint8 为 0.70；全 int16 为 0.95，余弦 0.9997（6.2MB）。因此默认用 int16，可用 `--quant-type/--w-quant-type` 切换。int16 在 KPU 上的耗时和内存尚未实测。2026-10-21 上板：yolo26n 全 int16 kmodel 与模拟器 top1 一致率 1.0，但单次推理约 16.3 s，不可用于实时分类；同权重 u8w16 变体（`--tag u8w16`）上板约 7.7 ms/次，与模拟器一致率 1.0；主机 50 张与 ONNX 一致率 0.92（余弦 min 0.74 / mean 0.98）；u8w8 主机一致率 0.76（余弦 min 0.07），未上板。当前端侧候选为 u8w16；默认 int16 只适合主机对照。（见 `docs/firmware/BRINGUP.md`）
 
 仍未完成：板端运行时版本未读取（不能确认与 nncase 2.9.0 配套）；`kmodel_static_check.py` 未上板运行；未用实机光照的裁图校准；未测板端推理耗时。
 

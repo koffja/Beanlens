@@ -61,6 +61,7 @@ modal run scripts/modal_train.py::main                          # 训练 YOLO26n
 modal run scripts/modal_train.py::main --model yolo11n-cls.pt   # YOLO11n 对照
 modal run scripts/modal_train.py::main --no-convert             # 只训练
 modal run scripts/modal_train.py::convert --run <run名>          # 只转换已有 run
+modal run scripts/modal_train.py::convert --run <run名> --quant-type uint8 --w-quant-type int16 --tag u8w16  # 同一权重的量化变体，输出到 <run名>-u8w16
 ```
 
 - 训练结果：`runs/modal/<run名>/`；kmodel、标签、manifest 和板端测试样本：`output/kmodel/<run名>/`。云端副本保存在 Modal Volume `beanlens-runs`（首次运行自动创建，可用 `modal volume ls beanlens-runs` 查看）。
