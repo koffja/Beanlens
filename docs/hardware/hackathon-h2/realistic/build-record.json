@@ -1,0 +1,14 @@
+{
+  "date": "2026-10-21",
+  "revision": "H2",
+  "artifact": "beanlens-realistic-h2.html",
+  "artifact_sha256": "8b5f759cfa61ae528d2f612dd94815769060e97c7582faea755315e8b31b4999",
+  "sources_sha256": {
+    "vendor/three-0.160.1.min.js": "170c6789f43217c96b3170f4b42fafe135de7f7cd48497a4218f9757ee1d49fa",
+    "design-data.js": "f7ffa8363436d5e9f4d9b4d907513a5cbbe4dd507c9c662b2896a591e5b409b0",
+    "model-base-h1.js": "a0cb108a362af1e36efff7d569b6aa92ad87685eee22534e818c5b4cef09b25b",
+    "model.js": "68e59992ee4f917b1aadbb6b3e1a82818c49d66245e1dd0a1eaa082744111406",
+    "app.js": "82d024a5fdbbf056ef7df154511f95f5619581fbe58b4b4ddc6017e3349ccf30"
+  },
+  "network_required": false
+}

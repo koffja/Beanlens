@@ -1,0 +1,932 @@
+{
+  "date": "2026-10-21",
+  "kind": "host_browser_and_geometry_not_hardware_validation",
+  "checks": [
+    {
+      "name": "offline_initial_whole_frame_two_cameras_one_horn_two_balls",
+      "pass": true,
+      "detail": {
+        "time": 0,
+        "playing": false,
+        "view": "whole",
+        "gate": {
+          "theta_deg": -40.706341765388494,
+          "slide_mm": 2.842170943040401e-14,
+          "crank_ball": [
+            157.8710055320565,
+            169.56508298084762,
+            337.5
+          ],
+          "gate_ball": [
+            110,
+            184.00000000000003,
+            337.5
+          ],
+          "rod_length_mm": 50,
+          "leading_y": 108.00000000000003
+        },
+        "beanVisible": false,
+        "bean": [
+          110,
+          460,
+          120
+        ],
+        "cameraCount": 2,
+        "hornCount": 1,
+        "ballHeadCount": 2,
+        "stationaryPair": false,
+        "frameVisible": true,
+        "shieldVisible": false,
+        "opticalObstructions": [
+          [],
+          []
+        ],
+        "geometrySource": "../design-h3.json",
+        "appearance": "reconstructed_not_vendor_cad",
+        "fallSlowdown": 12,
+        "gotA": false,
+        "gotB": false,
+        "meshCount": 515
+      }
+    },
+    {
+      "name": "both_horizontal_central_sight_lines_clear",
+      "pass": true,
+      "detail": [
+        [],
+        []
+      ]
+    },
+    {
+      "name": "closed_gate_covers_18x14_hole",
+      "pass": true,
+      "detail": {
+        "theta_deg": -40.706341765388494,
+        "slide_mm": 2.842170943040401e-14,
+        "crank_ball": [
+          157.8710055320565,
+          169.56508298084762,
+          337.5
+        ],
+        "gate_ball": [
+          110,
+          184.00000000000003,
+          337.5
+        ],
+        "rod_length_mm": 50,
+        "leading_y": 108.00000000000003
+      }
+    },
+    {
+      "name": "streams_prepared_before_release_and_no_images_yet",
+      "pass": true,
+      "detail": {
+        "time": 2.7,
+        "playing": false,
+        "view": "whole",
+        "gate": {
+          "theta_deg": -40.706341765388494,
+          "slide_mm": 2.842170943040401e-14,
+          "crank_ball": [
+            157.8710055320565,
+            169.56508298084762,
+            337.5
+          ],
+          "gate_ball": [
+            110,
+            184.00000000000003,
+            337.5
+          ],
+          "rod_length_mm": 50,
+          "leading_y": 108.00000000000003
+        },
+        "beanVisible": true,
+        "bean": [
+          110,
+          328.8,
+          120
+        ],
+        "cameraCount": 2,
+        "hornCount": 1,
+        "ballHeadCount": 2,
+        "stationaryPair": false,
+        "frameVisible": true,
+        "shieldVisible": false,
+        "opticalObstructions": [
+          [],
+          []
+        ],
+        "geometrySource": "../design-h3.json",
+        "appearance": "reconstructed_not_vendor_cad",
+        "fallSlowdown": 12,
+        "gotA": false,
+        "gotB": false,
+        "meshCount": 536
+      }
+    },
+    {
+      "name": "fully_open_before_illustrated_release",
+      "pass": true,
+      "detail": {
+        "time": 6.2,
+        "playing": false,
+        "view": "whole",
+        "gate": {
+          "theta_deg": 0,
+          "slide_mm": 19.748684174075834,
+          "crank_ball": [
+            154,
+            180,
+            337.5
+          ],
+          "gate_ball": [
+            110,
+            203.74868417407583,
+            337.5
+          ],
+          "rod_length_mm": 50,
+          "leading_y": 127.74868417407583
+        },
+        "beanVisible": true,
+        "bean": [
+          110,
+          328.8,
+          120
+        ],
+        "cameraCount": 2,
+        "hornCount": 1,
+        "ballHeadCount": 2,
+        "stationaryPair": false,
+        "frameVisible": true,
+        "shieldVisible": false,
+        "opticalObstructions": [
+          [],
+          []
+        ],
+        "geometrySource": "../design-h3.json",
+        "appearance": "reconstructed_not_vendor_cad",
+        "fallSlowdown": 12,
+        "gotA": false,
+        "gotB": false,
+        "meshCount": 536
+      }
+    },
+    {
+      "name": "two_horizontal_views_capture_falling_not_stationary_bean",
+      "pass": true,
+      "detail": {
+        "a": {
+          "time": 7.59,
+          "playing": false,
+          "view": "whole",
+          "gate": {
+            "theta_deg": 0,
+            "slide_mm": 19.748684174075834,
+            "crank_ball": [
+              154,
+              180,
+              337.5
+            ],
+            "gate_ball": [
+              110,
+              203.74868417407583,
+              337.5
+            ],
+            "rod_length_mm": 50,
+            "leading_y": 127.74868417407583
+          },
+          "beanVisible": true,
+          "bean": [
+            110,
+            262.98784375,
+            120
+          ],
+          "cameraCount": 2,
+          "hornCount": 1,
+          "ballHeadCount": 2,
+          "stationaryPair": false,
+          "frameVisible": true,
+          "shieldVisible": false,
+          "opticalObstructions": [
+            [],
+            []
+          ],
+          "geometrySource": "../design-h3.json",
+          "appearance": "reconstructed_not_vendor_cad",
+          "fallSlowdown": 12,
+          "gotA": true,
+          "gotB": false,
+          "meshCount": 540
+        },
+        "b": {
+          "time": 7.65,
+          "playing": false,
+          "view": "whole",
+          "gate": {
+            "theta_deg": 0,
+            "slide_mm": 19.748684174075834,
+            "crank_ball": [
+              154,
+              180,
+              337.5
+            ],
+            "gate_ball": [
+              110,
+              203.74868417407583,
+              337.5
+            ],
+            "rod_length_mm": 50,
+            "leading_y": 127.74868417407583
+          },
+          "beanVisible": true,
+          "bean": [
+            110,
+            257.18359375,
+            120
+          ],
+          "cameraCount": 2,
+          "hornCount": 1,
+          "ballHeadCount": 2,
+          "stationaryPair": false,
+          "frameVisible": true,
+          "shieldVisible": false,
+          "opticalObstructions": [
+            [],
+            []
+          ],
+          "geometrySource": "../design-h3.json",
+          "appearance": "reconstructed_not_vendor_cad",
+          "fallSlowdown": 12,
+          "gotA": true,
+          "gotB": true,
+          "meshCount": 540
+        }
+      }
+    },
+    {
+      "name": "bean_enters_cup_before_closing",
+      "pass": true
+    },
+    {
+      "name": "slow_close_after_empty_path",
+      "pass": true,
+      "detail": {
+        "time": 12.7,
+        "playing": false,
+        "view": "whole",
+        "gate": {
+          "theta_deg": -11.074023798285504,
+          "slide_mm": 16.114998283410785,
+          "crank_ball": [
+            154.2979224500625,
+            176.9267670742769,
+            337.5
+          ],
+          "gate_ball": [
+            110,
+            200.11499828341078,
+            337.5
+          ],
+          "rod_length_mm": 50.00000000000001,
+          "leading_y": 124.11499828341078
+        },
+        "beanVisible": true,
+        "bean": [
+          110,
+          32,
+          120
+        ],
+        "cameraCount": 2,
+        "hornCount": 1,
+        "ballHeadCount": 2,
+        "stationaryPair": false,
+        "frameVisible": true,
+        "shieldVisible": false,
+        "opticalObstructions": [
+          [],
+          []
+        ],
+        "geometrySource": "../design-h3.json",
+        "appearance": "reconstructed_not_vendor_cad",
+        "fallSlowdown": 12,
+        "gotA": true,
+        "gotB": true,
+        "meshCount": 536
+      }
+    },
+    {
+      "name": "cycle_ends_closed",
+      "pass": true
+    },
+    {
+      "name": "play_restarts_finished_cycle",
+      "pass": true
+    },
+    {
+      "name": "pause_holds_time",
+      "pass": true
+    },
+    {
+      "name": "side_shields_do_not_block_rear_camera",
+      "pass": true
+    },
+    {
+      "name": "opaque_funnels_keep_central_optics_clear",
+      "pass": true
+    },
+    {
+      "name": "linkage_focus_has_component_explanation",
+      "pass": true
+    },
+    {
+      "name": "exploded_view_is_paused_and_closed",
+      "pass": true,
+      "detail": {
+        "time": 0,
+        "playing": false,
+        "view": "parts",
+        "gate": {
+          "theta_deg": -40.706341765388494,
+          "slide_mm": 2.842170943040401e-14,
+          "crank_ball": [
+            157.8710055320565,
+            169.56508298084762,
+            337.5
+          ],
+          "gate_ball": [
+            110,
+            184.00000000000003,
+            337.5
+          ],
+          "rod_length_mm": 50,
+          "leading_y": 108.00000000000003
+        },
+        "beanVisible": false,
+        "bean": [
+          110,
+          460,
+          120
+        ],
+        "cameraCount": 2,
+        "hornCount": 1,
+        "ballHeadCount": 2,
+        "stationaryPair": false,
+        "frameVisible": false,
+        "shieldVisible": false,
+        "opticalObstructions": [
+          [],
+          []
+        ],
+        "geometrySource": "../design-h3.json",
+        "appearance": "reconstructed_not_vendor_cad",
+        "fallSlowdown": 12,
+        "gotA": false,
+        "gotB": false,
+        "meshCount": 318
+      }
+    },
+    {
+      "name": "rigid_link_monotonic_sample_0",
+      "pass": true,
+      "detail": {
+        "theta_deg": -40.706341765388494,
+        "slide_mm": 2.842170943040401e-14,
+        "crank_ball": [
+          157.8710055320565,
+          169.56508298084762,
+          337.5
+        ],
+        "gate_ball": [
+          110,
+          184.00000000000003,
+          337.5
+        ],
+        "rod_length_mm": 50,
+        "leading_y": 108.00000000000003
+      }
+    },
+    {
+      "name": "rigid_link_monotonic_sample_1",
+      "pass": true,
+      "detail": {
+        "theta_deg": -40.41122078758943,
+        "slide_mm": 0.23914725935890147,
+        "crank_ball": [
+          157.81741815464702,
+          169.62769555107084,
+          337.5
+        ],
+        "gate_ball": [
+          110,
+          184.2391472593589,
+          337.5
+        ],
+        "rod_length_mm": 50,
+        "leading_y": 108.2391472593589
+      }
+    },
+    {
+      "name": "rigid_link_monotonic_sample_2",
+      "pass": true,
+      "detail": {
+        "theta_deg": -39.56656419595762,
+        "slide_mm": 0.9070159242016018,
+        "crank_ball": [
+          157.66583856314975,
+          169.80841221154836,
+          337.5
+        ],
+        "gate_ball": [
+          110,
+          184.9070159242016,
+          337.5
+        ],
+        "rod_length_mm": 50,
+        "leading_y": 108.9070159242016
+      }
+    },
+    {
+      "name": "rigid_link_monotonic_sample_3",
+      "pass": true,
+      "detail": {
+        "theta_deg": -38.23343150314114,
+        "slide_mm": 1.9158167145643858,
+        "crank_ball": [
+          157.43206520918227,
+          170.0981307272943,
+          337.5
+        ],
+        "gate_ball": [
+          110,
+          185.9158167145644,
+          337.5
+        ],
+        "rod_length_mm": 50,
+        "leading_y": 109.91581671456439
+      }
+    },
+    {
+      "name": "rigid_link_monotonic_sample_4",
+      "pass": true,
+      "detail": {
+        "theta_deg": -36.4728822217881,
+        "slide_mm": 3.1744295273336434,
+        "crank_ball": [
+          157.13378724904987,
+          170.48892385440593,
+          337.5
+        ],
+        "gate_ball": [
+          110,
+          187.17442952733364,
+          337.5
+        ],
+        "rod_length_mm": 49.99999999999999,
+        "leading_y": 111.17442952733364
+      }
+    },
+    {
+      "name": "rigid_link_monotonic_sample_5",
+      "pass": true,
+      "detail": {
+        "theta_deg": -34.34597586454654,
+        "slide_mm": 4.600432978903569,
+        "crank_ball": [
+          156.7896665878884,
+          170.97297994126257,
+          337.5
+        ],
+        "gate_ball": [
+          110,
+          188.60043297890357,
+          337.5
+        ],
+        "rod_length_mm": 49.99999999999999,
+        "leading_y": 112.60043297890357
+      }
+    },
+    {
+      "name": "rigid_link_monotonic_sample_6",
+      "pass": true,
+      "detail": {
+        "theta_deg": -31.91377194406459,
+        "slide_mm": 6.1246222510752375,
+        "crank_ball": [
+          156.41848568609507,
+          171.54172186900928,
+          337.5
+        ],
+        "gate_ball": [
+          110,
+          190.12462225107524,
+          337.5
+        ],
+        "rod_length_mm": 50,
+        "leading_y": 114.12462225107524
+      }
+    },
+    {
+      "name": "rigid_link_monotonic_sample_7",
+      "pass": true,
+      "detail": {
+        "theta_deg": -29.23732997299028,
+        "slide_mm": 7.690830406375085,
+        "crank_ball": [
+          156.0383354182987,
+          172.1851473393245,
+          337.5
+        ],
+        "gate_ball": [
+          110,
+          191.69083040637508,
+          337.5
+        ],
+        "rod_length_mm": 49.99999999999999,
+        "leading_y": 115.69083040637508
+      }
+    },
+    {
+      "name": "rigid_link_monotonic_sample_8",
+      "pass": true,
+      "detail": {
+        "theta_deg": -26.37770946397175,
+        "slide_mm": 9.253892957298092,
+        "crank_ball": [
+          155.6658452037879,
+          172.89141320104835,
+          337.5
+        ],
+        "gate_ball": [
+          110,
+          193.2538929572981,
+          337.5
+        ],
+        "rod_length_mm": 50,
+        "leading_y": 117.25389295729809
+      }
+    },
+    {
+      "name": "rigid_link_monotonic_sample_9",
+      "pass": true,
+      "detail": {
+        "theta_deg": -23.39596992965705,
+        "slide_mm": 10.777387294380162,
+        "crank_ball": [
+          155.3154790719894,
+          173.646666613909,
+          337.5
+        ],
+        "gate_ball": [
+          110,
+          194.77738729438016,
+          337.5
+        ],
+        "rod_length_mm": 50,
+        "leading_y": 118.77738729438016
+      }
+    },
+    {
+      "name": "rigid_link_monotonic_sample_10",
+      "pass": true,
+      "detail": {
+        "theta_deg": -20.353170882694247,
+        "slide_mm": 12.231799935330855,
+        "crank_ball": [
+          154.9989348463668,
+          174.43510608758334,
+          337.5
+        ],
+        "gate_ball": [
+          110,
+          196.23179993533086,
+          337.5
+        ],
+        "rod_length_mm": 49.99999999999999,
+        "leading_y": 120.23179993533086
+      }
+    },
+    {
+      "name": "rigid_link_monotonic_sample_11",
+      "pass": true,
+      "detail": {
+        "theta_deg": -17.310371835731466,
+        "slide_mm": 13.593256866761692,
+        "crank_ball": [
+          154.72468876380555,
+          175.2392367589438,
+          337.5
+        ],
+        "gate_ball": [
+          110,
+          197.5932568667617,
+          337.5
+        ],
+        "rod_length_mm": 50.00000000000001,
+        "leading_y": 121.59325686676169
+      }
+    },
+    {
+      "name": "rigid_link_monotonic_sample_12",
+      "pass": true,
+      "detail": {
+        "theta_deg": -14.328632301416746,
+        "slide_mm": 14.842734399546117,
+        "crank_ball": [
+          154.4977251502247,
+          176.0402683825764,
+          337.5
+        ],
+        "gate_ball": [
+          110,
+          198.84273439954612,
+          337.5
+        ],
+        "rod_length_mm": 50,
+        "leading_y": 122.84273439954612
+      }
+    },
+    {
+      "name": "rigid_link_monotonic_sample_13",
+      "pass": true,
+      "detail": {
+        "theta_deg": -11.469011792398215,
+        "slide_mm": 15.96559172758299,
+        "crank_ball": [
+          154.3194817808882,
+          176.81859333311468,
+          337.5
+        ],
+        "gate_ball": [
+          110,
+          199.965591727583,
+          337.5
+        ],
+        "rod_length_mm": 49.99999999999999,
+        "leading_y": 123.96559172758299
+      }
+    },
+    {
+      "name": "rigid_link_monotonic_sample_14",
+      "pass": true,
+      "detail": {
+        "theta_deg": -8.792569821323932,
+        "slide_mm": 16.951245472757762,
+        "crank_ball": [
+          154.18802859990953,
+          177.55427711244283,
+          337.5
+        ],
+        "gate_ball": [
+          110,
+          200.95124547275776,
+          337.5
+        ],
+        "rod_length_mm": 50.00000000000001,
+        "leading_y": 124.95124547275776
+      }
+    },
+    {
+      "name": "rigid_link_monotonic_sample_15",
+      "pass": true,
+      "detail": {
+        "theta_deg": -6.360365900841952,
+        "slide_mm": 17.79280496224456,
+        "crank_ball": [
+          154.09848336760376,
+          178.22749646273252,
+          337.5
+        ],
+        "gate_ball": [
+          110,
+          201.79280496224456,
+          337.5
+        ],
+        "rod_length_mm": 50,
+        "leading_y": 125.79280496224456
+      }
+    },
+    {
+      "name": "rigid_link_monotonic_sample_16",
+      "pass": true,
+      "detail": {
+        "theta_deg": -4.233459543600412,
+        "slide_mm": 18.486494330588727,
+        "crank_ball": [
+          154.04365539863926,
+          178.8188704716984,
+          337.5
+        ],
+        "gate_ball": [
+          110,
+          202.48649433058873,
+          337.5
+        ],
+        "rod_length_mm": 49.99999999999999,
+        "leading_y": 126.48649433058873
+      }
+    },
+    {
+      "name": "rigid_link_monotonic_sample_17",
+      "pass": true,
+      "detail": {
+        "theta_deg": -2.4729102622473498,
+        "slide_mm": 19.030704759600837,
+        "crank_ball": [
+          154.01490026584491,
+          179.30964756166537,
+          337.5
+        ],
+        "gate_ball": [
+          110,
+          203.03070475960084,
+          337.5
+        ],
+        "rod_length_mm": 50.00000000000001,
+        "leading_y": 127.03070475960084
+      }
+    },
+    {
+      "name": "rigid_link_monotonic_sample_18",
+      "pass": true,
+      "detail": {
+        "theta_deg": -1.139777569430879,
+        "slide_mm": 19.42455307699305,
+        "crank_ball": [
+          154.00316570623886,
+          179.68173505070803,
+          337.5
+        ],
+        "gate_ball": [
+          110,
+          203.42455307699305,
+          337.5
+        ],
+        "rod_length_mm": 50.00000000000001,
+        "leading_y": 127.42455307699305
+      }
+    },
+    {
+      "name": "rigid_link_monotonic_sample_19",
+      "pass": true,
+      "detail": {
+        "theta_deg": -0.29512097779907026,
+        "slide_mm": 19.6658779707997,
+        "crank_ball": [
+          154.00021224815524,
+          179.9175870403498,
+          337.5
+        ],
+        "gate_ball": [
+          110,
+          203.6658779707997,
+          337.5
+        ],
+        "rod_length_mm": 49.99999999999999,
+        "leading_y": 127.6658779707997
+      }
+    },
+    {
+      "name": "rigid_link_monotonic_sample_20",
+      "pass": true,
+      "detail": {
+        "theta_deg": 0,
+        "slide_mm": 19.748684174075834,
+        "crank_ball": [
+          154,
+          180,
+          337.5
+        ],
+        "gate_ball": [
+          110,
+          203.74868417407583,
+          337.5
+        ],
+        "rod_length_mm": 50,
+        "leading_y": 127.74868417407583
+      }
+    },
+    {
+      "name": "mobile_no_horizontal_overflow",
+      "pass": true
+    },
+    {
+      "name": "no_page_errors",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "no_external_network_requests",
+      "pass": true,
+      "detail": []
+    }
+  ],
+  "samples": [
+    {
+      "t": 4.2,
+      "slide": 2.842170943040401e-14,
+      "length": 50
+    },
+    {
+      "t": 4.3,
+      "slide": 0.23914725935890147,
+      "length": 50
+    },
+    {
+      "t": 4.4,
+      "slide": 0.9070159242016018,
+      "length": 50
+    },
+    {
+      "t": 4.5,
+      "slide": 1.9158167145643858,
+      "length": 50
+    },
+    {
+      "t": 4.6,
+      "slide": 3.1744295273336434,
+      "length": 49.99999999999999
+    },
+    {
+      "t": 4.7,
+      "slide": 4.600432978903569,
+      "length": 49.99999999999999
+    },
+    {
+      "t": 4.8,
+      "slide": 6.1246222510752375,
+      "length": 50
+    },
+    {
+      "t": 4.9,
+      "slide": 7.690830406375085,
+      "length": 49.99999999999999
+    },
+    {
+      "t": 5,
+      "slide": 9.253892957298092,
+      "length": 50
+    },
+    {
+      "t": 5.1,
+      "slide": 10.777387294380162,
+      "length": 50
+    },
+    {
+      "t": 5.2,
+      "slide": 12.231799935330855,
+      "length": 49.99999999999999
+    },
+    {
+      "t": 5.3,
+      "slide": 13.593256866761692,
+      "length": 50.00000000000001
+    },
+    {
+      "t": 5.4,
+      "slide": 14.842734399546117,
+      "length": 50
+    },
+    {
+      "t": 5.5,
+      "slide": 15.96559172758299,
+      "length": 49.99999999999999
+    },
+    {
+      "t": 5.6,
+      "slide": 16.951245472757762,
+      "length": 50.00000000000001
+    },
+    {
+      "t": 5.7,
+      "slide": 17.79280496224456,
+      "length": 50
+    },
+    {
+      "t": 5.8,
+      "slide": 18.486494330588727,
+      "length": 49.99999999999999
+    },
+    {
+      "t": 5.9,
+      "slide": 19.030704759600837,
+      "length": 50.00000000000001
+    },
+    {
+      "t": 6,
+      "slide": 19.42455307699305,
+      "length": 50.00000000000001
+    },
+    {
+      "t": 6.1,
+      "slide": 19.6658779707997,
+      "length": 49.99999999999999
+    },
+    {
+      "t": 6.2,
+      "slide": 19.748684174075834,
+      "length": 50
+    }
+  ],
+  "errors": [],
+  "requests": []
+}

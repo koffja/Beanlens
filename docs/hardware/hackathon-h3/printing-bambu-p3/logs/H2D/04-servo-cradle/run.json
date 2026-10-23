@@ -1,0 +1,64 @@
+{
+  "machine": "H2D",
+  "job": "04-servo-cradle",
+  "return_code": 0,
+  "output": "jobs/H2D/04-servo-cradle.gcode.3mf",
+  "exists": true,
+  "bytes": 880555,
+  "slicer_result": {
+    "error_string": "Success.",
+    "export_time": 389,
+    "layer_height": 0.20000000298023224,
+    "plate_index": 0,
+    "prepare_time": 4,
+    "return_code": 0,
+    "sliced_plates": [
+      {
+        "feature_type_times": {
+          "Bottom surface": 114.90721893310547,
+          "Bridge": 148.39248657226562,
+          "Brim": 169.9212646484375,
+          "Custom": 313.5859680175781,
+          "Flush": 26.0,
+          "Gap infill": 1.1551647186279297,
+          "Inner wall": 2800.35205078125,
+          "Internal solid infill": 497.94793701171875,
+          "Outer wall": 1115.929443359375,
+          "Overhang wall": 45.37443542480469,
+          "Sparse infill": 573.2811279296875,
+          "Support": 391.1154479980469,
+          "Support interface": 83.72470092773438,
+          "Support transition": 27.32653045654297,
+          "Top surface": 120.13832092285156,
+          "Travel": 623.5553588867188,
+          "Undefined": 615.37939453125
+        },
+        "filament_change_times": 0,
+        "filaments": [
+          {
+            "filament_id": "GFG02",
+            "id": 1,
+            "main_used_g": 37.169212341308594,
+            "total_used_g": 37.169212341308594
+          }
+        ],
+        "generate_support_material_time": 48,
+        "id": 1,
+        "infill_time": 78,
+        "layer_filament_change": 0,
+        "main_predication": 6687.58251953125,
+        "make_perimeters_time": 120,
+        "obj_cached_cnt": 0,
+        "sliced_time": 616,
+        "sliced_time_with_cache": 351,
+        "total_predication": 7044.99267578125,
+        "triangle_count": 5154,
+        "warning_message": ""
+      }
+    ],
+    "sparse_infill_density": 40.0,
+    "wall_loops": 6
+  },
+  "printer_model_id": "O1D",
+  "identity_metadata_completed_from_official_profile": true
+}

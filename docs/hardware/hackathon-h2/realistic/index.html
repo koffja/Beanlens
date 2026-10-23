@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="light"><title>BeanLens H2 · 拟真运行演示</title>
+<link rel="icon" href="data:,"><link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header><a class="brand" href="../README.md" aria-label="BeanLens H1资料"><span class="beanmark"></span>BeanLens <small>豆鉴</small></a><span class="edition">H2 比赛原型 <span>／</span> 拟真教学动画</span><a class="docs" href="../bom-h2.html" target="_blank">对照采购表 ↗</a></header>
+<main>
+ <section class="viewer" aria-label="三维演示">
+  <div class="viewbar"><div class="tabs" role="group" aria-label="观看方式"><button class="active" data-view="mechanism" aria-pressed="true">双摄光路</button><button data-view="whole" aria-pressed="false">整机装配</button><button data-view="parts" aria-pressed="false">部件拆解</button></div><button id="resetView" class="textbutton">恢复视角 ↺</button></div>
+  <div id="stage"><div id="loading">正在准备三维模型…</div><div id="labels" aria-hidden="true"></div><div class="stage-note" id="viewNote">槽体固定 · 只有一只舵臂带挡片转动</div><div class="zoom"><button id="zoomIn" aria-label="放大模型">＋</button><button id="zoomOut" aria-label="缩小模型">−</button></div><div class="gesture">拖动旋转 · 滚轮缩放 · 点击部件看说明</div><div class="angle"><span id="gateAngle">0°</span><small>挡片相对打开角</small></div></div>
+  <div class="options"><label><input id="showLabels" type="checkbox" checked> 元件名称</label><label><input id="showShield" type="checkbox"> 显示遮光片</label><label><input id="showWires" type="checkbox" checked> 线束走向</label><label><input id="cutaway" type="checkbox" checked> 透视侧壁</label><span id="viewScale">沿用 H2 相对尺寸</span></div>
+  <div class="transport"><button id="play" class="primary" aria-label="播放动画">▶ 播放演示</button><button id="restart" aria-label="从头播放">↺ 重播</button><label class="speed">速度 <select id="speed"><option value="0.5">0.5×</option><option value="1" selected>1×</option><option value="1.5">1.5×</option></select></label><span id="time">00.0 / 18.0 s</span></div>
+  <label class="timeline-label" for="timeline">演示进度</label><input type="range" id="timeline" min="0" max="18" step="0.01" value="0" aria-label="演示进度，秒">
+  <nav class="steps" aria-label="运行步骤"><button data-time="0" class="active"><b>1</b>等待投豆</button><button data-time="2.5"><b>2</b>单颗停稳</button><button data-time="5"><b>3</b>拍照识别</button><button data-time="8.2"><b>4</b>结果保存</button><button data-time="10.5"><b>5</b>侧摆放豆</button><button data-time="15"><b>6</b>空槽缓关</button></nav>
+ </section>
+ <aside>
+  <div class="chapter"><span class="live-dot"></span><span id="phaseIndex">01 / 06</span><small>预设流程演示</small></div><h1 id="phaseTitle">等你放入一颗豆</h1><p class="phase-copy" id="phaseCopy">人工从短槽上方放入一颗生豆。这里没有大料斗，也没有自动逐豆送料器。</p>
+  <div class="screen-heading"><span>K230D BOX 主屏</span><small>画面示意</small></div><canvas id="screenPreview" width="640" height="480" aria-label="BOX屏幕演示画面"></canvas>
+  <div class="component" aria-live="polite"><span id="partId">H02 ×2 · H31 · H33</span><h2 id="partName">为什么下面必须留空？</h2><p id="partCopy">上相机直接拍上面，下相机透过玻璃拍另一面。PP只托玻璃边缘；后接豆斜槽把豆引到镜头后方。两张图配成一颗豆，仍只用一只舵臂。</p><button id="explainServo" class="textbutton">查看中线剖面 →</button></div>
+  <p class="boundary">外形重建 ≠ 原厂CAD。透明托片光学质量、两摄近焦/像素密度、净空与触发位置待实配；分类与时间为预设。</p>
+  <details><summary>双摄怎样保留比赛简化？</summary><p>上下两只GC2093、可拆透明托片、短PP导豆口、后接豆斜槽、下摄防撞板，及黑框/木平台、BOX、舵机与同一收豆杯。上下各两条常亮灯。</p><p>光路视图暂隐木台与遮光片；整机模式恢复木台。展示的分类为预设结果；自动播放代演人工投豆与按KEY0。真实机器须先确认关位，再允许投豆。</p><a href="README.md">外形依据与验证范围 ↗</a> · <a href="../wiring-h2.svg">信号接线 ↗</a></details>
+ </aside>
+</main>
+<footer><span>双摄 / 透明托片 / 单槽 / 静止配对 / 侧摆放走</span><span>H2 · 2026.10.21</span></footer>
+<script src="vendor/three-0.160.1.min.js"></script><script src="design-data.js"></script><script src="model-base-h1.js"></script><script src="model.js"></script><script src="app.js"></script>
+</body></html>

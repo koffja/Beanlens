@@ -1,0 +1,3182 @@
+{
+  "revision": "H3-P4",
+  "host_only": true,
+  "printed_or_fitted": false,
+  "checks": [
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/signals-detail-h3.svg",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/power-detail-h3.svg",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/cut-list-h3.csv",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/.DS_Store",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/side-section-h3.svg",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/cut-list-h3.xlsx",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/validation-h3.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/~$cut-list-h3.xlsx",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/side-section-h3.png",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/previous-preserved.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/validate_h3.py",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/README.md",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/wiring-h3.svg",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/~$bom-h3.xlsx",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/beanlens-realistic-h3.html",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/bom-h3.xlsx",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/bom-h3.csv",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/bom-h3.html",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/build_h3.py",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/design-h3.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/bom-delta-h3.html",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/realistic/preview-first.png",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/realistic/preview.png",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/realistic/preview-whole.png",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/realistic/check_view.cjs",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/realistic/index.html",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/realistic/preview-gate.png",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/realistic/export_gif.py",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/realistic/beanlens-h3-motion.gif",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/realistic/prepare_view.py",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/realistic/preview-mobile.png",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/realistic/preview-parts.png",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/realistic/preview-optics.png",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/realistic/README.md",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/realistic/design-data.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/realistic/.gitignore",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/realistic/browser-check.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/realistic/build_view.py",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/realistic/style.css",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/realistic/model-base-h1.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/realistic/model.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/realistic/app.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/realistic/build-record.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p1/THREE-LICENSE.txt",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p1/preview-lower-collector-mm.png",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p1/preview.html",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p1/BeanLens-H3-P1-print-kit-20261022.zip",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p1/preview-exploded.png",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p1/.DS_Store",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p1/parameters.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p1/requirements.txt",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p1/preview-upper-hopper-mm.png",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p1/build_preview.py",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p1/preview-meshes.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p1/package-check.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p1/source-design-h3.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p1/preview-mobile.png",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p1/assembly-reference-only.step",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p1/preview-assembly.png",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p1/check_preview.cjs",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p1/h3-preserved.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p1/README.md",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p1/BOM-delta.csv",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p1/checksums-sha256.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p1/.gitignore",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p1/browser-check.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p1/validation.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p1/manifest.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p1/preview-upper-adapter-mm.png",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p1/requirements-lock.txt",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p1/build_print_models.py",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-bambu-p3/print-jobs.csv",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-bambu-p3/index.html",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-bambu-p3/dashboard-desktop.png",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-bambu-p3/prepare_jobs.py",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-bambu-p3/build_package.py",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-bambu-p3/package-check.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-bambu-p3/previous-preserved.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-bambu-p3/lower-support-paths.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-bambu-p3/README.md",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-bambu-p3/validate_jobs.py",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-bambu-p3/checksums-sha256.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-bambu-p3/build_dashboard.py",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-bambu-p3/.gitignore",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-bambu-p3/browser-check.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-bambu-p3/BeanLens-H3-Bambu-P3-20261022.zip",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-bambu-p3/validation.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-bambu-p3/support-comparison.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-bambu-p3/dashboard-mobile.png",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-bambu-p3/job-spec.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-bambu-p3/check_dashboard.cjs",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p2/template-carrier.png",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p2/THREE-LICENSE.txt",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p2/preview.html",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p2/preview-exploded.png",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p2/preview-camera-rear-mm.png",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p2/parameters.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p2/requirements.txt",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p2/preview-limit-closed-seat-mm.png",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p2/build_preview.py",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p2/preview-meshes.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p2/build_package.py",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p2/package-check.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p2/preview-servo-closed.png",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p2/source-design-h3.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p2/preview-mobile.png",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p2/assembly-reference-only.step",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p2/previous-preserved.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p2/preview-assembly.png",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p2/check_preview.cjs",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p2/README.md",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p2/assembly-with-references-NOT-FOR-PRINT.step",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p2/BOM-delta.csv",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p2/preview-servo-open.png",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p2/preview-servo-cradle-mm.png",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p2/checksums-sha256.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p2/build_templates.py",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p2/.gitignore",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p2/browser-check.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p2/build_models.py",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p2/validation.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p2/manifest.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p2/template-camera-hole-check.png",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p2/preview-limit-open-seat-mm.png",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p2/preview-camera-front-mm.png",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p2/template-servo-ear-check.png",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p2/requirements-lock.txt",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p2/preview-gate-limit-flag-mm.png",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p2/BeanLens-H3-P2-mount-kit-20261022.zip",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p2/template-aluminum-base.png",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p2/parts/limit-closed-seat-mm.step",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p2/parts/gate-limit-flag-mm.3mf",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p2/parts/servo-cradle-mm.stl",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p2/parts/limit-closed-seat-mm.stl",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p2/parts/limit-open-seat-mm.3mf",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p2/parts/gate-limit-flag-mm.step",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p2/parts/camera-front-mm.step",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p2/parts/servo-cradle-mm.step",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p2/parts/camera-rear-mm.3mf",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p2/parts/camera-front-mm.stl",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p2/parts/limit-open-seat-mm.step",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p2/parts/camera-rear-mm.step",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p2/parts/camera-rear-mm.stl",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p2/parts/camera-front-mm.3mf",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p2/parts/gate-limit-flag-mm.stl",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p2/parts/servo-cradle-mm.3mf",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p2/parts/limit-open-seat-mm.stl",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p2/parts/limit-closed-seat-mm.3mf",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p2/templates/carrier.svg",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p2/templates/servo-ear-check.svg",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p2/templates/aluminum-base.svg",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p2/templates/camera-hole-check.svg",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p2/vendor/three-0.160.1.min.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-bambu-p3/logs/cli-help-result.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-bambu-p3/original-cad-kits/BeanLens-H3-P1-print-kit-20261022.zip",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-bambu-p3/original-cad-kits/BeanLens-H3-P2-mount-kit-20261022.zip",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-bambu-p3/thumbnails/03-lower-collector.png",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-bambu-p3/thumbnails/01-upper-hopper.png",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-bambu-p3/thumbnails/00-fit-tests.png",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-bambu-p3/thumbnails/05-limits-and-flag.png",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-bambu-p3/thumbnails/04-servo-cradle.png",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-bambu-p3/thumbnails/02-adapter-and-cameras.png",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-bambu-p3/jobs/P2S/02-adapter-and-cameras.gcode.3mf",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-bambu-p3/jobs/P2S/01-upper-hopper.gcode.3mf",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-bambu-p3/jobs/P2S/05-limits-and-flag.gcode.3mf",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-bambu-p3/jobs/P2S/00-fit-tests.gcode.3mf",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-bambu-p3/jobs/P2S/03-lower-collector.gcode.3mf",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-bambu-p3/jobs/P2S/04-servo-cradle.gcode.3mf",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-bambu-p3/jobs/X1C/02-adapter-and-cameras.gcode.3mf",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-bambu-p3/jobs/X1C/01-upper-hopper.gcode.3mf",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-bambu-p3/jobs/X1C/05-limits-and-flag.gcode.3mf",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-bambu-p3/jobs/X1C/00-fit-tests.gcode.3mf",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-bambu-p3/jobs/X1C/03-lower-collector.gcode.3mf",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-bambu-p3/jobs/X1C/04-servo-cradle.gcode.3mf",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-bambu-p3/jobs/X2D/02-adapter-and-cameras.gcode.3mf",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-bambu-p3/jobs/X2D/01-upper-hopper.gcode.3mf",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-bambu-p3/jobs/X2D/05-limits-and-flag.gcode.3mf",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-bambu-p3/jobs/X2D/00-fit-tests.gcode.3mf",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-bambu-p3/jobs/X2D/03-lower-collector.gcode.3mf",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-bambu-p3/jobs/X2D/04-servo-cradle.gcode.3mf",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-bambu-p3/jobs/H2D/02-adapter-and-cameras.gcode.3mf",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-bambu-p3/jobs/H2D/01-upper-hopper.gcode.3mf",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-bambu-p3/jobs/H2D/05-limits-and-flag.gcode.3mf",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-bambu-p3/jobs/H2D/00-fit-tests.gcode.3mf",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-bambu-p3/jobs/H2D/03-lower-collector.gcode.3mf",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-bambu-p3/jobs/H2D/04-servo-cradle.gcode.3mf",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-bambu-p3/jobs/A1/02-adapter-and-cameras.gcode.3mf",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-bambu-p3/jobs/A1/01-upper-hopper.gcode.3mf",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-bambu-p3/jobs/A1/05-limits-and-flag.gcode.3mf",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-bambu-p3/jobs/A1/00-fit-tests.gcode.3mf",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-bambu-p3/jobs/A1/03-lower-collector.gcode.3mf",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-bambu-p3/jobs/A1/04-servo-cradle.gcode.3mf",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-bambu-p3/configs/P2S/filament.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-bambu-p3/configs/P2S/03-lower-collector.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-bambu-p3/configs/P2S/01-upper-hopper.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-bambu-p3/configs/P2S/00-fit-tests.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-bambu-p3/configs/P2S/05-limits-and-flag.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-bambu-p3/configs/P2S/04-servo-cradle.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-bambu-p3/configs/P2S/machine.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-bambu-p3/configs/P2S/02-adapter-and-cameras.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-bambu-p3/configs/X1C/filament.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-bambu-p3/configs/X1C/03-lower-collector.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-bambu-p3/configs/X1C/01-upper-hopper.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-bambu-p3/configs/X1C/00-fit-tests.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-bambu-p3/configs/X1C/05-limits-and-flag.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-bambu-p3/configs/X1C/04-servo-cradle.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-bambu-p3/configs/X1C/machine.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-bambu-p3/configs/X1C/02-adapter-and-cameras.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-bambu-p3/configs/X2D/filament.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-bambu-p3/configs/X2D/03-lower-collector.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-bambu-p3/configs/X2D/01-upper-hopper.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-bambu-p3/configs/X2D/00-fit-tests.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-bambu-p3/configs/X2D/05-limits-and-flag.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-bambu-p3/configs/X2D/04-servo-cradle.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-bambu-p3/configs/X2D/machine.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-bambu-p3/configs/X2D/02-adapter-and-cameras.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-bambu-p3/configs/H2D/filament.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-bambu-p3/configs/H2D/03-lower-collector.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-bambu-p3/configs/H2D/01-upper-hopper.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-bambu-p3/configs/H2D/00-fit-tests.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-bambu-p3/configs/H2D/05-limits-and-flag.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-bambu-p3/configs/H2D/04-servo-cradle.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-bambu-p3/configs/H2D/machine.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-bambu-p3/configs/H2D/02-adapter-and-cameras.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-bambu-p3/configs/A1/filament.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-bambu-p3/configs/A1/03-lower-collector.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-bambu-p3/configs/A1/01-upper-hopper.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-bambu-p3/configs/A1/00-fit-tests.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-bambu-p3/configs/A1/05-limits-and-flag.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-bambu-p3/configs/A1/04-servo-cradle.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-bambu-p3/configs/A1/machine.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-bambu-p3/configs/A1/02-adapter-and-cameras.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-bambu-p3/logs/reopen-smoke/result.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-bambu-p3/logs/reopen-smoke/slicer.log",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-bambu-p3/logs/A1/01-upper-hopper/result.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-bambu-p3/logs/A1/01-upper-hopper/plate_1.gcode",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-bambu-p3/logs/A1/01-upper-hopper/slicer.log",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-bambu-p3/logs/A1/01-upper-hopper/run.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-bambu-p3/logs/A1/05-limits-and-flag/result.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-bambu-p3/logs/A1/05-limits-and-flag/plate_1.gcode",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-bambu-p3/logs/A1/05-limits-and-flag/slicer.log",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-bambu-p3/logs/A1/05-limits-and-flag/run.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-bambu-p3/logs/A1/04-servo-cradle/result.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-bambu-p3/logs/A1/04-servo-cradle/plate_1.gcode",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-bambu-p3/logs/A1/04-servo-cradle/slicer.log",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-bambu-p3/logs/A1/04-servo-cradle/run.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-bambu-p3/logs/A1/02-adapter-and-cameras/result.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-bambu-p3/logs/A1/02-adapter-and-cameras/plate_1.gcode",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-bambu-p3/logs/A1/02-adapter-and-cameras/slicer.log",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-bambu-p3/logs/A1/02-adapter-and-cameras/run.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-bambu-p3/logs/A1/03-lower-collector/result.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-bambu-p3/logs/A1/03-lower-collector/plate_1.gcode",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-bambu-p3/logs/A1/03-lower-collector/slicer.log",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-bambu-p3/logs/A1/03-lower-collector/run.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-bambu-p3/logs/A1/00-fit-tests/result.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-bambu-p3/logs/A1/00-fit-tests/plate_1.gcode",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-bambu-p3/logs/A1/00-fit-tests/slicer.log",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-bambu-p3/logs/A1/00-fit-tests/run.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-bambu-p3/logs/H2D/01-upper-hopper/result.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-bambu-p3/logs/H2D/01-upper-hopper/plate_1.gcode",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-bambu-p3/logs/H2D/01-upper-hopper/slicer.log",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-bambu-p3/logs/H2D/01-upper-hopper/run.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-bambu-p3/logs/H2D/05-limits-and-flag/result.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-bambu-p3/logs/H2D/05-limits-and-flag/plate_1.gcode",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-bambu-p3/logs/H2D/05-limits-and-flag/slicer.log",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-bambu-p3/logs/H2D/05-limits-and-flag/run.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-bambu-p3/logs/H2D/04-servo-cradle/result.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-bambu-p3/logs/H2D/04-servo-cradle/plate_1.gcode",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-bambu-p3/logs/H2D/04-servo-cradle/slicer.log",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-bambu-p3/logs/H2D/04-servo-cradle/run.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-bambu-p3/logs/H2D/02-adapter-and-cameras/result.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-bambu-p3/logs/H2D/02-adapter-and-cameras/plate_1.gcode",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-bambu-p3/logs/H2D/02-adapter-and-cameras/slicer.log",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-bambu-p3/logs/H2D/02-adapter-and-cameras/run.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-bambu-p3/logs/H2D/03-lower-collector/result.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-bambu-p3/logs/H2D/03-lower-collector/plate_1.gcode",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-bambu-p3/logs/H2D/03-lower-collector/slicer.log",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-bambu-p3/logs/H2D/03-lower-collector/run.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-bambu-p3/logs/H2D/00-fit-tests/result.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-bambu-p3/logs/H2D/00-fit-tests/plate_1.gcode",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-bambu-p3/logs/H2D/00-fit-tests/slicer.log",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-bambu-p3/logs/H2D/00-fit-tests/run.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-bambu-p3/logs/X2D/01-upper-hopper/result.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-bambu-p3/logs/X2D/01-upper-hopper/plate_1.gcode",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-bambu-p3/logs/X2D/01-upper-hopper/slicer.log",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-bambu-p3/logs/X2D/01-upper-hopper/run.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-bambu-p3/logs/X2D/05-limits-and-flag/result.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-bambu-p3/logs/X2D/05-limits-and-flag/plate_1.gcode",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-bambu-p3/logs/X2D/05-limits-and-flag/slicer.log",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-bambu-p3/logs/X2D/05-limits-and-flag/run.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-bambu-p3/logs/X2D/04-servo-cradle/result.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-bambu-p3/logs/X2D/04-servo-cradle/plate_1.gcode",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-bambu-p3/logs/X2D/04-servo-cradle/slicer.log",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-bambu-p3/logs/X2D/04-servo-cradle/run.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-bambu-p3/logs/X2D/02-adapter-and-cameras/result.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-bambu-p3/logs/X2D/02-adapter-and-cameras/plate_1.gcode",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-bambu-p3/logs/X2D/02-adapter-and-cameras/slicer.log",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-bambu-p3/logs/X2D/02-adapter-and-cameras/run.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-bambu-p3/logs/X2D/03-lower-collector/result.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-bambu-p3/logs/X2D/03-lower-collector/plate_1.gcode",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-bambu-p3/logs/X2D/03-lower-collector/slicer.log",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-bambu-p3/logs/X2D/03-lower-collector/run.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-bambu-p3/logs/X2D/00-fit-tests/result.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-bambu-p3/logs/X2D/00-fit-tests/plate_1.gcode",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-bambu-p3/logs/X2D/00-fit-tests/slicer.log",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-bambu-p3/logs/X2D/00-fit-tests/run.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-bambu-p3/logs/X1C/01-upper-hopper/result.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-bambu-p3/logs/X1C/01-upper-hopper/plate_1.gcode",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-bambu-p3/logs/X1C/01-upper-hopper/slicer.log",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-bambu-p3/logs/X1C/01-upper-hopper/run.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-bambu-p3/logs/X1C/05-limits-and-flag/result.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-bambu-p3/logs/X1C/05-limits-and-flag/plate_1.gcode",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-bambu-p3/logs/X1C/05-limits-and-flag/slicer.log",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-bambu-p3/logs/X1C/05-limits-and-flag/run.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-bambu-p3/logs/X1C/04-servo-cradle/result.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-bambu-p3/logs/X1C/04-servo-cradle/plate_1.gcode",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-bambu-p3/logs/X1C/04-servo-cradle/slicer.log",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-bambu-p3/logs/X1C/04-servo-cradle/run.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-bambu-p3/logs/X1C/02-adapter-and-cameras/result.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-bambu-p3/logs/X1C/02-adapter-and-cameras/plate_1.gcode",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-bambu-p3/logs/X1C/02-adapter-and-cameras/slicer.log",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-bambu-p3/logs/X1C/02-adapter-and-cameras/run.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-bambu-p3/logs/X1C/03-lower-collector/result.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-bambu-p3/logs/X1C/03-lower-collector/plate_1.gcode",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-bambu-p3/logs/X1C/03-lower-collector/slicer.log",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-bambu-p3/logs/X1C/03-lower-collector/run.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-bambu-p3/logs/X1C/00-fit-tests/result.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-bambu-p3/logs/X1C/00-fit-tests/plate_1.gcode",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-bambu-p3/logs/X1C/00-fit-tests/slicer.log",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-bambu-p3/logs/X1C/00-fit-tests/run.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-bambu-p3/logs/P2S/01-upper-hopper/result.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-bambu-p3/logs/P2S/01-upper-hopper/plate_1.gcode",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-bambu-p3/logs/P2S/01-upper-hopper/slicer.log",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-bambu-p3/logs/P2S/01-upper-hopper/run.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-bambu-p3/logs/P2S/05-limits-and-flag/result.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-bambu-p3/logs/P2S/05-limits-and-flag/plate_1.gcode",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-bambu-p3/logs/P2S/05-limits-and-flag/slicer.log",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-bambu-p3/logs/P2S/05-limits-and-flag/run.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-bambu-p3/logs/P2S/04-servo-cradle/result.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-bambu-p3/logs/P2S/04-servo-cradle/plate_1.gcode",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-bambu-p3/logs/P2S/04-servo-cradle/slicer.log",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-bambu-p3/logs/P2S/04-servo-cradle/run.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-bambu-p3/logs/P2S/02-adapter-and-cameras/result.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-bambu-p3/logs/P2S/02-adapter-and-cameras/plate_1.gcode",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-bambu-p3/logs/P2S/02-adapter-and-cameras/slicer.log",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-bambu-p3/logs/P2S/02-adapter-and-cameras/run.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-bambu-p3/logs/P2S/03-lower-collector/result.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-bambu-p3/logs/P2S/03-lower-collector/plate_1.gcode",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-bambu-p3/logs/P2S/03-lower-collector/slicer.log",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-bambu-p3/logs/P2S/03-lower-collector/run.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-bambu-p3/logs/P2S/00-fit-tests/result.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-bambu-p3/logs/P2S/00-fit-tests/plate_1.gcode",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-bambu-p3/logs/P2S/00-fit-tests/slicer.log",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-bambu-p3/logs/P2S/00-fit-tests/run.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-bambu-p3/models/01-upper-hopper/upper-hopper-mm.stl",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-bambu-p3/models/05-limits-and-flag/limit-closed-seat-mm.stl",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-bambu-p3/models/05-limits-and-flag/gate-limit-flag-mm.stl",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-bambu-p3/models/05-limits-and-flag/limit-open-seat-mm.stl",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-bambu-p3/models/04-servo-cradle/servo-cradle-mm.stl",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-bambu-p3/models/02-adapter-and-cameras/camera-front-mm.stl",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-bambu-p3/models/02-adapter-and-cameras/camera-rear-mm.stl",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-bambu-p3/models/02-adapter-and-cameras/upper-adapter-mm.stl",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-bambu-p3/models/03-lower-collector/lower-collector-mm.stl",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-bambu-p3/models/00-fit-tests/test-socket-mm.stl",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-bambu-p3/models/00-fit-tests/test-male-mm.stl",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p1/parts/upper-adapter-mm.3mf",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p1/parts/lower-collector-mm.stl",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p1/parts/upper-hopper-mm.3mf",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p1/parts/upper-hopper-mm.stl",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p1/parts/lower-collector-mm.step",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p1/parts/upper-adapter-mm.step",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p1/parts/upper-hopper-mm.step",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p1/parts/upper-adapter-mm.stl",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p1/parts/lower-collector-mm.3mf",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p1/BeanLens-H3-P1/THREE-LICENSE.txt",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p1/BeanLens-H3-P1/preview-lower-collector-mm.png",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p1/BeanLens-H3-P1/preview.html",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p1/BeanLens-H3-P1/preview-exploded.png",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p1/BeanLens-H3-P1/parameters.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p1/BeanLens-H3-P1/requirements.txt",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p1/BeanLens-H3-P1/preview-upper-hopper-mm.png",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p1/BeanLens-H3-P1/build_preview.py",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p1/BeanLens-H3-P1/preview-meshes.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p1/BeanLens-H3-P1/package-check.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p1/BeanLens-H3-P1/source-design-h3.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p1/BeanLens-H3-P1/preview-mobile.png",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p1/BeanLens-H3-P1/assembly-reference-only.step",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p1/BeanLens-H3-P1/preview-assembly.png",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p1/BeanLens-H3-P1/check_preview.cjs",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p1/BeanLens-H3-P1/h3-preserved.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p1/BeanLens-H3-P1/README.md",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p1/BeanLens-H3-P1/BOM-delta.csv",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p1/BeanLens-H3-P1/checksums-sha256.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p1/BeanLens-H3-P1/.gitignore",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p1/BeanLens-H3-P1/browser-check.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p1/BeanLens-H3-P1/validation.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p1/BeanLens-H3-P1/manifest.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p1/BeanLens-H3-P1/preview-upper-adapter-mm.png",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p1/BeanLens-H3-P1/requirements-lock.txt",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p1/BeanLens-H3-P1/build_print_models.py",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p1/fit-tests/test-socket-mm.3mf",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p1/fit-tests/test-male-mm.3mf",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p1/fit-tests/test-socket-mm.stl",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p1/fit-tests/test-male-mm.step",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p1/fit-tests/test-male-mm.stl",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p1/fit-tests/test-socket-mm.step",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p1/vendor/three-0.160.1.min.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p1/BeanLens-H3-P1/parts/upper-adapter-mm.3mf",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p1/BeanLens-H3-P1/parts/lower-collector-mm.stl",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p1/BeanLens-H3-P1/parts/upper-hopper-mm.3mf",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p1/BeanLens-H3-P1/parts/upper-hopper-mm.stl",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p1/BeanLens-H3-P1/parts/lower-collector-mm.step",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p1/BeanLens-H3-P1/parts/upper-adapter-mm.step",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p1/BeanLens-H3-P1/parts/upper-hopper-mm.step",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p1/BeanLens-H3-P1/parts/upper-adapter-mm.stl",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p1/BeanLens-H3-P1/parts/lower-collector-mm.3mf",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p1/BeanLens-H3-P1/fit-tests/test-socket-mm.3mf",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p1/BeanLens-H3-P1/fit-tests/test-male-mm.3mf",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p1/BeanLens-H3-P1/fit-tests/test-socket-mm.stl",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p1/BeanLens-H3-P1/fit-tests/test-male-mm.step",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p1/BeanLens-H3-P1/fit-tests/test-male-mm.stl",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p1/BeanLens-H3-P1/fit-tests/test-socket-mm.step",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p1/BeanLens-H3-P1/vendor/three-0.160.1.min.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/realistic/vendor/THREE-LICENSE.txt",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/realistic/vendor/three-0.160.1.min.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "all_181_CAD_checks",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "nine_prints",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "five_wooden_parts",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "13_profile_segments",
+      "pass": true,
+      "detail": {
+        "460": 4,
+        "180": 5,
+        "200": 4
+      }
+    },
+    {
+      "name": "profile_no_purchase",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "stock_kerf_balance",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "unique_BOM_ids",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "all_scene_BOM_ids_exist",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "J01_part_links",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "J02_part_links",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "J03_part_links",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "J04_part_links",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "J05_part_links",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "J06_part_links",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "J07_part_links",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "J08_part_links",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "J09_part_links",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "J10_part_links",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "J11_part_links",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "J12_part_links",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "J13_part_links",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "J14_part_links",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "M5x8_BOM_total",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "M3x12_BOM_total",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "M3x16_BOM_total",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "M3x35_BOM_total",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "M3x20_BOM_total",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "M3x25_BOM_total",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "M5x10_BOM_total",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "M2x14_BOM_total",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "M3x10_BOM_total",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "M3_nuts_washers",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "M5_slot_nuts_washers",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "no_old_camera_brackets_or_welded_hoppers",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "M2_camera_sets",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "unchanged_electrical_pins",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "unchanged_electrical_power",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "unchanged_electrical_board",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "unchanged_electrical_schematic",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "unchanged_electrical_scope",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "unchanged_electrical_capture",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "unchanged_electrical_cameras",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "unchanged_electrical_servo_pulse_us",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "unchanged_electrical_timing_ms",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "python_parse",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "W04.svg_mm",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "W05.svg_mm",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "SH-R.svg_mm",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "W01.svg_mm",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "W02.svg_mm",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "W03.svg_mm",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "carrier.svg_mm",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "BG-F.svg_mm",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "F-flat.svg_mm",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "BG-B.svg_mm",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "servo-ear-check.svg_mm",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "aluminum-base.svg_mm",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "C02-C03.svg_mm",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "C01.svg_mm",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "BOX-clip.svg_mm",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "H36.svg_mm",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "camera-hole-check.svg_mm",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "SH-L.svg_mm",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "template_1_known",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "template_1_W01_real_bore",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "template_2_known",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "template_2_W01_real_bore",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "template_3_known",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "template_3_W01_real_bore",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "template_4_known",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "template_4_W01_real_bore",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "template_5_known",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "template_5_W02_real_bore",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "template_6_known",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "template_6_W02_real_bore",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "template_7_known",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "template_7_W02_real_bore",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "template_8_known",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "template_8_W02_real_bore",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "template_9_known",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "template_9_W02_real_bore",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "template_10_known",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "template_10_W02_real_bore",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "template_11_known",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "template_11_W02_real_bore",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "template_12_known",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "template_12_W02_real_bore",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "template_13_known",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "template_13_W03_real_bore",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "template_14_known",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "template_14_W03_real_bore",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "template_15_known",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "template_15_W03_real_bore",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "template_16_known",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "template_16_W03_real_bore",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "template_17_known",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "template_17_W03_real_bore",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "template_18_known",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "template_18_W03_real_bore",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "template_19_known",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "template_19_W03_real_bore",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "template_20_known",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "template_20_W03_real_bore",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "template_21_known",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "template_21_W04_real_bore",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "template_22_known",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "template_22_W04_real_bore",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "template_23_known",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "template_23_W04_real_bore",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "template_24_known",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "template_24_W04_real_bore",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "template_25_known",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "template_25_W04_real_bore",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "template_26_known",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "template_26_W04_real_bore",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "template_27_known",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "template_27_W05_real_bore",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "template_28_known",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "template_28_W05_real_bore",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "template_29_known",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "template_29_W05_real_bore",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "template_30_known",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "template_30_W05_real_bore",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "template_31_known",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "template_31_W05_real_bore",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "template_32_known",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "template_32_W05_real_bore",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "template_33_known",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "template_33_C01_real_bore",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "template_34_known",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "template_34_C01_real_bore",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "template_35_known",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "template_35_C01_real_bore",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "template_36_known",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "template_36_C01_real_bore",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "template_37_known",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "template_37_C01_real_bore",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "template_38_known",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "template_38_C01_real_bore",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "template_39_known",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "template_39_C01_real_bore",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "template_40_known",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "template_40_C01_real_bore",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "template_41_known",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "template_41_C02_real_bore",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "template_41_C03_real_bore",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "template_42_known",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "template_42_C02_real_bore",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "template_42_C03_real_bore",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "template_43_known",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "template_43_C02_real_bore",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "template_43_C03_real_bore",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "template_44_known",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "template_44_C02_real_bore",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "template_44_C03_real_bore",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "template_45_known",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "template_45_H36_real_bore",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "template_46_known",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "template_46_H36_real_bore",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "template_47_known",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "template_47_F01_real_bore",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "template_48_known",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "template_48_F01_real_bore",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "template_49_known",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "template_49_BCL1_real_bore",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "template_50_known",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "template_50_SH-L_real_bore",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "template_51_known",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "template_51_SH-L_real_bore",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "template_52_known",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "template_52_SH-L_real_bore",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "template_53_known",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "template_53_SH-L_real_bore",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "template_54_known",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "template_54_SH-L_real_bore",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "template_55_known",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "template_55_SH-L_real_bore",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "template_56_known",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "template_56_SH-L_real_bore",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "template_57_known",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "template_57_SH-L_real_bore",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "template_58_known",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "template_58_SH-R_real_bore",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "template_59_known",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "template_59_SH-R_real_bore",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "template_60_known",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "template_60_SH-R_real_bore",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "template_61_known",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "template_61_SH-R_real_bore",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "template_62_known",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "template_62_SH-R_real_bore",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "template_63_known",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "template_63_SH-R_real_bore",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "template_64_known",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "template_64_SH-R_real_bore",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "template_65_known",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "template_65_SH-R_real_bore",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "template_66_known",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "template_66_BG-F_real_bore",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "template_67_known",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "template_67_BG-F_real_bore",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "template_68_known",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "template_68_BG-B_real_bore",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "template_69_known",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "template_69_BG-B_real_bore",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "all_browser_checks",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "PDF_layout",
+      "pass": true,
+      "detail": null
+    }
+  ],
+  "old_files_preserved": 425,
+  "summary": {
+    "BOM_rows": 78,
+    "printed": 9,
+    "joints": 14,
+    "CAD_checks": 181,
+    "browser_checks": 25,
+    "templates": 18,
+    "M3_screws": 79,
+    "M5_screws": 60
+  }
+}

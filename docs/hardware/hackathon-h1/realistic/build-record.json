@@ -1,0 +1,18 @@
+{
+  "date": "2026-10-21",
+  "revision": "H1-appearance-1",
+  "geometry_reference": "../design-h1.json",
+  "appearance": "reconstructed_not_vendor_cad",
+  "geometry_reference_sha256": "81c2bbb8e7ed09cb5065cda07a3819615599ce1336d04ad06a7611a586ea5606",
+  "three_version": "0.160.1",
+  "network_required": false,
+  "artifact": "beanlens-realistic-h1.html",
+  "sources_sha256": {
+    "index.html": "825a0a5b994a64e4a123a9a3d1fcafd337321cd059e1ea2ab9f373d306f46ea3",
+    "style.css": "ece20e5437f2f6d405e22e8f0a7c55fd5c0e1397470afa40053c683effd83a45",
+    "model.js": "7c955fbe4c776da0489043d6b462e2dc677b75f26ea7794f038fc1cc04efe47a",
+    "app.js": "8ebbf7b9314825189ca18254738c7f4e44186d3374bc2a90061a35f1994cb0c8",
+    "vendor/three-0.160.1.min.js": "170c6789f43217c96b3170f4b42fafe135de7f7cd48497a4218f9757ee1d49fa"
+  },
+  "artifact_sha256": "809033e26a2f76a68caa4a9bee9ed956148d5991f2af2f5075f96aa54082a2a0"
+}

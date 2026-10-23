@@ -1,0 +1,225 @@
+{
+  "revision": "H3-P2",
+  "date": "2026-10-22",
+  "units": "mm",
+  "printer_bed": [
+    220,
+    220
+  ],
+  "source": "source-design-h3.json",
+  "candidate_material": "PETG",
+  "servo": {
+    "axis": [
+      170,
+      180,
+      331
+    ],
+    "case_xyz": [
+      160,
+      172,
+      288
+    ],
+    "case_size": [
+      19.7,
+      40.7,
+      40.3
+    ],
+    "ear_z": 319,
+    "ear_hole_x": [
+      164.45,
+      175.25
+    ],
+    "ear_hole_y": [
+      168.5,
+      216.2
+    ],
+    "plate_xyz": [
+      153,
+      159,
+      280.2
+    ],
+    "plate_size": [
+      60,
+      60,
+      3
+    ],
+    "mount_xy": [
+      [
+        159,
+        165
+      ],
+      [
+        193,
+        165
+      ],
+      [
+        159,
+        213
+      ],
+      [
+        193,
+        213
+      ]
+    ],
+    "cavity_x": [
+      159.4,
+      180.3
+    ],
+    "cavity_y": [
+      171.2,
+      213.5
+    ],
+    "ear_support_top": 319,
+    "ear_support_thickness": 6,
+    "main_wall": 4
+  },
+  "camera": {
+    "front_lens": [
+      110,
+      30,
+      260
+    ],
+    "rear_lens": [
+      110,
+      210,
+      260
+    ],
+    "pcb_reference_size": [
+      40,
+      40,
+      1.4
+    ],
+    "actual_pcb_verified": false,
+    "nominal_square_hole_pitch": 32,
+    "square_hole_pitch_range": [
+      24,
+      34
+    ],
+    "pcb_standoff_candidate": 8,
+    "plate_front_y": 2,
+    "wood_top_z": 240,
+    "base_h": 4,
+    "upright_h": 48,
+    "wall": 4
+  },
+  "limit": {
+    "model": "OMRON SS-01GL hinge lever solder terminals",
+    "actual_switch_verified": false,
+    "mount_pitch": 9.5,
+    "mount_slot_width": 2.4,
+    "mount_slot_length": 8.4,
+    "case_reference_size": [
+      19.8,
+      10.2,
+      6.4
+    ],
+    "case_centers": [
+      [
+        143,
+        174.8,
+        340.2
+      ],
+      [
+        143,
+        212.95,
+        340.2
+      ]
+    ],
+    "case_mount_face_z": 337,
+    "front_slot_y": 172.6,
+    "rear_slot_y": 215.15,
+    "foot_holes": [
+      [
+        144,
+        185
+      ],
+      [
+        144,
+        193
+      ],
+      [
+        144,
+        202
+      ],
+      [
+        144,
+        210
+      ]
+    ],
+    "foot_base_z": 321,
+    "platform_z": 333,
+    "OP_reference_mm": 8.8,
+    "candidate_overtravel_mm": 0.4
+  },
+  "carrier": {
+    "xyz": [
+      85,
+      160,
+      318
+    ],
+    "size": [
+      68,
+      80,
+      3
+    ],
+    "rear_beam_xyz": [
+      20,
+      220,
+      298
+    ],
+    "rear_beam_size": [
+      180,
+      20,
+      20
+    ],
+    "top_slot_mount_holes": [
+      [
+        95,
+        230
+      ],
+      [
+        140,
+        230
+      ]
+    ],
+    "profile_source": "cut180 from existing spare400; allow saw kerf",
+    "fastener_window_xy": [
+      105,
+      179
+    ],
+    "fastener_window_wh": [
+      20,
+      30
+    ]
+  },
+  "gate_flag": {
+    "attachment_xy": [
+      120,
+      184
+    ],
+    "foot_xyz": [
+      116,
+      180.5,
+      326
+    ],
+    "foot_size": [
+      37,
+      9,
+      3
+    ],
+    "upright_xyz": [
+      137,
+      181,
+      329
+    ],
+    "upright_size": [
+      16,
+      6,
+      15
+    ],
+    "stroke": 19.74868417407583
+  },
+  "mesh_tolerance": 0.025,
+  "angular_tolerance": 0.08,
+  "validation_status": "CAD_candidate_only_not_printed_or_fitted"
+}

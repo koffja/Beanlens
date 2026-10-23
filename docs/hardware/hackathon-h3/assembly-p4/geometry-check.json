@@ -1,0 +1,912 @@
+{
+  "checks": [
+    {
+      "name": "valid_P11",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "valid_P12",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "valid_P13",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "valid_P21",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "valid_P22",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "valid_P23",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "valid_P24",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "valid_P25",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "valid_P26",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "valid_W01",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "valid_W02",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "valid_W03",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "valid_W04",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "valid_W05",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "valid_C01",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "valid_C02",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "valid_C03",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "valid_C04",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "valid_C04-PET",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "valid_C05",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "valid_C05-PET",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "valid_C06",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "valid_C07",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "valid_P30",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "valid_H36",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "valid_P27",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "valid_H10",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "valid_F01",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "valid_F02",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "valid_F03",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "valid_F04",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "valid_F05",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "valid_F06",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "valid_F07",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "valid_F08",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "valid_A01",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "valid_A02",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "valid_A03",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "valid_A04",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "valid_A05",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "valid_A06",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "valid_A07",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "valid_A08",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "valid_A09",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "valid_A10",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "valid_A11",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "valid_A12",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "valid_BCL1",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "valid_BST1",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "valid_BCL2",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "valid_BST2",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "valid_BCL3",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "valid_BST3",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "valid_BCL4",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "valid_BST4",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "valid_RB-L",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "valid_RB-R",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "valid_FC-X-011",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "valid_FC-Y-011",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "valid_FC-X-010",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "valid_FC-Y-010",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "valid_FC-X-001",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "valid_FC-Y-001",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "valid_FC-X-000",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "valid_FC-Y-000",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "valid_FC-X-111",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "valid_FC-Y-111",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "valid_FC-X-110",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "valid_FC-Y-110",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "valid_FC-X-101",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "valid_FC-Y-101",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "valid_FC-X-100",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "valid_FC-Y-100",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "valid_SH-L",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "valid_SA-L1",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "valid_SA-L2",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "valid_SH-R",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "valid_SA-R1",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "valid_SA-R2",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "valid_BG-F",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "valid_BA-FL",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "valid_BA-FR",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "valid_BG-B",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "valid_BA-BL",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "valid_BA-BR",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "fixed_material_solids_clear",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "P11_original_geometry",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "P12_original_geometry",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "P13_original_geometry",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "P21_original_geometry",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "P22_original_geometry",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "P23_original_geometry",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "P24_original_geometry",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "P25_original_geometry",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "P26_original_geometry",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "motion_00_fixed_clear",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "motion_00_rod_flag_clear",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "motion_00_fastener_110_window",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "motion_00_fastener_120_window",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "motion_01_fixed_clear",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "motion_01_rod_flag_clear",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "motion_01_fastener_110_window",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "motion_01_fastener_120_window",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "motion_02_fixed_clear",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "motion_02_rod_flag_clear",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "motion_02_fastener_110_window",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "motion_02_fastener_120_window",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "motion_03_fixed_clear",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "motion_03_rod_flag_clear",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "motion_03_fastener_110_window",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "motion_03_fastener_120_window",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "motion_04_fixed_clear",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "motion_04_rod_flag_clear",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "motion_04_fastener_110_window",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "motion_04_fastener_120_window",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "motion_05_fixed_clear",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "motion_05_rod_flag_clear",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "motion_05_fastener_110_window",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "motion_05_fastener_120_window",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "motion_06_fixed_clear",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "motion_06_rod_flag_clear",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "motion_06_fastener_110_window",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "motion_06_fastener_120_window",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "motion_07_fixed_clear",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "motion_07_rod_flag_clear",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "motion_07_fastener_110_window",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "motion_07_fastener_120_window",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "motion_08_fixed_clear",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "motion_08_rod_flag_clear",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "motion_08_fastener_110_window",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "motion_08_fastener_120_window",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "motion_09_fixed_clear",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "motion_09_rod_flag_clear",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "motion_09_fastener_110_window",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "motion_09_fastener_120_window",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "motion_10_fixed_clear",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "motion_10_rod_flag_clear",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "motion_10_fastener_110_window",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "motion_10_fastener_120_window",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "motion_11_fixed_clear",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "motion_11_rod_flag_clear",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "motion_11_fastener_110_window",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "motion_11_fastener_120_window",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "motion_12_fixed_clear",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "motion_12_rod_flag_clear",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "motion_12_fastener_110_window",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "motion_12_fastener_120_window",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "motion_13_fixed_clear",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "motion_13_rod_flag_clear",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "motion_13_fastener_110_window",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "motion_13_fastener_120_window",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "motion_14_fixed_clear",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "motion_14_rod_flag_clear",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "motion_14_fastener_110_window",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "motion_14_fastener_120_window",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "motion_15_fixed_clear",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "motion_15_rod_flag_clear",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "motion_15_fastener_110_window",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "motion_15_fastener_120_window",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "motion_16_fixed_clear",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "motion_16_rod_flag_clear",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "motion_16_fastener_110_window",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "motion_16_fastener_120_window",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "motion_17_fixed_clear",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "motion_17_rod_flag_clear",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "motion_17_fastener_110_window",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "motion_17_fastener_120_window",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "motion_18_fixed_clear",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "motion_18_rod_flag_clear",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "motion_18_fastener_110_window",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "motion_18_fastener_120_window",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "motion_19_fixed_clear",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "motion_19_rod_flag_clear",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "motion_19_fastener_110_window",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "motion_19_fastener_120_window",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "motion_20_fixed_clear",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "motion_20_rod_flag_clear",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "motion_20_fastener_110_window",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "motion_20_fastener_120_window",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "central_camera_ray_30",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "central_camera_ray_210",
+      "pass": true,
+      "detail": null
+    }
+  ],
+  "clashes": [],
+  "host_only": true,
+  "physical_verified": false
+}

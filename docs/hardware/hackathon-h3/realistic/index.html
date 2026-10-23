@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="light"><title>BeanLens H3 · 拟真运行演示</title>
+<link rel="icon" href="data:,"><link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header><a class="brand" href="../README.md" aria-label="BeanLens H1资料"><span class="beanmark"></span>BeanLens <small>豆鉴</small></a><span class="edition">H3 比赛原型 <span>／</span> 拟真教学动画</span><a class="docs" href="../bom-h3.html" target="_blank">对照采购表 ↗</a></header>
+<main>
+ <section class="viewer" aria-label="三维演示">
+  <div class="viewbar"><div class="tabs" role="group" aria-label="观看方式"><button class="active" data-view="mechanism" aria-pressed="true">豆路与双摄</button><button data-view="whole" aria-pressed="false">整机装配</button><button data-view="parts" aria-pressed="false">部件拆解</button></div><button id="resetView" class="textbutton">恢复视角 ↺</button></div>
+  <div id="stage"><div id="loading">正在准备三维模型…</div><div id="labels" aria-hidden="true"></div><div class="stage-note" id="viewNote">顶入豆 → 单槽抽拉闸 → 水平双摄 → 下接豆斗</div><div class="zoom"><button id="zoomIn" aria-label="放大模型">＋</button><button id="zoomOut" aria-label="缩小模型">−</button></div><div class="gesture">拖动旋转 · 滚轮缩放 · 点击部件看说明</div><div class="angle"><span id="gateAngle">0°</span><small>闸片后退行程</small></div></div>
+  <div class="options"><label><input id="showLabels" type="checkbox" checked> 元件名称</label><label><input id="showShield" type="checkbox"> 显示遮光片</label><label><input id="showWires" type="checkbox" checked> 线束走向</label><label><input id="cutaway" type="checkbox"> 透视斗壁</label><span id="viewScale">落豆段慢放12× · 非实测速度</span></div>
+  <div class="transport"><button id="play" class="primary" aria-label="播放动画">▶ 播放演示</button><button id="restart" aria-label="从头播放">↺ 重播</button><label class="speed">速度 <select id="speed"><option value="0.5">0.5×</option><option value="1" selected>1×</option><option value="1.5">1.5×</option></select></label><span id="time">00.0 / 18.0 s</span></div>
+  <label class="timeline-label" for="timeline">演示进度</label><input type="range" id="timeline" min="0" max="18" step="0.01" value="0" aria-label="演示进度，秒">
+  <nav class="steps" aria-label="运行步骤"><button data-time="0" class="active"><b>1</b>等待投豆</button><button data-time="2.5"><b>2</b>预先采集</button><button data-time="4.2"><b>3</b>开闸放豆</button><button data-time="7.62"><b>4</b>双摄抓拍</button><button data-time="8.5"><b>5</b>配对保存</button><button data-time="12.5"><b>6</b>空槽缓关</button></nav>
+ </section>
+ <aside>
+  <div class="chapter"><span class="live-dot"></span><span id="phaseIndex">01 / 06</span><small>预设流程演示</small></div><h1 id="phaseTitle">从上方放入一颗豆</h1><p class="phase-copy" id="phaseCopy">保留原本竖直豆路与水平双摄，只将五槽缩成单槽、长闸片改成小抽拉片。比赛仍人工一次一颗。</p>
+  <div class="screen-heading"><span>K230D BOX 主屏</span><small>画面示意</small></div><canvas id="screenPreview" width="640" height="480" aria-label="BOX屏幕演示画面"></canvas>
+  <div class="component" aria-live="polite"><span id="partId">H11 ×1 · H37 ×1 · H36</span><h2 id="partName">一只舵臂，怎样拉直线？</h2><p id="partCopy">固定MG996R带一只R16直臂；两颗球头和一根50mm球心距短杆，拉动铝闸片后退约20mm。两块PP盖板与侧垫条导向，前方外壳封闭。</p><button id="explainServo" class="textbutton">聚焦抽拉闸与双球头 →</button></div>
+  <p class="boundary">外形重建 ≠ 原厂CAD。连杆、支架、短曝光和漏拍均待实测；落豆段慢放12×，分类画面为预设。</p>
+  <details><summary>先看原豆路与H3差异</summary><p>黑2020框架、顶入豆PP斗、单槽小抽拉闸、水平前后两摄、两面常亮灯、下接豆斗、主屏与普通杯。没有透明托片；不做自动逐豆送料、称重或分选。</p><p>相机先采集，闸门再放豆，不能等豆落进窗内才启动相机。局部视图隐藏框架便于看豆路；整机恢复框架和支承。自动播放代演人工动作。</p><a href="../side-section-h3.svg">豆路 / 闸门剖面 ↗</a> · <a href="README.md">外形依据与验证范围 ↗</a> · <a href="../wiring-h3.svg">电源与信号接线 ↗</a></details>
+ </aside>
+</main>
+<footer><span>顶入豆 / 单槽抽拉闸 / 水平双摄 / 人工单颗 / 落豆抓拍</span><span>H3 · 2026.10.21</span></footer>
+<script src="vendor/three-0.160.1.min.js"></script><script src="design-data.js"></script><script src="model-base-h1.js"></script><script src="model.js"></script><script src="app.js"></script>
+</body></html>

@@ -1,0 +1,476 @@
+{
+  "project": "BeanLens",
+  "profile": "hackathon-h3",
+  "date": "2026-10-21",
+  "status": "top_feed_horizontal_dual_camera_proposal_pending_board_and_fall_tests",
+  "full_profile": "config/hardware-baseline.json",
+  "source": "docs/hardware/hackathon-h3/design-h3.json",
+  "scope": {
+    "camera_count": 2,
+    "lane_count": 1,
+    "controller": "ALIENTEK K230D BOX",
+    "actuator": "MG996R position servo",
+    "manual_one_bean": true,
+    "stationary_photo": false,
+    "weighing": false,
+    "esp32c6": false,
+    "ir_beam": false,
+    "pbt_brush": false,
+    "dual_camera_pairing": true,
+    "network": false,
+    "falling_capture": true
+  },
+  "board": "ALIENTEK K230D BOX / DNK230D V1.0 reference",
+  "installed_firmware": null,
+  "pins": {
+    "servo_pwm": {
+      "gpio": 25,
+      "header": "J10 pin1 / EX_IO0",
+      "function": "PWM5",
+      "hz": 50,
+      "schematic_verified": true,
+      "hardware_verified": false
+    },
+    "gate_closed_limit": {
+      "gpio": 24,
+      "header": "J10 pin2 / EX_IO1",
+      "mode": "input_pullup",
+      "active_level": 0,
+      "contact": "NO to GND via1k series"
+    },
+    "gate_open_limit": {
+      "gpio": 23,
+      "header": "J10 pin3 / EX_IO2",
+      "mode": "input_pullup",
+      "active_level": 0,
+      "contact": "NO to GND via1k series"
+    },
+    "servo_signal_enable": {
+      "gpio": 22,
+      "header": "J10 pin4 / EX_IO3",
+      "active_level": 1,
+      "circuit": "4.7k base resistor ->2N3904; collector /OE1 pulled10k to5V; emitterGND;100k base pulldown"
+    },
+    "start_capture_key": {
+      "name": "KEY0",
+      "gpio": 34,
+      "active_level": 0
+    },
+    "stop_key": {
+      "name": "KEY1",
+      "gpio": 35,
+      "active_level": 0,
+      "hardware_estop": false
+    },
+    "reserved_key": {
+      "name": "KEY2",
+      "gpio": 0,
+      "do_not_use": "boot mode selection"
+    }
+  },
+  "power": {
+    "input_v": 24,
+    "input_a": 5,
+    "adapter": "YU2405",
+    "logic_v": 5,
+    "logic_budget_a": 3,
+    "logic_board": "TPS5450 complete board candidate, SKU unverified",
+    "servo_v": 6,
+    "servo_regulator": "HOBBYWING30607000 UBEC5A2-8S,6V setting",
+    "servo_continuous_target_a": 3,
+    "servo_short_peak_a": 5,
+    "signal_v": 3.3,
+    "servo_pwm_buffer_output_v": 5,
+    "buffer": "SN74AHCT125N",
+    "led_budget_w": 8,
+    "efficiency_budget": 0.8,
+    "continuous_budget_w": 49.25,
+    "short_peak_budget_w": 64.25,
+    "common_reference": true
+  },
+  "schematic": {
+    "path": "docs/【正点原子】DNK230D开发板资料盘(A盘)/3，原理图/ATK-DNK230D V1.0.pdf",
+    "sha256": "caa406fe42535de36d8d51b1cd3158c917569eb2748673e40780465272636a27",
+    "j10": "pin1 IO25, pin2 IO24, pin3 IO23, pin4 IO22; no power/GND",
+    "notes": "GPIO25 explicitly listsPWM5 in schematic; 3.3V bank from VDDIO_BANK1. Confirm connector pin1 orientation/installed runtime via fpioa.help before wiring."
+  },
+  "servo_pulse_us": {
+    "closed": null,
+    "open": null,
+    "reason": "H3 geometry -40.706/0 is not PWM calibration; empty mechanism endpoints pending"
+  },
+  "timing_ms": {
+    "open_timeout": null,
+    "close_timeout": null,
+    "release": null,
+    "reason": "streams ready before release; match frame freshness and calibrate actual timeouts; not animation timing"
+  },
+  "validation": {
+    "host_document_only": true,
+    "firmware_built": false,
+    "on_board_run": false,
+    "mechanical_test": false
+  },
+  "geometry": {
+    "frame": [
+      220,
+      240,
+      460
+    ],
+    "coordinate": "X left-right / Y front-rear / Z up; all mm",
+    "platforms_z": [
+      20,
+      180
+    ],
+    "hopper": {
+      "inner_top": [
+        80,
+        80
+      ],
+      "inner_bottom": [
+        18,
+        14
+      ],
+      "center_xy": [
+        110,
+        120
+      ],
+      "top_z": 440,
+      "bottom_z": 350,
+      "wall": 2,
+      "top_ring": [
+        176,
+        196,
+        3
+      ],
+      "top_ring_xy": [
+        22,
+        22
+      ],
+      "top_ring_z": 440
+    },
+    "gate": {
+      "blank": [
+        29.4,
+        82,
+        2
+      ],
+      "material": "6061-T6 deburred aluminum",
+      "closed_front_y": 108,
+      "open_front_y": 127.74868417407583,
+      "x_range": [
+        95.3,
+        124.7
+      ],
+      "z_range": [
+        324,
+        326
+      ],
+      "hole_xy": [
+        101,
+        113
+      ],
+      "hole_wh": [
+        18,
+        14
+      ],
+      "covers": {
+        "xy": [
+          85,
+          95
+        ],
+        "size": [
+          50,
+          85,
+          3
+        ],
+        "lower_z": 321,
+        "upper_z": 326.3
+      },
+      "spacers": {
+        "count": 2,
+        "size": [
+          10,
+          85,
+          2.3
+        ],
+        "stack": "PP2 + PET0.3; bolted, not welded together",
+        "x": [
+          85,
+          125
+        ]
+      },
+      "stroke": 19.748684174075834,
+      "side_clearance_each": 0.3,
+      "vertical_total_clearance": 0.3,
+      "fixed_front_y_range": [
+        93,
+        95
+      ],
+      "pivot": [
+        170,
+        180,
+        331
+      ],
+      "ball_plane_z": 337.5,
+      "horn_radius": 16,
+      "rod_ball_centers": 50,
+      "rod_count": 1,
+      "ball_head_count": 2,
+      "horn_count": 1,
+      "rail_count": 0,
+      "theta_closed_deg": -40.706341765388494,
+      "theta_open_deg": 0,
+      "gate_ball_closed_xyz": [
+        110,
+        184,
+        337.5
+      ],
+      "gate_ball_open_xyz": [
+        110,
+        203.74868417407583,
+        337.5
+      ],
+      "geometry_only_no_pwm_pulse_calibration": true
+    },
+    "nozzle": {
+      "inner": [
+        18,
+        14
+      ],
+      "z_range": [
+        300,
+        321
+      ],
+      "wall": 2
+    },
+    "camera": {
+      "count": 2,
+      "axis": "horizontal_opposed_front_rear",
+      "front_lens_xyz": [
+        110,
+        30,
+        260
+      ],
+      "rear_lens_xyz": [
+        110,
+        210,
+        260
+      ],
+      "station_xyz": [
+        110,
+        120,
+        260
+      ],
+      "directions": [
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          -1,
+          0
+        ]
+      ],
+      "working_distance_proposal_mm": 90,
+      "observation_z": [
+        235,
+        285
+      ],
+      "support_in_beam": false,
+      "csi_id_mapping": null
+    },
+    "collector": {
+      "inner_top": [
+        64,
+        64
+      ],
+      "inner_bottom": [
+        30,
+        30
+      ],
+      "top_z": 220,
+      "bottom_z": 160,
+      "wall": 2,
+      "center_xy": [
+        110,
+        120
+      ]
+    },
+    "work_aperture": {
+      "xy": [
+        80,
+        90
+      ],
+      "wh": [
+        60,
+        60
+      ],
+      "relative_to_176x196_platform": [
+        58,
+        68
+      ]
+    },
+    "wood": {
+      "decks": [
+        176,
+        196,
+        6
+      ],
+      "deck_count": 2,
+      "display_panel": [
+        176,
+        88,
+        6
+      ],
+      "camera_strips": [
+        176,
+        30,
+        6
+      ],
+      "camera_strip_count": 2,
+      "camera_strip_z": 234,
+      "camera_strip_y": [
+        2,
+        208
+      ],
+      "stock_176x196_count": 3
+    },
+    "cup": {
+      "xyz": [
+        60,
+        95,
+        26
+      ],
+      "size": [
+        100,
+        100,
+        80
+      ]
+    }
+  },
+  "capture": {
+    "method": "both streams running before release; bounded ROIs; one manually introduced bean per cycle",
+    "hardware_sync_claim": false,
+    "stationary_capture": false,
+    "one_pair_one_count": true,
+    "frame_rate_measured": null,
+    "exposure_us_measured": null,
+    "time_pair_tolerance_ms": null,
+    "reject_if": [
+      "missing_view",
+      "blur",
+      "multiple_beans",
+      "uncertain_pair"
+    ],
+    "roi_queue_example": {
+      "per_camera_max": 3,
+      "max_wh": [
+        320,
+        320
+      ],
+      "rgb_bytes_total": 1843200,
+      "actual_runtime_memory_validated": false
+    }
+  },
+  "cameras": {
+    "count": 2,
+    "model": "GC2093-M12-90deg user supplied",
+    "physical_ports": [
+      "BOX CSI1",
+      "BOX CSI2"
+    ],
+    "sensor_id_mapping": null,
+    "capture": "both_running_before_gate_release_falling_pair",
+    "short_exposure_supported_on_installed_BOX_firmware": null,
+    "board_dual_capture_validated": false,
+    "installed_firmware_version": null
+  },
+  "gate_motion": {
+    "blank": [
+      29.4,
+      82,
+      2
+    ],
+    "material": "6061-T6 deburred aluminum",
+    "closed_front_y": 108,
+    "open_front_y": 127.74868417407583,
+    "x_range": [
+      95.3,
+      124.7
+    ],
+    "z_range": [
+      324,
+      326
+    ],
+    "hole_xy": [
+      101,
+      113
+    ],
+    "hole_wh": [
+      18,
+      14
+    ],
+    "covers": {
+      "xy": [
+        85,
+        95
+      ],
+      "size": [
+        50,
+        85,
+        3
+      ],
+      "lower_z": 321,
+      "upper_z": 326.3
+    },
+    "spacers": {
+      "count": 2,
+      "size": [
+        10,
+        85,
+        2.3
+      ],
+      "stack": "PP2 + PET0.3; bolted, not welded together",
+      "x": [
+        85,
+        125
+      ]
+    },
+    "stroke": 19.748684174075834,
+    "side_clearance_each": 0.3,
+    "vertical_total_clearance": 0.3,
+    "fixed_front_y_range": [
+      93,
+      95
+    ],
+    "pivot": [
+      170,
+      180,
+      331
+    ],
+    "ball_plane_z": 337.5,
+    "horn_radius": 16,
+    "rod_ball_centers": 50,
+    "rod_count": 1,
+    "ball_head_count": 2,
+    "horn_count": 1,
+    "rail_count": 0,
+    "theta_closed_deg": -40.706341765388494,
+    "theta_open_deg": 0,
+    "gate_ball_closed_xyz": [
+      110,
+      184,
+      337.5
+    ],
+    "gate_ball_open_xyz": [
+      110,
+      203.74868417407583,
+      337.5
+    ],
+    "geometry_only_no_pwm_pulse_calibration": true
+  },
+  "no_firmware_modified": true
+}

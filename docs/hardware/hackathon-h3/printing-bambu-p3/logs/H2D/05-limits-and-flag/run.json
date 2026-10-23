@@ -1,0 +1,61 @@
+{
+  "machine": "H2D",
+  "job": "05-limits-and-flag",
+  "return_code": 0,
+  "output": "jobs/H2D/05-limits-and-flag.gcode.3mf",
+  "exists": true,
+  "bytes": 337787,
+  "slicer_result": {
+    "error_string": "Success.",
+    "export_time": 366,
+    "layer_height": 0.20000000298023224,
+    "plate_index": 0,
+    "prepare_time": 7,
+    "return_code": 0,
+    "sliced_plates": [
+      {
+        "feature_type_times": {
+          "Bottom surface": 31.279403686523438,
+          "Bridge": 37.93996047973633,
+          "Brim": 159.6774139404297,
+          "Custom": 313.86163330078125,
+          "Flush": 26.0,
+          "Gap infill": 0.07674656808376312,
+          "Inner wall": 1247.00830078125,
+          "Internal solid infill": 137.90919494628906,
+          "Outer wall": 582.3634033203125,
+          "Overhang wall": 13.27811050415039,
+          "Sparse infill": 134.45957946777344,
+          "Top surface": 49.4947624206543,
+          "Travel": 328.7498474121094,
+          "Undefined": 320.2338562011719
+        },
+        "filament_change_times": 0,
+        "filaments": [
+          {
+            "filament_id": "GFG02",
+            "id": 1,
+            "main_used_g": 12.028426170349121,
+            "total_used_g": 12.028426170349121
+          }
+        ],
+        "generate_support_material_time": 6,
+        "id": 1,
+        "infill_time": 16,
+        "layer_filament_change": 0,
+        "main_predication": 2696.2783203125,
+        "make_perimeters_time": 51,
+        "obj_cached_cnt": 0,
+        "sliced_time": 420,
+        "sliced_time_with_cache": 328,
+        "total_predication": 3053.6240234375,
+        "triangle_count": 5880,
+        "warning_message": ""
+      }
+    ],
+    "sparse_infill_density": 35.0,
+    "wall_loops": 5
+  },
+  "printer_model_id": "O1D",
+  "identity_metadata_completed_from_official_profile": true
+}

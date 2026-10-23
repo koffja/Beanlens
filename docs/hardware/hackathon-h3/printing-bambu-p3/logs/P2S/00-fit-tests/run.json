@@ -1,0 +1,55 @@
+{
+  "machine": "P2S",
+  "job": "00-fit-tests",
+  "return_code": 0,
+  "output": "jobs/P2S/00-fit-tests.gcode.3mf",
+  "exists": true,
+  "bytes": 139423,
+  "slicer_result": {
+    "error_string": "Success.",
+    "export_time": 286,
+    "layer_height": 0.20000000298023224,
+    "plate_index": 0,
+    "prepare_time": 6,
+    "return_code": 0,
+    "sliced_plates": [
+      {
+        "feature_type_times": {
+          "Custom": 404.0190124511719,
+          "Flush": 26.0,
+          "Gap infill": 0.24246273934841156,
+          "Inner wall": 316.7444763183594,
+          "Outer wall": 223.78195190429688,
+          "Top surface": 13.22210693359375,
+          "Travel": 130.71136474609375,
+          "Undefined": 123.14540100097656
+        },
+        "filament_change_times": 0,
+        "filaments": [
+          {
+            "filament_id": "GFG02",
+            "id": 1,
+            "main_used_g": 3.274535894393921,
+            "total_used_g": 3.274535894393921
+          }
+        ],
+        "generate_support_material_time": 4,
+        "id": 1,
+        "infill_time": 7,
+        "layer_filament_change": 0,
+        "main_predication": 658.7342529296875,
+        "make_perimeters_time": 29,
+        "obj_cached_cnt": 0,
+        "sliced_time": 107,
+        "sliced_time_with_cache": 60,
+        "total_predication": 1107.187255859375,
+        "triangle_count": 1984,
+        "warning_message": ""
+      }
+    ],
+    "sparse_infill_density": 25.0,
+    "wall_loops": 5
+  },
+  "printer_model_id": "N7",
+  "identity_metadata_completed_from_official_profile": true
+}

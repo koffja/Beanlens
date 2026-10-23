@@ -1,0 +1,114 @@
+{
+  "project": "BeanLens",
+  "profile": "hackathon-h1",
+  "date": "2026-10-19",
+  "status": "schematic_checked_pending_board_and_physical_tests",
+  "full_profile": "config/hardware-baseline.json",
+  "source": "docs/hardware/hackathon-h1/design-h1.json",
+  "scope": {
+    "camera_count": 1,
+    "lane_count": 1,
+    "controller": "ALIENTEK K230D BOX",
+    "actuator": "MG996R position servo",
+    "manual_one_bean": true,
+    "stationary_photo": true,
+    "weighing": false,
+    "esp32c6": false,
+    "ir_beam": false,
+    "pbt_brush": false,
+    "dual_camera_pairing": false,
+    "network": false
+  },
+  "board": "ALIENTEK K230D BOX / DNK230D V1.0 reference",
+  "installed_firmware": null,
+  "pins": {
+    "servo_pwm": {
+      "gpio": 25,
+      "header": "J10 pin1 / EX_IO0",
+      "function": "PWM5",
+      "hz": 50,
+      "schematic_verified": true,
+      "hardware_verified": false
+    },
+    "gate_closed_limit": {
+      "gpio": 24,
+      "header": "J10 pin2 / EX_IO1",
+      "mode": "input_pullup",
+      "active_level": 0,
+      "contact": "NO to GND via1k series"
+    },
+    "gate_open_limit": {
+      "gpio": 23,
+      "header": "J10 pin3 / EX_IO2",
+      "mode": "input_pullup",
+      "active_level": 0,
+      "contact": "NO to GND via1k series"
+    },
+    "servo_signal_enable": {
+      "gpio": 22,
+      "header": "J10 pin4 / EX_IO3",
+      "active_level": 1,
+      "circuit": "4.7k base resistor ->2N3904; collector /OE1 pulled10k to5V; emitterGND;100k base pulldown"
+    },
+    "start_capture_key": {
+      "name": "KEY0",
+      "gpio": 34,
+      "active_level": 0
+    },
+    "stop_key": {
+      "name": "KEY1",
+      "gpio": 35,
+      "active_level": 0,
+      "hardware_estop": false
+    },
+    "reserved_key": {
+      "name": "KEY2",
+      "gpio": 0,
+      "do_not_use": "boot mode selection"
+    }
+  },
+  "power": {
+    "input_v": 24,
+    "input_a": 5,
+    "adapter": "YU2405",
+    "logic_v": 5,
+    "logic_budget_a": 3,
+    "logic_board": "TPS5450 complete board candidate, SKU unverified",
+    "servo_v": 6,
+    "servo_regulator": "HOBBYWING30607000 UBEC5A2-8S,6V setting",
+    "servo_continuous_target_a": 3,
+    "servo_short_peak_a": 5,
+    "signal_v": 3.3,
+    "servo_pwm_buffer_output_v": 5,
+    "buffer": "SN74AHCT125N",
+    "led_budget_w": 4,
+    "efficiency_budget": 0.8,
+    "continuous_budget_w": 45.25,
+    "short_peak_budget_w": 60.25,
+    "common_reference": true
+  },
+  "schematic": {
+    "path": "docs/【正点原子】DNK230D开发板资料盘(A盘)/3，原理图/ATK-DNK230D V1.0.pdf",
+    "sha256": "caa406fe42535de36d8d51b1cd3158c917569eb2748673e40780465272636a27",
+    "j10": "pin1 IO25, pin2 IO24, pin3 IO23, pin4 IO22; no power/GND",
+    "notes": "GPIO25 explicitly listsPWM5 in schematic; 3.3V bank from VDDIO_BANK1. Confirm connector pin1 orientation/installed runtime via fpioa.help before wiring."
+  },
+  "servo_pulse_us": {
+    "closed": null,
+    "open": null,
+    "reason": "calibrate empty small-angle motion; drawing0/90 is relative geometry only"
+  },
+  "timing_ms": {
+    "open_timeout": null,
+    "close_timeout": null,
+    "settle": null,
+    "release": null,
+    "reason": "must calibrate on physical mechanism, animation timing is not firmware calibration"
+  },
+  "validation": {
+    "host_document_only": true,
+    "firmware_built": false,
+    "on_board_run": false,
+    "mechanical_test": false
+  }
+}

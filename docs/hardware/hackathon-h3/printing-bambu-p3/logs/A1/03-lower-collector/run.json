@@ -1,0 +1,63 @@
+{
+  "machine": "A1",
+  "job": "03-lower-collector",
+  "return_code": 0,
+  "output": "jobs/A1/03-lower-collector.gcode.3mf",
+  "exists": true,
+  "bytes": 727068,
+  "slicer_result": {
+    "error_string": "Success.",
+    "export_time": 353,
+    "layer_height": 0.20000000298023224,
+    "plate_index": 0,
+    "prepare_time": 7,
+    "return_code": 0,
+    "sliced_plates": [
+      {
+        "feature_type_times": {
+          "Bridge": 937.7962036132812,
+          "Brim": 78.24502563476562,
+          "Custom": 381.460205078125,
+          "Flush": 25.0,
+          "Gap infill": 1.4516208171844482,
+          "Inner wall": 2967.651123046875,
+          "Internal solid infill": 1256.2003173828125,
+          "Outer wall": 2169.50048828125,
+          "Overhang wall": 209.48922729492188,
+          "Sparse infill": 622.5076293945312,
+          "Support": 3345.604736328125,
+          "Support interface": 559.7492065429688,
+          "Support transition": 295.68756103515625,
+          "Top surface": 274.82086181640625,
+          "Travel": 1749.3485107421875,
+          "Undefined": 1732.4453125
+        },
+        "filament_change_times": 0,
+        "filaments": [
+          {
+            "filament_id": "GFG02",
+            "id": 1,
+            "main_used_g": 77.15165710449219,
+            "total_used_g": 77.15165710449219
+          }
+        ],
+        "generate_support_material_time": 68,
+        "id": 1,
+        "infill_time": 79,
+        "layer_filament_change": 0,
+        "main_predication": 14440.572265625,
+        "make_perimeters_time": 67,
+        "obj_cached_cnt": 0,
+        "sliced_time": 477,
+        "sliced_time_with_cache": 246,
+        "total_predication": 14855.12890625,
+        "triangle_count": 3298,
+        "warning_message": ""
+      }
+    ],
+    "sparse_infill_density": 25.0,
+    "wall_loops": 5
+  },
+  "printer_model_id": "N2S",
+  "identity_metadata_completed_from_official_profile": true
+}

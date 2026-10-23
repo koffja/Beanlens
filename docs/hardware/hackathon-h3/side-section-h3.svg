@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1050" viewBox="0 0 1400 1050">
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto-start-reverse"><path d="M0 0L8 4L0 8" fill="none" stroke="#19788c"/></marker><pattern id="pp" width="6" height="6" patternUnits="userSpaceOnUse"><path d="M0 6L6 0" stroke="#9ebeb6" stroke-width="1"/></pattern></defs>
+<rect width="1400" height="1050" fill="#f4f7f8"/><g font-family="PingFang SC,Microsoft YaHei,sans-serif" fill="#203a46">
+<text x="42" y="45" font-size="26" font-weight="bold">BeanLens H3｜回到顶入豆、水平双摄，只简化槽与闸</text>
+<text x="42" y="77" font-size="15">左：沿前后方向剖面（mm）　右：闸盒分层与俯视原理；局部放大，各图比例不同。孔位/焊接收缩/实物配合尚待试制。</text>
+<rect x="30" y="100" width="730" height="900" rx="10" fill="white"/><rect x="780" y="100" width="590" height="900" rx="10" fill="white"/>
+<text x="54" y="135" font-size="20" font-weight="bold">前 ←　垂直豆路剖面　→ 后</text>
+<!-- Side section: screen x=120+2Y, screen y=1050-2Z. -->
+<g stroke="#24333a" fill="#313d43"><rect x="120" y="146" width="12" height="772"/><rect x="588" y="146" width="12" height="772"/></g>
+<path d="M165 170H555" stroke="#77978e" stroke-width="6"/><path d="M280 170L346 350H374L440 170" fill="url(#pp)" stroke="#82a59a" stroke-width="4"/>
+<path d="M346 350V391M374 350V391" stroke="#82a59a" stroke-width="4"/>
+<text x="215" y="207" font-size="14">PP2顶斗，内顶80×80 / 内底18×14</text><text x="300" y="244" font-size="14">高90，人工每次1颗</text>
+<path d="M360 265V332" stroke="#19788c" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M155 170V194H180M565 170V194H585" stroke="#a2afb6" stroke-width="5" fill="none"/><text x="468" y="158" font-size="13">Z440顶环＋4角片</text>
+<rect x="154" y="206" width="12" height="176" fill="#c5a77e"/><rect x="119" y="260" width="31" height="80" rx="3" fill="#172932"/><rect x="117" y="269" width="3" height="58" fill="#288ca1"/>
+<text x="48" y="250" font-size="13">BOX主屏</text><text x="184" y="292" font-size="13">面板在斗前方，未放进豆路</text>
+<rect x="310" y="391.4" width="170" height="6" fill="#bacfc4"/><rect x="310" y="402" width="170" height="6" fill="#bacfc4"/>
+<path d="M348 391.4V397.4M376 391.4V397.4M348 402V408M376 402V408" stroke="white" stroke-width="6"/>
+<rect x="336" y="398" width="164" height="4" fill="#9baeb8"/><path d="M318 392V350" stroke="#82a59a" stroke-width="4"/>
+<path d="M395 383H470" stroke="#19788c" stroke-width="2" marker-end="url(#arrow)"/><text x="410" y="369" font-size="13">后退19.75开闸</text>
+<rect x="480" y="408" width="110" height="6" fill="#bacfc4"/><path d="M574 414H590V440" fill="none" stroke="#a2afb6" stroke-width="5"/>
+<text x="460" y="465" font-size="13">后支承片→后立柱</text>
+<path d="M342 408V450M378 408V450" stroke="#82a59a" stroke-width="4"/><text x="390" y="439" font-size="13">短管出口Z300</text>
+<rect x="340" y="480" width="40" height="100" fill="#d7efee" opacity=".6" stroke="#7ab3b4" stroke-dasharray="4 3"/>
+<g stroke="#298da5" fill="none"><path d="M180 530H355" stroke-dasharray="6 4" marker-end="url(#arrow)"/></g><path d="M540 530H366" stroke="#bf8a42" stroke-width="2" stroke-dasharray="6 4" marker-end="url(#arrow)"/>
+<g fill="#253740"><rect x="149" y="491" width="16" height="78" rx="3"/><rect x="165" y="514" width="19" height="32" rx="4"/><rect x="556" y="491" width="16" height="78" rx="3"/><rect x="536" y="514" width="20" height="32" rx="4"/></g>
+<ellipse cx="360" cy="528" rx="7" ry="12" fill="#96936c" transform="rotate(16 360 528)"/><path d="M360 545V572" stroke="#19788c" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="158" y="594" font-size="14">前摄A</text><text x="523" y="594" font-size="14">后摄B</text><text x="245" y="600" font-size="14">光轴Z260，两侧工作距各90起试</text>
+<text x="180" y="476" font-size="13">观察带Z235–285 / 高50</text><text x="210" y="503" font-size="13">无托片，豆从中间自由下落</text>
+<path d="M296 610L330 730H390L424 610" fill="url(#pp)" stroke="#82a59a" stroke-width="4"/><text x="442" y="654" font-size="14">下接豆斗</text><text x="442" y="671" font-size="13">Z220→160 / 高60</text>
+<path d="M165 684H300M420 684H555" stroke="#c5a77e" stroke-width="12"/><text x="479" y="714" font-size="13">Z180木台开60方孔</text>
+<path d="M306 754V896H486V754" fill="#e8efed" stroke="#a5b4b9" stroke-width="3"/><path d="M360 745V840" stroke="#19788c" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="329" y="873" font-size="15">普通杯 / 不称重</text><path d="M165 904H555" stroke="#c5a77e" stroke-width="12"/>
+<text x="54" y="958" font-size="14">帧先准备 → 开闸释放 → 双摄挑清楚帧 → 配对/复核 → 空槽缓关</text>
+<text x="805" y="135" font-size="20" font-weight="bold">闸盒分层：固定PP，不让闸片伸出前壁</text>
+<text x="818" y="171" font-size="14">前 ←　　　　　　　　　　　　　　→ 后 / 舵机拉杆端</text>
+<rect x="858" y="205" width="366" height="24" fill="#bad0c4"/><rect x="944" y="202" width="62" height="30" fill="white"/><text x="1235" y="223" font-size="13">上盖PP3</text>
+<rect x="865" y="234" width="350" height="24" fill="#d9e7df" stroke="#9bb4a6"/><text x="1282" y="250" font-size="13">2.3导槽</text>
+<rect x="910" y="237" width="366" height="18" fill="#9eafb9"/><text x="1050" y="250" font-size="12">铝闸片2</text>
+<rect x="858" y="264" width="366" height="24" fill="#bad0c4"/><rect x="944" y="261" width="62" height="30" fill="white"/><text x="1235" y="282" font-size="13">下盖PP3</text>
+<rect x="846" y="205" width="12" height="83" fill="#bad0c4"/><path d="M975 180V205M975 289V318" stroke="#19788c" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="814" y="337" font-size="14">孔18×14；关闭前缘在孔前5mm，前口始终封在固定盒内</text>
+<text x="805" y="388" font-size="20" font-weight="bold">俯视：一只舵臂＋双球头短连杆</text>
+<text x="817" y="417" font-size="13">闭位几何：虚线为上下盖的固定孔，铝闸片本身没有孔</text>
+<rect x="860" y="434.8" width="140" height="238" rx="4" fill="#dae5df" stroke="#97b3a7"/>
+<rect x="888.84" y="471.2" width="82.32" height="229.6" fill="#b5c4ce" stroke="#768e9c"/>
+<rect x="904.8" y="485.2" width="50.4" height="39.2" fill="none" stroke="#3e8d97" stroke-dasharray="4 3"/>
+<text x="888" y="552" font-size="12">单槽孔投影</text><path d="M930 598V657" stroke="#19788c" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="1070" y="650.4" width="55.16" height="113.96" rx="5" fill="#25343b"/><rect x="1074" y="698" width="47" height="33" fill="#c8ac70"/><text x="1075" y="720" font-size="11">MG996R</text>
+<path d="M1098 672.8L1064.039 643.582" stroke="#9bafb9" stroke-width="13" stroke-linecap="round"/><circle cx="1098" cy="672.8" r="8" fill="#b5c4ce"/>
+<path d="M1064.039 643.582L930 684" stroke="#8a9fa9" stroke-width="6"/>
+<g fill="#273d47" stroke="#aebfc7" stroke-width="3"><circle cx="1064.039" cy="643.582" r="8"/><circle cx="930" cy="684" r="8"/></g>
+<text x="1100" y="622" font-size="14">R16单舵臂</text><text x="964" y="626" font-size="14">球心距50</text>
+<text x="1140" y="665" font-size="13">两球头共面</text><text x="1140" y="690" font-size="13">不用第二舵臂</text>
+<text x="817" y="785" font-size="14">后退约20mm，前缘越过孔后端才全开；确认空槽再缓关</text>
+<text x="805" y="803" font-size="16" font-weight="bold">简化了什么？</text><text x="817" y="836" font-size="14">五槽→一槽；长闸片→29.4×82小片；取消导轨与同步横梁。</text>
+<text x="817" y="865" font-size="14">不装C6、称重、红外对射、PBT、第二屏或联网。</text>
+<text x="817" y="906" font-size="14">短曝光和漏拍须先台面测试；理想观察带仅约45ms。</text><text x="817" y="935" font-size="14">两摄图不等于覆盖全部表面；缺图/糊图不能算正常。</text>
+<a href="beanlens-realistic-h3.html"><text x="817" y="978" font-size="15" fill="#16758b">打开拟真运行 / 整机 / 拆解动画 ↗</text></a>
+</g></svg>

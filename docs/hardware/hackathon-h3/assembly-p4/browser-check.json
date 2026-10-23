@@ -1,0 +1,107 @@
+{
+  "checks": [
+    {
+      "name": "nine_original_print_parts",
+      "pass": true
+    },
+    {
+      "name": "five_wood_parts",
+      "pass": true
+    },
+    {
+      "name": "thirteen_profiles",
+      "pass": true
+    },
+    {
+      "name": "exploded_view",
+      "pass": true
+    },
+    {
+      "name": "J01_focus",
+      "pass": true
+    },
+    {
+      "name": "J02_focus",
+      "pass": true
+    },
+    {
+      "name": "J03_focus",
+      "pass": true
+    },
+    {
+      "name": "J04_focus",
+      "pass": true
+    },
+    {
+      "name": "J05_focus",
+      "pass": true
+    },
+    {
+      "name": "J06_focus",
+      "pass": true
+    },
+    {
+      "name": "J07_focus",
+      "pass": true
+    },
+    {
+      "name": "J08_focus",
+      "pass": true
+    },
+    {
+      "name": "J09_focus",
+      "pass": true
+    },
+    {
+      "name": "J10_focus",
+      "pass": true
+    },
+    {
+      "name": "J11_focus",
+      "pass": true
+    },
+    {
+      "name": "J12_focus",
+      "pass": true
+    },
+    {
+      "name": "J13_focus",
+      "pass": true
+    },
+    {
+      "name": "J14_focus",
+      "pass": true
+    },
+    {
+      "name": "gate_19_75mm",
+      "pass": true
+    },
+    {
+      "name": "BOM_finds_servo_mount",
+      "pass": true
+    },
+    {
+      "name": "wood_filter_hides",
+      "pass": true
+    },
+    {
+      "name": "print_filter_hides",
+      "pass": true
+    },
+    {
+      "name": "mobile_no_overflow",
+      "pass": true
+    },
+    {
+      "name": "no_page_errors",
+      "pass": true
+    },
+    {
+      "name": "offline_no_requests",
+      "pass": true
+    }
+  ],
+  "errors": [],
+  "network": [],
+  "physicalVerified": false
+}

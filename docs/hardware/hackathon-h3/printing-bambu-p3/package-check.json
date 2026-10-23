@@ -1,0 +1,41 @@
+{
+  "checks": [
+    {
+      "name": "all_host_slice_checks",
+      "pass": true
+    },
+    {
+      "name": "all_browser_checks",
+      "pass": true
+    },
+    {
+      "name": "all_python_sources_parse",
+      "pass": true
+    },
+    {
+      "name": "dashboard_link_README.md",
+      "pass": true
+    },
+    {
+      "name": "dashboard_link_print-jobs.csv",
+      "pass": true
+    },
+    {
+      "name": "dashboard_link_validation.json",
+      "pass": true
+    },
+    {
+      "name": "original_kit_printing-p1",
+      "pass": true
+    },
+    {
+      "name": "original_kit_printing-p2",
+      "pass": true
+    },
+    {
+      "name": "Bambu_reopens_completed_3mf",
+      "pass": true
+    }
+  ],
+  "printed": false
+}

@@ -1,0 +1,304 @@
+{
+  "date": "2026-10-19",
+  "revision": "H1",
+  "errors": [],
+  "sheets": [
+    {
+      "file": "01-overall.svg",
+      "outside": [],
+      "shapesOutside": []
+    },
+    {
+      "file": "02-exploded.svg",
+      "outside": [],
+      "shapesOutside": []
+    },
+    {
+      "file": "03-cuts.svg",
+      "outside": [],
+      "shapesOutside": []
+    },
+    {
+      "file": "04-power.svg",
+      "outside": [],
+      "shapesOutside": []
+    },
+    {
+      "file": "05-signals.svg",
+      "outside": [],
+      "shapesOutside": []
+    },
+    {
+      "file": "06-bringup.svg",
+      "outside": [],
+      "shapesOutside": []
+    }
+  ],
+  "assembly": {
+    "stable": true,
+    "stableGroup": true,
+    "frames": 12,
+    "explode": true,
+    "reset": true,
+    "detail": "闭合覆盖24mm出口，底比槽底高0.5起试；顺时针向后摆90°清空出口；只在空槽时关。",
+    "objects": 50
+  },
+  "bomRows": 30,
+  "states": [
+    {
+      "t": 0,
+      "phase": 0,
+      "angle": 0,
+      "fault": null,
+      "kind": "normal",
+      "beanPlaced": false,
+      "run": false,
+      "reviewConfirmed": false,
+      "validRecord": 0
+    },
+    {
+      "t": 2,
+      "phase": 1,
+      "angle": 0,
+      "fault": null,
+      "kind": "normal",
+      "beanPlaced": true,
+      "run": false,
+      "reviewConfirmed": false,
+      "validRecord": 0
+    },
+    {
+      "t": 4,
+      "phase": 2,
+      "angle": 0,
+      "fault": null,
+      "kind": "normal",
+      "beanPlaced": true,
+      "run": false,
+      "reviewConfirmed": false,
+      "validRecord": 0
+    },
+    {
+      "t": 6,
+      "phase": 3,
+      "angle": 0,
+      "fault": null,
+      "kind": "normal",
+      "beanPlaced": true,
+      "run": false,
+      "reviewConfirmed": false,
+      "validRecord": 0
+    },
+    {
+      "t": 8,
+      "phase": 4,
+      "angle": 0,
+      "fault": null,
+      "kind": "normal",
+      "beanPlaced": true,
+      "run": false,
+      "reviewConfirmed": false,
+      "validRecord": 1
+    },
+    {
+      "t": 10,
+      "phase": 5,
+      "angle": 0,
+      "fault": null,
+      "kind": "normal",
+      "beanPlaced": true,
+      "run": false,
+      "reviewConfirmed": true,
+      "validRecord": 1
+    },
+    {
+      "t": 11,
+      "phase": 5,
+      "angle": 45,
+      "fault": null,
+      "kind": "normal",
+      "beanPlaced": true,
+      "run": false,
+      "reviewConfirmed": true,
+      "validRecord": 1
+    },
+    {
+      "t": 12,
+      "phase": 6,
+      "angle": 90,
+      "fault": null,
+      "kind": "normal",
+      "beanPlaced": true,
+      "run": false,
+      "reviewConfirmed": true,
+      "validRecord": 1
+    },
+    {
+      "t": 14,
+      "phase": 7,
+      "angle": 90,
+      "fault": null,
+      "kind": "normal",
+      "beanPlaced": true,
+      "run": false,
+      "reviewConfirmed": true,
+      "validRecord": 1
+    },
+    {
+      "t": 16,
+      "phase": 8,
+      "angle": 90,
+      "fault": null,
+      "kind": "normal",
+      "beanPlaced": true,
+      "run": false,
+      "reviewConfirmed": true,
+      "validRecord": 1
+    },
+    {
+      "t": 17,
+      "phase": 8,
+      "angle": 45,
+      "fault": null,
+      "kind": "normal",
+      "beanPlaced": true,
+      "run": false,
+      "reviewConfirmed": true,
+      "validRecord": 1
+    },
+    {
+      "t": 18,
+      "phase": 9,
+      "angle": 0,
+      "fault": null,
+      "kind": "normal",
+      "beanPlaced": true,
+      "run": false,
+      "reviewConfirmed": true,
+      "validRecord": 1
+    }
+  ],
+  "pauseBlocked": true,
+  "empty": {
+    "t": 0,
+    "phase": 0,
+    "angle": 0,
+    "fault": "input",
+    "kind": "normal",
+    "beanPlaced": false,
+    "run": false,
+    "reviewConfirmed": false,
+    "validRecord": 0
+  },
+  "duplicate": {
+    "t": 4.0313,
+    "phase": 2,
+    "angle": 0,
+    "fault": null,
+    "kind": "normal",
+    "beanPlaced": true,
+    "run": true,
+    "reviewConfirmed": false,
+    "validRecord": 0
+  },
+  "playAdvances": true,
+  "stop": {
+    "t": 4.364600000000005,
+    "phase": 2,
+    "angle": 0,
+    "fault": "stop",
+    "kind": "normal",
+    "beanPlaced": true,
+    "run": false,
+    "reviewConfirmed": false,
+    "validRecord": 0
+  },
+  "two": {
+    "t": 2,
+    "phase": 1,
+    "angle": 0,
+    "fault": "input",
+    "kind": "two",
+    "beanPlaced": true,
+    "run": false,
+    "reviewConfirmed": false,
+    "validRecord": 0
+  },
+  "reviewConfirm": {
+    "t": 10,
+    "phase": 5,
+    "angle": 0,
+    "fault": null,
+    "kind": "review",
+    "beanPlaced": true,
+    "run": true,
+    "reviewConfirmed": true,
+    "validRecord": 1
+  },
+  "jam": {
+    "t": 17,
+    "phase": 8,
+    "angle": 38,
+    "fault": "jam",
+    "kind": "review",
+    "beanPlaced": true,
+    "run": false,
+    "reviewConfirmed": true,
+    "validRecord": 1
+  },
+  "camera": {
+    "t": 7,
+    "phase": 3,
+    "angle": 0,
+    "fault": "camera",
+    "kind": "review",
+    "beanPlaced": true,
+    "run": false,
+    "reviewConfirmed": true,
+    "validRecord": 0
+  },
+  "storage": {
+    "t": 7,
+    "phase": 3,
+    "angle": 0,
+    "fault": "storage",
+    "kind": "review",
+    "beanPlaced": true,
+    "run": false,
+    "reviewConfirmed": true,
+    "validRecord": 0
+  },
+  "complete": {
+    "t": 18,
+    "phase": 9,
+    "angle": 0,
+    "fault": null,
+    "kind": "normal",
+    "beanPlaced": true,
+    "run": false,
+    "reviewConfirmed": true,
+    "validRecord": 1
+  },
+  "noNewBean": {
+    "t": 18,
+    "phase": 9,
+    "angle": 0,
+    "fault": "input",
+    "kind": "normal",
+    "beanPlaced": false,
+    "run": false,
+    "reviewConfirmed": true,
+    "validRecord": 0
+  },
+  "mobile": {
+    "width": 390,
+    "scroll": 390,
+    "noOverflow": true
+  },
+  "assemblyMobile": {
+    "noOverflow": true
+  },
+  "bomMobile": {
+    "noOverflow": true
+  }
+}

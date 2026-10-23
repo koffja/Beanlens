@@ -1,0 +1,128 @@
+{
+  "date": "2026-10-22",
+  "checks": [
+    {
+      "name": "six_mounted_parts",
+      "pass": true
+    },
+    {
+      "name": "full_gate_travel",
+      "pass": true
+    },
+    {
+      "name": "hide_references",
+      "pass": true
+    },
+    {
+      "name": "single_print_servo-cradle-mm",
+      "pass": true
+    },
+    {
+      "name": "download_stl_servo-cradle-mm",
+      "pass": true
+    },
+    {
+      "name": "download_3mf_servo-cradle-mm",
+      "pass": true
+    },
+    {
+      "name": "download_step_servo-cradle-mm",
+      "pass": true
+    },
+    {
+      "name": "single_print_camera-front-mm",
+      "pass": true
+    },
+    {
+      "name": "download_stl_camera-front-mm",
+      "pass": true
+    },
+    {
+      "name": "download_3mf_camera-front-mm",
+      "pass": true
+    },
+    {
+      "name": "download_step_camera-front-mm",
+      "pass": true
+    },
+    {
+      "name": "single_print_camera-rear-mm",
+      "pass": true
+    },
+    {
+      "name": "download_stl_camera-rear-mm",
+      "pass": true
+    },
+    {
+      "name": "download_3mf_camera-rear-mm",
+      "pass": true
+    },
+    {
+      "name": "download_step_camera-rear-mm",
+      "pass": true
+    },
+    {
+      "name": "single_print_limit-closed-seat-mm",
+      "pass": true
+    },
+    {
+      "name": "download_stl_limit-closed-seat-mm",
+      "pass": true
+    },
+    {
+      "name": "download_3mf_limit-closed-seat-mm",
+      "pass": true
+    },
+    {
+      "name": "download_step_limit-closed-seat-mm",
+      "pass": true
+    },
+    {
+      "name": "single_print_limit-open-seat-mm",
+      "pass": true
+    },
+    {
+      "name": "download_stl_limit-open-seat-mm",
+      "pass": true
+    },
+    {
+      "name": "download_3mf_limit-open-seat-mm",
+      "pass": true
+    },
+    {
+      "name": "download_step_limit-open-seat-mm",
+      "pass": true
+    },
+    {
+      "name": "single_print_gate-limit-flag-mm",
+      "pass": true
+    },
+    {
+      "name": "download_stl_gate-limit-flag-mm",
+      "pass": true
+    },
+    {
+      "name": "download_3mf_gate-limit-flag-mm",
+      "pass": true
+    },
+    {
+      "name": "download_step_gate-limit-flag-mm",
+      "pass": true
+    },
+    {
+      "name": "mobile_no_overflow",
+      "pass": true
+    },
+    {
+      "name": "no_page_errors",
+      "pass": true
+    },
+    {
+      "name": "offline_no_network",
+      "pass": true
+    }
+  ],
+  "errors": [],
+  "network": [],
+  "printed": false
+}

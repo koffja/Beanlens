@@ -1,0 +1,9 @@
+{
+  "date": "2026-10-19",
+  "revision": "H1",
+  "pdf": "output/pdf/beanlens-hackathon-h1-20261019.pdf",
+  "sha256": "647b9a8f1b4642027d4e9e42541a22a8394e22679e29dd4b31f91b9675834167",
+  "pages": 6,
+  "review": "All six PDF pages rendered with Poppler and visually checked; browser checks cover text and shape bounds, desktop/mobile, assembly and operation/fault paths.",
+  "hardware_verified": false
+}

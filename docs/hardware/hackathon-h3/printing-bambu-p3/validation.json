@@ -1,0 +1,2486 @@
+{
+  "revision": "H3-Bambu-P3",
+  "host_slice_only": true,
+  "printed": false,
+  "printer_firmware_verified": false,
+  "checks": [
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p1/THREE-LICENSE.txt",
+      "pass": true
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p1/preview-lower-collector-mm.png",
+      "pass": true
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p1/preview.html",
+      "pass": true
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p1/BeanLens-H3-P1-print-kit-20261022.zip",
+      "pass": true
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p1/preview-exploded.png",
+      "pass": true
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p1/.DS_Store",
+      "pass": true
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p1/parameters.json",
+      "pass": true
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p1/requirements.txt",
+      "pass": true
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p1/preview-upper-hopper-mm.png",
+      "pass": true
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p1/build_preview.py",
+      "pass": true
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p1/preview-meshes.json",
+      "pass": true
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p1/package-check.json",
+      "pass": true
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p1/source-design-h3.json",
+      "pass": true
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p1/preview-mobile.png",
+      "pass": true
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p1/assembly-reference-only.step",
+      "pass": true
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p1/preview-assembly.png",
+      "pass": true
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p1/check_preview.cjs",
+      "pass": true
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p1/h3-preserved.json",
+      "pass": true
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p1/README.md",
+      "pass": true
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p1/BOM-delta.csv",
+      "pass": true
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p1/checksums-sha256.json",
+      "pass": true
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p1/.gitignore",
+      "pass": true
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p1/browser-check.json",
+      "pass": true
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p1/validation.json",
+      "pass": true
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p1/manifest.json",
+      "pass": true
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p1/preview-upper-adapter-mm.png",
+      "pass": true
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p1/requirements-lock.txt",
+      "pass": true
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p1/build_print_models.py",
+      "pass": true
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p1/parts/upper-adapter-mm.3mf",
+      "pass": true
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p1/parts/lower-collector-mm.stl",
+      "pass": true
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p1/parts/upper-hopper-mm.3mf",
+      "pass": true
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p1/parts/upper-hopper-mm.stl",
+      "pass": true
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p1/parts/lower-collector-mm.step",
+      "pass": true
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p1/parts/upper-adapter-mm.step",
+      "pass": true
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p1/parts/upper-hopper-mm.step",
+      "pass": true
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p1/parts/upper-adapter-mm.stl",
+      "pass": true
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p1/parts/lower-collector-mm.3mf",
+      "pass": true
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p1/BeanLens-H3-P1/THREE-LICENSE.txt",
+      "pass": true
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p1/BeanLens-H3-P1/preview-lower-collector-mm.png",
+      "pass": true
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p1/BeanLens-H3-P1/preview.html",
+      "pass": true
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p1/BeanLens-H3-P1/preview-exploded.png",
+      "pass": true
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p1/BeanLens-H3-P1/parameters.json",
+      "pass": true
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p1/BeanLens-H3-P1/requirements.txt",
+      "pass": true
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p1/BeanLens-H3-P1/preview-upper-hopper-mm.png",
+      "pass": true
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p1/BeanLens-H3-P1/build_preview.py",
+      "pass": true
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p1/BeanLens-H3-P1/preview-meshes.json",
+      "pass": true
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p1/BeanLens-H3-P1/package-check.json",
+      "pass": true
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p1/BeanLens-H3-P1/source-design-h3.json",
+      "pass": true
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p1/BeanLens-H3-P1/preview-mobile.png",
+      "pass": true
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p1/BeanLens-H3-P1/assembly-reference-only.step",
+      "pass": true
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p1/BeanLens-H3-P1/preview-assembly.png",
+      "pass": true
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p1/BeanLens-H3-P1/check_preview.cjs",
+      "pass": true
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p1/BeanLens-H3-P1/h3-preserved.json",
+      "pass": true
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p1/BeanLens-H3-P1/README.md",
+      "pass": true
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p1/BeanLens-H3-P1/BOM-delta.csv",
+      "pass": true
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p1/BeanLens-H3-P1/checksums-sha256.json",
+      "pass": true
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p1/BeanLens-H3-P1/.gitignore",
+      "pass": true
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p1/BeanLens-H3-P1/browser-check.json",
+      "pass": true
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p1/BeanLens-H3-P1/validation.json",
+      "pass": true
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p1/BeanLens-H3-P1/manifest.json",
+      "pass": true
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p1/BeanLens-H3-P1/preview-upper-adapter-mm.png",
+      "pass": true
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p1/BeanLens-H3-P1/requirements-lock.txt",
+      "pass": true
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p1/BeanLens-H3-P1/build_print_models.py",
+      "pass": true
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p1/fit-tests/test-socket-mm.3mf",
+      "pass": true
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p1/fit-tests/test-male-mm.3mf",
+      "pass": true
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p1/fit-tests/test-socket-mm.stl",
+      "pass": true
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p1/fit-tests/test-male-mm.step",
+      "pass": true
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p1/fit-tests/test-male-mm.stl",
+      "pass": true
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p1/fit-tests/test-socket-mm.step",
+      "pass": true
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p1/vendor/three-0.160.1.min.js",
+      "pass": true
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p1/BeanLens-H3-P1/parts/upper-adapter-mm.3mf",
+      "pass": true
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p1/BeanLens-H3-P1/parts/lower-collector-mm.stl",
+      "pass": true
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p1/BeanLens-H3-P1/parts/upper-hopper-mm.3mf",
+      "pass": true
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p1/BeanLens-H3-P1/parts/upper-hopper-mm.stl",
+      "pass": true
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p1/BeanLens-H3-P1/parts/lower-collector-mm.step",
+      "pass": true
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p1/BeanLens-H3-P1/parts/upper-adapter-mm.step",
+      "pass": true
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p1/BeanLens-H3-P1/parts/upper-hopper-mm.step",
+      "pass": true
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p1/BeanLens-H3-P1/parts/upper-adapter-mm.stl",
+      "pass": true
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p1/BeanLens-H3-P1/parts/lower-collector-mm.3mf",
+      "pass": true
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p1/BeanLens-H3-P1/fit-tests/test-socket-mm.3mf",
+      "pass": true
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p1/BeanLens-H3-P1/fit-tests/test-male-mm.3mf",
+      "pass": true
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p1/BeanLens-H3-P1/fit-tests/test-socket-mm.stl",
+      "pass": true
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p1/BeanLens-H3-P1/fit-tests/test-male-mm.step",
+      "pass": true
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p1/BeanLens-H3-P1/fit-tests/test-male-mm.stl",
+      "pass": true
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p1/BeanLens-H3-P1/fit-tests/test-socket-mm.step",
+      "pass": true
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p1/BeanLens-H3-P1/vendor/three-0.160.1.min.js",
+      "pass": true
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p2/template-carrier.png",
+      "pass": true
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p2/THREE-LICENSE.txt",
+      "pass": true
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p2/preview.html",
+      "pass": true
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p2/preview-exploded.png",
+      "pass": true
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p2/preview-camera-rear-mm.png",
+      "pass": true
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p2/parameters.json",
+      "pass": true
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p2/requirements.txt",
+      "pass": true
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p2/preview-limit-closed-seat-mm.png",
+      "pass": true
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p2/build_preview.py",
+      "pass": true
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p2/preview-meshes.json",
+      "pass": true
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p2/build_package.py",
+      "pass": true
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p2/package-check.json",
+      "pass": true
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p2/preview-servo-closed.png",
+      "pass": true
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p2/source-design-h3.json",
+      "pass": true
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p2/preview-mobile.png",
+      "pass": true
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p2/assembly-reference-only.step",
+      "pass": true
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p2/previous-preserved.json",
+      "pass": true
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p2/preview-assembly.png",
+      "pass": true
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p2/check_preview.cjs",
+      "pass": true
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p2/README.md",
+      "pass": true
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p2/assembly-with-references-NOT-FOR-PRINT.step",
+      "pass": true
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p2/BOM-delta.csv",
+      "pass": true
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p2/preview-servo-open.png",
+      "pass": true
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p2/preview-servo-cradle-mm.png",
+      "pass": true
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p2/checksums-sha256.json",
+      "pass": true
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p2/build_templates.py",
+      "pass": true
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p2/.gitignore",
+      "pass": true
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p2/browser-check.json",
+      "pass": true
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p2/build_models.py",
+      "pass": true
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p2/validation.json",
+      "pass": true
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p2/manifest.json",
+      "pass": true
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p2/template-camera-hole-check.png",
+      "pass": true
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p2/preview-limit-open-seat-mm.png",
+      "pass": true
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p2/preview-camera-front-mm.png",
+      "pass": true
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p2/template-servo-ear-check.png",
+      "pass": true
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p2/requirements-lock.txt",
+      "pass": true
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p2/preview-gate-limit-flag-mm.png",
+      "pass": true
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p2/BeanLens-H3-P2-mount-kit-20261022.zip",
+      "pass": true
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p2/template-aluminum-base.png",
+      "pass": true
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p2/parts/limit-closed-seat-mm.step",
+      "pass": true
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p2/parts/gate-limit-flag-mm.3mf",
+      "pass": true
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p2/parts/servo-cradle-mm.stl",
+      "pass": true
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p2/parts/limit-closed-seat-mm.stl",
+      "pass": true
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p2/parts/limit-open-seat-mm.3mf",
+      "pass": true
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p2/parts/gate-limit-flag-mm.step",
+      "pass": true
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p2/parts/camera-front-mm.step",
+      "pass": true
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p2/parts/servo-cradle-mm.step",
+      "pass": true
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p2/parts/camera-rear-mm.3mf",
+      "pass": true
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p2/parts/camera-front-mm.stl",
+      "pass": true
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p2/parts/limit-open-seat-mm.step",
+      "pass": true
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p2/parts/camera-rear-mm.step",
+      "pass": true
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p2/parts/camera-rear-mm.stl",
+      "pass": true
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p2/parts/camera-front-mm.3mf",
+      "pass": true
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p2/parts/gate-limit-flag-mm.stl",
+      "pass": true
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p2/parts/servo-cradle-mm.3mf",
+      "pass": true
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p2/parts/limit-open-seat-mm.stl",
+      "pass": true
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p2/parts/limit-closed-seat-mm.3mf",
+      "pass": true
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p2/templates/carrier.svg",
+      "pass": true
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p2/templates/servo-ear-check.svg",
+      "pass": true
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p2/templates/aluminum-base.svg",
+      "pass": true
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p2/templates/camera-hole-check.svg",
+      "pass": true
+    },
+    {
+      "name": "preserved_docs/hardware/hackathon-h3/printing-p2/vendor/three-0.160.1.min.js",
+      "pass": true
+    },
+    {
+      "name": "mesh_00-fit-tests_test-male-mm",
+      "pass": true
+    },
+    {
+      "name": "bed_00-fit-tests_test-male-mm",
+      "pass": true
+    },
+    {
+      "name": "mesh_00-fit-tests_test-socket-mm",
+      "pass": true
+    },
+    {
+      "name": "bed_00-fit-tests_test-socket-mm",
+      "pass": true
+    },
+    {
+      "name": "mesh_01-upper-hopper_upper-hopper-mm",
+      "pass": true
+    },
+    {
+      "name": "bed_01-upper-hopper_upper-hopper-mm",
+      "pass": true
+    },
+    {
+      "name": "mesh_02-adapter-and-cameras_upper-adapter-mm",
+      "pass": true
+    },
+    {
+      "name": "bed_02-adapter-and-cameras_upper-adapter-mm",
+      "pass": true
+    },
+    {
+      "name": "mesh_02-adapter-and-cameras_camera-front-mm",
+      "pass": true
+    },
+    {
+      "name": "bed_02-adapter-and-cameras_camera-front-mm",
+      "pass": true
+    },
+    {
+      "name": "mesh_02-adapter-and-cameras_camera-rear-mm",
+      "pass": true
+    },
+    {
+      "name": "bed_02-adapter-and-cameras_camera-rear-mm",
+      "pass": true
+    },
+    {
+      "name": "mesh_03-lower-collector_lower-collector-mm",
+      "pass": true
+    },
+    {
+      "name": "bed_03-lower-collector_lower-collector-mm",
+      "pass": true
+    },
+    {
+      "name": "mesh_04-servo-cradle_servo-cradle-mm",
+      "pass": true
+    },
+    {
+      "name": "bed_04-servo-cradle_servo-cradle-mm",
+      "pass": true
+    },
+    {
+      "name": "mesh_05-limits-and-flag_limit-closed-seat-mm",
+      "pass": true
+    },
+    {
+      "name": "bed_05-limits-and-flag_limit-closed-seat-mm",
+      "pass": true
+    },
+    {
+      "name": "mesh_05-limits-and-flag_limit-open-seat-mm",
+      "pass": true
+    },
+    {
+      "name": "bed_05-limits-and-flag_limit-open-seat-mm",
+      "pass": true
+    },
+    {
+      "name": "mesh_05-limits-and-flag_gate-limit-flag-mm",
+      "pass": true
+    },
+    {
+      "name": "bed_05-limits-and-flag_gate-limit-flag-mm",
+      "pass": true
+    },
+    {
+      "name": "P2S_00-fit-tests_slicer_success",
+      "pass": true
+    },
+    {
+      "name": "P2S_00-fit-tests_archive_CRC",
+      "pass": true
+    },
+    {
+      "name": "P2S_00-fit-tests_exact_setup",
+      "pass": true
+    },
+    {
+      "name": "P2S_00-fit-tests_process",
+      "pass": true
+    },
+    {
+      "name": "P2S_00-fit-tests_gcode_MD5",
+      "pass": true
+    },
+    {
+      "name": "P2S_00-fit-tests_no_unexpanded_placeholders",
+      "pass": true
+    },
+    {
+      "name": "P2S_00-fit-tests_machine_identity",
+      "pass": true
+    },
+    {
+      "name": "P2S_00-fit-tests_single_standard_nozzle",
+      "pass": true
+    },
+    {
+      "name": "P2S_00-fit-tests_object_count",
+      "pass": true
+    },
+    {
+      "name": "P2S_01-upper-hopper_slicer_success",
+      "pass": true
+    },
+    {
+      "name": "P2S_01-upper-hopper_archive_CRC",
+      "pass": true
+    },
+    {
+      "name": "P2S_01-upper-hopper_exact_setup",
+      "pass": true
+    },
+    {
+      "name": "P2S_01-upper-hopper_process",
+      "pass": true
+    },
+    {
+      "name": "P2S_01-upper-hopper_gcode_MD5",
+      "pass": true
+    },
+    {
+      "name": "P2S_01-upper-hopper_no_unexpanded_placeholders",
+      "pass": true
+    },
+    {
+      "name": "P2S_01-upper-hopper_machine_identity",
+      "pass": true
+    },
+    {
+      "name": "P2S_01-upper-hopper_single_standard_nozzle",
+      "pass": true
+    },
+    {
+      "name": "P2S_01-upper-hopper_object_count",
+      "pass": true
+    },
+    {
+      "name": "P2S_02-adapter-and-cameras_slicer_success",
+      "pass": true
+    },
+    {
+      "name": "P2S_02-adapter-and-cameras_archive_CRC",
+      "pass": true
+    },
+    {
+      "name": "P2S_02-adapter-and-cameras_exact_setup",
+      "pass": true
+    },
+    {
+      "name": "P2S_02-adapter-and-cameras_process",
+      "pass": true
+    },
+    {
+      "name": "P2S_02-adapter-and-cameras_gcode_MD5",
+      "pass": true
+    },
+    {
+      "name": "P2S_02-adapter-and-cameras_no_unexpanded_placeholders",
+      "pass": true
+    },
+    {
+      "name": "P2S_02-adapter-and-cameras_machine_identity",
+      "pass": true
+    },
+    {
+      "name": "P2S_02-adapter-and-cameras_single_standard_nozzle",
+      "pass": true
+    },
+    {
+      "name": "P2S_02-adapter-and-cameras_object_count",
+      "pass": true
+    },
+    {
+      "name": "P2S_03-lower-collector_slicer_success",
+      "pass": true
+    },
+    {
+      "name": "P2S_03-lower-collector_archive_CRC",
+      "pass": true
+    },
+    {
+      "name": "P2S_03-lower-collector_exact_setup",
+      "pass": true
+    },
+    {
+      "name": "P2S_03-lower-collector_process",
+      "pass": true
+    },
+    {
+      "name": "P2S_03-lower-collector_gcode_MD5",
+      "pass": true
+    },
+    {
+      "name": "P2S_03-lower-collector_no_unexpanded_placeholders",
+      "pass": true
+    },
+    {
+      "name": "P2S_03-lower-collector_machine_identity",
+      "pass": true
+    },
+    {
+      "name": "P2S_03-lower-collector_single_standard_nozzle",
+      "pass": true
+    },
+    {
+      "name": "P2S_03-lower-collector_object_count",
+      "pass": true
+    },
+    {
+      "name": "P2S_lower_external_support",
+      "pass": true
+    },
+    {
+      "name": "P2S_04-servo-cradle_slicer_success",
+      "pass": true
+    },
+    {
+      "name": "P2S_04-servo-cradle_archive_CRC",
+      "pass": true
+    },
+    {
+      "name": "P2S_04-servo-cradle_exact_setup",
+      "pass": true
+    },
+    {
+      "name": "P2S_04-servo-cradle_process",
+      "pass": true
+    },
+    {
+      "name": "P2S_04-servo-cradle_gcode_MD5",
+      "pass": true
+    },
+    {
+      "name": "P2S_04-servo-cradle_no_unexpanded_placeholders",
+      "pass": true
+    },
+    {
+      "name": "P2S_04-servo-cradle_machine_identity",
+      "pass": true
+    },
+    {
+      "name": "P2S_04-servo-cradle_single_standard_nozzle",
+      "pass": true
+    },
+    {
+      "name": "P2S_04-servo-cradle_object_count",
+      "pass": true
+    },
+    {
+      "name": "P2S_05-limits-and-flag_slicer_success",
+      "pass": true
+    },
+    {
+      "name": "P2S_05-limits-and-flag_archive_CRC",
+      "pass": true
+    },
+    {
+      "name": "P2S_05-limits-and-flag_exact_setup",
+      "pass": true
+    },
+    {
+      "name": "P2S_05-limits-and-flag_process",
+      "pass": true
+    },
+    {
+      "name": "P2S_05-limits-and-flag_gcode_MD5",
+      "pass": true
+    },
+    {
+      "name": "P2S_05-limits-and-flag_no_unexpanded_placeholders",
+      "pass": true
+    },
+    {
+      "name": "P2S_05-limits-and-flag_machine_identity",
+      "pass": true
+    },
+    {
+      "name": "P2S_05-limits-and-flag_single_standard_nozzle",
+      "pass": true
+    },
+    {
+      "name": "P2S_05-limits-and-flag_object_count",
+      "pass": true
+    },
+    {
+      "name": "A1_00-fit-tests_slicer_success",
+      "pass": true
+    },
+    {
+      "name": "A1_00-fit-tests_archive_CRC",
+      "pass": true
+    },
+    {
+      "name": "A1_00-fit-tests_exact_setup",
+      "pass": true
+    },
+    {
+      "name": "A1_00-fit-tests_process",
+      "pass": true
+    },
+    {
+      "name": "A1_00-fit-tests_gcode_MD5",
+      "pass": true
+    },
+    {
+      "name": "A1_00-fit-tests_no_unexpanded_placeholders",
+      "pass": true
+    },
+    {
+      "name": "A1_00-fit-tests_machine_identity",
+      "pass": true
+    },
+    {
+      "name": "A1_00-fit-tests_single_standard_nozzle",
+      "pass": true
+    },
+    {
+      "name": "A1_00-fit-tests_object_count",
+      "pass": true
+    },
+    {
+      "name": "A1_01-upper-hopper_slicer_success",
+      "pass": true
+    },
+    {
+      "name": "A1_01-upper-hopper_archive_CRC",
+      "pass": true
+    },
+    {
+      "name": "A1_01-upper-hopper_exact_setup",
+      "pass": true
+    },
+    {
+      "name": "A1_01-upper-hopper_process",
+      "pass": true
+    },
+    {
+      "name": "A1_01-upper-hopper_gcode_MD5",
+      "pass": true
+    },
+    {
+      "name": "A1_01-upper-hopper_no_unexpanded_placeholders",
+      "pass": true
+    },
+    {
+      "name": "A1_01-upper-hopper_machine_identity",
+      "pass": true
+    },
+    {
+      "name": "A1_01-upper-hopper_single_standard_nozzle",
+      "pass": true
+    },
+    {
+      "name": "A1_01-upper-hopper_object_count",
+      "pass": true
+    },
+    {
+      "name": "A1_02-adapter-and-cameras_slicer_success",
+      "pass": true
+    },
+    {
+      "name": "A1_02-adapter-and-cameras_archive_CRC",
+      "pass": true
+    },
+    {
+      "name": "A1_02-adapter-and-cameras_exact_setup",
+      "pass": true
+    },
+    {
+      "name": "A1_02-adapter-and-cameras_process",
+      "pass": true
+    },
+    {
+      "name": "A1_02-adapter-and-cameras_gcode_MD5",
+      "pass": true
+    },
+    {
+      "name": "A1_02-adapter-and-cameras_no_unexpanded_placeholders",
+      "pass": true
+    },
+    {
+      "name": "A1_02-adapter-and-cameras_machine_identity",
+      "pass": true
+    },
+    {
+      "name": "A1_02-adapter-and-cameras_single_standard_nozzle",
+      "pass": true
+    },
+    {
+      "name": "A1_02-adapter-and-cameras_object_count",
+      "pass": true
+    },
+    {
+      "name": "A1_03-lower-collector_slicer_success",
+      "pass": true
+    },
+    {
+      "name": "A1_03-lower-collector_archive_CRC",
+      "pass": true
+    },
+    {
+      "name": "A1_03-lower-collector_exact_setup",
+      "pass": true
+    },
+    {
+      "name": "A1_03-lower-collector_process",
+      "pass": true
+    },
+    {
+      "name": "A1_03-lower-collector_gcode_MD5",
+      "pass": true
+    },
+    {
+      "name": "A1_03-lower-collector_no_unexpanded_placeholders",
+      "pass": true
+    },
+    {
+      "name": "A1_03-lower-collector_machine_identity",
+      "pass": true
+    },
+    {
+      "name": "A1_03-lower-collector_single_standard_nozzle",
+      "pass": true
+    },
+    {
+      "name": "A1_03-lower-collector_object_count",
+      "pass": true
+    },
+    {
+      "name": "A1_lower_external_support",
+      "pass": true
+    },
+    {
+      "name": "A1_04-servo-cradle_slicer_success",
+      "pass": true
+    },
+    {
+      "name": "A1_04-servo-cradle_archive_CRC",
+      "pass": true
+    },
+    {
+      "name": "A1_04-servo-cradle_exact_setup",
+      "pass": true
+    },
+    {
+      "name": "A1_04-servo-cradle_process",
+      "pass": true
+    },
+    {
+      "name": "A1_04-servo-cradle_gcode_MD5",
+      "pass": true
+    },
+    {
+      "name": "A1_04-servo-cradle_no_unexpanded_placeholders",
+      "pass": true
+    },
+    {
+      "name": "A1_04-servo-cradle_machine_identity",
+      "pass": true
+    },
+    {
+      "name": "A1_04-servo-cradle_single_standard_nozzle",
+      "pass": true
+    },
+    {
+      "name": "A1_04-servo-cradle_object_count",
+      "pass": true
+    },
+    {
+      "name": "A1_05-limits-and-flag_slicer_success",
+      "pass": true
+    },
+    {
+      "name": "A1_05-limits-and-flag_archive_CRC",
+      "pass": true
+    },
+    {
+      "name": "A1_05-limits-and-flag_exact_setup",
+      "pass": true
+    },
+    {
+      "name": "A1_05-limits-and-flag_process",
+      "pass": true
+    },
+    {
+      "name": "A1_05-limits-and-flag_gcode_MD5",
+      "pass": true
+    },
+    {
+      "name": "A1_05-limits-and-flag_no_unexpanded_placeholders",
+      "pass": true
+    },
+    {
+      "name": "A1_05-limits-and-flag_machine_identity",
+      "pass": true
+    },
+    {
+      "name": "A1_05-limits-and-flag_single_standard_nozzle",
+      "pass": true
+    },
+    {
+      "name": "A1_05-limits-and-flag_object_count",
+      "pass": true
+    },
+    {
+      "name": "X1C_00-fit-tests_slicer_success",
+      "pass": true
+    },
+    {
+      "name": "X1C_00-fit-tests_archive_CRC",
+      "pass": true
+    },
+    {
+      "name": "X1C_00-fit-tests_exact_setup",
+      "pass": true
+    },
+    {
+      "name": "X1C_00-fit-tests_process",
+      "pass": true
+    },
+    {
+      "name": "X1C_00-fit-tests_gcode_MD5",
+      "pass": true
+    },
+    {
+      "name": "X1C_00-fit-tests_no_unexpanded_placeholders",
+      "pass": true
+    },
+    {
+      "name": "X1C_00-fit-tests_machine_identity",
+      "pass": true
+    },
+    {
+      "name": "X1C_00-fit-tests_single_standard_nozzle",
+      "pass": true
+    },
+    {
+      "name": "X1C_00-fit-tests_object_count",
+      "pass": true
+    },
+    {
+      "name": "X1C_01-upper-hopper_slicer_success",
+      "pass": true
+    },
+    {
+      "name": "X1C_01-upper-hopper_archive_CRC",
+      "pass": true
+    },
+    {
+      "name": "X1C_01-upper-hopper_exact_setup",
+      "pass": true
+    },
+    {
+      "name": "X1C_01-upper-hopper_process",
+      "pass": true
+    },
+    {
+      "name": "X1C_01-upper-hopper_gcode_MD5",
+      "pass": true
+    },
+    {
+      "name": "X1C_01-upper-hopper_no_unexpanded_placeholders",
+      "pass": true
+    },
+    {
+      "name": "X1C_01-upper-hopper_machine_identity",
+      "pass": true
+    },
+    {
+      "name": "X1C_01-upper-hopper_single_standard_nozzle",
+      "pass": true
+    },
+    {
+      "name": "X1C_01-upper-hopper_object_count",
+      "pass": true
+    },
+    {
+      "name": "X1C_02-adapter-and-cameras_slicer_success",
+      "pass": true
+    },
+    {
+      "name": "X1C_02-adapter-and-cameras_archive_CRC",
+      "pass": true
+    },
+    {
+      "name": "X1C_02-adapter-and-cameras_exact_setup",
+      "pass": true
+    },
+    {
+      "name": "X1C_02-adapter-and-cameras_process",
+      "pass": true
+    },
+    {
+      "name": "X1C_02-adapter-and-cameras_gcode_MD5",
+      "pass": true
+    },
+    {
+      "name": "X1C_02-adapter-and-cameras_no_unexpanded_placeholders",
+      "pass": true
+    },
+    {
+      "name": "X1C_02-adapter-and-cameras_machine_identity",
+      "pass": true
+    },
+    {
+      "name": "X1C_02-adapter-and-cameras_single_standard_nozzle",
+      "pass": true
+    },
+    {
+      "name": "X1C_02-adapter-and-cameras_object_count",
+      "pass": true
+    },
+    {
+      "name": "X1C_03-lower-collector_slicer_success",
+      "pass": true
+    },
+    {
+      "name": "X1C_03-lower-collector_archive_CRC",
+      "pass": true
+    },
+    {
+      "name": "X1C_03-lower-collector_exact_setup",
+      "pass": true
+    },
+    {
+      "name": "X1C_03-lower-collector_process",
+      "pass": true
+    },
+    {
+      "name": "X1C_03-lower-collector_gcode_MD5",
+      "pass": true
+    },
+    {
+      "name": "X1C_03-lower-collector_no_unexpanded_placeholders",
+      "pass": true
+    },
+    {
+      "name": "X1C_03-lower-collector_machine_identity",
+      "pass": true
+    },
+    {
+      "name": "X1C_03-lower-collector_single_standard_nozzle",
+      "pass": true
+    },
+    {
+      "name": "X1C_03-lower-collector_object_count",
+      "pass": true
+    },
+    {
+      "name": "X1C_lower_external_support",
+      "pass": true
+    },
+    {
+      "name": "X1C_04-servo-cradle_slicer_success",
+      "pass": true
+    },
+    {
+      "name": "X1C_04-servo-cradle_archive_CRC",
+      "pass": true
+    },
+    {
+      "name": "X1C_04-servo-cradle_exact_setup",
+      "pass": true
+    },
+    {
+      "name": "X1C_04-servo-cradle_process",
+      "pass": true
+    },
+    {
+      "name": "X1C_04-servo-cradle_gcode_MD5",
+      "pass": true
+    },
+    {
+      "name": "X1C_04-servo-cradle_no_unexpanded_placeholders",
+      "pass": true
+    },
+    {
+      "name": "X1C_04-servo-cradle_machine_identity",
+      "pass": true
+    },
+    {
+      "name": "X1C_04-servo-cradle_single_standard_nozzle",
+      "pass": true
+    },
+    {
+      "name": "X1C_04-servo-cradle_object_count",
+      "pass": true
+    },
+    {
+      "name": "X1C_05-limits-and-flag_slicer_success",
+      "pass": true
+    },
+    {
+      "name": "X1C_05-limits-and-flag_archive_CRC",
+      "pass": true
+    },
+    {
+      "name": "X1C_05-limits-and-flag_exact_setup",
+      "pass": true
+    },
+    {
+      "name": "X1C_05-limits-and-flag_process",
+      "pass": true
+    },
+    {
+      "name": "X1C_05-limits-and-flag_gcode_MD5",
+      "pass": true
+    },
+    {
+      "name": "X1C_05-limits-and-flag_no_unexpanded_placeholders",
+      "pass": true
+    },
+    {
+      "name": "X1C_05-limits-and-flag_machine_identity",
+      "pass": true
+    },
+    {
+      "name": "X1C_05-limits-and-flag_single_standard_nozzle",
+      "pass": true
+    },
+    {
+      "name": "X1C_05-limits-and-flag_object_count",
+      "pass": true
+    },
+    {
+      "name": "X2D_00-fit-tests_slicer_success",
+      "pass": true
+    },
+    {
+      "name": "X2D_00-fit-tests_archive_CRC",
+      "pass": true
+    },
+    {
+      "name": "X2D_00-fit-tests_exact_setup",
+      "pass": true
+    },
+    {
+      "name": "X2D_00-fit-tests_process",
+      "pass": true
+    },
+    {
+      "name": "X2D_00-fit-tests_gcode_MD5",
+      "pass": true
+    },
+    {
+      "name": "X2D_00-fit-tests_no_unexpanded_placeholders",
+      "pass": true
+    },
+    {
+      "name": "X2D_00-fit-tests_machine_identity",
+      "pass": true
+    },
+    {
+      "name": "X2D_00-fit-tests_single_standard_nozzle",
+      "pass": true
+    },
+    {
+      "name": "X2D_00-fit-tests_object_count",
+      "pass": true
+    },
+    {
+      "name": "X2D_01-upper-hopper_slicer_success",
+      "pass": true
+    },
+    {
+      "name": "X2D_01-upper-hopper_archive_CRC",
+      "pass": true
+    },
+    {
+      "name": "X2D_01-upper-hopper_exact_setup",
+      "pass": true
+    },
+    {
+      "name": "X2D_01-upper-hopper_process",
+      "pass": true
+    },
+    {
+      "name": "X2D_01-upper-hopper_gcode_MD5",
+      "pass": true
+    },
+    {
+      "name": "X2D_01-upper-hopper_no_unexpanded_placeholders",
+      "pass": true
+    },
+    {
+      "name": "X2D_01-upper-hopper_machine_identity",
+      "pass": true
+    },
+    {
+      "name": "X2D_01-upper-hopper_single_standard_nozzle",
+      "pass": true
+    },
+    {
+      "name": "X2D_01-upper-hopper_object_count",
+      "pass": true
+    },
+    {
+      "name": "X2D_02-adapter-and-cameras_slicer_success",
+      "pass": true
+    },
+    {
+      "name": "X2D_02-adapter-and-cameras_archive_CRC",
+      "pass": true
+    },
+    {
+      "name": "X2D_02-adapter-and-cameras_exact_setup",
+      "pass": true
+    },
+    {
+      "name": "X2D_02-adapter-and-cameras_process",
+      "pass": true
+    },
+    {
+      "name": "X2D_02-adapter-and-cameras_gcode_MD5",
+      "pass": true
+    },
+    {
+      "name": "X2D_02-adapter-and-cameras_no_unexpanded_placeholders",
+      "pass": true
+    },
+    {
+      "name": "X2D_02-adapter-and-cameras_machine_identity",
+      "pass": true
+    },
+    {
+      "name": "X2D_02-adapter-and-cameras_single_standard_nozzle",
+      "pass": true
+    },
+    {
+      "name": "X2D_02-adapter-and-cameras_object_count",
+      "pass": true
+    },
+    {
+      "name": "X2D_03-lower-collector_slicer_success",
+      "pass": true
+    },
+    {
+      "name": "X2D_03-lower-collector_archive_CRC",
+      "pass": true
+    },
+    {
+      "name": "X2D_03-lower-collector_exact_setup",
+      "pass": true
+    },
+    {
+      "name": "X2D_03-lower-collector_process",
+      "pass": true
+    },
+    {
+      "name": "X2D_03-lower-collector_gcode_MD5",
+      "pass": true
+    },
+    {
+      "name": "X2D_03-lower-collector_no_unexpanded_placeholders",
+      "pass": true
+    },
+    {
+      "name": "X2D_03-lower-collector_machine_identity",
+      "pass": true
+    },
+    {
+      "name": "X2D_03-lower-collector_single_standard_nozzle",
+      "pass": true
+    },
+    {
+      "name": "X2D_03-lower-collector_object_count",
+      "pass": true
+    },
+    {
+      "name": "X2D_lower_external_support",
+      "pass": true
+    },
+    {
+      "name": "X2D_04-servo-cradle_slicer_success",
+      "pass": true
+    },
+    {
+      "name": "X2D_04-servo-cradle_archive_CRC",
+      "pass": true
+    },
+    {
+      "name": "X2D_04-servo-cradle_exact_setup",
+      "pass": true
+    },
+    {
+      "name": "X2D_04-servo-cradle_process",
+      "pass": true
+    },
+    {
+      "name": "X2D_04-servo-cradle_gcode_MD5",
+      "pass": true
+    },
+    {
+      "name": "X2D_04-servo-cradle_no_unexpanded_placeholders",
+      "pass": true
+    },
+    {
+      "name": "X2D_04-servo-cradle_machine_identity",
+      "pass": true
+    },
+    {
+      "name": "X2D_04-servo-cradle_single_standard_nozzle",
+      "pass": true
+    },
+    {
+      "name": "X2D_04-servo-cradle_object_count",
+      "pass": true
+    },
+    {
+      "name": "X2D_05-limits-and-flag_slicer_success",
+      "pass": true
+    },
+    {
+      "name": "X2D_05-limits-and-flag_archive_CRC",
+      "pass": true
+    },
+    {
+      "name": "X2D_05-limits-and-flag_exact_setup",
+      "pass": true
+    },
+    {
+      "name": "X2D_05-limits-and-flag_process",
+      "pass": true
+    },
+    {
+      "name": "X2D_05-limits-and-flag_gcode_MD5",
+      "pass": true
+    },
+    {
+      "name": "X2D_05-limits-and-flag_no_unexpanded_placeholders",
+      "pass": true
+    },
+    {
+      "name": "X2D_05-limits-and-flag_machine_identity",
+      "pass": true
+    },
+    {
+      "name": "X2D_05-limits-and-flag_single_standard_nozzle",
+      "pass": true
+    },
+    {
+      "name": "X2D_05-limits-and-flag_object_count",
+      "pass": true
+    },
+    {
+      "name": "H2D_00-fit-tests_slicer_success",
+      "pass": true
+    },
+    {
+      "name": "H2D_00-fit-tests_archive_CRC",
+      "pass": true
+    },
+    {
+      "name": "H2D_00-fit-tests_exact_setup",
+      "pass": true
+    },
+    {
+      "name": "H2D_00-fit-tests_process",
+      "pass": true
+    },
+    {
+      "name": "H2D_00-fit-tests_gcode_MD5",
+      "pass": true
+    },
+    {
+      "name": "H2D_00-fit-tests_no_unexpanded_placeholders",
+      "pass": true
+    },
+    {
+      "name": "H2D_00-fit-tests_machine_identity",
+      "pass": true
+    },
+    {
+      "name": "H2D_00-fit-tests_single_standard_nozzle",
+      "pass": true
+    },
+    {
+      "name": "H2D_00-fit-tests_object_count",
+      "pass": true
+    },
+    {
+      "name": "H2D_01-upper-hopper_slicer_success",
+      "pass": true
+    },
+    {
+      "name": "H2D_01-upper-hopper_archive_CRC",
+      "pass": true
+    },
+    {
+      "name": "H2D_01-upper-hopper_exact_setup",
+      "pass": true
+    },
+    {
+      "name": "H2D_01-upper-hopper_process",
+      "pass": true
+    },
+    {
+      "name": "H2D_01-upper-hopper_gcode_MD5",
+      "pass": true
+    },
+    {
+      "name": "H2D_01-upper-hopper_no_unexpanded_placeholders",
+      "pass": true
+    },
+    {
+      "name": "H2D_01-upper-hopper_machine_identity",
+      "pass": true
+    },
+    {
+      "name": "H2D_01-upper-hopper_single_standard_nozzle",
+      "pass": true
+    },
+    {
+      "name": "H2D_01-upper-hopper_object_count",
+      "pass": true
+    },
+    {
+      "name": "H2D_02-adapter-and-cameras_slicer_success",
+      "pass": true
+    },
+    {
+      "name": "H2D_02-adapter-and-cameras_archive_CRC",
+      "pass": true
+    },
+    {
+      "name": "H2D_02-adapter-and-cameras_exact_setup",
+      "pass": true
+    },
+    {
+      "name": "H2D_02-adapter-and-cameras_process",
+      "pass": true
+    },
+    {
+      "name": "H2D_02-adapter-and-cameras_gcode_MD5",
+      "pass": true
+    },
+    {
+      "name": "H2D_02-adapter-and-cameras_no_unexpanded_placeholders",
+      "pass": true
+    },
+    {
+      "name": "H2D_02-adapter-and-cameras_machine_identity",
+      "pass": true
+    },
+    {
+      "name": "H2D_02-adapter-and-cameras_single_standard_nozzle",
+      "pass": true
+    },
+    {
+      "name": "H2D_02-adapter-and-cameras_object_count",
+      "pass": true
+    },
+    {
+      "name": "H2D_03-lower-collector_slicer_success",
+      "pass": true
+    },
+    {
+      "name": "H2D_03-lower-collector_archive_CRC",
+      "pass": true
+    },
+    {
+      "name": "H2D_03-lower-collector_exact_setup",
+      "pass": true
+    },
+    {
+      "name": "H2D_03-lower-collector_process",
+      "pass": true
+    },
+    {
+      "name": "H2D_03-lower-collector_gcode_MD5",
+      "pass": true
+    },
+    {
+      "name": "H2D_03-lower-collector_no_unexpanded_placeholders",
+      "pass": true
+    },
+    {
+      "name": "H2D_03-lower-collector_machine_identity",
+      "pass": true
+    },
+    {
+      "name": "H2D_03-lower-collector_single_standard_nozzle",
+      "pass": true
+    },
+    {
+      "name": "H2D_03-lower-collector_object_count",
+      "pass": true
+    },
+    {
+      "name": "H2D_lower_external_support",
+      "pass": true
+    },
+    {
+      "name": "H2D_04-servo-cradle_slicer_success",
+      "pass": true
+    },
+    {
+      "name": "H2D_04-servo-cradle_archive_CRC",
+      "pass": true
+    },
+    {
+      "name": "H2D_04-servo-cradle_exact_setup",
+      "pass": true
+    },
+    {
+      "name": "H2D_04-servo-cradle_process",
+      "pass": true
+    },
+    {
+      "name": "H2D_04-servo-cradle_gcode_MD5",
+      "pass": true
+    },
+    {
+      "name": "H2D_04-servo-cradle_no_unexpanded_placeholders",
+      "pass": true
+    },
+    {
+      "name": "H2D_04-servo-cradle_machine_identity",
+      "pass": true
+    },
+    {
+      "name": "H2D_04-servo-cradle_single_standard_nozzle",
+      "pass": true
+    },
+    {
+      "name": "H2D_04-servo-cradle_object_count",
+      "pass": true
+    },
+    {
+      "name": "H2D_05-limits-and-flag_slicer_success",
+      "pass": true
+    },
+    {
+      "name": "H2D_05-limits-and-flag_archive_CRC",
+      "pass": true
+    },
+    {
+      "name": "H2D_05-limits-and-flag_exact_setup",
+      "pass": true
+    },
+    {
+      "name": "H2D_05-limits-and-flag_process",
+      "pass": true
+    },
+    {
+      "name": "H2D_05-limits-and-flag_gcode_MD5",
+      "pass": true
+    },
+    {
+      "name": "H2D_05-limits-and-flag_no_unexpanded_placeholders",
+      "pass": true
+    },
+    {
+      "name": "H2D_05-limits-and-flag_machine_identity",
+      "pass": true
+    },
+    {
+      "name": "H2D_05-limits-and-flag_single_standard_nozzle",
+      "pass": true
+    },
+    {
+      "name": "H2D_05-limits-and-flag_object_count",
+      "pass": true
+    },
+    {
+      "name": "thirty_machine_specific_jobs",
+      "pass": true
+    }
+  ],
+  "jobs": [
+    {
+      "machine": "P2S",
+      "job": "00-fit-tests",
+      "parts": 2,
+      "file": "jobs/P2S/00-fit-tests.gcode.3mf",
+      "estimated_seconds": 1107,
+      "estimated_g": 3.27,
+      "support": false,
+      "nozzle_temp": [
+        "245",
+        "245",
+        "245"
+      ],
+      "first_nozzle_temp": [
+        "230",
+        "230",
+        "230"
+      ],
+      "bed_temp": [
+        "70"
+      ],
+      "sha256": "abdfba7b12724e31ad2ca97682eadd08f88548e2e15649d0db27c39ffa42cb4a"
+    },
+    {
+      "machine": "P2S",
+      "job": "01-upper-hopper",
+      "parts": 1,
+      "file": "jobs/P2S/01-upper-hopper.gcode.3mf",
+      "estimated_seconds": 12352,
+      "estimated_g": 71.64,
+      "support": false,
+      "nozzle_temp": [
+        "245",
+        "245",
+        "245"
+      ],
+      "first_nozzle_temp": [
+        "230",
+        "230",
+        "230"
+      ],
+      "bed_temp": [
+        "70"
+      ],
+      "sha256": "bbbcdb3225135799be1542a153e7e671a2382ffc53619071617fbff961059d37"
+    },
+    {
+      "machine": "P2S",
+      "job": "02-adapter-and-cameras",
+      "parts": 3,
+      "file": "jobs/P2S/02-adapter-and-cameras.gcode.3mf",
+      "estimated_seconds": 9534,
+      "estimated_g": 49.09,
+      "support": false,
+      "nozzle_temp": [
+        "245",
+        "245",
+        "245"
+      ],
+      "first_nozzle_temp": [
+        "230",
+        "230",
+        "230"
+      ],
+      "bed_temp": [
+        "70"
+      ],
+      "sha256": "951a2cfbe6e550fbb558c39a1011823750a873f2d059e0c6f0976b818a9a198a"
+    },
+    {
+      "machine": "P2S",
+      "job": "03-lower-collector",
+      "parts": 1,
+      "file": "jobs/P2S/03-lower-collector.gcode.3mf",
+      "estimated_seconds": 13936,
+      "estimated_g": 77.9,
+      "support": true,
+      "nozzle_temp": [
+        "245",
+        "245",
+        "245"
+      ],
+      "first_nozzle_temp": [
+        "230",
+        "230",
+        "230"
+      ],
+      "bed_temp": [
+        "70"
+      ],
+      "sha256": "066ed20300d9c2791718b356663ac8e3a20f9ce902d7e68b585f48365db58bea"
+    },
+    {
+      "machine": "P2S",
+      "job": "04-servo-cradle",
+      "parts": 1,
+      "file": "jobs/P2S/04-servo-cradle.gcode.3mf",
+      "estimated_seconds": 7135,
+      "estimated_g": 37.14,
+      "support": true,
+      "nozzle_temp": [
+        "245",
+        "245",
+        "245"
+      ],
+      "first_nozzle_temp": [
+        "230",
+        "230",
+        "230"
+      ],
+      "bed_temp": [
+        "70"
+      ],
+      "sha256": "db76421c68c3e6237f67e1c2b3b9069f4b7d94d42fdccfc806117e77fd0161b0"
+    },
+    {
+      "machine": "P2S",
+      "job": "05-limits-and-flag",
+      "parts": 3,
+      "file": "jobs/P2S/05-limits-and-flag.gcode.3mf",
+      "estimated_seconds": 3142,
+      "estimated_g": 12.0,
+      "support": false,
+      "nozzle_temp": [
+        "245",
+        "245",
+        "245"
+      ],
+      "first_nozzle_temp": [
+        "230",
+        "230",
+        "230"
+      ],
+      "bed_temp": [
+        "70"
+      ],
+      "sha256": "79d0fffbbc288bfe9b65e2e7927d0c7f5b9d176c2f886689240bd4f5d9785ecd"
+    },
+    {
+      "machine": "A1",
+      "job": "00-fit-tests",
+      "parts": 2,
+      "file": "jobs/A1/00-fit-tests.gcode.3mf",
+      "estimated_seconds": 1154,
+      "estimated_g": 3.31,
+      "support": false,
+      "nozzle_temp": [
+        "240"
+      ],
+      "first_nozzle_temp": [
+        "230"
+      ],
+      "bed_temp": [
+        "70"
+      ],
+      "sha256": "76e9a10d68cb932175f3c737bb55106b3663d1a44a60833e3a0efd2e80ce32a7"
+    },
+    {
+      "machine": "A1",
+      "job": "01-upper-hopper",
+      "parts": 1,
+      "file": "jobs/A1/01-upper-hopper.gcode.3mf",
+      "estimated_seconds": 13147,
+      "estimated_g": 70.97,
+      "support": false,
+      "nozzle_temp": [
+        "240"
+      ],
+      "first_nozzle_temp": [
+        "230"
+      ],
+      "bed_temp": [
+        "70"
+      ],
+      "sha256": "e7e5f69bcb740b359788b1851a0715729b10afde47a7724afacf44977a66f2ec"
+    },
+    {
+      "machine": "A1",
+      "job": "02-adapter-and-cameras",
+      "parts": 3,
+      "file": "jobs/A1/02-adapter-and-cameras.gcode.3mf",
+      "estimated_seconds": 10074,
+      "estimated_g": 48.66,
+      "support": false,
+      "nozzle_temp": [
+        "240"
+      ],
+      "first_nozzle_temp": [
+        "230"
+      ],
+      "bed_temp": [
+        "70"
+      ],
+      "sha256": "4b3eaed91f9b41367e77a413da3dedf342642ae3521b63f6ec5d809c41c6f78f"
+    },
+    {
+      "machine": "A1",
+      "job": "03-lower-collector",
+      "parts": 1,
+      "file": "jobs/A1/03-lower-collector.gcode.3mf",
+      "estimated_seconds": 14855,
+      "estimated_g": 77.15,
+      "support": true,
+      "nozzle_temp": [
+        "240"
+      ],
+      "first_nozzle_temp": [
+        "230"
+      ],
+      "bed_temp": [
+        "70"
+      ],
+      "sha256": "7f78250e1de27514dd0e5f8e339788b23628a40f8239c5c084a8dca2a1bf2a09"
+    },
+    {
+      "machine": "A1",
+      "job": "04-servo-cradle",
+      "parts": 1,
+      "file": "jobs/A1/04-servo-cradle.gcode.3mf",
+      "estimated_seconds": 7772,
+      "estimated_g": 36.82,
+      "support": true,
+      "nozzle_temp": [
+        "240"
+      ],
+      "first_nozzle_temp": [
+        "230"
+      ],
+      "bed_temp": [
+        "70"
+      ],
+      "sha256": "971f14c63b0969d83ea0045d289d6a26a71f3b4e2877468f65f98acdac5ddad6"
+    },
+    {
+      "machine": "A1",
+      "job": "05-limits-and-flag",
+      "parts": 3,
+      "file": "jobs/A1/05-limits-and-flag.gcode.3mf",
+      "estimated_seconds": 3325,
+      "estimated_g": 11.94,
+      "support": false,
+      "nozzle_temp": [
+        "240"
+      ],
+      "first_nozzle_temp": [
+        "230"
+      ],
+      "bed_temp": [
+        "70"
+      ],
+      "sha256": "75de0bd84a367b635939d8e13664c1f7164e1035909f59b3d2aced9c0f465592"
+    },
+    {
+      "machine": "X1C",
+      "job": "00-fit-tests",
+      "parts": 2,
+      "file": "jobs/X1C/00-fit-tests.gcode.3mf",
+      "estimated_seconds": 1175,
+      "estimated_g": 3.61,
+      "support": false,
+      "nozzle_temp": [
+        "245",
+        "245"
+      ],
+      "first_nozzle_temp": [
+        "230",
+        "230"
+      ],
+      "bed_temp": [
+        "70"
+      ],
+      "sha256": "dfc85996e1fde961b60f79fae845131a85769ec910de06de63d52d4a2acea229"
+    },
+    {
+      "machine": "X1C",
+      "job": "01-upper-hopper",
+      "parts": 1,
+      "file": "jobs/X1C/01-upper-hopper.gcode.3mf",
+      "estimated_seconds": 12295,
+      "estimated_g": 71.98,
+      "support": false,
+      "nozzle_temp": [
+        "245",
+        "245"
+      ],
+      "first_nozzle_temp": [
+        "230",
+        "230"
+      ],
+      "bed_temp": [
+        "70"
+      ],
+      "sha256": "e866f687971845e20f63f205d874c47b422b133a57e1af41e0e5007fa9b4651c"
+    },
+    {
+      "machine": "X1C",
+      "job": "02-adapter-and-cameras",
+      "parts": 3,
+      "file": "jobs/X1C/02-adapter-and-cameras.gcode.3mf",
+      "estimated_seconds": 9528,
+      "estimated_g": 49.43,
+      "support": false,
+      "nozzle_temp": [
+        "245",
+        "245"
+      ],
+      "first_nozzle_temp": [
+        "230",
+        "230"
+      ],
+      "bed_temp": [
+        "70"
+      ],
+      "sha256": "bdac987756ea5180e7ce5ee0318721460dc696cc0b470a8a2c0d6297b8a1bf42"
+    },
+    {
+      "machine": "X1C",
+      "job": "03-lower-collector",
+      "parts": 1,
+      "file": "jobs/X1C/03-lower-collector.gcode.3mf",
+      "estimated_seconds": 13932,
+      "estimated_g": 78.24,
+      "support": true,
+      "nozzle_temp": [
+        "245",
+        "245"
+      ],
+      "first_nozzle_temp": [
+        "230",
+        "230"
+      ],
+      "bed_temp": [
+        "70"
+      ],
+      "sha256": "3aa487c03bc0109497c235b174e258b4b27f512bb407160a34c0acb46823107c"
+    },
+    {
+      "machine": "X1C",
+      "job": "04-servo-cradle",
+      "parts": 1,
+      "file": "jobs/X1C/04-servo-cradle.gcode.3mf",
+      "estimated_seconds": 7154,
+      "estimated_g": 37.48,
+      "support": true,
+      "nozzle_temp": [
+        "245",
+        "245"
+      ],
+      "first_nozzle_temp": [
+        "230",
+        "230"
+      ],
+      "bed_temp": [
+        "70"
+      ],
+      "sha256": "30c4895d9371a33b400d76dc5fab483c262b4d3387f504c209af9b2522d01cf0"
+    },
+    {
+      "machine": "X1C",
+      "job": "05-limits-and-flag",
+      "parts": 3,
+      "file": "jobs/X1C/05-limits-and-flag.gcode.3mf",
+      "estimated_seconds": 3183,
+      "estimated_g": 12.34,
+      "support": false,
+      "nozzle_temp": [
+        "245",
+        "245"
+      ],
+      "first_nozzle_temp": [
+        "230",
+        "230"
+      ],
+      "bed_temp": [
+        "70"
+      ],
+      "sha256": "6f69f2b40f35e5bc3ade1c31df490847b812b450bb561dcbf93532a7afe41753"
+    },
+    {
+      "machine": "X2D",
+      "job": "00-fit-tests",
+      "parts": 2,
+      "file": "jobs/X2D/00-fit-tests.gcode.3mf",
+      "estimated_seconds": 993,
+      "estimated_g": 3.27,
+      "support": false,
+      "nozzle_temp": [
+        "245",
+        "245",
+        "245",
+        "245",
+        "245",
+        "245"
+      ],
+      "first_nozzle_temp": [
+        "230",
+        "230",
+        "230",
+        "230",
+        "230",
+        "230"
+      ],
+      "bed_temp": [
+        "70"
+      ],
+      "sha256": "0eca55ca283385c956d9bd7b704b623e1253f3c7e374f55cf3f855e433d4d015"
+    },
+    {
+      "machine": "X2D",
+      "job": "01-upper-hopper",
+      "parts": 1,
+      "file": "jobs/X2D/01-upper-hopper.gcode.3mf",
+      "estimated_seconds": 12226,
+      "estimated_g": 71.64,
+      "support": false,
+      "nozzle_temp": [
+        "245",
+        "245",
+        "245",
+        "245",
+        "245",
+        "245"
+      ],
+      "first_nozzle_temp": [
+        "230",
+        "230",
+        "230",
+        "230",
+        "230",
+        "230"
+      ],
+      "bed_temp": [
+        "70"
+      ],
+      "sha256": "e5afe45aa207cd4c0d093ce36aad3dc4d87ac1b25a54b66768cd3216efa367f0"
+    },
+    {
+      "machine": "X2D",
+      "job": "02-adapter-and-cameras",
+      "parts": 3,
+      "file": "jobs/X2D/02-adapter-and-cameras.gcode.3mf",
+      "estimated_seconds": 9411,
+      "estimated_g": 49.09,
+      "support": false,
+      "nozzle_temp": [
+        "245",
+        "245",
+        "245",
+        "245",
+        "245",
+        "245"
+      ],
+      "first_nozzle_temp": [
+        "230",
+        "230",
+        "230",
+        "230",
+        "230",
+        "230"
+      ],
+      "bed_temp": [
+        "70"
+      ],
+      "sha256": "c5b2878ed8d15c2d5a8707fed9bed95186ba0cc1280e84b520d24b6caa3265cf"
+    },
+    {
+      "machine": "X2D",
+      "job": "03-lower-collector",
+      "parts": 1,
+      "file": "jobs/X2D/03-lower-collector.gcode.3mf",
+      "estimated_seconds": 13814,
+      "estimated_g": 77.9,
+      "support": true,
+      "nozzle_temp": [
+        "245",
+        "245",
+        "245",
+        "245",
+        "245",
+        "245"
+      ],
+      "first_nozzle_temp": [
+        "230",
+        "230",
+        "230",
+        "230",
+        "230",
+        "230"
+      ],
+      "bed_temp": [
+        "70"
+      ],
+      "sha256": "913c36f21c6180bc7f796d25000582ad19d8944cf3fbb31e053a8396ec06f6a8"
+    },
+    {
+      "machine": "X2D",
+      "job": "04-servo-cradle",
+      "parts": 1,
+      "file": "jobs/X2D/04-servo-cradle.gcode.3mf",
+      "estimated_seconds": 7013,
+      "estimated_g": 37.14,
+      "support": true,
+      "nozzle_temp": [
+        "245",
+        "245",
+        "245",
+        "245",
+        "245",
+        "245"
+      ],
+      "first_nozzle_temp": [
+        "230",
+        "230",
+        "230",
+        "230",
+        "230",
+        "230"
+      ],
+      "bed_temp": [
+        "70"
+      ],
+      "sha256": "53f97337557eedb34c7f5d501544b4558c63f2b34ee854c91aaaec38a7af8ceb"
+    },
+    {
+      "machine": "X2D",
+      "job": "05-limits-and-flag",
+      "parts": 3,
+      "file": "jobs/X2D/05-limits-and-flag.gcode.3mf",
+      "estimated_seconds": 3029,
+      "estimated_g": 12.0,
+      "support": false,
+      "nozzle_temp": [
+        "245",
+        "245",
+        "245",
+        "245",
+        "245",
+        "245"
+      ],
+      "first_nozzle_temp": [
+        "230",
+        "230",
+        "230",
+        "230",
+        "230",
+        "230"
+      ],
+      "bed_temp": [
+        "70"
+      ],
+      "sha256": "df30b86d4551916ed02825991a9927f75f0e1119101ca7d196b43853706c4a51"
+    },
+    {
+      "machine": "H2D",
+      "job": "00-fit-tests",
+      "parts": 2,
+      "file": "jobs/H2D/00-fit-tests.gcode.3mf",
+      "estimated_seconds": 1018,
+      "estimated_g": 3.31,
+      "support": false,
+      "nozzle_temp": [
+        "245",
+        "245",
+        "245"
+      ],
+      "first_nozzle_temp": [
+        "245",
+        "245",
+        "245"
+      ],
+      "bed_temp": [
+        "70"
+      ],
+      "sha256": "e21a941cc56fe913136ff6c61f96e1297cfc82b2e15d4b44932489acdae54da6"
+    },
+    {
+      "machine": "H2D",
+      "job": "01-upper-hopper",
+      "parts": 1,
+      "file": "jobs/H2D/01-upper-hopper.gcode.3mf",
+      "estimated_seconds": 12253,
+      "estimated_g": 71.67,
+      "support": false,
+      "nozzle_temp": [
+        "245",
+        "245",
+        "245"
+      ],
+      "first_nozzle_temp": [
+        "245",
+        "245",
+        "245"
+      ],
+      "bed_temp": [
+        "70"
+      ],
+      "sha256": "e4d9a7aa997eac9e46b779f7fa3362a3667d7aaa1ec3534755a3b862c81b6eb8"
+    },
+    {
+      "machine": "H2D",
+      "job": "02-adapter-and-cameras",
+      "parts": 3,
+      "file": "jobs/H2D/02-adapter-and-cameras.gcode.3mf",
+      "estimated_seconds": 9452,
+      "estimated_g": 49.12,
+      "support": false,
+      "nozzle_temp": [
+        "245",
+        "245",
+        "245"
+      ],
+      "first_nozzle_temp": [
+        "245",
+        "245",
+        "245"
+      ],
+      "bed_temp": [
+        "70"
+      ],
+      "sha256": "b0e5378210c59bf1306e71a670240cc2d1593d26f2d645cde91676de61496e80"
+    },
+    {
+      "machine": "H2D",
+      "job": "03-lower-collector",
+      "parts": 1,
+      "file": "jobs/H2D/03-lower-collector.gcode.3mf",
+      "estimated_seconds": 13838,
+      "estimated_g": 77.93,
+      "support": true,
+      "nozzle_temp": [
+        "245",
+        "245",
+        "245"
+      ],
+      "first_nozzle_temp": [
+        "245",
+        "245",
+        "245"
+      ],
+      "bed_temp": [
+        "70"
+      ],
+      "sha256": "15c618fbb207e2ba6b6f8b3ac9db5ac1ff9e44b3bef57f1c0c08b3190c2bb334"
+    },
+    {
+      "machine": "H2D",
+      "job": "04-servo-cradle",
+      "parts": 1,
+      "file": "jobs/H2D/04-servo-cradle.gcode.3mf",
+      "estimated_seconds": 7045,
+      "estimated_g": 37.17,
+      "support": true,
+      "nozzle_temp": [
+        "245",
+        "245",
+        "245"
+      ],
+      "first_nozzle_temp": [
+        "245",
+        "245",
+        "245"
+      ],
+      "bed_temp": [
+        "70"
+      ],
+      "sha256": "a5c3d44d9aabbe1cee23de8acf5e55d5a02749f0d6656a26c9786b4e7d28fd48"
+    },
+    {
+      "machine": "H2D",
+      "job": "05-limits-and-flag",
+      "parts": 3,
+      "file": "jobs/H2D/05-limits-and-flag.gcode.3mf",
+      "estimated_seconds": 3054,
+      "estimated_g": 12.03,
+      "support": false,
+      "nozzle_temp": [
+        "245",
+        "245",
+        "245"
+      ],
+      "first_nozzle_temp": [
+        "245",
+        "245",
+        "245"
+      ],
+      "bed_temp": [
+        "70"
+      ],
+      "sha256": "3e91c71c8fd9953a0bcfea7309e0bd0b20308296ff651ef417f5532b177b50d3"
+    }
+  ],
+  "previous_files_preserved": 148,
+  "source": "BambuStudio 02.08.02.61 installed official profiles + actual sliced archives"
+}

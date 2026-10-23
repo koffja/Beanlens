@@ -1,0 +1,61 @@
+{
+  "machine": "A1",
+  "job": "02-adapter-and-cameras",
+  "return_code": 0,
+  "output": "jobs/A1/02-adapter-and-cameras.gcode.3mf",
+  "exists": true,
+  "bytes": 1049048,
+  "slicer_result": {
+    "error_string": "Success.",
+    "export_time": 400,
+    "layer_height": 0.20000000298023224,
+    "plate_index": 0,
+    "prepare_time": 11,
+    "return_code": 0,
+    "sliced_plates": [
+      {
+        "feature_type_times": {
+          "Bottom surface": 276.30426025390625,
+          "Bridge": 317.7179870605469,
+          "Brim": 371.2326354980469,
+          "Custom": 381.7835388183594,
+          "Flush": 25.0,
+          "Gap infill": 4.064925193786621,
+          "Inner wall": 3772.911865234375,
+          "Internal solid infill": 1044.7904052734375,
+          "Outer wall": 1804.451171875,
+          "Overhang wall": 19.125139236450195,
+          "Sparse infill": 446.764892578125,
+          "Top surface": 256.56085205078125,
+          "Travel": 1371.0120849609375,
+          "Undefined": 1353.95556640625
+        },
+        "filament_change_times": 0,
+        "filaments": [
+          {
+            "filament_id": "GFG02",
+            "id": 1,
+            "main_used_g": 48.657958984375,
+            "total_used_g": 48.657958984375
+          }
+        ],
+        "generate_support_material_time": 16,
+        "id": 1,
+        "infill_time": 112,
+        "layer_filament_change": 0,
+        "main_predication": 9659.599609375,
+        "make_perimeters_time": 146,
+        "obj_cached_cnt": 0,
+        "sliced_time": 671,
+        "sliced_time_with_cache": 344,
+        "total_predication": 10074.3271484375,
+        "triangle_count": 12456,
+        "warning_message": ""
+      }
+    ],
+    "sparse_infill_density": 30.0,
+    "wall_loops": 5
+  },
+  "printer_model_id": "N2S",
+  "identity_metadata_completed_from_official_profile": true
+}

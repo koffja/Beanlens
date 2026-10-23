@@ -1,0 +1,1511 @@
+{
+  "host_only": true,
+  "printed": false,
+  "load_tested": false,
+  "checks": [
+    {
+      "name": "servo-cradle-mm_valid_single_solid",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "servo-cradle-mm_closed_mesh",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "servo-cradle-mm_mesh_volume_matches_CAD",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "servo-cradle-mm_bed_and_floor",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "servo-cradle-mm_STEP_roundtrip",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "camera-front-mm_valid_single_solid",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "camera-front-mm_closed_mesh",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "camera-front-mm_mesh_volume_matches_CAD",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "camera-front-mm_bed_and_floor",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "camera-front-mm_STEP_roundtrip",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "camera-rear-mm_valid_single_solid",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "camera-rear-mm_closed_mesh",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "camera-rear-mm_mesh_volume_matches_CAD",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "camera-rear-mm_bed_and_floor",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "camera-rear-mm_STEP_roundtrip",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "limit-closed-seat-mm_valid_single_solid",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "limit-closed-seat-mm_closed_mesh",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "limit-closed-seat-mm_mesh_volume_matches_CAD",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "limit-closed-seat-mm_bed_and_floor",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "limit-closed-seat-mm_STEP_roundtrip",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "limit-open-seat-mm_valid_single_solid",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "limit-open-seat-mm_closed_mesh",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "limit-open-seat-mm_mesh_volume_matches_CAD",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "limit-open-seat-mm_bed_and_floor",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "limit-open-seat-mm_STEP_roundtrip",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "gate-limit-flag-mm_valid_single_solid",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "gate-limit-flag-mm_closed_mesh",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "gate-limit-flag-mm_mesh_volume_matches_CAD",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "gate-limit-flag-mm_bed_and_floor",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "gate-limit-flag-mm_STEP_roundtrip",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "servo-cradle-mm_clear_camera-front-mm",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "servo-cradle-mm_clear_camera-rear-mm",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "servo-cradle-mm_clear_limit-closed-seat-mm",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "servo-cradle-mm_clear_limit-open-seat-mm",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "servo-cradle-mm_clear_gate-limit-flag-mm",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "camera-front-mm_clear_camera-rear-mm",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "camera-front-mm_clear_limit-closed-seat-mm",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "camera-front-mm_clear_limit-open-seat-mm",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "camera-front-mm_clear_gate-limit-flag-mm",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "camera-rear-mm_clear_limit-closed-seat-mm",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "camera-rear-mm_clear_limit-open-seat-mm",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "camera-rear-mm_clear_gate-limit-flag-mm",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "limit-closed-seat-mm_clear_limit-open-seat-mm",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "limit-closed-seat-mm_clear_gate-limit-flag-mm",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "limit-open-seat-mm_clear_gate-limit-flag-mm",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "servo-cradle-mm_clear_servo-case-reference",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "servo-cradle-mm_clear_aluminum-base-reference",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "servo-cradle-mm_clear_metal-angle-reference",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "servo-cradle-mm_clear_rear-crossbeam-reference",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "servo-cradle-mm_clear_carrier-PP3-reference",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "servo-cradle-mm_clear_rear-right-upright-reference",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "servo-cradle-mm_clear_front-wood-reference",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "servo-cradle-mm_clear_rear-wood-reference",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "servo-cradle-mm_clear_gate-guide-reference",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "servo-cradle-mm_clear_gate-reference",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "servo-cradle-mm_clear_camera-A-PCB-reference",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "servo-cradle-mm_clear_camera-B-PCB-reference",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "servo-cradle-mm_clear_limit-closed-case-reference",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "servo-cradle-mm_clear_limit-open-case-reference",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "camera-front-mm_clear_servo-case-reference",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "camera-front-mm_clear_aluminum-base-reference",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "camera-front-mm_clear_metal-angle-reference",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "camera-front-mm_clear_rear-crossbeam-reference",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "camera-front-mm_clear_carrier-PP3-reference",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "camera-front-mm_clear_rear-right-upright-reference",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "camera-front-mm_clear_front-wood-reference",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "camera-front-mm_clear_rear-wood-reference",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "camera-front-mm_clear_gate-guide-reference",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "camera-front-mm_clear_gate-reference",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "camera-front-mm_clear_camera-A-PCB-reference",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "camera-front-mm_clear_camera-B-PCB-reference",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "camera-front-mm_clear_limit-closed-case-reference",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "camera-front-mm_clear_limit-open-case-reference",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "camera-rear-mm_clear_servo-case-reference",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "camera-rear-mm_clear_aluminum-base-reference",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "camera-rear-mm_clear_metal-angle-reference",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "camera-rear-mm_clear_rear-crossbeam-reference",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "camera-rear-mm_clear_carrier-PP3-reference",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "camera-rear-mm_clear_rear-right-upright-reference",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "camera-rear-mm_clear_front-wood-reference",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "camera-rear-mm_clear_rear-wood-reference",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "camera-rear-mm_clear_gate-guide-reference",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "camera-rear-mm_clear_gate-reference",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "camera-rear-mm_clear_camera-A-PCB-reference",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "camera-rear-mm_clear_camera-B-PCB-reference",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "camera-rear-mm_clear_limit-closed-case-reference",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "camera-rear-mm_clear_limit-open-case-reference",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "limit-closed-seat-mm_clear_servo-case-reference",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "limit-closed-seat-mm_clear_aluminum-base-reference",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "limit-closed-seat-mm_clear_metal-angle-reference",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "limit-closed-seat-mm_clear_rear-crossbeam-reference",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "limit-closed-seat-mm_clear_carrier-PP3-reference",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "limit-closed-seat-mm_clear_rear-right-upright-reference",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "limit-closed-seat-mm_clear_front-wood-reference",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "limit-closed-seat-mm_clear_rear-wood-reference",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "limit-closed-seat-mm_clear_gate-guide-reference",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "limit-closed-seat-mm_clear_gate-reference",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "limit-closed-seat-mm_clear_camera-A-PCB-reference",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "limit-closed-seat-mm_clear_camera-B-PCB-reference",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "limit-closed-seat-mm_clear_limit-closed-case-reference",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "limit-closed-seat-mm_clear_limit-open-case-reference",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "limit-open-seat-mm_clear_servo-case-reference",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "limit-open-seat-mm_clear_aluminum-base-reference",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "limit-open-seat-mm_clear_metal-angle-reference",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "limit-open-seat-mm_clear_rear-crossbeam-reference",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "limit-open-seat-mm_clear_carrier-PP3-reference",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "limit-open-seat-mm_clear_rear-right-upright-reference",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "limit-open-seat-mm_clear_front-wood-reference",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "limit-open-seat-mm_clear_rear-wood-reference",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "limit-open-seat-mm_clear_gate-guide-reference",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "limit-open-seat-mm_clear_gate-reference",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "limit-open-seat-mm_clear_camera-A-PCB-reference",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "limit-open-seat-mm_clear_camera-B-PCB-reference",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "limit-open-seat-mm_clear_limit-closed-case-reference",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "limit-open-seat-mm_clear_limit-open-case-reference",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "gate-limit-flag-mm_clear_servo-case-reference",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "gate-limit-flag-mm_clear_aluminum-base-reference",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "gate-limit-flag-mm_clear_metal-angle-reference",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "gate-limit-flag-mm_clear_rear-crossbeam-reference",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "gate-limit-flag-mm_clear_carrier-PP3-reference",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "gate-limit-flag-mm_clear_rear-right-upright-reference",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "gate-limit-flag-mm_clear_front-wood-reference",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "gate-limit-flag-mm_clear_rear-wood-reference",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "gate-limit-flag-mm_clear_gate-guide-reference",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "gate-limit-flag-mm_clear_camera-A-PCB-reference",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "gate-limit-flag-mm_clear_camera-B-PCB-reference",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "gate-limit-flag-mm_clear_limit-closed-case-reference",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "gate-limit-flag-mm_clear_limit-open-case-reference",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "revised_carrier_clears_servo",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "revised_aluminum_plate_clears_upright",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "motion_00_clear_servo-cradle-mm",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "motion_00_clear_camera-front-mm",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "motion_00_clear_camera-rear-mm",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "motion_00_clear_limit-closed-seat-mm",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "motion_00_clear_limit-open-seat-mm",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "motion_00_flag_clear_rod",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "motion_00_fastener_110_clear_carrier",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "motion_00_fastener_120_clear_carrier",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "motion_01_clear_servo-cradle-mm",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "motion_01_clear_camera-front-mm",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "motion_01_clear_camera-rear-mm",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "motion_01_clear_limit-closed-seat-mm",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "motion_01_clear_limit-open-seat-mm",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "motion_01_flag_clear_rod",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "motion_01_fastener_110_clear_carrier",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "motion_01_fastener_120_clear_carrier",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "motion_02_clear_servo-cradle-mm",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "motion_02_clear_camera-front-mm",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "motion_02_clear_camera-rear-mm",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "motion_02_clear_limit-closed-seat-mm",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "motion_02_clear_limit-open-seat-mm",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "motion_02_flag_clear_rod",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "motion_02_fastener_110_clear_carrier",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "motion_02_fastener_120_clear_carrier",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "motion_03_clear_servo-cradle-mm",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "motion_03_clear_camera-front-mm",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "motion_03_clear_camera-rear-mm",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "motion_03_clear_limit-closed-seat-mm",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "motion_03_clear_limit-open-seat-mm",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "motion_03_flag_clear_rod",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "motion_03_fastener_110_clear_carrier",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "motion_03_fastener_120_clear_carrier",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "motion_04_clear_servo-cradle-mm",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "motion_04_clear_camera-front-mm",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "motion_04_clear_camera-rear-mm",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "motion_04_clear_limit-closed-seat-mm",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "motion_04_clear_limit-open-seat-mm",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "motion_04_flag_clear_rod",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "motion_04_fastener_110_clear_carrier",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "motion_04_fastener_120_clear_carrier",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "motion_05_clear_servo-cradle-mm",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "motion_05_clear_camera-front-mm",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "motion_05_clear_camera-rear-mm",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "motion_05_clear_limit-closed-seat-mm",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "motion_05_clear_limit-open-seat-mm",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "motion_05_flag_clear_rod",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "motion_05_fastener_110_clear_carrier",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "motion_05_fastener_120_clear_carrier",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "motion_06_clear_servo-cradle-mm",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "motion_06_clear_camera-front-mm",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "motion_06_clear_camera-rear-mm",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "motion_06_clear_limit-closed-seat-mm",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "motion_06_clear_limit-open-seat-mm",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "motion_06_flag_clear_rod",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "motion_06_fastener_110_clear_carrier",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "motion_06_fastener_120_clear_carrier",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "motion_07_clear_servo-cradle-mm",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "motion_07_clear_camera-front-mm",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "motion_07_clear_camera-rear-mm",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "motion_07_clear_limit-closed-seat-mm",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "motion_07_clear_limit-open-seat-mm",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "motion_07_flag_clear_rod",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "motion_07_fastener_110_clear_carrier",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "motion_07_fastener_120_clear_carrier",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "motion_08_clear_servo-cradle-mm",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "motion_08_clear_camera-front-mm",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "motion_08_clear_camera-rear-mm",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "motion_08_clear_limit-closed-seat-mm",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "motion_08_clear_limit-open-seat-mm",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "motion_08_flag_clear_rod",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "motion_08_fastener_110_clear_carrier",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "motion_08_fastener_120_clear_carrier",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "motion_09_clear_servo-cradle-mm",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "motion_09_clear_camera-front-mm",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "motion_09_clear_camera-rear-mm",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "motion_09_clear_limit-closed-seat-mm",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "motion_09_clear_limit-open-seat-mm",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "motion_09_flag_clear_rod",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "motion_09_fastener_110_clear_carrier",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "motion_09_fastener_120_clear_carrier",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "motion_10_clear_servo-cradle-mm",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "motion_10_clear_camera-front-mm",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "motion_10_clear_camera-rear-mm",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "motion_10_clear_limit-closed-seat-mm",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "motion_10_clear_limit-open-seat-mm",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "motion_10_flag_clear_rod",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "motion_10_fastener_110_clear_carrier",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "motion_10_fastener_120_clear_carrier",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "motion_11_clear_servo-cradle-mm",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "motion_11_clear_camera-front-mm",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "motion_11_clear_camera-rear-mm",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "motion_11_clear_limit-closed-seat-mm",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "motion_11_clear_limit-open-seat-mm",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "motion_11_flag_clear_rod",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "motion_11_fastener_110_clear_carrier",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "motion_11_fastener_120_clear_carrier",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "motion_12_clear_servo-cradle-mm",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "motion_12_clear_camera-front-mm",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "motion_12_clear_camera-rear-mm",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "motion_12_clear_limit-closed-seat-mm",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "motion_12_clear_limit-open-seat-mm",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "motion_12_flag_clear_rod",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "motion_12_fastener_110_clear_carrier",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "motion_12_fastener_120_clear_carrier",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "motion_13_clear_servo-cradle-mm",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "motion_13_clear_camera-front-mm",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "motion_13_clear_camera-rear-mm",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "motion_13_clear_limit-closed-seat-mm",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "motion_13_clear_limit-open-seat-mm",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "motion_13_flag_clear_rod",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "motion_13_fastener_110_clear_carrier",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "motion_13_fastener_120_clear_carrier",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "motion_14_clear_servo-cradle-mm",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "motion_14_clear_camera-front-mm",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "motion_14_clear_camera-rear-mm",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "motion_14_clear_limit-closed-seat-mm",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "motion_14_clear_limit-open-seat-mm",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "motion_14_flag_clear_rod",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "motion_14_fastener_110_clear_carrier",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "motion_14_fastener_120_clear_carrier",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "motion_15_clear_servo-cradle-mm",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "motion_15_clear_camera-front-mm",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "motion_15_clear_camera-rear-mm",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "motion_15_clear_limit-closed-seat-mm",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "motion_15_clear_limit-open-seat-mm",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "motion_15_flag_clear_rod",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "motion_15_fastener_110_clear_carrier",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "motion_15_fastener_120_clear_carrier",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "motion_16_clear_servo-cradle-mm",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "motion_16_clear_camera-front-mm",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "motion_16_clear_camera-rear-mm",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "motion_16_clear_limit-closed-seat-mm",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "motion_16_clear_limit-open-seat-mm",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "motion_16_flag_clear_rod",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "motion_16_fastener_110_clear_carrier",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "motion_16_fastener_120_clear_carrier",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "motion_17_clear_servo-cradle-mm",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "motion_17_clear_camera-front-mm",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "motion_17_clear_camera-rear-mm",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "motion_17_clear_limit-closed-seat-mm",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "motion_17_clear_limit-open-seat-mm",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "motion_17_flag_clear_rod",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "motion_17_fastener_110_clear_carrier",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "motion_17_fastener_120_clear_carrier",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "motion_18_clear_servo-cradle-mm",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "motion_18_clear_camera-front-mm",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "motion_18_clear_camera-rear-mm",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "motion_18_clear_limit-closed-seat-mm",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "motion_18_clear_limit-open-seat-mm",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "motion_18_flag_clear_rod",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "motion_18_fastener_110_clear_carrier",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "motion_18_fastener_120_clear_carrier",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "motion_19_clear_servo-cradle-mm",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "motion_19_clear_camera-front-mm",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "motion_19_clear_camera-rear-mm",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "motion_19_clear_limit-closed-seat-mm",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "motion_19_clear_limit-open-seat-mm",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "motion_19_flag_clear_rod",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "motion_19_fastener_110_clear_carrier",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "motion_19_fastener_120_clear_carrier",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "motion_20_clear_servo-cradle-mm",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "motion_20_clear_camera-front-mm",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "motion_20_clear_camera-rear-mm",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "motion_20_clear_limit-closed-seat-mm",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "motion_20_clear_limit-open-seat-mm",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "motion_20_flag_clear_rod",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "motion_20_fastener_110_clear_carrier",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "motion_20_fastener_120_clear_carrier",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "central_optical_axis_clear_30",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "central_optical_axis_clear_210",
+      "pass": true,
+      "detail": null
+    }
+  ],
+  "old_layout_interferences": {
+    "carrier_vs_servo_case_mm3": 2771.7899999999986,
+    "aluminum_plate_vs_upright_mm3": 405.0
+  }
+}

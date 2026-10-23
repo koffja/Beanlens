@@ -1,0 +1,27 @@
+{
+  "units": [
+    {
+      "file": "parts/upper-adapter-mm.3mf",
+      "unit": "millimeter"
+    },
+    {
+      "file": "parts/upper-hopper-mm.3mf",
+      "unit": "millimeter"
+    },
+    {
+      "file": "parts/lower-collector-mm.3mf",
+      "unit": "millimeter"
+    },
+    {
+      "file": "fit-tests/test-socket-mm.3mf",
+      "unit": "millimeter"
+    },
+    {
+      "file": "fit-tests/test-male-mm.3mf",
+      "unit": "millimeter"
+    }
+  ],
+  "preserved_h3_files": 44,
+  "changed": [],
+  "printed": false
+}

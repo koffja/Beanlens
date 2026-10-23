@@ -1,0 +1,402 @@
+{
+  "date": "2026-10-21",
+  "kind": "local_browser_only_not_hardware_validation",
+  "checks": [
+    {
+      "name": "offline_start_paused",
+      "pass": true,
+      "detail": {
+        "time": 0,
+        "playing": false,
+        "view": "mechanism",
+        "gateAngle": 0,
+        "beanVisible": false,
+        "bean": [
+          110,
+          282,
+          157
+        ],
+        "chuteEnds": [
+          [
+            110,
+            220.00000690946862,
+            116.00003867133024
+          ],
+          [
+            110,
+            254.41459309053138,
+            165.14916132866975
+          ]
+        ],
+        "meshCount": 152,
+        "controllerCount": 1,
+        "cameraCount": 1,
+        "hornCount": 1,
+        "frameVisible": false,
+        "shieldVisible": false,
+        "geometrySource": "../design-h1.json",
+        "appearance": "reconstructed_not_vendor_cad"
+      }
+    },
+    {
+      "name": "chute_surface_matches_h1_upstream_and_downstream",
+      "pass": true,
+      "detail": [
+        [
+          110,
+          220.00000690946862,
+          116.00003867133024
+        ],
+        [
+          110,
+          254.41459309053138,
+          165.14916132866975
+        ]
+      ]
+    },
+    {
+      "name": "stationary_photo_gate_closed",
+      "pass": true,
+      "detail": {
+        "time": 8.2,
+        "playing": false,
+        "view": "mechanism",
+        "gateAngle": 0,
+        "beanVisible": true,
+        "bean": [
+          110,
+          228.05,
+          123.5
+        ],
+        "chuteEnds": [
+          [
+            110,
+            220.00000690946862,
+            116.00003867133024
+          ],
+          [
+            110,
+            254.41459309053138,
+            165.14916132866975
+          ]
+        ],
+        "meshCount": 173,
+        "controllerCount": 1,
+        "cameraCount": 1,
+        "hornCount": 1,
+        "frameVisible": false,
+        "shieldVisible": false,
+        "geometrySource": "../design-h1.json",
+        "appearance": "reconstructed_not_vendor_cad"
+      }
+    },
+    {
+      "name": "gate_opens_90_degrees",
+      "pass": true,
+      "detail": {
+        "time": 12.6,
+        "playing": false,
+        "view": "mechanism",
+        "gateAngle": 90,
+        "beanVisible": true,
+        "bean": [
+          110,
+          175.25259515570946,
+          102.94117647058823
+        ],
+        "chuteEnds": [
+          [
+            110,
+            220.00000690946862,
+            116.00003867133024
+          ],
+          [
+            110,
+            254.41459309053138,
+            165.14916132866975
+          ]
+        ],
+        "meshCount": 173,
+        "controllerCount": 1,
+        "cameraCount": 1,
+        "hornCount": 1,
+        "frameVisible": false,
+        "shieldVisible": false,
+        "geometrySource": "../design-h1.json",
+        "appearance": "reconstructed_not_vendor_cad"
+      }
+    },
+    {
+      "name": "empty_before_slow_close",
+      "pass": true,
+      "detail": {
+        "time": 16,
+        "playing": false,
+        "view": "mechanism",
+        "gateAngle": 47,
+        "beanVisible": true,
+        "bean": [
+          110,
+          32,
+          95
+        ],
+        "chuteEnds": [
+          [
+            110,
+            220.00000690946862,
+            116.00003867133024
+          ],
+          [
+            110,
+            254.41459309053138,
+            165.14916132866975
+          ]
+        ],
+        "meshCount": 173,
+        "controllerCount": 1,
+        "cameraCount": 1,
+        "hornCount": 1,
+        "frameVisible": false,
+        "shieldVisible": false,
+        "geometrySource": "../design-h1.json",
+        "appearance": "reconstructed_not_vendor_cad"
+      }
+    },
+    {
+      "name": "end_gate_closed",
+      "pass": true,
+      "detail": {
+        "time": 18,
+        "playing": false,
+        "view": "mechanism",
+        "gateAngle": 0,
+        "beanVisible": true,
+        "bean": [
+          110,
+          32,
+          95
+        ],
+        "chuteEnds": [
+          [
+            110,
+            220.00000690946862,
+            116.00003867133024
+          ],
+          [
+            110,
+            254.41459309053138,
+            165.14916132866975
+          ]
+        ],
+        "meshCount": 173,
+        "controllerCount": 1,
+        "cameraCount": 1,
+        "hornCount": 1,
+        "frameVisible": false,
+        "shieldVisible": false,
+        "geometrySource": "../design-h1.json",
+        "appearance": "reconstructed_not_vendor_cad"
+      }
+    },
+    {
+      "name": "play_restarts_completed_cycle",
+      "pass": true,
+      "detail": {
+        "time": 0.40009999999999996,
+        "playing": true,
+        "view": "mechanism",
+        "gateAngle": 0,
+        "beanVisible": false,
+        "bean": [
+          110,
+          282,
+          157
+        ],
+        "chuteEnds": [
+          [
+            110,
+            220.00000690946862,
+            116.00003867133024
+          ],
+          [
+            110,
+            254.41459309053138,
+            165.14916132866975
+          ]
+        ],
+        "meshCount": 152,
+        "controllerCount": 1,
+        "cameraCount": 1,
+        "hornCount": 1,
+        "frameVisible": false,
+        "shieldVisible": false,
+        "geometrySource": "../design-h1.json",
+        "appearance": "reconstructed_not_vendor_cad"
+      }
+    },
+    {
+      "name": "pause_holds_time",
+      "pass": true,
+      "detail": {
+        "time": 0.4333999999999999,
+        "playing": false,
+        "view": "mechanism",
+        "gateAngle": 0,
+        "beanVisible": false,
+        "bean": [
+          110,
+          282,
+          157
+        ],
+        "chuteEnds": [
+          [
+            110,
+            220.00000690946862,
+            116.00003867133024
+          ],
+          [
+            110,
+            254.41459309053138,
+            165.14916132866975
+          ]
+        ],
+        "meshCount": 152,
+        "controllerCount": 1,
+        "cameraCount": 1,
+        "hornCount": 1,
+        "frameVisible": false,
+        "shieldVisible": false,
+        "geometrySource": "../design-h1.json",
+        "appearance": "reconstructed_not_vendor_cad"
+      }
+    },
+    {
+      "name": "whole_frame_visible",
+      "pass": true,
+      "detail": {
+        "time": 0.4333999999999999,
+        "playing": false,
+        "view": "whole",
+        "gateAngle": 0,
+        "beanVisible": false,
+        "bean": [
+          110,
+          282,
+          157
+        ],
+        "chuteEnds": [
+          [
+            110,
+            220.00000690946862,
+            116.00003867133024
+          ],
+          [
+            110,
+            254.41459309053138,
+            165.14916132866975
+          ]
+        ],
+        "meshCount": 364,
+        "controllerCount": 1,
+        "cameraCount": 1,
+        "hornCount": 1,
+        "frameVisible": true,
+        "shieldVisible": false,
+        "geometrySource": "../design-h1.json",
+        "appearance": "reconstructed_not_vendor_cad"
+      }
+    },
+    {
+      "name": "shield_toggle",
+      "pass": true,
+      "detail": {
+        "time": 0.4333999999999999,
+        "playing": false,
+        "view": "whole",
+        "gateAngle": 0,
+        "beanVisible": false,
+        "bean": [
+          110,
+          282,
+          157
+        ],
+        "chuteEnds": [
+          [
+            110,
+            220.00000690946862,
+            116.00003867133024
+          ],
+          [
+            110,
+            254.41459309053138,
+            165.14916132866975
+          ]
+        ],
+        "meshCount": 364,
+        "controllerCount": 1,
+        "cameraCount": 1,
+        "hornCount": 1,
+        "frameVisible": true,
+        "shieldVisible": true,
+        "geometrySource": "../design-h1.json",
+        "appearance": "reconstructed_not_vendor_cad"
+      }
+    },
+    {
+      "name": "parts_pause_and_reset",
+      "pass": true,
+      "detail": {
+        "time": 0,
+        "playing": false,
+        "view": "parts",
+        "gateAngle": 0,
+        "beanVisible": false,
+        "bean": [
+          110,
+          282,
+          157
+        ],
+        "chuteEnds": [
+          [
+            82.00060771854861,
+            234.99968134596045,
+            116.00003867133024
+          ],
+          [
+            82.00060771854861,
+            269.4142675270232,
+            165.14916132866975
+          ]
+        ],
+        "meshCount": 181,
+        "controllerCount": 1,
+        "cameraCount": 1,
+        "hornCount": 1,
+        "frameVisible": false,
+        "shieldVisible": false,
+        "geometrySource": "../design-h1.json",
+        "appearance": "reconstructed_not_vendor_cad"
+      }
+    },
+    {
+      "name": "component_explanation",
+      "pass": true
+    },
+    {
+      "name": "mobile_no_horizontal_overflow",
+      "pass": true
+    },
+    {
+      "name": "no_page_errors",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "no_network_requests",
+      "pass": true,
+      "detail": []
+    }
+  ],
+  "errors": [],
+  "requests": []
+}

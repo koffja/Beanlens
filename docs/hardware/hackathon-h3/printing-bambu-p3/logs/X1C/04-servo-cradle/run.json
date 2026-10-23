@@ -1,0 +1,64 @@
+{
+  "machine": "X1C",
+  "job": "04-servo-cradle",
+  "return_code": 0,
+  "output": "jobs/X1C/04-servo-cradle.gcode.3mf",
+  "exists": true,
+  "bytes": 875292,
+  "slicer_result": {
+    "error_string": "Success.",
+    "export_time": 390,
+    "layer_height": 0.20000000298023224,
+    "plate_index": 0,
+    "prepare_time": 6,
+    "return_code": 0,
+    "sliced_plates": [
+      {
+        "feature_type_times": {
+          "Bottom surface": 115.5364761352539,
+          "Bridge": 148.81591796875,
+          "Brim": 170.19395446777344,
+          "Custom": 486.5696716308594,
+          "Flush": 29.0,
+          "Gap infill": 2.3857669830322266,
+          "Inner wall": 2806.81103515625,
+          "Internal solid infill": 504.8022766113281,
+          "Outer wall": 1129.8896484375,
+          "Overhang wall": 46.002105712890625,
+          "Sparse infill": 579.4332885742188,
+          "Support": 396.2161560058594,
+          "Support interface": 84.5059814453125,
+          "Support transition": 27.578983306884766,
+          "Top surface": 133.64796447753906,
+          "Travel": 507.00994873046875,
+          "Undefined": 491.7610778808594
+        },
+        "filament_change_times": 0,
+        "filaments": [
+          {
+            "filament_id": "GFG02",
+            "id": 1,
+            "main_used_g": 37.47641372680664,
+            "total_used_g": 37.476417541503906
+          }
+        ],
+        "generate_support_material_time": 53,
+        "id": 1,
+        "infill_time": 88,
+        "layer_filament_change": 0,
+        "main_predication": 6624.2109375,
+        "make_perimeters_time": 119,
+        "obj_cached_cnt": 0,
+        "sliced_time": 563,
+        "sliced_time_with_cache": 283,
+        "total_predication": 7153.5009765625,
+        "triangle_count": 5154,
+        "warning_message": ""
+      }
+    ],
+    "sparse_infill_density": 40.0,
+    "wall_loops": 6
+  },
+  "printer_model_id": "BL-P001",
+  "identity_metadata_completed_from_official_profile": true
+}

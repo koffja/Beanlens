@@ -1,0 +1,46 @@
+{
+  "checks": [
+    {
+      "name": "six_job_cards",
+      "pass": true
+    },
+    {
+      "name": "six_loaded_thumbnails",
+      "pass": true
+    },
+    {
+      "name": "P2S_correct_six_links",
+      "pass": true
+    },
+    {
+      "name": "A1_correct_six_links",
+      "pass": true
+    },
+    {
+      "name": "X1C_correct_six_links",
+      "pass": true
+    },
+    {
+      "name": "X2D_correct_six_links",
+      "pass": true
+    },
+    {
+      "name": "H2D_correct_six_links",
+      "pass": true
+    },
+    {
+      "name": "mobile_no_overflow",
+      "pass": true
+    },
+    {
+      "name": "no_script_errors",
+      "pass": true
+    },
+    {
+      "name": "offline_no_requests",
+      "pass": true
+    }
+  ],
+  "errors": [],
+  "network": []
+}

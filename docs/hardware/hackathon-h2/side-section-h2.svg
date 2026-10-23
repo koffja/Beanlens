@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="780" viewBox="0 0 1200 780">
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0,0L8,4L0,8" fill="#19849b"/></marker><marker id="bean" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0,0L8,4L0,8" fill="#ad7a32"/></marker></defs>
+<rect width="1200" height="780" fill="#f4f7f8"/><g font-family="PingFang SC,Microsoft YaHei,sans-serif" fill="#213d48">
+<text x="40" y="48" font-size="26" font-weight="bold">H2 双摄版：拍摄底透明，接豆斗让到后方</text><text x="40" y="80" font-size="14" fill="#6a7f89">沿槽中线剖开看 · 两侧PP支承省略 · 舵机位于槽侧，未画进本剖面 · 单位mm</text>
+<path d="M233,363H341V373H233Z M704,363H879V373H704Z" fill="#c8a878"/><text x="795" y="352" font-size="14">6mm工作板</text><path d="M341,388H704" stroke="#839da8" stroke-dasharray="5 4"/><text x="375" y="412" font-size="13">通孔沿Y：55–165（长110）</text>
+<path d="M275,205L364,234" stroke="#eef0e8" stroke-width="14"/><path d="M275,205L364,234" stroke="#a6aca9" stroke-width="2"/><text x="164" y="176" font-size="16">短PP导豆口</text><text x="164" y="197" font-size="12">人工一次一颗，不做储豆斗</text>
+<path d="M364,234L569,307" stroke="#63a2ac" stroke-width="5" opacity=".7"/><path d="M364,234L569,307" stroke="#d8f2f6" stroke-width="2"/><text x="180" y="275" font-size="16">可抽出玻璃托片</text><text x="180" y="298" font-size="13">25.4×76.2×1.0–1.2</text><path d="M352,286L430,258" fill="none" stroke="#849ba3"/>
+<rect x="565" y="277" width="9" height="31" rx="2" fill="#f0ede1" stroke="#9aabac"/><text x="609" y="275" font-size="14">侧摆挡片</text><text x="609" y="295" font-size="12">拍完再打开</text><path d="M600,284L575,290" stroke="#7f99a4"/>
+<ellipse cx="544" cy="294" rx="13" ry="7" fill="#9c9b70" transform="rotate(18 544 294)"/>
+<g fill="#242e35" stroke="#576971"><rect x="505" y="109" width="78" height="25" rx="3"/><rect x="530" y="133" width="28" height="18" rx="3"/><rect x="530" y="440" width="28" height="18" rx="3"/><rect x="505" y="457" width="78" height="25" rx="3"/></g>
+<path d="M544,156V279" stroke="#19849b" stroke-width="3" marker-end="url(#arrow)"/><path d="M544,433V311" stroke="#19849b" stroke-width="3" marker-end="url(#arrow)"/>
+<text x="612" y="131" font-size="17">A 上相机，向下拍</text><text x="612" y="154" font-size="13">镜头Z318.05，工作距离90起试</text><text x="612" y="460" font-size="17">B 下相机，透玻璃向上拍</text><text x="612" y="484" font-size="13">镜头Z138.05，两摄分别对焦</text>
+<path d="M595,345L704,434" stroke="#e7e9df" stroke-width="10"/><path d="M595,345L704,434" stroke="#9aa9a7" stroke-width="2"/><path d="M638,398V488" stroke="#344750" stroke-width="6"/><text x="740" y="402" font-size="15">后接豆斜槽</text><text x="740" y="424" font-size="12">从Y132向后导到Y165</text><path d="M730,414L675,409" stroke="#7f99a4"/>
+<path d="M582,312C580,331 592,341 606,353L695,433C710,452 707,475 707,504" fill="none" stroke="#ad7a32" stroke-width="3" stroke-dasharray="6 5" marker-end="url(#bean)"/>
+<text x="880" y="466" font-size="14">下相机防撞板</text><text x="880" y="488" font-size="12">先用纸板占位试落豆</text><path d="M864,474L643,470" stroke="#7f99a4"/>
+<path d="M474,495V626Q474,637 487,637H791Q804,637 804,626V495" fill="#dfe8e8" fill-opacity=".6" stroke="#8caaad" stroke-width="3"/><text x="510" y="585" font-size="18">同一个普通收豆杯</text><text x="510" y="612" font-size="13">无称重 · 无自动分选</text>
+<text x="40" y="705" font-size="15" font-weight="bold">运行：停稳 → A图 → B图 → 同一颗豆配对/保存 → 开闸 → 空槽缓关</text><text x="40" y="737" font-size="13" fill="#6a7f89">托片会引入反光、豆屑和接触遮挡；两图只计一颗，不代表全部表面。孔位/净空/镜头近焦与实际光路待实配。</text>
+</g></svg>

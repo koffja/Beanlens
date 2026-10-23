@@ -1,0 +1,61 @@
+{
+  "machine": "X1C",
+  "job": "05-limits-and-flag",
+  "return_code": 0,
+  "output": "jobs/X1C/05-limits-and-flag.gcode.3mf",
+  "exists": true,
+  "bytes": 318006,
+  "slicer_result": {
+    "error_string": "Success.",
+    "export_time": 296,
+    "layer_height": 0.20000000298023224,
+    "plate_index": 0,
+    "prepare_time": 5,
+    "return_code": 0,
+    "sliced_plates": [
+      {
+        "feature_type_times": {
+          "Bottom surface": 31.630300521850586,
+          "Bridge": 38.09653854370117,
+          "Brim": 159.96580505371094,
+          "Custom": 486.5605163574219,
+          "Flush": 29.0,
+          "Gap infill": 0.1901695430278778,
+          "Inner wall": 1243.2786865234375,
+          "Internal solid infill": 139.8170928955078,
+          "Outer wall": 592.82177734375,
+          "Overhang wall": 13.278115272521973,
+          "Sparse infill": 139.0398406982422,
+          "Top surface": 55.16588592529297,
+          "Travel": 269.6373596191406,
+          "Undefined": 254.35391235351562
+        },
+        "filament_change_times": 0,
+        "filaments": [
+          {
+            "filament_id": "GFG02",
+            "id": 1,
+            "main_used_g": 12.335436820983887,
+            "total_used_g": 12.335436820983887
+          }
+        ],
+        "generate_support_material_time": 5,
+        "id": 1,
+        "infill_time": 16,
+        "layer_filament_change": 0,
+        "main_predication": 2653.87109375,
+        "make_perimeters_time": 42,
+        "obj_cached_cnt": 0,
+        "sliced_time": 306,
+        "sliced_time_with_cache": 225,
+        "total_predication": 3183.117431640625,
+        "triangle_count": 5880,
+        "warning_message": ""
+      }
+    ],
+    "sparse_infill_density": 35.0,
+    "wall_loops": 5
+  },
+  "printer_model_id": "BL-P001",
+  "identity_metadata_completed_from_official_profile": true
+}

@@ -1,0 +1,151 @@
+{
+  "date": "2026-10-21",
+  "kind": "host_design_checks_only",
+  "checks": [
+    {
+      "name": "independent_H3_profile",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "single_lane_horizontal_dual_camera",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "same_height_opposed_axes",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "small_gate_closed_coverage_and_full_open",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "plate_never_exits_front_enclosure",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "no_c6_weighing_ir_pbt_network",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "one_horn_one_rod_two_balls",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "constant_50mm_link_and_monotonic_slide",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "H3_keeps_checked_BOX_pins",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "36_unique_BOM_groups",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "power_budget_matches",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "two_cameras_in_BOM",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "existing_profile_stock_sufficient",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "wood_cut_fits_third_existing_panel",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "PP3_stock_rectangle_layout_fits",
+      "pass_": true,
+      "detail": [
+        [
+          0,
+          0,
+          176,
+          196
+        ],
+        [
+          180,
+          0,
+          50,
+          85
+        ],
+        [
+          235,
+          0,
+          50,
+          85
+        ],
+        [
+          180,
+          90,
+          60,
+          60
+        ],
+        [
+          180,
+          155,
+          60,
+          60
+        ],
+        [
+          0,
+          200,
+          176,
+          50
+        ]
+      ]
+    },
+    {
+      "name": "all_SVG_XML_parse",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "previous-preserved.json_unchanged",
+      "pass_": true,
+      "detail": []
+    },
+    {
+      "name": "full-version-preserved-20261019.json_unchanged",
+      "pass_": true,
+      "detail": []
+    },
+    {
+      "name": "artifact_links_exist",
+      "pass_": true,
+      "detail": []
+    }
+  ],
+  "preserved": {
+    "previous-preserved.json": {
+      "checked": 89,
+      "changed": []
+    },
+    "full-version-preserved-20261019.json": {
+      "checked": 68,
+      "changed": []
+    }
+  },
+  "firmware_changed": false,
+  "on_board_run": false,
+  "mechanical_validated": false
+}

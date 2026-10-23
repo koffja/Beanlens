@@ -1,0 +1,87 @@
+{
+  "date": "2026-10-21",
+  "status": "host_design_checks_only",
+  "checks": [
+    {
+      "name": "scope_dual_camera_static_manual_single_lane",
+      "pass_": true
+    },
+    {
+      "name": "no_C6_scale_IR_PBT_network",
+      "pass_": true
+    },
+    {
+      "name": "full_BOM_34_unique_groups",
+      "pass_": true
+    },
+    {
+      "name": "two_cameras_four_lights_one_horn",
+      "pass_": true
+    },
+    {
+      "name": "no_new_frame_lengths",
+      "pass_": true
+    },
+    {
+      "name": "glass_central_clear_width",
+      "pass_": true
+    },
+    {
+      "name": "glass_slope_projection",
+      "pass_": true
+    },
+    {
+      "name": "opposed_vertical_optics",
+      "pass_": true
+    },
+    {
+      "name": "work_aperture_central_sight_line_inside",
+      "pass_": true
+    },
+    {
+      "name": "base_central_sight_line_inside",
+      "pass_": true
+    },
+    {
+      "name": "rear_ramp_outside_photo_axis",
+      "pass_": true
+    },
+    {
+      "name": "ramp_exit_inside_cup",
+      "pass_": true
+    },
+    {
+      "name": "guard_clear_of_camera_nominal",
+      "pass_": true
+    },
+    {
+      "name": "pins_unchanged_from_H1",
+      "pass_": true
+    },
+    {
+      "name": "power_budget_arithmetic",
+      "pass_": true
+    },
+    {
+      "name": "no_board_or_hardware_pass_claim",
+      "pass_": true
+    },
+    {
+      "name": "single_camera_H1_byte_preserved",
+      "pass_": true
+    },
+    {
+      "name": "full_version_files_byte_preserved",
+      "pass_": true
+    },
+    {
+      "name": "offline_embedded_sources",
+      "pass_": true
+    },
+    {
+      "name": "no_wrong_BOM_replacement_in_intro",
+      "pass_": true
+    }
+  ],
+  "physical_validation": false
+}

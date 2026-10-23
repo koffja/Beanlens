@@ -1,0 +1,841 @@
+window.BEANLENS_H3_DATA={
+  "revision": "H3",
+  "date": "2026-10-21",
+  "status": "top_feed_horizontal_dual_camera_proposal_not_hardware_validated",
+  "full_version_retained": "../assembly-v4.12/beanlens-assembly-v4.12.html",
+  "scope": {
+    "camera_count": 2,
+    "lane_count": 1,
+    "controller": "ALIENTEK K230D BOX",
+    "actuator": "MG996R position servo",
+    "manual_one_bean": true,
+    "stationary_photo": false,
+    "weighing": false,
+    "esp32c6": false,
+    "ir_beam": false,
+    "pbt_brush": false,
+    "dual_camera_pairing": true,
+    "network": false,
+    "falling_capture": true
+  },
+  "geometry": {
+    "frame": [
+      220,
+      240,
+      460
+    ],
+    "coordinate": "X left-right / Y front-rear / Z up; all mm",
+    "platforms_z": [
+      20,
+      180
+    ],
+    "hopper": {
+      "inner_top": [
+        80,
+        80
+      ],
+      "inner_bottom": [
+        18,
+        14
+      ],
+      "center_xy": [
+        110,
+        120
+      ],
+      "top_z": 440,
+      "bottom_z": 350,
+      "wall": 2,
+      "top_ring": [
+        176,
+        196,
+        3
+      ],
+      "top_ring_xy": [
+        22,
+        22
+      ],
+      "top_ring_z": 440
+    },
+    "gate": {
+      "blank": [
+        29.4,
+        82,
+        2
+      ],
+      "material": "6061-T6 deburred aluminum",
+      "closed_front_y": 108,
+      "open_front_y": 127.74868417407583,
+      "x_range": [
+        95.3,
+        124.7
+      ],
+      "z_range": [
+        324,
+        326
+      ],
+      "hole_xy": [
+        101,
+        113
+      ],
+      "hole_wh": [
+        18,
+        14
+      ],
+      "covers": {
+        "xy": [
+          85,
+          95
+        ],
+        "size": [
+          50,
+          85,
+          3
+        ],
+        "lower_z": 321,
+        "upper_z": 326.3
+      },
+      "spacers": {
+        "count": 2,
+        "size": [
+          10,
+          85,
+          2.3
+        ],
+        "stack": "PP2 + PET0.3; bolted, not welded together",
+        "x": [
+          85,
+          125
+        ]
+      },
+      "stroke": 19.748684174075834,
+      "side_clearance_each": 0.3,
+      "vertical_total_clearance": 0.3,
+      "fixed_front_y_range": [
+        93,
+        95
+      ],
+      "pivot": [
+        170,
+        180,
+        331
+      ],
+      "ball_plane_z": 337.5,
+      "horn_radius": 16,
+      "rod_ball_centers": 50,
+      "rod_count": 1,
+      "ball_head_count": 2,
+      "horn_count": 1,
+      "rail_count": 0,
+      "theta_closed_deg": -40.706341765388494,
+      "theta_open_deg": 0,
+      "gate_ball_closed_xyz": [
+        110,
+        184,
+        337.5
+      ],
+      "gate_ball_open_xyz": [
+        110,
+        203.74868417407583,
+        337.5
+      ],
+      "geometry_only_no_pwm_pulse_calibration": true
+    },
+    "nozzle": {
+      "inner": [
+        18,
+        14
+      ],
+      "z_range": [
+        300,
+        321
+      ],
+      "wall": 2
+    },
+    "camera": {
+      "count": 2,
+      "axis": "horizontal_opposed_front_rear",
+      "front_lens_xyz": [
+        110,
+        30,
+        260
+      ],
+      "rear_lens_xyz": [
+        110,
+        210,
+        260
+      ],
+      "station_xyz": [
+        110,
+        120,
+        260
+      ],
+      "directions": [
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          -1,
+          0
+        ]
+      ],
+      "working_distance_proposal_mm": 90,
+      "observation_z": [
+        235,
+        285
+      ],
+      "support_in_beam": false,
+      "csi_id_mapping": null
+    },
+    "collector": {
+      "inner_top": [
+        64,
+        64
+      ],
+      "inner_bottom": [
+        30,
+        30
+      ],
+      "top_z": 220,
+      "bottom_z": 160,
+      "wall": 2,
+      "center_xy": [
+        110,
+        120
+      ]
+    },
+    "work_aperture": {
+      "xy": [
+        80,
+        90
+      ],
+      "wh": [
+        60,
+        60
+      ],
+      "relative_to_176x196_platform": [
+        58,
+        68
+      ]
+    },
+    "wood": {
+      "decks": [
+        176,
+        196,
+        6
+      ],
+      "deck_count": 2,
+      "display_panel": [
+        176,
+        88,
+        6
+      ],
+      "camera_strips": [
+        176,
+        30,
+        6
+      ],
+      "camera_strip_count": 2,
+      "camera_strip_z": 234,
+      "camera_strip_y": [
+        2,
+        208
+      ],
+      "stock_176x196_count": 3
+    },
+    "cup": {
+      "xyz": [
+        60,
+        95,
+        26
+      ],
+      "size": [
+        100,
+        100,
+        80
+      ]
+    }
+  },
+  "bom": [
+    {
+      "id": "H01",
+      "name": "识别/显示/控制板",
+      "model": "正点原子 K230D BOX",
+      "spec": "含内置2.4屏/用户按键，64.3×47.6×15.4外壳参考；TF按原套件",
+      "qty": 1,
+      "unit": "件",
+      "status": "复用优先，实物核对",
+      "full_bom": "A01",
+      "notes": "Type-C1供5V；Type-C2不供电，不拆原壳。已有套件257报价不重计。",
+      "unit_price_cny": null
+    },
+    {
+      "id": "H02",
+      "name": "水平相向双摄",
+      "model": "GC2093-M12-90度无畸变（用户型号）",
+      "spec": "GC2093-M12-90度无畸变，两只完整模组＋兼容BOX排线",
+      "qty": 2,
+      "unit": "件",
+      "status": "复用优先，实物核对",
+      "full_bom": "B01",
+      "notes": "前镜头(110,30,260)向后；后镜头(110,210,260)向前，各约90mm工作距起试。两CSI映射、近焦/像素密度与短曝光待实机核验。",
+      "unit_price_cny": null
+    },
+    {
+      "id": "H03",
+      "name": "舵机",
+      "model": "MG996R 位置版",
+      "spec": "1只，独立6V；外形40.7×19.7×42.9参考，轴竖直",
+      "qty": 1,
+      "unit": "件",
+      "status": "复用优先，实物核对",
+      "full_bom": "A03",
+      "notes": "位置版，独立6V。机身固定，轴目标(170,180,331)；只推拉轻闸片，不能用标称扭矩证明不卡豆。",
+      "unit_price_cny": null
+    },
+    {
+      "id": "H04",
+      "name": "主电源",
+      "model": "YU2405（用户指定）",
+      "spec": "机外24V/5A/120W；实际厂牌/插头/极性/AC线另核",
+      "qty": 1,
+      "unit": "件",
+      "status": "复用优先，实物核对",
+      "full_bom": "A07",
+      "notes": "",
+      "unit_price_cny": null
+    },
+    {
+      "id": "H05",
+      "name": "逻辑降压",
+      "model": "TPS5450成品板候选，整板SKU未定",
+      "spec": "24V→5.00V成品板；BOX双摄＋缓冲，3A连续预算待验",
+      "qty": 1,
+      "unit": "件",
+      "status": "复用优先，实物核对",
+      "full_bom": "A08",
+      "notes": "不是裸DDA芯片；先空载量5V再接BOX，不选未证实供电板。",
+      "unit_price_cny": null
+    },
+    {
+      "id": "H06",
+      "name": "舵机降压",
+      "model": "HOBBYWING UBEC5A / 30607000 / 2–8S",
+      "spec": "设6.0V；原厂5A持续，本机3A持续/5A短峰预算",
+      "qty": 1,
+      "unit": "件",
+      "status": "复用优先，实物核对",
+      "full_bom": "A17",
+      "notes": "断电设跳帽，量6V后接舵机；不能给GPIO或主板。",
+      "unit_price_cny": null
+    },
+    {
+      "id": "H07",
+      "name": "固定照明",
+      "model": "复用原24V 6000K/Ra98灯带，完整SKU待核",
+      "spec": "4段各100mm有效长，合计0.4m；≤8W预算",
+      "qty": 4,
+      "unit": "段",
+      "status": "复用优先，实物核对",
+      "full_bom": "A05",
+      "notes": "两面各两条，侧向常亮；先核实际剪切点。100–200µs仅曝光试验起点，亮度是否够必须实拍。",
+      "unit_price_cny": null
+    },
+    {
+      "id": "H08",
+      "name": "灯铝槽",
+      "model": "U形铝槽，候选外14×8×100mm",
+      "spec": "配实际灯带PCB宽；候选外14×8×100mm，4条",
+      "qty": 4,
+      "unit": "条",
+      "status": "复用优先，实物核对",
+      "full_bom": "L02 / L03",
+      "notes": "",
+      "unit_price_cny": null
+    },
+    {
+      "id": "H09",
+      "name": "开/关限位",
+      "model": "OMRON SS-01GL 微负载金合金触点",
+      "spec": "每端1只，COM/NO，低电平有效；19.8×6.4壳体/9.5孔距参考",
+      "qty": 2,
+      "unit": "件",
+      "status": "复用优先，实物核对",
+      "full_bom": "S01",
+      "notes": "两只检测闸片尾部旗片，闭位/开位分别确认；装在豆路之外。座位、触发余量按实物调；不可只检测舵臂角度。",
+      "unit_price_cny": null
+    },
+    {
+      "id": "H10",
+      "name": "舵机专用安装件",
+      "model": "MG996R金属固定架＋6061 60×60×3毛坯＋2020加强角码",
+      "spec": "右后立柱悬臂固定；角码候选40×40×4、宽20，两孔固定；轴(170,180,331)",
+      "qty": 1,
+      "unit": "件",
+      "status": "复用优先，实物核对",
+      "full_bom": "G14",
+      "notes": "转接板目标Z280.2–283.2，固定架抬到安装耳约Z320。加强角码一侧用两颗M5/T螺母固定右后立柱，一侧托铝板；另配M3连接件。非最终钻孔图，先量舵机偏轴/支架。",
+      "unit_price_cny": null
+    },
+    {
+      "id": "H11",
+      "name": "舵臂",
+      "model": "MG996R匹配25T金属直臂，16mm孔半径",
+      "spec": "只用16mm孔；孔径优先M3，若现有goBILDAφ4加适配套",
+      "qty": 1,
+      "unit": "件",
+      "status": "复用优先，实物核对",
+      "full_bom": "G01",
+      "notes": "只有一只25T直臂，使用R16孔接连杆球头；不是双舵臂。中心螺钉用舵机原配，孔径M3优先；几何角度不等于PWM标定。",
+      "unit_price_cny": null
+    },
+    {
+      "id": "H12",
+      "name": "闸片球头垫高件",
+      "model": "M3×8六角隔柱＋M3球头螺柱/垫片",
+      "spec": "1套；使闸片球心与舵臂球心同高，名义Z337.5",
+      "qty": 1,
+      "unit": "套",
+      "status": "复用优先，实物核对",
+      "full_bom": null,
+      "notes": "8mm隔柱是候选，须扣除实际球头中心高度后配垫。球心共面后再连接，禁止靠拧紧掰弯连杆。球头本体计H37，不重复买。",
+      "unit_price_cny": null
+    },
+    {
+      "id": "H13",
+      "name": "上下PP豆路与导向板材",
+      "model": "PP-H 2mm 300×300一片＋PP-H 3mm 300×300一片",
+      "spec": "PP2做上斗/短管/下斗；PP3做顶环、导向盖、后支承片176×50、相机载板；导向条PP2+PET0.3",
+      "qty": 1,
+      "unit": "组",
+      "status": "复用优先，实物核对",
+      "full_bom": null,
+      "notes": "H38/H39/H40为加工子件，PP板在本项统一购买。漏斗外侧焊、内部修平；导向区用螺栓拆装，不把铝闸片焊死。先纸样与试焊；斜面给毛坯而非已补偿焊接的CNC尺寸。",
+      "unit_price_cny": null
+    },
+    {
+      "id": "H14",
+      "name": "机架型材",
+      "model": "已有黑色欧标2020，同槽型",
+      "spec": "460×4立柱、180×4宽梁、200×4深梁；共12段",
+      "qty": 12,
+      "unit": "段",
+      "status": "复用优先，实物核对",
+      "full_bom": "F01",
+      "notes": "4根460留整；另3根460各切200+180；1根400切200+180；剩1根400保留。无需新增型材。",
+      "unit_price_cny": null
+    },
+    {
+      "id": "H15",
+      "name": "框架角码/M5/T螺母",
+      "model": "欧标2020配套两孔90°角码，黑色优先",
+      "spec": "16角码使用+4备用；M5螺钉/T螺母各40只",
+      "qty": 20,
+      "unit": "套",
+      "status": "复用优先，实物核对",
+      "full_bom": "F02",
+      "notes": "含4套备用，长度按槽型配；不使用三通/四通方块。",
+      "unit_price_cny": null
+    },
+    {
+      "id": "H16",
+      "name": "木平台/相机横条/BOX面板",
+      "model": "6mm海洋板，按已有余料裁",
+      "spec": "176×196×6两片；176×88×6一片；176×30×6两条",
+      "qty": 5,
+      "unit": "片",
+      "status": "复用优先，实物核对",
+      "full_bom": "F03",
+      "notes": "共5成品，由原3片176×196×6裁出；第三片切88+30+30，留锯缝余量。工作板60×60孔全局X80/Y90；不再装Z344整层相机板，以免挡豆路。",
+      "unit_price_cny": null
+    },
+    {
+      "id": "H17",
+      "name": "平台支承角片",
+      "model": "2020配套内角片＋M5/T螺母＋M3×16/φ9垫片螺母",
+      "spec": "底/工作板8点＋相机横条4点=12用，16套购含4备",
+      "qty": 16,
+      "unit": "套",
+      "status": "复用优先，实物核对",
+      "full_bom": "F11",
+      "notes": "底面Z20/180；相机横条Z234–240；BOX固定框H19另计。不可把屏面板装入漏斗内部。",
+      "unit_price_cny": null
+    },
+    {
+      "id": "H18",
+      "name": "前相机可调安装",
+      "model": "30×30×2角铝长40＋PP3 60×60载板＋M2隔柱",
+      "spec": "前镜头(110,30,260)，水平向后；1套",
+      "qty": 1,
+      "unit": "件",
+      "status": "复用优先，实物核对",
+      "full_bom": "B13",
+      "notes": "角铝/PP3载板/4只M2隔柱承重，固定到前木横条；不靠排线承重。实际孔距和镜头突出量收到后定。",
+      "unit_price_cny": null
+    },
+    {
+      "id": "H19",
+      "name": "BOX固定框",
+      "model": "复用80×64外压框/背托与软垫夹片",
+      "spec": "原壳整机固定在前框，保留KEY0/KEY1及TF/Type-C可达；配M5/T螺母4套与软垫夹片",
+      "qty": 1,
+      "unit": "件",
+      "status": "复用优先，实物核对",
+      "full_bom": "F15",
+      "notes": "BOX原壳固定前面176×88×6承板，Z334–422；背后与料斗外壁最小约60mm名义净空（不含线缆），按实物核接口与弯曲半径。",
+      "unit_price_cny": null
+    },
+    {
+      "id": "H20",
+      "name": "局部遮光片",
+      "model": "黑PP2板，候选300×200mm",
+      "spec": "侧遮光片＋前/后带镜头孔背景片；黑PP2 300×300候选",
+      "qty": 3,
+      "unit": "片",
+      "status": "复用优先，实物核对",
+      "full_bom": "F07",
+      "notes": "不能保留H1封死后摄光路的整后片。镜头孔φ24起试，中心Z260/X110；侧片不可侵入拍摄窗，亮度/反光再实配。",
+      "unit_price_cny": null
+    },
+    {
+      "id": "H21",
+      "name": "普通收豆杯",
+      "model": "PP杯/盒，约100×100×80mm",
+      "spec": "固定底板上，覆盖出口下方；不装传感器",
+      "qty": 1,
+      "unit": "件",
+      "status": "复用优先，实物核对",
+      "full_bom": "B12",
+      "notes": "下斗直落同一普通杯，所有分类都进同一杯；无称重、无分选。杯位置可调，使中心落点(110,120)在杯内。",
+      "unit_price_cny": null
+    },
+    {
+      "id": "H22",
+      "name": "PWM缓冲板",
+      "model": "SN74AHCT125N（DIP14）＋2N3904，洞洞板30×50mm",
+      "spec": "代焊一块3.3→5V单向缓冲，默认/OE拉高禁能",
+      "qty": 1,
+      "unit": "件",
+      "status": "复用优先，实物核对",
+      "full_bom": null,
+      "notes": "器件H23–H27为本板构成，不另买两套整板；完整引脚见接线页。避免用74HC125替代AHCT/HCT阈值。",
+      "unit_price_cny": null
+    },
+    {
+      "id": "H23",
+      "name": "缓冲IC与插座",
+      "model": "TI SN74AHCT125N + DIP14插座",
+      "spec": "VCC5V，TTL输入，使用通道1；闲置输入接地、/OE拉高",
+      "qty": 1,
+      "unit": "件",
+      "status": "复用优先，实物核对",
+      "full_bom": null,
+      "notes": "H22构成件；5V不能反接BOX GPIO。",
+      "unit_price_cny": null
+    },
+    {
+      "id": "H24",
+      "name": "使能三极管",
+      "model": "2N3904 NPN TO-92",
+      "spec": "E→GND，C→/OE1，B经4.7k到GPIO22",
+      "qty": 1,
+      "unit": "件",
+      "status": "复用优先，实物核对",
+      "full_bom": null,
+      "notes": "H22构成件，按所购厂家引脚图确认E/B/C。",
+      "unit_price_cny": null
+    },
+    {
+      "id": "H25",
+      "name": "电阻包",
+      "model": "金属膜1% 0.25W",
+      "spec": "10k×2，4.7k×1，100k×1，1k×3，220Ω×1；各备1",
+      "qty": 1,
+      "unit": "包",
+      "status": "复用优先，实物核对",
+      "full_bom": null,
+      "notes": "10k：/OE上拉5V、PWM输入下拉；1k：PWM输入串联及2限位串联；100k基极下拉。",
+      "unit_price_cny": null
+    },
+    {
+      "id": "H26",
+      "name": "去耦与近端电容",
+      "model": "100nF/50V X7R×1；1000µF/16V 105℃低ESR×1",
+      "spec": "100nF紧贴IC14/7；1000µF并舵机6V/GND",
+      "qty": 1,
+      "unit": "包",
+      "status": "复用优先，实物核对",
+      "full_bom": "C01",
+      "notes": "核极性；不以电容替代足够的降压和线径。",
+      "unit_price_cny": null
+    },
+    {
+      "id": "H27",
+      "name": "信号接线辅料",
+      "model": "30×50洞洞板、端子、2.54插座、热缩/绝缘柱",
+      "spec": "缓冲板与J10短线，标注GPIO编号及针脚号",
+      "qty": 1,
+      "unit": "包",
+      "status": "复用优先，实物核对",
+      "full_bom": null,
+      "notes": "J10只12个GPIO，没有地或电源；GND从原理图J6（PH2.0口1）的2脚GND引出，以实物1脚方向核针序；J6的1脚5V及3/4脚不接。",
+      "unit_price_cny": null
+    },
+    {
+      "id": "H28",
+      "name": "配电/保险/开关包",
+      "model": "绝缘低压分线端子；DC保险座；舵机支路电源开关",
+      "spec": "主4A、灯1A、5V输入1.5A、UBEC输入3A；6V开关DC≥12V/5A",
+      "qty": 1,
+      "unit": "包",
+      "status": "复用优先，实物核对",
+      "full_bom": "P01–P14",
+      "notes": "保险位在24V正输入；手动6V开关用于装配/排障，不称自动硬件急停。盒保留机外，不接裸交流。",
+      "unit_price_cny": null
+    },
+    {
+      "id": "H29",
+      "name": "电源线/接口",
+      "model": "0.75mm²多股铜线、压接端子、5V USB-A→C成品短线",
+      "spec": "24V/6V电流不走杜邦；DC母座按YU2405实物匹配",
+      "qty": 1,
+      "unit": "包",
+      "status": "复用优先，实物核对",
+      "full_bom": "P03 / P09 / P14",
+      "notes": "5V接BOX Type-C1；USB调试时禁止另一路5V反灌/并联。信号地与UBEC参考地相连，舵机返回独立走线。",
+      "unit_price_cny": null
+    },
+    {
+      "id": "H30",
+      "name": "小件紧固包",
+      "model": "304 M3×8/12/16、M2×6/8、垫片、防松螺母",
+      "spec": "M3×16盖板连接4套、M3连接/防松件；M2相机隔柱与螺钉各8套",
+      "qty": 1,
+      "unit": "包",
+      "status": "复用优先，实物核对",
+      "full_bom": null,
+      "notes": "H37球头和H12隔柱不重复计。盖板螺栓在X90/130，Y105/165外侧，避开闸片轨道。螺钉长度按实际垫片/螺母复核。",
+      "unit_price_cny": null
+    },
+    {
+      "id": "H34",
+      "name": "后相机可调安装",
+      "model": "30×30×2角铝长40＋PP3 60×60载板＋M2隔柱",
+      "spec": "后镜头(110,210,260)，水平向前；1套",
+      "qty": 1,
+      "unit": "套",
+      "notes": "角铝/M2件增加第二套；PP3板料计H13。后横条承重，后摄与前摄独立调焦。",
+      "status": "新增/改制，待实配",
+      "full_bom": null,
+      "unit_price_cny": null
+    },
+    {
+      "id": "H36",
+      "name": "单槽铝闸片",
+      "model": "6061-T6 29.4×82×2mm",
+      "spec": "两面平整、倒钝去毛刺；球头孔中心距前缘76mm，横向居中",
+      "qty": 1,
+      "unit": "片",
+      "notes": "先裁毛坯试配；M3孔径按连接件，正式孔待球头确认。关闭前缘Y108，打开前缘127.749，行程19.749。不要带豆强关。",
+      "status": "新增/改制，待实配",
+      "full_bom": null,
+      "unit_price_cny": null
+    },
+    {
+      "id": "H37",
+      "name": "双球头短连杆",
+      "model": "RC模型M3球头连杆，球心距50mm，可调约±3mm",
+      "spec": "1根杆＋2颗球头；M3连接螺柱/孔；要求卖家注明球心距",
+      "qty": 1,
+      "unit": "套",
+      "notes": "淘宝搜索：M3 球头连杆 球心距50mm。不是50mm裸螺杆；不接受球心距不明的套件。无已验证专属SKU，收到量中心距后重算端点。",
+      "status": "新增/改制，待实配",
+      "full_bom": null,
+      "unit_price_cny": null
+    },
+    {
+      "id": "H38",
+      "name": "简易导向间隔条",
+      "model": "H13 PP2余料＋PET0.3mm垫片",
+      "spec": "10×85×2.3两条；PET可买20×100×0.3mm",
+      "qty": 1,
+      "unit": "套",
+      "notes": "PP2已计H13；仅新增PET片。上下PP3盖板50×85，槽高2.3容纳2mm闸片。PET不与PP焊，固定区螺栓夹紧。",
+      "status": "新增/改制，待实配",
+      "full_bom": null,
+      "unit_price_cny": null
+    },
+    {
+      "id": "H39",
+      "name": "顶斗承重环/角片",
+      "model": "H13 PP3顶环＋25×25×2角铝宽20mm",
+      "spec": "顶环176×196×3，开80×80口；顶环4只＋闸盒后支承2只使用，另2只备用",
+      "qty": 8,
+      "unit": "只角片",
+      "notes": "PP顶环不重复购。8只角片配M5螺钉/T螺母16套、M3连接件8套（含备用），螺长实配；角片锁到顶部2020，再托住顶环；PP斗外缘焊到环口，载荷走顶环/角片/框架。仅单颗人工投豆，不宣称1kg验证。",
+      "status": "新增/改制，待实配",
+      "full_bom": null,
+      "unit_price_cny": null
+    },
+    {
+      "id": "H40",
+      "name": "下接豆斗加工",
+      "model": "H13 PP2板材子件",
+      "spec": "内顶64×64/Z220；内底30×30/Z160；高60",
+      "qty": 1,
+      "unit": "套",
+      "notes": "不另买PP板；经工作台60×60孔穿过，用4只PP外焊小耳与M3固定。观察区下缘235距斗上口15mm，镜头中心260不被斗沿遮挡。",
+      "status": "新增/改制，待实配",
+      "full_bom": null,
+      "unit_price_cny": null
+    }
+  ],
+  "sources": {
+    "box": "https://wiki.alientek.com/docs/Boards/Kendryte/DNK230D/start-guide/k230d-box-introduction/",
+    "key": "https://wiki.alientek.com/docs/Boards/Kendryte/DNK230D/example-base/key/",
+    "pwm": "https://wiki.alientek.com/docs/Boards/Kendryte/DNK230D/example-base/beep/",
+    "fpioa": "https://www.kendryte.com/k230_canmv/en/v1.3/example/peripheral/fpioa.html",
+    "buffer": "https://www.ti.com/product/SN74AHCT125",
+    "ubec": "https://oss.hobbywing.com/pdf/pdfcn/UBEC5Acn.pdf",
+    "exposure_version": "https://www.kendryte.com/answer/questions/10010000000012329"
+  },
+  "unknown_prices_are_not_zero": true,
+  "total_cost_cny": null,
+  "flat_stock_pp3": {
+    "sheet_mm": [
+      200,
+      200,
+      3
+    ],
+    "minimum_gap_mm": 3,
+    "rectangles": [
+      {
+        "id": "底座",
+        "xy": [
+          0,
+          0
+        ],
+        "wh": [
+          80,
+          110
+        ]
+      },
+      {
+        "id": "侧片左",
+        "xy": [
+          83,
+          0
+        ],
+        "wh": [
+          49.1491226573,
+          79.4145861811
+        ]
+      },
+      {
+        "id": "侧片右",
+        "xy": [
+          135.1491226573,
+          0
+        ],
+        "wh": [
+          49.1491226573,
+          79.4145861811
+        ]
+      },
+      {
+        "id": "槽底",
+        "xy": [
+          83,
+          83
+        ],
+        "wh": [
+          24,
+          60
+        ]
+      },
+      {
+        "id": "相机载板",
+        "xy": [
+          110,
+          83
+        ],
+        "wh": [
+          60,
+          60
+        ]
+      },
+      {
+        "id": "挡片",
+        "xy": [
+          0,
+          113
+        ],
+        "wh": [
+          46,
+          18
+        ]
+      },
+      {
+        "id": "旗片",
+        "xy": [
+          49,
+          113
+        ],
+        "wh": [
+          30,
+          16
+        ]
+      }
+    ]
+  },
+  "capture": {
+    "method": "both streams running before release; bounded ROIs; one manually introduced bean per cycle",
+    "hardware_sync_claim": false,
+    "stationary_capture": false,
+    "one_pair_one_count": true,
+    "frame_rate_measured": null,
+    "exposure_us_measured": null,
+    "time_pair_tolerance_ms": null,
+    "reject_if": [
+      "missing_view",
+      "blur",
+      "multiple_beans",
+      "uncertain_pair"
+    ],
+    "roi_queue_example": {
+      "per_camera_max": 3,
+      "max_wh": [
+        320,
+        320
+      ],
+      "rgb_bytes_total": 1843200,
+      "actual_runtime_memory_validated": false
+    }
+  },
+  "ideal_fall_estimate": {
+    "assumptions": "zero initial speed, no friction or collision, not measured",
+    "gate_surface_z": 326,
+    "station_z": 260,
+    "speed_mm_s": 1137.9455171492175,
+    "observation_band_ms": 44.78098376671119,
+    "max_exposure_for_0_2mm_blur_us": 175.75533888567907,
+    "trial_exposure_us": [
+      100,
+      200
+    ],
+    "animation_fall_slowdown": 12
+  },
+  "power_budget": {
+    "logic_5v_a": 3,
+    "servo_6v_continuous_a": 3,
+    "servo_6v_peak_a": 5,
+    "led_w": 8,
+    "conversion_efficiency_budget": 0.8,
+    "continuous_input_w": 49.25,
+    "short_peak_input_w": 64.25,
+    "measured": false
+  }
+}
+;

@@ -1,0 +1,226 @@
+{
+  "revision": "H3-Bambu-P3",
+  "date": "2026-10-22",
+  "BambuStudio": "02.08.02.61",
+  "user_confirmed": {
+    "nozzle_mm": 0.4,
+    "filament": "Bambu PETG HF",
+    "X1_model": "X1 Carbon",
+    "bed": "Textured PEI Plate"
+  },
+  "setup": {
+    "bed": "Textured PEI Plate",
+    "extruder_variant": "original standard 0.4mm hotend",
+    "scale": 1.0,
+    "physical_print_verified": false
+  },
+  "machines": {
+    "P2S": [
+      "Bambu Lab P2S 0.4 nozzle",
+      "0.20mm Standard @BBL P2S",
+      "Bambu PETG HF @BBL P2S 0.4 nozzle"
+    ],
+    "A1": [
+      "Bambu Lab A1 0.4 nozzle",
+      "0.20mm Standard @BBL A1",
+      "Bambu PETG HF @BBL A1"
+    ],
+    "X1C": [
+      "Bambu Lab X1 Carbon 0.4 nozzle",
+      "0.20mm Standard @BBL X1C",
+      "Bambu PETG HF @BBL X1C"
+    ],
+    "X2D": [
+      "Bambu Lab X2D 0.4 nozzle",
+      "0.20mm Standard @BBL X2D",
+      "Bambu PETG HF @BBL X2D 0.4 nozzle"
+    ],
+    "H2D": [
+      "Bambu Lab H2D 0.4 nozzle",
+      "0.20mm Standard @BBL H2D",
+      "Bambu PETG HF @BBL H2D 0.4 nozzle"
+    ]
+  },
+  "jobs": {
+    "00-fit-tests": {
+      "parts": [
+        [
+          "printing-p1/fit-tests/test-male-mm.stl",
+          -22,
+          0
+        ],
+        [
+          "printing-p1/fit-tests/test-socket-mm.stl",
+          22,
+          0
+        ]
+      ],
+      "walls": "5",
+      "fill": "25%",
+      "support": "0",
+      "brim": "no_brim"
+    },
+    "01-upper-hopper": {
+      "parts": [
+        [
+          "printing-p1/parts/upper-hopper-mm.stl",
+          0,
+          0
+        ]
+      ],
+      "walls": "5",
+      "fill": "25%",
+      "support": "0",
+      "brim": "outer_only"
+    },
+    "02-adapter-and-cameras": {
+      "parts": [
+        [
+          "printing-p1/parts/upper-adapter-mm.stl",
+          -48,
+          0
+        ],
+        [
+          "printing-p2/parts/camera-front-mm.stl",
+          42,
+          -30
+        ],
+        [
+          "printing-p2/parts/camera-rear-mm.stl",
+          42,
+          30
+        ]
+      ],
+      "walls": "5",
+      "fill": "30%",
+      "support": "0",
+      "brim": "outer_only"
+    },
+    "03-lower-collector": {
+      "parts": [
+        [
+          "printing-p1/parts/lower-collector-mm.stl",
+          0,
+          0
+        ]
+      ],
+      "walls": "5",
+      "fill": "25%",
+      "support": "1",
+      "brim": "outer_only",
+      "support_type": "normal(auto)",
+      "support_style": "snug",
+      "support_base_spacing": "4",
+      "buildplate": "1"
+    },
+    "04-servo-cradle": {
+      "parts": [
+        [
+          "printing-p2/parts/servo-cradle-mm.stl",
+          0,
+          0
+        ]
+      ],
+      "walls": "6",
+      "fill": "40%",
+      "support": "1",
+      "brim": "outer_only",
+      "support_type": "normal(auto)",
+      "buildplate": "0"
+    },
+    "05-limits-and-flag": {
+      "parts": [
+        [
+          "printing-p2/parts/limit-closed-seat-mm.stl",
+          -32,
+          0
+        ],
+        [
+          "printing-p2/parts/limit-open-seat-mm.stl",
+          0,
+          0
+        ],
+        [
+          "printing-p2/parts/gate-limit-flag-mm.stl",
+          40,
+          0
+        ]
+      ],
+      "walls": "5",
+      "fill": "35%",
+      "support": "0",
+      "brim": "outer_only"
+    }
+  },
+  "profile_source_sha256": {
+    "machine/Bambu Lab P2S 0.4 nozzle.json": "5edc3d8bca7cca8708c2f8c31bbfe591e94c423a399083c16578fa618e0349c9",
+    "machine/fdm_bbl_3dp_001_common.json": "2ca207f457c1f9b3eb25a1801adb2eaa8ddc5620f5a8945abb51a3fcddab5e47",
+    "machine/fdm_machine_common.json": "26ef8ee697849323e67d8e1a9026c175cebe3397e38c5091dddb5cd3fc52e94c",
+    "machine/Bambu Lab P2S 0.4 nozzle template machine_start_gcode.json": "868431ff7088bed3e1ef386b11989a23c5e1e632028817b416c377636788bdfb",
+    "machine/Bambu Lab P2S 0.4 nozzle template machine_end_gcode.json": "aa6bdb6509012bef606c5bc0b9ab29c98a3e65a11ef7cf1bcb9aa8cd6a60f973",
+    "machine/Bambu Lab P2S 0.4 nozzle template layer_change_gcode.json": "b3083c668de51abc18d82034aba3fcbe5058a4ac85a2d6d340b328bb2d2f1c57",
+    "machine/Bambu Lab P2S 0.4 nozzle template time_lapse_gcode.json": "9d37705ebcb44a5ee94d5415b8f4ce92c4d10fb23f4877c097928af847adf9f7",
+    "machine/Bambu Lab P2S 0.4 nozzle template wrapping_detection_gcode.json": "b3db267ac5db28415bbfcf6ae4cee536a0f978bab589e8bf7ccdd4bbe00c7a2b",
+    "machine/Bambu Lab P2S 0.4 nozzle template change_filament_gcode.json": "e9860232cf78dddd2b6c5caf40fc5dbbfb32ed7359442b0c3eb2b40071574f75",
+    "filament/Bambu PETG HF @BBL P2S 0.4 nozzle.json": "52e2d548bc8b50f2608a39e58f1b579dd78645a25cace755d9f4f32d8c5d8694",
+    "filament/Bambu PETG HF @base.json": "f3e0e359e04b864db95d88f70ffed42576cea442723e26466641cf6deb3087ab",
+    "filament/fdm_filament_pet.json": "3ed1b36367fe6df800103a9deaaa036f9d79c7afda3f3a17514dff23aa96c7d8",
+    "filament/fdm_filament_common.json": "8c7105b7d59a28f600c43a946f067b8b4d707b9711c0bf6b88e9166e48878548",
+    "filament/fdm_filament_template_direct_dual_e3d.json": "308498826d6206f611be063e9ed7e6afe50b48e5410bb9e132f00eda483eab19",
+    "process/0.20mm Standard @BBL P2S.json": "507f1a931bb6cd7b11aef40c5b2960b3b32a2c63b61dbb583b7f4702dbe040ae",
+    "process/fdm_process_single_0.20.json": "cdda8d56d67f62a0faa892cb6efc605ebb5c745bf742f6ead4daaeb6627c182a",
+    "process/fdm_process_single_common.json": "05b38ac1318e465e817978b36da51754f928da0172738a20bb3a8d4a69eb4769",
+    "process/fdm_process_common.json": "d7981c4b92854f251b8697e1bb621c63fe393f263fb8024ab63c401525d543d7",
+    "machine/Bambu Lab A1 0.4 nozzle.json": "f17e7679e69b0bbe2fd611d514b276a0c5dc117124f3d8c7c83ba11418c316bc",
+    "machine/Bambu Lab A1 0.4 nozzle template machine_start_gcode.json": "a5d4de36e2bd9414f24803ed3800e889995920068319382de78655f48a961e8d",
+    "machine/Bambu Lab A1 0.4 nozzle template machine_end_gcode.json": "e12b6bbbc4060f90740e2c774ba0183655511fe1a8b549a4f8788f7635e38412",
+    "machine/Bambu Lab A1 0.4 nozzle template time_lapse_gcode.json": "631cba6aeb4b908aab43ae93fafa423172837fd1f6204b133e43005712d80c56",
+    "machine/Bambu Lab A1 0.4 nozzle template change_filament_gcode.json": "4cadc87c4af05af853a6ccb3cfa2ab2718cec17953580a34a618556e49f6ec36",
+    "machine/Bambu Lab A1 0.4 nozzle template layer_change_gcode.json": "356f55bd21199b1ae692db7451f01292a758739bf1b48628b96aed9bb5faea8d",
+    "filament/Bambu PETG HF @BBL A1.json": "df85a1ad870499ace1e76c9d65b51b0066e026ddb959239f25af7616821b4d1e",
+    "process/0.20mm Standard @BBL A1.json": "2bd33159b3ec659567a63b6ea6f5373af7431c68516e7d3e02693a4cef395079",
+    "machine/Bambu Lab X1 Carbon 0.4 nozzle.json": "e2b26b1e94216c8c1d823b9a327bf746c0aeeb1fa0e61489846cfc15b96b3b53",
+    "machine/Bambu Lab X1 Carbon 0.4 nozzle template machine_start_gcode.json": "cc890a986c3f073e4691908d4bd3256222da9afc52fa9520261318bea9757505",
+    "machine/Bambu Lab X1 Carbon 0.4 nozzle template machine_end_gcode.json": "e90eb249dceb719ff8511b59275793a85ab84e1d5b5d4981e1fe6256fb6ffe54",
+    "machine/Bambu Lab X1 Carbon 0.4 nozzle template time_lapse_gcode.json": "bd394064ba847dc7a75ab80c61c6a0824ac3d6876438b7c8bafd5646cf51b5c4",
+    "machine/Bambu Lab X1 Carbon 0.4 nozzle template change_filament_gcode.json": "cdde6fbb5e4f6ec353aeb61e41862dd04743c2bfe21369d31145170aa932d4ae",
+    "machine/Bambu Lab X1 Carbon 0.4 nozzle template layer_change_gcode.json": "595fa7ed12c23068b658ca4b006d4970bfd217a1503bed36b602cba93b2dc81a",
+    "filament/Bambu PETG HF @BBL X1C.json": "72435471b2478b0210550fbc8f0cbbb8cb0d0f2294860ccf14d3ac5fc1c08c57",
+    "filament/fdm_filament_template_direct_dual.json": "e0f564b83f3ef70cce4de1401dd7cd855d6fbd834343cb8f4292f2a1ac3efc51",
+    "process/0.20mm Standard @BBL X1C.json": "e4d3f211b6ef87e9612c96f3ac2d18413e0610fff7eeb815a76420344a3b0a19",
+    "machine/Bambu Lab X2D 0.4 nozzle.json": "dbcdaf090abba746b4f6f8d1323fdc299cec1ecd717c340214314e575d5884a6",
+    "machine/fdm_bbl_3dp_002_common.json": "f7ce729c4f2d7ba7dd9b2328b8172ada496a8a4e7e41f5f0139e2692b0a106af",
+    "machine/Bambu Lab X2D 0.4 nozzle template machine_start_gcode.json": "0f2a63c066aefde6dc4ee0c20bb1ebed29f0b85f07fd5203d56db2bcfb25052a",
+    "machine/Bambu Lab X2D 0.4 nozzle template machine_end_gcode.json": "f53b22535ccbc639ffdd94c60306061513c98181d2098f9388a9b99644f294d5",
+    "machine/Bambu Lab X2D 0.4 nozzle template layer_change_gcode.json": "f13bd5e29cdef156c4da6d26e9f1aab323cb053d9ab34875917c37d31fa74960",
+    "machine/Bambu Lab X2D 0.4 nozzle template time_lapse_gcode.json": "65b30d1bfb5f2d5043e7da71cade5c1e561fa596029d9fcd0a171835a5e6a542",
+    "machine/Bambu Lab X2D 0.4 nozzle template change_filament_gcode.json": "0c10a06ad5f6fb9062082b10edaab5ce465962db1dc2d6ffdccea0f0409748d1",
+    "filament/Bambu PETG HF @BBL X2D 0.4 nozzle.json": "bacebb4e0d944a41f908c72f443cace686c00a4c37e4e0b0563f025c29843d85",
+    "filament/fdm_filament_template_direct_bowden_e3d.json": "cc518ebe128bf40be47e99030406b406f198764d6012a4689fbf2880784735df",
+    "process/0.20mm Standard @BBL X2D.json": "9ad86d36979d9d335fe123d0b20dee4ab1f6fedac34ef529a624323fb07d16db",
+    "process/fdm_process_dual_0.20_nozzle_0.4.json": "8015670b40629f69ec2a2bff47d549d778e95ee545350e5fa9f60f8d8cbf2adc",
+    "process/fdm_process_dual_common.json": "743303a5c3c1962f8c8d178d21e23fc409027ea48574017db51230eac72bd063",
+    "machine/Bambu Lab H2D 0.4 nozzle.json": "49564658d34cbb1b151abcf3dfd0d074a39d6bd099602f8a499b959c665ec72c",
+    "machine/Bambu Lab H2D 0.4 nozzle template machine_start_gcode.json": "bc1e055a23ed5ba45c9cd50391c466e53bc046f7c680d3be9c2ac32bc10fd365",
+    "machine/Bambu Lab H2D 0.4 nozzle template machine_end_gcode.json": "6eb20a3540a84db8cafc58f8acd3ee3edf666e93614f97962a7dbca7508a3468",
+    "machine/Bambu Lab H2D 0.4 nozzle template layer_change_gcode.json": "265ec334535be0abe69c8fe8ac66c2425aaf84c3962dcce6dff9a395425c3a7e",
+    "machine/Bambu Lab H2D 0.4 nozzle template time_lapse_gcode.json": "bbeb0760b590ae24125eb7e59b5c1cc9831ecd0d773358f9a590c4fa6059e048",
+    "machine/Bambu Lab H2D 0.4 nozzle template wrapping_detection_gcode.json": "a3863ec8c9cf38663b22c573dea0392adc39c61211307fd90e31ed11171781c7",
+    "machine/Bambu Lab H2D 0.4 nozzle template change_filament_gcode.json": "519ccd20c3ee60d89b5bb922e99e92170a8f3d360768a5907d36adfa555ecabf",
+    "filament/Bambu PETG HF @BBL H2D 0.4 nozzle.json": "416b0729e49d38126ffc6fd286e90c48aa9b6ceacbe7d23e2c8dcfc385332766",
+    "process/0.20mm Standard @BBL H2D.json": "b7b8b85568a62ddb58f05c685058a61197e51e1ce9e4263d8d6e4bb6cea50b35"
+  },
+  "model_source_sha256": {
+    "printing-p1/fit-tests/test-male-mm.stl": "4a924409195c76c5bf5945b09bc7562b89f3b2fa5c36f6ab33221d75e067cc2f",
+    "printing-p1/fit-tests/test-socket-mm.stl": "a7eab53179d61c8f6a4f26d9b9330e0928c780f6c47faf3d3432a71316210af3",
+    "printing-p1/parts/upper-hopper-mm.stl": "e1505feaf54215db608e21b60faa60564dfa8e90b248463151c5b57479691bc3",
+    "printing-p1/parts/upper-adapter-mm.stl": "e348de8f126bc8a12a095f2c2f381b5b459085dd9caf034d9f2bc6adad753206",
+    "printing-p2/parts/camera-front-mm.stl": "9e88d90c25bfd034652ad6ed5d7eb724707072a8b1b147fac0cb31cc7ff8cbc2",
+    "printing-p2/parts/camera-rear-mm.stl": "ebed80df8021485061dfbbc41f177a031c066d71b7bfa7c4910698d21a24687e",
+    "printing-p1/parts/lower-collector-mm.stl": "8ba0f1dbc628b3df4cca09cc1812102ff9e0f7289758df70083856e4f107d958",
+    "printing-p2/parts/servo-cradle-mm.stl": "1c766efa9f9138618d20d112f0fb5412ef667eaae47b1397d7e28727d546bd58",
+    "printing-p2/parts/limit-closed-seat-mm.stl": "61a9fba1a7f4cd0b961f6bc68fc28e509d3d3d8f813ce879588ac72e47fbbe71",
+    "printing-p2/parts/limit-open-seat-mm.stl": "643b78644e201ffd74011d7d71fb481243b070319cb9c6c7f595610a53215da4",
+    "printing-p2/parts/gate-limit-flag-mm.stl": "819f60ea67008a9b52d4073550d50b804eb05b1240dddb58f5bbc9aa9136bf93"
+  }
+}

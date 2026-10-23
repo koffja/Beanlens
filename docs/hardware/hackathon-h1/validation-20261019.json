@@ -1,0 +1,129 @@
+{
+  "date": "2026-10-19",
+  "revision": "H1",
+  "count": 28,
+  "checks": [
+    {
+      "check": "30 unique BOM groups with unknown prices left null",
+      "passed": true
+    },
+    {
+      "check": "All drawing objects resolve to H1 BOM IDs",
+      "passed": true
+    },
+    {
+      "check": "50 unique drawing objects",
+      "passed": true
+    },
+    {
+      "check": "Single camera/lane/BOX/manual static scope",
+      "passed": true
+    },
+    {
+      "check": "C6/weight/IR/PBT/network/dual pairing absent",
+      "passed": true
+    },
+    {
+      "check": "No long rod/rail hidden in geometry",
+      "passed": true
+    },
+    {
+      "check": "12 profile members with460x4/200x4/180x4",
+      "passed": true
+    },
+    {
+      "check": "Stock7x460+2x400 needs no new profiles",
+      "passed": true
+    },
+    {
+      "check": "3 fixed platforms, no weighing hardware",
+      "passed": true
+    },
+    {
+      "check": "60 face length and35deg projected run/rise",
+      "passed": true
+    },
+    {
+      "check": "Sides provide support to level Z189 and14high wall",
+      "passed": true
+    },
+    {
+      "check": "Working/base apertures overlap bean drop center",
+      "passed": true
+    },
+    {
+      "check": "Closed gate covers outlet and has0.5mm nominal floor gap",
+      "passed": true
+    },
+    {
+      "check": "90degree open gate clears chute and rear guard",
+      "passed": true
+    },
+    {
+      "check": "PP3 stock200 square has nonoverlapping3mm nesting",
+      "passed": true
+    },
+    {
+      "check": "PP3 blank separations>=3mm",
+      "passed": true
+    },
+    {
+      "check": "BOX PWM5 isGPIO25/J10pin1",
+      "passed": true
+    },
+    {
+      "check": "New limits and enable are GPIO24/23/22",
+      "passed": true
+    },
+    {
+      "check": "KEY0/1 are34/35, KEY2reserved",
+      "passed": true
+    },
+    {
+      "check": "Schematic provenance hash matches untouched vendor file",
+      "passed": true
+    },
+    {
+      "check": "Drawing angles not silently treated as calibrated pulses",
+      "passed": true
+    },
+    {
+      "check": "24/5/6V and45.25W/60.25W budgets agree",
+      "passed": true
+    },
+    {
+      "check": "3.3V GPIO translated by5V AHCT buffer",
+      "passed": true
+    },
+    {
+      "check": "6 drawing pages and supplementary PP stock SVG parse",
+      "passed": true
+    },
+    {
+      "check": "36 local references resolve",
+      "passed": true
+    },
+    {
+      "check": "Six A3 landscape PDF pages",
+      "passed": true
+    },
+    {
+      "check": "PDF includes actual board PWM and supply models",
+      "passed": true
+    },
+    {
+      "check": "68 full-version artifacts unchanged",
+      "passed": true
+    }
+  ],
+  "missing_links": [],
+  "full_version_changed": [],
+  "not_verified": [
+    "Board PWM/FPIOA/firmware",
+    "Real model conversion and KPU classification",
+    "Optics/illumination/focus",
+    "Mechanical/weld/servo endpoints",
+    "Electrical voltage/thermal/limit reliability"
+  ],
+  "scope": "Document and simulation checks only"
+}

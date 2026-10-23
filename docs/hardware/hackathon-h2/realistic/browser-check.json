@@ -1,0 +1,494 @@
+{
+  "date": "2026-10-21",
+  "kind": "host_browser_and_geometry_not_hardware_or_optical_validation",
+  "checks": [
+    {
+      "name": "offline_paused_two_cameras_one_horn",
+      "pass": true,
+      "detail": {
+        "time": 0,
+        "playing": false,
+        "view": "mechanism",
+        "gateAngle": 0,
+        "beanVisible": false,
+        "bean": [
+          110,
+          304,
+          195
+        ],
+        "chuteEnds": [
+          [
+            110,
+            220,
+            116.00000000000001
+          ],
+          [
+            110,
+            263.7065244499497,
+            178.4193857748212
+          ]
+        ],
+        "cameraCount": 2,
+        "hornCount": 1,
+        "stationaryPair": false,
+        "opticalObstructions": [
+          [],
+          []
+        ],
+        "optics": {
+          "upper": [
+            110,
+            116.5,
+            318.05155653657283
+          ],
+          "lower": [
+            110,
+            116.5,
+            138.05155653657283
+          ],
+          "station": [
+            110,
+            116.5,
+            228.05155653657283
+          ],
+          "glassLength": 76.2,
+          "glassThickness": 1.1,
+          "glassRun": 62.41938577482118
+        },
+        "meshCount": 278,
+        "frameVisible": false,
+        "shieldVisible": false,
+        "geometrySource": "../design-h2.json",
+        "appearance": "reconstructed_not_vendor_cad"
+      }
+    },
+    {
+      "name": "glass_surface_matches_calculated_35deg",
+      "pass": true,
+      "detail": [
+        [
+          110,
+          220,
+          116.00000000000001
+        ],
+        [
+          110,
+          263.7065244499497,
+          178.4193857748212
+        ]
+      ]
+    },
+    {
+      "name": "both_central_sight_lines_clear_of_opaque_parts",
+      "pass": true,
+      "detail": [
+        [],
+        []
+      ]
+    },
+    {
+      "name": "same_stationary_bean_during_A_and_B",
+      "pass": true,
+      "detail": {
+        "a": {
+          "time": 5.7,
+          "playing": false,
+          "view": "mechanism",
+          "gateAngle": 0,
+          "beanVisible": true,
+          "bean": [
+            110,
+            228.0516,
+            123.5
+          ],
+          "chuteEnds": [
+            [
+              110,
+              220,
+              116.00000000000001
+            ],
+            [
+              110,
+              263.7065244499497,
+              178.4193857748212
+            ]
+          ],
+          "cameraCount": 2,
+          "hornCount": 1,
+          "stationaryPair": true,
+          "opticalObstructions": [
+            [],
+            []
+          ],
+          "optics": {
+            "upper": [
+              110,
+              116.5,
+              318.05155653657283
+            ],
+            "lower": [
+              110,
+              116.5,
+              138.05155653657283
+            ],
+            "station": [
+              110,
+              116.5,
+              228.05155653657283
+            ],
+            "glassLength": 76.2,
+            "glassThickness": 1.1,
+            "glassRun": 62.41938577482118
+          },
+          "meshCount": 301,
+          "frameVisible": false,
+          "shieldVisible": false,
+          "geometrySource": "../design-h2.json",
+          "appearance": "reconstructed_not_vendor_cad"
+        },
+        "b": {
+          "time": 7.2,
+          "playing": false,
+          "view": "mechanism",
+          "gateAngle": 0,
+          "beanVisible": true,
+          "bean": [
+            110,
+            228.0516,
+            123.5
+          ],
+          "chuteEnds": [
+            [
+              110,
+              220,
+              116.00000000000001
+            ],
+            [
+              110,
+              263.7065244499497,
+              178.4193857748212
+            ]
+          ],
+          "cameraCount": 2,
+          "hornCount": 1,
+          "stationaryPair": true,
+          "opticalObstructions": [
+            [],
+            []
+          ],
+          "optics": {
+            "upper": [
+              110,
+              116.5,
+              318.05155653657283
+            ],
+            "lower": [
+              110,
+              116.5,
+              138.05155653657283
+            ],
+            "station": [
+              110,
+              116.5,
+              228.05155653657283
+            ],
+            "glassLength": 76.2,
+            "glassThickness": 1.1,
+            "glassRun": 62.41938577482118
+          },
+          "meshCount": 301,
+          "frameVisible": false,
+          "shieldVisible": false,
+          "geometrySource": "../design-h2.json",
+          "appearance": "reconstructed_not_vendor_cad"
+        }
+      }
+    },
+    {
+      "name": "pair_before_release",
+      "pass": true
+    },
+    {
+      "name": "cutaway_toggle_does_not_change_geometry",
+      "pass": true
+    },
+    {
+      "name": "gate_open_90deg",
+      "pass": true,
+      "detail": {
+        "time": 12.6,
+        "playing": false,
+        "view": "mechanism",
+        "gateAngle": 90,
+        "beanVisible": true,
+        "bean": [
+          110,
+          172.99999999999997,
+          91.49999999999997
+        ],
+        "chuteEnds": [
+          [
+            110,
+            220,
+            116.00000000000001
+          ],
+          [
+            110,
+            263.7065244499497,
+            178.4193857748212
+          ]
+        ],
+        "cameraCount": 2,
+        "hornCount": 1,
+        "stationaryPair": false,
+        "opticalObstructions": [
+          [],
+          []
+        ],
+        "optics": {
+          "upper": [
+            110,
+            116.5,
+            318.05155653657283
+          ],
+          "lower": [
+            110,
+            116.5,
+            138.05155653657283
+          ],
+          "station": [
+            110,
+            116.5,
+            228.05155653657283
+          ],
+          "glassLength": 76.2,
+          "glassThickness": 1.1,
+          "glassRun": 62.41938577482118
+        },
+        "meshCount": 299,
+        "frameVisible": false,
+        "shieldVisible": false,
+        "geometrySource": "../design-h2.json",
+        "appearance": "reconstructed_not_vendor_cad"
+      }
+    },
+    {
+      "name": "rear_release_keeps_bean_behind_camera",
+      "pass": true,
+      "detail": {
+        "time": 13.3,
+        "playing": false,
+        "view": "mechanism",
+        "gateAngle": 90,
+        "beanVisible": true,
+        "bean": [
+          110,
+          135.73999999999995,
+          75
+        ],
+        "chuteEnds": [
+          [
+            110,
+            220,
+            116.00000000000001
+          ],
+          [
+            110,
+            263.7065244499497,
+            178.4193857748212
+          ]
+        ],
+        "cameraCount": 2,
+        "hornCount": 1,
+        "stationaryPair": false,
+        "opticalObstructions": [
+          [],
+          []
+        ],
+        "optics": {
+          "upper": [
+            110,
+            116.5,
+            318.05155653657283
+          ],
+          "lower": [
+            110,
+            116.5,
+            138.05155653657283
+          ],
+          "station": [
+            110,
+            116.5,
+            228.05155653657283
+          ],
+          "glassLength": 76.2,
+          "glassThickness": 1.1,
+          "glassRun": 62.41938577482118
+        },
+        "meshCount": 299,
+        "frameVisible": false,
+        "shieldVisible": false,
+        "geometrySource": "../design-h2.json",
+        "appearance": "reconstructed_not_vendor_cad"
+      }
+    },
+    {
+      "name": "slow_close_after_bean_in_cup",
+      "pass": true,
+      "detail": {
+        "time": 16,
+        "playing": false,
+        "view": "mechanism",
+        "gateAngle": 47,
+        "beanVisible": true,
+        "bean": [
+          110,
+          32,
+          75
+        ],
+        "chuteEnds": [
+          [
+            110,
+            220,
+            116.00000000000001
+          ],
+          [
+            110,
+            263.7065244499497,
+            178.4193857748212
+          ]
+        ],
+        "cameraCount": 2,
+        "hornCount": 1,
+        "stationaryPair": false,
+        "opticalObstructions": [
+          [],
+          []
+        ],
+        "optics": {
+          "upper": [
+            110,
+            116.5,
+            318.05155653657283
+          ],
+          "lower": [
+            110,
+            116.5,
+            138.05155653657283
+          ],
+          "station": [
+            110,
+            116.5,
+            228.05155653657283
+          ],
+          "glassLength": 76.2,
+          "glassThickness": 1.1,
+          "glassRun": 62.41938577482118
+        },
+        "meshCount": 299,
+        "frameVisible": false,
+        "shieldVisible": false,
+        "geometrySource": "../design-h2.json",
+        "appearance": "reconstructed_not_vendor_cad"
+      }
+    },
+    {
+      "name": "cycle_ends_closed",
+      "pass": true
+    },
+    {
+      "name": "restart_after_completion",
+      "pass": true
+    },
+    {
+      "name": "pause_holds",
+      "pass": true
+    },
+    {
+      "name": "whole_view_frame",
+      "pass": true
+    },
+    {
+      "name": "removable_shield_toggle",
+      "pass": true
+    },
+    {
+      "name": "exploded_mode_paused_and_closed",
+      "pass": true,
+      "detail": {
+        "time": 0,
+        "playing": false,
+        "view": "parts",
+        "gateAngle": 0,
+        "beanVisible": false,
+        "bean": [
+          110,
+          304,
+          195
+        ],
+        "chuteEnds": [
+          [
+            80.00065112701637,
+            259.9991318306449,
+            116.00000000000001
+          ],
+          [
+            80.00065112701637,
+            303.7056562805946,
+            178.4193857748212
+          ]
+        ],
+        "cameraCount": 2,
+        "hornCount": 1,
+        "stationaryPair": false,
+        "opticalObstructions": [
+          [],
+          [
+            "H13"
+          ]
+        ],
+        "optics": {
+          "upper": [
+            110,
+            116.5,
+            318.05155653657283
+          ],
+          "lower": [
+            110,
+            116.5,
+            138.05155653657283
+          ],
+          "station": [
+            110,
+            116.5,
+            228.05155653657283
+          ],
+          "glassLength": 76.2,
+          "glassThickness": 1.1,
+          "glassRun": 62.41938577482118
+        },
+        "meshCount": 273,
+        "frameVisible": false,
+        "shieldVisible": false,
+        "geometrySource": "../design-h2.json",
+        "appearance": "reconstructed_not_vendor_cad"
+      }
+    },
+    {
+      "name": "mobile_no_horizontal_overflow",
+      "pass": true
+    },
+    {
+      "name": "no_page_errors",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "no_network_requests",
+      "pass": true,
+      "detail": []
+    }
+  ],
+  "errors": [],
+  "requests": []
+}

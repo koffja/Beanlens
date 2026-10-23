@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="light"><title>BeanLens H1 · 拟真运行演示</title>
+<link rel="icon" href="data:,"><link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header><a class="brand" href="../README.md" aria-label="BeanLens H1资料"><span class="beanmark"></span>BeanLens <small>豆鉴</small></a><span class="edition">H1 比赛原型 <span>／</span> 拟真教学动画</span><a class="docs" href="../bom-h1.html" target="_blank">对照采购表 ↗</a></header>
+<main>
+ <section class="viewer" aria-label="三维演示">
+  <div class="viewbar"><div class="tabs" role="group" aria-label="观看方式"><button class="active" data-view="mechanism" aria-pressed="true">机构特写</button><button data-view="whole" aria-pressed="false">整机装配</button><button data-view="parts" aria-pressed="false">部件拆解</button></div><button id="resetView" class="textbutton">恢复视角 ↺</button></div>
+  <div id="stage"><div id="loading">正在准备三维模型…</div><div id="labels" aria-hidden="true"></div><div class="stage-note" id="viewNote">槽体固定 · 只有一只舵臂带挡片转动</div><div class="zoom"><button id="zoomIn" aria-label="放大模型">＋</button><button id="zoomOut" aria-label="缩小模型">−</button></div><div class="gesture">拖动旋转 · 滚轮缩放 · 点击部件看说明</div><div class="angle"><span id="gateAngle">0°</span><small>挡片相对打开角</small></div></div>
+  <div class="options"><label><input id="showLabels" type="checkbox" checked> 元件名称</label><label><input id="showShield" type="checkbox"> 显示遮光片</label><label><input id="showWires" type="checkbox" checked> 线束走向</label><span id="viewScale">沿用 H1 相对尺寸</span></div>
+  <div class="transport"><button id="play" class="primary" aria-label="播放动画">▶ 播放演示</button><button id="restart" aria-label="从头播放">↺ 重播</button><label class="speed">速度 <select id="speed"><option value="0.5">0.5×</option><option value="1" selected>1×</option><option value="1.5">1.5×</option></select></label><span id="time">00.0 / 18.0 s</span></div>
+  <label class="timeline-label" for="timeline">演示进度</label><input type="range" id="timeline" min="0" max="18" step="0.01" value="0" aria-label="演示进度，秒">
+  <nav class="steps" aria-label="运行步骤"><button data-time="0" class="active"><b>1</b>等待投豆</button><button data-time="2.5"><b>2</b>单颗停稳</button><button data-time="5"><b>3</b>拍照识别</button><button data-time="8.2"><b>4</b>结果保存</button><button data-time="10.5"><b>5</b>侧摆放豆</button><button data-time="15"><b>6</b>空槽缓关</button></nav>
+ </section>
+ <aside>
+  <div class="chapter"><span class="live-dot"></span><span id="phaseIndex">01 / 06</span><small>预设流程演示</small></div><h1 id="phaseTitle">等你放入一颗豆</h1><p class="phase-copy" id="phaseCopy">人工从短槽上方放入一颗生豆。这里没有大料斗，也没有自动逐豆送料器。</p>
+  <div class="screen-heading"><span>K230D BOX 主屏</span><small>画面示意</small></div><canvas id="screenPreview" width="640" height="480" aria-label="BOX屏幕演示画面"></canvas>
+  <div class="component" aria-live="polite"><span id="partId">H03 · H10 · H11 · H12</span><h2 id="partName">先看清这四件东西</h2><p id="partCopy">黑色舵机机身锁在固定支架上；银色直舵臂套在输出轴上，再经小L角片带动白色PP挡片。固定架不转，舵臂只用一只。</p><button id="explainServo" class="textbutton">聚焦舵机与挡片 →</button></div>
+  <p class="boundary">外形重建 ≠ 原厂CAD。相机板、支架孔位及防转连接待实配；动画时长与角度不代表实测。</p>
+  <details><summary>本页显示了什么？</summary><p>黑2020框架、三层海洋板、单GC2093、两条常亮灯、MG996R、固定架、单舵臂、L角片、PP单槽/挡片、两个限位、BOX与收豆杯。机外电源沿用原接线图。</p><p>特写隐藏上部框架和相机平台，以便看清内部。展示的分类为预设结果；自动播放代演人工投豆与按KEY0。真实机器须先确认关位，再允许投豆。</p><a href="README.md">外形依据与验证范围 ↗</a> · <a href="../05-signals.svg">信号接线 ↗</a></details>
+ </aside>
+</main>
+<footer><span>单摄 / 单槽 / 人工逐颗 / 静止拍照 / 侧摆放走</span><span>H1 · 2026.10.21</span></footer>
+<script src="vendor/three-0.160.1.min.js"></script><script src="model.js"></script><script src="app.js"></script>
+</body></html>

@@ -1,0 +1,291 @@
+{
+  "revision": "H3-P1",
+  "date": "2026-10-22",
+  "unit": "mm",
+  "parts": [
+    {
+      "name": "upper-hopper-mm",
+      "main_print_part": true,
+      "quantity": 1,
+      "files": {
+        "stl": "parts/upper-hopper-mm.stl",
+        "step": "parts/upper-hopper-mm.step",
+        "3mf": "parts/upper-hopper-mm.3mf"
+      },
+      "print_bounds_mm": [
+        104.0000002,
+        104.0000002,
+        100.50000019999999
+      ],
+      "print_min_xyz": [
+        -52.0,
+        -52.0,
+        -3.671108026640326e-16
+      ],
+      "volume_mm3": 63286.55002338001,
+      "faces": 4010,
+      "watertight": true,
+      "winding_consistent": true,
+      "solid_count": 1,
+      "material_candidate": "PETG",
+      "estimated_solid_equivalent_g_at_1_27": 80.37391852969262,
+      "slicer_mass_not_computed": true
+    },
+    {
+      "name": "upper-adapter-mm",
+      "main_print_part": true,
+      "quantity": 1,
+      "files": {
+        "stl": "parts/upper-adapter-mm.stl",
+        "step": "parts/upper-adapter-mm.step",
+        "3mf": "parts/upper-adapter-mm.3mf"
+      },
+      "print_bounds_mm": [
+        50.0,
+        85.0,
+        16.0
+      ],
+      "print_min_xyz": [
+        -25.0,
+        -25.0,
+        0.0
+      ],
+      "volume_mm3": 16135.522243968668,
+      "faces": 4536,
+      "watertight": true,
+      "winding_consistent": true,
+      "solid_count": 1,
+      "material_candidate": "PETG",
+      "estimated_solid_equivalent_g_at_1_27": 20.49211324984021,
+      "slicer_mass_not_computed": true
+    },
+    {
+      "name": "lower-collector-mm",
+      "main_print_part": true,
+      "quantity": 1,
+      "files": {
+        "stl": "parts/lower-collector-mm.stl",
+        "step": "parts/lower-collector-mm.step",
+        "3mf": "parts/lower-collector-mm.3mf"
+      },
+      "print_bounds_mm": [
+        90.0000002,
+        90.0000002,
+        60.00000020000003
+      ],
+      "print_min_xyz": [
+        -45.0,
+        -45.0,
+        9.999999406318238e-08
+      ],
+      "volume_mm3": 51507.984920244504,
+      "faces": 3298,
+      "watertight": true,
+      "winding_consistent": true,
+      "solid_count": 1,
+      "material_candidate": "PETG",
+      "estimated_solid_equivalent_g_at_1_27": 65.41514084871052,
+      "slicer_mass_not_computed": true
+    },
+    {
+      "name": "test-male-mm",
+      "main_print_part": false,
+      "quantity": 1,
+      "files": {
+        "stl": "fit-tests/test-male-mm.stl",
+        "step": "fit-tests/test-male-mm.step",
+        "3mf": "fit-tests/test-male-mm.3mf"
+      },
+      "print_bounds_mm": [
+        22.8,
+        18.8,
+        8.0
+      ],
+      "print_min_xyz": [
+        -11.399999618530273,
+        -9.399999618530273,
+        0.0
+      ],
+      "volume_mm3": 1408.724954386379,
+      "faces": 672,
+      "watertight": true,
+      "winding_consistent": true,
+      "solid_count": 1,
+      "material_candidate": "PETG",
+      "estimated_solid_equivalent_g_at_1_27": 1.7890806920707014,
+      "slicer_mass_not_computed": true
+    },
+    {
+      "name": "test-socket-mm",
+      "main_print_part": false,
+      "quantity": 1,
+      "files": {
+        "stl": "fit-tests/test-socket-mm.stl",
+        "step": "fit-tests/test-socket-mm.step",
+        "3mf": "fit-tests/test-socket-mm.3mf"
+      },
+      "print_bounds_mm": [
+        28.0,
+        24.0,
+        6.0
+      ],
+      "print_min_xyz": [
+        -14.0,
+        -12.0,
+        0.0
+      ],
+      "volume_mm3": 1355.239644737232,
+      "faces": 1312,
+      "watertight": true,
+      "winding_consistent": true,
+      "solid_count": 1,
+      "material_candidate": "PETG",
+      "estimated_solid_equivalent_g_at_1_27": 1.7211543488162848,
+      "slicer_mass_not_computed": true
+    }
+  ],
+  "dimensions_source": "source-design-h3.json",
+  "source_design_sha256": "9d9aa4a6514d227241e2f28e496645697f8411c1d65576b38891a7cfedc5ce16",
+  "parameters": "parameters.json",
+  "cadquery_version": "2.7.0",
+  "python_version": "3.12.13",
+  "validation": "host_CAD_mesh_checks_only_not_printed_or_load_tested",
+  "checks": [
+    {
+      "name": "upper_body_adapter_no_solid_intersection",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "socket_axial_clearance_mm",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "upper_body_below_existing_top_ring",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "adapter_does_not_touch_gate_closed_or_open",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "lower_collector_fits_worktable_60mm_hole",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "clearance_below_observation_band",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "upper_body_18x14_passage_open",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "adapter_18x14_passage_open",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "lower_30x30_outlet_open",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "upper_mouth_80x80_unchanged",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "lower_mouth_and_height_unchanged",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "upper-hopper-mm_STEP_roundtrip",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "upper-adapter-mm_STEP_roundtrip",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "lower-collector-mm_STEP_roundtrip",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "test-male-mm_STEP_roundtrip",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "test-socket-mm_STEP_roundtrip",
+      "pass": true,
+      "detail": null
+    }
+  ],
+  "mount_holes_global_mm": {
+    "top_ring_new_holes": [
+      [
+        64,
+        74
+      ],
+      [
+        64,
+        166
+      ],
+      [
+        156,
+        74
+      ],
+      [
+        156,
+        166
+      ]
+    ],
+    "upper_adapter_existing_guide_pattern": [
+      [
+        90,
+        105
+      ],
+      [
+        90,
+        165
+      ],
+      [
+        130,
+        105
+      ],
+      [
+        130,
+        165
+      ]
+    ],
+    "lower_worktable_new_holes": [
+      [
+        73,
+        83
+      ],
+      [
+        73,
+        157
+      ],
+      [
+        147,
+        83
+      ],
+      [
+        147,
+        157
+      ]
+    ]
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "machine": "A1",
+  "job": "01-upper-hopper",
+  "return_code": 0,
+  "output": "jobs/A1/01-upper-hopper.gcode.3mf",
+  "exists": true,
+  "bytes": 1041208,
+  "slicer_result": {
+    "error_string": "Success.",
+    "export_time": 429,
+    "layer_height": 0.20000000298023224,
+    "plate_index": 0,
+    "prepare_time": 9,
+    "return_code": 0,
+    "sliced_plates": [
+      {
+        "feature_type_times": {
+          "Bottom surface": 210.33836364746094,
+          "Bridge": 282.0710754394531,
+          "Brim": 213.2607879638672,
+          "Custom": 381.52630615234375,
+          "Flush": 25.0,
+          "Gap infill": 1.325982928276062,
+          "Inner wall": 4743.27978515625,
+          "Internal solid infill": 942.0036010742188,
+          "Outer wall": 3462.19921875,
+          "Sparse infill": 414.068115234375,
+          "Top surface": 198.96629333496094,
+          "Travel": 2291.213623046875,
+          "Undefined": 2274.264892578125
+        },
+        "filament_change_times": 0,
+        "filaments": [
+          {
+            "filament_id": "GFG02",
+            "id": 1,
+            "main_used_g": 70.9671859741211,
+            "total_used_g": 70.9671859741211
+          }
+        ],
+        "generate_support_material_time": 18,
+        "id": 1,
+        "infill_time": 94,
+        "layer_filament_change": 0,
+        "main_predication": 12732.8720703125,
+        "make_perimeters_time": 123,
+        "obj_cached_cnt": 0,
+        "sliced_time": 609,
+        "sliced_time_with_cache": 357,
+        "total_predication": 13147.4501953125,
+        "triangle_count": 4010,
+        "warning_message": ""
+      }
+    ],
+    "sparse_infill_density": 25.0,
+    "wall_loops": 5
+  },
+  "printer_model_id": "N2S",
+  "identity_metadata_completed_from_official_profile": true
+}
