@@ -13,10 +13,36 @@
 
 1. `docs/handoff/HANDOFF-20261012.md`：会话交接、工作状态与下一步。
 2. `docs/README.md`：资料位置和优先级。
-3. `docs/hardware/v4.4/beanlens-v4-handbook.html`：最新硬件规划；图纸与 BOM 同目录。
-4. `config/hardware-baseline.json`：待实机核验的板卡、引脚与电气基线。
+3. `docs/hardware/hackathon-h3/assembly-p4/README.md`：当前比赛机械装配；完整版V4.12与V4.4历史资料保留。
+4. `config/hardware-hackathon-h3-p4.json`：比赛待实机核验基线，电气沿用H3；完整版仍用`config/hardware-baseline.json`。
 5. `docs/firmware/BRINGUP.md`、`docs/firmware/PROTOCOL-v0.1-DRAFT.md`：分阶段验收与协议草案。
 6. 修改对应固件前读其目录内 `AGENTS.md`；修改训练流程前读 `docs/ml/TRAINING-BASELINE.md`。
+
+## 当前比赛设计方向：H3 / P4打印整合（2026-10-22）
+
+- H3-P4当前机械装配（2026-10-22）：`docs/hardware/hackathon-h3/assembly-p4/README.md`、交互整机／爆炸／14连接、78行BOM、A3十页、纸样与独立`config/hardware-hackathon-h3-p4.json`。9件P1/P2及P3切片保持；顶环／底板改平连接片，底板Z22、BOX承板Y20，工作台用40宽角铝、相机木条用20宽；保留P2后梁／承托／舵机铝板；遮光片开木条槽、右侧与后背景避舵机。13段型材库存足够。当前机械以P4为准，不混用旧底板孔、旧PP上管或旧相机架；电气候选GPIO／动作基线不改。实体、行程与纸样主机检查不等于实打／承载／触发或上板验收；原文件和固件保留。
+
+- H3拓竹打印P3（2026-10-22）：见`docs/hardware/hackathon-h3/printing-bambu-p3/README.md`与`job-spec.json`。用户确认A1、X2D、X1 Carbon、P2S、H2D，原厂标准0.4喷嘴、Bambu PETG HF、纹理PEI。Studio 02.08.02.61实际切片，五机型各6盘，9主件＋试片；P1/P2几何／装配修订保留。文件只用于匹配机型／材料／板材的首次试打；00先试配、跨机交叉试插。主机检查不代表实打或固件验证，不自行发送或开机打印。
+
+- H3-P2支架打印／安装修订（2026-10-22）：见`docs/hardware/hackathon-h3/printing-p2/README.md`与`parameters.json`。5件支架＋1只闸片限位旗片，毫米STL/3MF/STEP；舵机耳孔／相机PCB／SS-01GL触发量待实配。采用P2时60方铝板移至X153/Y159，后承托片改68×80并开20×30避让窗，新增180mm后2020横梁，避开旧示意干涉；轴心(170,180,331)和光轴Z260不变。P1漏斗文件及H3原件保留；P2配套修配以其说明为准，不混用旧承托片／旗片。CAD检查不代表实打／承载或固件验收。
+
+- H3-P1漏斗打印备选（2026-10-22）：见`docs/hardware/hackathon-h3/printing-p1/README.md`与`parameters.json`。上斗身＋接座＋下接豆斗3件，PETG候选最小壁2.4，220平台；接座叠在原PP上盖上，不改闸片滑缝。原顶环保留、新增安装孔；下斗法兰固定原60方孔木台。CAD/网格通过不代表已打印，先试插口试片；PP焊接版主文档/固件保留。
+
+- 先读`docs/hardware/hackathon-h3/README.md`与`config/hardware-hackathon-h3.json`。用户要求接近原豆路：顶入豆、前后双摄水平相向，仅五槽缩单槽、闸门缩小。H3为单槽PP夹层导向、小铝闸片＋一只R16舵臂/50mm球心距双球头杆，保留MG996R；不使用H2透明托片/上下相机。
+- 比赛仍人工每次一颗；先准备两路采集再开上闸，豆在下方窗口下落抓拍，随后下斗进同一杯。缺图/糊图/多豆/配对不明须复核并停止下一循环，不写成失败后仍保持本豆在闸上。H3无C6/称重/红外/PBT/第二屏/联网。
+- BOX候选引脚沿用H1原理图来源，舵机独立UBEC6V和单向缓冲。先核已装固件短曝光/两CSI能力，不能照新通用API假定旧BOX支持。H1/H2与完整版保留，未改用户`firmware/k230d/bringup/`或任何固件；H3动画非实机验证。
+
+## 保留比赛单摄方案：H1（2026-10-19）
+
+- 用户已确认比赛精简版：单GC2093、单槽、人工逐颗投豆、静止拍照后MG996R侧摆放走，K230D BOX同时负责识别/主屏/动作。
+- 先读`docs/hardware/hackathon-h1/README.md`与`config/hardware-hackathon-h1.json`；H1不装C6、称重、红外对射、PBT、第二屏或联网。以下“两板分工”与`config/hardware-baseline.json`继续保留作为完整版，不能拿C6引脚驱动BOX。
+- H1候选接线从已读BOX原理图派生：J10-1 GPIO25/PWM5；J10-2 GPIO24关限位；J10-3 GPIO23开限位；J10-4 GPIO22经NPN控制缓冲使能；KEY0/1=GPIO34/35；实际针序/固件复用/端点须上板核验。舵机仍独立UBEC6V，GPIO3.3V经单向缓冲。
+- 本轮交付仅设计资料/教学动画，未改固件。用户已有`firmware/k230d/bringup/`保持不动；完整版图纸/数据不覆盖。
+
+## 双摄比赛备选 H2（2026-10-21）
+
+- 用户要求另给双摄版本，见`docs/hardware/hackathon-h2/README.md`与`config/hardware-hackathon-h2.json`。采用上下两GC2093、可拆玻璃托片、人工单颗静止依次取A/B图、MG996R侧摆、后接豆斜槽；其余比赛简化保留。
+- H2为独立设计，不覆盖H1已确认配置或完整版；相机口映射、透片成像、净空和配对推理均待实机，本轮不改固件。H2使用H1的BOX候选引脚，不使用C6引脚。
 
 ## 两板分工
 

@@ -54,3 +54,9 @@ __pycache__/
 
 # Model conversion products (weights copy, ONNX, kmodel, manifest)
 /output/kmodel/
+
+# Agent workspace (session memory, not project deliverables)
+/.workbuddy/
+
+# Unzipped duplicates of published hardware kits (zip kept, copy not needed)
+/docs/hardware/hackathon-h3/assembly-p4/BeanLens-H3-P4/
