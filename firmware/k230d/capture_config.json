@@ -1,0 +1,17 @@
+{
+  "csi1": {
+    "width": 640,
+    "height": 480,
+    "fps": 30
+  },
+  "csi2": {
+    "width": 640,
+    "height": 480,
+    "fps": 30
+  },
+  "roi_queue_max": 3,
+  "roi_size_max": [320, 320],
+  "time_pair_tolerance_ms": 66,
+  "motion_threshold": 25,
+  "trigger_cooldown_ms": 50
+}

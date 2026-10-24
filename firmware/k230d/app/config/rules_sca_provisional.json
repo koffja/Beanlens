@@ -1,0 +1,41 @@
+{
+  "rule_version": "sca-provisional",
+  "equivalents": {
+    "full_black": 1,
+    "full_sour": 1,
+    "pod_dried_cherry": 1,
+    "fungus": 1,
+    "foreign_matter": 1,
+    "insect_severe": 5,
+    "partial_black": 3,
+    "partial_sour": 3,
+    "parchment": 5,
+    "floater": 5,
+    "immature": 5,
+    "withered": 5,
+    "shell": 5,
+    "broken_chipped": 5,
+    "hull_husk": 5,
+    "insect_mild": 10
+  },
+  "category1": [
+    "full_black",
+    "full_sour",
+    "pod_dried_cherry",
+    "fungus",
+    "foreign_matter",
+    "insect_severe"
+  ],
+  "category2": [
+    "partial_black",
+    "partial_sour",
+    "parchment",
+    "floater",
+    "immature",
+    "withered",
+    "shell",
+    "broken_chipped",
+    "hull_husk",
+    "insect_mild"
+  ]
+}
