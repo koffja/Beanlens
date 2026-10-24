@@ -55,7 +55,7 @@ from media.media import *
 # sys 放在 media 的 * 导入之后：* 导入会覆盖 sys（kmodel_live_classify.py 实测 sys.print_exception 丢失）
 import sys
 
-MODE = "drop"                    # "focus"：对焦模式，只显示放大的框内画面和清晰度，不写存储；
+MODE = "focus"                    # "focus"：对焦模式，只显示放大的框内画面和清晰度，不写存储；
                                   # "drop"：落豆抓拍。先 focus 调好两个镜头，再改成 "drop"
 CAM_IDS = (1, 2)
 SENSOR_W, SENSOR_H = 1920, 1080   # 与 dual_camera_preview.py 一致
