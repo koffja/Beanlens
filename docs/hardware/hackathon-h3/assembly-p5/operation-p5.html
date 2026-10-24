@@ -1,0 +1,9 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>H3-P5 人工投豆流程</title><style>body{font:16px/1.7 system-ui;color:#294552;max-width:1050px;margin:30px auto;padding:0 20px;background:#edf2f5}h1{font-size:26px}a{color:#17677e}.step{background:white;border:1px solid #c5d6df;padding:18px;margin:14px 0;display:grid;grid-template-columns:55px 1fr;gap:15px}.num{font:30px ui-monospace;color:#278a91}h2{font-size:19px;margin:0 0 7px}p{margin:5px 0}.note{border-left:4px solid #b99048;padding:10px 16px;background:#fff}.nav{display:flex;gap:20px;flex-wrap:wrap}</style>
+<small>BEANLENS ／ H3-P5 ／ 2026.10.23</small><h1>一次手放一颗，两路下落抓拍</h1><p class="nav"><a href="beanlens-assembly-p5.html">打开拟真三维图，点“演示人工投豆”播放动画</a><a href="wiring-p5.svg">接线</a><a href="README.md">装配步骤</a></p>
+<p class="note">完全人工投豆，没有闸门、停豆托片或自动分选。双摄从左右水平相向拍摄；BOX显示、识别与准备状态。此页和三维动画均为流程设计，没有实现固件。</p>
+<div class="step"><span class="num">01</span><div><h2>先准备两路连续图像</h2><p>调焦、固定照明与短曝光，确认两路缓存可用。画面／准备状态异常时，人工先不放豆。仅有两个CSI插口不等于两路已经能同时采集。</p></div></div>
+<div class="step"><span class="num">02</span><div><h2>从顶部放入一颗</h2><p>上斗只导向，不装满一斗豆；一颗豆通过18×14颈口。投豆后先等结果，未完成本颗记录前不放下一颗。</p></div></div>
+<div class="step"><span class="num">03</span><div><h2>经过窗口时各取清楚帧</h2><p>光轴Z260，左右两摄对同一颗形成一对证据；按时间、轨迹和清晰度检查配对。双面不等于全部表面，也不等于硬件同步。</p></div></div>
+<div class="step"><span class="num">04</span><div><h2>豆落入同一杯，BOX显示结果</h2><p>下斗把豆送入普通收豆杯；没有称重、坏豆分选或追回机构。有效双图才能形成一次可靠计数。</p></div></div>
+<div class="step"><span class="num">05</span><div><h2>缺图／糊图时，人工暂停</h2><p>记录待复核，不能当成正常豆；本颗已经落杯，系统不能把它留在上闸。按需要标记整杯待复核，再检查曝光、相机和投豆间隔。</p></div></div>
+<p class="note">KEY1为软件停止与提示；不能机械阻挡已经投入的豆。动画可选“缺图”或“糊图”查看失败分支；演示时长和示例结果不代表实测性能。</p></html>

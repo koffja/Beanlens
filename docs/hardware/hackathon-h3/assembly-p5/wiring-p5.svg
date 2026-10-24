@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="820" viewBox="0 0 1280 820">
+<rect width="1280" height="820" fill="#f4f7f9"/><defs><marker id="arr" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto"><path d="M0 0L10 4L0 8" fill="#527d92"/></marker></defs>
+<g font-family="PingFang SC,Microsoft YaHei,sans-serif" fill="#294552">
+<text x="36" y="48" font-size="27" font-weight="bold">BeanLens H3-P5 · 完全人工投豆版接线</text><text x="36" y="79" font-size="15">2026-10-23｜无舵机、无闸门、无6V支路｜本图为设计，未替代实物端子／供电验收</text>
+<g stroke="#b7cad5" fill="white" stroke-width="1.5">
+<rect x="36" y="135" width="220" height="130" rx="6"/><rect x="310" y="135" width="215" height="130" rx="6"/>
+<rect x="585" y="135" width="235" height="130" rx="6"/><rect x="905" y="135" width="335" height="220" rx="6"/>
+<rect x="585" y="400" width="235" height="120" rx="6"/><rect x="905" y="430" width="150" height="105" rx="6"/><rect x="1090" y="430" width="150" height="105" rx="6"/>
+</g>
+<text x="56" y="170" font-size="20">YU2405 外置电源</text><text x="56" y="202" font-size="18">24V / 5A / 120W</text><text x="56" y="235" font-size="13">厂牌、插头与极性按实物</text>
+<text x="330" y="169" font-size="19">机外低压盒</text><text x="330" y="201" font-size="15">DC总开关 → 主4A保险</text><text x="330" y="230" font-size="14">+24V与GND分线端子</text>
+<text x="605" y="168" font-size="19">TPS5450成品板候选</text><text x="605" y="200" font-size="17">24V → 5.00V</text><text x="605" y="232" font-size="14">5V / 3A逻辑预算，SKU待核</text>
+<text x="929" y="169" font-size="21" font-weight="bold">正点原子 K230D BOX</text><text x="929" y="202" font-size="15">适配电源Type-C口，先核实物</text><text x="929" y="234" font-size="15">内置屏：双图／识别／准备状态</text><text x="929" y="266" font-size="14">KEY0准备／确认，KEY1提示暂停</text><text x="929" y="298" font-size="14">CSI1／CSI2的Sensor映射先实测</text><text x="929" y="329" font-size="14" font-weight="bold">J10本版不接外设</text>
+<path d="M256 185H310M525 185H585M820 185H905M550 185V453H585" fill="none" stroke="#bd7750" stroke-width="3"/>
+<path d="M256 248H310M525 248H585M820 248H885V213H905M570 248V493H585" fill="none" stroke="#647585" stroke-width="3"/>
+<text x="528" y="120" font-size="12">降压输入1.5A保险</text><text x="830" y="171" font-size="12">5V成品USB线</text>
+<text x="600" y="434" font-size="17">4段24V灯带并联</text><text x="600" y="466" font-size="15">各100mm目标，总≤8W预算</text><text x="600" y="497" font-size="13">正极经1A支路保险；负极回GND</text>
+<path d="M976 355V430M1160 355V430" fill="none" stroke="#527d92" stroke-width="3" marker-end="url(#arr)"/>
+<text x="922" y="392" font-size="13">配套CSI排线</text><text x="1101" y="392" font-size="13">配套CSI排线</text>
+<text x="924" y="466" font-size="17">GC2093右A</text><text x="924" y="498" font-size="14">P22原前座转向</text><text x="1107" y="466" font-size="17">GC2093左B</text><text x="1107" y="498" font-size="14">P23原后座转向</text>
+<text x="36" y="590" font-size="17" font-weight="bold">接线顺序</text><text x="36" y="621" font-size="15">① 断电核极性 → ② 降压空载量5.00V → ③ 成品USB线供BOX → ④ 断电插CSI → ⑤ 核双路图像后手投一颗。</text>
+<text x="36" y="661" font-size="15">相机通过兼容CSI接口供电，不接24V。0.75mm²电源线配压接端子；大电流不走杜邦，USB与主板电源针不并联供电。</text>
+<text x="36" y="701" font-size="15">本版不装UBEC、AHCT125、2N3904、外接限位或独立传感器；GPIO25/24/23/22没有本版执行器接线。</text>
+<text x="36" y="741" font-size="15">KEY1只让软件停止采集许可并提示人停投，不能阻挡已下落的豆。缺图／糊图记录待复核，不能算正常颗。</text>
+<text x="36" y="784" font-size="13" fill="#627d8b">26.75W＝5V×3A÷0.8＋灯8W，仅预算；电压、接口、电流、保险与温升须实测。图中保险沿用原低压配电包。</text>
+</g></svg>

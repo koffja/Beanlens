@@ -1,0 +1,412 @@
+{
+  "checks": [
+    {
+      "name": "valid_P13",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "valid_W01",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "valid_W03",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "valid_F05",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "valid_F06",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "valid_F07",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "valid_F08",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "valid_A01",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "valid_A02",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "valid_A03",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "valid_A04",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "valid_A09",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "valid_A10",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "valid_A11",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "valid_A12",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "valid_BCL1",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "valid_BST1",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "valid_BCL2",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "valid_BST2",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "valid_BCL3",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "valid_BST3",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "valid_BCL4",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "valid_BST4",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "valid_FC-X-011",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "valid_FC-Y-011",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "valid_FC-X-010",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "valid_FC-Y-010",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "valid_FC-X-001",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "valid_FC-Y-001",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "valid_FC-X-000",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "valid_FC-Y-000",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "valid_FC-X-111",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "valid_FC-Y-111",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "valid_FC-X-110",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "valid_FC-Y-110",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "valid_FC-X-101",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "valid_FC-Y-101",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "valid_FC-X-100",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "valid_FC-Y-100",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "valid_W02",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "valid_C01",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "valid_P11",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "valid_F01",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "valid_F02",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "valid_F03",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "valid_F04",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "valid_LA-FL",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "valid_LF-FL",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "valid_LA-FR",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "valid_LF-FR",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "valid_LA-BL",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "valid_LF-BL",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "valid_LA-BR",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "valid_LF-BR",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "valid_P22",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "valid_P23",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "valid_W04",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "valid_W04-A1",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "valid_W04-A2",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "valid_W05",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "valid_W05-A1",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "valid_W05-A2",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "fixed_material_clear",
+      "pass_": true,
+      "detail": []
+    },
+    {
+      "name": "print_unchanged_P11",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "print_unchanged_P13",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "print_unchanged_P22",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "print_unchanged_P23",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "camera_center_ray_A",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "camera_center_ray_B",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "manual_drop_center_clear",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "no_actuator_parts",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "four_prints",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "twelve_profiles",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "LED_clear_of_fastener_LED-FL_1",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "LED_clear_of_fastener_LED-FL_2",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "LED_clear_of_fastener_LED-FR_1",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "LED_clear_of_fastener_LED-FR_2",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "LED_clear_of_fastener_LED-BL_1",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "LED_clear_of_fastener_LED-BL_2",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "LED_clear_of_fastener_LED-BR_1",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "LED_clear_of_fastener_LED-BR_2",
+      "pass_": true,
+      "detail": null
+    }
+  ],
+  "clashes": [],
+  "host_only": true,
+  "physical_verified": false
+}

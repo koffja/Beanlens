@@ -1,0 +1,86 @@
+[
+  {
+    "id": "P11",
+    "file": "P11-upper-hopper-mm.stl",
+    "original": "docs/hardware/hackathon-h3/printing-p1/parts/upper-hopper-mm.stl",
+    "sha256": "e1505feaf54215db608e21b60faa60564dfa8e90b248463151c5b57479691bc3",
+    "geometry_changed": false
+  },
+  {
+    "id": "P11",
+    "file": "P11-upper-hopper-mm.3mf",
+    "original": "docs/hardware/hackathon-h3/printing-p1/parts/upper-hopper-mm.3mf",
+    "sha256": "3afdf5d5f994d37941b64151b24a6316ec7bc2ef1b101dcaf71d72384ac96184",
+    "geometry_changed": false
+  },
+  {
+    "id": "P11",
+    "file": "P11-upper-hopper-mm.step",
+    "original": "docs/hardware/hackathon-h3/printing-p1/parts/upper-hopper-mm.step",
+    "sha256": "28b34256d0d185a338e9dc46ac8a07a67dccce0e7324bc406c18d7a75150ace2",
+    "geometry_changed": false
+  },
+  {
+    "id": "P13",
+    "file": "P13-lower-collector-mm.stl",
+    "original": "docs/hardware/hackathon-h3/printing-p1/parts/lower-collector-mm.stl",
+    "sha256": "8ba0f1dbc628b3df4cca09cc1812102ff9e0f7289758df70083856e4f107d958",
+    "geometry_changed": false
+  },
+  {
+    "id": "P13",
+    "file": "P13-lower-collector-mm.3mf",
+    "original": "docs/hardware/hackathon-h3/printing-p1/parts/lower-collector-mm.3mf",
+    "sha256": "bc5191d7469543b1c673d5834b5d0567fededfdc52c52b4446afd0b496b8a483",
+    "geometry_changed": false
+  },
+  {
+    "id": "P13",
+    "file": "P13-lower-collector-mm.step",
+    "original": "docs/hardware/hackathon-h3/printing-p1/parts/lower-collector-mm.step",
+    "sha256": "59163ccf487dd989e5399d7f0aea09ec34b2447ea4e37f80487aa738b1e9ae57",
+    "geometry_changed": false
+  },
+  {
+    "id": "P22",
+    "file": "P22-camera-front-mm.stl",
+    "original": "docs/hardware/hackathon-h3/printing-p2/parts/camera-front-mm.stl",
+    "sha256": "9e88d90c25bfd034652ad6ed5d7eb724707072a8b1b147fac0cb31cc7ff8cbc2",
+    "geometry_changed": false
+  },
+  {
+    "id": "P22",
+    "file": "P22-camera-front-mm.3mf",
+    "original": "docs/hardware/hackathon-h3/printing-p2/parts/camera-front-mm.3mf",
+    "sha256": "bad165dbba0999afb883c17725b7f328ba2cf3f9025f8aafef837a106ec7a6d0",
+    "geometry_changed": false
+  },
+  {
+    "id": "P22",
+    "file": "P22-camera-front-mm.step",
+    "original": "docs/hardware/hackathon-h3/printing-p2/parts/camera-front-mm.step",
+    "sha256": "06b1f5ca635f4b865a3e9eea3efd1d645f06d6c1a3c99ea74b7029fe82358e4e",
+    "geometry_changed": false
+  },
+  {
+    "id": "P23",
+    "file": "P23-camera-rear-mm.stl",
+    "original": "docs/hardware/hackathon-h3/printing-p2/parts/camera-rear-mm.stl",
+    "sha256": "ebed80df8021485061dfbbc41f177a031c066d71b7bfa7c4910698d21a24687e",
+    "geometry_changed": false
+  },
+  {
+    "id": "P23",
+    "file": "P23-camera-rear-mm.3mf",
+    "original": "docs/hardware/hackathon-h3/printing-p2/parts/camera-rear-mm.3mf",
+    "sha256": "5399a42665b58881b833f7a339b17469e6a2373bc4062d0088c7de3e977f6bdf",
+    "geometry_changed": false
+  },
+  {
+    "id": "P23",
+    "file": "P23-camera-rear-mm.step",
+    "original": "docs/hardware/hackathon-h3/printing-p2/parts/camera-rear-mm.step",
+    "sha256": "d93f069cb458e4555aa1a5187541e85e111a6f74c1149f2f36430f55ce0c897d",
+    "geometry_changed": false
+  }
+]

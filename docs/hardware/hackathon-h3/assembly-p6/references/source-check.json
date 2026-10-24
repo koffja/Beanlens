@@ -1,0 +1,10 @@
+{
+  "source": "docs/【正点原子】DNK230D开发板资料盘(A盘)/3，原理图/ATK-DNK230D V1.0.pdf",
+  "sha256": "caa406fe42535de36d8d51b1cd3158c917569eb2748673e40780465272636a27",
+  "pages_used": [
+    1,
+    3
+  ],
+  "verified": "J7-1 GND / J7-2 VCC_5V; external J7 bypasses VBUS -> U5 MT9700",
+  "physical_test": false
+}

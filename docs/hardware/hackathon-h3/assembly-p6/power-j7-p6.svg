@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000"><rect width="1400" height="1000" fill="#f4f7f9"/><g font-family="PingFang SC,Microsoft YaHei,sans-serif" fill="#294552">
+<text x="38" y="48" font-size="27" font-weight="bold">H3-P6 · K230D BOX 用J7排针接5V</text><text x="38" y="81" font-size="15">原厂DNK230D V1.0原理图第3页：J7-1=GND，J7-2=VCC_5V；图示为脚号关系，不是实物朝向图</text>
+<g fill="white" stroke="#b7cad5" stroke-width="1.5"><rect x="38" y="145" width="260" height="180" rx="6"/><rect x="370" y="145" width="235" height="180" rx="6"/><rect x="700" y="145" width="640" height="420" rx="6"/></g>
+<text x="58" y="181" font-size="21">TPS5450候选成品板</text><text x="58" y="216" font-size="18">24V输入 → 调到5.00V</text><text x="58" y="253" font-size="16" fill="#b76b48">OUT+ 5V</text><text x="58" y="292" font-size="16">OUT− GND</text>
+<text x="390" y="180" font-size="20">5V正线支路保险</text><text x="390" y="217" font-size="17">2A，匹配直流额定</text><text x="390" y="289" font-size="14">GND直通，不经保险</text>
+<text x="726" y="181" font-size="23" font-weight="bold">J7 · 排针引出接口1</text><text x="726" y="213" font-size="15">2×3排针，2.54mm；只接第一排两脚</text>
+<path d="M298 247H370M605 247H1040V286M298 287H338V510H750V286" stroke="#b76b48" fill="none" stroke-width="3"/>
+<path d="M298 287H338V510H750V286" stroke="#536b7c" fill="none" stroke-width="3"/>
+<g stroke-width="2"><rect x="735" y="270" width="34" height="34" fill="#536b7c" stroke="#294552"/><circle cx="1040" cy="287" r="17" fill="#bd7750" stroke="#965538"/>
+<circle cx="752" cy="375" r="17" fill="#e3e9ed" stroke="#aebfc9"/><circle cx="1040" cy="375" r="17" fill="#e3e9ed" stroke="#aebfc9"/>
+<circle cx="752" cy="463" r="17" fill="#e3e9ed" stroke="#aebfc9"/><circle cx="1040" cy="463" r="17" fill="#e3e9ed" stroke="#aebfc9"/></g>
+<text x="783" y="294" font-size="19">1 GND</text><text x="1072" y="294" font-size="19">2 +5V</text><text x="783" y="383" font-size="18">3 SPK−：不接</text><text x="1072" y="383" font-size="18">4 SPK+：不接</text><text x="783" y="471" font-size="18">5 ADC_1：不接</text><text x="1072" y="471" font-size="18">6 ADC_0：不接</text>
+<text x="726" y="544" font-size="15">方形只提示原理图1脚；插接前按实物丝印／方焊盘和万用表确认方向</text>
+<text x="38" y="610" font-size="20" font-weight="bold">接线对象与检查顺序</text>
+<text x="38" y="647" font-size="17">① 断开BOX、USB和灯支路，先测降压输出5.00V与极性。</text>
+<text x="38" y="684" font-size="17">② 确认J7-1与板上GND导通；J7-2对应VCC_5V。其余四脚留空并绝缘。</text>
+<text x="38" y="721" font-size="17">③ 5V正线经2A保险到J7-2；GND到J7-1。用22AWG短线和匹配2.54mm母接头，核端子电流规格。</text>
+<text x="38" y="758" font-size="17">④ 上电测J7处电压、启动峰值、接头温升，再接双摄并观察重启／压降；异常先断电排查。</text>
+<rect x="38" y="791" width="1302" height="99" fill="#fff4db"/><text x="57" y="824" font-size="18" font-weight="bold">J7外部5V与Type-C1供电二选一</text><text x="57" y="857" font-size="16">用Type-C1连接CanMV IDE前，先拔掉J7供电。Type-C2仅USB串口且不供电，功能与Type-C1不同。</text>
+<text x="38" y="928" font-size="15">J7直接接VCC_5V，绕过VBUS→U5 MT9700输入限流路径；2A外部保险为试制起点，不能替代稳压、极性或接头验收。</text><text x="38" y="966" font-size="14" fill="#627d8b">来源：ATK-DNK230D V1.0.pdf 第1页与第3页，SHA-256 caa406fe…；只做原理图核对，未实物通电验证。</text>
+</g></svg>

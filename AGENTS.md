@@ -13,14 +13,24 @@
 
 1. `docs/handoff/HANDOFF-20261012.md`：会话交接、工作状态与下一步。
 2. `docs/README.md`：资料位置和优先级。
-3. `docs/hardware/hackathon-h3/assembly-p4/README.md`：当前比赛机械装配；完整版V4.12与V4.4历史资料保留。
-4. `config/hardware-hackathon-h3-p4.json`：比赛待实机核验基线，电气沿用H3；完整版仍用`config/hardware-baseline.json`。
+3. `docs/hardware/hackathon-h3/assembly-p6/README.md`：当前比赛手动版机械装配；完整版V4.12与V4.4历史资料保留。
+4. `config/hardware-hackathon-h3-p6.json`：比赛手动版待实机核验基线，无执行器；P4舵机版另存；完整版仍用`config/hardware-baseline.json`。
 5. `docs/firmware/BRINGUP.md`、`docs/firmware/PROTOCOL-v0.1-DRAFT.md`：分阶段验收与协议草案。
 6. 修改对应固件前读其目录内 `AGENTS.md`；修改训练流程前读 `docs/ml/TRAINING-BASELINE.md`。
 
-## 当前比赛设计方向：H3 / P4打印整合（2026-10-22）
+## 当前比赛设计方向：H3-P6嵌角木板与遮光罩（2026-10-24）
 
-- H3-P4当前机械装配（2026-10-22）：`docs/hardware/hackathon-h3/assembly-p4/README.md`、交互整机／爆炸／14连接、78行BOM、A3十页、纸样与独立`config/hardware-hackathon-h3-p4.json`。9件P1/P2及P3切片保持；顶环／底板改平连接片，底板Z22、BOX承板Y20，工作台用40宽角铝、相机木条用20宽；保留P2后梁／承托／舵机铝板；遮光片开木条槽、右侧与后背景避舵机。13段型材库存足够。当前机械以P4为准，不混用旧底板孔、旧PP上管或旧相机架；电气候选GPIO／动作基线不改。实体、行程与纸样主机检查不等于实打／承载／触发或上板验收；原文件和固件保留。
+- 当前装配以`docs/hardware/hackathon-h3/assembly-p6/README.md`、独立`config/hardware-hackathon-h3-p6.json`为准。保留P5/P4。三大海洋板240×220×6（220沿X/240沿Y）：W06整顶板底460，原P11上移20、出口349.5；W01/W02四角22.5方缺口，底板4黑PP2垫片避底框角码、板底22；工作台底180。原四打印几何/P3切片不改，左右双摄总距200、BOX位置保持。
+- P6修复P5实际0遮光件却保留开关的问题：新增6片黑PP2罩，左右φ32孔、顶进豆孔和底下斗孔；锁灯架回折翼和12角片，不穿LED线路。黑色／透明／隐藏均对应真实6片；默认黑色，演示自动透明。名义固定件、中心/目标ROI角光线与浏览器状态有主机检查，非实物验收。
+- 5V改J7排针供电：原厂DNK230D V1.0原理图第3页J7-1=GND、2=VCC_5V，3/4扬声器、5/6ADC留空绝缘；本版不接J10。J7直接进5V母线、绕过USB1的U5 MT9700输入限流，拟5V正线2A直流保险、短22AWG母端线；接头额定、压降/峰值/温升与针向待实物核验。J7与Type-C1供电二选一；Type-C2不供电，不能当IDE口替代。本轮未改固件、数据或打印几何，不把原理图核对写成上电验收。
+
+## 保留手动版：H3-P5（2026-10-23）
+
+- H3-P5手动版：`docs/hardware/hackathon-h3/assembly-p5/README.md`与`config/hardware-hackathon-h3-p5.json`。用户要求相机放BOX左右（20cm）、海洋板200×30、灯带直接固定20角铝、顶部PP200×180，并另做无舵机控制版。用户已确认两相机总间距约200mm，BOX位于两者之间，左右水平相向。P22右／P23左转90°，光轴Z260；木条200沿Y，两侧托片计入总宽约260；BOX板降110至底Z224，顶PP180沿X／200沿Y。仅安装P11/P13/P22/P23四件原打印几何，取消P12、整个闸盒／限位／舵机／连杆／后承托及后梁，灯角铝长120用脚角片锁工作台。无UBEC6V／PWM缓冲或J10外设，YU2405→5V BOX和24V灯带；12段型材库存够用。先双摄准备，再人工一颗下落抓拍，豆入同杯；失败提示人工暂停，不能机械停豆／留豆或当正常计数。本轮仅资料，未改固件、用户数据、P3切片；P4及完整版保留。几何、纸样和浏览器通过不等于排线、曝光、承载或上板验收。
+
+## 保留舵机版：H3 / P4打印整合（2026-10-22）
+
+- H3-P4舵机版机械装配（2026-10-22）：`docs/hardware/hackathon-h3/assembly-p4/README.md`、交互整机／爆炸／14连接、78行BOM、A3十页、纸样与独立`config/hardware-hackathon-h3-p4.json`。9件P1/P2及P3切片保持；顶环／底板改平连接片，底板Z22、BOX承板Y20，工作台用40宽角铝、相机木条用20宽；保留P2后梁／承托／舵机铝板；遮光片开木条槽、右侧与后背景避舵机。13段型材库存足够。选择舵机版时机械以P4为准，不混用旧底板孔、旧PP上管或旧相机架；电气候选GPIO／动作基线不改。实体、行程与纸样主机检查不等于实打／承载／触发或上板验收；原文件和固件保留。
 
 - H3拓竹打印P3（2026-10-22）：见`docs/hardware/hackathon-h3/printing-bambu-p3/README.md`与`job-spec.json`。用户确认A1、X2D、X1 Carbon、P2S、H2D，原厂标准0.4喷嘴、Bambu PETG HF、纹理PEI。Studio 02.08.02.61实际切片，五机型各6盘，9主件＋试片；P1/P2几何／装配修订保留。文件只用于匹配机型／材料／板材的首次试打；00先试配、跨机交叉试插。主机检查不代表实打或固件验证，不自行发送或开机打印。
 
