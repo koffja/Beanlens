@@ -1,0 +1,139 @@
+{
+  "checks": [
+    {
+      "name": "two_hopper_print_parts",
+      "pass": true
+    },
+    {
+      "name": "six_wood_parts",
+      "pass": true
+    },
+    {
+      "name": "twelve_profiles",
+      "pass": true
+    },
+    {
+      "name": "no_printed_camera_or_roof_records",
+      "pass": true
+    },
+    {
+      "name": "four_adhesive_fillets_visible",
+      "pass": true
+    },
+    {
+      "name": "P7_camera_board_and_box_geometry",
+      "pass": true
+    },
+    {
+      "name": "five_real_shield_parts_no_roof",
+      "pass": true
+    },
+    {
+      "name": "shield_checkbox_really_hides",
+      "pass": true
+    },
+    {
+      "name": "shield_render_changes",
+      "pass": true
+    },
+    {
+      "name": "shield_transparent_has_five",
+      "pass": true
+    },
+    {
+      "name": "transparent_differs_from_hidden_and_black",
+      "pass": true
+    },
+    {
+      "name": "shield_shortcut_focuses_J15",
+      "pass": true
+    },
+    {
+      "name": "exploded_view",
+      "pass": true
+    },
+    {
+      "name": "J01_focus",
+      "pass": true
+    },
+    {
+      "name": "J02_focus",
+      "pass": true
+    },
+    {
+      "name": "J03_focus",
+      "pass": true
+    },
+    {
+      "name": "J04_focus",
+      "pass": true
+    },
+    {
+      "name": "J05_focus",
+      "pass": true
+    },
+    {
+      "name": "J06_focus",
+      "pass": true
+    },
+    {
+      "name": "J10_focus",
+      "pass": true
+    },
+    {
+      "name": "J12_focus",
+      "pass": true
+    },
+    {
+      "name": "J13_focus",
+      "pass": true
+    },
+    {
+      "name": "J14_focus",
+      "pass": true
+    },
+    {
+      "name": "J15_focus",
+      "pass": true
+    },
+    {
+      "name": "manual_missing_image_message",
+      "pass": true
+    },
+    {
+      "name": "demo_reset",
+      "pass": true
+    },
+    {
+      "name": "no_servo_records",
+      "pass": true
+    },
+    {
+      "name": "BOM_finds_glued_camera",
+      "pass": true
+    },
+    {
+      "name": "wood_filter_hides",
+      "pass": true
+    },
+    {
+      "name": "print_filter_hides",
+      "pass": true
+    },
+    {
+      "name": "mobile_no_overflow",
+      "pass": true
+    },
+    {
+      "name": "no_page_errors",
+      "pass": true
+    },
+    {
+      "name": "offline_no_requests",
+      "pass": true
+    }
+  ],
+  "errors": [],
+  "network": [],
+  "physicalVerified": false
+}

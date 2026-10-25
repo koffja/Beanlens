@@ -13,14 +13,20 @@
 
 1. `docs/handoff/HANDOFF-20261012.md`：会话交接、工作状态与下一步。
 2. `docs/README.md`：资料位置和优先级。
-3. `docs/hardware/hackathon-h3/assembly-p6/README.md`：当前比赛手动版机械装配；完整版V4.12与V4.4历史资料保留。
-4. `config/hardware-hackathon-h3-p6.json`：比赛手动版待实机核验基线，无执行器；P4舵机版另存；完整版仍用`config/hardware-baseline.json`。
+3. `docs/hardware/hackathon-h3/assembly-p7/README.md`：当前比赛手动版机械装配；完整版V4.12与V4.4历史资料保留。
+4. `config/hardware-hackathon-h3-p7.json`：比赛手动版待实机核验基线，无执行器；P4舵机版另存；完整版仍用`config/hardware-baseline.json`。
 5. `docs/firmware/BRINGUP.md`、`docs/firmware/PROTOCOL-v0.1-DRAFT.md`：分阶段验收与协议草案。
 6. 修改对应固件前读其目录内 `AGENTS.md`；修改训练流程前读 `docs/ml/TRAINING-BASELINE.md`。
 
-## 当前比赛设计方向：H3-P6嵌角木板与遮光罩（2026-10-24）
+## 当前比赛设计方向：H3-P7直粘相机与高位BOX（2026-10-24）
 
-- 当前装配以`docs/hardware/hackathon-h3/assembly-p6/README.md`、独立`config/hardware-hackathon-h3-p6.json`为准。保留P5/P4。三大海洋板240×220×6（220沿X/240沿Y）：W06整顶板底460，原P11上移20、出口349.5；W01/W02四角22.5方缺口，底板4黑PP2垫片避底框角码、板底22；工作台底180。原四打印几何/P3切片不改，左右双摄总距200、BOX位置保持。
+- 当前机械用`docs/hardware/hackathon-h3/assembly-p7/README.md`与`config/hardware-hackathon-h3-p7.json`，P6/P5/P4保留。取消P22/P23相机打印座及M2/8mm隔柱；两条200×40×6木板长沿Y，左X0…40、右180…220，外侧及托片齐220宽框。PCB底240竖直粘内边，背面下沿两点绝缘可剥离胶，避焊盘／角孔／接口；用户确认接受约110mm镜头距（参考110.4），近焦工作距约55mm仍须实拍。
+- BOX和原176×88背板整体上移128到板底352顶440、前Y20；上对A11/A12托片下让30避顶框角码，柱孔Z368/394，背板旧上孔需补钻新孔。CSI参考折线165.3mm不证明20cm排线含接口和弯曲余量足够，先试走线再粘。J7供电保持，短5V支线由靠近BOX的降压模块引出。
+- 取消SH-T遮光顶盖及4顶承角片／8螺钉，保留五片真实黑PP罩与8角片；顶木板W06仍保留。三大海洋板与上下斗／灯架沿用P6，仅装原P11/P13两打印体，P3切片不改。53行BOM、11页A3、22张纸样、79孔记录；角铝含3mm切缝1204，两根1m足够；M3共64/M5共52。主机几何与页面检查不等于粘接、近焦、排线、承载或供电验收，未改用户固件／数据。
+
+## 保留手动版：H3-P6嵌角木板与遮光罩（2026-10-24）
+
+- P6历史装配以`docs/hardware/hackathon-h3/assembly-p6/README.md`、独立`config/hardware-hackathon-h3-p6.json`为准。保留P5/P4。三大海洋板240×220×6（220沿X/240沿Y）：W06整顶板底460，原P11上移20、出口349.5；W01/W02四角22.5方缺口，底板4黑PP2垫片避底框角码、板底22；工作台底180。原四打印几何/P3切片不改，左右双摄总距200、BOX位置保持。
 - P6修复P5实际0遮光件却保留开关的问题：新增6片黑PP2罩，左右φ32孔、顶进豆孔和底下斗孔；锁灯架回折翼和12角片，不穿LED线路。黑色／透明／隐藏均对应真实6片；默认黑色，演示自动透明。名义固定件、中心/目标ROI角光线与浏览器状态有主机检查，非实物验收。
 - 5V改J7排针供电：原厂DNK230D V1.0原理图第3页J7-1=GND、2=VCC_5V，3/4扬声器、5/6ADC留空绝缘；本版不接J10。J7直接进5V母线、绕过USB1的U5 MT9700输入限流，拟5V正线2A直流保险、短22AWG母端线；接头额定、压降/峰值/温升与针向待实物核验。J7与Type-C1供电二选一；Type-C2不供电，不能当IDE口替代。本轮未改固件、数据或打印几何，不把原理图核对写成上电验收。
 

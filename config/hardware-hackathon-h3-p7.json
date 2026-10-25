@@ -1,0 +1,458 @@
+{
+  "project": "BeanLens",
+  "profile": "hackathon-h3-p7-manual",
+  "date": "2026-10-24",
+  "status": "manual_feed_design_not_physically_verified",
+  "full_profile": "config/hardware-baseline.json",
+  "source": "docs/hardware/hackathon-h3/assembly-p7/assembly-data.json",
+  "scope": {
+    "camera_count": 2,
+    "lane_count": 1,
+    "controller": "ALIENTEK K230D BOX",
+    "actuator": null,
+    "manual_one_bean": true,
+    "stationary_photo": false,
+    "weighing": false,
+    "esp32c6": false,
+    "ir_beam": false,
+    "pbt_brush": false,
+    "dual_camera_pairing": true,
+    "network": false,
+    "falling_capture": true,
+    "servo": false,
+    "gate": false
+  },
+  "board": "ALIENTEK K230D BOX / DNK230D V1.0 reference",
+  "installed_firmware": null,
+  "pins": {
+    "start_capture_key": {
+      "name": "KEY0",
+      "gpio": 34,
+      "active_level": 0
+    },
+    "stop_key": {
+      "name": "KEY1",
+      "gpio": 35,
+      "active_level": 0,
+      "hardware_estop": false,
+      "meaning": "stop acquisition permission and prompt operator; cannot stop gravity or hold a dropped bean"
+    },
+    "reserved_key": {
+      "name": "KEY2",
+      "gpio": 0,
+      "do_not_use": "boot mode selection"
+    }
+  },
+  "power": {
+    "input_v": 24,
+    "input_a": 5,
+    "adapter": "YU2405",
+    "logic_v": 5,
+    "logic_budget_a": 2,
+    "logic_board": "TPS5450 complete board candidate; BOX+dual camera 5V2A initial branch budget, module>=3A capability candidate; SKU unverified",
+    "signal_v": 3.3,
+    "led_budget_w": 8,
+    "efficiency_budget": 0.8,
+    "common_reference": true,
+    "continuous_budget_w": 20.5,
+    "short_peak_budget_w": null,
+    "notes": "No 6V branch or PWM buffer. Budget: 5V*2A/0.8 + 8W LEDs; not measured consumption.",
+    "logic_connection": {
+      "connector": "J7 2x3 header,2.54mm",
+      "pin_1": "GND",
+      "pin_2": "VCC_5V input5.00V",
+      "pins_3_6": "unused,insulate",
+      "output_fuse_a": 2,
+      "wire": "22AWG short<=200mm, contact rating and actual peak pending",
+      "schematic_verified": true,
+      "physically_verified": false,
+      "dual_supply_forbidden": "disconnect J7 supply before Type-C1 supply; Type-C2 does not supply power",
+      "bypasses": "USB1 VBUS -> U5 MT9700 input current-limit path"
+    }
+  },
+  "schematic": {
+    "path": "docs/【正点原子】DNK230D开发板资料盘(A盘)/3，原理图/ATK-DNK230D V1.0.pdf",
+    "sha256": "caa406fe42535de36d8d51b1cd3158c917569eb2748673e40780465272636a27",
+    "j10": "pin1 IO25, pin2 IO24, pin3 IO23, pin4 IO22; no power/GND",
+    "notes": "P7 J10 has no connected peripherals; old pin table is schematic reference only. CSI ports and actual installed runtime mapping must be verified.",
+    "j7": {
+      "1": "GND",
+      "2": "VCC_5V",
+      "3": "SPK-",
+      "4": "SPK+",
+      "5": "ADC_1",
+      "6": "ADC_0"
+    }
+  },
+  "validation": {
+    "host_document_only": true,
+    "firmware_built": false,
+    "on_board_run": false,
+    "mechanical_test": false
+  },
+  "geometry": {
+    "frame": [
+      220,
+      240,
+      460
+    ],
+    "coordinate": "X left-right / Y front-rear / Z up; all mm",
+    "platforms_z": [
+      22,
+      180
+    ],
+    "hopper": {
+      "inner_top": [
+        80,
+        80
+      ],
+      "inner_bottom": [
+        18,
+        14
+      ],
+      "center_xy": [
+        110,
+        120
+      ],
+      "top_z": 460,
+      "bottom_z": 349.5,
+      "wall": 2.4,
+      "top_ring": [
+        220,
+        240,
+        6
+      ],
+      "top_ring_xy": [
+        0,
+        0
+      ],
+      "top_ring_z": 460,
+      "material": "printed PETG HF P1",
+      "upper_mount": "P11 flange under marine plywood6, top frame above; translated20mm; P12 not installed",
+      "neck_exit_z": 349.5
+    },
+    "gate": null,
+    "nozzle": null,
+    "camera": {
+      "count": 2,
+      "axis": "horizontal_opposed_left_right",
+      "cameras": [
+        {
+          "id": "A",
+          "position": "右",
+          "printed_mount": null,
+          "lens": [
+            165.2,
+            120,
+            260
+          ],
+          "direction": [
+            -1,
+            0,
+            0
+          ],
+          "pcb_center": [
+            180.7,
+            120,
+            260
+          ],
+          "rotate_z_deg": 90,
+          "translate": [
+            -34.8,
+            0,
+            0
+          ],
+          "mount": "vertical PCB edge on wood; removable nonconductive glue fillets at rear bottom blank corners",
+          "pcb_inner_face": 180
+        },
+        {
+          "id": "B",
+          "position": "左",
+          "printed_mount": null,
+          "lens": [
+            54.8,
+            120,
+            260
+          ],
+          "direction": [
+            1,
+            0,
+            0
+          ],
+          "pcb_center": [
+            39.3,
+            120,
+            260
+          ],
+          "rotate_z_deg": 90,
+          "translate": [
+            34.8,
+            0,
+            0
+          ],
+          "mount": "vertical PCB edge on wood; removable nonconductive glue fillets at rear bottom blank corners",
+          "pcb_inner_face": 40
+        }
+      ],
+      "station_xyz": [
+        110,
+        120,
+        260
+      ],
+      "lens_separation_mm": 110.4,
+      "csi_id_mapping": null,
+      "observation_z": [
+        235,
+        285
+      ]
+    },
+    "collector": {
+      "inner_top": [
+        64,
+        64
+      ],
+      "inner_bottom": [
+        30,
+        30
+      ],
+      "top_z": 220,
+      "bottom_z": 160,
+      "wall": 2.4,
+      "center_xy": [
+        110,
+        120
+      ],
+      "material": "printed PETG HF P1",
+      "flange": [
+        90,
+        90,
+        4
+      ],
+      "flange_bottom_z": 186
+    },
+    "work_aperture": {
+      "xy": [
+        80,
+        90
+      ],
+      "wh": [
+        60,
+        60
+      ],
+      "relative_to_176x196_platform": [
+        58,
+        68
+      ]
+    },
+    "wood": {
+      "decks": [
+        220,
+        240,
+        6
+      ],
+      "deck_count": 2,
+      "display_panel": [
+        176,
+        88,
+        6
+      ],
+      "camera_strips": [
+        200,
+        40,
+        6
+      ],
+      "camera_strip_count": 2,
+      "camera_strip_z": 234,
+      "stock_176x196_count": 0,
+      "bottom_z": 22,
+      "display_panel_y": 20,
+      "camera_placements": [
+        {
+          "id": "W04",
+          "xyz": [
+            180,
+            20,
+            234
+          ],
+          "size": [
+            40,
+            200,
+            6
+          ],
+          "holes_xy": [
+            [
+              200,
+              30
+            ],
+            [
+              200,
+              210
+            ]
+          ]
+        },
+        {
+          "id": "W05",
+          "xyz": [
+            0,
+            20,
+            234
+          ],
+          "size": [
+            40,
+            200,
+            6
+          ],
+          "holes_xy": [
+            [
+              20,
+              30
+            ],
+            [
+              20,
+              210
+            ]
+          ]
+        }
+      ],
+      "display_panel_z": 352,
+      "extra_camera_strip_count": 2,
+      "top_board": [
+        220,
+        240,
+        6
+      ],
+      "top_board_z": 460,
+      "corner_notch": 22.5,
+      "large_board_count": 3,
+      "small_panel_count": 3,
+      "camera_strip_axis": "long200mm alongY; width40mm alongX; outer edges X0/220 flush to frame",
+      "display_panel_top_z": 440,
+      "display_post_hole_z": [
+        368,
+        394
+      ]
+    },
+    "cup": {
+      "xyz": [
+        60,
+        95,
+        28
+      ],
+      "size": [
+        100,
+        100,
+        80
+      ]
+    },
+    "shield": {
+      "material": "matte black PP2",
+      "side_size": [
+        152,
+        110
+      ],
+      "open_top": true,
+      "front_back_size": [
+        120,
+        110
+      ],
+      "roof_size": null,
+      "floor_size": [
+        116,
+        148
+      ],
+      "lens_hole_d": 32,
+      "roof_entry": null,
+      "floor_opening": [
+        72,
+        72
+      ],
+      "z_range": [
+        222,
+        332
+      ]
+    }
+  },
+  "capture": {
+    "method": "both streams ready -> operator drops one bean -> free-fall paired clear frames -> same cup -> operator waits for result",
+    "hardware_sync_claim": false,
+    "stationary_capture": false,
+    "one_pair_one_count": true,
+    "frame_rate_measured": null,
+    "exposure_us_measured": null,
+    "time_pair_tolerance_ms": null,
+    "reject_if": [
+      "missing_view",
+      "blur",
+      "multiple_beans",
+      "uncertain_pair"
+    ],
+    "roi_queue_example": {
+      "per_camera_max": 3,
+      "max_wh": [
+        320,
+        320
+      ],
+      "rgb_bytes_total": 1843200,
+      "actual_runtime_memory_validated": false
+    },
+    "failure_action": "record review_required and prompt pause before next drop; already released bean remains in common cup; no mechanical stop"
+  },
+  "cameras": {
+    "count": 2,
+    "model": "GC2093-M12-90deg user supplied",
+    "physical_ports": [
+      "BOX CSI1",
+      "BOX CSI2"
+    ],
+    "sensor_id_mapping": null,
+    "capture": "both_running_before_manual_drop_falling_pair",
+    "short_exposure_supported_on_installed_BOX_firmware": null,
+    "board_dual_capture_validated": false,
+    "installed_firmware_version": null
+  },
+  "no_firmware_modified": true,
+  "mechanical_revision": {
+    "printed_parts": [
+      "P11",
+      "P13"
+    ],
+    "printed_geometry_changed": false,
+    "source": "assembly-p7/README.md",
+    "profile_segment_count": 12,
+    "camera_repositioned": true,
+    "printed_geometry_source": "P1/P2 unchanged; P3 existing slices usable",
+    "top_plywood_size_mm": [
+      240,
+      220,
+      6
+    ],
+    "shield_panels": 5,
+    "led_mount": "directly bonded onto20x20x2 aluminium angle",
+    "removed": [
+      "MG996R",
+      "gate",
+      "linkage",
+      "limits",
+      "servo bracket",
+      "P12 adapter",
+      "rear beam",
+      "UBEC6V",
+      "PWM buffer"
+    ],
+    "camera_layout_confirmed": true,
+    "camera_mount": "direct vertical PCB adhesive fillets on inner wood edge; no printed mount or M2 standoffs",
+    "box_board_z": [
+      352,
+      440
+    ],
+    "box_upper_support_shift_z": -30,
+    "removed_since_p6": [
+      "P22",
+      "P23",
+      "M2 camera hardware",
+      "SH-T",
+      "four roof support angles"
+    ],
+    "camera_layout_decision": "user confirmed cameras glued at inner edges of flush200x40 boards and accepted approximately110mm spacing; exact110.4mm is reference geometry, pending real camera check"
+  }
+}
