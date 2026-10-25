@@ -1,0 +1,545 @@
+[
+  {
+    "kind": "rect",
+    "x": 0,
+    "y": 0,
+    "w": 1600,
+    "h": 900,
+    "fill": "F7F6F2",
+    "r": 0,
+    "line": null
+  },
+  {
+    "kind": "text",
+    "s": "BeanLens  豆鉴",
+    "x": 72,
+    "y": 48,
+    "w": 750,
+    "h": 40,
+    "size": 26,
+    "color": "203D35",
+    "bold": true,
+    "align": "left"
+  },
+  {
+    "kind": "text",
+    "s": "H3-P7  比赛手动版",
+    "x": 1200,
+    "y": 50,
+    "w": 328,
+    "h": 36,
+    "size": 22,
+    "color": "68776E",
+    "bold": false,
+    "align": "right"
+  },
+  {
+    "kind": "text",
+    "s": "硬件与视觉辨识架构",
+    "x": 72,
+    "y": 111,
+    "w": 1450,
+    "h": 82,
+    "size": 56,
+    "color": "203D35",
+    "bold": true,
+    "align": "left"
+  },
+  {
+    "kind": "text",
+    "s": "人工单颗投豆，双摄采集，BOX 本地辨识",
+    "x": 74,
+    "y": 204,
+    "w": 1450,
+    "h": 43,
+    "size": 27,
+    "color": "68776E",
+    "bold": false,
+    "align": "left"
+  },
+  {
+    "kind": "rect",
+    "x": 72,
+    "y": 286,
+    "w": 328,
+    "h": 270,
+    "fill": "EEEFE9",
+    "r": 16,
+    "line": null
+  },
+  {
+    "kind": "text",
+    "s": "01",
+    "x": 99,
+    "y": 308,
+    "w": 270,
+    "h": 40,
+    "size": 24,
+    "color": "AA6846",
+    "bold": true,
+    "align": "left"
+  },
+  {
+    "kind": "text",
+    "s": "人工投豆",
+    "x": 99,
+    "y": 370,
+    "w": 280,
+    "h": 54,
+    "size": 32,
+    "color": "203D35",
+    "bold": true,
+    "align": "left"
+  },
+  {
+    "kind": "text",
+    "s": "上漏斗",
+    "x": 99,
+    "y": 443,
+    "w": 280,
+    "h": 42,
+    "size": 24,
+    "color": "203D35",
+    "bold": false,
+    "align": "left"
+  },
+  {
+    "kind": "text",
+    "s": "每次一颗，等待结果",
+    "x": 99,
+    "y": 486,
+    "w": 280,
+    "h": 42,
+    "size": 24,
+    "color": "203D35",
+    "bold": false,
+    "align": "left"
+  },
+  {
+    "kind": "line",
+    "points": [
+      [
+        412,
+        421
+      ],
+      [
+        436,
+        421
+      ]
+    ],
+    "color": "68776E",
+    "width": 2.6,
+    "dash": false,
+    "arrow": true
+  },
+  {
+    "kind": "rect",
+    "x": 448,
+    "y": 286,
+    "w": 328,
+    "h": 270,
+    "fill": "EEEFE9",
+    "r": 16,
+    "line": null
+  },
+  {
+    "kind": "text",
+    "s": "02",
+    "x": 475,
+    "y": 308,
+    "w": 270,
+    "h": 40,
+    "size": 24,
+    "color": "AA6846",
+    "bold": true,
+    "align": "left"
+  },
+  {
+    "kind": "text",
+    "s": "双摄抓拍",
+    "x": 475,
+    "y": 370,
+    "w": 280,
+    "h": 54,
+    "size": 32,
+    "color": "203D35",
+    "bold": true,
+    "align": "left"
+  },
+  {
+    "kind": "text",
+    "s": "左右 GC2093",
+    "x": 475,
+    "y": 443,
+    "w": 280,
+    "h": 42,
+    "size": 24,
+    "color": "203D35",
+    "bold": false,
+    "align": "left"
+  },
+  {
+    "kind": "text",
+    "s": "LED 照明下抓拍",
+    "x": 475,
+    "y": 486,
+    "w": 280,
+    "h": 42,
+    "size": 24,
+    "color": "203D35",
+    "bold": false,
+    "align": "left"
+  },
+  {
+    "kind": "line",
+    "points": [
+      [
+        788,
+        421
+      ],
+      [
+        812,
+        421
+      ]
+    ],
+    "color": "68776E",
+    "width": 2.6,
+    "dash": false,
+    "arrow": true
+  },
+  {
+    "kind": "rect",
+    "x": 824,
+    "y": 286,
+    "w": 328,
+    "h": 270,
+    "fill": "214D40",
+    "r": 16,
+    "line": null
+  },
+  {
+    "kind": "text",
+    "s": "03",
+    "x": 851,
+    "y": 308,
+    "w": 270,
+    "h": 40,
+    "size": 24,
+    "color": "E4EDE6",
+    "bold": true,
+    "align": "left"
+  },
+  {
+    "kind": "text",
+    "s": "K230D BOX 辨识",
+    "x": 851,
+    "y": 370,
+    "w": 280,
+    "h": 54,
+    "size": 32,
+    "color": "FFFFFF",
+    "bold": true,
+    "align": "left"
+  },
+  {
+    "kind": "text",
+    "s": "双图配对与质量检查",
+    "x": 851,
+    "y": 443,
+    "w": 280,
+    "h": 42,
+    "size": 24,
+    "color": "FFFFFF",
+    "bold": false,
+    "align": "left"
+  },
+  {
+    "kind": "text",
+    "s": "裁图分类与结果合并",
+    "x": 851,
+    "y": 486,
+    "w": 280,
+    "h": 42,
+    "size": 24,
+    "color": "FFFFFF",
+    "bold": false,
+    "align": "left"
+  },
+  {
+    "kind": "line",
+    "points": [
+      [
+        1164,
+        421
+      ],
+      [
+        1188,
+        421
+      ]
+    ],
+    "color": "68776E",
+    "width": 2.6,
+    "dash": false,
+    "arrow": true
+  },
+  {
+    "kind": "rect",
+    "x": 1200,
+    "y": 286,
+    "w": 328,
+    "h": 270,
+    "fill": "EEEFE9",
+    "r": 16,
+    "line": null
+  },
+  {
+    "kind": "text",
+    "s": "04",
+    "x": 1227,
+    "y": 308,
+    "w": 270,
+    "h": 40,
+    "size": 24,
+    "color": "AA6846",
+    "bold": true,
+    "align": "left"
+  },
+  {
+    "kind": "text",
+    "s": "结果与证据",
+    "x": 1227,
+    "y": 370,
+    "w": 280,
+    "h": 54,
+    "size": 32,
+    "color": "203D35",
+    "bold": true,
+    "align": "left"
+  },
+  {
+    "kind": "text",
+    "s": "主屏显示与批次记录",
+    "x": 1227,
+    "y": 443,
+    "w": 280,
+    "h": 42,
+    "size": 24,
+    "color": "203D35",
+    "bold": false,
+    "align": "left"
+  },
+  {
+    "kind": "text",
+    "s": "保留疑似及抽查证据",
+    "x": 1227,
+    "y": 486,
+    "w": 280,
+    "h": 42,
+    "size": 24,
+    "color": "203D35",
+    "bold": false,
+    "align": "left"
+  },
+  {
+    "kind": "line",
+    "points": [
+      [
+        236,
+        556
+      ],
+      [
+        236,
+        641
+      ],
+      [
+        570,
+        641
+      ]
+    ],
+    "color": "68776E",
+    "width": 2,
+    "dash": false,
+    "arrow": true
+  },
+  {
+    "kind": "text",
+    "s": "实体豆路",
+    "x": 273,
+    "y": 600,
+    "w": 290,
+    "h": 30,
+    "size": 20,
+    "color": "68776E",
+    "bold": false,
+    "align": "left"
+  },
+  {
+    "kind": "text",
+    "s": "下接豆斗",
+    "x": 592,
+    "y": 604,
+    "w": 218,
+    "h": 39,
+    "size": 27,
+    "color": "203D35",
+    "bold": true,
+    "align": "left"
+  },
+  {
+    "kind": "text",
+    "s": "进入同一收豆杯",
+    "x": 592,
+    "y": 649,
+    "w": 250,
+    "h": 36,
+    "size": 24,
+    "color": "68776E",
+    "bold": false,
+    "align": "left"
+  },
+  {
+    "kind": "line",
+    "points": [
+      [
+        988,
+        556
+      ],
+      [
+        988,
+        595
+      ]
+    ],
+    "color": "AA6846",
+    "width": 2,
+    "dash": false,
+    "arrow": true
+  },
+  {
+    "kind": "rect",
+    "x": 824,
+    "y": 607,
+    "w": 704,
+    "h": 99,
+    "fill": "F1E5D7",
+    "r": 12,
+    "line": null
+  },
+  {
+    "kind": "text",
+    "s": "异常待复核，人工暂停投豆",
+    "x": 847,
+    "y": 619,
+    "w": 658,
+    "h": 38,
+    "size": 27,
+    "color": "AA6846",
+    "bold": true,
+    "align": "left"
+  },
+  {
+    "kind": "text",
+    "s": "缺图、糊图、多豆或配对不明",
+    "x": 847,
+    "y": 663,
+    "w": 658,
+    "h": 32,
+    "size": 23,
+    "color": "AA6846",
+    "bold": false,
+    "align": "left"
+  },
+  {
+    "kind": "line",
+    "points": [
+      [
+        72,
+        755
+      ],
+      [
+        1528,
+        755
+      ]
+    ],
+    "color": "B6C1B9",
+    "width": 1,
+    "dash": false,
+    "arrow": false
+  },
+  {
+    "kind": "text",
+    "s": "供电支持",
+    "x": 72,
+    "y": 779,
+    "w": 160,
+    "h": 34,
+    "size": 23,
+    "color": "68776E",
+    "bold": true,
+    "align": "left"
+  },
+  {
+    "kind": "text",
+    "s": "24V 电源",
+    "x": 258,
+    "y": 779,
+    "w": 180,
+    "h": 34,
+    "size": 24,
+    "color": "203D35",
+    "bold": false,
+    "align": "left"
+  },
+  {
+    "kind": "line",
+    "points": [
+      [
+        451,
+        796
+      ],
+      [
+        495,
+        796
+      ]
+    ],
+    "color": "68776E",
+    "width": 2,
+    "dash": false,
+    "arrow": true
+  },
+  {
+    "kind": "text",
+    "s": "24V 灯带",
+    "x": 518,
+    "y": 779,
+    "w": 210,
+    "h": 34,
+    "size": 24,
+    "color": "203D35",
+    "bold": false,
+    "align": "left"
+  },
+  {
+    "kind": "text",
+    "s": "5V 降压供 BOX 与双摄",
+    "x": 858,
+    "y": 779,
+    "w": 670,
+    "h": 34,
+    "size": 24,
+    "color": "203D35",
+    "bold": false,
+    "align": "left"
+  },
+  {
+    "kind": "text",
+    "s": "规划待验证：双摄落豆链路、近焦与曝光仍需实机验收。豆已落杯，异常提示用于停止下一次投豆。",
+    "x": 72,
+    "y": 848,
+    "w": 1456,
+    "h": 32,
+    "size": 19,
+    "color": "68776E",
+    "bold": false,
+    "align": "left"
+  }
+]

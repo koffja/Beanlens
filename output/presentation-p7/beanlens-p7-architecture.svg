@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="3200" height="1800" viewBox="0 0 1600 900">
+<title>BeanLens H3-P7 硬件与视觉辨识架构</title>
+<rect x="0" y="0" width="1600" height="900" rx="0" fill="#F7F6F2"/>
+<text x="72" y="72.7" font-family="Heiti SC, Microsoft YaHei, sans-serif" font-size="26" font-weight="600" text-anchor="start" fill="#203D35">BeanLens  豆鉴</text>
+<text x="1528" y="70.9" font-family="Heiti SC, Microsoft YaHei, sans-serif" font-size="22" font-weight="400" text-anchor="end" fill="#68776E">H3-P7  比赛手动版</text>
+<text x="72" y="164.2" font-family="Heiti SC, Microsoft YaHei, sans-serif" font-size="56" font-weight="600" text-anchor="start" fill="#203D35">硬件与视觉辨识架构</text>
+<text x="74" y="229.65" font-family="Heiti SC, Microsoft YaHei, sans-serif" font-size="27" font-weight="400" text-anchor="start" fill="#68776E">人工单颗投豆，双摄采集，BOX 本地辨识</text>
+<rect x="72" y="286" width="328" height="270" rx="16" fill="#EEEFE9"/>
+<text x="99" y="330.8" font-family="Heiti SC, Microsoft YaHei, sans-serif" font-size="24" font-weight="600" text-anchor="start" fill="#AA6846">01</text>
+<text x="99" y="400.4" font-family="Heiti SC, Microsoft YaHei, sans-serif" font-size="32" font-weight="600" text-anchor="start" fill="#203D35">人工投豆</text>
+<text x="99" y="465.8" font-family="Heiti SC, Microsoft YaHei, sans-serif" font-size="24" font-weight="400" text-anchor="start" fill="#203D35">上漏斗</text>
+<text x="99" y="508.8" font-family="Heiti SC, Microsoft YaHei, sans-serif" font-size="24" font-weight="400" text-anchor="start" fill="#203D35">每次一颗，等待结果</text>
+<polyline points="412,421 436,421" fill="none" stroke="#68776E" stroke-width="2.6"/>
+<polyline points="429,417.5 436,421 429,424.5" fill="none" stroke="#68776E" stroke-width="2.6"/>
+<rect x="448" y="286" width="328" height="270" rx="16" fill="#EEEFE9"/>
+<text x="475" y="330.8" font-family="Heiti SC, Microsoft YaHei, sans-serif" font-size="24" font-weight="600" text-anchor="start" fill="#AA6846">02</text>
+<text x="475" y="400.4" font-family="Heiti SC, Microsoft YaHei, sans-serif" font-size="32" font-weight="600" text-anchor="start" fill="#203D35">双摄抓拍</text>
+<text x="475" y="465.8" font-family="Heiti SC, Microsoft YaHei, sans-serif" font-size="24" font-weight="400" text-anchor="start" fill="#203D35">左右 GC2093</text>
+<text x="475" y="508.8" font-family="Heiti SC, Microsoft YaHei, sans-serif" font-size="24" font-weight="400" text-anchor="start" fill="#203D35">LED 照明下抓拍</text>
+<polyline points="788,421 812,421" fill="none" stroke="#68776E" stroke-width="2.6"/>
+<polyline points="805,417.5 812,421 805,424.5" fill="none" stroke="#68776E" stroke-width="2.6"/>
+<rect x="824" y="286" width="328" height="270" rx="16" fill="#214D40"/>
+<text x="851" y="330.8" font-family="Heiti SC, Microsoft YaHei, sans-serif" font-size="24" font-weight="600" text-anchor="start" fill="#E4EDE6">03</text>
+<text x="851" y="400.4" font-family="Heiti SC, Microsoft YaHei, sans-serif" font-size="32" font-weight="600" text-anchor="start" fill="#FFFFFF">K230D BOX 辨识</text>
+<text x="851" y="465.8" font-family="Heiti SC, Microsoft YaHei, sans-serif" font-size="24" font-weight="400" text-anchor="start" fill="#FFFFFF">双图配对与质量检查</text>
+<text x="851" y="508.8" font-family="Heiti SC, Microsoft YaHei, sans-serif" font-size="24" font-weight="400" text-anchor="start" fill="#FFFFFF">裁图分类与结果合并</text>
+<polyline points="1164,421 1188,421" fill="none" stroke="#68776E" stroke-width="2.6"/>
+<polyline points="1181,417.5 1188,421 1181,424.5" fill="none" stroke="#68776E" stroke-width="2.6"/>
+<rect x="1200" y="286" width="328" height="270" rx="16" fill="#EEEFE9"/>
+<text x="1227" y="330.8" font-family="Heiti SC, Microsoft YaHei, sans-serif" font-size="24" font-weight="600" text-anchor="start" fill="#AA6846">04</text>
+<text x="1227" y="400.4" font-family="Heiti SC, Microsoft YaHei, sans-serif" font-size="32" font-weight="600" text-anchor="start" fill="#203D35">结果与证据</text>
+<text x="1227" y="465.8" font-family="Heiti SC, Microsoft YaHei, sans-serif" font-size="24" font-weight="400" text-anchor="start" fill="#203D35">主屏显示与批次记录</text>
+<text x="1227" y="508.8" font-family="Heiti SC, Microsoft YaHei, sans-serif" font-size="24" font-weight="400" text-anchor="start" fill="#203D35">保留疑似及抽查证据</text>
+<polyline points="236,556 236,641 570,641" fill="none" stroke="#68776E" stroke-width="2"/>
+<polyline points="563,637.5 570,641 563,644.5" fill="none" stroke="#68776E" stroke-width="2"/>
+<text x="273" y="619.0" font-family="Heiti SC, Microsoft YaHei, sans-serif" font-size="20" font-weight="400" text-anchor="start" fill="#68776E">实体豆路</text>
+<text x="592" y="629.65" font-family="Heiti SC, Microsoft YaHei, sans-serif" font-size="27" font-weight="600" text-anchor="start" fill="#203D35">下接豆斗</text>
+<text x="592" y="671.8" font-family="Heiti SC, Microsoft YaHei, sans-serif" font-size="24" font-weight="400" text-anchor="start" fill="#68776E">进入同一收豆杯</text>
+<polyline points="988,556 988,595" fill="none" stroke="#AA6846" stroke-width="2"/>
+<polyline points="984.5,588 988,595 991.5,588" fill="none" stroke="#AA6846" stroke-width="2"/>
+<rect x="824" y="607" width="704" height="99" rx="12" fill="#F1E5D7"/>
+<text x="847" y="644.65" font-family="Heiti SC, Microsoft YaHei, sans-serif" font-size="27" font-weight="600" text-anchor="start" fill="#AA6846">异常待复核，人工暂停投豆</text>
+<text x="847" y="684.85" font-family="Heiti SC, Microsoft YaHei, sans-serif" font-size="23" font-weight="400" text-anchor="start" fill="#AA6846">缺图、糊图、多豆或配对不明</text>
+<polyline points="72,755 1528,755" fill="none" stroke="#B6C1B9" stroke-width="1"/>
+<text x="72" y="800.85" font-family="Heiti SC, Microsoft YaHei, sans-serif" font-size="23" font-weight="600" text-anchor="start" fill="#68776E">供电支持</text>
+<text x="258" y="801.8" font-family="Heiti SC, Microsoft YaHei, sans-serif" font-size="24" font-weight="400" text-anchor="start" fill="#203D35">24V 电源</text>
+<polyline points="451,796 495,796" fill="none" stroke="#68776E" stroke-width="2"/>
+<polyline points="488,792.5 495,796 488,799.5" fill="none" stroke="#68776E" stroke-width="2"/>
+<text x="518" y="801.8" font-family="Heiti SC, Microsoft YaHei, sans-serif" font-size="24" font-weight="400" text-anchor="start" fill="#203D35">24V 灯带</text>
+<text x="858" y="801.8" font-family="Heiti SC, Microsoft YaHei, sans-serif" font-size="24" font-weight="400" text-anchor="start" fill="#203D35">5V 降压供 BOX 与双摄</text>
+<text x="72" y="866.05" font-family="Heiti SC, Microsoft YaHei, sans-serif" font-size="19" font-weight="400" text-anchor="start" fill="#68776E">规划待验证：双摄落豆链路、近焦与曝光仍需实机验收。豆已落杯，异常提示用于停止下一次投豆。</text>
+</svg>
