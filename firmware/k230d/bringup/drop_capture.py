@@ -1,5 +1,5 @@
 # BeanLens 落豆抓拍测试（bring-up 用，无执行器）
-# 目标：正点原子 K230D BOX + CanMV（ATK v1.3-8dd764f）
+# 目标：正点原子 K230D BOX + CanMV v1.6-0-ge4441cc / nncase 2.9.0（待上板验收）
 # 目的：相机已固定后，手动从上方丢豆，检查两路相机能否拍到“干净”的豆子图像：
 #      豆在画面内、够大、不糊（运动模糊/失焦）、两路几乎同时、无坏帧。
 #
@@ -43,7 +43,8 @@
 #   取回：逐个文件 mpremote cp（cp -r 整个目录会卡住，见 drop_capture_3）。
 #
 # 判读提示：落豆约 1.4 m/s（10 cm 落差）；v3 中 320x180 画面里豆每帧移动约半个画面高，所以每颗豆通常只有 1-2 帧在 ROI 内。
-#   本固件不支持 get_exposure_us，拖影只能从图上看；补光越强自动曝光越短、拖影越短。
+#   v1.6 用 auto_exposure(False) -> run() -> exposure(us) 固定短曝光；失败停止，不回退自动曝光。
+#   EXPOSURE_US 是实验起点，不是已标定快门；画面太暗先改善补光。相同曝光不代表双摄同步。
 
 import gc
 import os
@@ -60,6 +61,8 @@ MODE = "drop"                    # "focus"：对焦模式，只显示放大的�
 CAM_IDS = (1, 2)
 SENSOR_W, SENSOR_H = 1920, 1080   # 与 dual_camera_preview.py 一致
 FPS = 30
+EXPOSURE_US = {1: 1000, 2: 1000}  # 每路目标微秒；先静态验光，再按拖影/亮度分别调整
+EXPOSURE_SETTLE_FRAMES = 3         # 设置后逐路丢弃启动帧，再读回确认；不用于计数
 CAP_W, CAP_H = 960, 540           # chn0 取帧尺寸（16:9 不变形）。v3 320x180 豆约 15x20 px → 这里约 45x60 px。
                                   # 1280x720 在 run() 报 vicap init failed(-1)（drop_capture_4）；失败就断电改 640, 360
 
@@ -88,7 +91,8 @@ MEM_BUDGET = 2600000              # 连拍裁图总字节上限（GC 堆空闲�
 MAX_EVENTS = 20
 DURATION_MS = 180000
 OUT_ROOT = "/sdcard/beanlens"
-SCRIPT_VERSION = 5
+SCRIPT_VERSION = 6
+TARGET_FIRMWARE = "CanMV_K230D_ATK_DNK230D_micropython_v1.6-0-ge4441cc_nncase_v2.9.0"
 
 # ---- 对焦模式 ----
 FOCUS_BOX = 150                   # ROI 中心的方框边长（CAP 像素）；把粘在细杆上的豆举到框中间
@@ -217,10 +221,60 @@ def check_config():
 def open_sensor(cam_id):
     step("open camera id=%d" % cam_id)
     s = Sensor(id=cam_id, width=SENSOR_W, height=SENSOR_H, fps=FPS)
-    s.reset()
-    s.set_framesize(width=CAP_W, height=CAP_H, chn=CAM_CHN_ID_0)
-    s.set_pixformat(Sensor.RGB565, chn=CAM_CHN_ID_0)
+    try:
+        s.reset()
+        s.set_framesize(width=CAP_W, height=CAP_H, chn=CAM_CHN_ID_0)
+        s.set_pixformat(Sensor.RGB565, chn=CAM_CHN_ID_0)
+        # v1.6 只在 run() 前提交 AE 开关；曝光范围/读写须等 run() 创建有效 fd。
+        for name in ("auto_exposure", "get_exposure_time_range", "exposure"):
+            if not callable(getattr(s, name, None)):
+                raise RuntimeError("cam%d missing %s; use ATK DNK230D v1.6" % (cam_id, name))
+        s.auto_exposure(False)
+        if s.auto_exposure() is not False:
+            raise RuntimeError("cam%d could not disable auto exposure" % cam_id)
+    except BaseException:
+        s.stop()
+        raise
     return s
+
+
+def positive_number(value):
+    # 同时拒绝 bool、NaN、无穷；MicroPython 不依赖 math.isfinite。
+    return (not isinstance(value, bool) and isinstance(value, (int, float))
+            and 0 < value < float("inf"))
+
+
+def start_sensors(sensors):
+    # v1.6 Sensor._run_mcm_device() 会启动所有已 reset 的相机，仍只调用首路 run。
+    sensors[0].run()
+    records = []
+    for cid, s in zip(CAM_IDS, sensors):
+        target = EXPOSURE_US.get(cid)
+        if not positive_number(target):
+            raise ValueError("cam%d exposure target must be positive finite us" % cid)
+        limits = s.get_exposure_time_range()
+        if not isinstance(limits, (tuple, list)) or len(limits) != 2:
+            raise RuntimeError("cam%d exposure range unavailable: %s" % (cid, limits))
+        max_us, min_us = limits
+        if not positive_number(min_us) or not positive_number(max_us) or min_us > max_us:
+            raise RuntimeError("cam%d invalid exposure range: %s" % (cid, limits))
+        if not min_us <= target <= max_us:
+            raise ValueError("cam%d exposure %s us outside [%s, %s]; adjust EXPOSURE_US"
+                             % (cid, target, min_us, max_us))
+        # setter 的返回值不当作实际曝光；以下用读回值确认，容许传感器行周期量化。
+        s.exposure(target)
+        for _ in range(EXPOSURE_SETTLE_FRAMES):
+            s.snapshot(chn=CAM_CHN_ID_0)
+        actual = s.exposure()
+        tolerance = max(100, target * 0.05)
+        if (s.auto_exposure() is not False or not positive_number(actual)
+                or not min_us <= actual <= max_us or abs(actual - target) > tolerance):
+            raise RuntimeError("cam%d exposure verification failed: requested=%s actual=%s us"
+                               % (cid, target, actual))
+        rec = (cid, target, actual, min_us, max_us)
+        records.append(rec)
+        print("cam%d manual exposure: requested=%s actual=%s range=[%s,%s] us" % rec)
+    return records
 
 
 def cell_means(img, cells):
@@ -266,7 +320,7 @@ def show_canvas(canvas, imgs, text, color, box_color):
     Display.show_image(canvas)
 
 
-def make_run_dir():
+def make_run_dir(exposure_records):
     if not exists(OUT_ROOT):
         os.mkdir(OUT_ROOT)
     n = 0
@@ -283,6 +337,13 @@ def make_run_dir():
                    ",".join(str(c) for c in CAM_IDS),
                    ";".join("cam%d:%d,%d,%d,%d" % ((c,) + roi(c)) for c in CAM_IDS),
                    CELL, PATCH, DIFF_L, MIN_CELLS, BURST))
+        f.write("target_firmware=%s\nuname=%s\nauto_exposure=False\n"
+                "exposure_settle_frames=%d\nexposure_verified=readback_only\n"
+                % (TARGET_FIRMWARE, str(os.uname()), EXPOSURE_SETTLE_FRAMES))
+        for cid, requested, actual, min_us, max_us in exposure_records:
+            f.write("cam%d_exposure_requested_us=%s\ncam%d_exposure_actual_us=%s\n"
+                    "cam%d_exposure_min_us=%s\ncam%d_exposure_max_us=%s\n"
+                    % (cid, requested, cid, actual, cid, min_us, cid, max_us))
     sync_fs()
     return path
 
@@ -310,7 +371,8 @@ try:
     step("MediaManager.init")
     MediaManager.init()
     step("sensor run")
-    sensors[0].run()
+    print("target firmware:", TARGET_FIRMWARE, "actual uname:", os.uname())
+    exposure_records = start_sensors(sensors)
     canvas = image.Image(DISPLAY_W, DISPLAY_H, image.RGB565)
 
     step("first snapshot chn0 %dx%d" % (CAP_W, CAP_H))
@@ -335,7 +397,7 @@ try:
             raise OSError("not enough space on /sdcard: free %.1f MB < %.1f MB; copy old dropNNN to PC then delete them"
                           % (free_mb, need_mb + 5))
         step("create run dir")
-        run_dir = make_run_dir()
+        run_dir = make_run_dir(exposure_records)
         print("output dir:", run_dir)
         step("save full-frame references")
         for i, img in enumerate(first):
@@ -492,3 +554,4 @@ finally:
     os.exitpoint(os.EXITPOINT_ENABLE_SLEEP)
     time.sleep_ms(100)
     MediaManager.deinit()
+
