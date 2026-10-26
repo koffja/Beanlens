@@ -10,6 +10,20 @@
       "runtime_plan": "CanMV/MicroPython",
       "installed_firmware": "ATK CanMV release v1.3-8dd764f, CanMV 0295137e6 (MicroPython e00a144) 2025-09-20, machine k230d_canmv_atk_dnk230d (os.uname, 2026-10-17); nncase runtime version not yet read",
       "candidate_local_release": "ATK CanMV v1.3, nncase v2.9.0",
+      "selected_upgrade": {
+        "date": "2026-10-25",
+        "firmware": "CanMV_K230D_ATK_DNK230D_micropython_v1.6-0-ge4441cc_nncase_v2.9.0.img.gz",
+        "release_url": "https://github.com/kendryte/canmv_k230/releases/tag/v1.6",
+        "nncase": "2.9.0",
+        "script": "firmware/k230d/bringup/drop_capture.py",
+        "manual_exposure_us": {"1": 1000, "2": 1000},
+        "status": "user_selected_source_checked_host_tested_not_flashed",
+        "installed_firmware_changed": false,
+        "image_checksum_verified": false,
+        "dual_camera_on_board_verified": false,
+        "short_exposure_on_board_verified": false,
+        "notes": "AE off before run; range/set/readback after run; 1ms is an uncalibrated starting point. Existing v1.3 observations remain historical, not v1.6 acceptance."
+      },
       "camera": "2 x GC2093, M12 90-degree low-distortion lens",
       "display_role": "front_main_statistics_evidence",
       "bringup_dual_camera_preview": {
@@ -1061,3 +1075,4 @@
   "procurement_revision": "V4.11",
   "procurement_source": "docs/hardware/procurement-v4.11/beanlens-bom-v4.11.json"
 }
+
